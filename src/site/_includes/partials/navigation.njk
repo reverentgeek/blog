@@ -1,0 +1,10 @@
+<nav class="flex-auto items-center flex-wrap py-3">
+	<ul class="list-reset flex flex-wrap">
+	{% for item in site.navigation %}
+		<li class="mr-4">
+			<a class="font-semibold hover:text-blue-500 py-2 px-4" {% if page.url == item.url %}aria-current="page"{% endif %} href="{{ item.url }}">
+				{{ item.label }}
+			</a>
+		</li>
+	{% endfor %}
+</nav>

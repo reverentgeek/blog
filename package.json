@@ -1,0 +1,73 @@
+{
+  "name": "eleventy-reverentgeek-blog",
+  "version": "1.0.0",
+  "description": "Blog using Eleventy and Ghost",
+  "main": ".eleventy.js",
+  "scripts": {
+    "clean": "run-s clean:*",
+    "clean:cache": "rimraf ./.cache",
+    "clean:site": "rimraf ./dist",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build:assets": "cross-env NODE_ENV=production parcel build ./src/assets/css/styles.css ./src/assets/js/index.js --out-dir ./dist/assets --no-source-maps",
+    "build:html": "cross-env ELEVENTY_ENV=production eleventy",
+    "test": "npm run build",
+    "lint": "eslint . --ext .js --cache",
+    "build": "run-s clean build:*",
+    "watch": "run-s clean:* && run-p watch:*",
+    "watch:html": "cross-env ELEVENTY_ENV=development eleventy --serve --port=8080",
+    "watch:assets": "cross-env NODE_ENV=development parcel watch ./src/assets/css/styles.css ./src/assets/js/index.js --out-dir ./dist/assets --no-source-maps --no-hmr",
+    "start": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryGhost/eleventy-starter-ghost.git"
+  },
+  "keywords": [
+    "eleventy",
+    "ghost",
+    "starter",
+    "boilerplate",
+    "static",
+    "site",
+    "jamstack"
+  ],
+  "author": "David Darnes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TryGhost/eleventy-starter-ghost/issues"
+  },
+  "homepage": "https://github.com/TryGhost/eleventy-starter-ghost#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@tryghost/content-api": "^1.2.5",
+    "@tryghost/helpers": "^1.1.6",
+    "autoprefixer": "^9.7.6",
+    "clean-css": "^4.2.1",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.0.0",
+    "eleventy-plugin-lazyimages": "liamfiddler/eleventy-plugin-lazyimages",
+    "eleventy-plugin-local-images": "^0.3.0",
+    "eslint-utils": "^2.0.0",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.4",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "postcss-color-mix": "^1.1.0",
+    "postcss-comment": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nested": "^4.2.1",
+    "postcss-simple-vars": "^5.0.2",
+    "precss": "^4.0.0",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-reverentgeek": "^2.1.2"
+  }
+}

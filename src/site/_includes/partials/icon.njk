@@ -1,0 +1,15 @@
+{% macro icon(props) %}
+<svg
+	{% if props.width %}width="{{props.width}}"{% endif %}
+	{% if props.height %}height="{{props.height}}"{% endif %}
+    class="{{ props.class }}"
+    role="img"
+    aria-labelledby="{{ props.id if props.id else "link" }}-title"
+>
+    <title id="{{ props.id if props.id else "link" }}-title">{{ props.id if props.id else "link" }}</title>
+    <use
+        xlink:href="#{{ props.id if props.id else "link" }}"
+        fill="{{ color if color else "currentColor" }}"
+    ></use>
+</svg>
+{% endmacro %}
