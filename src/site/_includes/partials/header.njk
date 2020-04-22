@@ -4,9 +4,9 @@
 	{% if page.url == "/" %}
 	<img class="" src="{{ site.cover_image }}">
 	{% else %}
-	<div class="flex flex-1 items-center">
+	<div class="flex flex-1 items-start">
 		<a class="" {% if page.url == "/" %}aria-current="page"{% endif %} href="{{ site.url }}">
-			<img class="fill-current h-12 mr-2" style="min-width: 3rem;" src="{{ site.logo }}" alt="{{ site.title }}">
+			<img class="object-left object-scale-down h-10 lg:h-12 mr-2" src="{{ site.logo }}" alt="{{ site.title }}">
 		</a>
 	</div>
 	{% endif %}
