@@ -1,10 +1,41 @@
-<nav class="flex-auto items-center flex-wrap py-3">
-	<ul class="list-reset flex flex-wrap">
-	{% for item in site.navigation %}
-		<li class="mr-4">
-			<a class="font-semibold hover:text-blue-500 py-2 px-4" {% if page.url == item.url %}aria-current="page"{% endif %} href="{{ item.url }}">
-				{{ item.label }}
-			</a>
-		</li>
-	{% endfor %}
-</nav>
+	<label for="menu-toggle" class="flex flex-1 justify-end cursor-pointer lg:hidden block">
+		{{ icon({ id: 'burger', class: "", width: "20", height: "20" }) }}
+	</label>
+	<input type="checkbox" class="hidden" id="menu-toggle" />
+	<div class="hidden w-full lg:flex lg:flex-grow lg:items-center lg:w-auto" id="menu">
+		<nav class="w-full sm:block">
+			<ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+			{% for item in site.navigation %}
+				<li class="text-right">
+					<a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" {% if page.url == item.url %}aria-current="page"{% endif %} href="{{ item.url }}">
+						{{ item.label }}
+					</a>
+				</li>
+			{% endfor %}
+				<li class="text-right">
+					<ul class="list-reset flex-1 flex justify-end lg:mx-4">
+						<li class="ml-2">
+							<a class="inline-block rounded-full h-8 w-8 lg:h-10 lg:w-10 flex bg-blue-400" href="https://twitter.com/reverentgeek" target="_blank" rel="noopener noreferrer">
+								{{ icon({ id: 'twitter', class: "p-2" }) }}
+							</a>
+						</li>
+						<li class="ml-2">
+							<a class="inline-block rounded-full h-8 w-8 lg:h-10 lg:w-10 flex bg-gray-800" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
+								{{ icon({ id: 'github', class: "text-white p-2" }) }}
+							</a>
+						</li>
+						<li class="ml-2">
+							<a class="inline-block rounded-full h-8 w-8 lg:h-10 lg:w-10 flex bg-red-400" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
+								{{ icon({ id: 'instagram', class: "text-white p-2" }) }}
+							</a>
+						</li>
+						<li class="ml-2">
+							<a class="inline-block rounded-full h-8 w-8 lg:h-10 lg:w-10 flex bg-orange-400" href="https://feedly.com/i/subscription/feed/{{ site.url }}/rss/" target="_blank" rel="noopener noreferrer">
+								{{ icon({ id: 'rss', class: "p-2" }) }}
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>

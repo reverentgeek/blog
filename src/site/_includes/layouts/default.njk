@@ -53,11 +53,11 @@
         {{ site.codeinjection_head | safe if site.codeinjection_head }}
         {{ codeinjection_head | safe if codeinjection_head }}
     </head>
-    <body class="antialiased bg-gray-200">
+    <body class="antialiased">
 		{% include "partials/icons.njk" %}
 		{% include "partials/header.njk" %}
 
-		<main class="px-4 max-w-3xl bg-white mx-auto my-16 p-16">
+		<main class="px-8 max-w-4xl bg-white mx-auto py-8">
 			{% block content %}
 			{% endblock content %}
 		</main>
