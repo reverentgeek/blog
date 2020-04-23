@@ -5,7 +5,7 @@
 {% set codeinjection_foot = doc.codeinjection_foot %}
 
 {% block content %}
-    <article class="content">
+    <article class="content page-{{ doc.slug }}">
 		<h1 class="text-4xl font-bold">{{ title }}</h1>
         {% if doc.feature_image %}
             <figure class="post-feature-image">

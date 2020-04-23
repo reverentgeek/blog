@@ -204,3 +204,15 @@
 	@apply bg-gray-300 p-1;
 }
 
+.kg-gallery-row {
+	@apply flex;
+	.kg-gallery-image {
+		@apply p-2;
+	}
+}
+
+/* Page-specific styles */
+
+.page-portfolio .content-body img {
+	max-width: 300px;
+}
