@@ -16,7 +16,7 @@ I am so honored that [Daniel Glenn](https://twitter.com/DanielGlenn) reached out
 
 Here is the logo printed on a shirt and a sticker, which were given to attendees of the event.
 
-![t-shirt and sticker](/content/images/2017/04/IMG_3581.JPG)
+![t-shirt and sticker](/content/images/2017/04/IMG_3580.JPG)
 
 Here is the logo on one of the event posters.
 
