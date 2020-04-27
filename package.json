@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-reverentgeek-blog",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "Blog using Eleventy and Ghost",
+  "description": "The ReverentGeek Blog using Eleventy",
   "main": ".eleventy.js",
   "scripts": {
     "clean": "run-s clean:*",
@@ -21,23 +21,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TryGhost/eleventy-starter-ghost.git"
+    "url": "git+https://github.com/reverentgeek/blog.git"
   },
   "keywords": [
     "eleventy",
-    "ghost",
-    "starter",
-    "boilerplate",
     "static",
     "site",
-    "jamstack"
+		"jamstack",
+		"reverentgeek",
+		"blog"
   ],
-  "author": "David Darnes",
+  "author": "David Neal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TryGhost/eleventy-starter-ghost/issues"
+    "url": "https://github.com/reverentgeek/blog/issues"
   },
-  "homepage": "https://github.com/TryGhost/eleventy-starter-ghost#readme",
+  "homepage": "https://github.com/reverentgeek/blog#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.6",
