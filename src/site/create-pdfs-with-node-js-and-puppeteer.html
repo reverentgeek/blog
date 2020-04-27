@@ -1,0 +1,111 @@
+---
+title: "Create PDFs with Node.js and Puppeteer"
+featured_image: /content/images/2020/02/charter-example.jpg
+description: "I created an open source project to convert ChordPro text files into PDFs. Take a look at how I did it so you can create PDFs, too!"
+date: 2020-02-06
+tags: posts
+slug: create-pdfs-with-node-js-and-puppeteer
+layout: layouts/post.njk
+---
+
+<!--kg-card-begin: markdown--><p>I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and instruments. However, for a band to be successful, everyone needs to be on the <em>same page</em> or it just sounds like a mess.</p>
+<p>Come to think of it, I could make a lot of comparisons between a group of people that play well together in a band and a productive, highly-performing software team. But, I digress. Maybe another time!</p>
+<p>One way a band to be on the <em>same page</em> is to follow sheet music or chord charts.</p>
+<p>I recently updated a personal project named <a href="https://github.com/reverentgeek/charter">Charter</a> that uses Node.js to convert ChordPro formatted text files into PDF chord charts. It was a lot of fun!</p>
+<p>Now, you may be thinking,</p>
+<blockquote>
+<p>&quot;I'm not a musician or singer. Why do I care?&quot;</p>
+</blockquote>
+<p>Regardless of your personal need for chord charts, you might find the source code for this project useful. Here are a few things you might learn:</p>
+<ul>
+<li>Create a CLI app using Node.js and Yargs</li>
+<li>Load a text file and parse text</li>
+<li>Use Jest to test Node.js code</li>
+<li>Use handlebars to turn text into HTML</li>
+<li>Use Puppeteer to convert HTML into a PDF</li>
+</ul>
+<p>Regarding PDF rendering, I tried lots of solutions including <a href="https://wkhtmltopdf.org/">wkhtmltopdf</a>, <a href="https://www.npmjs.com/package/electron-pdf">electron-pdf</a>, <a href="https://phantomjs.org/">phantomjs</a>, <a href="https://stackoverflow.com/questions/46077392/additional-options-in-chrome-headless-print-to-pdf">automating Chrome</a> with command-line switches, and finally landed on using the latest version of <a href="https://developers.google.com/web/tools/puppeteer">Puppeteer</a>. Puppeteer supports a <a href="https://github.com/puppeteer/puppeteer/blob/v2.1.1/docs/api.md#pagepdfoptions">ton of options</a> for generating PDFs. There's a lot of untapped potential here for doing lots of cool things!</p>
+<h2 id="saveanywebpagetopdfusingnodejs">Save Any Web Page to PDF using Node.js</h2>
+<p>Assuming you already have <a href="https://nodejs.org">Node.js</a> installed, open your terminal or command line, create a new project folder, and initialize it.</p>
+<pre><code class="language-sh">mkdir pdf-test
+cd pdf-test
+npm init -y
+</code></pre>
+<p>Next, install Puppeteer as a dependency.</p>
+<pre><code class="language-sh">npm install puppeteer
+</code></pre>
+<p>Here is an example of how to use Puppeteer to turn the Google home page into a PDF. Create a new file named <code>index.js</code> and paste the following code.</p>
+<pre><code class="language-js">&quot;use strict&quot;;
+
+const puppeteer = require(&quot;puppeteer&quot;);
+
+(async () =&gt; {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto(&quot;https://google.com&quot;);
+  await page.pdf({ path: &quot;./google.pdf&quot;, format: &quot;Letter&quot; });
+  await browser.close();
+})();
+</code></pre>
+<p>Run the application using the following command.</p>
+<pre><code class="language-sh">node .
+</code></pre>
+<p>You can change URL to something else. However, keep in mind that some pages load dynamically with JavaScript, so without setting more options, the resulting PDF could appear incomplete.</p>
+<h2 id="convertalocalhtmlfiletopdf">Convert a Local HTML File to PDF</h2>
+<p>Puppeteer is not limited to loading web pages. You can also load local HTML files. This is how the Charter application creates a chord chart. The Charter app first parses a ChordPro text file, generates an HTML file, and then uses Puppeteer to render the HTML and save as a PDF.</p>
+<p>Create a new file named <code>sample.html</code> and paste the following HTML.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    * html,
+    body {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;p&gt;Yay! My own PDF generator!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Create a new file named <code>local.js</code> and paste the following code.</p>
+<pre><code class="language-js">&quot;use strict&quot;;
+
+const path = require(&quot;path&quot;);
+const puppeteer = require(&quot;puppeteer&quot;);
+
+(async () =&gt; {
+  const htmlFile = path.resolve(&quot;./sample.html&quot;);
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto(&quot;file://&quot; + htmlFile);
+  await page.pdf({ path: &quot;./sample.pdf&quot;, format: &quot;Letter&quot; });
+  await browser.close();
+})();
+</code></pre>
+<p>Next, run the code from the command line.</p>
+<pre><code class="language-sh">node local.js
+</code></pre>
+<p>You should now have your very own &quot;Hello World!&quot; PDF in your project folder!</p>
+<h2 id="createachordchartwithcharter">Create a Chord Chart with Charter</h2>
+<p>If you have Node.js 12.x or higher installed and want to take the CLI app for a spin, you can use <code>npx</code> to run the application directly. Of course, you will need a ChordPro text file to test. Here's an example, or you can find others on the Internet.</p>
+<pre><code class="language-text">{title: Amazing Grace}
+{artist: Words by: John Newton, John P. Rees}
+{artist: Music by: William W. Walker, Edwin Othello Excell}
+{key: G}
+{tempo: 90}
+{time: 3/4 }
+
+{comment: Verse 1}
+A - [G]mazing [G/D]grace  [D7]how  [Em]sweet [C]the   [G]sound
+That [G]saved a [G/D]wretch  [D/C]like    [G/B]me
+I [G]once was [G/B]lost but [C]now am  [G]found
+[G/B]Was   [Em]blind but [G/D]now    [D7]I    [G]see
+</code></pre>
+<p><code>npx</code> will take a little while to download the first time, due to Puppeteer using Chromium.</p>
+<pre><code class="language-sh">npx chord-charter -f amazing-grace.chordpro
+</code></pre>
+<p>I hope you find the project useful! Get out there and be awesome!</p>
+<!--kg-card-end: markdown-->

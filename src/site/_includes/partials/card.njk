@@ -2,17 +2,19 @@
 	<div class="mb-12">
 		<a class="" href="{{ post.url }}">
 			<header class="">
-				<div class="text-gray-500 uppercase text-sm">{{ post.published_at.toLocaleDateString(undefined, {year: "numeric", month: "long", day: "numeric" }) }}</div>
+				<div class="text-gray-500 uppercase text-sm">{{ post.data.date | postDate }}</div>
 				<h2 class="text-3xl font-medium">
-					{{ post.title }}
+					{{ post.data.title }}
 				</h2>
-				{% if post.feature_image %}
-					<img class="w-full h-auto my-2" src="{{ post.feature_image }}" alt="{{ post.title }}">
+				{% if post.data.featured_image %}
+					<img class="w-full h-auto my-2" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
 				{% endif %}
 			</header>
+			{% if post.data.description %}
 			<div class="">
-				<p>{{ post.excerpt }}</p>
+				<p>{{ post.data.description }}</p>
 			</div>
+			{% endif %}
 		</a>
 	</div>
 {% endmacro %}

@@ -1,0 +1,68 @@
+---
+title: "Makin' Bacon with Node.js, Hapi, and Vue"
+featured_image: /content/images/2018/10/makin-bacon-article.png
+description:
+date: 2018-07-18
+tags: posts
+slug: makin-bacon-with-node-js-hapi-and-vue
+layout: layouts/post.njk
+---
+
+<!--kg-card-begin: markdown--><p>I recently created a new demo for my <a href="https://speakerdeck.com/reverentgeek/node-dot-js-crash-course-kcdc-2018">Node.js Crash Course</a> talk that I've given at several conferences. This application is a &quot;bacon ipsum&quot; generator using <a href="https://nodejs.org/">Node.js</a>, <a href="https://hapijs.com/">Hapi</a>, and <a href="https://vuejs.org/">Vue</a>. I know I'm not the first to come up with the idea of a &quot;bacon ipsum&quot; generator, but I thought it'd be a fun project to create one in Node.js.</p>
+<p>API Requirements:</p>
+<ul>
+<li>Using a list of bacon names and other associated words...</li>
+<li>Return a specified number of paragraphs, maximum of 25</li>
+<li>Paragraphs should consist of between 3 to 6 sentences</li>
+<li>Each sentence should be capitalized</li>
+<li>A sentence should end with random punctuation, weighted towards more frequent use of periods</li>
+<li>A sentence should consist of between 4 to 12 unique words</li>
+</ul>
+<p>UI Requirements:</p>
+<ul>
+<li>Customer can choose to generate 1 to 21 &quot;pounds&quot; of bacon</li>
+<li>Customer can easily copy the generated text to their clipboard</li>
+</ul>
+<p><a href="https://node-bacon-generator.herokuapp.com/">See it in action!</a></p>
+<p>When you click on the &quot;Make the Bacon!&quot; button, the Vue application uses <a href="https://www.npmjs.com/package/axios">Axios</a> to call the API for bacon. When the API call returns, the Vue app updates its state with the array of paragraphs. This triggers re-rendering the UI to list the paragraphs and show the &quot;Copy to the clipboard!&quot; button.</p>
+<pre><code class="language-javascript">makeTheBacon: function() {
+  return axios
+    .get( &quot;/api/bacon/&quot; + this.numberOfPounds )
+    .then( res =&gt; ( this.paragraphs = res.data.paragraphs ) )
+},
+</code></pre>
+<h3 id="vuecomputedproperties">Vue computed properties</h3>
+<p>The Vue app uses a computed property, <code>hazBacon</code>, to show/hide the &quot;Copy to the clipboard!&quot; button based on there being any paragraphs of bacon text to display.</p>
+<p>When copying text to the clipboard, the Vue app uses another computed property, <code>paragraphText</code>, to join the array of paragraphs together into a single string.</p>
+<pre><code class="language-javascript">computed: {
+  paragraphText: function() {
+    return this.paragraphs.join( &quot;\n\n&quot; );
+  },
+  hazBacon: function() {
+    return this.paragraphs.length &gt; 0;
+  },
+  poundText: function() {
+    return this.numberOfPounds == 1 ? &quot;pound&quot; : &quot;pounds&quot;;
+  }
+},
+</code></pre>
+<h3 id="otherdependencies">Other dependencies</h3>
+<p>In addition to Node.js, Hapi, and Vue, here are the dependencies and plugins used by the project. Some of these are my current favorites for building Node.js applications.</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/vue-clipboard2">Vue-Clipboard2</a> - Vue component used to copy text to the clipboard</li>
+<li><a href="https://www.npmjs.com/package/axios">Axios</a> - HTTP client for browsers or Node.js</li>
+<li><a href="https://www.npmjs.com/package/fs-extra">fs-extra</a> - Promise-based file system module</li>
+<li><a href="https://www.npmjs.com/package/joi">Joi</a> - Object schema validation plugin for Hapi</li>
+<li><a href="https://www.npmjs.com/package/eslint">ESLint</a> - JavaScript linting</li>
+<li><a href="https://www.npmjs.com/package/nodemon">Nodemon</a> - Developer tool that automatically restarts the application when any change is made to source code</li>
+<li><a href="https://www.npmjs.com/package/boom">Boom</a> - Hapi plugin for returning errors</li>
+<li><a href="https://www.npmjs.com/package/hapi-pino">hapi-pino</a> - Pino logging plugin for Hapi</li>
+<li><a href="https://www.npmjs.com/package/inert">Inert</a> - Static resource plugin for Hapi</li>
+<li><a href="https://www.npmjs.com/package/lab">Lab</a> and <a href="https://www.npmjs.com/package/code">Code</a> - Test and assertion utilities for Hapi</li>
+</ul>
+<p><a alt="Check out the source!" href="https://github.com/reverentgeek/node-bacon-generator"><img src="/content/images/2018/07/check-out-the-source.png"></a></p>
+<p style="text-align:center">
+<a href="https://github.com/reverentgeek/node-bacon-generator">github.com/reverentgeek/node-bacon-generator</a>
+</p>
+<h3 id="happycomputering">Happy computering!</h3>
+<!--kg-card-end: markdown-->

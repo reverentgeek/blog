@@ -1,0 +1,58 @@
+{
+	"title": "ReverentGeek",
+	"url": "https://reverentgeek.com/",
+	"description": "Ramblings on bacon, drawing, and technology",
+	"feed": {
+		"subtitle": "Ramblings on faith, tech, music, and drawing.",
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"id": "https://reverentgeek.com/"
+	},
+	"author": {
+		"name": "David Neal",
+		"email": "david@reverentgeek.com"
+	},
+	"logo": "http://localhost:2368/content/images/2020/04/rg-logo.png",
+	"icon": "http://localhost:2368/content/images/2020/04/reverentgeek-v3-256-1.png",
+	"brand": null,
+	"cover_image": "http://localhost:2368/content/images/2020/04/rg-banner.jpg",
+	"facebook": null,
+	"twitter": "@reverentgeek",
+	"lang": "en",
+	"timezone": "America/New_York",
+	"ghost_head": "<!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-60841200-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-60841200-1');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />\n",
+	"ghost_foot": null,
+	"navigation": [
+		{
+			"label": "Home",
+			"url": "/"
+		},
+		{
+			"label": "About",
+			"url": "/about/"
+		},
+		{
+			"label": "Speaking",
+			"url": "/speaking/"
+		},
+		{
+			"label": "Illustrations",
+			"url": "/portfolio/"
+		},
+		{
+			"label": "Store",
+			"url": "/shop/"
+		}
+	],
+	"secondary_navigation": [],
+	"meta_title": null,
+	"meta_description": null,
+	"og_image": null,
+	"og_title": null,
+	"og_description": null,
+	"twitter_image": null,
+	"twitter_title": null,
+	"twitter_description": null,
+	"codeinjection_head": "<!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-60841200-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-60841200-1');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />\n",
+	"codeinjection_foot": null
+}
