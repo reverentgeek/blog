@@ -1,0 +1,88 @@
+---
+title: "Ahoy! Parse ye Node.js command args with yargs!"
+featured_image: 
+description:
+date: 2015-04-20
+tags: posts
+slug: ahoy-parse-ye-node-js-command-args-with-yargs
+layout: layouts/post.njk
+---
+
+<!--kg-card-begin: markdown--><p>Recently I was working on a code sample in Node.js and thought to meself, &quot;T'wouldn't it be grand to support me some command-line args for this here...&quot; or... something to that effect. So, with a quick Google off the port bow, I came across <a href="https://www.npmjs.com/package/yargs">yargs</a>.</p>
+<blockquote>
+<p>Yargs be a node.js library fer hearties tryin' ter parse optstrings. With yargs, ye be havin' a map that leads straight to yer treasure! Treasure of course, being a simple option hash.</p>
+</blockquote>
+<p>Yargs makes it easy to support command-line arguments for Node.js application. Check out the <a href="https://github.com/LeanKit/api-samples/tree/master/node-search">LeanKit search</a> sample application I created that uses yargs.</p>
+<h2 id="herebeaquickexampleforye">Here be a quick example for ye</h2>
+<p>Imagine we plan to create our own version of <a href="http://en.wikipedia.org/wiki/CURL">curl</a> named &quot;jurl&quot;, implemented in Node.js specifically for REST and JSON. Our first pass at the arguments we want to support might look like this:</p>
+<pre><code class="language-javascript">var options = require( &quot;yargs&quot; )
+	.usage( &quot;Usage: $0 &lt;url&gt; [-u \&quot;username\&quot;] [-p \&quot;password\&quot;] [--post] [--data \&quot;{key:value}\&quot;]&quot; )
+	.command( &quot;url&quot;, &quot;URL to request&quot;, { alias: &quot;url&quot; } )
+	.required( 1, &quot;URL is required&quot; )
+	.option( &quot;u&quot;, { alias: &quot;user&quot;, demand: false, describe: &quot;Username&quot;, type: &quot;string&quot; } )
+	.option( &quot;p&quot;, { alias: &quot;password&quot;, demand: false, describe: &quot;Password&quot;, type: &quot;string&quot; } )
+	.option( &quot;d&quot;, { alias: &quot;data&quot;, describe: &quot;Data to send as JSON&quot;, type: &quot;string&quot; } )
+	.option( &quot;get&quot;, { describe: &quot;Use HTTP GET&quot;, type: &quot;boolean&quot; } )
+	.option( &quot;post&quot;, { describe: &quot;Use HTTP POST&quot;, type: &quot;boolean&quot; } )
+	.option( &quot;put&quot;, { describe: &quot;Use HTTP PUT&quot;, type: &quot;boolean&quot; } )
+	.option( &quot;del&quot;, { describe: &quot;Use HTTP DELETE&quot;, type: &quot;boolean&quot; } )
+	.help( &quot;?&quot; )
+	.alias( &quot;?&quot;, &quot;help&quot; )
+	.example( &quot;$0 https://example.com/api/posts&quot;, &quot;Get a list of posts&quot; )
+	.example( &quot;$0 https://example.com/api/posts --post --data \&quot;{ 'title': 'Avast ye!', 'body': 'Thar be a post hyar!'}\&quot;&quot;, &quot;Create a new post&quot; )
+	.epilog( &quot;Copyright 2015 ReverentGeek&quot; )
+	.argv;
+
+// Get the URL from the first parameter
+var url = options._[ 0 ];
+
+// Make &quot;get&quot; the default if no verb is specified
+if ( !options.get &amp;&amp; !options.post &amp;&amp; !options.put &amp;&amp; !options.del ) {
+	options.get = true;
+}
+
+console.log( &quot;url:&quot;, url );
+console.log( &quot;options:&quot;, options );
+</code></pre>
+<p>Take a look at the command-line help yargs creates for ye.</p>
+<pre><code>$ node jurl --help
+Usage: jurl &lt;url&gt; [-u &quot;username&quot;] [-p &quot;password&quot;] [--post] [--data
+&quot;{key:value}&quot;]
+
+Commands:
+  url    URL to request                                                         
+
+Options:
+  -u, --user      Username                                              [string]
+  -p, --password  Password                                              [string]
+  -d, --data      Data to send as JSON                                  [string]
+  --get           Use HTTP GET                                         [boolean]
+  --post          Use HTTP POST                                        [boolean]
+  --put           Use HTTP PUT                                         [boolean]
+  --del           Use HTTP DELETE                                      [boolean]
+  -?, --help      Show help                                                     
+
+Examples:
+  jurl https://example.com/api/posts          Get a list of posts               
+  jurl https://example.com/api/posts          Create a new post                 
+  --post --data &quot;{ 'title': 'Avast                                             
+  ye!', 'body': 'Thar be a post hyar!'}&quot;                                       
+
+Copyright 2015 ReverentGeek
+</code></pre>
+<p>Running the given sample prints the following to the console.</p>
+<pre><code>$ node jurl http://example.com/api/posts
+url: http://example.com/api/posts
+options: { _: [ 'http://example.com/api/posts' ],
+  get: true,
+  post: false,
+  put: false,
+  del: false,
+  '$0': 'jurl',
+  u: undefined,
+  p: undefined,
+  d: undefined,
+  '?': undefined }
+</code></pre>
+<p>Hoist the mizzen, sail forth and blast ye command ARRRRGS to smithereens!</p>
+<!--kg-card-end: markdown-->

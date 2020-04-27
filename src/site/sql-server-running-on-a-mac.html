@@ -1,0 +1,140 @@
+---
+title: "SQL Server Running on a Mac?!"
+featured_image: /content/images/2019/02/doc-brown-shocked.jpg
+description:
+date: 2016-11-16
+tags: posts
+slug: sql-server-running-on-a-mac
+layout: layouts/post.njk
+---
+
+<!--kg-card-begin: markdown--><p>Dogs and cats living together, mass hysteria!</p>
+<h3 id="updateoct32017">[Update Oct 3, 2017]</h3>
+<p>This article has been updated to reflect changes in the latest <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes">General Availability (GA)</a> release of SQL Server for Linux.</p>
+<p>The 2016 Microsoft Connect(); event included a lot of interesting announcements. The one that really got my attention was <a href="https://techcrunch.com/2016/11/16/microsofts-sql-server-for-linux-is-now-available-for-testing/">SQL Server for Linux</a>. My first question, of course: Can I run this on my Mac?</p>
+<p>Yes.</p>
+<p>The answer (and an increasingly common answer, I might add) is <a href="https://www.docker.com/">Docker</a>. Here are the steps that worked for me.</p>
+<h2 id="installandconfiguredocker">Install and configure Docker</h2>
+<p>If you don't already have Docker installed, you'll need to <a href="https://docs.docker.com/docker-for-mac/">download and install it</a>.</p>
+<p>Next step, you'll need to increase Docker's available memory to 4GB or more.</p>
+<p><img src="/content/images/2016/11/update-docker-memory.gif" alt="Docker Memory"></p>
+<ol>
+<li>Docker -&gt; Preferences</li>
+<li>Increase Memory to at least 4GB</li>
+<li>Click <strong>Apply &amp; Restart</strong></li>
+</ol>
+<h2 id="getthedockerimage">Get the Docker image</h2>
+<p>Open a Terminal window, and download the latest <strong>SQL Server for Linux</strong> Docker image.</p>
+<pre><code class="language-bash">docker pull microsoft/mssql-server-linux:2017-latest
+</code></pre>
+<p>Now, launch an instance of the Docker image.</p>
+<pre><code class="language-bash">docker run -d --name name_your_container -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@55w0rd' -e 'MSSQL_PID=Developer' -p 1433:1433 microsoft/mssql-server-linux:2017-latest
+</code></pre>
+<p>You should now have SQL Server running on your Mac, ready for action!</p>
+<h3 id="afewnotesondockerparameters">A few notes on Docker parameters</h3>
+<ul>
+<li><code>-d</code>: this launches the container in daemon mode, so it runs in the background</li>
+<li><code>--name name_your_container</code>: give your Docker container a friendly name, which is useful for stopping and starting containers from the Terminal.</li>
+<li><code>-e 'ACCEPT_EULA=Y</code>: this sets an environment variable in the container named <code>ACCEPT_EULA</code> to the value <code>Y</code>. This is required to run SQL Server for Linux.</li>
+<li><code>-e 'SA_PASSWORD=P@55w0rd'</code>: this sets an environment variable for the <code>sa</code> database password. Set this to your own strong password. Also required.</li>
+<li><code> -e 'MSSQL_PID=Developer'</code>: this sets an environment variable to instruct SQL Server to run as the Developer Edition.</li>
+<li><code>-p 1433:1433</code>: this maps the local port 1433 to the container's port 1433. SQL Server, by default, listens for connections on TCP port 1433.</li>
+<li><code>microsoft/mssql-server-linux</code>: this final parameter tells Docker which image to use</li>
+</ul>
+<h3 id="tipgetkitematic">Tip: Get Kitematic</h3>
+<p>Kitematic is a nice desktop application for managing Docker containers. The first time you click <strong>Open Kitematic</strong>, it will prompt you to download and install it. You can then use Kitematic to view the output of your containers, manage their settings, etc.</p>
+<p><img src="/content/images/2016/11/kitematic-1.gif" alt=""></p>
+<p><img src="/content/images/2016/11/kitematic-2.gif" alt=""></p>
+<h2 id="itsrunningnowwhat">It's running, now what?</h2>
+<p><a href="https://www.npmjs.com/package/sql-cli">sql-cli</a> is a useful command-line tool for SQL Server. To use it, you'll need <a href="https://nodejs.org">Node.js</a>. Download and install Node.js, if you don't already have it.</p>
+<p>From the Terminal, install <code>sql-cli</code> globally, so you can use it anywhere.</p>
+<pre><code class="language-bash">npm install -g sql-cli
+</code></pre>
+<p>Next, connect to your SQL Server instance running in Docker.</p>
+<pre><code class="language-bash">mssql -u sa -p P@55w0rd
+</code></pre>
+<p>You can now query and execute SQL Server commands from the <code>mssql&gt;</code> prompt. Type <code>.quit</code> and press <strong>Enter</strong> to exit.</p>
+<h2 id="gettinganexistingsqldatabaseintodocker">Getting an existing SQL database into Docker</h2>
+<p>If you're like me, you have a SQL database you use for development you want to move to your new SQL container running on your Mac. I have good news.</p>
+<h3 id="option1restoreabackup">Option 1: restore a backup</h3>
+<p>Yes, you can restore a SQL backup file (<code>.bak</code>) created on Windows! You can start by creating a backup of your existing database using SQL Server Management Studio running on your Windows PC/Server.</p>
+<h4 id="1generateabackupfile">1. Generate a backup file</h4>
+<ol>
+<li>Right-click on your database</li>
+<li>Click Tasks -&gt; Back Up...</li>
+<li>Note where the backup file will be created, modify if necessary</li>
+<li>Click OK to generate backup file</li>
+</ol>
+<p><img src="/content/images/2017/10/backup-step-1.png" alt=""></p>
+<p><img src="/content/images/2017/10/backup-step-2.png" alt=""></p>
+<p>Next, locate the backup file on your Windows machine and copy the file to your Mac. The details of this step I leave to you, dear reader. I hope it's not too painful.</p>
+<h4 id="2restorethebackupfile">2. Restore the backup file</h4>
+<p>You'll need to use Docker commands from the Terminal to copy the backup file into the container, and restore the database.</p>
+<p><em>Note: Change the paths and names, such as <code>dogfood</code> and <code>container-name</code> to match the name of your database and Docker container.</em></p>
+<p>Step 1: Copy the <code>.bak</code> file into your Docker container.</p>
+<pre><code class="language-bash">docker cp ~/Downloads/sql/dogfood.bak container-name:/tmp/dogfood.bak
+</code></pre>
+<p>Step 2: Run SQL RESTORE</p>
+<pre><code class="language-bash">docker exec container-name /opt/mssql-tools/bin/sqlcmd -U sa -P P@55w0rd -Q &quot;RESTORE DATABASE [dogfood] FROM DISK='/tmp/dogfood.bak' WITH MOVE 'dogfood' TO '/var/opt/mssql/data/dogfood.mdf', MOVE 'dogfood_Log' TO '/var/opt/mssql/data/dogfood_Log.ldf' &quot;
+</code></pre>
+<p>Step 3: Verify your database is alive</p>
+<pre><code class="language-bash">docker exec container-name /opt/mssql-tools/bin/sqlcmd -U sa -P P@55w0rd -Q &quot;SELECT [name] FROM sys.databases&quot;
+</code></pre>
+<p>Ready to rock!</p>
+<h3 id="option2generatescripts">Option 2: generate scripts</h3>
+<p>Another option is to use <code>sql-cli</code> to run the scripts to recreate a database running in Docker.</p>
+<h4 id="1generatescripts">1. Generate scripts</h4>
+<p>First step is to use SQL Server Management Studio to generate scripts from an existing database.</p>
+<p>Right-click on your database, and choose Tasks -&gt; Generate Scripts...</p>
+<p><img src="/content/images/2016/11/generate-scripts-1-2.gif" alt=""></p>
+<p>I chose to separate my table and data scripts from my Views, Stored Procedures, User-Defined Functions, etc.</p>
+<p><img src="/content/images/2016/11/generate-scripts-2.gif" alt=""></p>
+<p>Next, click on <strong>Advanced</strong></p>
+<p><img src="/content/images/2016/11/generate-scripts-3.gif" alt=""></p>
+<p>I chose to &quot;Check for object existence,&quot; &quot;Script DROP and CREATE,&quot; and set &quot;Types of data to script&quot; to &quot;Schema and data.&quot;</p>
+<p>Checking for object existence and DROP/CREATE allows me to re-run the same script against an existing database, if I want to reset it back to its original state.</p>
+<p><img src="/content/images/2016/11/generate-scripts-4.gif" alt=""></p>
+<p>Choose a location to save your scripts. When finished, repeat the steps to script out your Views, Stored Procedures, and UDFs, if necessary.</p>
+<h4 id="2runthescriptsagainstyoursqlserverrunningindocker">2. Run the scripts against your SQL Server running in Docker</h4>
+<ul>
+<li>Copy the scripts you generated above to your Mac where you can easily get to them from the Terminal.</li>
+<li>Open a Terminal, and change to the folder where you placed the scripts.</li>
+<li>Now, connect to your SQL Server running in Docker using <code>sql-cli</code>, and make sure you are on <code>master</code></li>
+</ul>
+<pre><code class="language-bash">mssql&gt; use master
+</code></pre>
+<ul>
+<li>Create a new database</li>
+</ul>
+<pre><code class="language-bash">mssql&gt; CREATE DATABASE devdb
+</code></pre>
+<blockquote>
+<p>Note: Change <code>devdb</code> to match the name of the database you scripted. The generated scripts expect a database with that same name to exist.</p>
+</blockquote>
+<ul>
+<li>Change to the database we just created (change <code>devdb</code> to match your database name)</li>
+</ul>
+<pre><code class="language-bash">mssql&gt; use devdb
+</code></pre>
+<ul>
+<li>Run the generated scripts to create all the tables and populate them with data.</li>
+</ul>
+<pre><code class="language-bash">mssql&gt; .run script.sql
+</code></pre>
+<ul>
+<li>Repeat with the script that contains your other database objects, if necessary.</li>
+</ul>
+<p>You now have a copy of your database, running on your Mac, without the need for entire Windows VM!</p>
+<h2 id="furtherreading">Further reading...</h2>
+<ul>
+<li>
+<p>Use the <code>mssql</code> <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-vscode">Visual Studio Code extension</a> to connect and manage your database!</p>
+</li>
+<li>
+<p>Want to learn more about Docker, such as creating your own containers for your software projects? I highly recommend <a href="https://twitter.com/derickbailey">Derick Bailey's</a> awesome <a href="https://sub.watchmecode.net/guides/learn-docker/">Learn Docker Guide</a>.</p>
+</li>
+<li>
+<p>Microsoft's documentation: <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-docker">Run the SQL Server Docker image on Linux, Mac, or Windows</a></p>
+</li>
+</ul>
+<!--kg-card-end: markdown-->

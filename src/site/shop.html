@@ -16,170 +16,7 @@ layout: layouts/page.njk
 <p><a name="commission"></a></p>
 <h2 id="commissionadrawing">Commission a Drawing!</h2>
 <p>I draw avatars you can use for social media, blogs, presentations, business cards... whatever!</p>
-<!-- “Floating head” drawings are $50 each. You can send payment to [paypal.me/reverentgeek](https://paypal.me/reverentgeek). Forward your receipt and photo(s) you want turned into drawings to <david@reverentgeek.com>. -->
-<div id='product-component-1693ff1086b'></div>
-<script type="text/javascript">
-/*<![CDATA[*/
-
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'reverentgeek.myshopify.com',
-      apiKey: 'aed29b6a0c44f6cc2ff2bdbcb8e6d687',
-      appId: '6',
-    });
-
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: [1390434222157],
-        node: document.getElementById('product-component-1693ff1086b'),
-        moneyFormat: '%24%7B%7Bamount%7D%7D',
-        options: {
-  "product": {
-    "buttonDestination": "checkout",
-    "layout": "horizontal",
-    "variantId": "all",
-    "width": "100%",
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "variantTitle": false,
-      "description": true,
-      "buttonWithQuantity": false,
-      "quantity": false
-    },
-    "text": {
-      "button": "BUY NOW"
-    },
-    "styles": {
-      "product": {
-        "text-align": "left",
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
-          "margin-bottom": "50px"
-        }
-      },
-      "button": {
-        "background-color": "#3662d4",
-        ":hover": {
-          "background-color": "#3158bf"
-        },
-        ":focus": {
-          "background-color": "#3158bf"
-        }
-      },
-      "title": {
-        "font-size": "26px"
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15px"
-      }
-    }
-  },
-  "cart": {
-    "contents": {
-      "button": true
-    },
-    "styles": {
-      "button": {
-        "background-color": "#3662d4",
-        ":hover": {
-          "background-color": "#3158bf"
-        },
-        ":focus": {
-          "background-color": "#3158bf"
-        }
-      },
-      "footer": {
-        "background-color": "#ffffff"
-      }
-    }
-  },
-  "modalProduct": {
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "variantTitle": false,
-      "buttonWithQuantity": true,
-      "button": false,
-      "quantity": false
-    },
-    "styles": {
-      "product": {
-        "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0px",
-          "margin-bottom": "0px"
-        }
-      },
-      "button": {
-        "background-color": "#3662d4",
-        ":hover": {
-          "background-color": "#3158bf"
-        },
-        ":focus": {
-          "background-color": "#3158bf"
-        }
-      }
-    }
-  },
-  "toggle": {
-    "styles": {
-      "toggle": {
-        "background-color": "#3662d4",
-        ":hover": {
-          "background-color": "#3158bf"
-        },
-        ":focus": {
-          "background-color": "#3158bf"
-        }
-      }
-    }
-  },
-  "productSet": {
-    "styles": {
-      "products": {
-        "@media (min-width: 601px)": {
-          "margin-left": "-20px"
-        }
-      }
-    }
-  }
-}
-      });
-    });
-  }
-})();
-/*]]>*/
-</script>
-<!-- ![](/content/images/2018/05/0FBF6966-6BDA-4FBF-8F40-D1D0C51E24D6.jpeg)
-
-![](/content/images/2018/05/A04D74B0-A1D3-42F9-B5E8-B08920C90CB9.jpeg)
--->
-<div id='product-component-1577970180699'></div>
+<div id='collection-component-1583790257575'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -206,23 +43,32 @@ layout: layouts/page.njk
       storefrontAccessToken: 'aed29b6a0c44f6cc2ff2bdbcb8e6d687',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('product', {
-        id: '4458937745513',
-        node: document.getElementById('product-component-1577970180699'),
+      ui.createComponent('collection', {
+        id: '58943340621',
+        node: document.getElementById('collection-component-1583790257575'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
-          "margin-bottom": "50px"
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
         },
-        "text-align": "left"
-      },
-      "title": {
-        "font-size": "26px"
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
       },
       "button": {
         "font-size": "16px",
@@ -234,32 +80,16 @@ layout: layouts/page.njk
         "background-color": "#3662d4",
         ":focus": {
           "background-color": "#3158bf"
-        },
-        "padding-left": "26px",
-        "padding-right": "26px"
+        }
       },
       "quantityInput": {
         "font-size": "16px",
         "padding-top": "16px",
         "padding-bottom": "16px"
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15.299999999999999px"
       }
     },
-    "buttonDestination": "checkout",
-    "layout": "horizontal",
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "description": true
-    },
-    "width": "100%",
     "text": {
-      "button": "Buy now"
+      "button": "Add to cart"
     }
   },
   "productSet": {
@@ -296,9 +126,7 @@ layout: layouts/page.njk
         "background-color": "#3662d4",
         ":focus": {
           "background-color": "#3158bf"
-        },
-        "padding-left": "26px",
-        "padding-right": "26px"
+        }
       },
       "quantityInput": {
         "font-size": "16px",
@@ -425,51 +253,247 @@ layout: layouts/page.njk
 })();
 /*]]>*/
 </script>
-<div id='product-component-1554753819021'></div>
-<script type="text/javascript">
-    /*<![CDATA[*/
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: 'reverentgeek.myshopify.com',
-          storefrontAccessToken: 'aed29b6a0c44f6cc2ff2bdbcb8e6d687',
-        });
-
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('product', {
-            id: [3441507860557],
-            node: document.getElementById('product-component-1554753819021'),
-            moneyFormat: '${{amount}}',
-            options: {"product":{"buttonDestination":"checkout","layout":"horizontal","variantId":"all","width":"100%","contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"description":true,"buttonWithQuantity":false,"quantity":false},"text":{"button":"BUY NOW"},"styles":{"product":{"text-align":"left","@media (min-width: 601px)":{"max-width":"100%","margin-left":"0","margin-bottom":"50px"}},"button":{"background-color":"#3662d4",":hover":{"background-color":"#3158bf"},":focus":{"background-color":"#3158bf"}},"title":{"font-size":"26px"},"price":{"font-size":"18px"},"compareAt":{"font-size":"15px"}}},"cart":{"contents":{"button":true},"styles":{"button":{"background-color":"#3662d4",":hover":{"background-color":"#3158bf"},":focus":{"background-color":"#3158bf"}},"footer":{"background-color":"#ffffff"}}},"modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}},"button":{"background-color":"#3662d4",":hover":{"background-color":"#3158bf"},":focus":{"background-color":"#3158bf"}}}},"toggle":{"styles":{"toggle":{"background-color":"#3662d4",":hover":{"background-color":"#3158bf"},":focus":{"background-color":"#3158bf"}}}},"productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
-          });
-        });
-      }
-    })();
-    /*]]>*/
-</script>
 <p>Got an idea for something else? Send it to me at <a href="mailto:david@reverentgeek.com">david@reverentgeek.com</a>! I have drawn custom illustrations and artwork for events, conferences, meet-ups, advertising campaigns, books, and articles.</p>
 <p><a name="stickers"></a></p>
 <h2 id="stickers">Stickers!</h2>
-<p>Get my stickers on <a href="https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u">RedBubble</a>!</p>
+<div id='collection-component-1585057776152'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'reverentgeek.myshopify.com',
+      storefrontAccessToken: 'aed29b6a0c44f6cc2ff2bdbcb8e6d687',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '162187608169',
+        node: document.getElementById('collection-component-1585057776152'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "button": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#3158bf"
+        },
+        "background-color": "#3662d4",
+        ":focus": {
+          "background-color": "#3158bf"
+        }
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#3158bf"
+        },
+        "background-color": "#3662d4",
+        ":focus": {
+          "background-color": "#3158bf"
+        }
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      }
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {
+          "background-color": "#3158bf"
+        },
+        "background-color": "#3662d4",
+        ":focus": {
+          "background-color": "#3158bf"
+        }
+      },
+      "title": {
+        "color": "#4c4c4c"
+      },
+      "header": {
+        "color": "#4c4c4c"
+      },
+      "lineItems": {
+        "color": "#4c4c4c"
+      },
+      "subtotalText": {
+        "color": "#4c4c4c"
+      },
+      "subtotal": {
+        "color": "#4c4c4c"
+      },
+      "notice": {
+        "color": "#4c4c4c"
+      },
+      "currency": {
+        "color": "#4c4c4c"
+      },
+      "close": {
+        "color": "#4c4c4c",
+        ":hover": {
+          "color": "#4c4c4c"
+        }
+      },
+      "empty": {
+        "color": "#4c4c4c"
+      },
+      "noteDescription": {
+        "color": "#4c4c4c"
+      },
+      "discountText": {
+        "color": "#4c4c4c"
+      },
+      "discountIcon": {
+        "fill": "#4c4c4c"
+      },
+      "discountAmount": {
+        "color": "#4c4c4c"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#3662d4",
+        ":hover": {
+          "background-color": "#3158bf"
+        },
+        ":focus": {
+          "background-color": "#3158bf"
+        }
+      },
+      "count": {
+        "font-size": "16px"
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#4c4c4c"
+      },
+      "title": {
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "color": "#4c4c4c"
+      },
+      "fullPrice": {
+        "color": "#4c4c4c"
+      },
+      "discount": {
+        "color": "#4c4c4c"
+      },
+      "discountIcon": {
+        "fill": "#4c4c4c"
+      },
+      "quantity": {
+        "color": "#4c4c4c"
+      },
+      "quantityIncrement": {
+        "color": "#4c4c4c",
+        "border-color": "#4c4c4c"
+      },
+      "quantityDecrement": {
+        "color": "#4c4c4c",
+        "border-color": "#4c4c4c"
+      },
+      "quantityInput": {
+        "color": "#4c4c4c",
+        "border-color": "#4c4c4c"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+<p>Get more of my stickers on <a href="https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u">RedBubble</a>!</p>
 <a href="https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u">
     <img alt="Buy my stickers on RedBubble!" src="/content/images/2018/10/stickers-2018-10.jpg">
 </a>

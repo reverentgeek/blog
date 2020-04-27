@@ -1,0 +1,122 @@
+---
+title: "Scale Windows Services with RabbitMQ"
+featured_image: 
+description:
+date: 2011-11-30
+tags: posts
+slug: scale-windows-services-with-rabbitmq
+layout: layouts/post.njk
+---
+
+<!--kg-card-begin: markdown--><p>(Cross-posted to <a href="http://freshbrewedcode.com/davidneal/2011/11/30/scale-windows-services-with-rabbitmq/">FreshBrewedCode.com</a>)</p>
+<p>When I joined my current company, we had a mixed bag of Windows Services and scheduled tasks that processed images and video from various sources. For example, we had a service that polled mailboxes for emails, another that polled Facebook accounts, one that sent video off to be encoded, and so forth. Although there were shared libraries, there remained a lot of duplicated code. Most of these services were single-threaded, and were not designed to scale beyond a single instance. Since our platform must be able to respond to huge spikes of activity whenever there is breaking news or weather events, we needed to figure out a better mouse trap.</p>
+<p>Having attended a couple of Nashville .NET User Group lectures earlier in the year that touched on distributed architecture<a href="#ref1"><sup>[1]</sup></a>, I had a good start on where to begin. A message queue-based system seemed to be the obvious answer.</p>
+<h3><strong>Competing Consumers Message Pattern</strong></h3>
+The “competing consumers” pattern comes from&nbsp;<a href="http://www.amazon.com/Enterprise-Integration-Patterns-Designing-Deploying/dp/0321200683/ref=sr_1_1?ie=UTF8&amp;qid=1322663102&amp;sr=8-1">Enterprise Integration Patterns</a>, and describes a message-based system where multiple consumers listen to a single message queue, and only one consumer is allowed to process any given message. The beauty of using a message queue is it makes no difference if these consumers are multiple instances of an application (or threads) on the same machine, or spread across multiple physical machines. Leveraging this pattern with a message queue platform makes it almost trivial to create a system that provides load balancing, scalability, and redundancy. You remain focused on implementing the business logic required to process a single message.
+<h3><strong>Basic Pattern Implementation with RabbitMQ and C#</strong></h3>
+If you don't already have the RabbitMQ Server installed, go to the&nbsp;<a href="http://www.rabbitmq.com/download.html">RabbitMQ Downloads</a>&nbsp;page and click on the appropriate installation guide for your platform. If you are running Windows, you'll need to download and install<a href="http://www.erlang.org/download.html">Erlang</a>&nbsp;first. I also recommend you install the&nbsp;<a href="http://www.rabbitmq.com/management.html">management plugin</a>, which will give you a web-based UI for monitoring and managing RabbitMQ Server. &nbsp;You can easily add the latest RabbitMQ.Client .NET library to your Visual Studio project using&nbsp;<a href="http://nuget.org/List/Packages/RabbitMQ.Client">NuGet</a>. Or, see "Further Reading and Resources" below to download the compiled library and source code.
+<p>Let's dive into some code that demonstrates publishing and consuming messages. Here is the code for the <strong>server/publisher</strong>:</p>
+<pre><code class="language-prettyprint">// Set up the RabbitMQ connection and channel
+var connectionFactory = new ConnectionFactory
+{
+	HostName = &quot;localhost&quot;,
+	Port = 5672,
+	UserName = &quot;guest&quot;,
+	Password = &quot;guest&quot;,
+	Protocol = Protocols.AMQP_0_9_1,
+	RequestedFrameMax = UInt32.MaxValue,
+	RequestedHeartbeat = UInt16.MaxValue
+};
+
+using (var connection = connectionFactory.CreateConnection())
+using (var channel = connection.CreateModel())
+{
+	// Create a new, durable exchange
+	channel.ExchangeDeclare(&quot;sample-ex&quot;, ExchangeType.Direct, true, false, null);
+	// Create a new, durable queue
+	channel.QueueDeclare(&quot;sample-queue&quot;, true, false, false, null);
+	// Bind the queue to the exchange
+	channel.QueueBind(&quot;sample-queue&quot;, &quot;sample-ex&quot;, &quot;optional-routing-key&quot;);
+
+	// Set up message properties
+	var properties = channel.CreateBasicProperties();
+	properties.DeliveryMode = 2; // Messages are persistent and will survive a server restart
+
+	// Ready to start publishing
+	// The message to publish can be anything that can be serialized to a byte array,
+	// such as a serializable object, an ID for an entity, or simply a string
+	var encoding = new UTF8Encoding();
+	for (var i = 0; i &amp;lt; 10; i++)
+	{
+		var msg = string.Format(&quot;This is message #{0}?&quot;, i+1);
+		var msgBytes = encoding.GetBytes(msg);
+		channel.BasicPublish(&quot;sample-ex&quot;, &quot;optional-routing-key&quot;, false, false, properties, msgBytes);
+	}
+	channel.Close();
+}
+Console.WriteLine(&quot;Messages published&quot;);
+Console.ReadKey(true);
+</code></pre>
+<p>And here is the code for the <strong>client/consumer</strong>:</p>
+<pre><code class="language-prettyprint">// Set up the RabbitMQ connection and channel
+var connectionFactory = new ConnectionFactory
+{
+	HostName = &quot;localhost&quot;,
+	Port = 5672,
+	UserName = &quot;guest&quot;,
+	Password = &quot;guest&quot;,
+	Protocol = Protocols.AMQP_0_9_1,
+	RequestedFrameMax = UInt32.MaxValue,
+	RequestedHeartbeat = UInt16.MaxValue
+};
+
+using (var connection = connectionFactory.CreateConnection())
+using (var channel = connection.CreateModel())
+{
+	// This instructs the channel not to prefetch more than one message
+	channel.BasicQos(0, 1, false);
+
+	// Create a new, durable exchange
+	channel.ExchangeDeclare(&quot;sample-ex&quot;, ExchangeType.Direct, true, false, null);
+	// Create a new, durable queue
+	channel.QueueDeclare(&quot;sample-queue&quot;, true, false, false, null);
+	// Bind the queue to the exchange
+	channel.QueueBind(&quot;sample-queue&quot;, &quot;sample-ex&quot;, &quot;optional-routing-key&quot;);
+
+	using (var subscription = new Subscription(channel, &quot;sample-queue&quot;, false))
+	{
+		Console.WriteLine(&quot;Waiting for messages...&quot;);
+		var encoding = new UTF8Encoding();
+		while (channel.IsOpen)
+		{
+			BasicDeliverEventArgs eventArgs;
+			var success = subscription.Next(2000, out eventArgs);
+			if (success == false) continue;
+			var msgBytes = eventArgs.Body;
+			var message = encoding.GetString(msgBytes);
+			Console.WriteLine(message);
+			channel.BasicAck(eventArgs.DeliveryTag, false);
+		}
+	}
+}
+</code></pre>
+<p>The first key step to implementing the pattern is to declare a <strong>direct</strong> exchange, which will publish messages to a single message queue based on routing information. The commonly-used <strong>fanout</strong> exchange broadcasts messages to every message queue bound to the exchange.</p>
+<p>The second key step is configuring the consumer channel's <strong>BasicQos</strong> setting so that it only fetches one message off the queue at a time. If this is not set, then a single consumer could essentially put a hold on all the messages currently waiting in the queue so that none of the other consumers can access them. The messages will remain in a &quot;consumed&quot; but unacknowledged state until they are processed by the one consumer, totally defeating the purpose of implementing this pattern! There's not a lot of documentation available on configuring BasicQos, so I had to figure out this requirement the hard way.</p>
+<p>The last step is to acknowledge that the message has been processed, allowing the RabbitMQ server to delete the message from the queue, and the consumer to pick up the next available message.</p>
+<h4>Running the Sample Code</h4>
+<ol>
+<li><a href="https://github.com/reverentgeek/RabbitMQSamples">Download the sample project</a>.</li>
+<li>Load and build the solution.</li>
+<li>Launch two or more command prompts to be used as consumers.</li>
+<li>Change the current directory of each command prompt to <code>[your-project-root]\CompetingConsumers.Consumer\bin\Debug</code> and launch <code>CompetingConsumers.Consumer.exe</code></li>
+<li>In Visual Studio, press F5 to launch CompetingConsumers.Publisher.</li>
+</ol>
+<h3>Further Reading and Resources</h3>
+Hopefully this brief introduction has wet your appetite for further exploration into messaging and RabbitMQ. Here are a few links to get you down the road a bit further.
+<ul>
+	<li>The official RabbitMQ .NET&nbsp;<a href="http://www.rabbitmq.com/dotnet.html">library and documentation</a>.</li>
+	<li>Don't let the title scare you.&nbsp;<a href="http://www.rabbitmq.com/tutorials/amqp-concepts.html">"AMQP 0-9-1 Model Explained"</a>&nbsp;is a concise introduction to the messaging protocol that RabbitMQ is based upon, and essential reading for understanding the fundamentals of RabbitMQ.</li>
+	<li>The official RabbitMQ .NET&nbsp;<a href="https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/dotnet">Getting Started tutorial code</a>.</li>
+	<li><em><a href="http://www.manning.com/videla/">RabbitMQ in Action</a></em>&nbsp;by Alvaro Videla and Jason J.W. Williams. You can download chapter 1 for free, which provides a great introduction to the history of messaging and some of the advantages of RabbitMQ over other messaging platforms.</li>
+</ul>
+<a name="ref1"></a><sup>[1]</sup>&nbsp;The two Nashville .NET User Group lectures I had attended were&nbsp;<a href="http://freshbrewedcode.com/bryanhunter/">Bryan Hunter</a>’s talk on Command Query Responsibility Segregation (<a href="http://www.cqrsinfo.com/">CQRS</a>), and&nbsp;<a href="http://freshbrewedcode.com/alexrobson/">Alex Robson</a>&nbsp;and&nbsp;<a href="http://freshbrewedcode.com/jimcowart/">Jim Cowart</a>’s&nbsp;<a href="http://nashdotnet.org/2011/05/may-12-2011-alex-robson-jim-cowart-introduction-to-symbiote/">Introduction to Symbiote</a>. I could extol the benefits of being involved in your local developer community, but that could be its own post for another day.<!--kg-card-end: markdown-->
