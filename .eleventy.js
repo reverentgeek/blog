@@ -25,7 +25,7 @@ module.exports = function( config ) {
 
 	// Apply performance attributes to images
 	config.addPlugin( lazyImages, {
-		cacheFile: "",
+		cacheFile: ".lazyimages.json",
 		transformImgPath: ( imgPath ) => {
 			if ( imgPath.startsWith( "/" ) && !imgPath.startsWith( "//" ) ) {
 				return `./src/site${ imgPath }`;

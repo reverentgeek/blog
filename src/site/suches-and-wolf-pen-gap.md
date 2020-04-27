@@ -18,7 +18,7 @@ I turn on to Highway 411 at Tennga, and head North for Highway 64. Highway 64 fo
 
 Being this cold and early in the morning, I don't expect to see other riders. To my surprise, I pass a couple on a trike, and we exchange greetings (aka "the wave").
 
-[![Ocoee](https://lh6.googleusercontent.com/-DTAF-zuGP_A/VSA6qW3GfkI/AAAAAAAADLE/mNuOWLBnL9M/w1766-h1324-no/IMG_5930.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967191844224578?pid=6133967191844224578&oid=117556739981260756118)  
+[![Ocoee](/content/images/suches-and-wolf-pen-gap/IMG_5930.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967191844224578?pid=6133967191844224578&oid=117556739981260756118)  
   
 _When the season turns warmer, the Ocoee River will be a raging torrent of water, and full of kayaks and white water rafters. In this photo you can see the old observation walkway built for the 1996 Olympics._
 
@@ -26,7 +26,7 @@ At Ducktown, I get on Highway 68 and head south. I enter Copperhill, which seems
 
 In Blue Ridge, I stop for breakfast at Dunkin' Donuts. I'm always on the lookout for bacon and caffeine, and I know I need plenty of fuel for this trip.
 
-[![Bacon and Caffeine](https://lh6.googleusercontent.com/-5awuNN5yPWg/VSA6olkGN4I/AAAAAAAADLI/-3FTYVZ5vaI/w1766-h1324-no/IMG_5938.JPG)](https://plus.google.com/u/0/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967161431308162?pid=6133967161431308162&oid=117556739981260756118)  
+[![Bacon and Caffeine](/content/images/suches-and-wolf-pen-gap/IMG_5938.JPG)](https://plus.google.com/u/0/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967161431308162?pid=6133967161431308162&oid=117556739981260756118)  
   
 _Mmm... bacon and caffeine_
 
@@ -34,9 +34,9 @@ _Mmm... bacon and caffeine_
 
 Having discovered Highway 60 on a previous trip, I was anxiously looking forward to this moment. It is one of the most beautiful and fun stretches of road I have ever ridden. Highway 60 alternates between rolling, lush valleys and thrilling switchbacks across ridges to keep you on your toes.
 
-[![Twistie near Suches](https://lh6.googleusercontent.com/-GP2ShumKxzQ/VSA63pcXTcI/AAAAAAAADJU/R_yUs64acOQ/w2004-h578-no/IMG_5940.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967420170653122?pid=6133967420170653122&oid=117556739981260756118)
+[![Twistie near Suches](/content/images/suches-and-wolf-pen-gap/IMG_5940.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967420170653122?pid=6133967420170653122&oid=117556739981260756118)
 
-[![Breathtaking valley](https://lh6.googleusercontent.com/-thCcCzv6eyk/VSA6xNnuGhI/AAAAAAAADJk/h2utobyBJoo/w2002-h608-no/IMG_5943.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967309622876690?pid=6133967309622876690&oid=117556739981260756118)
+[![Breathtaking valley](/content/images/suches-and-wolf-pen-gap/IMG_5943.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967309622876690?pid=6133967309622876690&oid=117556739981260756118)
 
 ## Wolf Pen Gap
 
@@ -50,7 +50,7 @@ Whenever I see two dudes dressed in identical tights pedaling up a mountain, I l
 > "Wilfred, my good man. I just blew a heart valve, and about 3 miles back I lost the ability to father children. I say we press on."
 > "Jolly good!"
 
-[![Lake Winfield Scott](https://lh6.googleusercontent.com/-K1La4QirPnY/VSA6vebA1lI/AAAAAAAADKg/iU3t4CplynY/w1766-h1324-no/IMG_5945.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967279773242962?pid=6133967279773242962&oid=117556739981260756118)  
+[![Lake Winfield Scott](/content/images/suches-and-wolf-pen-gap/IMG_5945.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967279773242962?pid=6133967279773242962&oid=117556739981260756118)  
   
 _Lake Winfield Scott on Wolf Pen Gap_
 
@@ -58,11 +58,11 @@ _Lake Winfield Scott on Wolf Pen Gap_
 
 Turning south on Highway 129, I make an unexpected find: the [Mountain Crossings](https://www.mountaincrossings.com/Articles.asp?ID=253) store at Walasi-Yi Inn. I talk to a couple of hikers and learn this store and hostel is directly on the Appalachian Trail. This is the famous store that helps hikers who are just a few days into their northbound journey on the AT. After climbing Blood Mountain at an elevation of 4,400 feet, hikers have a chance to rest, get a hot shower, drop off mail, and stock up on supplies and good advice.
 
-[![Boots](https://lh6.googleusercontent.com/-Kdu0fpjZUME/VSA66wzWq6I/AAAAAAAADI0/0cbM04q3Azc/w1766-h1324-no/IMG_5954.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967473685736354?pid=6133967473685736354&oid=117556739981260756118)  
+[![Boots](/content/images/suches-and-wolf-pen-gap/IMG_5954.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967473685736354?pid=6133967473685736354&oid=117556739981260756118)  
   
 _Mountain Crossing serves more than 2,000 AT hikers each year. Abandoned boots hang from the rafters._
 
-[![View from Walasi-Yi](https://lh6.googleusercontent.com/-mlHzqIAw2Ec/VSA66WrKtKI/AAAAAAAADI4/SvnlJbZA3e4/w1778-h1334-no/IMG_5951.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967466672075938?pid=6133967466672075938&oid=117556739981260756118)  
+[![View from Walasi-Yi](/content/images/suches-and-wolf-pen-gap/IMG_5951.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967466672075938?pid=6133967466672075938&oid=117556739981260756118)  
   
 _View from Walasi-Yi_
 
@@ -76,11 +76,11 @@ I really want to stay around in Dahlonega and check out the historic downtown. B
 
 At last. The moment I've been waiting for. I finally arrive at [Poole's Real Pit BBQ](http://www.poolesbarbq.com/), the self-labeled "Taj-ma-hog" of BBQ. Ever since seeing the "pig hill of fame" from Highway 515, I've wanted to try their BBQ. It did not disappoint.
 
-[![The Pig Hill of Fame](https://lh6.googleusercontent.com/-x7rER_5uBpo/VSA7Gl67HjI/AAAAAAAADIY/WKz9SEP3ums/w1766-h1324-no/IMG_5973.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967676923125298?pid=6133967676923125298&oid=117556739981260756118)  
+[![The Pig Hill of Fame](/content/images/suches-and-wolf-pen-gap/IMG_5973.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967676923125298?pid=6133967676923125298&oid=117556739981260756118)  
   
 _The Pig Hill of Fame_
 
-[![Ribs](https://lh6.googleusercontent.com/-ztl0hO8Kysk/VSA7LE_EcOI/AAAAAAAADK4/fSnVM-Qb0sU/w1766-h1324-no/IMG_5978.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967753981489378?pid=6133967753981489378&oid=117556739981260756118)  
+[![Ribs](/content/images/suches-and-wolf-pen-gap/IMG_5978.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967753981489378?pid=6133967753981489378&oid=117556739981260756118)  
   
 _Ribs, slaw, brunswick stew, and garlic toast_
 
@@ -92,7 +92,7 @@ Unfortunately, there's more food on my plate than my motorcycle pants will agree
 
 After some critical adjustments to the velcro straps at my waist, I hop back on Highway 52 to cross over the Cohutta Wilderness Area to Chatsworth, GA. Near the top, I pull off for an overlook. It's a short hike, and my full belly complains, but the view is well worth the effort.
 
-[![Overlook](https://lh4.googleusercontent.com/-18YA0Pl56dc/VSA7WK023vI/AAAAAAAADKM/wag4Q7zG9Ns/w2004-h594-no/IMG_5986.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967944527830770?pid=6133967944527830770&oid=117556739981260756118)
+[![Overlook](/content/images/suches-and-wolf-pen-gap/IMG_5986.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967944527830770?pid=6133967944527830770&oid=117556739981260756118)
 
 ## Smiles per gallon
 

@@ -38,7 +38,7 @@ Want to use some of my illustrations? Go for it! I simply ask you [give attribut
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+[![Creative Commons License](/content/images/cant-stop-the-doodles/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 ## Doodle for Hire

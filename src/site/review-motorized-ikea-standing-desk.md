@@ -1,6 +1,6 @@
 ---
 title: "Review: Motorized IKEA Standing Desk"
-featured_image: /content/images/2015/05/ikea_standing_desk-1.jpg
+featured_image: /content/images/2015/05/ikea_standing_desk.jpg
 description: ""
 date: 2015-05-26
 tags: posts
