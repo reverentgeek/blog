@@ -137,6 +137,10 @@
 	display: block;
 }
 
+.content .post-feature-image {
+	@apply mb-8;
+}
+
 .content-body {
 	h2 {
 		@apply text-3xl font-bold mt-6 mb-2;

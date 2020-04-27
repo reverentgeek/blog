@@ -1,21 +1,23 @@
 ---
 title: "Buy My Stuff!"
 featured_image: /content/images/2019/03/buy-my-stuff.jpg
-description:
+description: ""
 date: 2018-05-19
 tags: page
 slug: shop
 layout: layouts/page.njk
 ---
 
-<!--kg-card-begin: markdown--><ul>
-<li><a href="#commission">Commission a Drawing!</a></li>
-<li><a href="#stickers">Stickers!</a></li>
-<li><a href="#tshirts">T-Shirts!</a></li>
-</ul>
-<p><a name="commission"></a></p>
-<h2 id="commissionadrawing">Commission a Drawing!</h2>
-<p>I draw avatars you can use for social media, blogs, presentations, business cards... whatever!</p>
+* [Commission a Drawing!](#commission)
+* [Stickers!](#stickers)
+* [T-Shirts!](#tshirts)
+
+<a name="commission"></a>
+
+## Commission a Drawing!
+
+I draw avatars you can use for social media, blogs, presentations, business cards... whatever!
+
 <div id='collection-component-1583790257575'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -253,9 +255,12 @@ layout: layouts/page.njk
 })();
 /*]]>*/
 </script>
-<p>Got an idea for something else? Send it to me at <a href="mailto:david@reverentgeek.com">david@reverentgeek.com</a>! I have drawn custom illustrations and artwork for events, conferences, meet-ups, advertising campaigns, books, and articles.</p>
-<p><a name="stickers"></a></p>
-<h2 id="stickers">Stickers!</h2>
+
+Got an idea for something else? Send it to me at [david@reverentgeek.com](mailto:david@reverentgeek.com)! I have drawn custom illustrations and artwork for events, conferences, meet-ups, advertising campaigns, books, and articles.
+
+<a name="stickers"></a>
+<h2>Stickers!</h2>
+
 <div id='collection-component-1585057776152'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -493,13 +498,17 @@ layout: layouts/page.njk
 })();
 /*]]>*/
 </script>
-<p>Get more of my stickers on <a href="https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u">RedBubble</a>!</p>
-<a href="https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u">
-    <img alt="Buy my stickers on RedBubble!" src="/content/images/2018/10/stickers-2018-10.jpg">
-</a>
-<p><a name="tshirts"></a></p>
-<h2 id="tshirts">T-Shirts!</h2>
-<p>Get my t-shirts on <a href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&amp;field-keywords=reverentgeek">Amazon</a>!</p>
-<a href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=reverentgeek">
-    <img alt="Buy my t-shirts on Amazon!" src="/content/images/2018/08/F0B665BD-B73C-427F-B56B-1C2BAC415AD6.jpeg">
-</a><!--kg-card-end: markdown-->
+
+Get more of my stickers on [RedBubble](https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u)!
+
+ [![Buy my stickers on RedBubble!](/content/images/2018/10/stickers-2018-10.jpg)](https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u)
+
+<a name="tshirts"></a>
+## T-Shirts!
+
+Get my t-shirts on [Amazon](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=reverentgeek)!
+
+[![Buy my t-shirts on Amazon!](/content/images/2018/08/F0B665BD-B73C-427F-B56B-1C2BAC415AD6.jpeg)](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=reverentgeek)
+
+
+
