@@ -10,8 +10,13 @@ permalink: 404.html
 {% set title = "Error 404" %}
 
 {% block content %}
-    <article class="content" style="text-align:center">
-        <h1 class="content-title">Error 404</h1>
-        <section class="content-body">Page not found, <a href="/">return home</a> to start over</section>
+    <article class="content text-center">
+        <h1 class="text-3xl font-medium">Oh Noes!</h1>
+		<figure class="post-feature-image">
+			<img src="/content/images/404.jpg" alt="404 oh noes!">
+		</figure>
+		<section class="content-body">
+			<p><a href="/">Return home</a> to start over!</p>
+		</section>
     </article>
 {% endblock %}

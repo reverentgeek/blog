@@ -1,21 +1,21 @@
 {
 	"title": "ReverentGeek",
-	"url": "https://reverentgeek.com/",
+	"url": "https://reverentgeek.com",
 	"description": "Ramblings on bacon, drawing, and technology",
 	"feed": {
 		"subtitle": "Ramblings on faith, tech, music, and drawing.",
 		"filename": "feed.xml",
 		"path": "/feed/feed.xml",
-		"id": "https://reverentgeek.com/"
+		"id": "https://reverentgeek.com"
 	},
 	"author": {
 		"name": "David Neal",
 		"email": "david@reverentgeek.com"
 	},
-	"logo": "http://localhost:2368/content/images/2020/04/rg-logo.png",
-	"icon": "http://localhost:2368/content/images/2020/04/reverentgeek-v3-256-1.png",
+	"logo": "/content/images/2020/04/rg-logo.png",
+	"icon": "/content/images/2020/04/reverentgeek-v3-256-1.png",
 	"brand": null,
-	"cover_image": "http://localhost:2368/content/images/2020/04/rg-banner.jpg",
+	"cover_image": "/content/images/2020/04/rg-banner.jpg",
 	"facebook": null,
 	"twitter": "@reverentgeek",
 	"lang": "en",
