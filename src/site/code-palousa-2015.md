@@ -29,9 +29,7 @@ I really enjoyed giving my ["Do you even Kanban?"](http://www.slideshare.net/rev
 >
 > — Jared Faris (@JaredTheNerd) [April 29, 2015](https://twitter.com/JaredTheNerd/status/593435651586002944)
 
-One thing I found out on this trip is the [Louisville Mega Cavern](http://www.louisvillemegacavern.com/). It's a limestone quarry turned into an underground park with zip lines, ropes course, and **17** miles of bike trails! Next time I come to Louisville, I must check this out!
-
-![](http://www.louisvillemegacavern.com/res/uploads/pages/gallery/full/D8A6043.jpg)
+One thing I found out on this trip is the [Louisville Mega Cavern](https://louisvillemegacavern.com/). It's a limestone quarry turned into an underground park with zip lines, ropes course, and **17** miles of bike trails! Next time I come to Louisville, I must check this out!
 
 Thanks Code PaLOUsa for another great conference! Thank you for the support and opportunities to speak! See you all again next time!
 

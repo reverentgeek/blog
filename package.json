@@ -27,9 +27,9 @@
     "eleventy",
     "static",
     "site",
-		"jamstack",
-		"reverentgeek",
-		"blog"
+    "jamstack",
+    "reverentgeek",
+    "blog"
   ],
   "author": "David Neal",
   "license": "MIT",
@@ -41,16 +41,12 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.6",
     "@fullhuman/postcss-purgecss": "^2.1.2",
-    "@tryghost/content-api": "^1.2.5",
-    "@tryghost/helpers": "^1.1.6",
     "autoprefixer": "^9.7.6",
     "clean-css": "^4.2.1",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "dotenv": "^8.0.0",
     "eleventy-plugin-lazyimages": "liamfiddler/eleventy-plugin-lazyimages",
-    "eleventy-plugin-local-images": "^0.3.0",
-    "eslint-utils": "^2.0.0",
     "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^1.12.4",
@@ -68,7 +64,6 @@
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "debug": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-reverentgeek": "^2.2.0"
   }
