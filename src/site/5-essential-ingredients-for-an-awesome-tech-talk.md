@@ -1,14 +1,12 @@
 ---
 title: "5 Essential Ingredients for an Awesome Tech Talk"
 featured_image: /content/images/2019/03/the-tech-talk-handbook.jpg
-description: ""
+description: "Here are five essential ingredients for delivering an awesome tech talk!"
 date: 2018-01-01
 tags: posts
 slug: 5-essential-ingredients-for-an-awesome-tech-talk
 layout: layouts/post.njk
 ---
-
-
 
 I believe one of the big reasons people are afraid of public speaking (or writing) is [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome). You may think...
 

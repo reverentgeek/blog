@@ -12,7 +12,12 @@ pagination:
 {% set title = "Home" %}
 
 {% block content %}
-    <section class="">
+	{# <section class="">
+		<div>Hi, I'm David! I write software, draw illustrations, play guitar, make videos, and speak at conferences all over the world!</div>
+		<button>About Me</button>
+		<button>Contact Me</button>
+	</section> #}
+    <section class="post-list">
         {% for post in posts %}
 			{{ card(post) }}
         {% endfor %}

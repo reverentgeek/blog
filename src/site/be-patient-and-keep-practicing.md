@@ -1,14 +1,12 @@
 ---
 title: "Be Patient and Keep Practicing"
 featured_image: 
-description: ""
+description: "I believe you can accomplish far more than you realize. Don't give up! Here are some thoughts to encourage you."
 date: 2017-09-15
 tags: posts
 slug: be-patient-and-keep-practicing
 layout: layouts/post.njk
 ---
-
-
 
 You've probably seen the [ShamWow meme](http://knowyourmeme.com/memes/vince-shlomi-shamwow-slap-chop). You know, the classic, cheesy infomercial guy.
 

@@ -1,14 +1,12 @@
 ---
 title: "Ahoy! Parse ye Node.js command args with yargs!"
 featured_image: 
-description: ""
+description: "A quick introduction on how to create a command line interface (CLI) using Node.js and yargs."
 date: 2015-04-20
 tags: posts
 slug: ahoy-parse-ye-node-js-command-args-with-yargs
 layout: layouts/post.njk
 ---
-
-
 
 Recently I was working on a code sample in Node.js and thought to meself, "T'wouldn't it be grand to support me some command-line args for this here..." or... something to that effect. So, with a quick Google off the port bow, I came across [yargs](https://www.npmjs.com/package/yargs).
 

@@ -1,14 +1,12 @@
 ---
 title: "Blazon for Technical Presentations and Training"
 featured_image: 
-description: ""
+description: "My review of Blazon, an online presentation tool."
 date: 2014-05-01
 tags: posts
 slug: blazon-for-technical-presentations-and-training
 layout: layouts/post.njk
 ---
-
-
 
 I recently switched to using [Blazon](https://presentboldly.com/) for all my presentations, and I couldn't be happier. Here are some of my favorite features:
 
@@ -54,12 +52,8 @@ Blazon allows you to download your entire presentation as a self-contained web p
 Currently in beta, there are a number of features coming to Blazon that make it _the_ tool for speakers and training professionals.
 
 * **Remote Control:** Start a presentation and drive it with your phone or tablet. Your speaker notes appear also appear on your device!
-
 * **Audience Follow Along:** Give your audience a URL they can use to follow along with your presentation. They can go back and view previous slides, but they can't jump ahead of you!
 
 ## No-Brainer
 
 Blazon is destined to become the best tool for technical presentations and training. Don't waste any more time coercing PowerPoint or Keynote.
-
-
-

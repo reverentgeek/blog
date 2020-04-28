@@ -1,7 +1,7 @@
 ---
 title: "My Most Embarrassing Mistakes as a Programmer"
 featured_image: /content/images/2019/10/IMG_2152.JPG
-description: ""
+description: "I come clean on the biggest mistakes I've made as a software developer!"
 date: 2019-10-30
 tags: posts
 slug: my-most-embarrassing-mistakes-as-a-programmer
@@ -35,4 +35,3 @@ I am a work in progress. I may not achieve these things every day, but that's my
 I hope this post gets you thinking of ways you can have a positive impact on the people you work with.
 
 Remember, every day is a fresh start to be more awesome!
-

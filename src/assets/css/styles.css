@@ -137,8 +137,22 @@
 	display: block;
 }
 
-.post-feature-image {
-	@apply mb-8;
+.post-list {
+	.post {
+		@apply mb-12;
+	}
+	.post-date {
+		@apply text-gray-500 uppercase text-sm;
+	}
+	.post-title {
+		@apply text-3xl font-medium;
+	}
+	.post-featured-image {
+		@apply h-auto my-2;
+	}
+	.post-description {
+		@apply text-lg;
+	}
 }
 
 .content-body {
@@ -158,13 +172,10 @@
 		@apply text-blue-500 underline;
 	}
 	ul {
-		@apply list-disc mb-8;
+		@apply list-disc mb-8 list-outside;
 	}
 	ol {
-		@apply list-decimal mb-8;
-	}
-	li {
-		@apply list-inside;
+		@apply list-decimal mb-8 list-outside;
 	}
 	table {
 		@apply table-auto w-full;
@@ -188,14 +199,29 @@
 			}
 		}
 	}
+
 	blockquote {
 		@apply p-4 bg-gray-200 font-serif text-lg border-l-4 border-gray-600 mb-8;
 	}
+
 	blockquote p:last-child {
 		@apply mb-0;
 	}
+
 	:not(pre) > code {
 		@apply bg-gray-300 p-1;
+	}
+
+	.kg-card {
+		@apply mb-8;
+
+		figcaption {
+			@apply text-center text-sm;
+		}
+	}
+
+	.post-feature-image {
+		@apply mb-8;
 	}
 }
 

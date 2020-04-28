@@ -1,18 +1,18 @@
 {% macro card(post) %}
-	<div class="mb-12">
+	<div class="post">
 		<a class="" href="{{ post.url }}">
 			<header class="">
-				<div class="text-gray-500 uppercase text-sm">{{ post.data.date | postDate }}</div>
-				<h2 class="text-3xl font-medium">
+				<div class="post-date">{{ post.data.date | postDate }}</div>
+				<h2 class="post-title">
 					{{ post.data.title }}
 				</h2>
 				{% if post.data.featured_image %}
-					<img class="w-full h-auto my-2" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
+					<img class="post-featured-image" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
 				{% endif %}
 			</header>
 			{% if post.data.description %}
-			<div class="">
-				<p>{{ post.data.description }}</p>
+			<div class="post-description">
+				{{ post.data.description }}
 			</div>
 			{% endif %}
 		</a>

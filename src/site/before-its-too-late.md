@@ -1,14 +1,12 @@
 ---
 title: "Before it's too late"
-featured_image: 
-description: ""
+featured_image: /content/images/2017/04/thank-you.png
+description: "Pay tribute to awesome people in your life sooner rather than later, even for the little things!"
 date: 2017-04-13
 tags: posts
 slug: before-its-too-late
 layout: layouts/post.njk
 ---
-
-
 
 ![Thank you](/content/images/2017/04/thank-you.png)
 
@@ -33,6 +31,3 @@ Maybe that person is going through a really tough time. Maybe they are strugglin
 Tell them.
 
 **Don’t wait.**
-
-
-

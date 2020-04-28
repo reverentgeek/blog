@@ -1,14 +1,12 @@
 ---
 title: "Blog moved to Ghost"
 featured_image: 
-description: ""
+description: "I've moved my blog to Ghost!"
 date: 2014-02-10
 tags: posts
 slug: blog-moved-to-ghost
 layout: layouts/post.njk
 ---
-
-
 
 I've moved my blog from Wordpress to [Ghost](https://ghost.org/). Because:
 
