@@ -10,10 +10,15 @@ layout: layouts/page.njk
 
 **Current speaking topics:** leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 
+| Date | Event | Location |
+| --- | --- | --- |
+| 05.28.2020 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
+
 #### Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 04.21.2020 | [NDC Porto](https://ndcporto.com/) | Porto, Portugal |
 | 02.19.2020 | [DevNexus](https://devnexus.com/) | Atlanta, GA |
 | 01.29.2020 | [KnoxDevs](https://knoxdevs.com/) | Knoxville, TN |
 | 12.06.2019 | [DevTernity](https://devternity.com/) | Riga, Latvia |
