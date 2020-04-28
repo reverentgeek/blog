@@ -1,14 +1,12 @@
 ---
 title: "I'm not nearly the man I used to be"
-featured_image: 
-description: ""
+feature_image: 
+description: "I've been a \"fat kid\" all my life. In school, I didn't play sports, and regularly felt humiliated in gym class. As an adult, my mass has…"
 date: 2014-07-17
 tags: posts
 slug: im-not-nearly-the-man-i-used-to-be
 layout: layouts/post.njk
 ---
-
-
 
 I've been a "fat kid" all my life. In school, I didn't play sports, and regularly felt humiliated in gym class. As an adult, my mass has been on an upward trend. Sure, I've been able to get my weight under control a few times. But, the weight loss came at extreme, unsustainable measures, and the joy never lasted long. Add the fact that my family has a history of diabetes, and... well, you get the picture.
 
@@ -45,6 +43,3 @@ From the wife:
 We still have a long way to go. It's possible we could slip back into our old habits. But, this time it feels different. I tell you, I am excited about the future, and it feels great.
 
 I hope this encourages you to make a positive change. You can do it, too. Leave a comment and let me know if I can help, or hit me up on the [Twitters](https://twitter.com/reverentgeek).
-
-
-

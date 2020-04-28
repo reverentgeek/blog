@@ -1,7 +1,7 @@
 ---
 title: "A Note of Encouragement"
-featured_image: /content/images/2019/10/hey-buddy-1.png
-description: "I set up a new computer for my son, and also created something special for him to find 😊"
+feature_image: /content/images/2019/10/hey-buddy-1.png
+description: "Earlier this year, I set up a new computer for my son. In the process, I created an \"Easter Egg\" for him to find. I left a note on the…"
 date: 2019-10-23
 tags: posts
 slug: a-note-of-encouragement
@@ -25,7 +25,6 @@ You can certainly take the idea and create your own customized encouragement CLI
 Use the power of technology to make a positive impact on the people you care about! Let me know if there's anything I can do to help 🙂 Thanks for reading, and hope you have an awesome day!
 
 ![Get out there and be awesome!](/content/images/2019/10/get-out-there-and-be-awesome.jpg)
-
 
 <figure class="kg-card kg-embed-card kg-card-hascaption"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">I recently set my son up with a new computer. In the process, I created an &quot;Easter Egg&quot; for him to find. I left a note with some instructions on the desktop on how to run a CLI app I created. Whenever he types &quot;heybuddy&quot; he gets a random note of encouragement 🙂 <a href="https://t.co/zjOVyfkWdK">pic.twitter.com/zjOVyfkWdK</a></p>&mdash; David Neal 🥓🥑 (@reverentgeek) <a href="https://twitter.com/reverentgeek/status/1149743935843131392?ref_src=twsrc%5Etfw">July 12, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

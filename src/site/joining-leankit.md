@@ -1,7 +1,7 @@
 ---
 title: "Joining LeanKit"
-featured_image: 
-description: "I am excited to announce I'm joining LeanKit as a Senior Software Developer and Technical Evangelist!"
+feature_image:
+description: "I am excited to announce that I'm joining LeanKit as Senior Software Developer and Technical Evangelist. Chris Hefley, co-founder and CEO,…"
 date: 2013-03-02
 tags: posts
 slug: joining-leankit

@@ -1,14 +1,12 @@
 ---
 title: "Code PaLOUsa 2015"
-featured_image: 
-description: ""
+feature_image: 
+description: "Last week I had the privilege of being a part of Code PaLOUsa in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but…"
 date: 2015-05-04
 tags: posts
 slug: code-palousa-2015
 layout: layouts/post.njk
 ---
-
-
 
 Last week I had the privilege of being a part of [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but this was my first time attending as a speaker and a sponsor.
 
@@ -29,9 +27,6 @@ I really enjoyed giving my ["Do you even Kanban?"](http://www.slideshare.net/rev
 >
 > — Jared Faris (@JaredTheNerd) [April 29, 2015](https://twitter.com/JaredTheNerd/status/593435651586002944)
 
-One thing I found out on this trip is the [Louisville Mega Cavern](https://louisvillemegacavern.com/). It's a limestone quarry turned into an underground park with zip lines, ropes course, and **17** miles of bike trails! Next time I come to Louisville, I must check this out!
+One thing I found out on this trip is the [Louisville Mega Cavern](http://www.louisvillemegacavern.com/). It's a limestone quarry turned into an underground park with zip lines, ropes course, and **17** miles of bike trails! Next time I come to Louisville, I must check this out!
 
 Thanks Code PaLOUsa for another great conference! Thank you for the support and opportunities to speak! See you all again next time!
-
-
-

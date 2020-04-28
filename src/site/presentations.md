@@ -1,7 +1,7 @@
 ---
 title: "Keynotes, Presentations, and Workshops"
-featured_image: 
-description: ""
+feature_image: 
+description: "Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace,…"
 date: 2019-01-24
 tags: page
 slug: presentations
@@ -142,4 +142,3 @@ Preferred:
 Alternative:
 
 ![](/content/images/2019/04/david_profile_pic_2018.jpg)
-

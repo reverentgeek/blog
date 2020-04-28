@@ -1,14 +1,12 @@
 ---
 title: "Before it's too late"
-featured_image: /content/images/2017/04/thank-you.png
-description: "Pay tribute to awesome people in your life sooner rather than later, even for the little things!"
+feature_image: /content/images/2017/04/thank-you.png
+description: "There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths."
 date: 2017-04-13
 tags: posts
 slug: before-its-too-late
 layout: layouts/post.njk
 ---
-
-![Thank you](/content/images/2017/04/thank-you.png)
 
 There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths.
 

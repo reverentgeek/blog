@@ -1,7 +1,7 @@
 ---
 title: "And So It Begins..."
-featured_image: 
-description: "First post on the new blog!"
+feature_image: 
+description: "I am excited to finally pull the covers off ReverentGeek.com. I came to the realization earlier this year that blogging is something I need…"
 date: 2011-10-25
 tags: posts
 slug: and-so-it-begins
@@ -15,6 +15,3 @@ I am excited to finally pull the covers off ReverentGeek.com. I came to the real
 > \-- "City On Our Knees" by TobyMac
 
 So, here I go. Again. On my own. Goin' down the... oh, never mind.
-
-
-

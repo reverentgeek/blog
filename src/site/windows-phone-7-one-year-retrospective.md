@@ -1,14 +1,12 @@
 ---
 title: "Windows Phone 7: One Year Retrospective"
-featured_image: 
-description: ""
+feature_image: 
+description: "One year ago, I retired my iPhone 3G and grabbed the new Samsung Focus Windows Phone 7. After a year of use, here's my take on the WP7…"
 date: 2011-12-24
 tags: posts
 slug: windows-phone-7-one-year-retrospective
 layout: layouts/post.njk
 ---
-
-
 
 One year ago, I retired my iPhone 3G and grabbed the new Samsung Focus Windows Phone 7. After a year of use, here's my take on the WP7 experience.
 
@@ -34,6 +32,3 @@ One year ago, I retired my iPhone 3G and grabbed the new Samsung Focus Windows P
 For a long time I was very forgiving of WP7's flaws, knowing this was a new platform and it would take a while for the features and apps to mature. What has been most disheartening is to see bugs and bad user experience in apps that simply never get fixed. Over and over I found myself thinking, "This kind of experience would never be tolerated in an iPhone version of this app." In some cases, such as the Facebook app, apps have gone from bad to worse. You would think, for the most popular apps that users download, Microsoft would choose to step in and say, "These apps are critical to our success. Let us help you build the very best and solid applications on the market."
 
 I honestly want to see WP7 succeed. Good competition is always in the best interest of consumers.I think some of it's features are (or could be) better than iOS and Android. Unfortunately, my patience has run out.
-
-
-

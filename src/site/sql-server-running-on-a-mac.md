@@ -1,14 +1,12 @@
 ---
 title: "SQL Server Running on a Mac?!"
-featured_image: /content/images/2019/02/doc-brown-shocked.jpg
-description: ""
+feature_image: /content/images/2019/02/doc-brown-shocked.jpg
+description: "Dogs and cats living together, mass hysteria!"
 date: 2016-11-16
 tags: posts
 slug: sql-server-running-on-a-mac
 layout: layouts/post.njk
 ---
-
-
 
 Dogs and cats living together, mass hysteria!
 
@@ -202,6 +200,3 @@ You now have a copy of your database, running on your Mac, without the need for 
 * Want to learn more about Docker, such as creating your own containers for your software projects? I highly recommend [Derick Bailey's](https://twitter.com/derickbailey) awesome [Learn Docker Guide](https://sub.watchmecode.net/guides/learn-docker/).
 
 * Microsoft's documentation: [Run the SQL Server Docker image on Linux, Mac, or Windows](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-docker)
-
-
-

@@ -1,14 +1,12 @@
 ---
 title: "Life is Too Short"
-featured_image: 
-description: ""
+feature_image: 
+description: "Early in my career, I worked under a manager who exemplified the Dilbert Principle:"
 date: 2017-07-31
 tags: posts
 slug: life-is-too-short
 layout: layouts/post.njk
 ---
-
-
 
 Early in my career, I worked under a manager who exemplified the Dilbert Principle:
 
@@ -71,6 +69,3 @@ I’ve learned it’s okay to be honest with your manager, or other leadership i
 "Is there anything I can do to help?"
 
 You can be the catalyst that changes the ship's course, one degree at a time.
-
-
-

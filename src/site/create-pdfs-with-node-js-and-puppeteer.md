@@ -1,7 +1,7 @@
 ---
 title: "Create PDFs with Node.js and Puppeteer"
-featured_image: /content/images/2020/02/charter-example.jpg
-description: "I created a utility to convert ChordPro text files into beautiful PDFs. You can create awesome PDFs, too!"
+feature_image: /content/images/2020/02/charter-example.jpg
+description: "I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and…"
 date: 2020-02-06
 tags: posts
 slug: create-pdfs-with-node-js-and-puppeteer
@@ -146,6 +146,3 @@ npx chord-charter -f amazing-grace.chordpro
 ```
 
 I hope you find the project useful! Get out there and be awesome!
-
-
-

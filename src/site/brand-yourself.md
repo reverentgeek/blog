@@ -1,14 +1,12 @@
 ---
 title: "Brand Yourself"
-featured_image: 
-description: ""
+feature_image: 
+description: "Last night at the Nashville .NET User Group we ended the evening with a terrific discussion on careers. We had a great panel of developers,…"
 date: 2011-11-11
 tags: posts
 slug: brand-yourself
 layout: layouts/post.njk
 ---
-
-
 
 Last night at the [Nashville .NET User Group](http://nashdotnet.org/) we ended the evening with a terrific discussion on careers. We had a great panel of developers, entrepreneurs, and recruiters. It was nice to hear the transparency between developers and recruiters. Here are some quick highlights:
 
@@ -41,6 +39,3 @@ Last, for those that desire to start their own business:
 * Learn all you can about every aspect of running a business.
 * Utilize local resources such as [EntrepreneurCenter](http://entrepreneurcenter.com/) and [JumpStart Foundry](http://jumpstartfoundry.com/).
 * Read [Quitter](http://www.amazon.com/Quitter-Jon-Acuff/dp/0982986270/ref=sr_1_1?ie=UTF8&qid=1321032759&sr=8-1), [Delivering Happiness](http://www.amazon.com/Delivering-Happiness-Profits-Passion-Purpose/dp/0446563048/ref=sr_1_1?s=books&ie=UTF8&qid=1321032879&sr=1-1), [Start with Why](http://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591842808/ref=sr_1_1?s=books&ie=UTF8&qid=1321033026&sr=1-1), and a ton of other great books.
-
-
-

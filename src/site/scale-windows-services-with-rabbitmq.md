@@ -1,14 +1,12 @@
 ---
 title: "Scale Windows Services with RabbitMQ"
-featured_image: 
-description: ""
+feature_image: 
+description: "(Cross-posted to FreshBrewedCode.com)"
 date: 2011-11-30
 tags: posts
 slug: scale-windows-services-with-rabbitmq
 layout: layouts/post.njk
 ---
-
-
 
 (Cross-posted to [FreshBrewedCode.com](http://freshbrewedcode.com/davidneal/2011/11/30/scale-windows-services-with-rabbitmq/))
 
@@ -139,6 +137,3 @@ Hopefully this brief introduction has wet your appetite for further exploration 
 * _[RabbitMQ in Action](http://www.manning.com/videla/)_ by Alvaro Videla and Jason J.W. Williams. You can download chapter 1 for free, which provides a great introduction to the history of messaging and some of the advantages of RabbitMQ over other messaging platforms.
 
 \[1\] The two Nashville .NET User Group lectures I had attended were [Bryan Hunter](http://freshbrewedcode.com/bryanhunter/)’s talk on Command Query Responsibility Segregation ([CQRS](http://www.cqrsinfo.com/)), and [Alex Robson](http://freshbrewedcode.com/alexrobson/) and [Jim Cowart](http://freshbrewedcode.com/jimcowart/)’s [Introduction to Symbiote](http://nashdotnet.org/2011/05/may-12-2011-alex-robson-jim-cowart-introduction-to-symbiote/). I could extol the benefits of being involved in your local developer community, but that could be its own post for another day.
-
-
-

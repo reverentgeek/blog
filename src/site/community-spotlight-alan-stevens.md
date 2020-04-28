@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: Alan Stevens"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/06/alan-stevens.jpg
+description: "It is my pleasure to present this community tribute to the beloved Alan Stevens, written by guest author Matt Groves."
 date: 2017-06-15
 tags: posts
 slug: community-spotlight-alan-stevens
 layout: layouts/post.njk
 ---
-
-
-
-![](/content/images/2017/06/alan-stevens.jpg)
 
 _It is my pleasure to present this community tribute to the beloved Alan Stevens, written by guest author [Matt Groves](https://twitter.com/mgroves)._
 
@@ -41,6 +37,3 @@ Connect with Alan Stevens: [Twitter](https://twitter.com/alanstevens) | [Website
 Matt, being a Microsoft MVP, [author](https://www.manning.com/books/aop-in-net), and podcaster, is, himself, a big asset to the developer community. Thank you for all you do, Matt!
 
 Connect with Matt Groves: [Twitter](https://twitter.com/mgroves) | [Blog and Podcast](http://www.crosscuttingconcerns.com/) | [LinkedIn](https://www.linkedin.com/in/mgroves/)
-
-
-

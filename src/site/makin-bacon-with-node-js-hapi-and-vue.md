@@ -1,14 +1,12 @@
 ---
 title: "Makin' Bacon with Node.js, Hapi, and Vue"
-featured_image: /content/images/2018/10/makin-bacon-article.png
-description: ""
+feature_image: /content/images/2018/10/makin-bacon-article.png
+description: "I recently created a new demo for my Node.js Crash Course talk that I've given at several conferences. This application is a \"bacon ipsum\"…"
 date: 2018-07-18
 tags: posts
 slug: makin-bacon-with-node-js-hapi-and-vue
 layout: layouts/post.njk
 ---
-
-
 
 I recently created a new demo for my [Node.js Crash Course](https://speakerdeck.com/reverentgeek/node-dot-js-crash-course-kcdc-2018) talk that I've given at several conferences. This application is a "bacon ipsum" generator using [Node.js](https://nodejs.org/), [Hapi](https://hapijs.com/), and [Vue](https://vuejs.org/). I know I'm not the first to come up with the idea of a "bacon ipsum" generator, but I thought it'd be a fun project to create one in Node.js.
 
@@ -78,6 +76,3 @@ In addition to Node.js, Hapi, and Vue, here are the dependencies and plugins use
 [github.com/reverentgeek/node-bacon-generator](https://github.com/reverentgeek/node-bacon-generator)
 
 ### Happy computering!
-
-
-

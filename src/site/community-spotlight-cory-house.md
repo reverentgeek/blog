@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: Cory House"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/04/cory-house-sm.gif
+description: "Perhaps you've seen one of Cory's Pluralsight courses. Or, sat in one of his talks. Perhaps you've run across his react-slingshot React +…"
 date: 2017-04-12
 tags: posts
 slug: community-spotlight-cory-house
 layout: layouts/post.njk
 ---
-
-
-
-![](/content/images/2017/04/cory-house-sm.gif)
 
 Perhaps you've seen one of Cory's [Pluralsight courses](https://www.pluralsight.com/authors/cory-house). Or, sat in one of his talks. Perhaps you've run across his [react-slingshot](https://github.com/coryhouse/react-slingshot) React + Redux starter kit.
 
@@ -28,6 +24,3 @@ Connect with Cory House:
 By the way, I searched for you on Google today. Your dream has come true.
 
 ![](/content/images/2017/04/cory-house-search-1.jpg)
-
-
-

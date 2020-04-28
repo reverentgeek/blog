@@ -1,14 +1,12 @@
 ---
 title: "Confront Your Inner Critic"
-featured_image: /content/images/2019/03/Inner-critic.jpg
-description: ""
+feature_image: /content/images/2019/03/Inner-critic.jpg
+description: "Have you ever felt inadequate? Like a fraud? Like you don't belong where you are? That someone is going to expose you for who you really…"
 date: 2018-03-02
 tags: posts
 slug: confront-your-inner-critic
 layout: layouts/post.njk
 ---
-
-
 
 Have you ever felt inadequate? Like a fraud? Like you don't belong where you are? That someone is going to expose you for who you really are?
 
@@ -83,6 +81,3 @@ Go, and be awesome!
 * * *
 
 Here's [an episode on Impostor Syndrome](https://youtu.be/qh9KcV9HKS4) I recorded with the [Script & Style Web technology podcast](https://www.youtube.com/channel/UCYVTUh34eDCAXrB5iIWH4yA). Check it out!
-
-
-

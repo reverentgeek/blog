@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: David Giard"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/05/david-giard.jpg
+description: "Ladies and gentlemen, I present to you David Giard, the hardest working man in developer relations! Like Visa, he is everywhere you want to…"
 date: 2017-05-08
 tags: posts
 slug: community-spotlight-david-giard
 layout: layouts/post.njk
 ---
-
-
-
-![David Giard](/content/images/2017/05/david-giard.jpg)
 
 Ladies and gentlemen, I present to you [David Giard](https://twitter.com/davidgiard), the hardest working man in developer relations! Like Visa, he is everywhere you want to be.
 
@@ -27,6 +23,3 @@ David, thank you for your contributions to the developer community. Your heart t
 "Today I am grateful to know David Giard..." Share your story in the comments below, or on Twitter!
 
 Connect with David: [Twitter](https://twitter.com/davidgiard) | [LinkedIn](https://www.linkedin.com/in/davidgiard/) | [davidgiard.com](http://www.davidgiard.com/)
-
-
-

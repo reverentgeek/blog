@@ -1,14 +1,12 @@
 ---
 title: "Making Connections at CodeStock 2014"
-featured_image: 
-description: ""
+feature_image: 
+description: "CodeStock's theme this year was \"Making Connections,\" and there were plenty of opportunities for attendees to get connected. Connected to…"
 date: 2014-07-14
 tags: posts
 slug: codestock-2014
 layout: layouts/post.njk
 ---
-
-
 
 CodeStock's theme this year was "Making Connections," and there were plenty of opportunities for attendees to get connected. Connected to the latest technologies, and other professionals. The 2014 logo also carried this theme.
 
@@ -47,6 +45,3 @@ If you ever find yourself near this area of TN and NC, you _must_ experience the
 ![Cherohala Skyway](/content/images/2014/Jul/IMG_4439.JPG)
 
 ![RIDING THE DRAGON](/content/images/2014/Jul/IMG_4461.JPG)
-
-
-

@@ -1,14 +1,12 @@
 ---
 title: "Keynote Achievement Unlocked!"
-featured_image: 
-description: ""
+feature_image: 
+description: "Last week I had the privilege of speaking at Music City Agile and Music City Code. I had an absolute blast hanging out with old friends,…"
 date: 2016-08-22
 tags: posts
 slug: keynote-achievement-unlocked
 layout: layouts/post.njk
 ---
-
-
 
 Last week I had the privilege of speaking at [Music City Agile](http://www.musiccityagile.org/) and [Music City Code](http://www.musiccitycode.com/). I had an absolute blast hanging out with old friends, and "old friends who've just met."
 
@@ -58,6 +56,3 @@ P.S. Don't forget: You Don't Need Permission to be AWESOME!!
 > [@reverentgeek](https://twitter.com/reverentgeek) 'nuff said. [#MusicCityCode](https://twitter.com/hashtag/MusicCityCode?src=hash) [@MusicCityCode](https://twitter.com/MusicCityCode) [pic.twitter.com/hq4nM7jDON](https://t.co/hq4nM7jDON)
 >
 > — SpencerSchneidenbach (@schneidenbach) [August 19, 2016](https://twitter.com/schneidenbach/status/766749064323006464)
-
-
-

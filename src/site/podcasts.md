@@ -1,14 +1,12 @@
 ---
 title: "2016 Podcasts"
-featured_image: 
-description: ""
+feature_image: 
+description: "I had the honor of being on a few podcasts this year!"
 date: 2016-11-17
 tags: posts
 slug: podcasts
 layout: layouts/post.njk
 ---
-
-
 
 I had the honor of being on a few podcasts this year!
 
@@ -37,6 +35,3 @@ A personal podcast on passions, speaking at conferences, the appeal of drawing, 
 A more personal podcast of hobbies, how I got into programming, and playing music.
 
 [Episode 48: David Neal’s Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
-
-
-

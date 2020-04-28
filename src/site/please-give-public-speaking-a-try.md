@@ -1,14 +1,12 @@
 ---
 title: "Please, Give Public Speaking a Try"
-featured_image: /content/images/2019/03/try-public-speaking.jpg
-description: ""
+feature_image: /content/images/2019/03/try-public-speaking.jpg
+description: "When I talk to people about public speaking, I tell them of the opportunities it opens up to travel to fun places, and meet awesome people.…"
 date: 2017-08-10
 tags: posts
 slug: please-give-public-speaking-a-try
 layout: layouts/post.njk
 ---
-
-
 
 When I talk to people about [public speaking](https://www.youtube.com/watch?v=aPSvHT9USO8), I tell them of the opportunities it opens up to travel to fun places, and meet awesome people. I have had some amazing adventures in the last several years, all because I got up the courage to get up and speak to a bunch of geeks like myself.
 
@@ -49,6 +47,3 @@ Need more evidence? Read Cory House's article, [Public Speaking Transformed My L
 Get out there and be awesome!
 
 ![](/content/images/2017/08/you-dont-need-permission-2.jpg)
-
-
-

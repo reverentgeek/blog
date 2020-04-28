@@ -1,14 +1,12 @@
 ---
 title: "Ride Review: Suches and Wolf Pen Gap"
-featured_image: 
-description: ""
+feature_image: 
+description: "One of the advantages of living close to Dalton, GA, is access to some of the best roads in the country for motorcycle trips. After what…"
 date: 2015-04-04
 tags: posts
 slug: suches-and-wolf-pen-gap
 layout: layouts/post.njk
 ---
-
-
 
 One of the advantages of living close to Dalton, GA, is access to some of the best roads in the country for motorcycle trips. After what seems like an obnoxiously-long winter, I wake up itching to get some "wind therapy." The weather forecast is very cool, but thankfully, no rain.
 
@@ -99,6 +97,3 @@ After some critical adjustments to the velcro straps at my waist, I hop back on 
 My trip took a total of 7 hours, I covered over 200 (s)miles, and I averaged about 42 smiles per gallon (spg).
 
 For more pictures, visit my [photo gallery](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177) on Google+.
-
-
-

@@ -1,14 +1,12 @@
 ---
 title: "Restless"
-featured_image: 
-description: ""
+feature_image: 
+description: "Being \"good enough\" is not good enough."
 date: 2011-11-02
 tags: posts
 slug: restless
 layout: layouts/post.njk
 ---
-
-
 
 **Being "good enough" is not good enough.**
 
@@ -40,6 +38,3 @@ There are many areas of my life where I don't want to settle for "good enough."
 * I want to thrive, not just survive.
 
 I believe there's no such thing as standing still. You're either pushing yourself forward, or you're drifting backwards.
-
-
-

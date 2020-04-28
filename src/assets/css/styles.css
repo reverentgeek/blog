@@ -147,7 +147,7 @@
 	.post-title {
 		@apply text-3xl font-medium;
 	}
-	.post-featured-image {
+	.post-feature-image {
 		@apply h-auto my-2;
 	}
 	.post-description {

@@ -1,16 +1,12 @@
 ---
 title: "How I Consume Twitter"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/07/consuming-twitter.jpg
+description: "I keep the people I follow to around 256. That's a good, nerdy number for me. And, it's still manageable to keep up with all the tweets in…"
 date: 2017-07-20
 tags: posts
 slug: how-i-manage-twitter
 layout: layouts/post.njk
 ---
-
-
-
-![Consuming Twitter](/content/images/2017/07/consuming-twitter.jpg)
 
 I keep the people I follow to around 256. That's a good, nerdy number for me. And, it's still manageable to keep up with all the tweets in this group, most of the time.
 
@@ -37,6 +33,3 @@ I like that Tweetbot for macOS and [Tweetbot for iOS](https://tapbots.com/tweetb
 I have notifications for "likes" and "retweets" turned off. Occasionally I'll visit [https://twitter.com/i/notifications](https://twitter.com/i/notifications) or the same view in the Twitter iOS app to see an aggregate view of likes and retweets.
 
 Do you have any tips or strategies you'd like to share on managing Twitter content?
-
-
-

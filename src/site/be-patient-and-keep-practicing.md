@@ -1,7 +1,7 @@
 ---
 title: "Be Patient and Keep Practicing"
-featured_image: 
-description: "I believe you can accomplish far more than you realize. Don't give up! Here are some thoughts to encourage you."
+feature_image: 
+description: "You've probably seen the ShamWow meme. You know, the classic, cheesy infomercial guy."
 date: 2017-09-15
 tags: posts
 slug: be-patient-and-keep-practicing
@@ -47,6 +47,3 @@ Get out there and be awesome!
 In case you're interested, here's an article I wrote on captivating your audience with [simple, hand-drawn illustrations](https://artplusmarketing.com/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301). I provide some ideas on how you can get started.
 
 Here are some recent [caricatures and profiles](https://www.facebook.com/media/set/?set=a.10155075144094005.1073741839.779104004&type=1&l=1f28a8d9ca) I've drawn for folks. Contact me if you're interested in one!
-
-
-

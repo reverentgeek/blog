@@ -1,26 +1,19 @@
 ---
 title: "Upcoming Speaking Engagements"
-featured_image: 
-description: ""
+feature_image: 
+description: "Current speaking topics: leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving…"
 date: 2014-02-13
 tags: page
 slug: speaking
 layout: layouts/page.njk
 ---
 
-
-
-**Current speaking topics:** leadership, public speaking, Node.js, Electron.js, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
-
-| Date | Event | Location |
-| --- | --- | --- |
-| 05.28.2020 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
+**Current speaking topics:** leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 
 #### Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 04.21.2020 | [NDC Porto](https://ndcporto.com/) | Porto, Portugal |
 | 02.19.2020 | [DevNexus](https://devnexus.com/) | Atlanta, GA |
 | 01.29.2020 | [KnoxDevs](https://knoxdevs.com/) | Knoxville, TN |
 | 12.06.2019 | [DevTernity](https://devternity.com/) | Riga, Latvia |
@@ -140,6 +133,3 @@ layout: layouts/page.njk
 | 03.15.2012 | [Code paLOUsa](http://www.codepalousa.com/) | Louisville, KY |
 | 01.11.2012 | [CodeMash](http://codemash.org/) | Sandusky, OH |
 | 09.08.2011 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
-
-
-

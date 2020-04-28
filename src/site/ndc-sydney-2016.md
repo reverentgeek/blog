@@ -1,14 +1,12 @@
 ---
 title: "NDC Sydney 2016"
-featured_image: 
-description: ""
+feature_image: 
+description: "Earlier this month I had the incredible privilege of speaking at NDC Sydney! Australia has been at the top of my most-wanted-to-visit…"
 date: 2016-08-10
 tags: posts
 slug: ndc-sydney-2016
 layout: layouts/post.njk
 ---
-
-
 
 Earlier this month I had the incredible privilege of speaking at [NDC Sydney](http://ndcsydney.com/)! Australia has been at the top of my most-wanted-to-visit places since I was young. I can't begin to tell you how excited I was to have this opportunity!
 
@@ -67,6 +65,3 @@ I reached out to the organizer, and ended up giving my Electron talk to the [Syd
 ## A++++ would travel again
 
 I had an amazing time. I will definitely do it again, if I ever get the opportunity. My only regret is not having more time to explore more of Australia outside of Sydney.
-
-
-

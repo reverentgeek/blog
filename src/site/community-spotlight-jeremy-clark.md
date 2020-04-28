@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: Jeremy Clark"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/05/jeremy-clark.png
+description: "Self-titled \"Developer Betterer,\" Jeremy Clark's personal mission is to help developers. This passion manifests itself it many ways. He has…"
 date: 2017-05-01
 tags: posts
 slug: community-spotlight-jeremy-clark
 layout: layouts/post.njk
 ---
-
-
-
-![Jeremy Clark](/content/images/2017/05/jeremy-clark.png)
 
 Self-titled "Developer Betterer," [Jeremy Clark's](https://twitter.com/jeremybytes) personal mission is to help developers. This passion manifests itself it many ways. He has an excellent set of courses he's created for [Pluralsight](https://www.pluralsight.com/authors/jeremy-clark), speaks at conferences all over the place, and regularly blogs about things he's learning at [jeremybytes.com](http://www.jeremybytes.com/).
 
@@ -23,6 +19,3 @@ Jeremy, thank you for all you're doing in the developer community! You are aweso
 Share your story and appreciation!
 
 Connect with Jeremy: [Twitter](https://twitter.com/jeremybytes) | [Blog](http://www.jeremybytes.com/) | [LinkedIn](https://www.linkedin.com/in/jeremy-clark-21a6822/) | [Becoming A Social Developer](http://www.becomingasocialdeveloper.com/)
-
-
-

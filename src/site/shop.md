@@ -1,6 +1,6 @@
 ---
 title: "Buy My Stuff!"
-featured_image: /content/images/2019/03/buy-my-stuff.jpg
+feature_image: /content/images/2019/03/buy-my-stuff.jpg
 description: ""
 date: 2018-05-19
 tags: page

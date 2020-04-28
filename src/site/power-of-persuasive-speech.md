@@ -1,14 +1,12 @@
 ---
 title: "Power of Persuasive Speech"
-featured_image: 
-description: ""
+feature_image: 
+description: "I am truly honored to be selected as a speaker at the CodeMash developer conference in January. Being a regional conference, CodeMash is…"
 date: 2011-10-28
 tags: posts
 slug: power-of-persuasive-speech
 layout: layouts/post.njk
 ---
-
-
 
 I am truly honored to be selected as a speaker at the [CodeMash](http://codemash.org) developer conference in January. Being a regional conference, CodeMash is not very large compared to something like the Microsoft Professional Developers Conference (PDC). However, it has become _very_ popular. Most of the speakers are well-known and highly regarded in our industry. Last year, CodeMash sold out in 3 days. This year, it sold out in 20 _minutes_.
 
@@ -27,6 +25,3 @@ By the end of the talk, not only was I convinced that Mercurial was the best DVC
 That's the kind of speaker I want to be.
 
 [Watch Alan Stevens' DVCS presentation.](http://vimeo.com/31248475)
-
-
-

@@ -1,14 +1,12 @@
 ---
 title: "State of the ReverentGeek, June 2016"
-featured_image: 
-description: ""
+feature_image: 
+description: "I can't believe it's been a year since my last blog post! So much has happened. TL;DR: I am a very blessed man, and so grateful for the…"
 date: 2016-06-30
 tags: posts
 slug: state-of-the-reverentgeek-june-2016
 layout: layouts/post.njk
 ---
-
-
 
 I can't believe it's been a year since my last blog post! So much has happened. TL;DR: I am a very blessed man, and so grateful for the incredible opportunities I've had over the past year!
 
@@ -60,6 +58,3 @@ If you have any suggestions on the abstract, specific things you think I should 
 Here's my parting pro tip. Take a minute each day to think about the things you are grateful for. Even the stuff that seems to be going wrong, try to think of some way it's going to make you stronger or better in the end. _This, too, shall pass!_
 
 Thanks for reading! I hope you have a blessed day!
-
-
-

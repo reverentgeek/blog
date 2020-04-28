@@ -1,14 +1,12 @@
 ---
 title: "Orlando Code Camp 2015"
-featured_image: 
-description: ""
+feature_image: 
+description: "March 28, 2015 I had the great pleasure of giving two talks at the 10th annual Orlando Code Camp. This was my first Orlando Code Camp, and…"
 date: 2015-03-28
 tags: posts
 slug: orlando-code-camp-2015
 layout: layouts/post.njk
 ---
-
-
 
 March 28, 2015 I had the great pleasure of giving two talks at the 10th annual [Orlando Code Camp](http://orlandocodecamp.com/). This was my first Orlando Code Camp, and I was quite impressed.
 
@@ -43,6 +41,3 @@ The feedback I received from both talks was positive and encouraging. My _sincer
 I also found time to attend a few sessions, including [Brent Schooley](https://twitter.com/brentschooley)'s talk on Ember.js, and [Eric Nograles](https://twitter.com/grales)' talk on Sails.js. All were great! The personal connections made at events like these make all the time and effort worth it. I especially enjoyed getting to know [Andrew Kozlik](https://twitter.com/codefortravel) at the speaker dinner, and [Ralph](https://twitter.com/ralphwilliams) and Rob at the after party.
 
 In all, my first Orlando Code Camp was nothing short of delightful. I hope to back again. Maybe next time I'll take the motorcycle!
-
-
-

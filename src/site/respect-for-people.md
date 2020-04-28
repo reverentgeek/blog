@@ -1,7 +1,7 @@
 ---
 title: "Respect: The Most Fundamental Principle"
-featured_image: /content/images/2019/03/respect-for-people-1.jpg
-description: ""
+feature_image: /content/images/2019/03/respect-for-people-1.jpg
+description: "Much has been said about \"lean\" and \"agile\" approaches to work. Reflecting over more than ten years of personal experience, I have come to…"
 date: 2019-03-13
 tags: posts
 slug: respect-for-people
@@ -27,4 +27,3 @@ When conflicts arise, respect allows people to focus on solving the issue rather
 People are people. They are not your best "assets." They are not fungible resources.
 
 The "Golden Rule" is still the golden rule.
-

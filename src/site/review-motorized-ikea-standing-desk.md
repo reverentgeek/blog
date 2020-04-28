@@ -1,7 +1,7 @@
 ---
 title: "Review: Motorized IKEA Standing Desk"
-featured_image: /content/images/2015/05/ikea_standing_desk.jpg
-description: "Here's my review of the IKEA Bekant motorized standing desk."
+feature_image: /content/images/2015/05/ikea_standing_desk.jpg
+description: "Summary: After six weeks of use, I declare the IKEA BEKANT sit/stand desk to be fully awesome."
 date: 2015-05-26
 tags: posts
 slug: review-motorized-ikea-standing-desk
@@ -39,6 +39,3 @@ About six weeks ago, I returned to the IKEA store to buy a "real" standing desk.
 * The buttons to raise and lower the table can be disabled by removing a pin, effectively locking the table in place. Good if you have children or pranksters who like to mess with your stuff.
 
 In all, this is an excellent standing desk, and an incredible value compared to others I have researched or used at other offices.
-
-
-

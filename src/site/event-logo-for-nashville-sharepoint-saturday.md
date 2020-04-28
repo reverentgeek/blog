@@ -1,14 +1,12 @@
 ---
 title: "Event Logo for Nashville SharePoint Saturday"
-featured_image: 
-description: ""
+feature_image: 
+description: "I am so honored that Daniel Glenn reached out to me to design the logo for the 2017 Nashville SharePoint Saturday event. Here is the final…"
 date: 2017-04-10
 tags: posts
 slug: event-logo-for-nashville-sharepoint-saturday
 layout: layouts/post.njk
 ---
-
-
 
 I am so honored that [Daniel Glenn](https://twitter.com/DanielGlenn) reached out to me to design the logo for the [2017 Nashville SharePoint Saturday](http://www.spsevents.org/city/Nashville/Nashville2017) event. Here is the final design we landed on:
 
@@ -51,6 +49,3 @@ Here are some of the design ideas that were generated along the way.
 ![](/content/images/2017/04/spsaltlogo1.gif)
 
 ![](/content/images/2017/04/spsnashville-logo.gif)
-
-
-

@@ -1,14 +1,12 @@
 ---
 title: "Start doing."
-featured_image: 
-description: ""
+feature_image: 
+description: "Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing…"
 date: 2014-07-10
 tags: posts
 slug: start-doing
 layout: layouts/post.njk
 ---
-
-
 
 Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing weight, playing guitar, or any number of things we wish we could do.
 
@@ -21,6 +19,3 @@ And, speaking of starting somewhere, go get yourself a copy of "[Start: Punch Fe
 Get out there and punch some bears in the face.
 
 ![](/content/images/2014/Jul/bear-punch.jpg)
-
-
-

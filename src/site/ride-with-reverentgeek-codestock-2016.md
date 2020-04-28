@@ -1,14 +1,12 @@
 ---
 title: "Ride with ReverentGeek, CodeStock 2016"
-featured_image: 
-description: ""
+feature_image: 
+description: "Each year for the last several years, I have ridden my motorcycle to CodeStock in Knoxville, TN. Not very far from Knoxville is some of the…"
 date: 2016-07-05
 tags: posts
 slug: ride-with-reverentgeek-codestock-2016
 layout: layouts/post.njk
 ---
-
-
 
 Each year for the last several years, I have ridden my motorcycle to [CodeStock](http://www.codestock.org/) in Knoxville, TN. Not very far from Knoxville is some of the most beautiful, scenic roads in the entire USA.
 
@@ -33,6 +31,3 @@ Taking inspiration from "Party with Palermo," I've come up with my own event: "*
 * 04:00 pm: Arrive in Knoxville
 
 Please [RSVP](https://www.eventbrite.com/e/ride-with-reverentgeek-codestock-2016-tickets-26421871529). Post any questions below, or contact me on [Twitter](https://twitter.com/reverentgeek).
-
-
-

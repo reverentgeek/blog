@@ -6,8 +6,8 @@
 				<h2 class="post-title">
 					{{ post.data.title }}
 				</h2>
-				{% if post.data.featured_image %}
-					<img class="post-featured-image" src="{{ post.data.featured_image }}" alt="{{ post.data.title }}">
+				{% if post.data.feature_image %}
+					<img class="post-feature-image" src="{{ post.data.feature_image }}" alt="{{ post.data.title }}">
 				{% endif %}
 			</header>
 			{% if post.data.description %}

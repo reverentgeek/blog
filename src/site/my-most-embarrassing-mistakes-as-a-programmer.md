@@ -1,7 +1,7 @@
 ---
 title: "My Most Embarrassing Mistakes as a Programmer"
-featured_image: /content/images/2019/10/IMG_2152.JPG
-description: "I come clean on the biggest mistakes I've made as a software developer!"
+feature_image: /content/images/2019/10/IMG_2152.JPG
+description: "My most embarrassing mistakes as a programmer, in no particular order:"
 date: 2019-10-30
 tags: posts
 slug: my-most-embarrassing-mistakes-as-a-programmer

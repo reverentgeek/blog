@@ -1,14 +1,12 @@
 ---
 title: "Developer's Serenity Prayer"
-featured_image: /content/images/2019/03/developers-serenity-prayer-2.jpg
-description: ""
+feature_image: /content/images/2019/03/developers-serenity-prayer-2.jpg
+description: "Oh Great Cloud,"
 date: 2017-12-01
 tags: posts
 slug: developers-serenity-prayer
 layout: layouts/post.njk
 ---
-
-
 
 Oh Great Cloud,
 
@@ -27,6 +25,3 @@ so that I may be reasonably happy at the end of the day
 and somewhat sane at the end of this release.
 
 Amen
-
-
-

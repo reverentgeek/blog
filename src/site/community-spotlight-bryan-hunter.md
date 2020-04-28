@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: Bryan Hunter"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/05/bryan-hunter-1.jpg
+description: "Bryan Hunter is the quintessential community champion. Everywhere he goes, he is cheerfully spreading the good news of functional…"
 date: 2017-05-15
 tags: posts
 slug: community-spotlight-bryan-hunter
 layout: layouts/post.njk
 ---
-
-
-
-![Bryan Hunter](/content/images/2017/05/bryan-hunter-1.jpg)
 
 Bryan Hunter is the quintessential community champion. Everywhere he goes, he is cheerfully spreading the good news of functional programming and other technology he believes will benefit all developers.
 
@@ -41,6 +37,3 @@ Thank you, Bryan, for all the work you've done and continue to do help the devel
 * [Developer on Fire: Bryan Hunter - Reducing Fear](http://developeronfire.com/podcast/developer-on-fire-097-bryan-hunter-reducing-fear)
 
 Connect with Bryan: [Twitter](https://twitter.com/bryan_hunter) | [GitHub](https://github.com/bryanhunter) | [LinkedIn](https://www.linkedin.com/in/bryanhunter/)
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "5 Essential Ingredients for an Awesome Tech Talk"
-featured_image: /content/images/2019/03/the-tech-talk-handbook.jpg
-description: "Here are five essential ingredients for delivering an awesome tech talk!"
+feature_image: /content/images/2019/03/the-tech-talk-handbook.jpg
+description: "I believe one of the big reasons people are afraid of public speaking (or writing) is impostor syndrome. You may think..."
 date: 2018-01-01
 tags: posts
 slug: 5-essential-ingredients-for-an-awesome-tech-talk
@@ -69,6 +69,3 @@ You just gave an awesome talk. Your audience is now walking away with _valuable_
 Now, go make it happen!
 
 \*Metaphorically speaking. Real microphones are fragile, and expensive. Just ask [Kyle Welch](https://twitter.com/kylewelch).
-
-
-

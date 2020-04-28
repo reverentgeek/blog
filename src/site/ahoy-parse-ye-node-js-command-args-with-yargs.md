@@ -1,7 +1,7 @@
 ---
 title: "Ahoy! Parse ye Node.js command args with yargs!"
-featured_image: 
-description: "A quick introduction on how to create a command line interface (CLI) using Node.js and yargs."
+feature_image: 
+description: "Recently I was working on a code sample in Node.js and thought to meself, \"T'wouldn't it be grand to support me some command-line args for…"
 date: 2015-04-20
 tags: posts
 slug: ahoy-parse-ye-node-js-command-args-with-yargs
@@ -96,6 +96,3 @@ options: { _: [ 'http://example.com/api/posts' ],
 ```
 
 Hoist the mizzen, sail forth and blast ye command ARRRRGS to smithereens!
-
-
-

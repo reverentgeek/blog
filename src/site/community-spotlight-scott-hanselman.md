@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: Scott Hanselman"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/07/scott-hanselman.jpg
+description: "Scott has been one of my community heroes for many, many years. I've long admired his writing skills, public speaking, humor, podcasts, and…"
 date: 2017-07-10
 tags: posts
 slug: community-spotlight-scott-hanselman
 layout: layouts/post.njk
 ---
-
-
-
-![](/content/images/2017/07/scott-hanselman.jpg)
 
 Scott has been one of my community heroes for many, many years. I've long admired his writing skills, public speaking, humor, podcasts, and all the other outlets of his talents. Scott has inspired me to endeavor many things in the developer community, including writing, speaking, and being active on social media.
 
@@ -23,6 +19,3 @@ Scott, thank you so much for all you do for the developer community, and far bey
 Get in touch: [Twitter](https://twitter.com/shanselman) | [Blog](https://www.hanselman.com/) | [GitHub](https://github.com/shanselman) | [Podcasts](https://www.hanselman.com/podcasts/)
 
 Let Scott know you appreciate him!
-
-
-

@@ -1,16 +1,12 @@
 ---
 title: "Community Spotlight: Brendan Forster"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/11/Brendan-Forster.jpg
+description: "It is my pleasure to present this community tribute to Brendan Forster, written by guest author Mord Zuber."
 date: 2017-11-01
 tags: posts
 slug: community-spotlight-brendan-forster
 layout: layouts/post.njk
 ---
-
-
-
-![Brendan Forster](/content/images/2017/11/Brendan-Forster.jpg)
 
 _It is my pleasure to present this community tribute to Brendan Forster, written by guest author [Mord Zuber](https://twitter.com/mordzuber)._
 
@@ -29,6 +25,3 @@ I have immensely enjoyed Brendan's talks and the interactions I've had with him 
 Connect with Brendan Forster: [Twitter](https://twitter.com/shiftkey) | [Website](http://www.brendanforster.com/now/) | [LinkedIn](https://www.linkedin.com/in/brendanforster/)
 
 If you know someone who has done awesome work, and would like to see them recognized, please contact me on [Twitter](https://twitter.com/reverentgeek)!
-
-
-

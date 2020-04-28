@@ -1,14 +1,12 @@
 ---
 title: "Hosting Node.js on Microsoft Azure"
-featured_image: 
-description: ""
+feature_image: 
+description: "Got a fresh Node.js application to deploy? Awesome! Microsoft Azure has several options for hosting Node.js applications. In this article,…"
 date: 2015-03-18
 tags: posts
 slug: hosting-node-js-on-microsoft-azure
 layout: layouts/post.njk
 ---
-
-
 
 Got a fresh Node.js application to deploy? Awesome! Microsoft Azure has several options for hosting Node.js applications. In this article, we will be looking specifically at deploying to Windows Server websites and virtual machines.
 
@@ -243,6 +241,3 @@ C:\my-awesome-app> npm run-script uninstall-service
 4. Stop the service
 5. Overwrite or merge your old version with the new version
 6. Start the service
-
-
-

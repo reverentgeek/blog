@@ -1,14 +1,12 @@
 ---
 title: "Resources for the Reluctant Leader"
-featured_image: 
-description: ""
+feature_image: 
+description: "Here are some resources from my \"Guide to Leadership for the Reluctant Leader\" keynote presented at Scenic City Summit 2017."
 date: 2017-07-29
 tags: posts
 slug: resources-for-the-reluctant-leader
 layout: layouts/post.njk
 ---
-
-
 
 Here are some resources from my "Guide to Leadership for the Reluctant Leader" keynote presented at [Scenic City Summit 2017](https://www.sceniccitysummit.com/).
 
@@ -27,6 +25,3 @@ View the slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek/scenic-cit
 ## Links
 
 * [Scarlett Leadership Institute](http://www.scarlettleadership.com/)
-
-
-

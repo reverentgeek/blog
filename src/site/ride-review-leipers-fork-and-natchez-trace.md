@@ -1,14 +1,12 @@
 ---
 title: "Ride Review: Leiper's Fork and Natchez Trace"
-featured_image: 
-description: ""
+feature_image: 
+description: "I've been in Franklin, TN this week for meetings at LeanKit. I made the decision to stay through the weekend before heading off to Code…"
 date: 2015-04-25
 tags: posts
 slug: ride-review-leipers-fork-and-natchez-trace
 layout: layouts/post.njk
 ---
-
-
 
 I've been in Franklin, TN this week for meetings at [LeanKit](http://leankit.com). I made the decision to stay through the weekend before heading off to [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY.
 
@@ -67,6 +65,3 @@ Less than a mile from the Loveless Cafe is the start of the 444-mile scenic [Nat
 The destinations are great. Old Highway 96 and Natchez Trace Parkway are two more cases where I wish I had a GoPro or similar video camera. These roads must be seen on two wheels, or at least with the top down!
 
 For more pictures, check out my [Google+ album](https://plus.google.com/+DavidNealReverentGeek/posts/TXKTk4QvXeo).
-
-
-

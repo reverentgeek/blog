@@ -1,14 +1,12 @@
 ---
 title: "Customize Your VS Code Icon"
-featured_image: 
-description: ""
+feature_image: 
+description: "(Or any application icon, for that matter.)"
 date: 2017-10-27
 tags: posts
 slug: customize-your-vs-code-icon
 layout: layouts/post.njk
 ---
-
-
 
 (Or any application icon, for that matter.)
 
@@ -72,6 +70,3 @@ While it is technically possible to change an application's icon in Windows by c
 ![](/content/images/2017/10/vscode-icon-win4.jpg)
 
 At least your pinned application looks awesome!
-
-
-

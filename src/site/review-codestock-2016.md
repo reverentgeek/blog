@@ -1,14 +1,12 @@
 ---
 title: "Review: CodeStock 2016"
-featured_image: 
-description: ""
+feature_image: 
+description: "Year after year, CodeStock continues to expand, improve, and win a special place in my heart. As with any conference, the hallway…"
 date: 2016-07-19
 tags: posts
 slug: review-codestock-2016
 layout: layouts/post.njk
 ---
-
-
 
 Year after year, CodeStock continues to expand, improve, and win a special place in my heart. As with any conference, the hallway conversations and opportunity to get to meet amazing people is every bit as valuable as the sessions.
 
@@ -58,6 +56,3 @@ _Draw some happy trees!_
 Remember, you don't need permission to be awesome!
 
 Hope to see you at CodeStock 2017, or a tech conference near you!
-
-
-

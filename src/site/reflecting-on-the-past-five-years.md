@@ -1,16 +1,12 @@
 ---
 title: "Reflecting on the past five years"
-featured_image: 
-description: ""
+feature_image: /content/images/2017/10/looking-back.jpg
+description: "You might be thinking..."
 date: 2017-10-10
 tags: posts
 slug: reflecting-on-the-past-five-years
 layout: layouts/post.njk
 ---
-
-
-
-![looking back](/content/images/2017/10/looking-back.jpg)
 
 You might be thinking...
 
@@ -145,6 +141,3 @@ I also have a number of experiments I want to run:
 ### Get out there and be awesome.
 
 Thanks for hanging with me until the end. Now, get out there and be awesome!
-
-
-

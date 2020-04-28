@@ -1,7 +1,7 @@
 ---
 title: "How to be a Superhuman Communicator"
-featured_image: /content/images/2019/04/how-to-be-a-superhuman-communicator.jpg
-description: ""
+feature_image: /content/images/2019/04/how-to-be-a-superhuman-communicator.jpg
+description: "People learn in a variety of ways, such as watching videos, listening to podcasts, reading books and articles, and exploring hands-on. For…"
 date: 2019-04-12
 tags: posts
 slug: how-to-be-a-superhuman-communicator
@@ -79,4 +79,3 @@ These are the slides from my talk on this subject, ["Drawing: How to be a Superh
 You may not realize it yet, but you are awesome. I believe you can make a significant, positive impact in your workplace, community, and the world, through the power of technology. Share your knowledge and experience with others! Use your own hand-drawn illustrations to make it fun and memorable!
 
 ![](/content/images/2019/04/you-dont-need-permission-to-be-awesome.jpg)
-
