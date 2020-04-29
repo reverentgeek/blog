@@ -141,7 +141,7 @@
 
 .post-list {
 	.post {
-		@apply mb-12;
+		@apply mb-16;
 	}
 	.post-date {
 		@apply text-gray-500 uppercase text-sm;
@@ -150,7 +150,7 @@
 		@apply text-3xl font-medium;
 	}
 	.post-feature-image {
-		@apply h-auto my-2;
+		@apply h-auto;
 	}
 	.post-description {
 		@apply text-lg;
