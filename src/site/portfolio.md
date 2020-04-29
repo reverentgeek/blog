@@ -1,7 +1,8 @@
 ---
+id: 5c461a2dbc58620a44555950
 title: "Artwork and Illustration Portfolio"
 feature_image: /content/images/2019/08/portfolio-title-image.jpg
-description: ""
+description:
 date: 2019-01-21
 tags: page
 slug: portfolio
@@ -12,7 +13,7 @@ _Click the title or image to view more in that category._
 
 Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/get-permission/) to my work. Thanks!
 
-Want to commission an illustration? <a href="mailto:david@reverentgeek.com">Contact me!</a>
+Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 
 ## [Logos, Stickers and Projects](/illustrations)
 
