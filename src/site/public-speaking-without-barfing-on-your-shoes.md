@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba972
 title: "Public Speaking without Barfing on Your Shoes"
 feature_image: /content/images/2016/11/public-speaking-without-barfing-on-your-shoes.png
 description: "Nodevember 2016 was an amazing conference that included some of my favorite talks of the year. And, as is usually the case, a lot of the…"

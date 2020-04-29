@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba973
 title: "Do you hate JavaScript?"
 feature_image: /content/images/2017/02/js-khan.jpg
 description: "If you follow me on Twitter you know that I poke fun at JavaScript quite a bit. Someone recently asked me,"

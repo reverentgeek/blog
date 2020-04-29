@@ -1,4 +1,5 @@
 ---
+id: 5db09e4b71e5d67de825967c
 title: "A Note of Encouragement"
 feature_image: /content/images/2019/10/hey-buddy-1.png
 description: "Earlier this year, I set up a new computer for my son. In the process, I created an \"Easter Egg\" for him to find. I left a note on the…"

@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba94b
 title: "Stupid SQL Tricks - Using Computed Columns for Code Generation"
 feature_image: 
 description: "I recently had a need to drop and recreate all the default constraints on some tables so I could convert the data types of from varchar to…"

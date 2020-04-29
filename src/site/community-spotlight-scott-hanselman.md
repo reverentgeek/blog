@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba980
 title: "Community Spotlight: Scott Hanselman"
 feature_image: /content/images/2017/07/scott-hanselman.jpg
 description: "Scott has been one of my community heroes for many, many years. I've long admired his writing skills, public speaking, humor, podcasts, and…"

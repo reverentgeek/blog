@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba95b
 title: "Blazon for Technical Presentations and Training"
 feature_image: 
 description: "I recently switched to using Blazon for all my presentations, and I couldn't be happier. Here are some of my favorite features:"

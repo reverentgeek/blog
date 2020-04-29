@@ -54,5 +54,6 @@
 	"twitter_title": null,
 	"twitter_description": null,
 	"codeinjection_head": "<!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-60841200-1\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-60841200-1');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />\n",
-	"codeinjection_foot": null
+	"codeinjection_foot": null,
+	"disqus_id": "reverentgeek"
 }

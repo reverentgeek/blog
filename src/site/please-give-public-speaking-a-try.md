@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba984
 title: "Please, Give Public Speaking a Try"
 feature_image: /content/images/2019/03/try-public-speaking.jpg
 description: "When I talk to people about public speaking, I tell them of the opportunities it opens up to travel to fun places, and meet awesome people.…"

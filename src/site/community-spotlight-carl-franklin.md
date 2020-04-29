@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba97d
 title: "Community Spotlight: Carl Franklin"
 feature_image: /content/images/2017/05/carl-franklin.jpg
 description: "This guy. THIS guy. Carl has been one of my heroes since way back in the day of \"Carl & Gary's Visual Basic Home Page.\" This…"

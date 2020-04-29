@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba968
 title: "SQL Server and Node.js Revisited"
 feature_image: 
 description: "A little more than a year ago, I wrote about accessing SQL Server from Node.js using Edge.js. Technology can change a lot in a year, and…"

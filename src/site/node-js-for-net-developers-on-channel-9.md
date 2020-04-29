@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba967
 title: "Node.js for .NET Developers on Channel 9"
 feature_image: 
 description: "I recently had the honor of presenting my \"Node.js for .NET Developers\" talk for the the Microsoft MVP Virtual Conference. The recording of…"

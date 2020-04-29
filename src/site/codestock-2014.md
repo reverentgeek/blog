@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba95d
 title: "Making Connections at CodeStock 2014"
 feature_image: 
 description: "CodeStock's theme this year was \"Making Connections,\" and there were plenty of opportunities for attendees to get connected. Connected to…"

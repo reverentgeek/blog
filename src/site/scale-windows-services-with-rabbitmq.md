@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba949
 title: "Scale Windows Services with RabbitMQ"
 feature_image: 
 description: "(Cross-posted to FreshBrewedCode.com)"

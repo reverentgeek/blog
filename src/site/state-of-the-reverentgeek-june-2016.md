@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba96a
 title: "State of the ReverentGeek, June 2016"
 feature_image: 
 description: "I can't believe it's been a year since my last blog post! So much has happened. TL;DR: I am a very blessed man, and so grateful for the…"

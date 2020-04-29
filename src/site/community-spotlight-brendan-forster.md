@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba989
 title: "Community Spotlight: Brendan Forster"
 feature_image: /content/images/2017/11/Brendan-Forster.jpg
 description: "It is my pleasure to present this community tribute to Brendan Forster, written by guest author Mord Zuber."

@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba96c
 title: "Review: CodeStock 2016"
 feature_image: 
 description: "Year after year, CodeStock continues to expand, improve, and win a special place in my heart. As with any conference, the hallway…"

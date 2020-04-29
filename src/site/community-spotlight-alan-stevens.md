@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba97f
 title: "Community Spotlight: Alan Stevens"
 feature_image: /content/images/2017/06/alan-stevens.jpg
 description: "It is my pleasure to present this community tribute to the beloved Alan Stevens, written by guest author Matt Groves."

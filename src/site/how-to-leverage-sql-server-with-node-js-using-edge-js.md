@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba952
 title: "How to leverage SQL Server with Node.js using Edge.js"
 feature_image: 
 description: "I've looked at Node.js many times over the past few years. It's hard to ignore all the attention it has received. Unfortunately, being…"

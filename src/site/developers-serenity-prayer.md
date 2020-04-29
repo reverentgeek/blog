@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba98a
 title: "Developer's Serenity Prayer"
 feature_image: /content/images/2019/03/developers-serenity-prayer-2.jpg
 description: "Oh Great Cloud,"

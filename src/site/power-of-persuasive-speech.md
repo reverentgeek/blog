@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba954
 title: "Power of Persuasive Speech"
 feature_image: 
 description: "I am truly honored to be selected as a speaker at the CodeMash developer conference in January. Being a regional conference, CodeMash is…"

@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba988
 title: "Customize Your VS Code Icon"
 feature_image: 
 description: "(Or any application icon, for that matter.)"

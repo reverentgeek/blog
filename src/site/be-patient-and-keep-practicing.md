@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba986
 title: "Be Patient and Keep Practicing"
 feature_image: 
 description: "You've probably seen the ShamWow meme. You know, the classic, cheesy infomercial guy."

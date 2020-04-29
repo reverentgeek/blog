@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba97e
 title: "Community Spotlight: Kevin Griffin"
 feature_image: /content/images/2017/05/IMG_1109.PNG
 description: "I first met Kevin when he was heading up INETA, the now defunct International .NET Association. INETA was instrumental in helping me on…"

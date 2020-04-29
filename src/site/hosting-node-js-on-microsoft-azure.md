@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba95f
 title: "Hosting Node.js on Microsoft Azure"
 feature_image: 
 description: "Got a fresh Node.js application to deploy? Awesome! Microsoft Azure has several options for hosting Node.js applications. In this article,…"

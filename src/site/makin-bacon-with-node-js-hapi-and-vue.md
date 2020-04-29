@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba992
 title: "Makin' Bacon with Node.js, Hapi, and Vue"
 feature_image: /content/images/2018/10/makin-bacon-article.png
 description: "I recently created a new demo for my Node.js Crash Course talk that I've given at several conferences. This application is a \"bacon ipsum\"…"

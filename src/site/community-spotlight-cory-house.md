@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba976
 title: "Community Spotlight: Cory House"
 feature_image: /content/images/2017/04/cory-house-sm.gif
 description: "Perhaps you've seen one of Cory's Pluralsight courses. Or, sat in one of his talks. Perhaps you've run across his react-slingshot React +…"

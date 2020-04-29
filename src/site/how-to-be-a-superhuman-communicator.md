@@ -1,4 +1,5 @@
 ---
+id: 5caf4c78bc58620a44555b18
 title: "How to be a Superhuman Communicator"
 feature_image: /content/images/2019/04/how-to-be-a-superhuman-communicator.jpg
 description: "People learn in a variety of ways, such as watching videos, listening to podcasts, reading books and articles, and exploring hands-on. For…"

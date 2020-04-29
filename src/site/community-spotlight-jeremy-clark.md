@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba97a
 title: "Community Spotlight: Jeremy Clark"
 feature_image: /content/images/2017/05/jeremy-clark.png
 description: "Self-titled \"Developer Betterer,\" Jeremy Clark's personal mission is to help developers. This passion manifests itself it many ways. He has…"

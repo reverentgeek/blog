@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba979
 title: "Community Spotlight: Gaines Kergosien"
 feature_image: /content/images/2017/04/gaines-kergosien.png
 description: "In my opinion, Gaines is a community hero. He's not only been involved in the Nashville software development community, he's also been a…"

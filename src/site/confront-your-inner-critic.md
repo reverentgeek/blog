@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba98c
 title: "Confront Your Inner Critic"
 feature_image: /content/images/2019/03/Inner-critic.jpg
 description: "Have you ever felt inadequate? Like a fraud? Like you don't belong where you are? That someone is going to expose you for who you really…"

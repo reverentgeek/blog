@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba953
 title: "Intro to RavenDB Presentation"
 feature_image: 
 description: "I'm excited to announce that my \"Introduction to RavenDB: NoSQL is Rapping at Your Door\" presentation that I gave at CodeMash 2012 was…"

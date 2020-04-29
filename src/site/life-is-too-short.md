@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba983
 title: "Life is Too Short"
 feature_image: 
 description: "Early in my career, I worked under a manager who exemplified the Dilbert Principle:"

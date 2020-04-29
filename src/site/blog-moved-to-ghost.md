@@ -1,4 +1,5 @@
 ---
+id: 5b7d83816ada047f703ba957
 title: "Blog moved to Ghost"
 feature_image: 
 description: "I've moved my blog from Wordpress to Ghost. Because:"
