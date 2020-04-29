@@ -133,6 +133,8 @@
 		url("../fonts/Roboto-BlackItalic.woff") format("woff");
 }
 
+/* purgecss start ignore */
+
 #menu-toggle:checked + #menu {
 	display: block;
 }
@@ -237,3 +239,5 @@
 .page-portfolio .content-body img {
 	max-width: 300px;
 }
+
+/* purgecss end ignore */
