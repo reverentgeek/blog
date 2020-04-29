@@ -174,10 +174,10 @@
 		@apply text-blue-500 underline;
 	}
 	ul {
-		@apply list-disc mb-8 list-outside;
+		@apply list-disc ml-8 mb-8 list-outside;
 	}
 	ol {
-		@apply list-decimal mb-8 list-outside;
+		@apply list-decimal ml-8 mb-8 list-outside;
 	}
 	table {
 		@apply table-auto w-full;
@@ -222,9 +222,10 @@
 		}
 	}
 
-	.post-feature-image {
-		@apply mb-8;
-	}
+}
+
+.content .post-feature-image {
+	@apply mb-8;
 }
 
 .kg-gallery-row {

@@ -5,15 +5,15 @@
 			<h2 class="post-title">
 				{{ post.data.title }}
 			</h2>
-			<div class="flex flex-wrap">
-				<div class="post-description lg:w-1/3">
+			<div class="flex flex-col lg:flex-row">
+				<div class="mb-4 lg:w-1/3">
 					{{ post.data.description }}
 					<div class="mt-2">
-						<a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="{{ post.url }}">Read more...</a>
+						<a class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded" href="{{ post.url }}">Read more...</a>
 					</div>
 				</div>
 				{% if post.data.feature_image %}
-					<img class="post-feature-image lg:ml-4 lg:w-1/2" src="{{ post.data.feature_image }}" alt="{{ post.data.title }}">
+					<img class="lg:w-1/2 ml-4 h-auto" src="{{ post.data.feature_image }}" alt="{{ post.data.title }}">
 				{% endif %}
 			</div>
 		</a>
