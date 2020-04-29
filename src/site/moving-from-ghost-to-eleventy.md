@@ -13,11 +13,9 @@ My blog has been on a self-hosted deployment of [Ghost](https://ghost.org/) for 
 
 However, I've been itching to try something new with my blog for a while. The more I've learned about [JAMstack](https://jamstack.org/), the more I've wanted to start moving my sites and applications to that architecture.
 
-## Static is the New Dynamic
+> Static is the New Dynamic!
 
 [Static site generators](https://www.staticgen.com/), such as [Gatsby](https://www.gatsbyjs.org/) and [Hugo](https://gohugo.io/), are becoming more popular. Combined with a modern CDN like [Netlify](https://www.netlify.com/), "static" sites can be extremely fast and cost-effective.
-
-For more information about the advantages of JAMstack, here are a couple of articles and a video I've recently published.
 
 ## Cranking this Blog to Eleventy
 
