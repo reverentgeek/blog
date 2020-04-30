@@ -14,6 +14,7 @@ module.exports = function( config ) {
 
 	config.addWatchTarget( "./src/assets/" );
 	config.addPassthroughCopy( "./src/site/content/images/**" );
+	config.addPassthroughCopy( "./src/site/favicon.ico" );
 
 	// Minify HTML
 	if ( process.env.ELEVENTY_ENV === "production" ) {
