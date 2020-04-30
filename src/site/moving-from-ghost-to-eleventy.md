@@ -83,12 +83,13 @@ Netlify makes other things painless, too, such as...
 * Deploy previews of a Git repository's development/staging branches.
 * Enable free HTTPS with Let's Encrypt, with automatic certificate generation and renewal.
 * Add custom forms or API using [Netlify Functions](https://www.netlify.com/products/functions/).
+* Their own headless CMS, [Netlify CMS](https://www.netlifycms.org/).
 
 I'm not getting paid for this endorsement -- I really am a big fan!
 
 ## Learn More About JAMstack
 
-Here are a couple of articles on JAMstack-related topics and a video of my talk on JAMstack. 
+Here are a couple of articles on JAMstack-related topics and a video of my talk on JAMstack.
 
 * [Stop Writing Server-Based Web Apps](https://developer.okta.com/blog/2020/03/06/stop-writing-server-based-web-apps)
 * [Build a Serverless Function with Netlify](https://scotch.io/tutorials/build-a-secure-serverless-function-with-netlify)
