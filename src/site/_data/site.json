@@ -5,7 +5,7 @@
 	"feed": {
 		"subtitle": "Ramblings on faith, tech, music, and drawing.",
 		"filename": "feed.xml",
-		"path": "/feed/feed.xml",
+		"path": "/feed.xml",
 		"id": "https://reverentgeek.com"
 	},
 	"author": {
