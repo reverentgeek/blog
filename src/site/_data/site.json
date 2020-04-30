@@ -10,7 +10,8 @@
 	},
 	"author": {
 		"name": "David Neal",
-		"email": "david@reverentgeek.com"
+		"email": "david@reverentgeek.com",
+		"url": "https://reverentgeek.com/about/"
 	},
 	"logo": "/content/images/2020/04/rg-logo.png",
 	"icon": "https://reverentgeek.com/favicon.ico",
