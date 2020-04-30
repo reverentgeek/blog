@@ -13,7 +13,7 @@
 		"email": "david@reverentgeek.com"
 	},
 	"logo": "/content/images/2020/04/rg-logo.png",
-	"icon": "/content/images/2020/04/reverentgeek-v3-256-1.png",
+	"icon": "https://reverentgeek.com/favicon.ico",
 	"brand": null,
 	"cover_image": "/content/images/rg-banner.jpg",
 	"facebook": null,
