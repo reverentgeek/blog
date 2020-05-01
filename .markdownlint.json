@@ -1,0 +1,6 @@
+{
+	"no-trailing-punctuation": false,
+	"line-length": false,
+	"no-inline-html": false,
+	"no-alt-text": true
+}

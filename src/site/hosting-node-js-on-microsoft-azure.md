@@ -85,7 +85,7 @@ Some Node.js applications and frameworks require environment variables for prope
 
 You will need to add a `web.config` file to your Node.js application to configure iisnode. The following is a sample file. Read the in-line comments carefully.
 
-```
+```xml
 <configuration>
   <system.webServer>
     <handlers>
@@ -203,13 +203,12 @@ npm install --save winser
 
 Next, edit `package.json` and add the following to your scripts, modifying to match your application's start file and name.
 
-```
+```json
   "scripts": {
- "start": "node index.js",
+    "start": "node index.js",
     "install-service": "winser -i -s -a -n myapp-service-name",
     "uninstall-service": "winser -r -x -s -n myapp-service-name"
   },
-
 ```
 
 > Note: Make sure `start` accurately reflects how your application is run.
@@ -225,7 +224,7 @@ C:\my-awesome-app> npm run-script install-service
 
 If you look at **Server Manager** > **Tools** > **Services**, or use `net start`, you should see that your application is now running as a service. Like any other Windows service, you can stop and restart the application.
 
-**Uninstall the service**
+### Uninstall the service
 
 Uninstall is just as easy. Our `uninstall-service` script in `package.json` is configured to automatically stop and remove the service.
 

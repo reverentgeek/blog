@@ -510,6 +510,3 @@ Get more of my stickers on [RedBubble](https://www.redbubble.com/people/reverent
 Get my t-shirts on [Amazon](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=reverentgeek)!
 
 [![Buy my t-shirts on Amazon!](/content/images/2018/08/F0B665BD-B73C-427F-B56B-1C2BAC415AD6.jpeg)](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=reverentgeek)
-
-
-

@@ -109,7 +109,7 @@ Success! You are on your way to hapi-ness!
 
 As a Node.js project grows beyond a simple "hello world" example, it's essential to set up a good project structure. There are countless opinions on how you might organize a project, but a good starting point for a web application might look something like the following.
 
-```
+```bash
 ├── package.json
 ├── client
 │   ├── index.html
