@@ -11,7 +11,8 @@
     "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
     "build:assets": "cross-env NODE_ENV=production parcel build ./src/assets/css/styles.css ./src/assets/js/index.js --out-dir ./dist/assets --public-url /assets --no-source-maps",
     "build:html": "cross-env ELEVENTY_ENV=production eleventy",
-    "test": "npm run build",
+		"test": "npm run build",
+		"lint:markdown": "markdownlint src/**/*.md",
     "lint": "eslint . --ext .js --cache",
     "build": "run-s clean build:*",
     "watch": "run-s clean:* && run-p watch:*",
@@ -69,6 +70,7 @@
     "eslint": "^6.8.0",
     "eslint-config-reverentgeek": "^2.2.0",
     "fs-extra": "^9.0.0",
+    "markdownlint-cli": "^0.22.0",
     "slug": "^2.1.1",
     "uuid": "^7.0.3"
   }

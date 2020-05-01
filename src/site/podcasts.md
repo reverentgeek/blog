@@ -35,4 +35,4 @@ A personal podcast on passions, speaking at conferences, the appeal of drawing, 
 
 A more personal podcast of hobbies, how I got into programming, and playing music.
 
-[Episode 48: David Neal’s Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
+[Episode 48: David Neal's Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)

@@ -11,13 +11,13 @@ layout: layouts/post.njk
 
 I believe one of the big reasons people are afraid of public speaking (or writing) is [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome). You may think...
 
-> “I’m not an expert! I barely know anything! Everyone will know I’m a fraud!”
+> “I'm not an expert! I barely know anything! Everyone will know I'm a fraud!”
 
-Psst... here’s a secret: You don’t have to be an expert!
+Psst... here's a secret: You don't have to be an expert!
 
 In fact, you have something no one else in the entire world has. _Your_ experience.
 
-Here’s a recipe for turning your experience into an awesome presentation!
+Here's a recipe for turning your experience into an awesome presentation!
 
 ## 1\. Why did you choose this technology?
 
@@ -29,7 +29,7 @@ Do some research and put together a short list of highlights, features, and capa
 
 ## 3\. How did you make it work?
 
-Give your audience more of your story. They want to hear about the challenges and issues you faced along the way. Most of all, they want your insights! You learned the hard way what worked and what didn’t work, so share the good stuff! Including…
+Give your audience more of your story. They want to hear about the challenges and issues you faced along the way. Most of all, they want your insights! You learned the hard way what worked and what didn't work, so share the good stuff! Including…
 
 ### What mistakes did you make?
 
@@ -37,7 +37,7 @@ Give your audience more of your story. They want to hear about the challenges an
 
 > “No way! I already feel like an impostor, and now you want me to remove any doubt?!”
 
-You might think admitting your mistakes will harm your reputation or credibility. Nope! Being transparent about your mistakes and what you learned from them _adds_ to your credibility! I don’t know about you, but I make mistakes all the time. I want to hear from _real_ humans doing _real_ work -- people I can relate to.
+You might think admitting your mistakes will harm your reputation or credibility. Nope! Being transparent about your mistakes and what you learned from them _adds_ to your credibility! I don't know about you, but I make mistakes all the time. I want to hear from _real_ humans doing _real_ work -- people I can relate to.
 
 If you were to do it all over, what would you do differently? Turn your challenges and mistakes into key takeaways for your audience!
 
@@ -45,9 +45,9 @@ If you were to do it all over, what would you do differently? Turn your challeng
 
 A good demo can be the final puzzle piece needed to convince someone to try this technology. A working demo is great, but so are screen shots or a recorded video!
 
-For the love of all that is holy, don’t do any live coding unless you are specifically demoing features of an IDE!
+For the love of all that is holy, don't do any live coding unless you are specifically demoing features of an IDE!
 
-Your demo should only exist to reinforce your “why” for choosing this technology. Make it short and to the point, and show them something awesome! Don’t waste your audience’s time showing “how.” They can easily find that information for themselves on the Internet later. Your job is to convince them to go try it!
+Your demo should only exist to reinforce your “why” for choosing this technology. Make it short and to the point, and show them something awesome! Don't waste your audience's time showing “how.” They can easily find that information for themselves on the Internet later. Your job is to convince them to go try it!
 
 In my opinion, no demo is better than a bad one.
 

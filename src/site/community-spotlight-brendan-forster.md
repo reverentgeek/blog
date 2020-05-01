@@ -15,7 +15,7 @@ _It is my pleasure to present this community tribute to Brendan Forster, written
 
 I first met Brendan when I was looking for an open source project I could contribute to. At that point in the time, the only language I felt comfortable enough to contribute with was C#. I came across [octokit.net](https://octokit.github.io/), and started working on one of the open issues.
 
-Brendan’s happiness to help, and the length he will go to help a new contributor's pull request get merged, have served as a definitive guide on how to be an OSS maintainer.
+Brendan's happiness to help, and the length he will go to help a new contributor's pull request get merged, have served as a definitive guide on how to be an OSS maintainer.
 
 \-- Mord
 

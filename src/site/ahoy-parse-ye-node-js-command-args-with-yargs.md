@@ -52,7 +52,7 @@ console.log( "options:", options );
 
 Take a look at the command-line help yargs creates for ye.
 
-```
+```bash
 $ node jurl --help
 Usage: jurl <url> [-u "username"] [-p "password"] [--post] [--data
 "{key:value}"]
@@ -81,7 +81,7 @@ Copyright 2015 ReverentGeek
 
 Running the given sample prints the following to the console.
 
-```
+```bash
 $ node jurl http://example.com/api/posts
 url: http://example.com/api/posts
 options: { _: [ 'http://example.com/api/posts' ],

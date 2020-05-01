@@ -25,7 +25,7 @@ I put on pants today. I consider that a win.
 
 ### Don't fall into the comparison trap
 
-There’s no need to compare yourself to others. You aren’t them. They aren’t you. Focusing on someone else’s accomplishments and using their success to beat yourself up is a terrible waste of time and only leads to despair.
+There's no need to compare yourself to others. You aren't them. They aren't you. Focusing on someone else's accomplishments and using their success to beat yourself up is a terrible waste of time and only leads to despair.
 
 Let others inspire you. But, don't let their successes fuel your inner critic.
 
@@ -57,7 +57,7 @@ Have a personal retrospective. No, this is not where you beat yourself up and ha
 
 Teach others what you know. You may have this feeling the things you know are obvious and simple. It might surprise you to discover there are a lot of people who would love to possess the knowledge you already have.
 
-For me, giving talks and writing blog posts have been things that have caused me the most anxiety and feelings of impostor syndrome. At the same time, hearing stories of the positive impact I’ve made on people has been one of the key strategies to combating my inner critic.
+For me, giving talks and writing blog posts have been things that have caused me the most anxiety and feelings of impostor syndrome. At the same time, hearing stories of the positive impact I've made on people has been one of the key strategies to combating my inner critic.
 
 Not ready to teach? How about volunteering to help a local non-profit? It doesn't take a lot of time, or usually any special skill.
 

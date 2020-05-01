@@ -51,7 +51,7 @@ Unfortunately, not all the dependencies required for iisnode are available as Ch
 * [Install Chocolatey](https://chocolatey.org/)
 * Run the following:
 
-```
+```bash
 C:\> choco install python2
 C:\> choco install vcredist2010
 C:\> choco install nodejs.install
@@ -197,7 +197,7 @@ There are many options for running Node.js as a service, especially on Linux or 
 
 Winser must be installed as a dependency in your Node.js application and configured in `package.json`.
 
-```
+```bash
 npm install --save winser
 ```
 
@@ -218,7 +218,7 @@ Next, edit `package.json` and add the following to your scripts, modifying to ma
 
 With winser correctly configured, installing is a breeze. Open a command prompt and enter the following.
 
-```
+```bash
 C:\> cd \[path to node.js application]
 C:\my-awesome-app> npm run-script install-service
 ```
@@ -229,7 +229,7 @@ If you look at **Server Manager** > **Tools** > **Services**, or use `net start`
 
 Uninstall is just as easy. Our `uninstall-service` script in `package.json` is configured to automatically stop and remove the service.
 
-```
+```bash
 C:\> cd \[path to node.js application]
 C:\my-awesome-app> npm run-script uninstall-service
 ```

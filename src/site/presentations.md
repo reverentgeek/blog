@@ -13,9 +13,9 @@ layout: layouts/page.njk
 
 Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace, community, and beyond.
 
-In this talk, I’ll share a few candid stories of my career failures… I mean… learning opportunities. We’ll start by debunking the myth that leadership == management. Next, we’ll talk about some of the attributes, behaviors, and skills of good leaders. Lastly, we’ll cover some practical steps and resources to accelerate your journey.
+In this talk, I'll share a few candid stories of my career failures… I mean… learning opportunities. We'll start by debunking the myth that leadership == management. Next, we'll talk about some of the attributes, behaviors, and skills of good leaders. Lastly, we'll cover some practical steps and resources to accelerate your journey.
 
-You’ll walk away with some essential leadership skills I believe anyone can develop, and a good dose of encouragement to be more awesome!
+You'll walk away with some essential leadership skills I believe anyone can develop, and a good dose of encouragement to be more awesome!
 
 _Note: I've given this talk several times as both a keynote and a presentation._  
 [Video](https://www.youtube.com/watch?v=0h5X5UKWao8) | [Slides](https://speakerdeck.com/reverentgeek/leadership-guide-for-the-reluctant-leader-ndc-sydney-2018)
@@ -29,7 +29,7 @@ _Note: This is the keynote I have given for conferences such as That Conference,
 
 ## JavaScript: Past, Present, and Future
 
-Ah, JavaScript! Like it or not, it’s a “tragically important” language that is “eating the world.” Hate it? Love it? Avoid it? Embrace it?
+Ah, JavaScript! Like it or not, it's a “tragically important” language that is “eating the world.” Hate it? Love it? Avoid it? Embrace it?
 
 This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way that it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our own JavaScript less terrible!
 
@@ -88,11 +88,11 @@ I have been speaking at conferences, user groups, and meetups for many years. Ho
 
 ## Take Back Project Sanity: The Kanban Journey
 
-Kanban is just sticky notes on a whiteboard, right? There’s more to this methodology than you might think. Kanban harnesses the power of visual information to turn your team’s work into brain candy. However, visualization is only the beginning.
+Kanban is just sticky notes on a whiteboard, right? There's more to this methodology than you might think. Kanban harnesses the power of visual information to turn your team's work into brain candy. However, visualization is only the beginning.
 
 Whether you work in software development, operations, or professional cat wrangling, Kanban can help you continuously improve your process (yes, you have one!). That can help your team boost things like delivery speed, predictability, and quality.
 
-In this fun and entertaining talk, you’ll learn the core principles and practices of Kanban, as well as how to maximize its potential to evolve how you, your team, and your organization works.
+In this fun and entertaining talk, you'll learn the core principles and practices of Kanban, as well as how to maximize its potential to evolve how you, your team, and your organization works.
 
 [Slides](https://speakerdeck.com/reverentgeek/take-back-project-sanity-the-kanban-journey-2018-edition)
 
@@ -112,9 +112,9 @@ In this talk, I want to share with you techniques to improve your note-taking sy
 
 Who says communication has to be dry, dull, and boring? Simple, hand-drawn illustrations are a compelling and fun way to engage, inform, and win your audience of readers and viewers!
 
-I firmly believe drawing is a skill that anyone can learn. The amazing thing is, there’s no such thing as “bad” art! With some fundamentals and practice, you can make an impact, and have fun doing it!
+I firmly believe drawing is a skill that anyone can learn. The amazing thing is, there's no such thing as “bad” art! With some fundamentals and practice, you can make an impact, and have fun doing it!
 
-I started drawing about four years ago, and it is now an essential part of everything I do. I would love to share with you my bag of tips and tricks I’ve learned to create illustrations for presentations, articles, videos, and more!
+I started drawing about four years ago, and it is now an essential part of everything I do. I would love to share with you my bag of tips and tricks I've learned to create illustrations for presentations, articles, videos, and more!
 
 [Slides](https://speakerdeck.com/reverentgeek/drawing-how-to-be-a-superhuman-communicator)
 

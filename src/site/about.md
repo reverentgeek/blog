@@ -11,7 +11,7 @@ layout: layouts/page.njk
 
 <img class="float-left mr-4 w-1/6" src="/content/images/reverentgeek-circle.jpg" alt="ReverentGeek">
 
-Hi! My name is David Neal. I am a family man, geek, musician, illustrator, speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I spent several years building high-performance, scalable social media applications, worked as a senior developer and developer advocate at [LeanKit](https://leankit.com), worked at [Joyent](https://www.joyent.com/) helping to build the next-generation cloud platform, and I am currently a Senior Developer Advocate at [Okta](https://developer.okta.com/). I run on a high-octane mixture of caffeine and JavaScript, and I’m entirely made of bacon.
+Hi! My name is David Neal. I am a family man, geek, musician, illustrator, speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I spent several years building high-performance, scalable social media applications, worked as a senior developer and developer advocate at [LeanKit](https://leankit.com), worked at [Joyent](https://www.joyent.com/) helping to build the next-generation cloud platform, and I am currently a Senior Developer Advocate at [Okta](https://developer.okta.com/). I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon.
 
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on [Twitter](https://twitter.com/reverentgeek).
@@ -40,7 +40,7 @@ Got Node.js? Try this at your command line: `npx reverentgeek`
 ### Sample of podcasts:
 
 * [Cross-Cutting Concerns - David Neal on Drawing](https://crosscuttingconcerns.com/Podcast-084-David-Neal-Drawing)
-* [Away from the Keybord: David Neal’s Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
+* [Away from the Keybord: David Neal's Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
 * [.NET Rocks! Building Cross-Platform Desktop Apps using Electron with David Neal](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
 * [Developer on Fire - David Neal: Bacon-Driven Drawing](http://developeronfire.com/podcast/episode-156-david-neal-bacon-driven-drawing)
 
@@ -56,7 +56,7 @@ I have more than 20 years of developer and IT experience. Most of that experienc
 
 I've been very active in the developer community since 2010, speaking and volunteering my time at numerous meet-ups, conferences, and events.
 
-As a Developer Advocate for LeanKit for three years, I discovered I love helping other developers solve problems. I built and contributed to API clients in multiple languages, built custom integrations and automated tools, pushed for improvements on customers’ behalf, partnered with integration service providers and professional services, and evangelized the platform internally and externally. It was, by far, the best and most energizing years of my career, so far.
+As a Developer Advocate for LeanKit for three years, I discovered I love helping other developers solve problems. I built and contributed to API clients in multiple languages, built custom integrations and automated tools, pushed for improvements on customers' behalf, partnered with integration service providers and professional services, and evangelized the platform internally and externally. It was, by far, the best and most energizing years of my career, so far.
 
 My desire is to work with organizations that are not simply interested in my technical skills and passion for building delightful products and services. I want to partner with organizations that care about making an impact on the community, and are excited about me being their ambassador.
 

@@ -19,7 +19,7 @@ Most Node.js tutorials available today were written for older versions of Node.j
 
 Open up a terminal (Mac/Linux) or a command prompt (Windows) and type the following command:
 
-```
+```bash
 node --version
 ```
 
