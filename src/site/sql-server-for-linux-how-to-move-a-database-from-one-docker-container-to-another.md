@@ -35,7 +35,7 @@ First, we need to create a backup of the database that is in your old Docker con
 
 **Note:** In the following examples, substitute `container_name` with the name of your Docker container, and `your_db` with the name of your database. Also, change the password to match the your `sa` password.
 
-```
+```sh
 docker exec container_name /opt/mssql/bin/sqlpackage /a:Export /ssn:tcp:localhost /sdn:your_db /su:sa /sp:P@55w0rd /tf:/tmp/your_db.bacpac
 ```
 
@@ -45,19 +45,19 @@ Copy the `.bacpac` file to a folder on your host computer. In this example, it w
 
 **Windows**
 
-```
+```sh
 docker cp container_name:/tmp/your_db.bacpac %USERPROFILE%\Desktop\your_db.bacpac
 ```
 
 **Mac or Linux**
 
-```
+```sh
 docker cp container_name:/tmp/your_db.bacpac ~/Desktop/your_db.bacpac
 ```
 
 ### Step 3: Stop the old container
 
-```
+```sh
 docker stop container_name
 ```
 
@@ -65,7 +65,7 @@ docker stop container_name
 
 **Note:** Change `new_container_name` and password to the desired values.
 
-```
+```sh
 docker pull microsoft/mssql-server-linux
 
 docker run -d --name new_container_name -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@55w0rd' -p 1433:1433 microsoft/mssql-server-linux
@@ -75,19 +75,19 @@ docker run -d --name new_container_name -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@55w
 
 **Windows**
 
-```
+```sh
 docker cp %USERPROFILE%\Desktop\your_db.bacpac container_name:/tmp/your_db.bacpac
 ```
 
 **Mac or Linux**
 
-```
+```sh
 docker cp ~/Desktop/your_db.bacpac container_name:/tmp/your_db.bacpac
 ```
 
 ### Step 6: Import the .bacpac file
 
-```
+```sh
 docker exec new_container_name /opt/mssql/bin/sqlpackage /a:Import /tsn:tcp:localhost /tdn:your_db /tu:sa /tp:P@55w0rd /sf:/tmp/your_db.bacpac
 ```
 

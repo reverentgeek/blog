@@ -210,6 +210,10 @@
 		@apply mb-0;
 	}
 
+	pre {
+		@apply overflow-auto;
+	}
+
 	:not(pre) > code {
 		@apply bg-gray-300 p-1;
 	}
