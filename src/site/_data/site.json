@@ -43,6 +43,10 @@
 		{
 			"label": "Store",
 			"url": "/shop/"
+		},
+		{
+			"label": "Contact",
+			"url": "/contact/"
 		}
 	],
 	"secondary_navigation": [],

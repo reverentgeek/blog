@@ -1,0 +1,48 @@
+---
+id: 5c462df9bc58620a445559a5
+title: "Contact Me"
+feature_image:
+description: ""
+date: 2020-05-04
+tags: page
+slug: contact
+layout: layouts/page.njk
+---
+
+<div id="badalert" class="hidden" role="alert">
+  <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+    Uh oh...
+  </div>
+  <div id="badmsg" class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700"></div>
+</div>
+<div id="alert" class="hidden bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
+  <div class="font-bold">Thank you!</div>
+  <div class="text-sm">Your message has been sent.</div>
+</div>
+
+<form id="contact" class="w-full max-w-lg bg-white pt-6 pb-8 mb-4">
+	<div class="mb-4">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+		Your Email
+		</label>
+		<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+	</div>
+	<div class="mb-4">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+		Subject
+		</label>
+		<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Enter a subject">
+	</div>
+	<div class="mb-6">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+		Message
+		</label>
+		<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" type="text" placeholder="Enter your message">
+	</div>
+	<div class="flex items-center justify-between">
+		<button id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+		Submit
+		</button>
+	</div>
+</form>
+<script src="/assets/js/contact.js"></script>
