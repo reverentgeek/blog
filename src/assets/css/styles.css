@@ -135,6 +135,11 @@
 
 /* purgecss start ignore */
 
+body {
+	font-size: 18px;
+	line-height: 1.7;
+}
+
 #menu-toggle:checked + #menu {
 	display: block;
 }
