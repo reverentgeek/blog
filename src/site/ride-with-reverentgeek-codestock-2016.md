@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba96b
 title: "Ride with ReverentGeek, CodeStock 2016"
-feature_image: 
+feature_image: /content/images/2016/07/IMG_4434.JPG
 description: "Each year for the last several years, I have ridden my motorcycle to CodeStock in Knoxville, TN. Not very far from Knoxville is some of the…"
 date: 2016-07-05
 tags: posts
@@ -10,8 +10,6 @@ layout: layouts/post.njk
 ---
 
 Each year for the last several years, I have ridden my motorcycle to [CodeStock](http://www.codestock.org/) in Knoxville, TN. Not very far from Knoxville is some of the most beautiful, scenic roads in the entire USA.
-
-![](/content/images/2016/07/IMG_4434.JPG)
 
 My favorite is the [Cherohala Skyway](http://cherohala.org/). The Cherohala Skyway reaches over 5,400 feet elevation with amazing views of the surrounding mountains and valleys. Highway 129, known world-wide by motorcyle and car enthusiasts as "[The Tail of the Dragon](http://tailofthedragon.com/)", is a rollercoaster ride of 318 curves in just 11 miles. I look forward to this trip all year. What would make the trip even better is to share the experience with _you_.
 

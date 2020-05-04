@@ -23,7 +23,7 @@ How I configure my columns in Tweetbot:
 * A [Tech Community](https://twitter.com/reverentgeek/lists/tech-community) list of people of influence in software/tech industry.
 * A [Tech Events](https://twitter.com/reverentgeek/lists/tech-events) list of conferences and events. This helps me watch for announcements, such as a "Call for Papers" (CFP).
 
-![](/content/images/2017/07/tweetbot.jpg)
+![Tweetbot screenshot](/content/images/2017/07/tweetbot.jpg)
 
 If I get too far behind, it's okay to declare "Twitter bankruptcy" on any of these columns except my private list.
 

@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba96e
 title: "Keynote Achievement Unlocked!"
-feature_image: 
+feature_image: /content/images/2017/04/music-city-code.jpg
 description: "Last week I had the privilege of speaking at Music City Agile and Music City Code. I had an absolute blast hanging out with old friends,…"
 date: 2016-08-22
 tags: posts

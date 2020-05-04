@@ -27,7 +27,7 @@ Oh, but the fun didn't stop there.
 
 The projector went out... not once... not twice... but, _three times_. Cory laughed right along with the audience and kept on trucking.
 
-![](/content/images/2014/Jul/sos-cory-house-follow-up.gif)
+![Cory House: The audience wants you to succeed](/content/images/2014/Jul/sos-cory-house-follow-up.gif)
 
 And, what an inspiring and memorable talk it was! As I mentioned in my [previous post](http://reverentgeek.com/start-doing/), you ought to check out Cory's "[Becoming an Outlier](https://vimeo.com/97415346)" NDC recording and [Pluralsight course](http://pluralsight.com/training/Courses/TableOfContents/career-reboot-for-developer-mind).
 

@@ -63,9 +63,9 @@ You should now have SQL Server running on your Mac, ready for action!
 
 Kitematic is a nice desktop application for managing Docker containers. The first time you click **Open Kitematic**, it will prompt you to download and install it. You can then use Kitematic to view the output of your containers, manage their settings, etc.
 
-![](/content/images/2016/11/kitematic-1.gif)
+![Docker menu, open Kitematic ](/content/images/2016/11/kitematic-1.gif)
 
-![](/content/images/2016/11/kitematic-2.gif)
+![Kitematic screenshot](/content/images/2016/11/kitematic-2.gif)
 
 ## It's running, now what?
 
@@ -100,9 +100,9 @@ Yes, you can restore a SQL backup file (`.bak`) created on Windows! You can star
 3. Note where the backup file will be created, modify if necessary
 4. Click OK to generate backup file
 
-![](/content/images/2017/10/backup-step-1.png)
+![Database -> Tasks -> Back Up...](/content/images/2017/10/backup-step-1.png)
 
-![](/content/images/2017/10/backup-step-2.png)
+![Set backup destination](/content/images/2017/10/backup-step-2.png)
 
 Next, locate the backup file on your Windows machine and copy the file to your Mac. The details of this step I leave to you, dear reader. I hope it's not too painful.
 
@@ -142,21 +142,21 @@ First step is to use SQL Server Management Studio to generate scripts from an ex
 
 Right-click on your database, and choose Tasks -> Generate Scripts...
 
-![](/content/images/2016/11/generate-scripts-1-2.gif)
+![Database -> Tasks -> Generate Scripts...](/content/images/2016/11/generate-scripts-1-2.gif)
 
 I chose to separate my table and data scripts from my Views, Stored Procedures, User-Defined Functions, etc.
 
-![](/content/images/2016/11/generate-scripts-2.gif)
+![Select objects to script](/content/images/2016/11/generate-scripts-2.gif)
 
 Next, click on **Advanced**
 
-![](/content/images/2016/11/generate-scripts-3.gif)
+![Click advanced](/content/images/2016/11/generate-scripts-3.gif)
 
 I chose to "Check for object existence," "Script DROP and CREATE," and set "Types of data to script" to "Schema and data."
 
 Checking for object existence and DROP/CREATE allows me to re-run the same script against an existing database, if I want to reset it back to its original state.
 
-![](/content/images/2016/11/generate-scripts-4.gif)
+![Set advanced scripting options](/content/images/2016/11/generate-scripts-4.gif)
 
 Choose a location to save your scripts. When finished, repeat the steps to script out your Views, Stored Procedures, and UDFs, if necessary.
 

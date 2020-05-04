@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba96f
 title: "Can't Stop the Doodles"
-feature_image: 
+feature_image: /content/images/2016/10/superman-manual.jpg
 description: "Ever since I discovered what an impact hand-drawn illustrations can have on an audience, I've been using them more and more in all of my…"
 date: 2016-10-17
 tags: posts
@@ -13,14 +13,14 @@ Ever since I discovered [what an impact hand-drawn illustrations can have on an 
 
 Below is a collection of some of my recent favorites from [my slides](https://speakerdeck.com/reverentgeek) and [Instagram](https://www.instagram.com/reverentgeek/).
 
-![](/content/images/2016/10/dumpster-fire.png)  
-![](/content/images/2016/10/javascript-park.jpg)  
-![](/content/images/2016/10/javascript-finds-a-way.jpg)  
-![](/content/images/2016/10/js-helping-developers-internet-since-1995.jpg)  
-![](/content/images/2016/10/i-pity-the-fool.png)  
-![](/content/images/2016/10/dotnet-godfather.png)  
-![](/content/images/2016/10/js-its-a-js-thang.jpg)  
-![](/content/images/2016/10/superman-manual.jpg)
+![dumpster fire](/content/images/2016/10/dumpster-fire.png)  
+![Jurrascript Park](/content/images/2016/10/javascript-park.jpg)  
+![JavaScript finds a way](/content/images/2016/10/javascript-finds-a-way.jpg)  
+![Helping developers internet since 1995](/content/images/2016/10/js-helping-developers-internet-since-1995.jpg)  
+![I pity the fool](/content/images/2016/10/i-pity-the-fool.png)  
+![.NET Godfather](/content/images/2016/10/dotnet-godfather.png)  
+![It's a JavaScript thing, you wouldn't understand](/content/images/2016/10/js-its-a-js-thang.jpg)  
+![Superman manual: put on underwear then put on pants](/content/images/2016/10/superman-manual.jpg)
 
 Here are the slides from my latest presentation, "Public Speaking without Barfing on Your Shoes!"
 

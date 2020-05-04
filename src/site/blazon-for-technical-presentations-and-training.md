@@ -28,19 +28,19 @@ As you type content for a slide, Blazon gives you a live preview of how that con
 
 Syntax highlighting makes code easier to read, and it's something that developers can appreciate.
 
-![](/content/images/2014/May/02_blazon_syntax_highlighting.gif)
+![syntax highlighting](/content/images/2014/May/02_blazon_syntax_highlighting.gif)
 
 ## Shared code blocks
 
 Need to walk through a lot of code across multiple slides? Blazon let's you create and reference shared files. You can even select which lines from a file you want to appear on a slide. Make a change to a file, and all the slides that make use of that file are automatically updated. Boom.
 
-![](/content/images/2014/May/03_blazon_shared_code_blocks.gif)
+![shared code blocks](/content/images/2014/May/03_blazon_shared_code_blocks.gif)
 
 ## Highlight specific lines of code
 
 Blazon takes shared code files a step further by allowing you to highlight specific lines of code. This is a _killer_ way to walk through your code.
 
-![](/content/images/2014/May/04_blazon_code_line_highlights.gif)
+![code line highlights](/content/images/2014/May/04_blazon_code_line_highlights.gif)
 
 ## No WiFi? No problem.
 

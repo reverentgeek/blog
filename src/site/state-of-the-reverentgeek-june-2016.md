@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba96a
 title: "State of the ReverentGeek, June 2016"
-feature_image: 
+feature_image: /content/images/2016/06/D197C845-87FE-4AC6-8977-99382B47721C.JPG
 description: "I can't believe it's been a year since my last blog post! So much has happened. TL;DR: I am a very blessed man, and so grateful for the…"
 date: 2016-06-30
 tags: posts
@@ -17,8 +17,6 @@ In addition to whole bunch of fantastic conferences in the US, I've had the priv
 
 While at NDC Oslo, I was fortunate to be a part of [PubConf](https://pubconf.io/). It's fun after-party event, that follows the ignite talk format. You have 5 minutes, 20 slides, and each slide auto-advances after 15 seconds. My talk was titled _**Win Hearts with Your Craptastic Drawings**_, in which I attempted to persuade the audience to use hand-drawn illustrations for maximum impact. The pinnacle of the event was [Rob Conery](https://twitter.com/robconery) doing a "roast" of the previous 12 ignite talks. So much fun!
 
-![I've been everywhere, man](/content/images/2016/06/D197C845-87FE-4AC6-8977-99382B47721C.JPG)
-
 ### Spinning Electrons
 
 Speaking of fun, I've been speaking a lot about [Electron](http://electron.atom.io/). Electron is an awesome bit of technology built on top of Node.js and Chrome for creating truly portable desktop apps for Windows, Mac, and Linux. Want a 30-minute introduction? Check out this recording from [Nodevember](http://nodevember.org/).
@@ -27,7 +25,7 @@ I also gave a hands-on Electron workshop at [JSConf UY](https://jsconf.uy/). If 
 
 ### Do you even beard, bro?
 
-![](/content/images/2016/06/do-you-beard-bro.jpg)
+![Do you even beard, bro?](/content/images/2016/06/do-you-beard-bro.jpg)
 
 I decided around Christmas to grow out my beard. I've had facial hair for more than 20 years, but never let it grow out very long. It's certainly received a lot of attention. One person told me, "It's past the point of no return!" I agree. I think this might be the new signature "me."
 

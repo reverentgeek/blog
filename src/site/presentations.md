@@ -22,14 +22,14 @@ _Note: I've given this talk several times as both a keynote and a presentation._
 
 ## You. Are. Awesome.
 
-You may not realize it, but you are awesome. You have the power to change the world. Regardless if you are a student, professional, or “family engineer,” I firmly believe you have amazing potential to impact the people around you in powerful and meaningful ways. My goal is to help you realize the awesomeness you already possess and be encouraged to unleash it!
+You may not realize it, but you are awesome. You have the power to change the world. Regardless if you are a student, professional, or "family engineer," I firmly believe you have amazing potential to impact the people around you in powerful and meaningful ways. My goal is to help you realize the awesomeness you already possess and be encouraged to unleash it!
 
 _Note: This is the keynote I have given for conferences such as That Conference, DevReach, and NDC Oslo._  
 [Video](https://www.youtube.com/watch?v=wsjqnrwkXqI) | [Slides](https://speakerdeck.com/reverentgeek/you-are-awesome)
 
 ## JavaScript: Past, Present, and Future
 
-Ah, JavaScript! Like it or not, it's a “tragically important” language that is “eating the world.” Hate it? Love it? Avoid it? Embrace it?
+Ah, JavaScript! Like it or not, it's a "tragically important" language that is "eating the world." Hate it? Love it? Avoid it? Embrace it?
 
 This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way that it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our own JavaScript less terrible!
 
@@ -112,7 +112,7 @@ In this talk, I want to share with you techniques to improve your note-taking sy
 
 Who says communication has to be dry, dull, and boring? Simple, hand-drawn illustrations are a compelling and fun way to engage, inform, and win your audience of readers and viewers!
 
-I firmly believe drawing is a skill that anyone can learn. The amazing thing is, there's no such thing as “bad” art! With some fundamentals and practice, you can make an impact, and have fun doing it!
+I firmly believe drawing is a skill that anyone can learn. The amazing thing is, there's no such thing as "bad" art! With some fundamentals and practice, you can make an impact, and have fun doing it!
 
 I started drawing about four years ago, and it is now an essential part of everything I do. I would love to share with you my bag of tips and tricks I've learned to create illustrations for presentations, articles, videos, and more!
 
@@ -138,8 +138,8 @@ David is a family man, musician, illustrator, software developer, and Microsoft 
 
 Preferred:
 
-![](/content/images/2020/04/reverentgeek-v3-1.png)
+![Headshot illustration](/content/images/2020/04/reverentgeek-v3-1.png)
 
 Alternative:
 
-![](/content/images/2019/04/david_profile_pic_2018.jpg)
+![Headshot photo](/content/images/2019/04/david_profile_pic_2018.jpg)

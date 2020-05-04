@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba981
 title: "Resources for the Reluctant Leader"
-feature_image: 
+feature_image: /content/images/2017/07/scenic-city-summit-2017.jpg
 description: "Here are some resources from my \"Guide to Leadership for the Reluctant Leader\" keynote presented at Scenic City Summit 2017."
 date: 2017-07-29
 tags: posts

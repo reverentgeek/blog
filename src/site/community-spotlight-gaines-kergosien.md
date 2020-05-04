@@ -13,7 +13,7 @@ In my opinion, Gaines is a community hero. He's not only been involved in the Na
 
 ## Music City Code
 
-![](/content/images/2017/04/music-city-code.jpg)
+![Music City Code achievement unlocked](/content/images/2017/04/music-city-code.jpg)
 
 I remember many years ago, Gaines talking about wanting to create a first-class developer conference in Nashville. In 2015, I witnessed his vision become a reality in [Music City Code](https://www.musiccitycode.com/). 2015 and 2016 were awesome, and 2017 will no doubt be even better!
 

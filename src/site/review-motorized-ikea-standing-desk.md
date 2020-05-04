@@ -13,7 +13,7 @@ layout: layouts/post.njk
 
 A few months ago, my son and I were cruising the IKEA store in Atlanta, GA, when we came across a new, motorized standing desk for only $489.
 
-![](/content/images/2015/05/christian_ikea_standing_desk.jpg)
+![My son at the standing desk in the IKEA store](/content/images/2015/05/christian_ikea_standing_desk.jpg)
 
 Now, if your reaction is, "_Only_ $489?!?!" chances are you haven't priced commercial standing desks. Up until this fine day, the cheapest _manually_\-adjustable standing desk I had found, where you're required to crank a lever **like a neanderthal**, was at least $700. _Motorized_ standing desks typically cost $1,000 or more!
 

@@ -72,7 +72,7 @@ In addition to Node.js, Hapi, and Vue, here are the dependencies and plugins use
 * [Inert](https://www.npmjs.com/package/inert) - Static resource plugin for Hapi
 * [Lab](https://www.npmjs.com/package/lab) and [Code](https://www.npmjs.com/package/code) - Test and assertion utilities for Hapi
 
-[![](/content/images/2018/07/check-out-the-source.png)](https://github.com/reverentgeek/node-bacon-generator)
+[![Check out the source code](/content/images/2018/07/check-out-the-source.png)](https://github.com/reverentgeek/node-bacon-generator)
 
 [github.com/reverentgeek/node-bacon-generator](https://github.com/reverentgeek/node-bacon-generator)
 

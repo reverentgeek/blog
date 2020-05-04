@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba971
 title: "2016 Podcasts"
-feature_image: 
+feature_image: /content/images/2016/11/podcast.png
 description: "I had the honor of being on a few podcasts this year!"
 date: 2016-11-17
 tags: posts
@@ -10,8 +10,6 @@ layout: layouts/post.njk
 ---
 
 I had the honor of being on a few podcasts this year!
-
-![](/content/images/2016/11/podcast.png)
 
 ## Cross-Cutting Concerns
 

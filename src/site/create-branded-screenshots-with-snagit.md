@@ -13,7 +13,7 @@ Throughout my career, writing documentation and tutorials has been a critical sk
 
 [Snagit](https://www.techsmith.com/screen-capture.html) has been my primary tool for taking screen shots for years. Out of the box, there are a number of useful elements I frequently use to annotate images, such as arrows, callouts, shapes, and text.
 
-![](/content/images/2019/07/snagit-ootb-example-1.png)
+![Plain screenshot vs Snagit](/content/images/2019/07/snagit-ootb-example-1.png)
 
 Use Snagit to add pizazz to your screen shots!
 
@@ -38,7 +38,7 @@ To create a new theme in Snagit:
 * Customize the color and optionally add more colors
 * Click **Create**
 
-![](/content/images/2019/07/snagit-create-new-theme.png)
+![Create a Snagit theme](/content/images/2019/07/snagit-create-new-theme.png)
 
 Steps to create a new Snagit theme
 
@@ -53,7 +53,7 @@ For example, as you may have noticed, I have custom callout (speech bubble) that
 3. Under **Tool Properties**, select a new font, change the color to white, and adjust the font size to 36pt.
 4. To save the modified element to your theme (currently grayed out surrounded by a dashed line), click the **Plus (+)**.
 
-![](/content/images/2019/07/create-new-theme-element.png)
+![Create a Snagit theme element](/content/images/2019/07/create-new-theme-element.png)
 
 Steps to customize a Snagit element
 
@@ -67,6 +67,6 @@ When you click the _gear_ icon next to your theme, you'll see there are options 
 
 Contributing to documentation and tutorials is an extremely valuable way to give back to the open source community, to support the people you work with, and to help "future you" be more awesome!
 
-![](/content/images/2019/07/get-out-there-and-be-awesome.png)
+![Get out there and be awesome!](/content/images/2019/07/get-out-there-and-be-awesome.png)
 
 Get out there and be awesome!

@@ -19,4 +19,4 @@ And, speaking of starting somewhere, go get yourself a copy of "[Start: Punch Fe
 
 Get out there and punch some bears in the face.
 
-![](/content/images/2014/Jul/bear-punch.jpg)
+![Punching a bear](/content/images/2014/Jul/bear-punch.jpg)

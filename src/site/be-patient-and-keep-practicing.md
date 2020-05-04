@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba986
 title: "Be Patient and Keep Practicing"
-feature_image: 
+feature_image: /content/images/2017/09/demo.jpg
 description: "You've probably seen the ShamWow meme. You know, the classic, cheesy infomercial guy."
 date: 2017-09-15
 tags: posts
@@ -12,8 +12,6 @@ layout: layouts/post.njk
 You've probably seen the [ShamWow meme](http://knowyourmeme.com/memes/vince-shlomi-shamwow-slap-chop). You know, the classic, cheesy infomercial guy.
 
 A couple of years ago, I had the idea of drawing that meme for one of my tech talks, as a transition to a demo.
-
-![Demo version 1](/content/images/2017/09/demo.jpg)
 
 I was so proud of it. And, it get a few chuckles from audiences.
 

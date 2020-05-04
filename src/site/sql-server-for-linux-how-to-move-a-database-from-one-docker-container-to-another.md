@@ -17,7 +17,7 @@ The good news is, SQL for Linux comes with a [`sqlpackage`](https://docs.microso
 
 The best way to know how many days are left in the trial is to look at the logs in the container. SQL Server reports how many days are left when it starts. Here's a screenshot from [Kitematic](https://kitematic.com/).
 
-![](/content/images/2017/03/sql_linux_container_logs.png)
+![SQL Server logs in Docker container](/content/images/2017/03/sql_linux_container_logs.png)
 
 You can also get a rough estimate using [`sql-cli`](https://github.com/hasankhan/sql-cli) and a SQL query:
 
@@ -25,7 +25,7 @@ You can also get a rough estimate using [`sql-cli`](https://github.com/hasankhan
 SELECT create_date AS InstallDate, DATEADD( DD, 180, create_date ) AS ExpiryDate, ( 180 - DATEDIFF( DD, create_date, GETDATE() ) ) AS DaysLeft FROM sys.server_principals WHERE name = N'BUILTIN\Administrators'
 ```
 
-![](/content/images/2017/03/mssql-expire-cli.png)
+![Getting SQL expiration date from the command line](/content/images/2017/03/mssql-expire-cli.png)
 
 Obviously, there's a two-day difference, but it's close enough.
 

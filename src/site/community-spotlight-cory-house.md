@@ -24,4 +24,4 @@ Connect with Cory House:
 
 By the way, I searched for you on Google today. Your dream has come true.
 
-![](/content/images/2017/04/cory-house-search-1.jpg)
+![Google search for Cory House](/content/images/2017/04/cory-house-search-1.jpg)

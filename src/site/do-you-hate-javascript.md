@@ -21,7 +21,7 @@ Every programming language I know has its own challenges and peculiarities. Java
 
 Since I use JavaScript a lot, I'm qualified to poke fun at its warts. It would _not_ be cool for me to poke fun at other languages I don't know.
 
-![](/content/images/2017/02/js-not-your-dads-js.jpg)
+![Not your Dad's JavaScript](/content/images/2017/02/js-not-your-dads-js.jpg)
 
 In reality, the JavaScript language itself has gotten _much_ better since ES2015 (ES6). It's a joy to work with. The struggles we face today have more to do with challenges beyond the language. Things like the explosion of libraries to choose from, complexity of frameworks, packaging and build tools, and supporting older browsers.
 
@@ -82,4 +82,4 @@ I look to other experts to help me stay current with the latest and greatest. He
 
 ## In case of emergency...
 
-![](/content/images/2017/02/first-aid-for-javascript.png)
+![First aid for JavaScript](/content/images/2017/02/first-aid-for-javascript.png)

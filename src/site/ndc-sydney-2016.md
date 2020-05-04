@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba96d
 title: "NDC Sydney 2016"
-feature_image: 
+feature_image: /content/images/2016/08/IMG_2127-1.jpg
 description: "Earlier this month I had the incredible privilege of speaking at NDC Sydney! Australia has been at the top of my most-wanted-to-visit…"
 date: 2016-08-10
 tags: posts

@@ -19,9 +19,9 @@ I don't remember if I spent the _entire_ day at that keyboard. What I do know is
 
 ### An amazing act of kindness
 
-Some time after that Thanksgiving, we made another trip to my Aunt and Uncle's house. Waiting for me there was a big cardboard box. Inside was the TRS-80, a cassette drive, a floppy drive, a dot matrix printer, cables, and a book titled, “Getting Started With Color BASIC.”
+Some time after that Thanksgiving, we made another trip to my Aunt and Uncle's house. Waiting for me there was a big cardboard box. Inside was the TRS-80, a cassette drive, a floppy drive, a dot matrix printer, cables, and a book titled, "Getting Started With Color BASIC."
 
-![](/content/images/2018/03/5B73C5D9-CE5F-4167-819E-FD803E1079A9.jpeg)
+![Getting Started with Color BASIC](/content/images/2018/03/5B73C5D9-CE5F-4167-819E-FD803E1079A9.jpeg)
 
 This one very kind and generous act launched me on a journey of computers and programming. I am forever grateful, and in their debt, for helping me to discover something that has not only been my career, but a source of learning, passion, and delight.
 

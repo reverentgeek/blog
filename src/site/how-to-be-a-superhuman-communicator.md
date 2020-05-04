@@ -35,7 +35,7 @@ Drawing is something you can do right now! Grab some paper and a pencil, pen, or
 
 Drawing _well_ is a skill you can learn. It will take practice and learning techniques to get better.
 
-![](/content/images/2019/04/journey-of-a-thousand-miles-lao-tzu.png)
+![The journey of a thousand miles begins with a single step](/content/images/2019/04/journey-of-a-thousand-miles-lao-tzu.png)
 
 Some techniques you can learn or your own through experimentation. Study illustrations you like and figure out how you might reproduce the same look in your own drawings.
 
@@ -79,4 +79,4 @@ These are the slides from my talk on this subject, ["Drawing: How to be a Superh
 
 You may not realize it yet, but you are awesome. I believe you can make a significant, positive impact in your workplace, community, and the world, through the power of technology. Share your knowledge and experience with others! Use your own hand-drawn illustrations to make it fun and memorable!
 
-![](/content/images/2019/04/you-dont-need-permission-to-be-awesome.jpg)
+![You don't need permission to be awesome!](/content/images/2019/04/you-dont-need-permission-to-be-awesome.jpg)

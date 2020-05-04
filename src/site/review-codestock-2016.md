@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba96c
 title: "Review: CodeStock 2016"
-feature_image: 
+feature_image: /content/images/2016/07/codestock-review-2016.jpg
 description: "Year after year, CodeStock continues to expand, improve, and win a special place in my heart. As with any conference, the hallway…"
 date: 2016-07-19
 tags: posts
@@ -17,9 +17,9 @@ One of the reasons I love CodeStock is simply getting there. It gives me an oppo
 
 This year I decided to share the experience, and offered to have others join me for a [Ride with ReverentGeek](/ride-with-reverentgeek-codestock-2016/). My hope is this will be a growing annual event! All are welcome to join, including "cagers" (what motorcycle enthusiasts call people who drive cars 😉).
 
-![](/content/images/2016/07/IMG_1877.JPG)
+![Tail of the Dragon](/content/images/2016/07/IMG_1877.JPG)
 
-![](/content/images/2016/07/1212021.jpg)
+![Tail of the Dragon](/content/images/2016/07/1212021.jpg)
 
 ## The conference
 
@@ -27,7 +27,7 @@ This year, [Cory House](https://twitter.com/housecor) returned for the opening k
 
 Cory provided clear and compelling evidence of the pros and cons for everyone on the technology adoption curve: early adopters, mainstream, and tech laggards. Wherever we find ourselves on the curve, he provided tips and encouragement to "own" our career and take full advantage of the opportunities. He almost convinced me to be a COBOL developer!
 
-![](/content/images/2016/07/IMG_1878.JPG)
+![Cory House and Codestock](/content/images/2016/07/IMG_1878.JPG)
 
 ## My talks
 
@@ -48,7 +48,7 @@ I continue to receive a lot of comments on my use of hand-drawn illustrations in
 
 I had the pleasure of giving a lightning talk, "How to Win Hearts with Your Craptastic Drawings." If you want to learn more, check out my post, [Captivate Your Audience Using Simple Illustrations](https://medium.com/@reverentgeek/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301#.bxtik17dt).
 
-![](/content/images/2016/07/IMG_1879.JPG)
+![You don't need permission to be awesome!](/content/images/2016/07/IMG_1879.JPG)
 
 _Draw some happy trees!_
 

@@ -11,13 +11,13 @@ layout: layouts/post.njk
 
 Last week I had the privilege of being a part of [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but this was my first time attending as a speaker and a sponsor.
 
-![](/content/images/2015/05/reverentgeek_2015-Apr-29.jpg)
+![Me at the CodePaLOUsa Leankit booth](/content/images/2015/05/reverentgeek_2015-Apr-29.jpg)
 
 Being a sponsor gave me a small glimpse into how hard the volunteers work to make this great conference such a wonderful success. [Chad Green](https://www.linkedin.com/in/chadwickgreen) and his staff have a passion for the community, and are Just Good PeopleTM.
 
 I wasn't able to attend many sessions. However, the opportunities to connect with developers and other speakers made the trip _all worthwhile_.
 
-![](/content/images/2015/05/nodejs_2015-Apr-29.jpg)
+![My Node.js talk](/content/images/2015/05/nodejs_2015-Apr-29.jpg)
 
 I really enjoyed giving my ["Do you even Kanban?"](http://www.slideshare.net/reverentgeek/do-you-even-kanban) and ["Intro to Node.js"](http://www.slideshare.net/reverentgeek/intro-to-nodejs-for-net-developers) talks. I received a lot of helpful feedback.
 

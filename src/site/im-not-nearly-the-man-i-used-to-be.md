@@ -35,7 +35,8 @@ And, here's the bottom line:
 
 I love what we eat. It's not too hard. I don't feel like I'm deprived or suffering. Whenever I go "off plan," I don't feel like throwing in the towel and giving up afterwards. The principles in "Trim Healthy Mama" (THM) are the _lifestyle_ changes I never experienced before.
 
-![](/content/images/2014/Jul/IMG_6950.jpg)_It has been 14 years since I've worn size 38 jeans!_
+![Me in size 38 jeans!](/content/images/2014/Jul/IMG_6950.jpg)
+_It has been 14 years since I've worn size 38 jeans!_
 
 From the wife:
 

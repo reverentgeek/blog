@@ -59,6 +59,6 @@ Visuals such as pictures, illustrations, and video convey information and meanin
 
 For hand-drawn sketches and illustrations, I've been using [Forge](http://www.adonit.net/forge/). I especially like being able to create a new sketch based on selecting layers in an existing sketch. This allows me to quickly build a series of evolving illustrations.
 
-![](/content/images/2015/04/IMG_0161.PNG)
+![Pushing work across the finish line](/content/images/2015/04/IMG_0161.PNG)
 
 Was this post useful? What tools do you use? Leave a comment!

@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba975
 title: "Event Logo for Nashville SharePoint Saturday"
-feature_image: 
+feature_image: /content/images/2017/04/spsnashville-logo.png
 description: "I am so honored that Daniel Glenn reached out to me to design the logo for the 2017 Nashville SharePoint Saturday event. Here is the final…"
 date: 2017-04-10
 tags: posts
@@ -9,9 +9,7 @@ slug: event-logo-for-nashville-sharepoint-saturday
 layout: layouts/post.njk
 ---
 
-I am so honored that [Daniel Glenn](https://twitter.com/DanielGlenn) reached out to me to design the logo for the [2017 Nashville SharePoint Saturday](http://www.spsevents.org/city/Nashville/Nashville2017) event. Here is the final design we landed on:
-
-![Nashville SharePoint Saturday](/content/images/2017/04/spsnashville-logo.png)
+I am so honored that [Daniel Glenn](https://twitter.com/DanielGlenn) reached out to me to design the logo for the [2017 Nashville SharePoint Saturday](http://www.spsevents.org/city/Nashville/Nashville2017) event. Above is the final design we landed on.
 
 Here is the logo printed on a shirt and a sticker, which were given to attendees of the event.
 
@@ -33,20 +31,20 @@ I used an iPad Pro and Apple Pencil to create all the artwork. Most of the work 
 
 Here are some of the design ideas that were generated along the way.
 
-![](/content/images/2017/04/spsaltlogo7.gif)
+![Sharepoint Saturday idea 1](/content/images/2017/04/spsaltlogo7.gif)
 
-![](/content/images/2017/04/spsaltlogo8.gif)
+![Sharepoint Saturday idea 2](/content/images/2017/04/spsaltlogo8.gif)
 
-![](/content/images/2017/04/spsaltlogo6.gif)
+![Sharepoint Saturday idea 3](/content/images/2017/04/spsaltlogo6.gif)
 
-![](/content/images/2017/04/spsaltlogo5.gif)
+![Sharepoint Saturday idea 4](/content/images/2017/04/spsaltlogo5.gif)
 
-![](/content/images/2017/04/spsaltlogo4.gif)
+![Sharepoint Saturday idea 5](/content/images/2017/04/spsaltlogo4.gif)
 
-![](/content/images/2017/04/spsaltlogo3.gif)
+![Sharepoint Saturday idea 6](/content/images/2017/04/spsaltlogo3.gif)
 
-![](/content/images/2017/04/spsaltlogo2.gif)
+![Sharepoint Saturday idea 7](/content/images/2017/04/spsaltlogo2.gif)
 
-![](/content/images/2017/04/spsaltlogo1.gif)
+![Sharepoint Saturday idea 8](/content/images/2017/04/spsaltlogo1.gif)
 
-![](/content/images/2017/04/spsnashville-logo.gif)
+![Sharepoint Saturday idea 9](/content/images/2017/04/spsnashville-logo.gif)

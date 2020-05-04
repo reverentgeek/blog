@@ -47,4 +47,4 @@ Need more evidence? Read Cory House's article, [Public Speaking Transformed My L
 
 Get out there and be awesome!
 
-![](/content/images/2017/08/you-dont-need-permission-2.jpg)
+![You don't need permission to be awesome!](/content/images/2017/08/you-dont-need-permission-2.jpg)

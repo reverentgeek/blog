@@ -13,7 +13,7 @@ There are many life events when people are paid tribute. Job changes. Relocation
 
 Without a doubt, honoring people at these times is touching and needed.
 
-I'm starting to question, “Why don't we voice our appreciation, at least more often, _before_ these significant events happen?”
+I'm starting to question, "Why don't we voice our appreciation, at least more often, _before_ these significant events happen?"
 
 The more I think about it, the more I want to honor and encourage the people who have impacted my life and career.
 

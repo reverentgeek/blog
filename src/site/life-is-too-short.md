@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba983
 title: "Life is Too Short"
-feature_image: 
+feature_image: /content/images/2017/07/life-is-too-short.jpg
 description: "Early in my career, I worked under a manager who exemplified the Dilbert Principle:"
 date: 2017-07-31
 tags: posts
@@ -31,7 +31,7 @@ No one was going to read this. Ever.
 
 I toughed it out for more than a year. I tried to find ways to get out from under him. With no hope of relief in sight, I found another job.
 
-I said to myself, “Life is too short to work somewhere that stinks.”
+I said to myself, "Life is too short to work somewhere that stinks."
 
 ![Life is too short to work somewhere that stinks](/content/images/2017/07/life-is-too-short-stinks-1.jpg)
 
@@ -39,7 +39,7 @@ I started living by this philosophy. I offered it as advice to many others, when
 
 In technology, we are very privileged we are in such high-demand, and we have the luxury of being able to choose where we work. That isn't the case in every profession.
 
-The problem is, this idea began to pollute my perspective. When things started going sour, I would think, “Oh, great. Here we go again. Time to start looking for a new job.”
+The problem is, this idea began to pollute my perspective. When things started going sour, I would think, "Oh, great. Here we go again. Time to start looking for a new job."
 
 ![my polluted thinking](/content/images/2017/07/life-is-too-short-stinks-2.jpg)
 
