@@ -1,7 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba961
 title: "Ride Review: Suches and Wolf Pen Gap"
-feature_image: 
+feature_image: /content/images/suches-and-wolf-pen-gap/IMG_5986.JPG
 description: "One of the advantages of living close to Dalton, GA, is access to some of the best roads in the country for motorcycle trips. After what…"
 date: 2015-04-04
 tags: posts
@@ -25,9 +25,7 @@ At Ducktown, I get on Highway 68 and head south. I enter Copperhill, which seems
 
 In Blue Ridge, I stop for breakfast at Dunkin' Donuts. I'm always on the lookout for bacon and caffeine, and I know I need plenty of fuel for this trip.
 
-[![Bacon and Caffeine](/content/images/suches-and-wolf-pen-gap/IMG_5938.JPG)](https://plus.google.com/u/0/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967161431308162?pid=6133967161431308162&oid=117556739981260756118)  
-  
-_Mmm... bacon and caffeine_
+[![Bacon and Caffeine](/content/images/suches-and-wolf-pen-gap/IMG_5938.JPG)](https://plus.google.com/u/0/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967161431308162?pid=6133967161431308162&oid=117556739981260756118)_Mmm... bacon and caffeine_
 
 ## Highway 60 from Blue Ridge to Suches
 
@@ -49,21 +47,15 @@ Whenever I see two dudes dressed in identical tights pedaling up a mountain, I l
 > "Wilfred, my good man. I just blew a heart valve, and about 3 miles back I lost the ability to father children. I say we press on."
 > "Jolly good!"
 
-[![Lake Winfield Scott](/content/images/suches-and-wolf-pen-gap/IMG_5945.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967279773242962?pid=6133967279773242962&oid=117556739981260756118)  
-  
-_Lake Winfield Scott on Wolf Pen Gap_
+[![Lake Winfield Scott](/content/images/suches-and-wolf-pen-gap/IMG_5945.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967279773242962?pid=6133967279773242962&oid=117556739981260756118)_Lake Winfield Scott on Wolf Pen Gap_
 
 ## Walasi-Yi Inn, Mountain Crossings
 
 Turning south on Highway 129, I make an unexpected find: the [Mountain Crossings](https://www.mountaincrossings.com/Articles.asp?ID=253) store at Walasi-Yi Inn. I talk to a couple of hikers and learn this store and hostel is directly on the Appalachian Trail. This is the famous store that helps hikers who are just a few days into their northbound journey on the AT. After climbing Blood Mountain at an elevation of 4,400 feet, hikers have a chance to rest, get a hot shower, drop off mail, and stock up on supplies and good advice.
 
-[![Boots](/content/images/suches-and-wolf-pen-gap/IMG_5954.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967473685736354?pid=6133967473685736354&oid=117556739981260756118)  
-  
-_Mountain Crossing serves more than 2,000 AT hikers each year. Abandoned boots hang from the rafters._
+[![Boots](/content/images/suches-and-wolf-pen-gap/IMG_5954.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967473685736354?pid=6133967473685736354&oid=117556739981260756118)_Mountain Crossing serves more than 2,000 AT hikers each year. Abandoned boots hang from the rafters._
 
-[![View from Walasi-Yi](/content/images/suches-and-wolf-pen-gap/IMG_5951.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967466672075938?pid=6133967466672075938&oid=117556739981260756118)  
-  
-_View from Walasi-Yi_
+[![View from Walasi-Yi](/content/images/suches-and-wolf-pen-gap/IMG_5951.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967466672075938?pid=6133967466672075938&oid=117556739981260756118)_View from Walasi-Yi_
 
 ## Dahlonega
 
@@ -75,13 +67,9 @@ I really want to stay around in Dahlonega and check out the historic downtown. B
 
 At last. The moment I've been waiting for. I finally arrive at [Poole's Real Pit BBQ](http://www.poolesbarbq.com/), the self-labeled "Taj-ma-hog" of BBQ. Ever since seeing the "pig hill of fame" from Highway 515, I've wanted to try their BBQ. It did not disappoint.
 
-[![The Pig Hill of Fame](/content/images/suches-and-wolf-pen-gap/IMG_5973.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967676923125298?pid=6133967676923125298&oid=117556739981260756118)  
-  
-_The Pig Hill of Fame_
+[![The Pig Hill of Fame](/content/images/suches-and-wolf-pen-gap/IMG_5973.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967676923125298?pid=6133967676923125298&oid=117556739981260756118)_The Pig Hill of Fame_
 
-[![Ribs](/content/images/suches-and-wolf-pen-gap/IMG_5978.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967753981489378?pid=6133967753981489378&oid=117556739981260756118)  
-  
-_Ribs, slaw, brunswick stew, and garlic toast_
+[![Ribs](/content/images/suches-and-wolf-pen-gap/IMG_5978.JPG)](https://plus.google.com/photos/+DavidNealReverentGeek/albums/6133967159650360177/6133967753981489378?pid=6133967753981489378&oid=117556739981260756118)_Ribs, slaw, brunswick stew, and garlic toast_
 
 I ordered pork ribs, which were smoky and juicy. Their smoking process made the ribs taste almost like bacon. Big, juicy, _tender_ bacon. At the table there are three sauces: sweet, smoky, and hot. All three are excellent, but the sweet is _amazing_. The hot isn't really hot, in my opinion. It simply has a lot of ground black pepper in it.
 

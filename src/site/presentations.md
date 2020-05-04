@@ -120,7 +120,7 @@ I started drawing about four years ago, and it is now an essential part of every
 
 ## Build Cross-Platform Desktops with Electron
 
-_4-hour workshop_
+(_4-hour workshop_)
 
 Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using familiar Web technologies. In this hands-on workshop, we will learn the fundamentals of building desktop applications with Electron.js. Our goal is to walk away with a solid framework for building and deploying your own applications!
 

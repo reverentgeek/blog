@@ -30,7 +30,7 @@ This option automatically creates `web.config` and `server.js` files. You can us
 
 An Azure Windows Server virtual machine (VM) is a good option if you are more comfortable with managing Windows Server, need to host more than one web application on the same VM (e.g. a mix of Node.js and ASP.NET applications), or have deployment requirements not supported by Azure websites. There are also a number of [benefits to using iisnode](https://github.com/tjanczuk/iisnode/wiki) when hosting a Node.js application on Windows Server.
 
-### What you will need...
+### Requirements for Node.js and iisnode
 
 * IIS
 * [Node.js](https://nodejs.org/) (x64)
@@ -60,7 +60,7 @@ C:\> choco install urlrewrite
 
 * Install [iisnode](https://github.com/tjanczuk/iisnode/releases) (x64)
 
-### Steps to deploy the first time
+### Steps to deploy Node.js to iisnode the first time
 
 1. Create a new Azure VM, or manage an existing VM
 2. Install the requirements on the Azure VM
@@ -174,7 +174,7 @@ Similar to deploying an ASP.NET application, IIS will detect files have changed 
 
 This is a good option if you are more comfortable managing Windows Server, need to host one or more Node.js applications on the same VM, and do not need the complexity of installing IIS and iisnode. This is ideal for applications intended to run without a public-facing UI, such as Node.js application that acts upon messages published to a message queue.
 
-### What you will need...
+### Requirements for Node.js applications
 
 There are many options for running Node.js as a service, especially on Linux or Mac OS X. I have found [winser](http://jfromaniello.github.io/winser/) to work well on Windows.
 
@@ -183,7 +183,7 @@ There are many options for running Node.js as a service, especially on Linux or 
 * [python 2.x](https://www.python.org/downloads/)
 * [winser](http://jfromaniello.github.io/winser/)
 
-### Steps to deploy the first time
+### Steps to deploy Node.js applications
 
 1. Add `winser` as a dependency to your Node.js application
 2. Install the requirements on the Azure VM ([see tip on Chocolatey](#chocolatey))

@@ -11,7 +11,7 @@ layout: layouts/post.njk
 
 If you follow me on [Twitter](https://twitter.com/reverentgeek) you know that I poke fun at JavaScript quite a bit. Someone recently asked me,
 
-_"Do you hate JavaScript?"_
+> "Do you hate JavaScript?"
 
 No! I genuinely enjoy using JavaScript to build applications.
 

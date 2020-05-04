@@ -260,7 +260,8 @@ I draw avatars you can use for social media, blogs, presentations, business card
 Got an idea for something else? Send it to me at [david@reverentgeek.com](mailto:david@reverentgeek.com)! I have drawn custom illustrations and artwork for events, conferences, meet-ups, advertising campaigns, books, and articles.
 
 <a name="stickers"></a>
-<h2>Stickers!</h2>
+
+## Stickers!
 
 <div id='collection-component-1585057776152'></div>
 <script type="text/javascript">
@@ -505,6 +506,7 @@ Get more of my stickers on [RedBubble](https://www.redbubble.com/people/reverent
  [![Buy my stickers on RedBubble!](/content/images/2018/10/stickers-2018-10.jpg)](https://www.redbubble.com/people/reverentgeek/portfolio/recent?asc=u)
 
 <a name="tshirts"></a>
+
 ## T-Shirts!
 
 Get my t-shirts on [Amazon](https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=reverentgeek)!

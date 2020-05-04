@@ -34,7 +34,6 @@ _Manly Beach_
 We took a day-long group tour to the Blue Mountains, which was the highlight of our vacation.
 
 ![Blue Mountains](/content/images/2016/08/IMG_2445-1.jpg)
-
 _Blue Mountains_
 
 ![Feeding Kangaroos](/content/images/2016/08/IMG_2480-1.jpg)

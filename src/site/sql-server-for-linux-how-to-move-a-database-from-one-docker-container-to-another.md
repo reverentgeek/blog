@@ -43,13 +43,13 @@ docker exec container_name /opt/mssql/bin/sqlpackage /a:Export /ssn:tcp:localhos
 
 Copy the `.bacpac` file to a folder on your host computer. In this example, it will copy the file to the Desktop. Of course, you may want to store the backup in a diffent folder.
 
-**Windows**
+#### Copy the .bacpac File on Windows
 
 ```sh
 docker cp container_name:/tmp/your_db.bacpac %USERPROFILE%\Desktop\your_db.bacpac
 ```
 
-**Mac or Linux**
+#### Copy the .bacpac File on Mac or Linux
 
 ```sh
 docker cp container_name:/tmp/your_db.bacpac ~/Desktop/your_db.bacpac
@@ -73,13 +73,13 @@ docker run -d --name new_container_name -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@55w
 
 ### Step 5: Copy the .bacpac file to the new container
 
-**Windows**
+#### Copy to container using Windows
 
 ```sh
 docker cp %USERPROFILE%\Desktop\your_db.bacpac container_name:/tmp/your_db.bacpac
 ```
 
-**Mac or Linux**
+#### Copy to container using Mac or Linux
 
 ```sh
 docker cp ~/Desktop/your_db.bacpac container_name:/tmp/your_db.bacpac
