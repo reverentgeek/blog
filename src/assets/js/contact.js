@@ -31,6 +31,7 @@ import axios from "axios";
 			subject: subject.value,
 			message: message.value
 		};
+		// console.log(data);
 		axios.post("/.netlify/functions/contact", data )
 			.then(res => {
 				showAlert();
