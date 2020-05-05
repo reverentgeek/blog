@@ -27,7 +27,7 @@ import axios from "axios";
 
 	function contactSubmit( event ) {
 		const data = {
-			email: email.value,
+			from: email.value,
 			subject: subject.value,
 			message: message.value
 		};
