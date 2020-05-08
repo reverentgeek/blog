@@ -13,13 +13,15 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 05.28.2020 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
+| 05.11.2020 | [SE Michigan JS](https://www.meetup.com/SEM-JS/events/270388012/) | Ann Arbor, MI (Online) |
+| 05.12.2020 | [Dev Around the Sun](https://devaroundthesun.org/) | Online |
+| 05.28.2020 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden (Online) |
 
 #### Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 04.21.2020 | [NDC Porto](https://ndcporto.com/) | Porto, Portugal |
+| 04.21.2020 | [NDC Porto](https://ndcporto.com/) | Porto, Portugal (Online) |
 | 02.19.2020 | [DevNexus](https://devnexus.com/) | Atlanta, GA |
 | 01.29.2020 | [KnoxDevs](https://knoxdevs.com/) | Knoxville, TN |
 | 12.06.2019 | [DevTernity](https://devternity.com/) | Riga, Latvia |
