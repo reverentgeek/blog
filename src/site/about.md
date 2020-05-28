@@ -25,9 +25,9 @@ Got Node.js? Try this at your command line: `npx reverentgeek`
 
 ### Notable articles:
 
-* [5 Essential Ingredients for an Awesome Tech Talk](https://medium.com/@reverentgeek/5-essential-ingredients-for-an-awesome-tech-talk-2e5778b2cb5a)
-* [Captivate Your Audience Using Simple Illustrations](https://artplusmarketing.com/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301)
-* [SQL Server Running on a Mac?!](https://medium.com/@reverentgeek/sql-server-running-on-a-mac-3efafda48861)
+* [5 Essential Ingredients for an Awesome Tech Talk](/5-essential-ingredients-for-an-awesome-tech-talk/)
+* [Captivate Your Audience Using Simple Illustrations](/engage-with-simple-illustrations/)
+* [SQL Server Running on a Mac?!](/sql-server-running-on-a-mac/)
 
 ### Notable videos:
 
