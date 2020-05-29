@@ -13,12 +13,13 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 05.28.2020 | [DevSum](https://www.devsum.se/agenda/public-speaking-without-barfing-on-your-shoes) | Stockholm, Sweden (Online) |
+| 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/) | Columbus, OH (Online) |
 
 #### Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 05.28.2020 | [DevSum](https://www.devsum.se/agenda/public-speaking-without-barfing-on-your-shoes) | Stockholm, Sweden (Online) |
 | 05.12.2020 | [Dev Around the Sun](https://devaroundthesun.org/) | Online |
 | 05.11.2020 | [SE Michigan JS](https://www.meetup.com/SEM-JS/events/270388012/) | Ann Arbor, MI (Online) |
 | 04.21.2020 | [NDC Porto](https://ndcporto.com/) | Porto, Portugal (Online) |
