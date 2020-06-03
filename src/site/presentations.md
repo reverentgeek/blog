@@ -108,7 +108,7 @@ Regardless of your artistic ability, you can add simple illustrations to your no
 
 In this talk, I want to share with you techniques to improve your note-taking system. You will walk away with the tools and resources you need to radically transform and improve the way you learn, process information, and communicate ideas!
 
-## Drawing: How to be a Superhuman Communicator
+## Visual Storytelling: How to be a Superhuman Communicator
 
 Who says communication has to be dry, dull, and boring? Simple, hand-drawn illustrations are a compelling and fun way to engage, inform, and win your audience of readers and viewers!
 
@@ -122,12 +122,12 @@ I started drawing about four years ago, and it is now an essential part of every
 
 (_4-hour workshop_)
 
-Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using familiar Web technologies. In this hands-on workshop, we will learn the fundamentals of building desktop applications with Electron.js. Our goal is to walk away with a solid framework for building and deploying your own applications!
+Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using familiar web technologies. In this hands-on workshop, you will learn the fundamentals of building desktop applications with Electron.js. You will walk away with a solid framework for building and deploying your own applications!
 
 Requirements:
 
-* Laptop running Mac OS X 10.8+, Windows 7+, or Ubuntu 12+
-* [Node.js](https://nodejs.org) version 8 or higher
+* Laptop running Mac OS X 10.10+, Windows 7+, or Ubuntu 12+
+* [Node.js](https://nodejs.org) version 10 or higher
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Bio
