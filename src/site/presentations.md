@@ -9,6 +9,27 @@ slug: presentations
 layout: layouts/page.njk
 ---
 
+* Talks
+  * [Leadership Guide for the Reluctant Leader](#leadership)
+  * [You. Are. Awesome.](#awesome)
+  * [JavaScript: Past, Present, and Future](#javascript-future)
+  * [How I Learned to Stop Worrying and Love Security](#oauth)
+  * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
+  * [Cross-Platform Desktop Apps with Electron](#electron)
+  * [Software and The Art of Delivery](#fsgd)
+  * [Node.js Crash Course](#nodejs-crash)
+  * [Public Speaking without Barfing on Your Shoes](#barf-shoes)
+  * [Take Back Project Sanity: The Kanban Journey](#kanban)
+  * [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
+  * [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
+* Workshops
+  * [Leadership Guide for the Reluctant Leader Workshop](#leadership-workshop)
+  * [Build Cross-Platform Desktops with Electron](#electron-workshop)
+* [Bio](#bio)
+* [Headshots](#headshots)
+
+<a name="leadership"></a>
+
 ## Leadership Guide for the Reluctant Leader
 
 Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace, community, and beyond.
@@ -20,12 +41,16 @@ You'll walk away with some essential leadership skills I believe anyone can deve
 _Note: I've given this talk several times as both a keynote and a presentation._  
 [Video](https://www.youtube.com/watch?v=0h5X5UKWao8) | [Slides](https://speakerdeck.com/reverentgeek/leadership-guide-for-the-reluctant-leader-ndc-sydney-2018)
 
+<a name="awesome"></a>
+
 ## You. Are. Awesome.
 
 You may not realize it, but you are awesome. You have the power to change the world. Regardless if you are a student, professional, or "family engineer," I firmly believe you have amazing potential to impact the people around you in powerful and meaningful ways. My goal is to help you realize the awesomeness you already possess and be encouraged to unleash it!
 
 _Note: This is the keynote I have given for conferences such as That Conference, DevReach, and NDC Oslo._  
 [Video](https://www.youtube.com/watch?v=wsjqnrwkXqI) | [Slides](https://speakerdeck.com/reverentgeek/you-are-awesome)
+
+<a name="javascript-future"></a>
 
 ## JavaScript: Past, Present, and Future
 
@@ -34,6 +59,8 @@ Ah, JavaScript! Like it or not, it's a "tragically important" language that is "
 This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way that it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our own JavaScript less terrible!
 
 [Slides](https://speakerdeck.com/reverentgeek/javascript-hey-yall-watch-this)
+
+<a name="oauth"></a>
 
 ## How I Learned to Stop Worrying and Love Security
 
@@ -47,6 +74,8 @@ In this talk, we'll cover the problems OAuth and OIDC solve, how these protocols
 
 Perhaps you've had the "pleasure" of building or maintaining your own authentication and user management system. The good news is OAuth 2.0 and Open ID Connect (OIDC) are standards you can leverage and leave account security to the experts. The bad news is there's a lot of confusing information out there, making OAuth and OIDC hard to understand. You'll walk away from this talk understanding the problems these protocols solve, how they work, and ways you can integrate them into your own apps!
 
+<a name="jamstack"></a>
+
 ## JAMstack: Web Apps at Ludicrous Speed
 
 If you're a web developer, chances are you have heard the term "JAMstack." Curiously, JAMstack isn't a solution to prevent clogged printers, something to eat on toast, or a way to make music. Instead, it's an architecture for designing super-fast web applications that easily scale.
@@ -55,11 +84,15 @@ In this talk, we'll cover the JAMstack architecture, the numerous benefits of th
 
 [Slides](https://speakerdeck.com/reverentgeek/jamstack-web-apps-at-ludicrous-speed)
 
+<a name="electron"></a>
+
 ## Cross-Platform Desktop Apps with Electron
 
 Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-platform desktop applications? Electron is an open source application shell created by GitHub, designed to make building great desktop applications easy. You may have already experienced Electron apps such as Atom, Slack, or Visual Studio Code. In this talk, you will learn its features, how to quickly get started, and tips from my experience building Electron applications.
 
 [Video](https://www.youtube.com/watch?v=UmYv_-vUOLU) | [Slides](https://speakerdeck.com/reverentgeek/cross-platform-desktop-apps-with-electron-ndc-sydney-2018)
+
+<a name="fsgd"></a>
 
 ## Software and The Art of Delivery
 
@@ -72,11 +105,15 @@ In this talk, I'll share with you the challenges we faced as we scaled, how we s
 _Note: I have given this talk as both a keynote and presentation._  
 [Slides](https://speakerdeck.com/reverentgeek/nodevember-2017-fsgd-and-the-art-of-delivering-value)
 
+<a name="nodejs-crash"></a>
+
 ## Node.js Crash Course
 
 Node.js is a compelling platform that is quickly spreading from startups to the enterprise. Node.js strategically unites developers of all backgrounds through the universal language of JavaScript. Why should you learn Node.js and where do you start? You will come away from this talk with the evidence to support Node.js, and tools you need to be productive. We will walk through a typical workflow of creating and debugging a web application. You will learn how easy it is to deploy, including Microsoft Azure. We'll also look at popular frameworks and modules, and other learning resources to give you the best start.
 
 [Video](https://www.youtube.com/watch?v=8d6kJYqFWoQ) | [Slides](https://speakerdeck.com/reverentgeek/node-dot-js-crash-course-all-things-open-2018)
+
+<a name="barf-shoes"></a>
 
 ## Public Speaking without Barfing on Your Shoes
 
@@ -85,6 +122,8 @@ Sooner or later, we are called on to speak. Out loud. In front of an audience. W
 I have been speaking at conferences, user groups, and meetups for many years. However, as a shy introvert, this is not something that comes naturally to me! If I can do it, so can you! In this fun and light-hearted talk, I want to share with you what I have learned from my hard-won experience. Introverts and extroverts alike will walk away with practical tips on preparing and giving effective presentations.
 
 [Video](https://www.youtube.com/watch?v=oY_tMcZHwdc) | [Slides](https://speakerdeck.com/reverentgeek/public-speaking-without-barfing-on-your-shoes-codemash-2018)
+
+<a name="kanban"></a>
 
 ## Take Back Project Sanity: The Kanban Journey
 
@@ -95,6 +134,8 @@ Whether you work in software development, operations, or professional cat wrangl
 In this fun and entertaining talk, you'll learn the core principles and practices of Kanban, as well as how to maximize its potential to evolve how you, your team, and your organization works.
 
 [Slides](https://speakerdeck.com/reverentgeek/take-back-project-sanity-the-kanban-journey-2018-edition)
+
+<a name="sketchnotes"></a>
 
 ## Sketchnotes: How Drawing Can Supercharge Learning
 
@@ -108,6 +149,8 @@ Regardless of your artistic ability, you can add simple illustrations to your no
 
 In this talk, I want to share with you techniques to improve your note-taking system. You will walk away with the tools and resources you need to radically transform and improve the way you learn, process information, and communicate ideas!
 
+<a name="visual-storytelling"></a>
+
 ## Visual Storytelling: How to be a Superhuman Communicator
 
 Who says communication has to be dry, dull, and boring? Simple, hand-drawn illustrations are a compelling and fun way to engage, inform, and win your audience of readers and viewers!
@@ -118,9 +161,21 @@ I started drawing about four years ago, and it is now an essential part of every
 
 [Slides](https://speakerdeck.com/reverentgeek/drawing-how-to-be-a-superhuman-communicator)
 
+<a name="leadership-workshop"></a>
+
+## Leadership Guide for the Reluctant Leader Workshop
+
+(_4 hour workshop_)
+
+I believe you can have a positive impact on people around you. You can make an amazing difference to your team, community, and beyond. I also believe you don’t have to be in a “leadership” role to be an effective leader!
+
+In this workshop I want to share with you some of the key ingredients of good leadership. You will learn practical skills and strategies, and create a plan to make a positive impact on others. The goal is for you to walk away with a fresh perspective so that you can thrive with greater purpose and meaning!
+
+<a name="electron-workshop"></a>
+
 ## Build Cross-Platform Desktops with Electron
 
-(_4-hour workshop_)
+(_4 hour workshop_)
 
 Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using familiar web technologies. In this hands-on workshop, you will learn the fundamentals of building desktop applications with Electron.js. You will walk away with a solid framework for building and deploying your own applications!
 
@@ -130,9 +185,13 @@ Requirements:
 * [Node.js](https://nodejs.org) version 10 or higher
 * [Visual Studio Code](https://code.visualstudio.com/)
 
+<a name="bio"></a>
+
 ## Bio
 
 David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. He is currently a Senior Developer Advocate for Okta, runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
+
+<a name="headshots"></a>
 
 ## Headshots
 
