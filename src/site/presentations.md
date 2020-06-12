@@ -9,8 +9,6 @@ slug: presentations
 layout: layouts/page.njk
 ---
 
-Keynotes and Presentations
-
 * [Leadership Guide for the Reluctant Leader](#leadership)
 * [You. Are. Awesome.](#awesome)
 * [JavaScript: Past, Present, and Future](#javascript-future)
