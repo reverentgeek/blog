@@ -9,24 +9,27 @@ slug: presentations
 layout: layouts/page.njk
 ---
 
-* Talks
-  * [Leadership Guide for the Reluctant Leader](#leadership)
-  * [You. Are. Awesome.](#awesome)
-  * [JavaScript: Past, Present, and Future](#javascript-future)
-  * [How I Learned to Stop Worrying and Love Security](#oauth)
-  * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
-  * [Cross-Platform Desktop Apps with Electron](#electron)
-  * [Software and The Art of Delivery](#fsgd)
-  * [Node.js Crash Course](#nodejs-crash)
-  * [Public Speaking without Barfing on Your Shoes](#barf-shoes)
-  * [Take Back Project Sanity: The Kanban Journey](#kanban)
-  * [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
-  * [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
-* Workshops
-  * [Leadership Guide for the Reluctant Leader Workshop](#leadership-workshop)
-  * [Build Cross-Platform Desktops with Electron](#electron-workshop)
-* [Bio](#bio)
-* [Headshots](#headshots)
+Keynotes and Presentations
+
+* [Leadership Guide for the Reluctant Leader](#leadership)
+* [You. Are. Awesome.](#awesome)
+* [JavaScript: Past, Present, and Future](#javascript-future)
+* [How I Learned to Stop Worrying and Love Security](#oauth)
+* [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
+* [Cross-Platform Desktop Apps with Electron](#electron)
+* [Software and The Art of Delivery](#fsgd)
+* [Node.js Crash Course](#nodejs-crash)
+* [Public Speaking without Barfing on Your Shoes](#barf-shoes)
+* [Take Back Project Sanity: The Kanban Journey](#kanban)
+* [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
+* [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
+
+Workshops
+
+* [Leadership Guide for the Reluctant Leader Workshop](#leadership-workshop)
+* [Build Cross-Platform Desktops with Electron](#electron-workshop)
+
+[Bio and Headshots](#bio)
 
 <a name="leadership"></a>
 
