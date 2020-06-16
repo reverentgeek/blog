@@ -14,6 +14,7 @@ layout: layouts/page.njk
 | Date | Event | Location |
 | --- | --- | --- |
 | 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/) | Columbus, OH (Online) |
+| 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
 
 #### Past Speaking Engagements
 
