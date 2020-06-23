@@ -10,6 +10,11 @@ const htmlMinTransform = require( "./src/utils/transforms/html-min-transform.js"
 
 module.exports = function( config ) {
 
+	config.addNunjucksFilter( "isSiteMapSafe", function( url ) {
+		const isSafe = !url.startsWith( "/_" );
+		return isSafe.toString();
+	} );
+
 	config.setDataDeepMerge( true );
 
 	config.addWatchTarget( "./src/assets/" );
