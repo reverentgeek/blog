@@ -13,13 +13,17 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 08.05.2020 | [Cincinnati Software Craftsmanship](https://www.meetup.com/Cincinnati-Software-Craftsmanship/) | Cincinatti, OH (Online) |
 | 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/) | Columbus, OH (Online) |
+| 09.03.2020 | [NDC TechTown](https://ndctechtown.com/) | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
 
 #### Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 06.12.2020 | Microsoft MVP Skills Call | Online |
+| 06.05.2020 | Microsoft MVP Skills Call | Online |
 | 05.28.2020 | [DevSum](https://www.devsum.se/agenda/public-speaking-without-barfing-on-your-shoes) | Stockholm, Sweden (Online) |
 | 05.12.2020 | [Dev Around the Sun](https://devaroundthesun.org/) | Online |
 | 05.11.2020 | [SE Michigan JS](https://www.meetup.com/SEM-JS/events/270388012/) | Ann Arbor, MI (Online) |
