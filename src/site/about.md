@@ -19,7 +19,7 @@ Hi! My name is David Neal. I am a family man, geek, musician, illustrator, speak
 * View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 * View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
-* Get my [resume](https://app.box.com/s/8gyhqguoqyzy0g1x1cmwkkqb67lnlhr5).
+* Get my [resume](https://app.box.com/s/qu64atp964mi7symkhu5zxza99tr11rg).
 
 Got Node.js? Try this at your command line: `npx reverentgeek`
 
