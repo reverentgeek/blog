@@ -17,6 +17,7 @@ layout: layouts/page.njk
 | 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/) | Columbus, OH (Online) |
 | 09.03.2020 | [NDC TechTown](https://ndctechtown.com/) | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
+| 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
 
 #### Past Speaking Engagements
 
