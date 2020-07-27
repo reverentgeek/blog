@@ -3,8 +3,8 @@
 <header class="px-6 py-2 bg-white flex flex-wrap items-center lg:px-16">
 	{% if page.url == "/" %}
 		{% include "partials/navigation.njk" %}
-		<div class="pb-4">
-		<img class="" src="{{ site.cover_image }}">
+		<div class="pb-4 flex flex-wrap w-full justify-center">
+			<img class="max-w-full h-auto align-middle" src="{{ site.cover_image }}">
 		</div>
 	{% else %}
 		<div class="flex flex-1 items-start">
