@@ -11,9 +11,8 @@ layout: layouts/post.njk
 
 I have recently started live streaming drawing doodles, avatars, and sketchnotes. It's been a lot of fun!
 
-> Next live stream is on August 3, 2020 at 10:30 AM EDT!
-
 <!-- 
+> Next live stream is on August 3, 2020 at 10:30 AM EDT!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lVRpyMzhto8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
