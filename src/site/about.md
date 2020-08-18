@@ -25,6 +25,7 @@ Got Node.js? Try this at your command line: `npx reverentgeek`
 
 ### Notable articles:
 
+* [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
 * [5 Essential Ingredients for an Awesome Tech Talk](/5-essential-ingredients-for-an-awesome-tech-talk/)
 * [Captivate Your Audience Using Simple Illustrations](/engage-with-simple-illustrations/)
 * [SQL Server Running on a Mac?!](/sql-server-running-on-a-mac/)
