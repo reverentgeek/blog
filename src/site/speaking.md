@@ -13,9 +13,6 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/) | Columbus, OH (Online) |
-| 08.19.2020 | [Agile SoCal](http://agilesocal.com/) | Irvine, CA (Online) |
-| 08.20.2020 | [Code PaLOUsa](http://www.codepalousa.com/) | Louisville, KY (Online) |
 | 09.03.2020 | [NDC TechTown](https://ndctechtown.com/) | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
 | 10.03.2020 | [TDevConf](https://tdevconf.com/) | Online |
@@ -25,6 +22,9 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 08.20.2020 | [Code PaLOUsa](http://www.codepalousa.com/) | Louisville, KY (Online) |
+| 08.19.2020 | [Agile SoCal](http://agilesocal.com/) | Irvine, CA (Online) |
+| 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/) | Columbus, OH (Online) |
 | 08.11.2020 | [ChaDNUG](https://www.meetup.com/Chattanooga-Area-NET-User-Group-CHADNUG/events/272355601/) | Chattanooga, TN (Online) |
 | 08.05.2020 | [Cincinnati Software Craftsmanship](https://www.meetup.com/Cincinnati-Software-Craftsmanship/) | Cincinatti, OH (Online) |
 | 06.12.2020 | Microsoft MVP Skills Call | Online |
