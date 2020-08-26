@@ -14,6 +14,7 @@ layout: layouts/page.njk
 | Date | Event | Location |
 | --- | --- | --- |
 | 09.03.2020 | [NDC TechTown](https://ndctechtown.com/) | Online |
+| 09.30.2020 | [iR Session](https://www.meetup.com/iR-Sessions/events/272825812/) | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
 | 10.03.2020 | [TDevConf](https://tdevconf.com/) | Online |
 | 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
