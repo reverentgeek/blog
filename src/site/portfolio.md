@@ -11,7 +11,7 @@ layout: layouts/page.njk
 
 _Click the title or image to view more in that category._
 
-Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/get-permission/) to my work. Thanks!
+Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/attribution/) to my work. Thanks!
 
 Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 
