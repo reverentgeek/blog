@@ -41,10 +41,10 @@ Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 
 Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/get-permission/) to my work.
 
-> _Example 1:_ Illustration by [@ReverentGeek](https://twitter.com/reverentgeek) licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
-> _Example 2:_ Illustration by **twitter.com/ReverentGeek** licensed under **CC BY 2.0**
+> _Example 1:_ Illustration by [@ReverentGeek](https://twitter.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+> _Example 2:_ Illustration by **twitter.com/ReverentGeek** licensed under **Creative Commons Attribution 4.0 International License**
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
-[![Creative Commons License](/content/images/portfolio/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
