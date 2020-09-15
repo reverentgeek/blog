@@ -33,7 +33,8 @@ Here are the slides from my latest presentation, "Public Speaking without Barfin
 Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/attribution/) to my work.
 
 > _Example 1:_ Illustration by [@ReverentGeek](https://twitter.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
-> _Example 2:_ Illustration by **twitter.com/ReverentGeek** licensed under **Creative Commons Attribution 4.0 International License**
+>
+> _Example 2:_ Illustration by **twitter.com/ReverentGeek** licensed under **CC 4.0**
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
