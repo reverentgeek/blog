@@ -11,17 +11,15 @@ layout: layouts/page.njk
 
 **Current speaking topics:** leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 
-<div class="float-right italic">_* Indicates keynote_</div>
-
-
 | Date | Event | Location |
 | --- | --- | --- |
 | 09.30.2020 | [iR Session](https://www.meetup.com/iR-Sessions/events/272825812/) | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
 | 10.03.2020 | [TDevConf](https://tdevconf.com/)* | Online |
 | 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
+||_(*Indicates keynote)_|
 
-#### Past Speaking Engagements
+## Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |
@@ -156,3 +154,4 @@ layout: layouts/page.njk
 | 03.15.2012 | [Code paLOUsa](http://www.codepalousa.com/) | Louisville, KY |
 | 01.11.2012 | [CodeMash](http://codemash.org/) | Sandusky, OH |
 | 09.08.2011 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
+||_(*Indicates keynote)_|
