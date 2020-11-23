@@ -11,7 +11,7 @@ layout: layouts/page.njk
 
 <img class="float-left mr-4 w-1/6" src="/content/images/reverentgeek-circle.jpg" alt="ReverentGeek">
 
-Hi! My name is David Neal. I am a family man, geek, musician, illustrator, speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I spent several years building high-performance, scalable social media applications, worked as a senior developer and developer advocate at [LeanKit](https://leankit.com), worked at [Joyent](https://www.joyent.com/) helping to build the next-generation cloud platform, and I am currently a Senior Developer Advocate at [Okta](https://developer.okta.com/). I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon.
+Hi! My name is David Neal. I am a family man, geek, musician, illustrator, speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I spent several years building high-performance, scalable social media applications, worked as a senior developer and developer advocate at [LeanKit](https://leankit.com), worked at [Joyent](https://www.joyent.com/) helping build their next-generation cloud platform, worked as a Senior Developer Advocate at [Okta](https://developer.okta.com/), and I'm currently building a Developer Relations team at [ActiveCampaign](https://activecampaign.com). I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon.
 
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on [Twitter](https://twitter.com/reverentgeek).
@@ -60,6 +60,16 @@ I've been very active in the developer community since 2010, speaking and volunt
 As a Developer Advocate for LeanKit for three years, I discovered I love helping other developers solve problems. I built and contributed to API clients in multiple languages, built custom integrations and automated tools, pushed for improvements on customers' behalf, partnered with integration service providers and professional services, and evangelized the platform internally and externally. It was, by far, the best and most energizing years of my career, so far.
 
 My desire is to work with organizations that are not simply interested in my technical skills and passion for building delightful products and services. I want to partner with organizations that care about making an impact on the community, and are excited about me being their ambassador.
+
+The Head of Developer Advocacy at Okta, [Randall Degges](https://www.linkedin.com/in/rdegges/), wrote the following endorsement.
+
+>David is one of the kindest, most empathetic, and all-around best people I've ever met or worked with.
+>
+> He's an incredibly talented developer, teammate, and friend--and an absolute expert when it comes to building and growing developer communities. David is always calm, cool, and relaxed, and always knows exactly what to do to help solve problems.
+>
+> I can't tell you how fantastic it has been working with David. We worked together to solve complex problems: both technical and business-related, and David was always an absolute champion at getting things done.
+>
+> I don't know what else I can say except that I vouch for David 100% in whatever it is he wants to do. The guy is an absolute beast, and no matter what he does I'm sure he'll be incredible at it. It's not every day you run into someone like David, and I'm so thankful to have gotten to know and work with him!
 
 My former CIO at LeanKit, [Stephen Franklin](https://www.linkedin.com/in/stephen-franklin-9baa353/), wrote the following endorsement.
 
