@@ -24,3 +24,7 @@ indent_size = 2
 
 [Makefile]
 indent_style = tab
+
+[*.njk]
+indent_size = 2
+indent_style = space

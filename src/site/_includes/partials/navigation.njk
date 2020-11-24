@@ -1,41 +1,41 @@
-	<label for="menu-toggle" class="flex flex-1 justify-end cursor-pointer lg:hidden block">
-		{{ icon({ id: 'burger', class: "", width: "20", height: "20" }) }}
-	</label>
-	<input type="checkbox" class="hidden" id="menu-toggle" />
-	<div class="hidden w-full bg-gray-200 lg:bg-transparent p-2 lg:flex lg:flex-grow lg:items-center lg:w-auto" id="menu">
-		<nav class="w-full sm:block">
-			<ul class="lg:flex items-center justify-between text-base text-gray-700 lg:pt-4 lg:pt-0">
-			{% for item in site.navigation %}
-				<li class="text-right">
-					<a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:hover:border-indigo-400" {% if page.url == item.url %}aria-current="page"{% endif %} href="{{ item.url }}">
-						{{ item.label }}
-					</a>
-				</li>
-			{% endfor %}
-				<li class="text-right py-3 px-0">
-					<ul class="list-reset flex-1 flex justify-between lg:justify-end lg:mx-4">
-						<li class="ml-2">
-							<a class="inline-block rounded-full h-10 w-10 flex bg-blue-400" href="https://twitter.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-								{{ icon({ id: 'twitter', class: "p-2" }) }}
-							</a>
-						</li>
-						<li class="ml-2">
-							<a class="inline-block rounded-full h-10 w-10 flex bg-gray-800" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-								{{ icon({ id: 'github', class: "text-white p-2" }) }}
-							</a>
-						</li>
-						<li class="ml-2">
-							<a class="inline-block rounded-full h-10 w-10 flex bg-red-400" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
-								{{ icon({ id: 'instagram', class: "text-white p-2" }) }}
-							</a>
-						</li>
-						<li class="ml-2">
-							<a class="inline-block rounded-full h-10 w-10 flex bg-orange-400" href="https://feedly.com/i/subscription/feed/{{ site.url }}/feed.xml" target="_blank" rel="noopener noreferrer">
-								{{ icon({ id: 'rss', class: "p-2" }) }}
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</div>
+<label for="menu-toggle" class="flex flex-1 justify-end cursor-pointer lg:hidden block">
+  {{ icon({ id: 'burger', class: "", width: "20", height: "20" }) }}
+</label>
+<input type="checkbox" class="hidden" id="menu-toggle"/>
+<div class="hidden w-full bg-gray-200 lg:bg-transparent p-2 lg:flex lg:flex-grow lg:items-center lg:w-auto" id="menu">
+  <nav class="w-full sm:block">
+    <ul class="lg:flex items-center justify-between text-base text-gray-700 lg:pt-4 lg:pt-0">
+      {% for item in site.navigation %}
+        <li class="text-right">
+          <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:hover:border-indigo-400 font-bold" {% if page.url == item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
+            {{ item.label }}
+          </a>
+        </li>
+      {% endfor %}
+      <li class="text-right py-3 px-0">
+        <ul class="list-reset flex-1 flex justify-between lg:justify-end lg:mx-4">
+          <li class="ml-2">
+            <a class="inline-block rounded-full h-10 w-10 flex bg-blue-400" href="https://twitter.com/reverentgeek" target="_blank" rel="noopener noreferrer">
+              {{ icon({ id: 'twitter', class: "p-2" }) }}
+            </a>
+          </li>
+          <li class="ml-2">
+            <a class="inline-block rounded-full h-10 w-10 flex bg-gray-800" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
+              {{ icon({ id: 'github', class: "text-white p-2" }) }}
+            </a>
+          </li>
+          <li class="ml-2">
+            <a class="inline-block rounded-full h-10 w-10 flex bg-red-400" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
+              {{ icon({ id: 'instagram', class: "text-white p-2" }) }}
+            </a>
+          </li>
+          <li class="ml-2">
+            <a class="inline-block rounded-full h-10 w-10 flex bg-orange-400" href="https://feedly.com/i/subscription/feed/{{ site.url }}/feed.xml" target="_blank" rel="noopener noreferrer">
+              {{ icon({ id: 'rss', class: "p-2" }) }}
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,18 +1,31 @@
 {% from "partials/icon.njk" import icon %}
 
-<header class="px-6 py-2 bg-white flex flex-wrap items-center lg:px-16">
-	{% if page.url == "/" %}
-		{% include "partials/navigation.njk" %}
-		<div class="pb-4">
-			<img class="" src="{{ site.cover_image }}">
-		</div>
-	{% else %}
-		<div class="flex flex-1 items-start">
-			<a class="" {% if page.url == "/" %}aria-current="page"{% endif %} href="{{ site.url }}">
-				<img class="object-left object-scale-down h-10 lg:h-12 mr-2" src="{{ site.logo }}" alt="{{ site.title }}">
-			</a>
-		</div>
-		{% include "partials/navigation.njk" %}
-	{% endif %}
-</header>
+<div class="text-white px-6 py-4 border-0 relative mb-4 bg-blue-500">
+  <span class="text-xl inline-block mr-5 align-middle">
+    <i class="fas fa-bell"></i>
+  </span>
+  <span class="inline-block align-middle mr-8">
+    <a href="/shop/">
+      Want me to draw something for you?
+      <b>Click here!</b>
+    </a>
+  </span>
+</div>
 
+<header class="px-6 py-2 bg-white flex flex-wrap items-center lg:px-16">
+  {% if page.url == "/" %}
+    {% include "partials/navigation.njk" %}
+  {% else %}
+    <div class="flex flex-1 items-start">
+      <a class="" {% if page.url == "/" %} aria-current="page" {% endif %} href="{{ site.url }}">
+        <img class="object-left object-scale-down h-10 lg:h-12 mr-2" src="{{ site.logo }}" alt="{{ site.title }}">
+      </a>
+    </div>
+    {% include "partials/navigation.njk" %}
+  {% endif %}
+  {% if page.url == "/" %}
+    <div class="pb-4 w-full">
+      <img class="w-full" src="{{ site.cover_image }}">
+    </div>
+  {% endif %}
+</header>
