@@ -190,7 +190,7 @@ Requirements:
 
 ## Bio
 
-David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. He is currently a Senior Developer Advocate for Okta, runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
+David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. He currently leads Developer Relations at ActiveCampaign, runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
 
 <a name="headshots"></a>
 
