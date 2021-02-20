@@ -1,6 +1,6 @@
 ---
 id: d5a408d0d03611ea8aecbb9f1aee36d0
-title: "Watch Me Draw Now! (Live Streaming)"
+title: "Watch Me Draw! (Live Streaming)"
 feature_image: /content/images/watch-me-draw-live-streaming/watch-me-draw.png
 description: Come watch me draw avatars, doodles, and sketchnotes!
 date: 2020-07-27
