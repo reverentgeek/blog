@@ -13,7 +13,7 @@ A friend recently asked me about splitting some of their Node.js application int
 
 ## Move Your Code Into A Separate Project
 
-The first step across all the following options is to move your code into a separate Node.js project. This project will have its own `packages.json` file.
+The first step across all the following options is to move your code into a separate Node.js project. This project will have its own `package.json` file.
 
 ## Option 1: Link to a Local Project Folder
 
