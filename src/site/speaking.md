@@ -11,16 +11,13 @@ layout: layouts/page.njk
 
 **Current speaking topics:** leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 
-| Date | Event | Location |
-| --- | --- | --- |
-| 06.05.2021 | [DevRelCon Tokyo 2021](https://tokyo-2021.devrel.net/) | Online |
-
 ## Past Speaking Engagements
 
 *Indicates keynote
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 06.05.2021 | [DevRelCon Tokyo 2021](https://tokyo-2021.devrel.net/) | Online |
 | 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
 | 10.03.2020 | [TDevConf](https://tdevconf.com/)* | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
