@@ -17,6 +17,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 06.16.2021 | Private Corporate Event* | Online |
 | 06.05.2021 | [DevRelCon Tokyo 2021](https://tokyo-2021.devrel.net/) | Online |
 | 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
 | 10.03.2020 | [TDevConf](https://tdevconf.com/)* | Online |
