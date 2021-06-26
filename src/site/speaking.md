@@ -11,6 +11,10 @@ layout: layouts/page.njk
 
 **Current speaking topics:** leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 
+| Date | Event | Location |
+| --- | --- | --- |
+| 12.10.2021 | [DevTernity](https://devternity.com/)* | Riga, Latvia |
+
 ## Past Speaking Engagements
 
 *Indicates keynote
