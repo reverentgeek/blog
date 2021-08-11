@@ -5,8 +5,6 @@ const path = require( "path" );
 const gm = require( "gm" );
 const util = require( "util" );
 
-const avatarFolder = path.join( __dirname, "..", "site", "content", "images", "avatars" );
-
 async function getOrderedFiles( folder ) {
 	const imageFiles = await fs.readdir( folder );
 	const images = [];
@@ -32,15 +30,24 @@ async function getOrderedFiles( folder ) {
 	return images.map( i => i.f );
 }
 
-async function getHtml() {
+async function convertImage( image, srcFolder, galleryFolder ) {
+	console.log( "converting:", image );
+	const src = path.join( srcFolder, image );
+	const dst = path.join( galleryFolder, `${ path.basename( image, path.extname( image ) ) }.jpg` );
+	const convert = gm( src ).resize( 1500, 1500 ).noProfile();
+	const write = util.promisify( convert.write ).bind( convert );
+	await write( dst );
+}
+
+async function getColumnHtml( folder, htmlPath = "/content/images/avatars" ) {
 	const imageHtml = [];
-	const imageFiles = await getOrderedFiles( avatarFolder );
+	const imageFiles = await getOrderedFiles( folder );
 	for( const imageFile of imageFiles ) {
-		const src = path.join( avatarFolder, imageFile );
+		const src = path.join( folder, imageFile );
 		const image = gm( src );
 		const size = util.promisify( image.size ).bind( image );
 		const info = await size();
-		imageHtml.push( `<div class="kg-gallery-image"><img src="/content/images/avatars/${ imageFile }" width="${ info.width }" height="${ info.height }"></div>` );
+		imageHtml.push( `<div class="kg-gallery-image"><img src="${ htmlPath }/${ imageFile }" width="${ info.width }" height="${ info.height }"></div>` );
 	}
 	const html = [];
 	html.push( "<figure class=\"kg-card kg-gallery-card kg-width-wide\"><div class=\"kg-gallery-container\"><div class=\"kg-gallery-row\">" );
@@ -54,18 +61,25 @@ async function getHtml() {
 	return html.join( "\r\n" );
 }
 
-( async () => {
-	const srcFolder = path.join( avatarFolder, "orig" );
-	const srcFiles = await getOrderedFiles( srcFolder );
-	// const images = await fs.readdir( srcFolder );
-	for( const image of srcFiles ) {
-		console.log( "converting:", image );
-		const src = path.join( srcFolder, image );
-		const dst = path.join( avatarFolder, `${ path.basename( image, path.extname( image ) ) }.jpg` );
-		const convert = gm( src ).resize( 1500, 1500 ).noProfile();
-		const write = util.promisify( convert.write ).bind( convert );
-		await write( dst );
+async function getHtml( folder, htmlPath = "/content/images/avatars", captions = {} ) {
+	const html = [];
+	const imageFiles = await getOrderedFiles( folder );
+	// console.log( captions );
+	for( const imageFile of imageFiles ) {
+		const src = path.join( folder, imageFile );
+		const image = gm( src );
+		const size = util.promisify( image.size ).bind( image );
+		const info = await size();
+		const caption = captions[imageFile];
+		// console.log( imageFile, caption );
+		html.push( `<figure class="kg-card kg-image-card${ caption ? " kg-card-hascaption": "" }"><img src=${ htmlPath }/${ imageFile } width="${ info.width }" height="${ info.height }">${ caption ? "<figcaption>" + caption + "</figcaption>" : "" }</figure>` );
 	}
-	const output = await getHtml();
-	console.log( output );
-} )();
+	return html.join( "\n" );
+}
+
+module.exports = {
+	getColumnHtml,
+	getHtml,
+	getOrderedFiles,
+	convertImage
+};
