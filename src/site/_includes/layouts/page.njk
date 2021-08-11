@@ -1,43 +1,47 @@
 {% extends 'layouts/default.njk' %}
 
 {% block content %}
-	<article class="content page-{{ slug }}">
-		<h1 class="text-4xl font-bold">{{ title }}</h1>
-		{% if feature_image %}
-			<figure class="post-feature-image">
-				<img src="{{ feature_image }}" alt="{{ title }}">
-			</figure>
-		{% endif %}
-		<section class="content-body">
-			{{ content | safe }}
-		</section>
-	</article>
+  <article class="content page-{{ slug }}">
+    <h1 class="text-4xl font-bold">{{ title }}</h1>
+    {% if feature_image %}
+      <figure class="post-feature-image">
+        <img src="{{ feature_image }}" alt="{{ title }}">
+      </figure>
+    {% endif %}
+    <section class="content-body">
+      {{ content | safe }}
+    </section>
+  </article>
 {% endblock %}
 
 {%- block seo -%}
-	<!--Twitter Card-->
-	<meta name="twitter:site" content="{{ site.twitter }}">
-	<meta name="twitter:creator" content="{{ site.twitter }}">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:url" content="{{ site.url + page.url }}">
-	<meta name="twitter:title" content="{{ title }} – {{ site.title }}">
-	<meta name="twitter:description" content="{{ description }}">
-	<meta name="twitter:image" content="{{ site.url + feature_image }}">
+  <!--Twitter Card-->
+  <meta name="twitter:site" content="{{ site.twitter }}">
+  <meta name="twitter:creator" content="{{ site.twitter }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ site.url + page.url }}">
+  <meta name="twitter:title" content="{{ title }} – {{ site.title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  {% if feature_image %}
+    <meta name="twitter:image" content="{{ site.url + feature_image }}">
+  {% else %}
+    <meta name="twitter:image" content="{{ site.url + site.cover_image }}">
+  {% endif %}
 
-	<!--Schema-->
-	<link rel="author" href="{{ site.author.url }}">
-	<link rel="publisher" href="{{ site.url }}">
-	<meta itemprop="name" content="{{ title }} – {{ site.title }}">
-	<meta itemprop="description" content="{{ description }}">
-	<meta itemprop="image" content="{{ site.url + feature_image }}">
+  <!--Schema-->
+  <link rel="author" href="{{ site.author.url }}">
+  <link rel="publisher" href="{{ site.url }}">
+  <meta itemprop="name" content="{{ title }} – {{ site.title }}">
+  <meta itemprop="description" content="{{ description }}">
+  <meta itemprop="image" content="{{ site.url + feature_image }}">
 
-	<!-- Facebook OpenGraph -->
-	<meta property="og:url" content="{{ site.url + page.url }}">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="{{ title }} – {{ site.title }}">
-	<meta property="og:image" content="{{ site.url + feature_image }}">
-	<meta property="og:description" content="{{ description }}">
-	<meta property="og:site_name" content="{{ site.title }}">
-	<meta property="og:locale" content="{{ site.lang }}">
-	<meta property="article:author" content="{{ site.url }}">
+  <!-- Facebook OpenGraph -->
+  <meta property="og:url" content="{{ site.url + page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }} – {{ site.title }}">
+  <meta property="og:image" content="{{ site.url + feature_image }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="article:author" content="{{ site.url }}">
 {%- endblock -%}
