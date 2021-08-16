@@ -12,7 +12,6 @@ layout: layouts/page.njk
 * [Leadership Guide for the Reluctant Leader](#leadership)
 * [You. Are. Awesome.](#awesome)
 * [JavaScript: Past, Present, and Future](#javascript-future)
-* [How I Learned to Stop Worrying and Love Security](#oauth)
 * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
 * [Cross-Platform Desktop Apps with Electron](#electron)
 * [Software and The Art of Delivery](#fsgd)
@@ -60,20 +59,6 @@ Ah, JavaScript! Like it or not, it's a "tragically important" language that is "
 This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way that it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our own JavaScript less terrible!
 
 [Slides](https://speakerdeck.com/reverentgeek/javascript-hey-yall-watch-this)
-
-<a name="oauth"></a>
-
-## How I Learned to Stop Worrying and Love Security
-
-Perhaps you've had the "pleasure" of building or maintaining your own authentication and user management system. Registration, login, and password reset forms, dealing with validation, salted hashes, email verification, and the list goes on and on. Oh, and how about keeping up with all the latest attacks and keeping your data secure? About as fun as pulling teeth!
-
-Mercifully, those days are over. OAuth 2.0 and OpenID Connect (OIDC) are standard protocols you can leverage in your apps and leave the rest to a dedicated authentication and identity system. Unfortunately, there's a lot of hard-to-understand, jargon-filled misinformation out there on how OAuth and OIDC work and how to properly implement it.
-
-In this talk, we'll cover the problems OAuth and OIDC solve, how these protocols work, and ways you can integrate them into your own applications. You'll walk away with knowledge and resources you can immediately put to use, so you can build more secure apps!
-
-### Shorter Description
-
-Perhaps you've had the "pleasure" of building or maintaining your own authentication and user management system. The good news is OAuth 2.0 and Open ID Connect (OIDC) are standards you can leverage and leave account security to the experts. The bad news is there's a lot of confusing information out there, making OAuth and OIDC hard to understand. You'll walk away from this talk understanding the problems these protocols solve, how they work, and ways you can integrate them into your own apps!
 
 <a name="jamstack"></a>
 
