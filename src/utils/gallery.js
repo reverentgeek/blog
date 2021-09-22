@@ -30,11 +30,11 @@ async function getOrderedFiles( folder ) {
 	return images.map( i => i.f );
 }
 
-async function convertImage( image, srcFolder, galleryFolder ) {
+async function convertImage( image, srcFolder, galleryFolder, size = 1500, extension = ".jpg" ) {
 	console.log( "converting:", image );
 	const src = path.join( srcFolder, image );
-	const dst = path.join( galleryFolder, `${ path.basename( image, path.extname( image ) ) }.jpg` );
-	const convert = gm( src ).resize( 1500, 1500 ).noProfile();
+	const dst = path.join( galleryFolder, `${ path.basename( image, path.extname( image ) ) }${ extension }` );
+	const convert = gm( src ).resize( size, size ).noProfile();
 	const write = util.promisify( convert.write ).bind( convert );
 	await write( dst );
 }
