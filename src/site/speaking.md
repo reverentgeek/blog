@@ -21,6 +21,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 10.05.2021 | [Microsoft Developer Digital Meetup Tour](https://info.microsoft.com/CA-DevEngage-WBNR-FY22-10Oct-05-Build-Desktop-Apps-with-Electron-using-JavaScript-and-Visual-Studio-Code-SRDEM86766_LP02-On-Demand-Registration---Form-in-Body.html) | Online |
 | 06.16.2021 | Private Corporate Event* | Online |
 | 06.05.2021 | [DevRelCon Tokyo 2021](https://tokyo-2021.devrel.net/) | Online |
 | 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
