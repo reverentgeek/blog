@@ -13,6 +13,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 11.17.2021 | [Automation + DevOps Summit 2021](https://events.devopscollective.org/event/automation-devops-summit/)* | Nashville, TN |
 | 12.10.2021 | [DevTernity](https://devternity.com/)* | Riga, Latvia |
 
 ## Past Speaking Engagements
