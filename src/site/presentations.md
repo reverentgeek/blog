@@ -51,11 +51,13 @@ You may not realize it, but you are awesome. You have the power to change the wo
 _Note: This is the keynote I have given for conferences such as That Conference, DevReach, and NDC Oslo._  
 [Video](https://www.youtube.com/watch?v=wsjqnrwkXqI) | [Slides](https://speakerdeck.com/reverentgeek/you-are-awesome)
 
-<a name="javascript-future"></a>
+<a name="unlock"></a>
 
 ## Unlock Your Potential
 
 Regardless of the technology you use or the job title you have, you have amazing potential to impact your workplace, community, and beyond in powerful ways. I want to share with you some of the essential skills you can develop to maximize your awesomeness!
+
+<a name="javascript-future"></a>
 
 ## JavaScript: Past, Present, and Future
 
