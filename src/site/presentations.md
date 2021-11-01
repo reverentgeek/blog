@@ -11,6 +11,7 @@ layout: layouts/page.njk
 
 * [Leadership Guide for the Reluctant Leader](#leadership)
 * [You. Are. Awesome.](#awesome)
+* [Unlock Your Potential](#unlock)
 * [JavaScript: Past, Present, and Future](#javascript-future)
 * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
 * [Cross-Platform Desktop Apps with Electron](#electron)
@@ -32,7 +33,7 @@ Workshops
 
 ## Leadership Guide for the Reluctant Leader
 
-Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace, community, and beyond.
+Regardless of the technology you know or the job title you have, you have amazing potential to impact your workplace, community, and beyond.
 
 In this talk, I'll share a few candid stories of my career failures… I mean… learning opportunities. We'll start by debunking the myth that leadership == management. Next, we'll talk about some of the attributes, behaviors, and skills of good leaders. Lastly, we'll cover some practical steps and resources to accelerate your journey.
 
@@ -52,11 +53,15 @@ _Note: This is the keynote I have given for conferences such as That Conference,
 
 <a name="javascript-future"></a>
 
+## Unlock Your Potential
+
+Regardless of the technology you use or the job title you have, you have amazing potential to impact your workplace, community, and beyond in powerful ways. I want to share with you some of the essential skills you can develop to maximize your awesomeness!
+
 ## JavaScript: Past, Present, and Future
 
 Ah, JavaScript! Like it or not, it's a "tragically important" language that is "eating the world." Hate it? Love it? Avoid it? Embrace it?
 
-This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way that it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our own JavaScript less terrible!
+This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our JavaScript less terrible!
 
 [Slides](https://speakerdeck.com/reverentgeek/javascript-hey-yall-watch-this)
 
@@ -66,7 +71,7 @@ This talk is a parade of face-palm JavaScript fails, history of JavaScript, why 
 
 If you're a web developer, chances are you have heard the term "JAMstack." Curiously, JAMstack isn't a solution to prevent clogged printers, something to eat on toast, or a way to make music. Instead, it's an architecture for designing super-fast web applications that easily scale.
 
-In this talk, we'll cover the JAMstack architecture, the numerous benefits of the JAMstack approach, and tools you can use to implement a JAMstack web application. You'll walk away with a clear understanding of JAMstack and resources to quickly build your own web app at ludicrous speed!
+In this talk, we'll cover the JAMstack architecture, the numerous benefits of the JAMstack approach, and tools you can use to implement a JAMstack web application. You'll walk away with a clear understanding of JAMstack and resources to quickly build your web app at ludicrous speed!
 
 [Slides](https://speakerdeck.com/reverentgeek/jamstack-web-apps-at-ludicrous-speed)
 
@@ -74,7 +79,7 @@ In this talk, we'll cover the JAMstack architecture, the numerous benefits of th
 
 ## Cross-Platform Desktop Apps with Electron
 
-Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-platform desktop applications? Electron is an open source application shell created by GitHub, designed to make building great desktop applications easy. You may have already experienced Electron apps such as Atom, Slack, or Visual Studio Code. In this talk, you will learn its features, how to quickly get started, and tips from my experience building Electron applications.
+Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-platform desktop applications? Electron is an open-source application shell created by GitHub, designed to make building great desktop applications easy. You may have already experienced Electron apps such as Atom, Slack, or Visual Studio Code. In this talk, you will learn its features, how to get started, and tips from my experience building Electron applications.
 
 [Video](https://www.youtube.com/watch?v=UmYv_-vUOLU) | [Slides](https://speakerdeck.com/reverentgeek/cross-platform-desktop-apps-with-electron-ndc-sydney-2018)
 
@@ -84,9 +89,9 @@ Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-
 
 Engineering, DevOps, IT, Marketing, ...you name it, there is a constant battle between going fast and doing it right. Add to the mix the fact that coordination across teams and departments comes at a high transaction cost. How can we minimize the friction?
 
-At my time at LeanKit, we strove to continuously improve our processes across the entire organization. Along the way, we developed FSGD, which distills many core lean (and agile) principles into an easy-to-remember and easy-to-communicate thinking tool you can use to make better decisions about the work you do.
+During my time at LeanKit, we strove to continuously improve our processes across the entire organization. Along the way, we developed FSGD, which distills many of the core lean (and agile) principles into an easy-to-remember and easy-to-communicate thinking tool you can use to make better decisions about the work you do.
 
-In this talk, I'll share with you the challenges we faced as we scaled, how we struggled, what we learned, and how we evolved. The goal is for you to walk away with tools and practical processes that will impact you and your team's success.
+In this talk, I'll share the challenges we faced as we scaled, how we struggled, what we learned, and how we evolved. The goal is to walk away with tools and practical processes that will impact you and your team's success.
 
 _Note: I have given this talk as both a keynote and presentation._  
 [Slides](https://speakerdeck.com/reverentgeek/nodevember-2017-fsgd-and-the-art-of-delivering-value)
@@ -95,7 +100,7 @@ _Note: I have given this talk as both a keynote and presentation._
 
 ## Node.js Crash Course
 
-Node.js is a compelling platform that is quickly spreading from startups to the enterprise. Node.js strategically unites developers of all backgrounds through the universal language of JavaScript. Why should you learn Node.js and where do you start? You will come away from this talk with the evidence to support Node.js, and tools you need to be productive. We will walk through a typical workflow of creating and debugging a web application. You will learn how easy it is to deploy, including Microsoft Azure. We'll also look at popular frameworks and modules, and other learning resources to give you the best start.
+Node.js is a compelling platform that is quickly spreading from startups to the enterprise. Node.js strategically unites developers of all backgrounds through the universal language of JavaScript. Why should you learn Node.js, and where do you start? You will come away from this talk with the evidence to support Node.js and the tools you need to be productive. We will walk through a typical workflow of creating and debugging a web application. You will learn how easy it is to deploy, including Microsoft Azure. We'll also look at popular frameworks, libraries, and learning resources to give you the best start.
 
 [Video](https://www.youtube.com/watch?v=8d6kJYqFWoQ) | [Slides](https://speakerdeck.com/reverentgeek/node-dot-js-crash-course-all-things-open-2018)
 
@@ -103,9 +108,9 @@ Node.js is a compelling platform that is quickly spreading from startups to the 
 
 ## Public Speaking without Barfing on Your Shoes
 
-Sooner or later, we are called on to speak. Out loud. In front of an audience. We may have to present something to our team, our management, or even a larger group of strangers. Public speaking strikes fear into the hearts of nearly everyone, especially those of us who are very shy. Imagining people in their underwear does not help.
+Sooner or later, we are called on to speak. Out loud. In front of an audience. We may have to present something to our team, management, or even a larger group of strangers. Public speaking strikes fear into the hearts of nearly everyone, especially those of us who are very shy. Imagining people in their underwear does not help.
 
-I have been speaking at conferences, user groups, and meetups for many years. However, as a shy introvert, this is not something that comes naturally to me! If I can do it, so can you! In this fun and light-hearted talk, I want to share with you what I have learned from my hard-won experience. Introverts and extroverts alike will walk away with practical tips on preparing and giving effective presentations.
+I have been speaking at conferences, user groups, and meetups for many years. However, as a shy introvert, this is not something that comes naturally to me! If I can do it, so can you! In this fun and light-hearted talk, I want to share what I have learned from my hard-won experience. Introverts and extroverts alike will walk away with practical tips on preparing and giving effective presentations.
 
 [Video](https://www.youtube.com/watch?v=oY_tMcZHwdc) | [Slides](https://speakerdeck.com/reverentgeek/public-speaking-without-barfing-on-your-shoes-codemash-2018)
 
