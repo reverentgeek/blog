@@ -13,26 +13,27 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 11.17.2021 | [Automation + DevOps Summit 2021](https://events.devopscollective.org/event/automation-devops-summit/)* | Nashville, TN |
-| 12.10.2021 | [DevTernity](https://devternity.com/)* | Riga, Latvia |
+| 01.18.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
 
 ## Past Speaking Engagements
 
-*Indicates keynote
+<sup>*</sup> keynote, <sup>+</sup> workshop
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 12.10.2021 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
+| 11.17.2021 | [Automation + DevOps Summit 2021](https://events.devopscollective.org/event/automation-devops-summit/)<sup>*</sup> | Nashville, TN |
 | 10.05.2021 | [Microsoft Developer Digital Meetup Tour](https://info.microsoft.com/CA-DevEngage-WBNR-FY22-10Oct-05-Build-Desktop-Apps-with-Electron-using-JavaScript-and-Visual-Studio-Code-SRDEM86766_LP02-On-Demand-Registration---Form-in-Body.html) | Online |
-| 06.16.2021 | Private Corporate Event* | Online |
+| 06.16.2021 | Private Corporate Event<sup>*</sup> | Online |
 | 06.05.2021 | [DevRelCon Tokyo 2021](https://tokyo-2021.devrel.net/) | Online |
 | 10.19.2020 | [All Things Open 2020](https://2020.allthingsopen.org/) | Online |
-| 10.03.2020 | [TDevConf](https://tdevconf.com/)* | Online |
+| 10.03.2020 | [TDevConf](https://tdevconf.com/)<sup>*</sup> | Online |
 | 10.02.2020 | [Tracy Developer Meetup](https://www.tracydevs.com/2020/10/cross-platform-desktop-apps-electron/) | Online |
 | 09.30.2020 | [iR Session](https://www.meetup.com/iR-Sessions/events/272825812/) | Online |
 | 09.03.2020 | [NDC TechTown](https://ndctechtown.com/) | Online |
-| 08.20.2020 | [Code PaLOUsa](http://www.codepalousa.com/)* | Louisville, KY (Online) |
+| 08.20.2020 | [Code PaLOUsa](http://www.codepalousa.com/)<sup>*</sup> | Louisville, KY (Online) |
 | 08.19.2020 | [Agile SoCal](http://agilesocal.com/) | Irvine, CA (Online) |
-| 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/)* | Columbus, OH (Online) |
+| 08.14.2020 | [JavaScript and Friends](https://www.javascriptandfriends.com/)<sup>*</sup> | Columbus, OH (Online) |
 | 08.11.2020 | [ChaDNUG](https://www.meetup.com/Chattanooga-Area-NET-User-Group-CHADNUG/events/272355601/) | Chattanooga, TN (Online) |
 | 08.05.2020 | [Cincinnati Software Craftsmanship](https://www.meetup.com/Cincinnati-Software-Craftsmanship/) | Cincinatti, OH (Online) |
 | 06.12.2020 | Microsoft MVP Skills Call | Online |
@@ -44,37 +45,37 @@ layout: layouts/page.njk
 | 02.19.2020 | [DevNexus](https://devnexus.com/) | Atlanta, GA |
 | 01.29.2020 | [KnoxDevs](https://knoxdevs.com/) | Knoxville, TN |
 | 12.06.2019 | [DevTernity](https://devternity.com/) | Riga, Latvia |
-| 11.12.2019 | [jsMobileConf](https://jsmobileconf.com/)* | Boston, MA |
+| 11.12.2019 | [jsMobileConf](https://jsmobileconf.com/)<sup>*</sup> | Boston, MA |
 | 10.04.2019 | [Caribbean Developers Conference](https://cdc.dev/) | Punta Cana, Dominican Republic |
 | 09.16.2019 | [Oracle Code One](https://www.oracle.com/code-one/) | San Francisco, CA |
-| 09.11.2019 | Private Corporate Event* | Atlanta, GA |
+| 09.11.2019 | Private Corporate Event<sup>*</sup> | Atlanta, GA |
 | 09.05.2019 | [Music City Tech](https://www.musiccitytech.com/) | Nashville, TN |
-| 08.05.2019 | [THAT Conference](https://www.thatconference.com/)* | Wisconsin Dells, WI |
+| 08.05.2019 | [THAT Conference](https://www.thatconference.com/)<sup>*</sup> | Wisconsin Dells, WI |
 | 08.03.2019 | [PubConf Perth](https://pubconf.io/) | Perth, Australia |
-| 08.03.2019 | [DDD Perth](https://dddperth.com/)* | Perth, Australia |
+| 08.03.2019 | [DDD Perth](https://dddperth.com/)<sup>*</sup> | Perth, Australia |
 | 08.01.2019 | [Fenders Perth](https://www.meetup.com/Front-End-Web-Developers-Perth/) | Perth, Australia |
 | 07.23.2019 | [Enterprise Developers Guild](https://www.meetup.com/Enterprise-Developers-Guild/) | Charlotte, NC |
-| 07.18.2019 | [KCDC 2019](http://www.kcdc.info/) | Kansas City, MO |
+| 07.18.2019 | [KCDC 2019](http://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
 | 07.15.2019 | [Knoxville JS](https://www.meetup.com/Knoxvillejs/) | Knoxville, TN |
-| 06.19.2019 | [NDC Oslo](https://ndcoslo.com/)* | Oslo, Norway |
+| 06.19.2019 | [NDC Oslo](https://ndcoslo.com/)<sup>*</sup> | Oslo, Norway |
 | 05.23.2019 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 | 05.20.2019 | [Techorama](https://techorama.be/) | Antwerp, Belgium |
-| 05.13.2019 | [DotNetSouth](http://dotnetsouth.tech/)* | Atlanta, GA |
+| 05.13.2019 | [DotNetSouth](http://dotnetsouth.tech/)<sup>*</sup> | Atlanta, GA |
 | 05.09.2019 | [Craft Conference](https://craft-conf.com/) | Budapest, Hungary |
 | 04.29.2019 | [deliver:Agile 2019](https://www.agilealliance.org/deliveragile-2019/) | Nashville, TN |
 | 04.18.2019 | [Open Source 101](http://opensource101.com/columbia/) | Columbia, SC |
 | 04.12.2019 | [CodeStock](http://codestock.org/) | Knoxville, TN |
-| 03.13.2019 | [ConFoo Montreal 2019](https://confoo.ca/en/yul2019)* | Montreal, Canada |
-| 03.06.2019 | [DevNexus 2019](https://devnexus.com/)* | Atlanta, GA |
+| 03.13.2019 | [ConFoo Montreal 2019](https://confoo.ca/en/yul2019)<sup>*</sup> | Montreal, Canada |
+| 03.06.2019 | [DevNexus 2019](https://devnexus.com/)<sup>*</sup> | Atlanta, GA |
 | 02.26.2019 | [NDC Porto 2019](https://ndcporto.com/) | Porto, Portugal |
 | 01.28.2019 | [NDC London 2019](https://ndc-london.com/) | London, UK |
-| 01.08.2019 | [CodeMash 2019](http://www.codemash.org/) | Sandusky, OH |
-| 11.13.2018 | [DevReach](https://devreach.com/)* | Sofia, Bulgaria |
+| 01.08.2019 | [CodeMash 2019](http://www.codemash.org/)<sup>+</sup> | Sandusky, OH |
+| 11.13.2018 | [DevReach](https://devreach.com/)<sup>*</sup><sup>+</sup> | Sofia, Bulgaria |
 | 10.21.2018 | [All Things Open](https://allthingsopen.org/) | Raleigh, NC |
 | 10.04.2018 | [Little Rock Tech Fest](http://www.lrtechfest.com/) | Little Rock, AR |
 | 09.17.2018 | [NDC Sydney](https://ndcsydney.com/) | Sydney, Australia |
 | 08.17.2018 | [Scenic City Summit](https://www.sceniccitysummit.com/) | Chattanooga, TN |
-| 08.06.2018 | [THAT Conference](https://www.thatconference.com/)* | Wisconsin Dells, WI |
+| 08.06.2018 | [THAT Conference](https://www.thatconference.com/)<sup>*</sup> | Wisconsin Dells, WI |
 | 07.12.2018 | [KCDC 2018](http://www.kcdc.info/) | Kansas City, MO |
 | 06.12.2018 | [Fluent](https://conferences.oreilly.com/fluent/fl-ca) | San Jose, CA |
 | 05.31.2018 | [Music City Tech](http://www.musiccitytech.com/) | Nashville, TN |
@@ -82,9 +83,9 @@ layout: layouts/page.njk
 | 05.17.2018 | [Revolution Conf](https://revolutionconf.com/) | Virginia Beach, VA |
 | 05.07.2018 | [NDC Minnesota](https://ndcminnesota.com/) | St Paul, MN |
 | 05.04.2018 | [Stir Trek](https://stirtrek.com/) | Columbus, OH |
-| 04.20.2018 | [CodeStock 2018](http://www.codestock.org/)* | Knoxville, TN |
+| 04.20.2018 | [CodeStock 2018](http://www.codestock.org/)<sup>*</sup> | Knoxville, TN |
 | 04.16.2018 | [Indy.Code() 2018](https://indycode.amegala.com/) | Indianapolis, IN |
-| 03.21.2018 | [JazzCon.Tech 2018](http://jazzcon.tech/)* | New Orleans, LA |
+| 03.21.2018 | [JazzCon.Tech 2018](http://jazzcon.tech/)<sup>*</sup> | New Orleans, LA |
 | 02.06.2018 | [DNN Summit 2018](http://www.dnnsummit.org/) | Denver, CO |
 | 01.09.2018 | [CodeMash](http://www.codemash.org/) | Sandusky, OH |
 | 11.28.2017 | [Nodevember](http://nodevember.org/) | Nashville, TN |
@@ -92,14 +93,14 @@ layout: layouts/page.njk
 | 09.20.2017 | [Connect.Tech](http://connect.tech/) | Atlanta, GA |
 | 08.04.2017 | [PubConf KCDC](https://pubconf.io/events/2017/kansascity.html) | Kansas City, MO |
 | 08.02.2017 | [KCDC 2017](http://www.kcdc.info/) | Kansas City, MO |
-| 07.28.2017 | [Scenic City Summit](https://www.sceniccitysummit.com/)* | Chattanooga, TN |
+| 07.28.2017 | [Scenic City Summit](https://www.sceniccitysummit.com/)<sup>*</sup> | Chattanooga, TN |
 | 06.02.2017 | [Music City Code 2017](https://www.musiccitycode.com/) | Nashville, TN |
 | 05.05.2017 | [CodeStock 2017](http://www.codestock.org/) | Knoxville, TN |
 | 11.20.2016 | [Nodevember](http://nodevember.org/) | Nashville, TN |
 | 10.20.2016 | [Dev Up](http://devupconf.org/) | St. Charles, MO |
 | 10.14.2016 | [DevSpace](https://www.devspaceconf.com) | Huntsville, AL |
 | 10.11.2016 | [CHADNUG](http://www.chadnug.com/) | Chattanooga, TN |
-| 08.18.2016 | [Music City Code](http://www.musiccitycode.com/)* | Nashville, TN |
+| 08.18.2016 | [Music City Code](http://www.musiccitycode.com/)<sup>*</sup> | Nashville, TN |
 | 08.17.2016 | [Music City Agile](http://www.musiccityagile.org/) | Nashville, TN |
 | 08.12.2016 | [Code on the Beach](http://www.codeonthebeach.com/) | Atlantic Beach, FL |
 | 08.08.2016 | [That Conference](https://www.thatconference.com/) | Wisconsin Dells, WI |
@@ -108,7 +109,7 @@ layout: layouts/page.njk
 | 07.15.2016 | [CodeStock 2016](http://www.codestock.org/) | Knoxville, TN |
 | 06.08.2016 | [NDC Oslo](http://ndcoslo.com/) | Oslo, Norway |
 | 05.13.2016 | [RevolutionConf](http://revolutionconf.com/) | Virginia Beach, VA |
-| 04.15.2016 | [JSConf UY](https://jsconf.uy/) | Montevideo, Uruguay |
+| 04.15.2016 | [JSConf UY](https://jsconf.uy/)<sup>+</sup> | Montevideo, Uruguay |
 | 03.28.2016 | [Code PaLOUsa](http://codepalousa.com/) | Louisville, KY |
 | 01.13.2016 | [NDC London](http://ndc-london.com/) | London, UK |
 | 01.05.2016 | [CodeMash](http://www.codemash.org/) | Sandusky, OH |
@@ -160,4 +161,4 @@ layout: layouts/page.njk
 | 03.15.2012 | [Code paLOUsa](http://www.codepalousa.com/) | Louisville, KY |
 | 01.11.2012 | [CodeMash](http://codemash.org/) | Sandusky, OH |
 | 09.08.2011 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
-||_(*Indicates keynote)_|
+||_<sup>*</sup> keynote, <sup>+</sup> workshop_|
