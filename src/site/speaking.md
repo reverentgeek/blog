@@ -13,8 +13,11 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 01.18.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
 | 04.07.2022 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
+
+<!--
+| 01.18.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
+-->
 
 ## Past Speaking Engagements
 
