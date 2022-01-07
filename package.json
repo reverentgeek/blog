@@ -74,8 +74,9 @@
 		"eslint": "^8.5.0",
 		"eslint-config-reverentgeek": "^3.1.2",
 		"fs-extra": "^10.0.0",
-		"gm": "^1.23.1",
+		"jimp": "^0.16.1",
 		"markdownlint-cli": "^0.30.0",
+		"probe-image-size": "^7.2.2",
 		"slug": "^5.0.1",
 		"uuid": "^8.3.2"
 	}

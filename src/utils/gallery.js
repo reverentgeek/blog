@@ -2,8 +2,8 @@
 
 const fs = require( "fs-extra" );
 const path = require( "path" );
-const gm = require( "gm" );
-const util = require( "util" );
+const jmp = require( "jimp" );
+const probe = require( "probe-image-size" );
 
 async function getOrderedFiles( folder ) {
 	const imageFiles = await fs.readdir( folder );
@@ -34,9 +34,12 @@ async function convertImage( image, srcFolder, galleryFolder, size = 1500, exten
 	console.log( "converting:", image );
 	const src = path.join( srcFolder, image );
 	const dst = path.join( galleryFolder, `${ path.basename( image, path.extname( image ) ) }${ extension }` );
-	const convert = gm( src ).resize( size, size ).noProfile();
-	const write = util.promisify( convert.write ).bind( convert );
-	await write( dst );
+	const img = await jmp.read( src );
+	await img.resize( size, jmp.AUTO );
+	await img.write( dst );
+	// const convert = gm( src ).resize( size, size ).noProfile();
+	// const write = util.promisify( convert.write ).bind( convert );
+	// await write( dst );
 }
 
 async function getColumnHtml( folder, htmlPath = "/content/images/avatars" ) {
@@ -44,9 +47,8 @@ async function getColumnHtml( folder, htmlPath = "/content/images/avatars" ) {
 	const imageFiles = await getOrderedFiles( folder );
 	for( const imageFile of imageFiles ) {
 		const src = path.join( folder, imageFile );
-		const image = gm( src );
-		const size = util.promisify( image.size ).bind( image );
-		const info = await size();
+		const s = await fs.createReadStream( src );
+		const info = await probe( s );
 		imageHtml.push( `<div class="kg-gallery-image"><img src="${ htmlPath }/${ imageFile }" width="${ info.width }" height="${ info.height }"></div>` );
 	}
 	const html = [];
@@ -67,9 +69,8 @@ async function getHtml( folder, htmlPath = "/content/images/avatars", captions =
 	// console.log( captions );
 	for( const imageFile of imageFiles ) {
 		const src = path.join( folder, imageFile );
-		const image = gm( src );
-		const size = util.promisify( image.size ).bind( image );
-		const info = await size();
+		const s = await fs.createReadStream( src );
+		const info = await probe( s );
 		const caption = captions[imageFile];
 		// console.log( imageFile, caption );
 		html.push( `<figure class="kg-card kg-image-card${ caption ? " kg-card-hascaption": "" }"><img src=${ htmlPath }/${ imageFile } width="${ info.width }" height="${ info.height }">${ caption ? "<figcaption>" + caption + "</figcaption>" : "" }</figure>` );
