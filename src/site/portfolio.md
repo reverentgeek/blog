@@ -15,6 +15,10 @@ Want to use some of my illustrations? Go for it! I simply ask you [give attribut
 
 Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 
+## [Avatars](/avatars/)
+
+[![Avatars](/content/images/2019/08/IMG_1164.PNG)](/avatars/)
+
 ## [Logos, Stickers and Projects](/illustrations)
 
 [![Commissions and Projects](/content/images/2019/08/undergroundjs-banner.jpg)](/illustrations)
@@ -22,10 +26,6 @@ Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 ## [31 Days of Inspiration, January 2019](/31-days-of-inspiration-january-2019/)
 
 [![31 Days of Inspiration, January 2019](/content/images/2019/01/31DOI-19-a-a-milne-3.png)](/31-days-of-inspiration-january-2019/)
-
-## [Avatars](/avatars/)
-
-[![Avatars](/content/images/2019/08/IMG_1164.PNG)](/avatars/)
 
 ## [Tech Humor](/tech-humor/)
 
