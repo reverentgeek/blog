@@ -1,15 +1,15 @@
 ---
 id: d5a408d0d03611ea8aecbb9f1aee36d0
-title: "Watch Me Draw! (Live Streaming)"
-feature_image: /content/images/watch-me-draw-live-streaming/watch-me-draw.png
+title: "Drawing with ReverentGeek!"
+feature_image: /content/images/watch-me-draw-live-streaming/drawing-with-reverentgeek-featured.jpg
 description: Come watch me draw avatars, doodles, and sketchnotes!
-date: 2020-07-27
+date: 2022-01-26
 tags: posts
 slug: watch-me-draw-live-streaming
 layout: layouts/post.njk
 ---
 
-I have recently started live streaming drawing doodles, avatars, and sketchnotes. It's been a lot of fun!
+I am rebooting my drawing live streams! I'm also starting a new YouTube channel dedicated to drawing, illustrations, and all things related.
 
 <!-- 
 > Next live stream is on August 3, 2020 at 10:30 AM EDT!
@@ -18,13 +18,13 @@ I have recently started live streaming drawing doodles, avatars, and sketchnotes
 
 -->
 
-As of this writing, I'm "stepping up my game." I'll be streaming to the following sites.
+I'll be streaming to the following sites. If any of these links should change, this page will be updated.
 
 * [Twitch](https://www.twitch.tv/reverentgeek)
-* [YouTube](https://www.youtube.com/reverentgeek)
+* [YouTube](https://www.youtube.com/channel/UCY_pJ9r1o35IfNf9g7aq85w)
 * [Facebook](https://www.facebook.com/rdneal)
 
-Please follow, subscribe, click the bell to be notified, and do whatever else you need to know when I am streaming! You can also watch previous streams on my [YouTube channel](https://www.youtube.com/reverentgeek)!
+Please follow, subscribe, click the bell to be notified, and do whatever else you need to know when I am streaming! You can also watch previous streams on my [old YouTube channel](https://www.youtube.com/reverentgeek)!
 
 ## Commissions
 
