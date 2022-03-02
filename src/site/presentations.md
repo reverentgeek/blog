@@ -158,11 +158,15 @@ I started drawing about four years ago, and it is now an essential part of every
 
 ## Leadership Guide for the Reluctant Leader Workshop
 
-(_4 hour workshop_)
+(_4-8 hour workshop_)
 
-I believe you can have a positive impact on people around you. You can make an amazing difference to your team, community, and beyond. I also believe you don’t have to be in a “leadership” role to be an effective leader!
+Does the idea of being a leader sound terrifying to you? Are you in a leadership role today and not sure you're cut out for it, or feel like you're not leading effectively? This workshop is for you!
 
-In this workshop I want to share with you some of the key ingredients of good leadership. You will learn practical skills and strategies, and create a plan to make a positive impact on others. The goal is for you to walk away with a fresh perspective so that you can thrive with greater purpose and meaning!
+**SPOILER ALERT:** You don't even need to be in a leadership position to be an effective leader!
+
+In this workshop, we will explore the critical ingredients of good leadership. We'll bust some myths, learn to lead ourselves, and recognize areas where we can take responsibility or take action. Along the way, we'll explore strategies for common tough subjects such as conflict resolution, influencing others, running effective meetings, and public speaking!
+
+I promise you will walk away with a fresh perspective on leadership, excited about your potential, and equipped with tools to help you reach your full potential and have a lasting positive impact on others!
 
 <a name="electron-workshop"></a>
 
