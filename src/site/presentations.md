@@ -160,7 +160,7 @@ I started drawing about four years ago, and it is now an essential part of every
 
 (_4-8 hour workshop_)
 
-Does the idea of being a leader sound terrifying to you? Are you in a leadership role today and not sure you're cut out for it, or feel like you're not leading effectively? This workshop is for you!
+Does the idea of being a leader terrify you? Are you in a leadership role today and not sure you're cut out for it, or feel like you're not leading effectively? This workshop is for you!
 
 **SPOILER ALERT:** You don't even need to be in a leadership position to be an effective leader!
 
