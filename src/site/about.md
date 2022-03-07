@@ -11,7 +11,7 @@ layout: layouts/page.njk
 
 <img class="float-left mr-4 w-1/6" src="/content/images/reverentgeek-circle.jpg" alt="ReverentGeek">
 
-Hi! My name is David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I currently lead Developer Relations for [ActiveCampaign](https://activecampaign.com). Earlier in my career, I was a Senior Developer Advocate at [Okta](https://developer.okta.com), a Developer Advocate for [LeanKit](https://leankit.com), and spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon.
+Hi! My name is David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I am currently a Developer Advocate for [Pluralsight](https://pluralsight.com). I was previously the Developer Relations Manager for [ActiveCampaign](https://activecampaign.com), Senior Developer Advocate at [Okta](https://developer.okta.com), Developer Advocate for [LeanKit](https://leankit.com), and spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon.
 
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on [Twitter](https://twitter.com/reverentgeek).
