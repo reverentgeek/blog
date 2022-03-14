@@ -14,10 +14,8 @@ layout: layouts/page.njk
 | Date | Event | Location |
 | --- | --- | --- |
 | 04.07.2022 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
-
-<!--
-| 01.18.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
--->
+| 05.24.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
+| 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
 ## Past Speaking Engagements
 
