@@ -19,7 +19,7 @@ layout: layouts/page.njk
 
 I draw avatars you can use for social media, blogs, presentations, business cards... whatever! Check out my [avatar gallery](/avatars) for more examples.
 
-<div id='collection-component-1583790257575'></div>
+<div id='collection-component-1648734448643'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -37,7 +37,7 @@ I draw avatars you can use for social media, blogs, presentations, business card
     var script = document.createElement('script');
     script.async = true;
     script.src = scriptURL;
-    [document.getElementsByTagName('head'](0) || document.getElementsByTagName['body'](0)).appendChild(script);
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
@@ -48,7 +48,7 @@ I draw avatars you can use for social media, blogs, presentations, business card
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
         id: '58943340621',
-        node: document.getElementById('collection-component-1583790257575'),
+        node: document.getElementById('collection-component-1648734448643'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -138,6 +138,7 @@ I draw avatars you can use for social media, blogs, presentations, business card
       }
     }
   },
+  "option": {},
   "cart": {
     "styles": {
       "button": {
