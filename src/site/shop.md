@@ -17,7 +17,7 @@ layout: layouts/page.njk
 
 ## Commission a Drawing!
 
-I draw avatars you can use for social media, blogs, presentations, business cards... whatever!
+I draw avatars you can use for social media, blogs, presentations, business cards... whatever! Check out my [avatar gallery](/avatars) for more examples.
 
 <div id='collection-component-1583790257575'></div>
 <script type="text/javascript">
@@ -37,7 +37,7 @@ I draw avatars you can use for social media, blogs, presentations, business card
     var script = document.createElement('script');
     script.async = true;
     script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    [document.getElementsByTagName('head'](0) || document.getElementsByTagName['body'](0)).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
@@ -285,7 +285,7 @@ Got an idea for something else? Send it to me at [david@reverentgeek.com](mailto
     var script = document.createElement('script');
     script.async = true;
     script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    [document.getElementsByTagName('head'](0) || document.getElementsByTagName['body'](0)).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
