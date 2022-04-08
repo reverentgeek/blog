@@ -13,7 +13,6 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 04.07.2022 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
 | 05.24.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
@@ -23,6 +22,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 04.07.2022 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
 | 12.10.2021 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 | 11.17.2021 | [Automation + DevOps Summit 2021](https://events.devopscollective.org/event/automation-devops-summit/)<sup>*</sup> | Nashville, TN |
 | 10.05.2021 | [Microsoft Developer Digital Meetup Tour](https://info.microsoft.com/CA-DevEngage-WBNR-FY22-10Oct-05-Build-Desktop-Apps-with-Electron-using-JavaScript-and-Visual-Studio-Code-SRDEM86766_LP02-On-Demand-Registration---Form-in-Body.html) | Online |
