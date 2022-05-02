@@ -13,7 +13,8 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 05.24.2021 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
+| 05.24.2022 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
+| 08.08.2022 | [KCDC](https://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
 ## Past Speaking Engagements
