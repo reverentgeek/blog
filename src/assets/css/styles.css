@@ -1,7 +1,7 @@
+@import "../../../node_modules/prismjs/themes/prism-okaidia.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "../../../node_modules/prismjs/themes/prism-okaidia.css";
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
