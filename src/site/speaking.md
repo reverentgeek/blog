@@ -14,7 +14,10 @@ layout: layouts/page.njk
 | Date | Event | Location |
 | --- | --- | --- |
 | 05.24.2022 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
+| 07.27.2022 | [FullStack eXchange](https://skillsmatter.com/conferences/13770-fullstack-exchange-2022)<sup>*+</sup> | London, UK |
 | 08.08.2022 | [KCDC](https://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
+| 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
+| 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
 ## Past Speaking Engagements
