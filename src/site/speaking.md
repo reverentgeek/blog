@@ -13,7 +13,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 05.24.2022 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
+| 07.22.2022 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 07.27.2022 | [FullStack eXchange](https://skillsmatter.com/conferences/13770-fullstack-exchange-2022)<sup>*+</sup> | London, UK |
 | 08.08.2022 | [KCDC](https://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
 | 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
@@ -26,6 +26,8 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 06.15.2022 | Pluralsight Link/ 2022 | San Francisco, CA |
+| 05.24.2022 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
 | 04.07.2022 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
 | 12.10.2021 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 | 11.17.2021 | [Automation + DevOps Summit 2021](https://events.devopscollective.org/event/automation-devops-summit/)<sup>*</sup> | Nashville, TN |
