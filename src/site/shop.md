@@ -10,6 +10,7 @@ layout: layouts/page.njk
 ---
 
 * [Commission a Drawing!](#commission)
+* [My Dad Joke Book!](#dadjokebook)
 * [Stickers!](#stickers)
 * [T-Shirts!](#tshirts)
 
@@ -267,6 +268,15 @@ wish to be drawn, and include eye color or any other details.
 
 Got an idea for something else? Send it to me at [david@reverentgeek.com](mailto:david@reverentgeek.com)! I have drawn
 custom illustrations and artwork for events, conferences, meet-ups, advertising campaigns, books, and articles.
+
+<a name="dadjokebook"></a>
+
+## The Illustrated Book of Dad Jokes
+
+![The Illustrated Book of Dad Jokes](/content/images/the-illustrated-book-of-dad-jokes/book-cover.jpg)
+
+[The Illustrated Book of Dad Jokes](https://www.amazon.com/Illustrated-Book-Dad-Jokes/dp/B0B19GST26/) is available for
+purchase on Amazon!
 
 <a name="stickers"></a>
 
