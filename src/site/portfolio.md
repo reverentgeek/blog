@@ -9,11 +9,18 @@ slug: portfolio
 layout: layouts/page.njk
 ---
 
-_Click the title or image to view more in that category._
+* [Avatars](/avatars/)
+* [Logos, Stickers, and Projects](/illustrations/)
+* [Sketch Notes](/sketch-notes/)
+* [Tech Humor](/tech-humor/)
+* [Doodles](/doodles/)
+* [31 Days of Inspiration, January 2019](/31-days-of-inspiration-january-2019/)
 
 Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/attribution/) to my work. Thanks!
 
 Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
+
+_Click the title or image to view more in that category._
 
 ## [Avatars](/avatars/)
 
@@ -35,9 +42,9 @@ Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 
 [![Doodles](/content/images/2019/01/IMG_5113.jpg)](/doodles/)
 
-## [Sketchnotes](/sketch-notes/)
+## [Sketch Notes](/sketch-notes/)
 
-[![Sketchnotes](/content/images/2019/08/ai-for-earth-jennifer-marsman.png)](/sketch-notes/)
+[![Sketchnotes](/content/images/sketch-notes/that-tx-2022-keynote-gblock.jpg)](/sketch-notes/)
 
 Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/get-permission/) to my work.
 
