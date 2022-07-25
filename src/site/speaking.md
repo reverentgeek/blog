@@ -13,7 +13,6 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 07.22.2022 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 07.27.2022 | [FullStack eXchange](https://skillsmatter.com/conferences/13770-fullstack-exchange-2022)<sup>*+</sup> | London, UK |
 | 08.08.2022 | [KCDC](https://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
 | 09.13.2022 | [All Things Open RTP Meetup](https://www.meetup.com/all-things-open-rtp-meetup/) | Raleigh, NC |
@@ -28,6 +27,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 07.22.2022 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 06.15.2022 | Pluralsight Link/ 2022 | San Francisco, CA |
 | 05.24.2022 | [THAT Conference](https://that.us/activities/PrFfeKvfa8IHc4ZhBA6x) | Round Rock, TX |
 | 04.07.2022 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
