@@ -27,6 +27,7 @@ Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
 * [The Five Dysfunctions of a Team: A Leadership Fable](https://www.amazon.com/gp/product/B006960LQW/)
 * [Strengths Finder 2.0](https://www.amazon.com/StrengthsFinder-2-0-Tom-Rath-ebook/dp/B001CDZZI6/)
 * [The Ideal Team Player](https://www.amazon.com/Ideal-Team-Player-Recognize-Cultivate-ebook/dp/B01B6AEJJ0/)
+* [Radical Candor](https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity-ebook/dp/B07P9LPXPT/)
 
 ## Connect with Me
 
