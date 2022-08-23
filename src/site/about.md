@@ -11,15 +11,18 @@ layout: layouts/page.njk
 
 <img class="float-left mr-4 w-1/6" src="/content/images/reverentgeek-circle.jpg" alt="ReverentGeek">
 
-Hi! My name is David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I am currently a Developer Advocate for [Pluralsight](https://pluralsight.com). I was previously the Developer Relations Manager for [ActiveCampaign](https://activecampaign.com), Senior Developer Advocate at [Okta](https://developer.okta.com), Developer Advocate for [LeanKit](https://leankit.com), and spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon.
+Hi! My name is David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I am currently a Principal Developer Advocate 🥑 for [Pluralsight](https://pluralsight.com). I worked previously in Developer Relations (DevRel) at [ActiveCampaign](https://activecampaign.com), [Okta](https://developer.okta.com), and [LeanKit](https://leankit.com). Before DevRel, I spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓.
 
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on [Twitter](https://twitter.com/reverentgeek).
 * Check out my code on [GitHub](https://github.com/reverentgeek).
-* View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 * View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
 * Get my [resume](https://app.box.com/s/qu64atp964mi7symkhu5zxza99tr11rg).
+* Upcoming and past [speaking engagements](/speaking).
+* View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
+* List of presentation and workshop [abstracts](/presentations/).
+* [Bio and Headshots](/bio).
 
 Got Node.js? Try this at your command line: `npx reverentgeek`
 
@@ -45,7 +48,7 @@ Got Node.js? Try this at your command line: `npx reverentgeek`
 * [.NET Rocks! Building Cross-Platform Desktop Apps using Electron with David Neal](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
 * [Developer on Fire - David Neal: Bacon-Driven Drawing](http://developeronfire.com/podcast/episode-156-david-neal-bacon-driven-drawing)
 
-## The long answer
+## Who Am I? The Longer Answer
 
 <img class="float-right ml-4 my-2 w-1/2" src="/content/images/2018/06/truth-justice-and-the-developer-way.jpeg" alt="Seeker of truth, justice, and the developer way">
 

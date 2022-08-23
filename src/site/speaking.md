@@ -9,7 +9,7 @@ slug: speaking
 layout: layouts/page.njk
 ---
 
-**Current speaking topics:** leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving workflow, and Kanban. Here is a [list of abstracts](/presentations/). You can review my slide decks at [SpeakerDeck](https://speakerdeck.com/reverentgeek).
+**Current speaking topics:** leadership, public speaking, JavaScript, Node.js, Electron.js, sketch notes, improving workflow, and Kanban.
 
 | Date | Event | Location |
 | --- | --- | --- |
@@ -18,6 +18,12 @@ layout: layouts/page.njk
 | 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
 | 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
+
+## Resources
+
+* View my slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
+* List of presentation and workshop [abstracts](/presentations/)
+* [Bio and headshots](/bio)
 
 ## Past Speaking Engagements
 

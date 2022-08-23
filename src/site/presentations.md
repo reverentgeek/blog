@@ -1,6 +1,6 @@
 ---
 id: 5c49c74ebc58620a445559d9
-title: "Keynotes, Presentations, and Workshops"
+title: "Keynotes and Presentations"
 feature_image: 
 description: "Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace,…"
 date: 2019-01-24
@@ -22,12 +22,15 @@ layout: layouts/page.njk
 * [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
 * [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
 
-Workshops
+## Workshops
 
 * [Leadership Guide for the Reluctant Leader Workshop](#leadership-workshop)
 * [Build Cross-Platform Desktops with Electron](#electron-workshop)
 
-[Bio and Headshots](#bio)
+## Resources
+
+* View my slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
+* [Bio and headshots](/bio)
 
 <a name="leadership"></a>
 
@@ -158,7 +161,7 @@ I started drawing about four years ago, and it is now an essential part of every
 
 ## Leadership Guide for the Reluctant Leader Workshop
 
-(_4-8 hour workshop_)
+(_4- or 8-hour workshop_)
 
 Does the idea of being a leader terrify you? Are you in a leadership role today and not sure you're cut out for it, or feel like you're not leading effectively? This workshop is for you!
 
@@ -178,26 +181,6 @@ Many companies are turning to Electron.js to build amazing desktop applications 
 
 Requirements:
 
-* Laptop running Mac OS X 10.10+, Windows 7+, or Ubuntu 12+
-* [Node.js](https://nodejs.org) version 10 or higher
+* Laptop running macOS, Windows, or Ubuntu
+* [Node.js](https://nodejs.org) version 16 or higher
 * [Visual Studio Code](https://code.visualstudio.com/)
-
-<a name="bio"></a>
-
-## Bio
-
-David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. He's currently a Developer Advocate for Pluralsight. He runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
-
-<a name="headshots"></a>
-
-## Headshots
-
-Preferred:
-
-![Headshot illustration](/content/images/2020/04/reverentgeek-v3-1.png)
-
-Alternatives:
-
-![Headshot photo](/content/images/headshots/david-neal-ps-headshot-1.jpg)
-
-![Headshot photo 2](/content/images/headshots/david-neal-ps-headshot-2.jpg)
