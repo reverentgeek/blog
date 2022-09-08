@@ -13,7 +13,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 09.13.2022 | [All Things Open RTP Meetup](https://www.meetup.com/all-things-open-rtp-meetup/) | Raleigh, NC |
+| 09.13.2022 | [All Things Open RTP Meetup](https://www.meetup.com/all-things-open-rtp-meetup/events/287305927/) | Raleigh, NC |
 | 09.30.2022 | [TDevConf 2022](https://tdevconf.com/) | Virtual |
 | 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
 | 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
