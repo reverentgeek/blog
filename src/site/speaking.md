@@ -13,7 +13,6 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 09.13.2022 | [All Things Open RTP Meetup](https://www.meetup.com/all-things-open-rtp-meetup/events/287305927/) | Raleigh, NC |
 | 09.30.2022 | [TDevConf 2022](https://tdevconf.com/) | Virtual |
 | 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
 | 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
@@ -31,6 +30,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 09.13.2022 | [All Things Open RTP Meetup](https://www.meetup.com/all-things-open-rtp-meetup/events/287305927/) | Raleigh, NC |
 | 08.08.2022 | [KCDC](https://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
 | 07.27.2022 | [FullStack eXchange](https://skillsmatter.com/conferences/13770-fullstack-exchange-2022)<sup>*</sup> | London, UK |
 | 07.22.2022 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
