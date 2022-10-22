@@ -76,6 +76,18 @@ async function getColumnHtml( folder, htmlPath = "/content/images/avatars" ) {
 	return html.join( "\r\n" );
 }
 
+async function getFlexHtml( folder, htmlPath = "/content/images/avatars" ) {
+	const imageHtml = [];
+	const imageFiles = await getOrderedFiles( folder );
+	for( const imageFile of imageFiles ) {
+		const src = path.join( folder, imageFile );
+		const s = await fs.createReadStream( src );
+		const info = await probe( s );
+		imageHtml.push( `<img class="avatar-image" alt="avatar illustration" width="${ info.width }" height="${ info.height }" src="${ htmlPath }/${ imageFile }">` );
+	}
+	return imageHtml.join( "\r\n" );
+}
+
 async function getHtml( folder, htmlPath = "/content/images/avatars", captions = {} ) {
 	const html = [];
 	const imageFiles = await getOrderedFiles( folder );
@@ -93,6 +105,7 @@ async function getHtml( folder, htmlPath = "/content/images/avatars", captions =
 
 module.exports = {
 	getColumnHtml,
+	getFlexHtml,
 	getHtml,
 	getOrderedFiles,
 	convertImage
