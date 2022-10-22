@@ -5,7 +5,7 @@ const path = require( "path" );
 const jmp = require( "jimp" );
 const probe = require( "probe-image-size" );
 
-async function getOrderedFiles( folder ) {
+async function getOrderedFiles( folder, sortByDate = false ) {
 	const imageFiles = await fs.readdir( folder );
 	const images = [];
 	for( const imageFile of imageFiles ) {
@@ -16,17 +16,30 @@ async function getOrderedFiles( folder ) {
 			images.push( { f: imageFile, t: stats.birthtime } );
 		}
 	}
-	images.sort( ( a, b ) => {
-		const n1 = a.f.toLowerCase();
-		const n2 = b.f.toLowerCase();
-		if ( n1 > n2 ) {
-			return -1;
-		}
-		if ( a.t < b.t ) {
-			return -1;
-		}
-		return 0;
-	} );
+	if ( sortByDate ) {
+		images.sort( ( a, b ) => {
+			if ( a.t < b.t ) {
+				return 1;
+			}
+			if ( a.t > b.t ) {
+				return -1;
+			}
+			return 0;
+		} );
+	} else {
+		images.sort( ( a, b ) => {
+			const n1 = a.f.toLowerCase();
+			const n2 = b.f.toLowerCase();
+			if ( n1 > n2 ) {
+				return -1;
+			}
+			if ( a.t < b.t ) {
+				return -1;
+			}
+			return 0;
+		} );
+	}
+
 	return images.map( i => i.f );
 }
 
