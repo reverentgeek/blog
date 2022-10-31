@@ -15,7 +15,6 @@ layout: layouts/page.njk
 | --- | --- | --- |
 | 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
 | 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
-| 11.14.2022 | [TDevConf 2022](https://tdevconf.com/) | Virtual |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
 ## Resources
