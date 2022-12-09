@@ -20,6 +20,8 @@ Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
 * [Respect for People](/respect-for-people/)
 * [Not All Heroes Wear Capes](/not-all-heroes-wear-capes/)
 * [Be Patient and Keep Practicing](/be-patient-and-keep-practicing/)
+* [How to Have the Best Meetings of Your Life](https://developer.okta.com/blog/2019/07/24/how-to-have-the-best-meetings)
+* [Public Speaking Resources](https://bit.ly/barfshoes)
 
 ## Recommended Books
 
