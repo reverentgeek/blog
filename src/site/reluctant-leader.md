@@ -16,7 +16,7 @@ Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
 ## Leadership Posts
 
 * [My Most Embarrassing Mistakes as a Programmer](/my-most-embarrassing-mistakes-as-a-programmer/)
-* [How to Be a Superhuman Communicator](how-to-be-a-superhuman-communicator/)
+* [How to Be a Superhuman Communicator](/how-to-be-a-superhuman-communicator/)
 * [Respect for People](/respect-for-people/)
 * [Not All Heroes Wear Capes](/not-all-heroes-wear-capes/)
 * [Be Patient and Keep Practicing](/be-patient-and-keep-practicing/)
