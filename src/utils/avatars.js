@@ -51,7 +51,7 @@ async function updateFileNames() {
 	const newFiles = [];
 
 	for( const f of srcFiles ) {
-		if ( /^\d{3}/gm.test( f ) ) {
+		if ( /^\d{3}-/gm.test( f ) ) {
 			goodFiles.push( f );
 		} else {
 			filesToRename.push( f );
