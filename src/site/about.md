@@ -43,6 +43,8 @@ Got Node.js? Try this at your command line: `npx reverentgeek`
 
 ### Sample of podcasts:
 
+* [Sketchnote Army: David Neal is the Geek Visualizer](https://sketchnotearmy.com/blog/2022/11/8/david-neal)
+* [6-Figure Developer: Reluctant Leader with David Neal](https://6figuredev.com/podcast/episode-081-reluctant-leader-with-david-neal/)
 * [Cross-Cutting Concerns - David Neal on Drawing](https://crosscuttingconcerns.com/Podcast-084-David-Neal-Drawing)
 * [Away from the Keybord: David Neal's Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
 * [.NET Rocks! Building Cross-Platform Desktop Apps using Electron with David Neal](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
