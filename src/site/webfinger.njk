@@ -1,0 +1,28 @@
+---
+permalink: '.well-known/webfinger'
+eleventyExcludeFromCollections: true
+dynamicPermalink: false
+---
+{
+  "subject": "acct:reverentgeek@techhub.social",
+  "aliases": [
+    "https://techhub.social/@reverentgeek",
+    "https://techhub.social/users/reverentgeek"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://techhub.social/@reverentgeek"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://techhub.social/users/reverentgeek"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://techhub.social/authorize_interaction?uri={uri}"
+    }
+  ]
+}
