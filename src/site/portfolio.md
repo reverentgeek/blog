@@ -24,7 +24,7 @@ _Click the title or image to view more in that category._
 
 ## [Avatars](/avatars/)
 
-[![Avatars](/content/images/2019/08/IMG_1164.PNG)](/avatars/)
+[![Avatars](/content/images/avatars/000-avatar-gallery-featured.jpg)](/avatars/)
 
 ## [Logos, Stickers and Projects](/illustrations)
 
