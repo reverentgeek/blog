@@ -2,7 +2,7 @@
 id: 84b716c0821c11ed82cc8fdee474061f
 title: "Configure Eleventy to Host a Custom Mastodon Alias"
 feature_image: /content/images/configure-eleventy-to-host-a-custom-mastodon-alias/configure-eleventy-to-host-a-custom-mastodon-alias.jpg
-description:
+description: How I configured 11ty to host a custom Mastodon alias for my domain.
 date: 2022-12-22
 tags: posts
 slug: configure-eleventy-to-host-a-custom-mastodon-alias
