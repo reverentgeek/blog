@@ -11,7 +11,7 @@ layout: layouts/post.njk
 
 I recently came across Scott Hanselman's excellent post, [Use your own user @ domain for Mastodon](https://www.hanselman.com/blog/use-your-own-user-domain-for-mastodon-discoverability-with-the-webfinger-protocol-without-hosting-a-server). Scott does a great job explaining the WebFinger protocol and how it's used to discover public information about accounts. Go read his tutorial to learn more about why it works.
 
-_This_ post explains how I took what I learned in Scott's tutorial for ASP.NET and applied it to my static site built with [Eleventy](https://www.11ty.dev/) (also known as "11ty") and deployed to [Netlify](https://www.netlify.com/).
+_This_ post explains how I took what I learned in Scott's tutorial for ASP.NET and applied it to my static site built with [Eleventy](https://www.11ty.dev/) (also known as "11ty") and deployed it to [Netlify](https://www.netlify.com/).
 
 ## Create a WebFinger Endpoint
 
@@ -72,7 +72,7 @@ node src/utils/mastodon.js
 
 ## Return WebFinger Content as JSON
 
-When deployed, the `.well-known/webfinger` file will be returned as plain text. Some Mastodon clients may be forgiving and automatically convert the data to JSON. However, the it would be best to serve the file as JSON.
+When deployed, the `.well-known/webfinger` file will be returned as plain text. Some Mastodon clients may be forgiving and automatically convert the data to JSON. However, it would be best to serve the file as JSON.
 
 Use a [custom `_headers` file](https://docs.netlify.com/routing/headers/) to configure Netlify to override HTTP header information for specific files. In my 11ty site, I have a template named `headers.njk` to generate a `_headers` file.
 
@@ -91,4 +91,4 @@ When Netlify serves `/.well-known/webfinger`, it will include the correct `conte
 
 The entire source code for this blog is on [GitHub](https://github.com/reverentgeek/blog).
 
-Let me know if this helps, or if you have any questions! Happy 11ty-ing!
+Let me know if this helps or if you have any questions! Happy 11ty-ing!
