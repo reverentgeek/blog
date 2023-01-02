@@ -17,7 +17,7 @@ _This_ post explains how I took what I learned in Scott's tutorial for ASP.NET a
 
 ## Create a WebFinger Endpoint
 
-Because my 11ty site uses Nunjucks for templates, I created a file named `webfinger.njk` and added the following text.
+This 11ty site uses Nunjucks for templates. I created a file named `webfinger.njk` and added the following text.
 
 ```json
 ---
