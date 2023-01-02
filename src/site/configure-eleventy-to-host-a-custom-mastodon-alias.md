@@ -2,16 +2,18 @@
 id: 84b716c0821c11ed82cc8fdee474061f
 title: "Configure Eleventy to Host a Custom Mastodon Alias"
 feature_image: /content/images/configure-eleventy-to-host-a-custom-mastodon-alias/configure-eleventy-to-host-a-custom-mastodon-alias.jpg
-description: How I configured 11ty to host a custom Mastodon alias for my domain.
+description: You can find me on Mastodon using @reverentgeek@reverentgeek.com! Here's how I did it using 11ty and Netlify!
 date: 2022-12-22
 tags: posts
 slug: configure-eleventy-to-host-a-custom-mastodon-alias
 layout: layouts/post.njk
 ---
 
+You can find me on Mastodon using `@reverentgeek@reverentgeek.com`! Here's how I did it using 11ty and Netlify!
+
 I recently came across Scott Hanselman's excellent post, [Use your own user @ domain for Mastodon](https://www.hanselman.com/blog/use-your-own-user-domain-for-mastodon-discoverability-with-the-webfinger-protocol-without-hosting-a-server). Scott does a great job explaining the WebFinger protocol and how it's used to discover public information about accounts. Go read his tutorial to learn more about why it works.
 
-_This_ post explains how I took what I learned in Scott's tutorial for ASP.NET and applied it to my static site built with [Eleventy](https://www.11ty.dev/) (also known as "11ty") and deployed it to [Netlify](https://www.netlify.com/).
+_This_ post explains how I took what I learned in Scott's tutorial for ASP.NET and applied it to my static site built with [Eleventy](https://www.11ty.dev/) (also known as "11ty") and deployed it to [Netlify](https://www.netlify.com/). This allows me to use my domain as an alias `@reverentgeek@reverentgeek.com` without hosting a Mastodon server.
 
 ## Create a WebFinger Endpoint
 
