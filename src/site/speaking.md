@@ -13,6 +13,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 02.17.2023 | Private Corporate Event | Indiana |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 
 ## Resources
