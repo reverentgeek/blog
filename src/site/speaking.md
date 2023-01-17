@@ -13,7 +13,6 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 01.10.2023 | [CodeMash](https://www.codemash.org/) | Sandusky, OH |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 
 ## Resources
@@ -28,6 +27,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 01.10.2023 | [CodeMash](https://www.codemash.org/) | Sandusky, OH |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 | 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
 | 10.30.2022 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
