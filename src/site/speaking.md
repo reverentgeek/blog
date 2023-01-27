@@ -14,6 +14,7 @@ layout: layouts/page.njk
 | Date | Event | Location |
 | --- | --- | --- |
 | 02.17.2023 | Private Corporate Event | Indiana |
+| 04.24.2023 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 
 ## Resources
