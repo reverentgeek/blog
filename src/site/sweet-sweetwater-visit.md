@@ -32,7 +32,9 @@ This talk was an opportunity to combine my passion for technology, my love for g
 * a slide,
 * and several event stages for live audio/video production.
 
-![David playing a sweet guitar](/content/images/sweet-sweetwater-visit/playing-guitar-sweetwater.jpg)
+![David playing a sweet guitar in the Sweetwater store](/content/images/sweet-sweetwater-visit/playing-guitar-sweetwater.jpg)
+
+![In front of Sweetwater headquarters with my son Nathaniel](/content/images/sweet-sweetwater-visit/sweetwater-headquarters.jpg)
 
 One example of Sweetwater's incredible customer service is the 55-point quality check. Every guitar and bass that sells for more than $299 goes through this inspection. When a staff member finds an issue, it is fixed immediately or returned to the manufacturer. After passing inspection, each guitar is weighed and photographed. Customers can examine the details of each guitar down to the wood grain before purchasing!
 
