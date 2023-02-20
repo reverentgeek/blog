@@ -13,7 +13,6 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 02.17.2023 | Private Corporate Event | Indiana |
 | 04.24.2023 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 
@@ -29,6 +28,7 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 02.17.2023 | Sweet Geeks Speak @ [Sweetwater](https://sweetwater.com) | Fort Wayne, IN |
 | 01.10.2023 | [CodeMash](https://www.codemash.org/) | Sandusky, OH |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 | 11.07.2022 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
