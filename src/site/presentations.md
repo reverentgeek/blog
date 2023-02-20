@@ -38,9 +38,9 @@ layout: layouts/page.njk
 
 Regardless of the technology you know or the job title you have, you have amazing potential to impact your workplace, community, and beyond.
 
-In this talk, I'll share a few candid stories of my career failures… I mean… learning opportunities. We'll start by debunking the myth that leadership == management. Next, we'll talk about some of the attributes, behaviors, and skills of good leaders. Lastly, we'll cover some practical steps and resources to accelerate your journey.
+In this talk, I'll share candid stories of my career failures… I mean… learning opportunities. We'll start by debunking the myth that leadership == management. Next, we'll talk about some of the attributes, behaviors, and skills of good leaders. Lastly, we'll cover some practical steps and resources to accelerate your journey.
 
-You'll walk away with some essential leadership skills I believe anyone can develop, and a good dose of encouragement to be more awesome!
+You'll walk away with essential leadership skills anyone can develop and a good dose of encouragement to be more awesome!
 
 _Note: I've given this talk several times as both a keynote and a presentation._  
 [Video](https://www.youtube.com/watch?v=0h5X5UKWao8) | [Slides](https://speakerdeck.com/reverentgeek/leadership-guide-for-the-reluctant-leader-ndc-sydney-2018)
@@ -49,7 +49,7 @@ _Note: I've given this talk several times as both a keynote and a presentation._
 
 ## You. Are. Awesome.
 
-You may not realize it, but you are awesome. You have the power to change the world. Regardless if you are a student, professional, or "family engineer," I firmly believe you have amazing potential to impact the people around you in powerful and meaningful ways. My goal is to help you realize the awesomeness you already possess and be encouraged to unleash it!
+You may not realize it, but you are awesome. You have the power to change the world. Whether you are a student, professional, or "family engineer," I firmly believe you have amazing potential to impact the people around you in powerful and meaningful ways. My goal is to help you realize the awesomeness you already possess and be encouraged to unleash it!
 
 _Note: This is the keynote I have given for conferences such as That Conference, DevReach, and NDC Oslo._  
 [Video](https://www.youtube.com/watch?v=wsjqnrwkXqI) | [Slides](https://speakerdeck.com/reverentgeek/you-are-awesome)
@@ -58,7 +58,7 @@ _Note: This is the keynote I have given for conferences such as That Conference,
 
 ## Unlock Your Potential
 
-Regardless of the technology you use or the job title you have, you have amazing potential to impact your workplace, community, and beyond in powerful ways. I want to share with you some of the essential skills you can develop to maximize your awesomeness!
+Regardless of your job title or the technology you use, you have amazing potential to impact your workplace, community, and beyond in powerful ways. I want to share with you some of the essential skills you can develop to maximize your awesomeness!
 
 <a name="javascript-future"></a>
 
@@ -66,7 +66,7 @@ Regardless of the technology you use or the job title you have, you have amazing
 
 Ah, JavaScript! Like it or not, it's a "tragically important" language that is "eating the world." Hate it? Love it? Avoid it? Embrace it?
 
-This talk is a parade of face-palm JavaScript fails, history of JavaScript, why it is the way it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our JavaScript less terrible!
+This talk is a parade of face-palm JavaScript fails, the bizarre history of JavaScript, why it is the way it is, how it's getting better, and bad jokes sure to get an eye-roll from everyone! Along the way, we may even learn a few mistakes to avoid and tips to make our JavaScript less terrible!
 
 [Slides](https://speakerdeck.com/reverentgeek/javascript-hey-yall-watch-this)
 
@@ -74,7 +74,7 @@ This talk is a parade of face-palm JavaScript fails, history of JavaScript, why 
 
 ## JAMstack: Web Apps at Ludicrous Speed
 
-If you're a web developer, chances are you have heard the term "JAMstack." Curiously, JAMstack isn't a solution to prevent clogged printers, something to eat on toast, or a way to make music. Instead, it's an architecture for designing super-fast web applications that easily scale.
+If you're a web developer, you may have heard of "JAMstack." JAMstack isn't a solution to prevent clogged printers, something to eat on toast, or a way to make music. Instead, it's an architecture for designing super-fast web applications that easily scale.
 
 In this talk, we'll cover the JAMstack architecture, the numerous benefits of the JAMstack approach, and tools you can use to implement a JAMstack web application. You'll walk away with a clear understanding of JAMstack and resources to quickly build your web app at ludicrous speed!
 
@@ -84,7 +84,7 @@ In this talk, we'll cover the JAMstack architecture, the numerous benefits of th
 
 ## Cross-Platform Desktop Apps with Electron
 
-Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-platform desktop applications? Electron is an open-source application shell created by GitHub, designed to make building great desktop applications easy. You may have already experienced Electron apps such as Atom, Slack, or Visual Studio Code. In this talk, you will learn its features, how to get started, and tips from my experience building Electron applications.
+Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-platform desktop applications? Electron is an open-source application shell created by GitHub, designed to make building great desktop applications easy. You may have already experienced Electron apps like Slack or Visual Studio Code. In this talk, you will learn its features, how to get started, and tips from my experience building Electron applications.
 
 [Video](https://www.youtube.com/watch?v=UmYv_-vUOLU) | [Slides](https://speakerdeck.com/reverentgeek/cross-platform-desktop-apps-with-electron-ndc-sydney-2018)
 
@@ -92,11 +92,11 @@ Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-
 
 ## Software and The Art of Delivery
 
-Engineering, DevOps, IT, Marketing, ...you name it, there is a constant battle between going fast and doing it right. Add to the mix the fact that coordination across teams and departments comes at a high transaction cost. How can we minimize the friction?
+Engineering, DevOps, IT, Marketing, ...you name it, there is a constant battle between going fast and doing it right. Add to the mix that coordination across teams and departments comes at a high transaction cost. How can we minimize friction?
 
-During my time at LeanKit, we strove to continuously improve our processes across the entire organization. Along the way, we developed FSGD, which distills many of the core lean (and agile) principles into an easy-to-remember and easy-to-communicate thinking tool you can use to make better decisions about the work you do.
+During my time at LeanKit, we continuously strove to improve our processes across the entire organization. Along the way, we developed FSGD, which distills many of the core lean (and agile) principles into an easy-to-remember and easy-to-communicate thinking tool to make better decisions about your work.
 
-In this talk, I'll share the challenges we faced as we scaled, how we struggled, what we learned, and how we evolved. The goal is to walk away with tools and practical processes that will impact you and your team's success.
+In this talk, I'll share the challenges we faced as we scaled, how we struggled, what we learned, and how we evolved. The goal is to walk away with tools and practical processes to impact your team's success.
 
 _Note: I have given this talk as both a keynote and presentation._  
 [Slides](https://speakerdeck.com/reverentgeek/nodevember-2017-fsgd-and-the-art-of-delivering-value)
@@ -105,7 +105,9 @@ _Note: I have given this talk as both a keynote and presentation._
 
 ## Node.js Crash Course
 
-Node.js is a compelling platform that is quickly spreading from startups to the enterprise. Node.js strategically unites developers of all backgrounds through the universal language of JavaScript. Why should you learn Node.js, and where do you start? You will come away from this talk with the evidence to support Node.js and the tools you need to be productive. We will walk through a typical workflow of creating and debugging a web application. You will learn how easy it is to deploy, including Microsoft Azure. We'll also look at popular frameworks, libraries, and learning resources to give you the best start.
+Node.js is a compelling platform quickly spreading from startups to enterprises. Node.js strategically unites developers of all backgrounds through the universal language of JavaScript. Why should you learn Node.js, and where do you start?
+
+You will come away from this talk with the evidence to support Node.js and the tools you need to be productive. We will walk through a typical workflow of creating and debugging a web application. We'll also look at popular frameworks, libraries, and learning resources to give you the best start.
 
 [Video](https://www.youtube.com/watch?v=8d6kJYqFWoQ) | [Slides](https://speakerdeck.com/reverentgeek/node-dot-js-crash-course-all-things-open-2018)
 
@@ -113,9 +115,9 @@ Node.js is a compelling platform that is quickly spreading from startups to the 
 
 ## Public Speaking without Barfing on Your Shoes
 
-Sooner or later, we are called on to speak. Out loud. In front of an audience. We may have to present something to our team, management, or even a larger group of strangers. Public speaking strikes fear into the hearts of nearly everyone, especially those of us who are very shy. Imagining people in their underwear does not help.
+Sooner or later, it's going to happen. You're going to have to speak. Out loud. In front of an audience. Public speaking is scary!
 
-I have been speaking at conferences, user groups, and meetups for many years. However, as a shy introvert, this is not something that comes naturally to me! If I can do it, so can you! In this fun and light-hearted talk, I want to share what I have learned from my hard-won experience. Introverts and extroverts alike will walk away with practical tips on preparing and giving effective presentations.
+I have spoken at conferences, user groups, and meetups for many years. However, as a shy introvert, this does not come naturally to me! If I can do it, so can you! In this fun and light-hearted talk, I want to share what I have learned from my hard-won experience. You will walk away with practical tips on preparing and giving effective presentations.
 
 [Video](https://www.youtube.com/watch?v=oY_tMcZHwdc) | [Slides](https://speakerdeck.com/reverentgeek/public-speaking-without-barfing-on-your-shoes-codemash-2018)
 
@@ -125,9 +127,9 @@ I have been speaking at conferences, user groups, and meetups for many years. Ho
 
 Kanban is just sticky notes on a whiteboard, right? There's more to this methodology than you might think. Kanban harnesses the power of visual information to turn your team's work into brain candy. However, visualization is only the beginning.
 
-Whether you work in software development, operations, or professional cat wrangling, Kanban can help you continuously improve your process (yes, you have one!). That can help your team boost things like delivery speed, predictability, and quality.
+Whether you work in software development, operations, or professional cat wrangling, Kanban can help you continuously improve your process (yes, you have one!). That can help your team boost delivery speed, predictability, and quality.
 
-In this fun and entertaining talk, you'll learn the core principles and practices of Kanban, as well as how to maximize its potential to evolve how you, your team, and your organization works.
+In this fun and entertaining talk, you'll learn Kanban's core principles and practices and how to maximize its potential to evolve how you, your team, and your organization works.
 
 [Slides](https://speakerdeck.com/reverentgeek/take-back-project-sanity-the-kanban-journey-2018-edition)
 
@@ -135,15 +137,15 @@ In this fun and entertaining talk, you'll learn the core principles and practice
 
 ## Sketchnotes: How Drawing Can Supercharge Learning
 
-Have you ever sat in a presentation where an artist captured a summary on an art board using graphics and word art? It's fascinating to watch! You might think,
+Have you ever sat in a presentation where an artist captured a summary on an artboard using graphics and word art? It's fascinating to watch! You might think,
 
 "Wow, I wish I could do that!"
 
-Well, you can! Visual note taking, or "sketchnotes," is not only fun but also a powerful way to learn, think about information, and solve problems.
+Well, you can! Visual note-taking, or "sketchnotes," is a fun and powerful way to learn, think about information, and solve problems.
 
-Regardless of your artistic ability, you can add simple illustrations to your notes that will help you remain engaged and focused and increase your learning.
+Regardless of your artistic ability, you can add simple illustrations to your notes to help you remain engaged and focused and increase your learning.
 
-In this talk, I want to share with you techniques to improve your note-taking system. You will walk away with the tools and resources you need to radically transform and improve the way you learn, process information, and communicate ideas!
+In this talk, I want to share techniques to improve your note-taking system. You will walk away with the tools and resources to radically transform and improve how you learn, process information, and communicate ideas!
 
 <a name="visual-storytelling"></a>
 
@@ -151,9 +153,9 @@ In this talk, I want to share with you techniques to improve your note-taking sy
 
 Who says communication has to be dry, dull, and boring? Simple, hand-drawn illustrations are a compelling and fun way to engage, inform, and win your audience of readers and viewers!
 
-I firmly believe drawing is a skill that anyone can learn. The amazing thing is, there's no such thing as "bad" art! With some fundamentals and practice, you can make an impact, and have fun doing it!
+Drawing is a skill that anyone can learn. There's no such thing as "bad" art! You can make a huge impact with some fundamentals and practice, and have fun doing it!
 
-I started drawing about four years ago, and it is now an essential part of everything I do. I would love to share with you my bag of tips and tricks I've learned to create illustrations for presentations, articles, videos, and more!
+Drawing has become an essential part of everything I do. I would love to share my bag of tips and tricks I've learned to create illustrations for presentations, articles, videos, and more!
 
 [Slides](https://speakerdeck.com/reverentgeek/drawing-how-to-be-a-superhuman-communicator)
 
@@ -163,13 +165,13 @@ I started drawing about four years ago, and it is now an essential part of every
 
 (_4- or 8-hour workshop_)
 
-Does the idea of being a leader terrify you? Are you in a leadership role today and not sure you're cut out for it, or feel like you're not leading effectively? This workshop is for you!
+Does the idea of being a leader terrify you? Do you feel leadership is not for you or feel you need to lead more effectively? This workshop is for you!
 
-**SPOILER ALERT:** You don't even need to be in a leadership position to be an effective leader!
+**SPOILER ALERT:** You don't need to be in a leadership position to be an effective leader!
 
-In this workshop, we will explore the critical ingredients of good leadership. We'll bust some myths, learn to lead ourselves, and recognize areas where we can take responsibility or take action. Along the way, we'll explore strategies for common tough subjects such as conflict resolution, influencing others, running effective meetings, and public speaking!
+In this workshop, we will explore the critical ingredients of good leadership. We'll bust some myths, learn to lead ourselves, and recognize areas where we can take responsibility and action. Along the way, we'll explore strategies for common tough subjects such as conflict resolution, influencing others, running effective meetings, and public speaking!
 
-I promise you will walk away with a fresh perspective on leadership, excited about your potential, and equipped with tools to help you reach your full potential and have a lasting positive impact on others!
+You will walk away with a fresh perspective on leadership, excited about your potential, and equipped with tools to help you reach your full potential and have a lasting positive impact on others!
 
 <a name="electron-workshop"></a>
 
@@ -177,7 +179,7 @@ I promise you will walk away with a fresh perspective on leadership, excited abo
 
 (_4 hour workshop_)
 
-Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using familiar web technologies. In this hands-on workshop, you will learn the fundamentals of building desktop applications with Electron.js. You will walk away with a solid framework for building and deploying your own applications!
+Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using web technologies. This hands-on workshop will teach you the fundamentals of building desktop applications with Electron.js. You will walk away with a solid framework for building and deploying your applications!
 
 Requirements:
 
