@@ -23,6 +23,9 @@ This talk was an opportunity to combine my passion for technology, my love for g
 
 ![Speaking at Sweetwater Sweet Geek Speaks](/content/images/sweet-sweetwater-visit/sweet-sweetwater-visit.jpg)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YiQxpDrQtbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br />
+
 [Eric Potter](https://www.linkedin.com/in/ericbpotter/), Director of Technical Education, was a gracious host and gave us an in-depth tour of the office, studio, and warehouse. I truly geeked out over the history and details of the Sweetwater facilities that make for an amazing experience for customers and employees. At Sweetwater's headquarters, you'll find:
 
 * the largest music store in the US,
