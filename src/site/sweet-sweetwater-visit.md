@@ -1,7 +1,7 @@
 ---
 id: b8f71250b16011ed9520d5f99e427504
 title: "A Really Sweet Visit to Sweetwater.com"
-feature_image: /content/images/sweet-sweetwater-visit/sweet-sweetwater-visit.jpg
+feature_image: /content/images/sweet-sweetwater-visit/sweetwater-headquarters.jpg
 description: I recently visited Sweetwater's headquarters in Fort Wayne, IN, to speak to their engineers on leadership. It was a huge honor, and I consider it one of my highest achievements as a tech speaker.
 date: 2023-02-20
 tags: posts
@@ -21,6 +21,8 @@ Sweetwater is the largest online retailer of musical instruments and pro audio g
 
 This talk was an opportunity to combine my passion for technology, my love for guitars and music, my mission to encourage people, and a behind-the-scenes look into one of my favorite companies. For me, it doesn't get much *sweeter* than that!
 
+![Speaking at Sweetwater Sweet Geek Speaks](/content/images/sweet-sweetwater-visit/sweet-sweetwater-visit.jpg)
+
 [Eric Potter](https://www.linkedin.com/in/ericbpotter/), Director of Technical Education, was a gracious host and gave us an in-depth tour of the office, studio, and warehouse. I truly geeked out over the history and details of the Sweetwater facilities that make for an amazing experience for customers and employees. At Sweetwater's headquarters, you'll find:
 
 * the largest music store in the US,
@@ -33,8 +35,6 @@ This talk was an opportunity to combine my passion for technology, my love for g
 * and several event stages for live audio/video production.
 
 ![David playing a sweet guitar in the Sweetwater store](/content/images/sweet-sweetwater-visit/playing-guitar-sweetwater.jpg)
-
-![In front of Sweetwater headquarters with my son Nathaniel](/content/images/sweet-sweetwater-visit/sweetwater-headquarters.jpg)
 
 One example of Sweetwater's incredible customer service is the 55-point quality check. Every guitar and bass that sells for more than $299 goes through this inspection. When a staff member finds an issue, it is fixed immediately or returned to the manufacturer. After passing inspection, each guitar is weighed and photographed. Customers can examine the details of each guitar down to the wood grain before purchasing!
 
