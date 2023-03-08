@@ -13,8 +13,11 @@ layout: layouts/page.njk
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 04.18.2023 | Pluralsight Link/ 2023 | New Orleans, LA |
+| 04.20.2023 | Pluralsight Tech Skills Day | Online |
 | 04.24.2023 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
+| 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |
 
 ## Resources
 
