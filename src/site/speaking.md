@@ -17,6 +17,7 @@ layout: layouts/page.njk
 | 04.20.2023 | Pluralsight Tech Skills Day | Online |
 | 04.24.2023 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
+| 06.02.2023 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |
 
 ## Resources
