@@ -13,20 +13,24 @@ program
 
 program
 	.command( "convert" )
-	.description( "Convert unprocessed avatar files" )
-	.action( async () => {
-		const filesToConvert = await updateFileNames();
+	.description( "Convert unprocessed image files" )
+	.argument( "<folder>", "folder to process" )
+	.option( "-f, --force", "force conversion of all files" )
+	.action( async ( folder, options ) => {
+		const filesToConvert = await updateFileNames( folder, options.force );
 		if ( filesToConvert.length > 0 ) {
-			await convertFiles( filesToConvert );
+			await convertFiles( folder, filesToConvert );
 		}
 	} );
 
 program
 	.command( "html" )
+	.argument( "<folder>", "folder to process" )
 	.description( "Generate html from avatar files" )
-	.action( async () => {
-		const { avatarFolder } = getWorkingFolderPaths();
-		const output = await gallery.getFlexHtml( avatarFolder, "/content/images/avatars" );
+	.action( async ( folder ) => {
+		const contentType = folder.endsWith( "s" ) ? folder.substring( 0, folder.length - 1 ) : folder;
+		const { avatarFolder } = getWorkingFolderPaths( folder );
+		const output = await gallery.getFlexHtml( avatarFolder, `/content/images/${ folder }`, contentType );
 		console.log( output );
 	} );
 
@@ -37,14 +41,14 @@ function padZero( num, targetLength ) {
 	return s.padStart( targetLength, "0" );
 }
 
-function getWorkingFolderPaths() {
-	const avatarFolder = path.join( __dirname, "..", "site", "content", "images", "avatars" );
+function getWorkingFolderPaths( folder ) {
+	const avatarFolder = path.join( __dirname, "..", "site", "content", "images", folder );
 	const srcFolder = path.join( avatarFolder, "orig" );
 	return { avatarFolder, srcFolder };
 }
 
-async function updateFileNames() {
-	const { srcFolder } = getWorkingFolderPaths();
+async function updateFileNames( folder, force ) {
+	const { srcFolder } = getWorkingFolderPaths( folder );
 	const srcFiles = await gallery.getOrderedFiles( srcFolder, true );
 	const goodFiles = [];
 	const filesToRename = [];
@@ -53,12 +57,15 @@ async function updateFileNames() {
 	for( const f of srcFiles ) {
 		if ( /^\d{3}-/gm.test( f ) ) {
 			goodFiles.push( f );
+			if ( force ) {
+				newFiles.push( f );
+			}
 		} else {
 			filesToRename.push( f );
 		}
 	}
 
-	if ( filesToRename.length === 0 ) {
+	if ( !force && filesToRename.length === 0 ) {
 		// Nothing to do, return empty array
 		return newFiles;
 	}
@@ -74,8 +81,8 @@ async function updateFileNames() {
 	return newFiles;
 }
 
-async function convertFiles( filesToConvert ) {
-	const { avatarFolder, srcFolder } = getWorkingFolderPaths();
+async function convertFiles( folder, filesToConvert ) {
+	const { avatarFolder, srcFolder } = getWorkingFolderPaths( folder );
 
 	for( const image of filesToConvert ) {
 		await gallery.convertImage( image, srcFolder, avatarFolder, 500 );

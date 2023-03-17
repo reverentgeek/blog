@@ -76,14 +76,14 @@ async function getColumnHtml( folder, htmlPath = "/content/images/avatars" ) {
 	return html.join( "\r\n" );
 }
 
-async function getFlexHtml( folder, htmlPath = "/content/images/avatars" ) {
+async function getFlexHtml( folder, htmlPath = "/content/images/avatars", contentType = "avatar" ) {
 	const imageHtml = [];
 	const imageFiles = await getOrderedFiles( folder );
 	for( const imageFile of imageFiles ) {
 		const src = path.join( folder, imageFile );
 		const s = await fs.createReadStream( src );
 		const info = await probe( s );
-		imageHtml.push( `<img class="avatar-image" alt="avatar illustration" width="${ info.width }" height="${ info.height }" src="${ htmlPath }/${ imageFile }">` );
+		imageHtml.push( `<a href="${ htmlPath }/${ imageFile }"><img class="${ contentType }-image" alt="${ contentType } illustration" width="${ info.width }" height="${ info.height }" src="${ htmlPath }/${ imageFile }"></a>` );
 	}
 	return imageHtml.join( "\r\n" );
 }
