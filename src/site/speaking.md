@@ -19,6 +19,7 @@ layout: layouts/page.njk
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 | 06.02.2023 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |
+| 07.25.2023 | [THAT Conference](https://that.us/activities/PJX9DW11uB1qrE3Xnhea) | Wisconsin Dells, WI |
 
 ## Resources
 
