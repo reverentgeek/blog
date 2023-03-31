@@ -6,7 +6,7 @@ const slugger = require( "slug" );
 const path = require( "path" );
 const uuid = require( "uuid" );
 
-const postsPath = path.join( __dirname, "..", "site" );
+const postsPath = path.join( __dirname, "..", "site", "posts" );
 const blogImagePath = path.join( __dirname, "..", "site", "content", "images" );
 
 const zeroPad = ( number ) => {
@@ -38,9 +38,7 @@ title: "${ title }"
 feature_image: /content/images/${ slug }/${ slug }.jpg
 description:
 date: ${ formatDate( new Date() ) }
-tags: posts
 slug: ${ slug }
-layout: layouts/post.njk
 ---
 `;
 			await fs.writeFile( postPath, frontMatter, { encoding: "UTF-8" } );
