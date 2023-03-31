@@ -4,9 +4,7 @@ title: "About Me"
 feature_image: 
 description: ""
 date: 2014-02-13
-tags: page
 slug: about
-layout: layouts/page.njk
 ---
 
 <img class="float-left mr-4 w-1/6" src="/content/images/reverentgeek-circle.jpg" alt="ReverentGeek">

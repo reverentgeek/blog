@@ -4,9 +4,7 @@ title: "Keynotes and Presentations"
 feature_image: 
 description: "Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace,…"
 date: 2019-01-24
-tags: page
 slug: presentations
-layout: layouts/page.njk
 ---
 
 * [Leadership Guide for the Reluctant Leader](#leadership)

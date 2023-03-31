@@ -4,9 +4,7 @@ title: "When God Feels Far Away"
 feature_image: 
 description: ""
 date: 2022-08-14
-tags: page
-slug: about
-layout: layouts/page.njk
+slug: when-god-feels-far-away
 ---
 
 _(The following is an excerpt from ["Faith Unraveled" by Alisha Bozarth](https://www.amazon.com/Faith-Unraveled-Alisha-Bozarth/dp/1955838267/ref=sr_1_1))_

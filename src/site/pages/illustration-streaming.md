@@ -4,9 +4,7 @@ title: "Drawing with ReverentGeek!"
 feature_image: /content/images/watch-me-draw-live-streaming/drawing-with-reverentgeek-featured.jpg
 description: "Come watch me draw avatars, doodles, and sketchnotes!"
 date: 2022-10-24
-tags: page
 slug: illustration-streaming
-layout: layouts/page.njk
 ---
 
 I am rebooting my drawing live streams! I'm also starting a new YouTube channel dedicated to drawing, illustrations, and all things related.

@@ -4,9 +4,7 @@ title: "Node Resources"
 feature_image: 
 description: Collection of links and tips for using Node.js
 date: 2022-12-15
-tags: page
 slug: node-resources
-layout: layouts/page.njk
 ---
 
 ## Install Node.js

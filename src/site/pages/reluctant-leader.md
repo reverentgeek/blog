@@ -4,9 +4,7 @@ title: "Reluctant Leader Resources"
 feature_image: 
 description:
 date: 2022-07-27
-tags: page
 slug: reluctant-leader
-layout: layouts/page.njk
 ---
 
 Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)

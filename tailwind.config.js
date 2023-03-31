@@ -4,6 +4,8 @@ module.exports = {
 	content: [
 		"./src/site/_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
 		"./src/site/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
+		"./src/site/pages/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
+		"./src/site/posts/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}"
 	],
 	theme: {
 		fontFamily: {

@@ -4,9 +4,7 @@ title: "Buy My Stuff!"
 feature_image: /content/images/reverentgeek-shop-banner.jpg
 description: ""
 date: 2018-05-19
-tags: page
 slug: shop
-layout: layouts/page.njk
 ---
 
 * [Commission a Drawing!](#commission)

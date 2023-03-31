@@ -4,9 +4,7 @@ title: "Artwork and Illustration Portfolio"
 feature_image: /content/images/2019/08/portfolio-title-image.jpg
 description:
 date: 2019-01-21
-tags: page
 slug: portfolio
-layout: layouts/page.njk
 ---
 
 * [Avatars](/avatars/)

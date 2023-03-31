@@ -4,9 +4,7 @@ title: "Upcoming Speaking Engagements"
 feature_image: 
 description: "Current speaking topics: leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving…"
 date: 2014-02-13
-tags: page
 slug: speaking
-layout: layouts/page.njk
 ---
 
 **Current speaking topics:** leadership, public speaking, JavaScript, Node.js, Electron.js, sketch notes, improving workflow, and Kanban.

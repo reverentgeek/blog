@@ -4,9 +4,7 @@ title: "Three Ways to Share Node.js Modules Across Multiple Projects"
 feature_image: /content/images/3-ways-to-share-nodejs-modules-across-multiple-projects/3-ways-to-share-nodejs-modules-across-multiple-projects.jpg
 description:
 date: 2021-05-14
-tags: posts
 slug: three-ways-to-share-nodejs-modules-across-multiple-projects
-layout: layouts/post.njk
 ---
 
 A friend recently asked me about splitting some of their Node.js application into a shared library to be used across multiple projects. There are at least three solutions, and they all have tradeoffs between convenience and portability.

@@ -4,9 +4,7 @@ title: "A Note of Encouragement"
 feature_image: /content/images/2019/10/hey-buddy-1.png
 description: "Earlier this year, I set up a new computer for my son. In the process, I created an \"Easter Egg\" for him to find. I left a note on the…"
 date: 2019-10-23
-tags: posts
 slug: a-note-of-encouragement
-layout: layouts/post.njk
 ---
 
 Earlier this year, I set up a new computer for my son. In the process, I created an "Easter Egg" for him to find. I left a note on the desktop with some instructions on how to run a command-line interface (CLI) application I created.
