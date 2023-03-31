@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}" class="no-js">
-    <head>
-        <title>
-            {%- if title -%}
-                {{ title }} – {{ site.title }}
-            {%- else -%}
-                {{ site.title }} – {{ site.description }}
-            {%- endif -%}
-        </title>
-        <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
-        <meta name="robots" content="index,follow">
-        <meta name="generator" content="Eleventy">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ site.url }}/feed.xml" />
-        {% if site.icon %}
-            <link rel="icon" type="image/x-icon" href="{{ site.icon }}"/>
-        {% endif %}
 
-        {%- block seo -%}
-            <!--Twitter Card-->
-            <meta name="twitter:site" content="{{ site.twitter }}">
-            <meta name="twitter:creator" content="{{ site.twitter }}">
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:url" content="{{ site.url + page.url }}">
-            <meta name="twitter:title" content="{{ title + " – " + site.title if title else title }}">
-            <meta name="twitter:description" content="{{ site.description }}">
-            <meta name="twitter:image" content="{{ site.url + site.cover_image }}">
+<head>
+  <title>
+    {%- if title -%}
+    {{ title }} – {{ site.title }}
+    {%- else -%}
+    {{ site.title }} – {{ site.description }}
+    {%- endif -%}
+  </title>
+  <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+  <meta name="robots" content="index,follow">
+  <meta name="generator" content="Eleventy">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}"
+    href="{{ site.url }}/feed.xml" />
+  {% if site.icon %}
+  <link rel="icon" type="image/x-icon" href="{{ site.icon }}" />
+  {% endif %}
 
-            <!--Schema-->
-            <link rel="author" href="{{ site.author.url }}">
-            <link rel="publisher" href="{{ site.url }}">
-            <meta itemprop="name" content="{{ title + " – " + site.title if title else title }}">
-            <meta itemprop="description" content="{{ site.description }}">
-            <meta itemprop="image" content="{{ site.cover_image }}">
+  {%- block seo -%}
+  <!--Twitter Card-->
+  <meta name="twitter:site" content="{{ site.twitter }}">
+  <meta name="twitter:creator" content="{{ site.twitter }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="{{ site.url + page.url }}">
+  <meta name="twitter:title" content="{{ title + " – " + site.title if title else title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ site.url + site.cover_image }}">
 
-            <!-- Facebook OpenGraph -->
-            <meta property="og:url" content="{{site.url + page.url}}">
-            <meta property="og:type" content="website">
-            <meta property="og:title" content="{{ title + " – " + site.title if title else title }}">
-            <meta property="og:image" content="{{ site.url + site.cover_image }}">
-            <meta property="og:description" content="{{ site.description }}">
-            <meta property="og:site_name" content="{{ site.title }}">
-            <meta property="og:locale" content="{{ site.lang }}">
-            <meta property="article:author" content="{{ site.author.url }}">
-        {%- endblock -%}
+  <!--Schema-->
+  <link rel="author" href="{{ site.author.url }}">
+  <link rel="publisher" href="{{ site.url }}">
+  <meta itemprop="name" content="{{ title + " – " + site.title if title else title }}">
+  <meta itemprop="description" content="{{ site.description }}">
+  <meta itemprop="image" content="{{ site.cover_image }}">
 
-        <link rel="stylesheet" href="/assets/css/styles.css" />
-		<script src="/assets/js/index.js" defer></script>
+  <!-- Facebook OpenGraph -->
+  <meta property="og:url" content="{{site.url + page.url}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title + " – " + site.title if title else title }}">
+  <meta property="og:image" content="{{ site.url + site.cover_image }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="article:author" content="{{ site.author.url }}">
+  {%- endblock -%}
 
-    </head>
-    <body class="antialiased">
-		<main class="p-2 mx-auto">
-			{% block content %}
-			{{ content | safe }}
-			{% endblock content %}
-		</main>
-    </body>
+  <link rel="stylesheet" href="/assets/main.css" />
+  <script src="/assets/index.js" defer></script>
+
+</head>
+
+<body class="antialiased">
+  <main class="p-2 mx-auto">
+    {% block content %}
+    {{ content | safe }}
+    {% endblock content %}
+  </main>
+</body>
+
 </html>
