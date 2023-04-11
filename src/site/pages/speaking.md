@@ -15,9 +15,11 @@ slug: speaking
 | 04.20.2023 | Pluralsight Tech Skills Day | Online |
 | 04.24.2023 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
+| 05.31.2023 | [Dublin DevRel Meetup](https://www.meetup.com/dublin-devrel/) | Online |
 | 06.02.2023 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |
 | 07.25.2023 | [THAT Conference](https://that.us/activities/PJX9DW11uB1qrE3Xnhea) | Wisconsin Dells, WI |
+| 12.07.2023 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
 ## Resources
 
