@@ -81,24 +81,3 @@ async function convertFiles( filesToConvert ) {
 		await gallery.convertImage( image, srcFolder, dstFolder, 500 );
 	}
 }
-
-async function updateNames( srcFiles, srcFolder, dstFolder ) {
-	let i = -1;
-	const newFiles = [];
-	for( const f of srcFiles ) {
-		i++;
-		const newFile = `${ padZero( i, 3 ) }-${ f }`;
-		const dstFile = `${ path.basename( f, path.extname( f ) ) }${ ".jpg" }`;
-		const dstNewFile = `${ padZero( i, 3 ) }-${ dstFile }`;
-		newFiles.push( newFile );
-		console.log( "orig:", f, "->", newFile );
-		await fs.rename( path.join( srcFolder, f ), path.join( srcFolder, newFile ) );
-		const dstExists = await fs.pathExists( path.join( dstFolder, dstFile ) );
-		if ( dstExists ) {
-			console.log( "doodle:", dstFile, "->", dstNewFile );
-			await fs.rename( path.join( dstFolder, dstFile ), path.join( dstFolder, dstNewFile ) );
-		}
-	}
-	return newFiles;
-}
-
