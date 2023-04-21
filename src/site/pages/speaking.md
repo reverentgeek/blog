@@ -11,8 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 04.18.2023 | Pluralsight Link/ 2023 | New Orleans, LA |
-| 04.20.2023 | Pluralsight Tech Skills Day | Online |
 | 04.24.2023 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
 | 05.31.2023 | [Dublin DevRel Meetup](https://www.meetup.com/dublin-devrel/) | Online |
@@ -33,6 +31,8 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 04.20.2023 | Pluralsight Tech Skills Day | Online |
+| 04.18.2023 | Pluralsight Link/ 2023 | New Orleans, LA |
 | 02.17.2023 | Sweet Geeks Speak @ [Sweetwater](https://sweetwater.com) | Fort Wayne, IN |
 | 01.10.2023 | [CodeMash](https://www.codemash.org/) | Sandusky, OH |
 | 12.08.2022 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
