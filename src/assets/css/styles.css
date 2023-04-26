@@ -5,6 +5,16 @@
 @tailwind utilities;
 
 
+@layer components {
+	.link-link {
+		@apply flex flex-wrap gap-x-0 gap-y-2 justify-center px-2 py-4 text-center items-center border-2 border-blue-400 bg-blue-50 mx-auto min-w-[18rem] rounded-md !no-underline
+	}
+
+	.link-link svg {
+		@apply block w-6 h-6
+	}
+  }
+
 /* purgecss start ignore */
 
 body {
@@ -123,3 +133,4 @@ body {
 }
 
 /* purgecss end ignore */
+
