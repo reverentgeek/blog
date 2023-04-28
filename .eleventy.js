@@ -63,6 +63,10 @@ module.exports = function( config ) {
 		return new Date( dateObj ).toLocaleDateString( "en-US", { year: "numeric", month: "long", day: "numeric" } );
 	} );
 
+	config.addShortcode( "currentYear", async () => {
+		return new Date().getFullYear();
+	} );
+
 	// Don't ignore the same files ignored in the git repo
 	config.setUseGitIgnore( false );
 
