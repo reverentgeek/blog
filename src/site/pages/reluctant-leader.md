@@ -9,7 +9,7 @@ slug: reluctant-leader
 
 Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
 
-[Free 30 days of online learning with Pluralsight!](https://www.pluralsight.com/redeemlink/genericV4?redemptionId=02c45879-4173-4b4e-aee5-745b8821895e)
+[Free 30 days of online learning with Pluralsight!](https://www.pluralsight.com/redeemlink/genericV4?redemptionId=268fb603-f75f-42f6-a416-08ca9485e9dc)
 
 ## Leadership Posts
 
