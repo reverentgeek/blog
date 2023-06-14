@@ -10,11 +10,11 @@ slug: presentations
 * [Leadership Guide for the Reluctant Leader](#leadership)
 * [You. Are. Awesome.](#awesome)
 * [Unlock Your Potential](#unlock)
+* [The Illustrated Guide to Node.js](#nodejs-guide)
 * [JavaScript: Past, Present, and Future](#javascript-future)
 * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
 * [Cross-Platform Desktop Apps with Electron](#electron)
 * [Software and The Art of Delivery](#fsgd)
-* [Node.js Crash Course](#nodejs-crash)
 * [Public Speaking without Barfing on Your Shoes](#barf-shoes)
 * [Take Back Project Sanity: The Kanban Journey](#kanban)
 * [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
@@ -99,13 +99,13 @@ In this talk, I'll share the challenges we faced as we scaled, how we struggled,
 _Note: I have given this talk as both a keynote and presentation._  
 [Slides](https://speakerdeck.com/reverentgeek/nodevember-2017-fsgd-and-the-art-of-delivering-value)
 
-<a name="nodejs-crash"></a>
+<a name="nodejs-guide"></a>
 
-## Node.js Crash Course
+## The Illustrated Guide to Node.js
 
-Node.js is a compelling platform quickly spreading from startups to enterprises. Node.js strategically unites developers of all backgrounds through the universal language of JavaScript. Why should you learn Node.js, and where do you start?
+Node.js is a compelling platform for building all types of applications for startups to enterprises. Node.js strategically unites developers through the universal language of JavaScript. Or TypeScript! Why should you learn Node.js, and where do you start?
 
-You will come away from this talk with the evidence to support Node.js and the tools you need to be productive. We will walk through a typical workflow of creating and debugging a web application. We'll also look at popular frameworks, libraries, and learning resources to give you the best start.
+You will walk away from this fun introduction to Node.js having learned its strengths and the tools you need to be productive. We will cover a typical workflow of creating and debugging a web application. We'll also look at popular frameworks, libraries, and learning resources to give you the best start.
 
 [Video](https://www.youtube.com/watch?v=8d6kJYqFWoQ) | [Slides](https://speakerdeck.com/reverentgeek/node-dot-js-crash-course-all-things-open-2018)
 
