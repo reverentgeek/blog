@@ -13,12 +13,12 @@ slug: presentations
 * [The Illustrated Guide to Node.js](#nodejs-guide)
 * [JavaScript: Past, Present, and Future](#javascript-future)
 * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
+* [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
 * [Cross-Platform Desktop Apps with Electron](#electron)
 * [Software and The Art of Delivery](#fsgd)
 * [Public Speaking without Barfing on Your Shoes](#barf-shoes)
 * [Take Back Project Sanity: The Kanban Journey](#kanban)
 * [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
-* [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
 
 ## Workshops
 
@@ -155,7 +155,7 @@ Drawing is a skill that anyone can learn. There's no such thing as "bad" art! Yo
 
 Drawing has become an essential part of everything I do. I would love to share my bag of tips and tricks I've learned to create illustrations for presentations, articles, videos, and more!
 
-[Slides](https://speakerdeck.com/reverentgeek/drawing-how-to-be-a-superhuman-communicator)
+[Slides](https://speakerdeck.com/reverentgeek/visual-storytelling-how-to-be-a-superhuman-communicator)
 
 <a name="leadership-workshop"></a>
 

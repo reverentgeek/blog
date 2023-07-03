@@ -56,12 +56,12 @@
 		"webpack-cli": "^5.0.1"
 	},
 	"devDependencies": {
-		"commander": "^10.0.0",
+		"commander": "^11.0.0",
 		"eslint": "^8.37.0",
-		"eslint-config-reverentgeek": "^3.1.2",
+		"eslint-config-reverentgeek": "^4.0.0",
 		"fs-extra": "^11.1.1",
 		"jimp": "^0.22.7",
-		"markdownlint-cli": "^0.34.0",
+		"markdownlint-cli": ">=0.34.0",
 		"probe-image-size": "^7.2.2",
 		"slug": "^8.0.0",
 		"uuid": "^9.0.0"
