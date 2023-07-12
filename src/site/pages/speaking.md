@@ -11,8 +11,8 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |
 | 07.25.2023 | [THAT Conference](https://that.us/activities/PJX9DW11uB1qrE3Xnhea) | Wisconsin Dells, WI |
+| 10.24.2023 | [Connect.Tech](https://2023.connect.tech/)<sup>+</sup> | Atlanta, GA |
 | 12.07.2023 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 
 ## Resources
@@ -27,6 +27,7 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |
 | 06.02.2023 | [Scenic City Summit](https://sceniccitysummit.com/) | Chattanooga, TN |
 | 05.31.2023 | [Dublin DevRel Meetup](https://www.meetup.com/dublin-devrel/) | Online |
 | 05.25.2023 | [DevSum](https://www.devsum.se/) | Stockholm, Sweden |
