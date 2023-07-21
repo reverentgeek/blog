@@ -11,11 +11,13 @@ slug: public-speaking-without-barfing
 
 * Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
 * [Free 30 days of online learning with Pluralsight!](https://www.pluralsight.com/redeemlink/genericV4?redemptionId=268fb603-f75f-42f6-a416-08ca9485e9dc)
-* [About me](https://reverentgeek/about)
+* [About me](/about)
 
-## Recording of this Presentation
+## Videos
 
-* [CodeMash 2018](https://www.youtube.com/watch?v=oY_tMcZHwdc)
+* [MongoDB Live: Visual Storytelling](https://www.linkedin.com/events/mongodbpodcastlive-visualstoryt7079461966699720705/comments/)
+* [Dublin DevRel Meetup: Visual Storytelling: How to be a Superhuman Communicator](https://www.youtube.com/watch?v=q3tzANAoEKs)
+* [Public Speaking @ CodeMash 2018](https://www.youtube.com/watch?v=oY_tMcZHwdc)
 
 ## My Articles
 
