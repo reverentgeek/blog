@@ -15,7 +15,7 @@ slug: public-speaking-without-barfing
 
 ## Videos
 
-* [MongoDB Live: Visual Storytelling](https://www.linkedin.com/events/mongodbpodcastlive-visualstoryt7079461966699720705/comments/)
+* [MongoDB Live: My Journey with Visual Storytelling](https://www.linkedin.com/events/mongodbpodcastlive-visualstoryt7079461966699720705/comments/)
 * [Dublin DevRel Meetup: Visual Storytelling: How to be a Superhuman Communicator](https://www.youtube.com/watch?v=q3tzANAoEKs)
 * [Public Speaking @ CodeMash 2018](https://www.youtube.com/watch?v=oY_tMcZHwdc)
 
