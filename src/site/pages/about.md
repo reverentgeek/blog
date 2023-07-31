@@ -28,14 +28,16 @@ Hi! My name is David Neal. I am a family man, geek, musician, illustrator, inter
 
 Got Node.js? Try this at your command line: `npx reverentgeek`
 
-### Notable articles:
+In addition to the links below, check out my [DevRel portfolio](/devrel-portfolio/).
+
+## Notable articles:
 
 * [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
 * [5 Essential Ingredients for an Awesome Tech Talk](/5-essential-ingredients-for-an-awesome-tech-talk/)
 * [Captivate Your Audience Using Simple Illustrations](/engage-with-simple-illustrations/)
 * [SQL Server Running on a Mac?!](/sql-server-running-on-a-mac/)
 
-### Notable videos:
+## Notable videos:
 
 * [You. Are. Awesome.](https://www.youtube.com/watch?v=wsjqnrwkXqI)
 * [Leadership for the Reluctant Leader](https://youtu.be/0EWiSJj0q_0)
@@ -43,7 +45,7 @@ Got Node.js? Try this at your command line: `npx reverentgeek`
 * [Cross-Platform Desktop Apps with Electron](https://www.youtube.com/watch?v=Xs3Oc4weZbw)
 * [#AskTHAT Live with David Neal - Javascript, Art and Being Awesome!](https://www.youtube.com/watch?v=vnxycRPsNdI)
 
-### Sample of podcasts:
+## Sample of podcasts:
 
 * [Sketchnote Army: David Neal is the Geek Visualizer](https://sketchnotearmy.com/blog/2022/11/8/david-neal)
 * [6-Figure Developer: Reluctant Leader with David Neal](https://6figuredev.com/podcast/episode-081-reluctant-leader-with-david-neal/)
