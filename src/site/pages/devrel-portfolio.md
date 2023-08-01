@@ -7,7 +7,7 @@ date: 2023-07-31
 slug: devrel-portfolio
 ---
 
-The following links are highlights from content, talks, projects, interviews, and podcasts I've been a part of.
+The following links are highlights from content, talks, projects, interviews, and podcasts I've been a part of. In addition to the links below, read more [about me](/about/)!
 
 ## Blog Posts
 
@@ -45,3 +45,7 @@ The following links are highlights from content, talks, projects, interviews, an
 * [Configure Eleventy to Host a Custom Mastodon Alias](https://reverentgeek.com/configure-eleventy-to-host-a-custom-mastodon-alias/)
 * [UndergroundJS Logos and Artwork](https://undergroundjs.com/)
 * [Okta CLI logo and swag designs](/content/images/portfolio/004-okta-cli-variations.jpg)
+
+## More
+
+Read more [about me](/about/)!
