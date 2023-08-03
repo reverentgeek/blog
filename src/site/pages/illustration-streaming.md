@@ -19,7 +19,7 @@ I am rebooting my drawing live streams! I'm also starting a new YouTube channel 
 I'll be streaming to the following sites. If any of these links should change, this page will be updated.
 
 * [Twitch](https://www.twitch.tv/reverentgeek)
-* [YouTube](https://www.youtube.com/channel/UCY_pJ9r1o35IfNf9g7aq85w)
+* [YouTube](https://www.youtube.com/@ReverentGeekDraws/streams)
 * [Facebook](https://www.facebook.com/rdneal)
 
 Please follow, subscribe, click the bell to be notified, and do whatever else you need to know when I am streaming! You can also watch previous streams on my [old YouTube channel](https://www.youtube.com/reverentgeek)!
