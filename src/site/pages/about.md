@@ -16,7 +16,7 @@ Hi! My name is David Neal. I am a family man, geek, musician, illustrator, inter
   * [Twitter @reverentgeek](https://twitter.com/reverentgeek)
   * <a rel="me" href="https://techhub.social/@reverentgeek">Mastodon @reverentgeek@reverentgeek.com</a>
   * [BlueSky @reverentgeek.com](https://staging.bsky.app/profile/reverentgeek.com)
-  * @reverentgeek on Threads (Meta)
+  * [@reverentgeek on Threads (Meta)](https://www.threads.net/@reverentgeek)
 * Check out my code on [GitHub](https://github.com/reverentgeek).
 * View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
