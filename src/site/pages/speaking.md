@@ -11,7 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 10.24.2023 | [Connect.Tech](https://2023.connect.tech/)<sup>+</sup> | Atlanta, GA |
 | 12.07.2023 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 | 01.09.2024 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 01.30.2024 | [THAT Conference](https://that.us/events/tx/2024/) | Round Rock, TX |
@@ -28,6 +27,7 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 10.24.2023 | [Connect.Tech](https://2023.connect.tech/)<sup>+</sup> | Atlanta, GA |
 | 09.09.2023 | [Atlanta Developers' Conference](https://www.atldevcon.com/) | Atlanta, GA |
 | 07.25.2023 | [THAT Conference](https://that.us/activities/PJX9DW11uB1qrE3Xnhea) | Wisconsin Dells, WI |
 | 06.22.2023 | [KCDC 2023](https://kcdc.info) | Kansas City, MO |

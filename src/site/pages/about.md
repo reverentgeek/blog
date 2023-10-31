@@ -19,6 +19,7 @@ Hi! My name is David Neal. I am a family man, geek, musician, illustrator, inter
   * [@reverentgeek on Threads (Meta)](https://www.threads.net/@reverentgeek)
 * Check out my code on [GitHub](https://github.com/reverentgeek).
 * View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
+* Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
 * Get my [resume](https://drive.google.com/file/d/1nTMJwPoo9HmNb4I5F03DGjuB3eQruxRd/view?usp=sharing).
 * Upcoming and past [speaking engagements](/speaking).
