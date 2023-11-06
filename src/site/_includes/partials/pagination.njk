@@ -1,14 +1,14 @@
 {% if pagination.previousPageHref or pagination.nextPageHref %}
-    <nav class="flex flex-row justify-center" role="pagination">
-        {% if page.permalink != pagination.previousPageHref %}
-            <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-full" href="{{ pagination.previousPageHref }}">Prev page</a>
-        {% else %}
-            <span class="bg-gray-500 text-white font-bold mx-4 py-2 px-4 rounded-full opacity-50 cursor-not-allowed">Prev page</span>
-        {% endif %}
-        {% if page.permalink != pagination.nextPageHref %}
-            <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-full" href="{{ pagination.nextPageHref }}">Next page</a>
-        {% else %}
-            <span class="bg-gray-500 text-white font-bold mx-4 py-2 px-4 rounded-full opacity-50 cursor-not-allowed">Next page</span>
-        {% endif %}
-    </nav>
+  <nav class="flex flex-row justify-center" role="navigation" aria-label="Pagination Navigation">
+    {% if page.permalink != pagination.previousPageHref %}
+      <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-full" href="{{ pagination.previousPageHref }}">Prev page</a>
+    {% else %}
+      <span class="bg-gray-500 text-white font-bold mx-4 py-2 px-4 rounded-full opacity-50 cursor-not-allowed">Prev page</span>
+    {% endif %}
+    {% if page.permalink != pagination.nextPageHref %}
+      <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-4 py-2 px-4 rounded-full" href="{{ pagination.nextPageHref }}">Next page</a>
+    {% else %}
+      <span class="bg-gray-500 text-white font-bold mx-4 py-2 px-4 rounded-full opacity-50 cursor-not-allowed">Next page</span>
+    {% endif %}
+  </nav>
 {% endif %}

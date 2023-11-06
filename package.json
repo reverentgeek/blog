@@ -13,7 +13,8 @@
 		"start": "npm run serve",
 		"lint": "eslint . --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
-		"post": "node src/utils/post.js"
+		"post": "node src/utils/post.js",
+		"test:lighthouse": "lighthouse --view https://reverentgeek.com"
 	},
 	"repository": {
 		"type": "git",
@@ -61,6 +62,7 @@
 		"eslint-config-reverentgeek": "^4.0.0",
 		"fs-extra": "^11.1.1",
 		"jimp": "^0.22.7",
+		"lighthouse": "^11.3.0",
 		"markdownlint-cli": ">=0.34.0",
 		"probe-image-size": "^7.2.2",
 		"slug": "^8.0.0",
