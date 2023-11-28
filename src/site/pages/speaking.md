@@ -11,7 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 12.07.2023 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
 | 01.09.2024 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 01.30.2024 | [THAT Conference](https://that.us/events/tx/2024/) | Round Rock, TX |
 
