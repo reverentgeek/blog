@@ -13,6 +13,7 @@ slug: speaking
 | --- | --- | --- |
 | 01.09.2024 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 01.30.2024 | [THAT Conference](https://that.us/events/tx/2024/) | Round Rock, TX |
+| 03.09.2024 | [DataTune Nashville 2024](https://www.datatuneconf.com/) | Nashville, TN |
 
 ## Resources
 
