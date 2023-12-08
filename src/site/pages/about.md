@@ -21,7 +21,7 @@ Hi! My name is David Neal. I am a family man, geek, musician, illustrator, inter
 * View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
-* Get my [resume](https://drive.google.com/file/d/1nTMJwPoo9HmNb4I5F03DGjuB3eQruxRd/view?usp=sharing).
+* Get my [resume](https://drive.google.com/file/d/1mAA_9XhzvoYZRJG3EwBpe6G4FR4EmqBu/view?usp=sharing).
 * Upcoming and past [speaking engagements](/speaking).
 * View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 * List of presentation and workshop [abstracts](/presentations/).
