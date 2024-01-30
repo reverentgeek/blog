@@ -1,7 +1,7 @@
 "use strict";
 
 const path = require( "path" );
-const gallery = require( "./gallery" );
+const gallery = require( "./gallery.cjs" );
 const fs = require( "fs-extra" );
 
 ( async () => {

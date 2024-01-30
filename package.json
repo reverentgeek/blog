@@ -11,9 +11,9 @@
 		"build:eleventy": "ELEVENTY_ENV=production eleventy",
 		"build": "NODE_ENV=production run-s clean build:*",
 		"start": "npm run serve",
-		"lint": "eslint . --ext .js --cache",
+		"lint": "eslint . --ext .cjs --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
-		"post": "node src/utils/post.js",
+		"post": "node src/utils/post.cjs",
 		"test:lighthouse": "lighthouse --view https://reverentgeek.com --output html --output-path ./reports/report.html"
 	},
 	"repository": {
@@ -34,8 +34,9 @@
 		"url": "https://github.com/reverentgeek/blog/issues"
 	},
 	"homepage": "https://github.com/reverentgeek/blog#readme",
+	"type": "module",
 	"dependencies": {
-		"@11ty/eleventy": "^2.0.1",
+		"@11ty/eleventy": "3.0.0-alpha.4",
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-rss": "^1.1.2",
 		"autoprefixer": "^10.4.14",

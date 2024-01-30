@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = {
 	env: {
 		node: true,
@@ -7,7 +5,7 @@ module.exports = {
 		commonjs: true,
 		es6: true
 	},
-	extends: "reverentgeek/node",
+	extends: [ "reverentgeek/node/module" ],
 	globals: {
 		Atomics: "readonly",
 		SharedArrayBuffer: "readonly"

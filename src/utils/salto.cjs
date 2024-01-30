@@ -1,7 +1,7 @@
 "use strict";
 
 const path = require( "path" );
-const gallery = require( "./gallery" );
+const gallery = require( "./gallery.cjs" );
 
 ( async () => {
 	const avatarFolder = path.join( __dirname, "..", "site", "content", "images", "salto" );

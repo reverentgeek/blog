@@ -1,13 +1,13 @@
-"use strict";
-require( "dotenv" ).config();
+import "dotenv/config";
 
-const cleanCSS = require( "clean-css" );
-const pluginRSS = require( "@11ty/eleventy-plugin-rss" );
-const lazyImages = require( "eleventy-plugin-lazyimages" );
+import cleanCSS from "clean-css";
+import pluginRSS from "@11ty/eleventy-plugin-rss";
+import lazyImages from "eleventy-plugin-lazyimages";
+import navigationPlugin from "@11ty/eleventy-navigation";
 
-const htmlMinTransform = require( "./src/utils/transforms/html-min-transform.js" );
+import htmlMinTransform from "./src/utils/transforms/html-min-transform.cjs";
 
-module.exports = function( config ) {
+export default async function( config ) {
 
 	config.addNunjucksFilter( "isSiteMapSafe", function( url ) {
 		const isSafe = !url.startsWith( "/_" );
@@ -40,7 +40,7 @@ module.exports = function( config ) {
 		}
 	} );
 
-	config.addPlugin( require( "@11ty/eleventy-navigation" ) );
+	config.addPlugin( navigationPlugin );
 
 	// Inline CSS
 	config.addFilter( "cssmin", code => {
@@ -104,4 +104,4 @@ module.exports = function( config ) {
 		htmlTemplateEngine: "njk",
 		markdownTemplateEngine: "njk",
 	};
-};
+}

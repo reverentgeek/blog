@@ -4,7 +4,7 @@ const path = require( "path" );
 const fs = require( "fs-extra" );
 const { program } = require( "commander" );
 
-const gallery = require( "./gallery" );
+const gallery = require( "./gallery.cjs" );
 
 program
 	.name( "avatar-gallery-utils" )
