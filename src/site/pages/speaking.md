@@ -11,7 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 01.30.2024 | [THAT Conference](https://that.us/events/tx/2024/) | Round Rock, TX |
 | 03.09.2024 | [DataTune Nashville 2024](https://www.datatuneconf.com/) | Nashville, TN |
 
 ## Resources
@@ -26,6 +25,7 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 01.30.2024 | [THAT Conference](https://that.us/events/tx/2024/) | Round Rock, TX |
 | 01.09.2024 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 10.24.2023 | [Connect.Tech](https://2023.connect.tech/)<sup>+</sup> | Atlanta, GA |
 | 09.09.2023 | [Atlanta Developers' Conference](https://www.atldevcon.com/) | Atlanta, GA |
