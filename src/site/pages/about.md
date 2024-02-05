@@ -7,7 +7,7 @@ date: 2014-02-13
 slug: about
 ---
 
-<img class="float-left mr-4 w-1/6" src="/content/images/rg-motherduck-circle-sky-256.png" alt="David Neal (aka ReverentGeek)">
+<img class="float-left mr-4 w-1/6" src="/content/images/rg-sticker-circle.png" alt="David Neal (aka ReverentGeek)">
 
 Hi! My name is David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, author, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I have been in Developer Relations roles for more than 10 years. I've been a Developer  Advo*duck* 🥑 🦆 for [MotherDuck](https://motherduck.com), Principal Developer Advocate for [Pluralsight](https://pluralsight.com), Developer Relations Manager at [ActiveCampaign](https://activecampaign.com), Senior Developer Advocate at [Okta](https://developer.okta.com), and Developer Advocate at [LeanKit](https://leankit.com). Before DevRel, I spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓.
 
