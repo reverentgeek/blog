@@ -11,7 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 03.09.2024 | [DataTune Nashville 2024](https://www.datatuneconf.com/) | Nashville, TN |
 
 ## Resources
 
