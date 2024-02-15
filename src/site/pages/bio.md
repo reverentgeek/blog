@@ -7,7 +7,7 @@ date: 2022-08-23
 slug: bio
 ---
 
-David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. He's currently a Developer Advocate for Pluralsight. He runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
+David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. His mission in life is to help people be more awesome. David runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
 
 ## Headshots
 
