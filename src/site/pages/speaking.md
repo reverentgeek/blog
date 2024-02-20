@@ -12,6 +12,7 @@ slug: speaking
 | Date | Event | Location |
 | --- | --- | --- |
 | 2024.03.23 | [Atlanta Cloud Conference](https://atlcloudconf.com/) | Atlanta, GA |
+| 2024.04.10 | [Sketchnote School](https://www.mindseyecreative.ca/sketchnote-school/)<sup>+</sup> | Online |
 
 ## Resources
 
