@@ -13,6 +13,9 @@ slug: speaking
 | --- | --- | --- |
 | 2024.03.23 | [Atlanta Cloud Conference](https://atlcloudconf.com/) | Atlanta, GA |
 | 2024.04.10 | [Sketchnote School](https://www.mindseyecreative.ca/sketchnote-school/)<sup>+</sup> | Online |
+| 2024.05.03 | [Stir Trek 2024](https://stirtrek.com/) | Columbus, OH |
+| 2024.06.27 | [KCDC 2024](https://www.kcdc.info/) | Kansas City, MO |
+| 2024.07.23 | [GDevCon North America](https://www.gdevconna.org/)<sup>*</sup> | Golden, CO |
 
 ## Resources
 
