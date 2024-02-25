@@ -2,7 +2,7 @@
 id: 3db77ec0c44411ee940b47015652ade6
 title: "My Open-Source Desktop Teleprompter Built with Electron"
 feature_image: /content/images/open-source-desktop-teleprompter-electron/desktop-teleprompter.jpg
-description:
+description: I wasn't happy with the teleprompter apps I found, so I built my own! Maybe you'd like to use it, too!
 date: 2024-02-24
 slug: open-source-desktop-teleprompter-electron
 ---
