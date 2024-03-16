@@ -66,7 +66,7 @@
 		"lighthouse": "^11.3.0",
 		"markdownlint-cli": ">=0.34.0",
 		"probe-image-size": "^7.2.2",
-		"slug": "^8.0.0",
+		"slug": "^9.0.0",
 		"uuid": "^9.0.0"
 	}
 }
