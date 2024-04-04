@@ -1,4 +1,3 @@
-"use strict";
 
 const path = require( "path" );
 const fs = require( "fs-extra" );
@@ -26,7 +25,7 @@ program
 	.description( "Generate html from doodle files" )
 	.action( async () => {
 		const { dstFolder } = getWorkingFolderPaths();
-		const output = await gallery.getFlexHtml( dstFolder, "/content/images/doodles" );
+		const output = await gallery.getFlexHtml( dstFolder, "/content/images/doodles", "doodle" );
 		console.log( output );
 	} );
 
