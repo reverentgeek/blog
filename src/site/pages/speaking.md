@@ -11,7 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 2024.04.10 | [Sketchnote School](https://www.mindseyecreative.ca/sketchnote-school/)<sup>+</sup> | Online |
 | 2024.05.03 | [Stir Trek 2024](https://stirtrek.com/) | Columbus, OH |
 | 2024.06.27 | [KCDC 2024](https://www.kcdc.info/) | Kansas City, MO |
 | 2024.07.23 | [GDevCon North America](https://www.gdevconna.org/)<sup>*</sup> | Golden, CO |
@@ -29,6 +28,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 2024.04.10 | [Sketchnote School](https://www.mindseyecreative.ca/sketchnote-school/)<sup>+</sup> | Online |
 | 2024.03.23 | [Atlanta Cloud Conference](https://atlcloudconf.com/) | Atlanta, GA |
 | 2024.01.30 | [THAT Conference](https://that.us/events/tx/2024/) | Round Rock, TX |
 | 2024.01.09 | [CodeMash](https://codemash.org/) | Sandusky, OH |

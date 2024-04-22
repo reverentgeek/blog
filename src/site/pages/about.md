@@ -22,7 +22,7 @@ Hi! My name is David Neal. I am a family man, geek, musician, illustrator, inter
 * Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
 * View my [Microsoft MVP profile](https://mvp.microsoft.com/en-US/mvp/profile/119307f9-3c9a-e411-93f2-9cb65495d3c4).
-* Get my [resume](https://drive.google.com/file/d/1HF_06-eVbSOh5fkm8BCQtOvcc6HM2fYr/view?usp=sharing).
+* Get my [resume](https://drive.google.com/file/d/1Y7p15u38pS8WGNZowoGFVDbEsMhdy2aV/view?usp=sharing).
 * Upcoming and past [speaking engagements](/speaking).
 * View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 * List of presentation and workshop [abstracts](/presentations/).
