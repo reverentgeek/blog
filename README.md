@@ -10,6 +10,15 @@ Built with [Eleventy](https://www.11ty.io). Deployed to [Netlify](https://www.ne
 npm run post create "Title of Super-Awesome Post"
 ```
 
+## Updating a Photo Gallery
+
+Copy the original image(s) to `src/site/content/images/{folder}/orig`.
+
+```sh
+node src/utils/avatars.cjs convert [folder]
+node src/utils/avatars.cjs html [folder]
+```
+
 ## Copyright & License
 
 Copyright (c) 2010-2022 David Neal - Released under the [MIT license](LICENSE).
