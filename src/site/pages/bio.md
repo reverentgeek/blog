@@ -13,6 +13,8 @@ David is a family man, musician, illustrator, software developer, and Microsoft 
 
 Preferred:
 
+![Headshot illustration](/content/images/headshots/reverentgeek-avatar-blue-bkg-800.jpg)
+
 ![Headshot illustration](/content/images/2020/04/reverentgeek-v3-1.png)
 
 Alternatives:
