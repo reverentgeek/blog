@@ -1,11 +1,19 @@
 ---
 id: 5c461a2dbc58620a44555950
-title: "Artwork and Illustration Portfolio"
+title: "Developer and Illustration Portfolio"
 feature_image: /content/images/2019/08/portfolio-title-image.jpg
 description:
 date: 2019-01-21
 slug: portfolio
 ---
+
+Developer and Developer Relations
+
+* [DevRel portfolio](/devrel-portfolio)
+* [Presentation abstracts](/presentations)
+* [GitHub](https://github.com/reverentgeek)
+
+Illustration and Artwork
 
 * [Avatars](/avatars/)
 * [Logos, Stickers, and Projects](/illustrations/)
