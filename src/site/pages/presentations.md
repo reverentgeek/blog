@@ -14,7 +14,7 @@ slug: presentations
 * [JavaScript: Past, Present, and Future](#javascript-future)
 * [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
 * [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
-* [Cross-Platform Desktop Apps with Electron](#electron)
+* [The Illustrated Guide to Electron](#electron)
 * [Software and The Art of Delivery](#fsgd)
 * [Public Speaking without Barfing on Your Shoes](#barf-shoes)
 * [Take Back Project Sanity: The Kanban Journey](#kanban)
@@ -80,9 +80,11 @@ In this talk, we'll cover the JAMstack architecture, the numerous benefits of th
 
 <a name="electron"></a>
 
-## Cross-Platform Desktop Apps with Electron
+## The Illustrated Guide to Electron
 
-Would you like to leverage your HTML, CSS, and JavaScript skills to build cross-platform desktop applications? Electron is an open-source application shell created by GitHub, designed to make building great desktop applications easy. You may have already experienced Electron apps like Slack or Visual Studio Code. In this talk, you will learn its features, how to get started, and tips from my experience building Electron applications.
+In the current web and mobile-first applications world, there’s still a solid case for building desktop applications. You may already be using popular Electron apps such as Visual Studio Code, Slack, Figma, and Postman! With Electron, you can create cross-platform desktop applications quickly and easily using your existing knowledge of HTML, CSS, JavaScript, and Node.js. 
+
+Get ready for a fun and engaging introduction to Electron, where you'll discover its strengths, learn how to get started, and gain valuable insights from my experience building Electron apps. Elevate your developer skills and create amazing desktop applications with Electron!
 
 [Video](https://www.youtube.com/watch?v=UmYv_-vUOLU) | [Slides](https://speakerdeck.com/reverentgeek/cross-platform-desktop-apps-with-electron-ndc-sydney-2018)
 
@@ -173,14 +175,12 @@ You will walk away with a fresh perspective on leadership, excited about your po
 
 <a name="electron-workshop"></a>
 
-## Build Cross-Platform Desktops with Electron
+## The Illustrated Electron Workshop
 
-(_4 hour workshop_)
-
-Many companies are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using web technologies. This hands-on workshop will teach you the fundamentals of building desktop applications with Electron.js. You will walk away with a solid framework for building and deploying your applications!
+Many organizations are turning to Electron.js to build amazing desktop applications that run on Windows, Mac, and Linux using web technologies. This entertaining, hands-on workshop will guide you through the fundamentals of building desktop apps with Electron. You will walk away with a solid framework for building and deploying your applications!
 
 Requirements:
 
 * Laptop running macOS, Windows, or Ubuntu
-* [Node.js](https://nodejs.org) version 16 or higher
+* [Node.js](https://nodejs.org) version 18 or higher
 * [Visual Studio Code](https://code.visualstudio.com/)
