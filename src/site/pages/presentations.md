@@ -11,19 +11,19 @@ slug: presentations
 * [You. Are. Awesome.](#awesome)
 * [Unlock Your Potential](#unlock)
 * [The Illustrated Guide to Node.js](#nodejs-guide)
-* [JavaScript: Past, Present, and Future](#javascript-future)
-* [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
-* [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
 * [The Illustrated Guide to Electron](#electron)
+* [JavaScript: Past, Present, and Future](#javascript-future)
+* [Visual Storytelling: How to be a Superhuman Communicator](#visual-storytelling)
 * [Software and The Art of Delivery](#fsgd)
 * [Public Speaking without Barfing on Your Shoes](#barf-shoes)
 * [Take Back Project Sanity: The Kanban Journey](#kanban)
 * [Sketchnotes: How Drawing Can Supercharge Learning](#sketchnotes)
+* [JAMstack: Web Apps at Ludicrous Speed](#jamstack)
 
 ## Workshops
 
 * [Leadership Guide for the Reluctant Leader Workshop](#leadership-workshop)
-* [Build Cross-Platform Desktops with Electron](#electron-workshop)
+* [The Illustrated Electron Workshop](#electron-workshop)
 
 ## Resources
 
