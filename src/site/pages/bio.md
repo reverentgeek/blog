@@ -19,6 +19,4 @@ Preferred:
 
 Alternatives:
 
-![Headshot photo](/content/images/headshots/david-neal-ps-headshot-1.jpg)
-
-![Headshot photo 2](/content/images/headshots/david-neal-ps-headshot-2.jpg)
+![Headshot photo](/content/images/headshots/david-neal-headshot-2024.jpg)
