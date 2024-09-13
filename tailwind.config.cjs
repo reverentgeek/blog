@@ -1,4 +1,5 @@
 "use strict";
+const colors = require("tailwindcss/colors");
 
 module.exports = {
 	content: [
@@ -8,6 +9,16 @@ module.exports = {
 		"./src/site/posts/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}"
 	],
 	theme: {
+		colors: {
+			transparent: "transparent",
+			current: "currentColor",
+			rgblue: "#6FC2FF",
+			blue: colors.blue,
+			gray: colors.gray,
+			white: colors.white,
+			red: colors.red,
+			orange: colors.orange
+		},
 		fontFamily: {
 			sans: [
 				"Roboto",
