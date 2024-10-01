@@ -1,15 +1,28 @@
-"use strict";
-
-const path = require( "path" );
-const fs = require( "fs-extra" );
-const { program } = require( "commander" );
-
-const gallery = require( "./gallery.cjs" );
+import path from "node:path";
+import fs from "fs-extra"; // eslint-disable-line n/no-unpublished-import
+import { program } from "commander"; // eslint-disable-line n/no-unpublished-import
+import * as gallery from "./gallery.js";
+const __dirname = import.meta.dirname;
 
 program
 	.name( "avatar-gallery-utils" )
 	.description( "CLI tools for managing the avatar gallery" )
 	.version( "1.0.0" );
+
+program
+	.command( "list" )
+	.description( "List unprocessed image files" )
+	.argument( "<folder>", "folder to process" )
+	.action( async ( folder ) => {
+		const filesToConvert = await getUnprocessedFiles( folder );
+		if ( filesToConvert.length > 0 ) {
+			for( const f of filesToConvert ) {
+				console.log( f );
+			}
+		} else {
+			console.log( "No files to convert" );
+		}
+	} );
 
 program
 	.command( "convert" )
@@ -45,6 +58,19 @@ function getWorkingFolderPaths( folder ) {
 	const avatarFolder = path.join( __dirname, "..", "site", "content", "images", folder );
 	const srcFolder = path.join( avatarFolder, "orig" );
 	return { avatarFolder, srcFolder };
+}
+
+async function getUnprocessedFiles( folder ) {
+	const { srcFolder } = getWorkingFolderPaths( folder );
+	const srcFiles = await gallery.getOrderedFiles( srcFolder, true );
+	const filesToRename = [];
+
+	for( const f of srcFiles ) {
+		if ( /^\d{3}-/gm.test( f ) === false ) {
+			filesToRename.push( f );
+		}
+	}
+	return filesToRename;
 }
 
 async function updateFileNames( folder, force ) {

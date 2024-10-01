@@ -70,6 +70,8 @@ export default async function( config ) {
 	// Don't ignore the same files ignored in the git repo
 	config.setUseGitIgnore( false );
 
+	config.configureErrorReporting( { allowMissingExtensions: true } );
+
 	// config.setBrowserSyncConfig( {
 	// 	notify: true,
 	// 	snippetOptions: {
