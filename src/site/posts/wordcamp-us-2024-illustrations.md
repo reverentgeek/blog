@@ -13,6 +13,8 @@ slug: wordcamp-us-2024-illustrations
 
 I stayed _very_ busy each day drawing avatars while attendees watched and engaged in conversation at the booth. I was also very encouraged by all the positive feedback I received, including folks who returned with colleagues in tow for their turn at a drawing.
 
+[Click here](https://wordpress.com/wordcamp/avatars/) to see all the avatars from WordCamp US 2024 🤩
+
 ## A Visit to the Pacific Northwest
 
 My wife joined me on this adventure, and we were able to visit one of our sons that currently lives in the Seattle area. We enjoyed lots of great food, and the beautiful parks at [Mount Rainier](https://www.nps.gov/mora/index.htm) and [Multnomah Falls](https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=30026). 
