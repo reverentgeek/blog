@@ -15,8 +15,8 @@ npm run post create "Title of Super-Awesome Post"
 Copy the original image(s) to `src/site/content/images/{folder}/orig`.
 
 ```sh
-node src/utils/avatars.cjs convert [folder]
-node src/utils/avatars.cjs html [folder]
+node src/utils/avatars.js convert [folder]
+node src/utils/avatars.js html [folder]
 ```
 
 ## Copyright & License

@@ -1,6 +1,6 @@
-import fs from "fs-extra"; // eslint-disable-line n/no-unpublished-import
-import { Jimp as jmp } from "jimp"; // eslint-disable-line n/no-unpublished-import
-import probe from "probe-image-size"; // eslint-disable-line n/no-unpublished-import
+import fs from "fs-extra";
+import { Jimp as jmp } from "jimp";
+import probe from "probe-image-size";
 import { join, basename, extname } from "node:path";
 
 export async function getOrderedFiles( folder, sortByDate = false ) {

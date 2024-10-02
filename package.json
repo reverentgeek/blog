@@ -13,7 +13,7 @@
 		"start": "npm run serve",
 		"lint": "eslint . --ext .cjs --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
-		"post": "node src/utils/post.cjs",
+		"post": "node src/utils/post.js",
 		"test:lighthouse": "lighthouse --view https://reverentgeek.com --output html --output-path ./reports/report.html"
 	},
 	"repository": {

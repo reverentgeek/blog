@@ -1,6 +1,6 @@
 import path from "node:path";
-import fs from "fs-extra"; // eslint-disable-line n/no-unpublished-import
-import { program } from "commander"; // eslint-disable-line n/no-unpublished-import
+import fs from "fs-extra";
+import { program } from "commander";
 import * as gallery from "./gallery.js";
 const __dirname = import.meta.dirname;
 

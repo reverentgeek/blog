@@ -8,7 +8,8 @@ export default [
 	{
 		rules: {
 			"n/no-unpublished-import": [ "error", {
-				allowModules: [ "eslint-config-reverentgeek" ]
+				allowModules: [ "eslint-config-reverentgeek" ],
+				ignores: [ "dist/", "src/utils/*.js" ]
 			} ]
 		}
 	}

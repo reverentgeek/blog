@@ -33,6 +33,8 @@ The icing on the cake was visiting Turin (Torino). Turin is in northern Italy ne
 
 ![1962 Fiat 500 at the National Automobile Museum](/content/images/wordcamp-eu-2024/1962-fiat-auto-museum.jpeg)
 
-## Let me Draw for You!
+## Let Me Draw for You!
 
-Does drawing avatars, caricatures, or other custom illustrations sound like a fun way to engage your audience? I would absolutely love more opportunities to do this kind of work. [Let's talk](mailto:david@reverentgeek.com)!
+Would you like one of my custom avatars? Or how about for your team? Check out the [options available on my store](/shop/#commission).
+
+Or, does drawing avatars, caricatures, and other custom illustrations sound like a fun way to engage your audience? I would absolutely love more opportunities to do this kind of work! [Let's talk](mailto:david@reverentgeek.com)!
