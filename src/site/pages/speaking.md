@@ -12,6 +12,7 @@ slug: speaking
 | Date | Event | Location |
 | --- | --- | --- |
 | 2024.10.16 | [CamundaCon](https://newyork.camundacon.com/)<sup>*</sup> | New York, NY |
+| 2024.11.02 | [Open Source Camp](https://www.drupalcampchattanooga.com) | Chattanooga, TN |
 
 ## Resources
 
