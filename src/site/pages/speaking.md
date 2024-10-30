@@ -11,7 +11,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 2024.10.16 | [CamundaCon](https://newyork.camundacon.com/)<sup>*</sup> | New York, NY |
 | 2024.11.02 | [Open Source Camp](https://www.drupalcampchattanooga.com) | Chattanooga, TN |
 
 ## Resources
@@ -26,6 +25,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 2024.10.16 | [CamundaCon](https://newyork.camundacon.com/)<sup>*</sup> | New York, NY |
 | 2024.07.30 | [THAT Conference](https://thatconference.com/wi/2024/) | Wisconsin Dells, WI |
 | 2024.07.23 | [GDevCon North America](https://www.gdevconna.org/)<sup>*</sup><sup>+</sup> | Golden, CO |
 | 2024.06.27 | [KCDC 2024](https://www.kcdc.info/) | Kansas City, MO |
