@@ -18,6 +18,11 @@
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
       "template": "https://techhub.social/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "type": "image/png",
+      "href": "https://files.techhub.social/accounts/avatars/109/326/701/637/690/328/original/d669806f1abf31dd.png"
     }
   ]
 }

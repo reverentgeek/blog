@@ -1,13 +1,13 @@
-"use strict";
+import { program } from "commander";
+import fs from "fs-extra";
+import slugger from "slug";
+import { join } from "node:path";
+import { getId } from "./get-id.js";
 
-const { program } = require( "commander" );
-const fs = require( "fs-extra" );
-const slugger = require( "slug" );
-const path = require( "path" );
-const uuid = require( "uuid" );
+const __dirname = import.meta.dirname;
 
-const pagesPath = path.join( __dirname, "..", "site", "pages" );
-const blogImagePath = path.join( __dirname, "..", "site", "content", "images" );
+const pagesPath = join( __dirname, "..", "site", "pages" );
+const blogImagePath = join( __dirname, "..", "site", "content", "images" );
 
 const zeroPad = ( number ) => {
 	const l = number.toString().length;
@@ -28,12 +28,12 @@ const createPage = async ( title ) => {
 			throw new Error( `title [${ title }] is not sluggable!` );
 		}
 		const pageFile = `${ slug }.md`;
-		const pagePath = path.join( pagesPath, pageFile );
-		const imgPath = path.join( blogImagePath, slug );
+		const pagePath = join( pagesPath, pageFile );
+		const imgPath = join( blogImagePath, slug );
 		const exists = await fs.pathExists( pagePath );
 		if ( !exists ) {
 			const frontMatter = `---
-id: ${ uuid.v1().replace( /-/g, "" ) }
+id: ${ getId() }
 title: "${ title }"
 feature_image: /content/images/${ slug }/${ slug }.jpg
 description:

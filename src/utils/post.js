@@ -2,7 +2,7 @@ import { program } from "commander";
 import fs from "fs-extra";
 import slugger from "slug";
 import { join } from "node:path";
-import { v1 } from "uuid";
+import { getId } from "./get-id.js";
 
 const __dirname = import.meta.dirname;
 const postsPath = join( __dirname, "..", "site", "posts" );
@@ -32,7 +32,7 @@ const createPost = async ( title ) => {
 		const exists = await fs.pathExists( postPath );
 		if ( !exists ) {
 			const frontMatter = `---
-id: ${ v1().replace( /-/g, "" ) }
+id: ${ getId() }
 title: "${ title }"
 feature_image: /content/images/${ slug }/${ slug }.jpg
 description:
