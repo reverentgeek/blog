@@ -13,6 +13,8 @@ The following links are highlights from content, talks, projects, interviews, an
 
 * [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
 * [Build a Command-Line Application With Deno 2.0](/build-a-command-line-application-with-deno-2/)
+* [Absurdly Fast Web Builds with Vite](https://www.builder.io/blog/vite)
+* [Analyze Your X (Twitter) Data with Node.js and DuckDB](https://motherduck.com/blog/analyze-x-data-nodejs-duckdb/)
 * [Build and Deploy Secure Serverless Functions with Netlify](https://developer.okta.com/blog/2020/07/15/secure-serverless-functions-with-netlify)
 * [Build a Weight Tracker App with Node.js and PostgreSQL](https://developer.okta.com/blog/2020/06/01/node-postgres-weight-tracker)
 
