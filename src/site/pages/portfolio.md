@@ -7,13 +7,13 @@ date: 2019-01-21
 slug: portfolio
 ---
 
-Developer and Developer Relations
+## Developer and Developer Relations
 
 * [DevRel portfolio](/devrel-portfolio)
 * [Presentation abstracts](/presentations)
 * [GitHub](https://github.com/reverentgeek)
 
-Illustration and Artwork
+## Illustration and Artwork
 
 * [Avatars](/avatars/)
 * [Logos, Stickers, and Projects](/illustrations/)
