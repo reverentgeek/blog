@@ -14,9 +14,9 @@ Hi! I'm David Neal. I am a family man, geek, musician, illustrator, internationa
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on:
   * [BlueSky @reverentgeek.com](https://bsky.app/profile/reverentgeek.com)
-  * [Twitter @reverentgeek](https://twitter.com/reverentgeek)
+  * [X/Twitter @reverentgeek](https://twitter.com/reverentgeek)
   * <a rel="me" href="https://techhub.social/@reverentgeek">Mastodon @reverentgeek@reverentgeek.com</a>
-  * [@reverentgeek on Threads (Meta)](https://www.threads.net/@reverentgeek)
+  * [Threads @reverentgeek](https://www.threads.net/@reverentgeek)
 * Check out my code on [GitHub](https://github.com/reverentgeek).
 * View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
