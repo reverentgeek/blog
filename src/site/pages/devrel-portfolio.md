@@ -12,6 +12,7 @@ The following links are highlights from content, talks, projects, interviews, an
 ## Blog Posts
 
 * [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
+* [Build a Command-Line Application With Deno 2.0](/build-a-command-line-application-with-deno-2/)
 * [Build and Deploy Secure Serverless Functions with Netlify](https://developer.okta.com/blog/2020/07/15/secure-serverless-functions-with-netlify)
 * [Build a Weight Tracker App with Node.js and PostgreSQL](https://developer.okta.com/blog/2020/06/01/node-postgres-weight-tracker)
 
