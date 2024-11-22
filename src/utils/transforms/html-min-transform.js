@@ -1,10 +1,9 @@
-"use strict";
+import { minify } from "html-minifier";
+// const htmlmin = require( "html-minifier" );
 
-const htmlmin = require( "html-minifier" );
-
-module.exports = function htmlMinTransform( value, outputPath ) {
+export function htmlMinTransform( value, outputPath ) {
 	if ( outputPath.indexOf( ".html" ) > -1 ) {
-		let minified = htmlmin.minify( value, {
+		let minified = minify( value, {
 			useShortDoctype: true,
 			removeComments: true,
 			collapseWhitespace: true,

@@ -1,7 +1,6 @@
-"use strict";
-const colors = require("tailwindcss/colors");
+import colors from "tailwindcss/colors";
 
-module.exports = {
+export default {
 	content: [
 		"./src/site/_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
 		"./src/site/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",

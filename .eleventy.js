@@ -5,7 +5,7 @@ import pluginRSS from "@11ty/eleventy-plugin-rss";
 import lazyImages from "eleventy-plugin-lazyimages";
 import navigationPlugin from "@11ty/eleventy-navigation";
 
-import htmlMinTransform from "./src/utils/transforms/html-min-transform.cjs";
+import { htmlMinTransform } from "./src/utils/transforms/html-min-transform.js";
 
 export default async function( config ) {
 
