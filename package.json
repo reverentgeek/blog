@@ -55,10 +55,10 @@
 		"rimraf": "^6.0.1",
 		"tailwindcss": "^3.3.1",
 		"webpack": "^5.77.0",
-		"webpack-cli": "^5.0.1"
+		"webpack-cli": "^6.0.1"
 	},
 	"devDependencies": {
-		"commander": "^12.0.0",
+		"commander": "^13.0.0",
 		"eslint": "^9.4.0",
 		"eslint-config-reverentgeek": "^5.0.3",
 		"fs-extra": "^11.1.1",
