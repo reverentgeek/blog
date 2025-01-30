@@ -4,11 +4,12 @@ import cleanCSS from "clean-css";
 import pluginRSS from "@11ty/eleventy-plugin-rss";
 import lazyImages from "eleventy-plugin-lazyimages";
 import navigationPlugin from "@11ty/eleventy-navigation";
+import brokenLinksPlugin from "eleventy-plugin-broken-links";
 
 import { htmlMinTransform } from "./src/utils/transforms/html-min-transform.js";
 
 export default async function( config ) {
-
+	const isDev = process.env?.NODE_ENV === "development";
 	config.addNunjucksFilter( "isSiteMapSafe", function( url ) {
 		const isSafe = !url.startsWith( "/_" );
 		return isSafe.toString();
@@ -42,6 +43,10 @@ export default async function( config ) {
 
 	config.addPlugin( navigationPlugin );
 
+	if ( isDev ) {
+		config.addPlugin( brokenLinksPlugin );
+	}
+
 	// Inline CSS
 	config.addFilter( "cssmin", code => {
 		return new cleanCSS( {} ).minify( code ).styles;
@@ -71,30 +76,6 @@ export default async function( config ) {
 	config.setUseGitIgnore( false );
 
 	config.configureErrorReporting( { allowMissingExtensions: true } );
-
-	// config.setBrowserSyncConfig( {
-	// 	notify: true,
-	// 	snippetOptions: {
-	// 		rule: {
-	// 			match: /<\/head>/i,
-	// 			fn: function ( snippet, match ) {
-	// 				return snippet + match;
-	// 			},
-	// 		},
-	// 	},
-	// 	// Set local server 404 fallback
-	// 	callbacks: {
-	// 		ready: function ( err, browserSync ) {
-	// 			const content_404 = fs.readFileSync( "dist/404.html" );
-
-	// 			browserSync.addMiddleware( "*", ( req, res ) => {
-	// 				// Provides the 404 content without redirect.
-	// 				res.write( content_404 );
-	// 				res.end();
-	// 			} );
-	// 		},
-	// 	},
-	// } );
 
 	return {
 		dir: {

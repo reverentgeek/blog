@@ -23,7 +23,7 @@ I don't know about you, but _I_ think it's an improvement.
 
 Once I started drawing for my talks, I got hooked. It became one of my favorite hobbies.
 
-For the past year, I've drawn _something_ almost every day. Usually no more than 10-15 minutes. You may have seen some of my silly stuff on [Twitter](https://twitter.com/reverentgeek) or [Instagram](https://www.instagram.com/reverentgeek/).
+For the past year, I've drawn _something_ almost every day. Usually no more than 10-15 minutes. You may have seen some of my silly stuff on [Twitter](https://x.com/reverentgeek) or [Instagram](https://www.instagram.com/reverentgeek/).
 
 I've determined that drawing is a skill, no different than any other skill. A new skill takes patience and practice.
 

@@ -9,7 +9,7 @@ slug: do-you-hate-javascript
 layout: layouts/post.njk
 ---
 
-If you follow me on [Twitter](https://twitter.com/reverentgeek) you know that I poke fun at JavaScript quite a bit. Someone recently asked me,
+If you follow me on [Twitter](https://x.com/reverentgeek) you know that I poke fun at JavaScript quite a bit. Someone recently asked me,
 
 > "Do you hate JavaScript?"
 
@@ -65,7 +65,7 @@ Next, check out some learning material. This is _not_ an exhaustive list. If you
 | [Effective JavaScript](http://amzn.to/2kL6ggF) | $ | "68 Specific Ways to Harness the Power of JavaScript." A great book. |
 | [WatchMeCode](https://sub.watchmecode.net/) | $ | Excellent video-based training from [Derick Bailey](https://twitter.com/derickbailey) on JavaScript, Node.js, Express, MongoDB, jQuery, Docker, Babel, RabbitMQ, and more |
 | [Safari Books Online](https://www.safaribooksonline.com/) | $ | Thousands of books (and videos), including titles from O'Reilly, Apress, Manning, Microsoft Press, and Packt. |
-| [Pluralsight](https://pluralsight.com) | $ | Massive library of training videos on practically every programming topic. High-quality videos on JavaScript and related technologies from great authors such as [Cory House](https://twitter.com/housecor), [Elijah Manor](https://twitter.com/elijahmanor), [Kyle Simpson](https://github.com/getify), [Jonathan Mills](https://twitter.com/jonathanfmills), and [Shawn Wildermuth](https://twitter.com/ShawnWildermuth) |
+| [Pluralsight](https://www.pluralsight.com/) | $ | Massive library of training videos on practically every programming topic. High-quality videos on JavaScript and related technologies from great authors such as [Cory House](https://twitter.com/housecor), [Elijah Manor](https://twitter.com/elijahmanor), [Kyle Simpson](https://github.com/getify), [Jonathan Mills](https://twitter.com/jonathanfmills), and [Shawn Wildermuth](https://twitter.com/ShawnWildermuth) |
 | [EggHead](https://egghead.io) | $ | High-quality video training on mostly web-based technologies, including JavaScript, React, Angular, Node.js, and TypeScript |
 
 ## Folks to Follow

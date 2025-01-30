@@ -37,7 +37,7 @@ gallery](/avatars) for more examples.
     var script = document.createElement('script');
     script.async = true;
     script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    (document.getElementsByTagName['head'](0) || document.getElementsByTagName['body'](0)).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
@@ -276,9 +276,9 @@ Got an idea for something else? Send it to me at [david@reverentgeek.com](mailto
 
 ## Stickers!
 
-You can order all my best stickers [directly from StickerMule](https://www.stickermule.com/u/reverentgeek)!
+You can order all my best stickers [directly from StickerMule](https://www.stickermule.com/reverentgeek)!
 
-[![Buy stickers on StickerMule!](/content/images/shop/stickermule-stickers.jpg)](https://www.stickermule.com/u/reverentgeek)
+[![Buy stickers on StickerMule!](/content/images/shop/stickermule-stickers.jpg)](https://www.stickermule.com/reverentgeek)
 
 <a href="https://www.stickermule.com/unlock?ref_id=9265870701&utm_medium=embed&utm_source=invite&utm_content=728x90" target="_blank"><img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" height="90" src="https://assets.stickermule.com/image/upload/c_lfill,fl_lossy,f_auto,q_auto:best,w_auto/banners/stickermule-invite-friends-large.jpg" width="728" /></a>
 

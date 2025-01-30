@@ -854,7 +854,7 @@ In this tutorial, you have learned the basics of creating a modern web applicati
 * [Simple Node Authentication](https://developer.okta.com/blog/2018/04/24/simple-node-authentication)
 * [Use TypeScript to Build a Node API](https://developer.okta.com/blog/2018/11/15/node-express-typescript)
 * [What the Heck is OAuth?](https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth)
-* [Why You Should Consider hapi](https://hueniverse.com/why-you-should-consider-hapi-6163689bd7c2) by [Eran Hammer](https://twitter.com/eranhammer), principal creator of hapi
+* [Why You Should Consider hapi](https://hueniverse.com/why-you-should-consider-hapi-6163689bd7c2) by [Eran Hammer](https://x.com/eranhammer), principal creator of hapi
 
 You can find the complete [project source code](https://github.com/reverentgeek/secure-node-app-hapi) on GitHub.
 

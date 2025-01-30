@@ -11,12 +11,12 @@ layout: layouts/post.njk
 
 Last night at the [Nashville .NET User Group](http://nashdotnet.org/) we ended the evening with a terrific discussion on careers. We had a great panel of developers, entrepreneurs, and recruiters. It was nice to hear the transparency between developers and recruiters. Here are some quick highlights:
 
-* Create a [LinkedIn](http://www.linkedin.com/) profile.
+* Create a [LinkedIn](https://www.linkedin.com/) profile.
 * Publish an [open source project](http://digitalbush.com/2011/11/11/open-source/).
 * Publish a blog.
-* Create a [StackOverflow](http://stackoverflow.com/) profile and build some points.
-* Create a [Careers](http://careers.stackoverflow.com/) profile at StackOverflow.
-* Use social media, such as [Twitter](http://twitter.com).
+* Create a [StackOverflow](https://stackoverflow.com/) profile and build some points.
+* Create a [Careers](https://careers.stackoverflow.com/) profile at StackOverflow.
+* Use social media, such as [Twitter](https://x.com).
 * Build relationships with recruiters, and interview _them_.
 * Attend user groups and regional developer conferences.
 * Find a mentor.

@@ -29,4 +29,4 @@ Get the latest slides at [SpeakerDeck](https://speakerdeck.com/reverentgeek)
 
 ## Connect with Me
 
-[Twitter](https://twitter.com/reverentgeek) | [Instagram](https://instagram.com/reverentgeek) | [LinkedIn](https://www.linkedin.com/in/davidneal) |  [GitHub](https://github.com/reverentgeek) | [david@reverentgeek.com](mailto:david@reverentgeek.com)
+[Twitter](https://x.com/reverentgeek) | [Instagram](https://instagram.com/reverentgeek) | [LinkedIn](https://www.linkedin.com/in/davidneal) |  [GitHub](https://github.com/reverentgeek) | [david@reverentgeek.com](mailto:david@reverentgeek.com)

@@ -30,17 +30,17 @@ Here are the slides from my latest presentation, "Public Speaking without Barfin
 
 ## Play it Forward
 
-Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/attribution/) to my work.
+Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/licenses/by-nd/4.0/deed.en) to my work.
 
-> _Example 1:_ Illustration by [@ReverentGeek](https://twitter.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+> _Example 1:_ Illustration by [@ReverentGeek](https://x.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en)
 >
-> _Example 2:_ Illustration by **twitter.com/ReverentGeek** licensed under **CC 4.0**
+> _Example 2:_ Illustration by **x.com/ReverentGeek** licensed under **CC 4.0**
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/deed.en)  
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en).
 
 ## Doodle for Hire
 
-Want me to draw something for you? Let's talk! Contact me on [Twitter](https://twitter.com/reverentgeek) or [LinkedIn](https://www.linkedin.com/in/davidneal).
+Want me to draw something for you? Let's talk! Contact me on [Twitter](https://x.com/reverentgeek) or [LinkedIn](https://www.linkedin.com/in/davidneal).

@@ -29,8 +29,8 @@ A personal podcast on passions, speaking at conferences, the appeal of drawing, 
 
 [Episode 156: David Neal - Bacon-Driven Drawing](http://developeronfire.com/episode-156-david-neal-bacon-driven-drawing)
 
-## Away from the Keyboard
+<!-- ## Away from the Keyboard
 
 A more personal podcast of hobbies, how I got into programming, and playing music.
 
-[Episode 48: David Neal's Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
+[Episode 48: David Neal's Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/) -->

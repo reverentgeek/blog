@@ -22,7 +22,7 @@ slug: portfolio
 * [Doodles](/doodles/)
 * [31 Days of Inspiration, January 2019](/31-days-of-inspiration-january-2019/)
 
-Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/attribution/) to my work. Thanks!
+Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/licenses/by-nd/4.0/deed.en) to my work. Thanks!
 
 Want to commission an illustration? [Contact me!](mailto:david@reverentgeek.com)
 
@@ -52,13 +52,13 @@ _Click the title or image to view more in that category._
 
 [![Sketchnotes](/content/images/sketch-notes/that-tx-2022-keynote-gblock.jpg)](/sketch-notes/)
 
-Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/use-remix/get-permission/) to my work.
+Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/licenses/by-nd/4.0/deed.en) to my work.
 
-> _Example 1:_ Illustration by [@ReverentGeek](https://twitter.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
+> _Example 1:_ Illustration by [@ReverentGeek](https://x.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en)
 >
-> _Example 2:_ Illustration by **twitter.com/ReverentGeek** licensed under **CC 4.0**
+> _Example 2:_ Illustration by **x.com/ReverentGeek** licensed under **CC 4.0**
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/deed.en)  
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en).

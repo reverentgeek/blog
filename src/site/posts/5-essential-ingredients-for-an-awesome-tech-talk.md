@@ -67,4 +67,4 @@ You just gave an awesome talk. Your audience is now walking away with _valuable_
 
 Now, go make it happen!
 
-\*Metaphorically speaking. Real microphones are fragile, and expensive. Just ask [Kyle Welch](https://twitter.com/kylewelch).
+\*Metaphorically speaking. Real microphones are fragile, and expensive. Just ask [Kyle Welch](https://x.com/kylewelch).

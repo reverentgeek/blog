@@ -45,10 +45,10 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 | 2023.04.24 | [Connectaha](https://www.connectaha.com/) | Omaha, NE |
 | 2023.04.20 | Pluralsight Tech Skills Day | Online |
 | 2023.04.18 | Pluralsight Link/ 2023 | New Orleans, LA |
-| 2023.02.17 | Sweet Geeks Speak @ [Sweetwater](https://sweetwater.com) | Fort Wayne, IN |
-| 2023.01.10 | [CodeMash](https://www.codemash.org/) | Sandusky, OH |
+| 2023.02.17 | Sweet Geeks Speak @ [Sweetwater](https://www.sweetwater.com/) | Fort Wayne, IN |
+| 2023.01.10 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 2022.12.08 | [DevTernity](https://devternity.com/)<sup>+</sup> | Riga, Latvia |
-| 2022.11.07 | [Connect.Tech](https://connect.tech)<sup>+</sup> | Atlanta, GA |
+| 2022.11.07 | [Connect.Tech](https://2022.connect.tech/)<sup>+</sup> | Atlanta, GA |
 | 2022.10.30 | [All Things Open 2022](https://www.allthingsopen.org/) | Raleigh, NC |
 | 2022.09.13 | [All Things Open RTP Meetup](https://www.meetup.com/all-things-open-rtp-meetup/events/287305927/) | Raleigh, NC |
 | 2022.08.08 | [KCDC](https://www.kcdc.info/)<sup>+</sup> | Kansas City, MO |
@@ -105,7 +105,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 | 2019.03.06 | [DevNexus 2019](https://devnexus.com/)<sup>*</sup> | Atlanta, GA |
 | 2019.02.26 | [NDC Porto 2019](https://ndcporto.com/) | Porto, Portugal |
 | 2019.01.28 | [NDC London 2019](https://ndc-london.com/) | London, UK |
-| 2019.01.08 | [CodeMash 2019](http://www.codemash.org/)<sup>+</sup> | Sandusky, OH |
+| 2019.01.08 | [CodeMash 2019](https://codemash.org/)<sup>+</sup> | Sandusky, OH |
 | 2018.11.13 | [DevReach](https://devreach.com/)<sup>*</sup><sup>+</sup> | Sofia, Bulgaria |
 | 2018.10.21 | [All Things Open](https://allthingsopen.org/) | Raleigh, NC |
 | 2018.10.04 | [Little Rock Tech Fest](http://www.lrtechfest.com/) | Little Rock, AR |
@@ -123,10 +123,10 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 | 2018.04.16 | [Indy.Code() 2018](https://indycode.amegala.com/) | Indianapolis, IN |
 | 2018.03.21 | [JazzCon.Tech 2018](http://jazzcon.tech/)<sup>*</sup> | New Orleans, LA |
 | 2018.02.06 | [DNN Summit 2018](http://www.dnnsummit.org/) | Denver, CO |
-| 2018.01.09 | [CodeMash](http://www.codemash.org/) | Sandusky, OH |
+| 2018.01.09 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 2017.11.28 | [Nodevember](http://nodevember.org/) | Nashville, TN |
 | 2017.10.13 | [DevSpace](https://www.devspaceconf.com/) | Huntsville, AL |
-| 2017.09.20 | [Connect.Tech](http://connect.tech/) | Atlanta, GA |
+| 2017.09.20 | [Connect.Tech](https://2017.connect.tech/) | Atlanta, GA |
 | 2017.08.04 | [PubConf KCDC](https://pubconf.io/events/2017/kansascity.html) | Kansas City, MO |
 | 2017.08.02 | [KCDC 2017](http://www.kcdc.info/) | Kansas City, MO |
 | 2017.07.28 | [Scenic City Summit](https://www.sceniccitysummit.com/)<sup>*</sup> | Chattanooga, TN |
@@ -148,7 +148,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 | 2016.04.15 | [JSConf UY](https://jsconf.uy/)<sup>+</sup> | Montevideo, Uruguay |
 | 2016.03.28 | [Code PaLOUsa](http://codepalousa.com/) | Louisville, KY |
 | 2016.01.13 | [NDC London](http://ndc-london.com/) | London, UK |
-| 2016.01.05 | [CodeMash](http://www.codemash.org/) | Sandusky, OH |
+| 2016.01.05 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 2015.11.14 | [Nodevember](http://nodevember.org) | Nashville, TN |
 | 2015.11.11 | [Triangle .NET User Group](http://www.trinug.org/) | Durham, NC |
 | 2015.10.24 | [Atlanta Code Camp](http://atlantacodecamp.com/2015/) | Atlanta, GA |
@@ -163,7 +163,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 | 2015.05.14 | [2015 Microsoft MVP Virtual Conference](http://mvp.microsoft.com/en-us/virtualconference.aspx) | The Internets |
 | 2015.04.27 | [Code PaLOUsa](http://codepalousa.com/) | Louisville, KY |
 | 2015.03.28 | [Orlando Code Camp](http://www.orlandocodecamp.com/) | Orlando, FL |
-| 2015.01.08 | [CodeMash](http://www.codemash.org/) | Sandusky, OH |
+| 2015.01.08 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 2014.11.13 | [Nashville .NET User Group](http://www.meetup.com/Nashville-NET-User-Group/events/214999812/) | Nashville, TN |
 | 2014.10.11 | [Atlanta Code Camp](http://atlantacodecamp.com/2014/speaker/David-Neal) | Atlanta, GA |
 | 2014.09.24 | [Clarksville Software Users Group](http://www.meetup.com/Clarksville-Software-Users-Group) | Clarksville, TN |
@@ -195,6 +195,6 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 | 2012.06.21 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
 | 2012.06.14 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
 | 2012.03.15 | [Code paLOUsa](http://www.codepalousa.com/) | Louisville, KY |
-| 2012.01.11 | [CodeMash](http://codemash.org/) | Sandusky, OH |
+| 2012.01.11 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 2011.09.08 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
 ||_<sup>*</sup> keynote, <sup>+</sup> workshop_||

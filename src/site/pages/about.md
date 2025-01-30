@@ -9,12 +9,12 @@ slug: about
 
 <img class="float-left mr-4 w-1/6" src="/content/images/rg-sticker-circle.png" alt="David Neal (aka ReverentGeek)">
 
-Hi! I'm David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, author, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I've been in Developer Relations roles for more than a decade. My mission is to help folks in technology be more awesome! I am currently a Developer Advocate for [Asana](https://asana.com). My past experiences include being a Developer Advo*duck* 🥑 🦆 for [MotherDuck](https://motherduck.com), Principal Developer Advocate for [Pluralsight](https://pluralsight.com), Developer Relations Manager at [ActiveCampaign](https://activecampaign.com), Senior Developer Advocate at [Okta](https://developer.okta.com), and Developer Advocate at [LeanKit](https://www.planview.com/products-solutions/products/agileplace/). Before my DevRel journey, I spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓 😂.
+Hi! I'm David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, author, and [Microsoft MVP](https://mvp.microsoft.com/en-us/mvp/David%20Neal-5001018) living in North GA. I've been in Developer Relations roles for more than a decade. My mission is to help folks in technology be more awesome! I am currently a Developer Advocate for [Asana](https://asana.com). My past experiences include being a Developer Advo*duck* 🥑 🦆 for [MotherDuck](https://motherduck.com), Principal Developer Advocate for [Pluralsight](https://www.pluralsight.com/), Developer Relations Manager at [ActiveCampaign](https://www.activecampaign.com/), Senior Developer Advocate at [Okta](https://developer.okta.com), and Developer Advocate at [LeanKit](https://www.planview.com/products-solutions/products/agileplace/). Before my DevRel journey, I spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓 😂.
 
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on:
   * [BlueSky @reverentgeek.com](https://bsky.app/profile/reverentgeek.com)
-  * [X/Twitter @reverentgeek](https://twitter.com/reverentgeek)
+  * [X/Twitter @reverentgeek](https://x.com/reverentgeek)
   * <a rel="me" href="https://techhub.social/@reverentgeek">Mastodon @reverentgeek@reverentgeek.com</a>
   * [Threads @reverentgeek](https://www.threads.net/@reverentgeek)
 * Check out my code on [GitHub](https://github.com/reverentgeek).
@@ -52,7 +52,6 @@ In addition to the links below, check out my [DevRel portfolio](/devrel-portfoli
 * [Sketchnote Army: David Neal is the Geek Visualizer](https://sketchnotearmy.com/blog/2022/11/8/david-neal)
 * [6-Figure Developer: Reluctant Leader with David Neal](https://6figuredev.com/podcast/episode-081-reluctant-leader-with-david-neal/)
 * [Cross-Cutting Concerns - David Neal on Drawing](https://crosscuttingconcerns.com/Podcast-084-David-Neal-Drawing)
-* [Away from the Keybord: David Neal's Southern Twang](http://awayfromthekeyboard.com/2016/09/01/episode-48-david-neals-southern-twang/)
 * [.NET Rocks! Building Cross-Platform Desktop Apps using Electron with David Neal](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
 * [Developer on Fire - David Neal: Bacon-Driven Drawing](http://developeronfire.com/podcast/episode-156-david-neal-bacon-driven-drawing)
 

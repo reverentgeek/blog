@@ -20,7 +20,7 @@ slug: public-speaking-without-barfing
 
 ## My Articles
 
-* [Captivate Your Audience Using Simple Illustrations](https://medium.com/@reverentgeek/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301)
+* [Captivate Your Audience Using Simple Illustrations](https://medium.com/art-marketing/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301)
 * [5 Essential Ingredients for an Awesome Tech Talk](https://medium.com/@reverentgeek/5-essential-ingredients-for-an-awesome-tech-talk-2e5778b2cb5a)
 * [Please, Give Public Speaking a Try](https://medium.com/@reverentgeek/please-give-public-speaking-a-try-c90c539012d5)
 
@@ -42,11 +42,10 @@ slug: public-speaking-without-barfing
 * [The best advice I can give on public speaking](https://medium.com/desk-of-van-schneider/my-best-advice-i-can-give-about-public-speaking-61c6fab92192#.jcy8hf7wo) by Tobias van Schneider
 * [How I prepared for the NDC keynote (and other speaker tips)](https://www.troyhunt.com/how-i-prepared-for-the-ndc-keynote-and-other-speaker-tips/) by Troy Hunt
 * [Speaker style bingo: 10 presentation anti-patterns](https://www.troyhunt.com/speaker-style-bingo-10-presentation/) by Troy Hunt
-* [Notes on "Confessions of a Public Speaker"](https://sivers.org/book/ConfessionsPublicSpeaker) by Derek Sivers
+* [Notes on "Confessions of a Public Speaker"](https://sive.rs/book/ConfessionsPublicSpeaker) by Derek Sivers
 
 ## Toastmasters
 
 Find your local [Toastmasters](https://www.toastmasters.org/) club!
 
 > Do you want to become a confident public speaker and strong leader? If so, Toastmasters is the place for you. You’ll find a supportive learn-by-doing environment that allows you to achieve your goals at your own pace.
-

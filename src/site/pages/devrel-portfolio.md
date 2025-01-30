@@ -43,7 +43,7 @@ The following links are highlights from content, talks, projects, interviews, an
 * [Sketchnote Army: David Neal is the Geek Visualizer](https://sketchnotearmy.com/blog/2022/11/8/david-neal)
 * [All Hands on Tech! Developer Stream](https://www.youtube.com/watch?v=g-xQAWzlG7g)
 * [My Office Studio Setup for Video Conferencing, Recordings, and Streaming](https://www.youtube.com/watch?v=KJzOY1uPhOQ)
-* [Twitter Space: Modern Web Development](https://twitter.com/i/spaces/1rmxPkLnWgEJN)
+* [Twitter Space: Modern Web Development](https://x.com/i/spaces/1rmxPkLnWgEJN)
 * [Recent Slides of Conference Talks](https://speakerdeck.com/reverentgeek)
 * [Configure Eleventy to Host a Custom Mastodon Alias](https://reverentgeek.com/configure-eleventy-to-host-a-custom-mastodon-alias/)
 * [UndergroundJS Logos and Artwork](https://undergroundjs.com/)

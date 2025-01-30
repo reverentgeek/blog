@@ -89,7 +89,7 @@ I’m currently using an iPad Pro, Apple Pencil, and Sketches Pro.
 
 The Apple Pencil is extraordinary. The Pencil has fantastic precision, pressure sensitivity, and palm rejection (you won’t accidentally draw with side of your hand). It is a far more natural drawing experience.
 
-> Note: If you want to learn about other drawing devices and software, [Brad Colbow](https://twitter.com/bradcolbow), a professional illustrator, has posted lots of great reviews and comparisons on his [YouTube channel](https://www.youtube.com/channel/UClozNP-QPyVatzpGKC25s0A).
+> Note: If you want to learn about other drawing devices and software, [Brad Colbow](https://x.com/bradcolbow), a professional illustrator, has posted lots of great reviews and comparisons on his [YouTube channel](https://www.youtube.com/channel/UClozNP-QPyVatzpGKC25s0A).
 
 ## Let me explain. No, there is too much. Let me sum up.
 
