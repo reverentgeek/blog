@@ -19,6 +19,7 @@ slug: shop
 I draw avatars you can use for social media, blogs, presentations, business cards... whatever! Check out my [avatar
 gallery](/avatars) for more examples.
 
+<!-- markdownlint-disable MD011 -->
 <div id='collection-component-1716827508246'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -37,7 +38,7 @@ gallery](/avatars) for more examples.
     var script = document.createElement('script');
     script.async = true;
     script.src = scriptURL;
-    (document.getElementsByTagName['head'](0) || document.getElementsByTagName['body'](0)).appendChild(script);
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
     script.onload = ShopifyBuyInit;
   }
   function ShopifyBuyInit() {
