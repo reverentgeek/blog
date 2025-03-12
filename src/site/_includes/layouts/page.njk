@@ -12,6 +12,9 @@
       {{ content | safe }}
     </section>
   </article>
+  {% if script %}
+    <script src="/assets/{{ script }}" type="module"></script>
+  {% endif %}
 {% endblock %}
 
 {%- block seo -%}
