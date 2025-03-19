@@ -159,6 +159,21 @@ const renderChartForPlanningCenter = ( song ) => {
 	return chart.join( "\n" );
 };
 
+function debounce( func, delay ) {
+	let timeout;
+
+	return function() {
+		const context = this;
+		const args = arguments;
+
+		clearTimeout( timeout );
+
+		timeout = setTimeout( function() {
+			func.apply( context, args );
+		}, delay );
+	};
+}
+
 function convert() {
 	const cpro = document.getElementById( "chordpro_source" );
 	const parsedChart = parse( cpro.value );
@@ -172,7 +187,7 @@ function convert() {
 // }
 
 export function setup() {
-	// const cpro = document.getElementById( "chordpro_source" );
+	const cpro = document.getElementById( "chordpro_source" );
 	// const pasteButton = document.getElementById( "pasteCProButton" );
 	// pasteButton.addEventListener( "click", () => {
 	// 	navigator.clipboard.readText().then( text => {
@@ -183,10 +198,19 @@ export function setup() {
 	// } );
 	// cpro.addEventListener( "keyup", cpoChange );
 
+	cpro.addEventListener( "paste", function() {
+		// Small delay to ensure the pasted content is in the textarea
+		setTimeout( function() {
+			convert();
+		}, 10 );
+	} );
+
+	cpro.addEventListener( "input", debounce( convert, 300 ) );
+
 	const pco = document.getElementById( "pco_source" );
 	const copyButton = document.getElementById( "copyCPOButton" );
-	const convertButton = document.getElementById( "convertCPOButton" );
-	convertButton.addEventListener( "click", convert );
+	// const convertButton = document.getElementById( "convertCPOButton" );
+	// convertButton.addEventListener( "click", convert );
 	copyButton.addEventListener( "click", () => {
 		navigator.clipboard.writeText( pco.value );
 		copyButton.innerHTML = "Copied!";
