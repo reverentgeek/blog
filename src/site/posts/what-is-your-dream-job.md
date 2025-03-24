@@ -11,6 +11,8 @@ When it comes to the work you do, have you ever dreamed big? Not just a title or
 
 This past year has had me thinking about this topic a lot. What I love about programming, illustrations, music, writing, and other creative work are these magical moments when I get completely engrossed in imagining, questioning, exploring, designing, solving, and building. Teaching, inspiring, and encouraging others is also rewarding.
 
+![You Don't Need Permission to be Awesome](/content/images/what-is-your-dream-job/you-dont-need-permission.png)
+
 About 12 years ago, I transitioned from software development to Developer Relations (DevRel), which has given me a lot more creative freedom (at times). It's the closest "dream job" I can imagine. However, securing a full-time DevRel role over the past few years has been a real struggle.
 
 > By the way, if you know of a role that could use a combination of programming, illustration/design, and music, please let me know!
