@@ -28,6 +28,8 @@ SurrealDB isn't just *another* database; it's a different approach. Imagine the 
 
 Ready to plug it into your Node.js app? Let's go!
 
+> By the way, you can get the [source code](https://github.com/reverentgeek/surrealdb-fastify-demo) for this tutorial!
+
 ### Step 1: Install and run SurrealDB
 
 If you have Docker, you can start a new instance of SurrealDB using the following command.
@@ -668,5 +670,7 @@ So, should you drop everything and rewrite your app in SurrealDB? 🤷‍♂️ 
 SurrealDB offers a powerful and flexible alternative to traditional database setups for developers. By combining multiple models, graph capabilities, real-time features, and built-in auth under one roof with a familiar query language, it can genuinely simplify development and reduce architectural complexity.
 
 It's like discovering that K-Cup machine – maybe not the *only* tool you'll ever use, but one that's so convenient and capable, you'll wonder how you managed without it.
+
+Get the [source code](https://github.com/reverentgeek/surrealdb-fastify-demo) for this tutorial!
 
 I hope you found this content useful! Give it a try and let me know how your first taste of SurrealDB goes!
