@@ -11,7 +11,7 @@ I used to be a coffee snob. Pour-overs, artisanal beans, the whole ritual. Then 
 
 Sometimes, our tech stacks feel like juggling too many single-purpose tools. A relational database here, a document store there, maybe a graph database for connections, and sprinkle in a separate service for real-time updates. It works, but maybe there’s a simpler way?
 
-Enter **SurrealDB**. Like that versatile coffee machine, it might just become the surprisingly powerful, convenient tool you didn't know you needed for your Node.js projects. It aims to be the ultimate multi-tool database, designed for the modern web.
+Enter [SurrealDB](https://surrealdb.com/). Like that versatile coffee machine, it might just become the surprisingly powerful, convenient tool you didn't know you needed for your Node.js projects. It aims to be the ultimate multi-tool database, designed for the modern web.
 
 ## What Makes SurrealDB Special?
 
@@ -656,6 +656,12 @@ So, should you drop everything and rewrite your app in SurrealDB? 🤷‍♂️ 
 * **Simplifying Auth:** For many apps, the built-in authentication and permissions might be sufficient, reducing the need for external auth services or complex middleware, especially during early stages.
 
 **It's not a silver bullet.** For massive-scale analytics (think petabytes) or extreme low-latency financial transactions, specialized databases might still be the better fit. But for a huge range of web applications, SurrealDB offers a compelling, unified platform.
+
+### SurrealDB learning resources
+
+* [SurrealDB docs](https://surrealdb.com/docs/surrealdb)
+* [SurrealDB learning videos](https://surrealdb.com/learn)
+* [SurrealQL query language](https://surrealdb.com/docs/surrealql)
 
 ## Final Thoughts: Your New Favorite Brew?
 
