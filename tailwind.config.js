@@ -41,6 +41,7 @@ export default {
 				"serif",
 			],
 			mono: [
+				"JetBrains Mono",
 				"Menlo",
 				"Monaco",
 				"Consolas",

@@ -141,3 +141,8 @@
 	font-family: "Roboto-BlackItalic";
 	src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto-BlackItalic.woff") format("woff");
 }
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}

@@ -22,6 +22,11 @@ body {
 	line-height: 1.7;
 }
 
+code[class*="language-"],
+pre[class*="language-"] {
+	@apply font-mono;
+}
+
 #menu-toggle:checked+#menu {
 	display: block;
 }
@@ -89,16 +94,16 @@ body {
 		}
 	}
 	blockquote {
-		@apply p-4 bg-gray-200 font-serif text-lg border-l-4 border-gray-600 mb-8;
+		@apply p-4 bg-gray-200 text-lg border-l-4 border-gray-600 mb-8;
 	}
 	blockquote p:last-child {
 		@apply mb-0;
 	}
 	pre {
-		@apply overflow-auto;
+		@apply overflow-auto font-mono;
 	}
 	:not(pre)>code {
-		@apply bg-gray-300 p-1;
+		@apply bg-gray-200 p-1;
 	}
 	.kg-card {
 		@apply mb-8;
