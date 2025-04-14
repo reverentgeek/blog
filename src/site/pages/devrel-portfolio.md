@@ -12,6 +12,8 @@ The following links are highlights from content, talks, projects, interviews, an
 ## Blog Posts
 
 * [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
+* [Meet SurrealDB: The Multi-Tool Database Your App Needs](https://reverentgeek.com/meet-surrealdb-nodejs/)
+* [A Developer's Guide to Samsara Telematics](https://reverentgeek.com/a-developers-guide-to-samsara-telematics/)
 * [Build a Command-Line Application With Deno 2.0](/build-a-command-line-application-with-deno-2/)
 * [Absurdly Fast Web Builds with Vite](https://www.builder.io/blog/vite)
 * [Analyze Your X (Twitter) Data with Node.js and DuckDB](https://motherduck.com/blog/analyze-x-data-nodejs-duckdb/)
