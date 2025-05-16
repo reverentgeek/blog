@@ -4,7 +4,7 @@ title: "HopCounter: Build a Retro Page View Counter with Bunny Edge Scripting"
 feature_image: /content/images/hopcounter-bunny-edge-scripting/hopcounter-bunny-edge-scripting.jpg
 description: "Learn to build a retro page view counter using Bunny.net Edge Scripting!"
 date: 2025-05-14
-slug: bunny
+slug: hopcounter-bunny-edge-scripting
 ---
 
 If you've ever wanted to relive the glory days of the internet—back when guestbooks, under-construction GIFs, and visit counters reigned supreme—this one's for you.
