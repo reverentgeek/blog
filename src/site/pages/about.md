@@ -17,8 +17,9 @@ Hi! I'm David Neal. I am a family man, geek, musician, illustrator, internationa
   * [X/Twitter @reverentgeek](https://x.com/reverentgeek)
   * <a rel="me" href="https://techhub.social/@reverentgeek">Mastodon @reverentgeek@reverentgeek.com</a>
   * [Threads @reverentgeek](https://www.threads.net/@reverentgeek)
-* Check out my code on [GitHub](https://github.com/reverentgeek).
-* View my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
+* Check out my [developer portfolio](/devrel-portfolio/) of tutorials, talks, keynotes, open-source, and podcasts.
+* Cruise my code on [GitHub](https://github.com/reverentgeek).
+* Dig my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
 * View my [Microsoft MVP profile](https://mvp.microsoft.com/en-US/mvp/profile/119307f9-3c9a-e411-93f2-9cb65495d3c4).
@@ -29,31 +30,6 @@ Hi! I'm David Neal. I am a family man, geek, musician, illustrator, internationa
 * [Bio and Headshots](/bio).
 
 Got Node.js? Try this at your command line: `npx reverentgeek`
-
-In addition to the links below, check out my [DevRel portfolio](/devrel-portfolio/).
-
-## Notable articles:
-
-* [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
-* [5 Essential Ingredients for an Awesome Tech Talk](/5-essential-ingredients-for-an-awesome-tech-talk/)
-* [Captivate Your Audience Using Simple Illustrations](/engage-with-simple-illustrations/)
-* [SQL Server Running on a Mac?!](/sql-server-running-on-a-mac/)
-
-## Notable videos:
-
-* [You. Are. Awesome.](https://www.youtube.com/watch?v=wsjqnrwkXqI)
-* [Leadership for the Reluctant Leader](https://youtu.be/0EWiSJj0q_0)
-* [Public Speaking without Barfing on Your Shoes](https://www.youtube.com/watch?v=oY_tMcZHwdc)
-* [Cross-Platform Desktop Apps with Electron](https://www.youtube.com/watch?v=Xs3Oc4weZbw)
-* [#AskTHAT Live with David Neal - Javascript, Art and Being Awesome!](https://www.youtube.com/watch?v=vnxycRPsNdI)
-
-## Sample of podcasts:
-
-* [Sketchnote Army: David Neal is the Geek Visualizer](https://sketchnotearmy.com/blog/2022/11/8/david-neal)
-* [6-Figure Developer: Reluctant Leader with David Neal](https://6figuredev.com/podcast/episode-081-reluctant-leader-with-david-neal/)
-* [Cross-Cutting Concerns - David Neal on Drawing](https://crosscuttingconcerns.com/Podcast-084-David-Neal-Drawing)
-* [.NET Rocks! Building Cross-Platform Desktop Apps using Electron with David Neal](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
-* [Developer on Fire - David Neal: Bacon-Driven Drawing](http://developeronfire.com/podcast/episode-156-david-neal-bacon-driven-drawing)
 
 ## Who Am I? The Longer Answer
 
