@@ -1,13 +1,25 @@
-@import "./fonts.css";
-@import "../../../node_modules/prismjs/themes/prism-okaidia.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './fonts.css';
+@import '../../../node_modules/prismjs/themes/prism-okaidia.css';
+@import 'tailwindcss';
 
+@theme {
+  --font-sans: "Roboto", "Segoe UI", "Helvetica Neue", "Arial",ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", "Cambria", ui-serif, serif;
+  --font-mono: "JetBrains Mono", "Menlo", "Monaco", "Consolas", monospace;
+  --color-rgblue: #6FC2FF;
+  --color-xtwitter: #111111;
+  --color-facebook: #1877F2;
+  --color-linkedin: #0077B5;
+  --color-instagram: #E1306C;
+  --color-github: #333;
+  --color-youtube: #FF0000;
+  --color-bluesky: #00A8E8;
+  --color-rss: #FF6600;
+}
 
 @layer components {
 	.link-link {
-		@apply flex flex-wrap gap-x-0 gap-y-2 justify-center px-2 py-4 text-center items-center border-2 border-blue-400 bg-blue-50 mx-auto min-w-[18rem] rounded-md !no-underline
+		@apply flex flex-wrap gap-2 justify-center px-2 py-4 text-center items-center border-2 border-blue-400 bg-blue-50 mx-auto min-w-[18rem] rounded-md no-underline!
 	}
 
 	.link-link svg {

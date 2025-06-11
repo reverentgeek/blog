@@ -1,47 +1,38 @@
-<label for="menu-toggle" class="flex flex-1 justify-end cursor-pointer lg:hidden block">
-  {{ icon({ id: 'burger', class: "", width: "20", height: "20" }) }}
-</label>
-<input type="checkbox" class="hidden" id="menu-toggle"/>
-<div class="hidden w-full bg-gray-200 lg:bg-transparent p-2 lg:flex lg:flex-grow lg:items-center lg:w-auto" id="menu">
-  <nav class="w-full sm:block">
-    <ul class="lg:flex items-center justify-between text-base text-gray-700 lg:pt-4 lg:pt-0">
+<div class="flex w-full">
+  <label for="menu-toggle" class="flex-none justify-end cursor-pointer md:hidden">
+    {{ icon({ id: 'burger', class: "", width: "20", height: "20" }) }}
+  </label>
+  <input type="checkbox" class="hidden" id="menu-toggle"/>
+  <div id="menu" class="md:p-8 mx-4 max-w-sm md:max-w-none hidden w-full md:bg-transparent md:flex md:items-center md:justify-center-safe">
+    <nav class="flex flex-col md:flex-row md:items-center md:justify-center gap-3 md:gap-2">
+      {% if page.url != "/" %}
+        <a class="flex-1" href="{{ site.url }}">
+          <img class="h-10 lg:h-12 mr-2" src="{{ site.logo }}" alt="{{ site.title }}">
+        </a>
+      {% endif %}
+
       {% for item in site.navigation %}
-        <li class="text-right">
-          <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:hover:border-indigo-400 font-bold" {% if
-          page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
-            {{ item.label }}
-          </a>
-        </li>
+        <a class="group relative font-bold bg-gray-200 text-gray-700 border-2 border-gray-200 hover:border-rgblue rounded-xl px-4 py-2 transition-all duration-300 hover:scale-110 hover:shadow-lg text-nowrap" {% if
+    page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
+          {{ item.label }}
+        </a>
       {% endfor %}
-      <li class="text-right py-3 px-0">
-        <ul class="list-reset flex-1 flex justify-between lg:justify-end lg:mx-4">
-          <li class="ml-2">
-            <a class="inline-block rounded-full h-10 w-10 flex bg-gray-200" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer">
-              {{ icon({ id: 'bluesky', class: "p-2 w-10"  }) }}
-            </a>
-          </li>
-          <li class="ml-2">
-            <a class="inline-block rounded-full h-10 w-10 flex bg-gray-900" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-              {{ icon({ id: 'x', class: "text-white p-2 w-10"  }) }}
-            </a>
-          </li>
-          <li class="ml-2">
-            <a class="inline-block rounded-full h-10 w-10 flex bg-gray-800" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-              {{ icon({ id: 'github', class: "text-white p-2 w-10" }) }}
-            </a>
-          </li>
-          <li class="ml-2">
-            <a class="inline-block rounded-full h-10 w-10 flex bg-red-400" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
-              {{ icon({ id: 'instagram', class: "text-white p-2 w-10" }) }}
-            </a>
-          </li>
-          <li class="ml-2">
-            <a class="inline-block rounded-full h-10 w-10 flex bg-orange-400" href="https://feedly.com/i/subscription/feed/{{ site.url }}/feed.xml" target="_blank" rel="noopener noreferrer">
-              {{ icon({ id: 'rss', class: "p-2 w-10" }) }}
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+      <a title="BlueSky" class="md:block md:w-auto group relative rounded-full border-2 border-gray-200 p-2 hover:border-bluesky hover:bg-bluesky/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-bluesky" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer">
+        {{ icon({ id: 'bluesky', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+      </a>
+      <a title="X (Twitter)" class="md:w-auto md:block group relative rounded-full border-2 border-xtwitter p-2 hover:border-xtwitter hover:bg-xtwitter/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-xtwitter" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer">
+        {{ icon({ id: 'x', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+      </a>
+      <a title="GitHub" class="md:w-auto md:block group relative rounded-full border-2 border-github p-2 hover:border-github hover:bg-github/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-github" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
+        {{ icon({ id: 'github', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+      </a>
+      <a title="Instagram" class="md:w-auto md:block group relative rounded-full border-2 border-instagram p-2 hover:border-instagram hover:bg-instagram/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-instagram" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
+        {{ icon({ id: 'instagram', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+      </a>
+      <a title="Instagram" class="md:w-auto md:block group relative rounded-full border-2 border-rss p-2 hover:border-rss hover:bg-rss/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-rss" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
+        {{ icon({ id: 'rss', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+      </a>
+    </nav>
+  </div>
 </div>
+{# <div class="hidden w-full bg-gray-200 lg:bg-transparent lg:flex lg:items-center lg:justify-center lg:gap-4" id="menu2"> <nav class="w-full sm:block"> <ul class="lg:flex items-center justify-between text-base text-gray-700 lg:pt-4 lg:pt-0"> {% for item in site.navigation %} <li class="text-right"> <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent lg:hover:border-indigo-400 font-bold" {% if page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}"> {{ item.label }} </a> </li> {% endfor %} <li class="text-right py-3 px-0"> <ul class="list-reset flex-1 flex justify-between lg:justify-end lg:mx-4"> <li class="ml-2"> <a class="inline-block rounded-full h-10 w-10 flex bg-bluesky" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer"> {{ icon({ id: 'bluesky', class: "w-10" }) }} </a> </li> <li class="ml-2"> <a class="inline-block rounded-full h-10 w-10 flex bg-xtwitter" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer"> {{ icon({ id: 'x', class: "text-white p-2 w-10" }) }} </a> </li> <li class="ml-2"> <a class="inline-block rounded-full h-10 w-10 flex bg-github" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer"> {{ icon({ id: 'github', class: "text-white p-2 w-10" }) }} </a> </li> <li class="ml-2"> <a class="inline-block rounded-full h-10 w-10 flex bg-instagram" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer"> {{ icon({ id: 'instagram', class: "text-white p-2 w-10" }) }} </a> </li> <li class="ml-2"> <a class="inline-block rounded-full h-10 w-10 flex bg-rss" href="https://feedly.com/i/subscription/feed/{{ site.url }}/feed.xml" target="_blank" rel="noopener noreferrer"> {{ icon({ id: 'rss', class: "p-2 w-10" }) }} </a> </li> </ul> </li> </ul> </nav> </div> #}
