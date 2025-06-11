@@ -43,6 +43,10 @@ pre[class*="language-"] {
 	display: block;
 }
 
+#mobile-menu-toggle:checked+#mobile-menu {
+	display: block;
+}
+
 .post-list {
 	.post {
 		@apply mb-16;

@@ -1,19 +1,19 @@
 {% from "partials/icon.njk" import icon %}
 
-{% if page.url != "/shop/" %}
+{# {% if page.url != "/shop/" %}
   <div class="text-white px-6 py-4 border-0 relative mb-4 bg-rgblue text-center">
     <a class="inline-block align-middle mr-8" href="/shop/">
       Want me to draw something for you?
       <b>Click here!</b>
     </a>
   </div>
-{% endif %}
+{% endif %} #}
 
-<header class="px-6 py-2 bg-white flex flex-wrap items-center lg:px-16">
+<header class="px-6 py-2  bg-rgblue/75 flex flex-wrap items-center lg:px-16">
   {% include "partials/navigation.njk" %}
-  {% if page.url == "/" %}
-    <div class="pb-4 w-full">
-      <img class="w-full" src="{{ site.cover_image }}" alt="Site banner image with a collage of illustrations and doodles. The center image is the ReverentGeek logo with a speech bubble that reads, you don't need permission to be awesome.">
-    </div>
-  {% endif %}
 </header>
+{% if page.url == "/" %}
+  <div class="mb-4 w-full border-6 border-rgblue/15">
+    <img class="w-full" src="{{ site.cover_image }}" alt="Site banner image with a collage of illustrations and doodles. The center image is the ReverentGeek logo with a speech bubble that reads, you don't need permission to be awesome.">
+  </div>
+{% endif %}
