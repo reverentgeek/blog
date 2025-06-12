@@ -13,7 +13,7 @@
     <nav class="hidden md:flex flex-1 justify-center">
       <div class="flex space-x-8">
         {% for item in site.navigation %}
-          <a class="px-3 py-2 font-bold text-sm border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg" {% if
+          <a class="px-3 py-2 font-bold text-base border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg" {% if
     page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
             {{ item.label }}
           </a>
@@ -53,7 +53,7 @@
     <div class="flex flex-col space-y-1 py-2">
       <!-- Navigation Links -->
       {% for item in site.navigation %}
-        <a class="px-2 py-1 transition-colors font-bold text-sm rounded-full bg-white/30 text-nowrap hover:border-l-white" {% if
+        <a class="px-2 py-1 transition-colors font-bold text-base rounded-full bg-white/30 text-nowrap hover:border-l-white" {% if
     page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
           {{ item.label }}
         </a>
