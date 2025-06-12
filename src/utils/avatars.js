@@ -39,11 +39,13 @@ program
 program
 	.command( "html" )
 	.argument( "<folder>", "folder to process" )
+	.option( "-l, --limit <number>", "limit the number of images in the gallery", parseInt, 10 )
 	.description( "Generate html from avatar files" )
-	.action( async ( folder ) => {
+	.action( async ( folder, options ) => {
+		const limit = options.limit || 0;
 		const contentType = folder.endsWith( "s" ) ? folder.substring( 0, folder.length - 1 ) : folder;
 		const { avatarFolder } = getWorkingFolderPaths( folder );
-		const output = await gallery.getFlexHtml( avatarFolder, `/content/images/${ folder }`, contentType );
+		const output = await gallery.getFlexHtml( avatarFolder, `/content/images/${ folder }`, contentType, limit );
 		console.log( output );
 	} );
 

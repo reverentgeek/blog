@@ -77,14 +77,19 @@ export async function getColumnHtml( folder, htmlPath = "/content/images/avatars
 	return html.join( "\r\n" );
 }
 
-export async function getFlexHtml( folder, htmlPath = "/content/images/avatars", contentType = "avatar" ) {
+export async function getFlexHtml( folder, htmlPath = "/content/images/avatars", contentType = "avatar", limit = 0 ) {
+	let index = 0;
 	const imageHtml = [];
 	const imageFiles = await getOrderedFiles( folder );
 	for( const imageFile of imageFiles ) {
+		index++;
 		const src = join( folder, imageFile );
 		const s = await fs.createReadStream( src );
 		const info = await probe( s );
 		imageHtml.push( `<a href="${ htmlPath }/${ imageFile }"><img class="${ contentType }-image" alt="${ contentType } illustration" width="${ info.width }" height="${ info.height }" src="${ htmlPath }/${ imageFile }"></a>` );
+		if ( limit > 0 && index >= limit ) {
+			break;
+		}
 	}
 	return imageHtml.join( "\r\n" );
 }
