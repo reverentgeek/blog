@@ -6,7 +6,7 @@ import lazyImages from "eleventy-plugin-lazyimages";
 import navigationPlugin from "@11ty/eleventy-navigation";
 import brokenLinksPlugin from "eleventy-plugin-broken-links";
 
-import { htmlMinTransform } from "./src/utils/transforms/html-min-transform.js";
+import htmlMinTransform from "./src/utils/transforms/html-min-transform.js";
 
 export default async function( config ) {
 	const isDev = process.env?.NODE_ENV === "development";
@@ -24,7 +24,7 @@ export default async function( config ) {
 
 	// Minify HTML
 	if ( process.env.ELEVENTY_ENV === "production" ) {
-		config.addTransform( "htmlmin", htmlMinTransform );
+		htmlMinTransform( config );
 	}
 
 	// Assist RSS feed template

@@ -1,15 +1,18 @@
-import { minify } from "html-minifier";
-// const htmlmin = require( "html-minifier" );
+import htmlmin from "html-minifier-terser";
 
-export function htmlMinTransform( value, outputPath ) {
-	if ( outputPath.indexOf( ".html" ) > -1 ) {
-		let minified = minify( value, {
-			useShortDoctype: true,
-			removeComments: true,
-			collapseWhitespace: true,
-			minifyCSS: true
-		} );
-		return minified;
-	}
-	return value;
+export default function ( eleventyConfig ) {
+	eleventyConfig.addTransform( "htmlmin", function ( content ) {
+		if ( ( this.page.outputPath || "" ).endsWith( ".html" ) ) {
+			let minified = htmlmin.minify( content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			} );
+
+			return minified;
+		}
+
+		// If not an HTML output, return content as-is
+		return content;
+	} );
 };
