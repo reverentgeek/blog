@@ -6,7 +6,7 @@
     <div class="text-gray-500 uppercase text-sm mb-4">{{ date | postDate }}</div>
     {% if feature_image %}
       <figure class="post-feature-image">
-        <img src="{{ feature_image }}" alt="{{ title }}">
+        <img fetchpriority="high" src="{{ feature_image }}" alt="{{ title }}">
       </figure>
     {% endif %}
     <section class="content-body">
