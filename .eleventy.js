@@ -1,5 +1,3 @@
-import "dotenv/config";
-
 import cleanCSS from "clean-css";
 import pluginRSS from "@11ty/eleventy-plugin-rss";
 import lazyImages from "eleventy-plugin-lazyimages";
