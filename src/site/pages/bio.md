@@ -19,4 +19,4 @@ Preferred:
 
 Alternatives:
 
-![Headshot photo](/content/images/headshots/david-neal-headshot-2024.jpg)
+![Headshot photo](/content/images/headshots/headshot-rg-studio-2025.jpg)
