@@ -2,7 +2,7 @@
   <div class="post">
     <div class="flex flex-wrap">
       {% if post.data.feature_image %}
-        <a class="w-full py-4 lg:w-1/3 lg:mb-0" href="{{ post.url }}"><img fetchpriority="high" class="shadow rounded-lg" src="{{ post.data.feature_image }}" alt="{{ post.data.title }}"></a>
+        <a class="w-full py-4 lg:w-1/3 lg:mb-0" href="{{ post.url }}"><img eleventy:widths="300" fetchpriority="high" class="shadow rounded-lg" src="{{ post.data.feature_image }}" alt="{{ post.data.title }}"></a>
       {% else %}
         <div class="hidden lg:block lg:w-1/3"></div>
       {% endif %}

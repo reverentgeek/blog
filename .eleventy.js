@@ -1,6 +1,6 @@
 import cleanCSS from "clean-css";
 import pluginRSS from "@11ty/eleventy-plugin-rss";
-import lazyImages from "eleventy-plugin-lazyimages";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import navigationPlugin from "@11ty/eleventy-navigation";
 import brokenLinksPlugin from "eleventy-plugin-broken-links";
 
@@ -28,17 +28,7 @@ export default async function( config ) {
 	// Assist RSS feed template
 	config.addPlugin( pluginRSS );
 
-	// Apply performance attributes to images
-	config.addPlugin( lazyImages, {
-		cacheFile: ".lazyimages.json",
-		transformImgPath: ( imgPath ) => {
-			if ( imgPath.startsWith( "/" ) && !imgPath.startsWith( "//" ) ) {
-				return `./src/site${ imgPath }`;
-			}
-
-			return imgPath;
-		}
-	} );
+	config.addPlugin( eleventyImageTransformPlugin );
 
 	config.addPlugin( navigationPlugin );
 
