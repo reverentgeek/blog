@@ -41,6 +41,8 @@ An Azure Windows Server virtual machine (VM) is a good option if you are more co
 
 > Note: Use the Windows Server **Add Roles and Features** Wizard to install IIS. C++ and Python are required to build certain Node.js modules (dependencies).
 
+<a id="pro-tip-chocolatey"></a>
+
 #### Pro Tip: Chocolatey
 
 For managing applications on Windows machines, [Chocolatey](https://chocolatey.org/) is _the_ way to go. It can save you a lot of time setting up virtual machines, or the next time you decide to pave and reinstall your Windows development PC.
@@ -186,7 +188,7 @@ There are many options for running Node.js as a service, especially on Linux or 
 ### Steps to deploy Node.js applications
 
 1. Add `winser` as a dependency to your Node.js application
-2. Install the requirements on the Azure VM ([see tip on Chocolatey](#chocolatey))
+2. Install the requirements on the Azure VM ([see tip on Chocolatey](#pro-tip-chocolatey))
 3. Add any system environment variables
 4. Copy your Node.js application to the VM
 5. Delete the `node_modules`, if it exists

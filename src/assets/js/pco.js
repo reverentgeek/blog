@@ -1,28 +1,28 @@
-function parseLyricLine( lyricLine ) {
-	const chunks = lyricLine.split( /(\[[^\]]*\]\s+|\[[^\]]*\][\w][^[()]+|\([^)]*\))/ ).filter( t => t !== "" );
-	const chords = [];
-	const lyrics = [];
-	const directions = [];
-	for( let i = 0; i < chunks.length; i++ ) {
-		chunks[i] = chunks[i].replace( "\r", "" );
-		if ( chunks[i].indexOf( "[" ) > -1 ) {
-			const subchunks = chunks[i].split( /(\[[^\]]*\])/ ).filter( t => t !== "" );
-			chords.push( subchunks[0].replace( "[", "" ).replace( "]", "" ) );
-			lyrics.push( subchunks.length === 2 ? subchunks[ 1 ] : "" );
-			directions.push( "" );
-		}
-		else if ( chunks[i].startsWith( "(" ) ) {
-			chords.push( "" );
-			lyrics.push( "" );
-			directions.push( chunks[i] );
-		} else {
-			chords.push( "" );
-			lyrics.push( chunks[i] );
-			directions.push( "" );
-		}
-	}
-	return { chords, lyrics, directions };
-}
+// function parseLyricLine( lyricLine ) {
+// 	const chunks = lyricLine.split( /(\[[^\]]*\]\s+|\[[^\]]*\][\w][^[()]+|\([^)]*\))/ ).filter( t => t !== "" );
+// 	const chords = [];
+// 	const lyrics = [];
+// 	const directions = [];
+// 	for( let i = 0; i < chunks.length; i++ ) {
+// 		chunks[i] = chunks[i].replace( "\r", "" );
+// 		if ( chunks[i].indexOf( "[" ) > -1 ) {
+// 			const subchunks = chunks[i].split( /(\[[^\]]*\])/ ).filter( t => t !== "" );
+// 			chords.push( subchunks[0].replace( "[", "" ).replace( "]", "" ) );
+// 			lyrics.push( subchunks.length === 2 ? subchunks[ 1 ] : "" );
+// 			directions.push( "" );
+// 		}
+// 		else if ( chunks[i].startsWith( "(" ) ) {
+// 			chords.push( "" );
+// 			lyrics.push( "" );
+// 			directions.push( chunks[i] );
+// 		} else {
+// 			chords.push( "" );
+// 			lyrics.push( chunks[i] );
+// 			directions.push( "" );
+// 		}
+// 	}
+// 	return { chords, lyrics, directions };
+// }
 
 function parseSection( line ) {
 	const text = line.replace( "{", "" ).replace( "}", "" );
@@ -212,7 +212,7 @@ export function setup() {
 	// const convertButton = document.getElementById( "convertCPOButton" );
 	// convertButton.addEventListener( "click", convert );
 	copyButton.addEventListener( "click", () => {
-		navigator.clipboard.writeText( pco.value );
+		navigator.clipboard.writeText( pco.value );  // eslint-disable-line
 		copyButton.innerHTML = "Copied!";
 		setTimeout( () => {
 			copyButton.innerHTML = "Copy";

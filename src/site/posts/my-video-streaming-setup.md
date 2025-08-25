@@ -136,7 +136,7 @@ So, what do you think? Is there something I missed, or I could improve? What is 
 * [Scarlett 2i2 Audio Interface](https://www.sweetwater.com/store/detail/Scarlet2i2G3--focusrite-scarlett-2i2-3rd-gen-usb-audio-interface)
 * [Behringer Flow 8 audio mixer](https://www.sweetwater.com/store/detail/Flow8--behringer-flow-8-8-input-digital-mixer-with-bluetooth)
 
-### Software
+### Audio/Video Software
 
 * [Krisp.ai Audio Plugin](https://ref.krisp.ai/u/u814c5c6e6)
 * [Duet Display](https://www.duetdisplay.com/)

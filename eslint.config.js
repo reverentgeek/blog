@@ -1,15 +1,19 @@
-import rg from "eslint-config-reverentgeek";
+import rg from "eslint-config-reverentgeek"; // eslint-disable-line
 
 export default [
-	...rg.configs[ "node-esm" ],
 	{
 		ignores: [ "dist/", "**/*.cjs" ]
 	},
+	...rg.configs["node-esm"],
 	{
+		files: [ "src/utils/**/*.js" ],
 		rules: {
-			"n/no-unpublished-import": [ "error", {
-				allowModules: [ "eslint-config-reverentgeek" ]
-			} ]
+			"n/no-unpublished-import": "off"
 		}
+	},
+	// Add browser rules for JS files in /src/assets/js
+	{
+		files: [ "src/assets/**/*.js" ],
+		...rg.configs["browser"][rg.configs.browser.length - 1]
 	}
 ];

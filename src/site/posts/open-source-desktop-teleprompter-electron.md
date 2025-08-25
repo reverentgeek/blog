@@ -41,7 +41,7 @@ I'm a fan of [Markdown](https://www.markdownguide.org/getting-started/). I've us
 
 ## Presentation clicker support
 
-Borrowing an idea from a web-based presentation app I used many years ago, I added support for navigating forward and backward in the script using a presentation clicker and the arrow keys on the keyboard. This feature is based on the placement of H2 tags in the script. 
+Borrowing an idea from a web-based presentation app I used many years ago, I added support for navigating forward and backward in the script using a presentation clicker and the arrow keys on the keyboard. This feature is based on the placement of H2 tags in the script.
 
 ## Use the source, Luke
 

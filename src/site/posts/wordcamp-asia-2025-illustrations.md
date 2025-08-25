@@ -9,7 +9,7 @@ slug: wordcamp-asia-2025-illustrations
 
 I've completed the WordCamp world tour with [WordCamp Asia 2025](https://asia.wordcamp.org/2025/)! I had a wonderful time in Manila, Philippines drawing avatars for attendees at the [WordPress.com](https://developer.wordpress.com) booth.
 
-[Click here](https://wordpress.com/wordcamp/avatars/) to see all the avatars from WordCamp Asia 2025 🤩
+[View all avatars](https://wordpress.com/wordcamp/avatars/) from WordCamp Asia 2025 🤩
 
 ![Working the WordPress.com developer booth at WordCamp Asia 2025](/content/images/wordcamp-asia-2025-illustrations/wordcamp-asia-booth-01.jpg)
 

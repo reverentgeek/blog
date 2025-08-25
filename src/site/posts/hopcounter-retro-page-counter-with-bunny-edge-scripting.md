@@ -43,19 +43,15 @@ Let's hop in!
 The first step is to add a new script to your Bunny account. You will deploy the script directly from your Bunny dashboard, but you can also deploy scripts using a [GitHub repository](https://docs.bunny.net/docs/edge-scripting-github-integration) or [GitHub Actions](https://docs.bunny.net/docs/edge-scripting-github-action)!
 
 1. Log in to your [Bunny Dashboard](https://dash.bunny.net/)
-2. Navigate to **Edge Platform → Scripting**
-3. Click **Add Script**
-
-![Bunny Scripting: add script](/content/images/hopcounter-bunny-edge-scripting/bunny-edge-scripting-01.png)
-
-4. Click **Deploy with Bunny.net**
-
-![Bunny Scripting: deploy with Bunny.net](/content/images/hopcounter-bunny-edge-scripting/bunny-edge-scripting-02.png)
-
-5. For **Script Name** enter "HopCounter"
-6. Make sure the script **Type** is set to **Standalone**
-7. Under **Script Template** choose **Return simple JSON** (although any template will work)
-8. Click **Add Script**
+1. Navigate to **Edge Platform → Scripting**
+1. Click **Add Script**
+    ![Bunny Scripting: add script](/content/images/hopcounter-bunny-edge-scripting/bunny-edge-scripting-01.png)
+1. Click **Deploy with Bunny.net**
+    ![Bunny Scripting: deploy with Bunny.net](/content/images/hopcounter-bunny-edge-scripting/bunny-edge-scripting-02.png)
+1. For **Script Name** enter "HopCounter"
+1. Make sure the script **Type** is set to **Standalone**
+1. Under **Script Template** choose **Return simple JSON** (although any template will work)
+1. Click **Add Script**
 
 ![Bunny Scripting: configure script](/content/images/hopcounter-bunny-edge-scripting/bunny-edge-scripting-03.png)
 

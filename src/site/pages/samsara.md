@@ -65,7 +65,7 @@ SAMSARA_API_TOKEN=<your-samsara-api-token>
 
 ## Build a Real-Time Data Collector
 
-![](/content/images/samsara/real-time-stats.png)
+![Real-time stats](/content/images/samsara/real-time-stats.png)
 
 Using Samsara's [stats feed](https://developers.samsara.com/reference/getvehiclestatsfeed) endpoint, let's build a data collector that pulls vehicle stats. We'll implement a polling strategy so you can get the latest data in near real-time.
 
@@ -279,7 +279,7 @@ async function pollVehicleStatsFeed( types, callback ) {
 
 ## Download Telematics Historical Data
 
-![](/content/images/samsara/historical-data.png)
+![Historical data](/content/images/samsara/historical-data.png)
 
 Historical data is the bread and butter of reporting. Samsara’s [historical stats](https://developers.samsara.com/reference/getvehiclestatshistory) endpoint lets you specify a date range and pull the stats you're interested in.
 

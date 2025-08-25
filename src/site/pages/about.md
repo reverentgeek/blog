@@ -19,7 +19,7 @@ Hi! I'm David Neal. I am a family man, geek, musician, illustrator, internationa
   * [Threads @reverentgeek](https://www.threads.net/@reverentgeek)
 * Check out my [developer portfolio](/devrel-portfolio/) of tutorials, talks, keynotes, open-source, and podcasts.
 * Cruise my code on [GitHub](https://github.com/reverentgeek).
-* Dig my drawings [here](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
+* Dig my drawings in my [portfolio](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
 * View my [Microsoft MVP profile](https://mvp.microsoft.com/en-US/mvp/profile/119307f9-3c9a-e411-93f2-9cb65495d3c4).

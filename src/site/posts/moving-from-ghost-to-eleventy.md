@@ -39,7 +39,7 @@ Personally, I'm comfortable with writing content directly in Visual Studio Code 
 
 There are a couple of ways you can get content out of a Ghost site. One option is to export all of your content at once as a JSON file. To do this, go to your Ghost dashboard and under *Settings* click *Labs*. Under *Migration Options* click **Export**.
 
-A second option is to use the [Ghost API](https://ghost.org/docs/api/v3/) to access content programmatically. The [`content-api`](https://www.npmjs.com/package/@tryghost/content-api) module for Node.js makes it [pretty easy](https://ghost.org/docs/api/v3/javascript/content/) to get at your site's content. To use it, you will need to generate a _Content API Key_ from within your Ghost dashboard under the *Integrations* section.
+A second option is to use the [Ghost API](https://ghost.org/docs/api/v3/) to access content programmatically. The [`content-api`](https://www.npmjs.com/package/@tryghost/content-api) module for Node.js makes it [pretty easy](https://ghost.org/docs/api/v3/javascript/content/) to get at your site's content. To use it, you will need to generate a *Content API Key* from within your Ghost dashboard under the *Integrations* section.
 
 I chose to build a [Ghost export utility](https://github.com/reverentgeek/ghost-to-eleventy-exporter) using Node.js and the Ghost `content-api` client. This utility not only exports all the site data, posts, and pages, it also downloads all the images associated with that content, which is something the built-in Ghost export and Ghost API will not do for you. The content is exported as HTML and markdown files, ready to be consumed with Eleventy!
 
@@ -62,7 +62,7 @@ I love to play music, especially in a band. There's something amazing about the 
 
 Using the "Eleventy Starter Ghost" project as a starting point for rendering content, I was ready to start personalizing it to fit my needs. I decided to use this opportunity to learn another new technology on my radar, [Tailwind CSS](https://tailwindcss.com/).
 
-Tailwind CSS is quite a bit different from most CSS frameworks. Instead of being a library full of components and use-case-specific classes, Tailwind is a comprehensive collection of very granular utility classes that can be applied to just about any HTML element. It's less prescriptive. You use these utilities to _compose_ an element's style.
+Tailwind CSS is quite a bit different from most CSS frameworks. Instead of being a library full of components and use-case-specific classes, Tailwind is a comprehensive collection of very granular utility classes that can be applied to just about any HTML element. It's less prescriptive. You use these utilities to *compose* an element's style.
 
 The following HTML is for a nice rounded blue button.
 
@@ -75,7 +75,7 @@ Weird, huh? But really powerful! The Tailwind CSS documentation is fantastic. I 
 
 ## Hosting on Netlify
 
-[Netlify](https://www.netlify.com/) is an amazing service. They make it _super_ easy to deploy a site from a Git repository. I can push an update to my repository and it is built and deployed in about a minute. On a _global_ CDN. This is, by far, the fastest ReverentGeek blog yet!
+[Netlify](https://www.netlify.com/) is an amazing service. They make it *super* easy to deploy a site from a Git repository. I can push an update to my repository and it is built and deployed in about a minute. On a *global* CDN. This is, by far, the fastest ReverentGeek blog yet!
 
 Netlify makes other things painless, too, such as...
 

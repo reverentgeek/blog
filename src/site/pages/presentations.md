@@ -82,7 +82,7 @@ In this talk, we'll cover the JAMstack architecture, the numerous benefits of th
 
 ## The Illustrated Guide to Electron
 
-In the current web and mobile-first applications world, there’s still a solid case for building desktop applications. You may already be using popular Electron apps such as Visual Studio Code, Slack, Figma, and Postman! With Electron, you can create cross-platform desktop applications quickly and easily using your existing knowledge of HTML, CSS, JavaScript, and Node.js. 
+In the current web and mobile-first applications world, there’s still a solid case for building desktop applications. You may already be using popular Electron apps such as Visual Studio Code, Slack, Figma, and Postman! With Electron, you can create cross-platform desktop applications quickly and easily using your existing knowledge of HTML, CSS, JavaScript, and Node.js.
 
 Get ready for a fun and engaging introduction to Electron, where you'll discover its strengths, learn how to get started, and gain valuable insights from my experience building Electron apps. Elevate your developer skills and create amazing desktop applications with Electron!
 
