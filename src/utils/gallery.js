@@ -6,7 +6,7 @@ import { join, basename, extname } from "node:path";
 export async function getOrderedFiles( folder, sortByDate = false ) {
 	const imageFiles = await fs.readdir( folder );
 	const images = [];
-	for( const imageFile of imageFiles ) {
+	for ( const imageFile of imageFiles ) {
 		const img = imageFile.toLowerCase();
 		if ( img.endsWith( ".png" ) || img.endsWith( ".jpg" ) || img.endsWith( ".jpeg" ) ) {
 			const src = join( folder, imageFile );
@@ -24,7 +24,8 @@ export async function getOrderedFiles( folder, sortByDate = false ) {
 			}
 			return 0;
 		} );
-	} else {
+	}
+	else {
 		images.sort( ( a, b ) => {
 			const n1 = a.f.toLowerCase();
 			const n2 = b.f.toLowerCase();
@@ -59,7 +60,7 @@ export async function convertImage( image, srcFolder, galleryFolder, size = 1500
 export async function getColumnHtml( folder, htmlPath = "/content/images/avatars" ) {
 	const imageHtml = [];
 	const imageFiles = await getOrderedFiles( folder );
-	for( const imageFile of imageFiles ) {
+	for ( const imageFile of imageFiles ) {
 		const src = join( folder, imageFile );
 		const s = await fs.createReadStream( src );
 		const info = await probe( s );
@@ -67,7 +68,7 @@ export async function getColumnHtml( folder, htmlPath = "/content/images/avatars
 	}
 	const html = [];
 	html.push( "<figure class=\"kg-card kg-gallery-card kg-width-wide\"><div class=\"kg-gallery-container\"><div class=\"kg-gallery-row\">" );
-	for( let i = 0; i < imageHtml.length; i++ ) {
+	for ( let i = 0; i < imageHtml.length; i++ ) {
 		if ( i % 3 === 0 ) {
 			html.push( "</div><div class=\"kg-gallery-row\">" );
 		}
@@ -81,7 +82,7 @@ export async function getFlexHtml( folder, htmlPath = "/content/images/avatars",
 	let index = 0;
 	const imageHtml = [];
 	const imageFiles = await getOrderedFiles( folder );
-	for( const imageFile of imageFiles ) {
+	for ( const imageFile of imageFiles ) {
 		index++;
 		const src = join( folder, imageFile );
 		const s = await fs.createReadStream( src );
@@ -98,13 +99,13 @@ export async function getHtml( folder, htmlPath = "/content/images/avatars", cap
 	const html = [];
 	const imageFiles = await getOrderedFiles( folder );
 	// console.log( captions );
-	for( const imageFile of imageFiles ) {
+	for ( const imageFile of imageFiles ) {
 		const src = join( folder, imageFile );
 		const s = await fs.createReadStream( src );
 		const info = await probe( s );
 		const caption = captions[imageFile];
 		// console.log( imageFile, caption );
-		html.push( `<figure class="kg-card kg-image-card${ caption ? " kg-card-hascaption": "" }"><img src=${ htmlPath }/${ imageFile } width="${ info.width }" height="${ info.height }">${ caption ? "<figcaption>" + caption + "</figcaption>" : "" }</figure>` );
+		html.push( `<figure class="kg-card kg-image-card${ caption ? " kg-card-hascaption" : "" }"><img src=${ htmlPath }/${ imageFile } width="${ info.width }" height="${ info.height }">${ caption ? "<figcaption>" + caption + "</figcaption>" : "" }</figure>` );
 	}
 	return html.join( "\n" );
 }

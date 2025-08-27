@@ -6,9 +6,9 @@ import brokenLinksPlugin from "eleventy-plugin-broken-links";
 
 import htmlMinTransform from "./src/utils/transforms/html-min-transform.js";
 
-export default async function( config ) {
+export default async function ( config ) {
 	const isDev = process.env?.NODE_ENV === "development";
-	config.addNunjucksFilter( "isSiteMapSafe", function( url ) {
+	config.addNunjucksFilter( "isSiteMapSafe", function ( url ) {
 		const isSafe = !url.startsWith( "/_" );
 		return isSafe.toString();
 	} );
@@ -16,7 +16,7 @@ export default async function( config ) {
 	config.setDataDeepMerge( true );
 
 	config.addWatchTarget( "./src/assets/" );
-	config.addPassthroughCopy( { "./src/assets/js/pco.js" : "assets/pco.js" } );
+	config.addPassthroughCopy( { "./src/assets/js/pco.js": "assets/pco.js" } );
 	config.addPassthroughCopy( "./src/site/content/images/**" );
 	config.addPassthroughCopy( "./src/site/favicon.ico" );
 
@@ -37,23 +37,23 @@ export default async function( config ) {
 	}
 
 	// Inline CSS
-	config.addFilter( "cssmin", code => {
+	config.addFilter( "cssmin", ( code ) => {
 		return new cleanCSS( {} ).minify( code ).styles;
 	} );
 
-	config.addFilter( "getReadingTime", text => {
+	config.addFilter( "getReadingTime", ( text ) => {
 		const wordsPerMinute = 200;
 		const numberOfWords = text.split( /\s/g ).length;
 		return Math.ceil( numberOfWords / wordsPerMinute );
 	} );
 
 	// Date formatting filter
-	config.addFilter( "htmlDateString", dateObj => {
+	config.addFilter( "htmlDateString", ( dateObj ) => {
 		return new Date( dateObj ).toISOString().split( "T" )[0];
 	} );
 
 	// Date formatting filter
-	config.addFilter( "postDate", dateObj => {
+	config.addFilter( "postDate", ( dateObj ) => {
 		return new Date( dateObj ).toLocaleDateString( "en-US", { year: "numeric", month: "long", day: "numeric" } );
 	} );
 
@@ -69,11 +69,11 @@ export default async function( config ) {
 	return {
 		dir: {
 			input: "src/site",
-			output: "dist",
+			output: "dist"
 		},
 		passthroughFileCopy: true,
 		templateFormats: [ "njk", "md", "txt", "html" ],
 		htmlTemplateEngine: "njk",
-		markdownTemplateEngine: "njk",
+		markdownTemplateEngine: "njk"
 	};
 }

@@ -4,7 +4,7 @@ export default [
 	{
 		ignores: [ "dist/", "**/*.cjs" ]
 	},
-	...rg.configs["node-esm"],
+	rg.configs["node-esm"],
 	{
 		files: [ "src/utils/**/*.js" ],
 		rules: {
@@ -14,6 +14,6 @@ export default [
 	// Add browser rules for JS files in /src/assets/js
 	{
 		files: [ "src/assets/**/*.js" ],
-		...rg.configs["browser"][rg.configs.browser.length - 1]
+		...rg.configs.browser
 	}
 ];

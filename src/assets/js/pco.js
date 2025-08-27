@@ -1,28 +1,3 @@
-// function parseLyricLine( lyricLine ) {
-// 	const chunks = lyricLine.split( /(\[[^\]]*\]\s+|\[[^\]]*\][\w][^[()]+|\([^)]*\))/ ).filter( t => t !== "" );
-// 	const chords = [];
-// 	const lyrics = [];
-// 	const directions = [];
-// 	for( let i = 0; i < chunks.length; i++ ) {
-// 		chunks[i] = chunks[i].replace( "\r", "" );
-// 		if ( chunks[i].indexOf( "[" ) > -1 ) {
-// 			const subchunks = chunks[i].split( /(\[[^\]]*\])/ ).filter( t => t !== "" );
-// 			chords.push( subchunks[0].replace( "[", "" ).replace( "]", "" ) );
-// 			lyrics.push( subchunks.length === 2 ? subchunks[ 1 ] : "" );
-// 			directions.push( "" );
-// 		}
-// 		else if ( chunks[i].startsWith( "(" ) ) {
-// 			chords.push( "" );
-// 			lyrics.push( "" );
-// 			directions.push( chunks[i] );
-// 		} else {
-// 			chords.push( "" );
-// 			lyrics.push( chunks[i] );
-// 			directions.push( "" );
-// 		}
-// 	}
-// 	return { chords, lyrics, directions };
-// }
 
 function parseSection( line ) {
 	const text = line.replace( "{", "" ).replace( "}", "" );
@@ -79,10 +54,10 @@ function parse( chordProText ) {
 		footer: []
 	};
 	let sectionIndex = -1;
-	for( let i = 0; i < lines.length; i++ ) {
+	for ( let i = 0; i < lines.length; i++ ) {
 		if ( lines[i].trim().startsWith( "{" ) ) {
 			const section = parseSection( lines[i] );
-			switch( true ) {
+			switch ( true ) {
 				case isTitle( section.type ):
 					parsed.title = section.text;
 					break;
@@ -117,9 +92,10 @@ function parse( chordProText ) {
 					parsed[section.type] = section.text;
 					break;
 			}
-		} else if ( lines[i].trim().length > 0 ) {
+		}
+		else if ( lines[i].trim().length > 0 ) {
 			if ( lines[i].trim().startsWith( "CCLI" ) ) {
-				while( i < lines.length ) {
+				while ( i < lines.length ) {
 					if ( lines[i].trim().length > 0 ) {
 						parsed.footer.push( lines[i].trim() );
 					}
@@ -139,19 +115,20 @@ const renderChartForPlanningCenter = ( song ) => {
 	const HEADER_LINES = 3;
 	let pageLineCount = 0;
 
-	song.sections.forEach( section => {
+	song.sections.forEach( ( section ) => {
 		// console.log( section );
 		const nextPageLineCount = pageLineCount + ( section.lines.length * 2 ) + HEADER_LINES;
 		if ( nextPageLineCount > MAX_LINES_PER_PAGE ) {
 			chart.push( "PAGE_BREAK" );
 			pageLineCount = 0;
-		} else {
+		}
+		else {
 			pageLineCount = nextPageLineCount;
 		}
 		chart.push( "" );
 		chart.push( section.name.toUpperCase() );
 		chart.push( "" );
-		section.lines.forEach( line=> {
+		section.lines.forEach( ( line ) => {
 			chart.push( line );
 		} );
 	} );
@@ -162,13 +139,13 @@ const renderChartForPlanningCenter = ( song ) => {
 function debounce( func, delay ) {
 	let timeout;
 
-	return function() {
+	return function () {
 		const context = this;
 		const args = arguments;
 
 		clearTimeout( timeout );
 
-		timeout = setTimeout( function() {
+		timeout = setTimeout( function () {
 			func.apply( context, args );
 		}, delay );
 	};
@@ -182,25 +159,12 @@ function convert() {
 	pco.value = chart;
 }
 
-// function cpoChange( e ) {
-// 	convert();
-// }
-
 export function setup() {
 	const cpro = document.getElementById( "chordpro_source" );
-	// const pasteButton = document.getElementById( "pasteCProButton" );
-	// pasteButton.addEventListener( "click", () => {
-	// 	navigator.clipboard.readText().then( text => {
-	// 		const cpro = document.getElementById( "chordpro_source" );
-	// 		cpro.value = text;
-	// 		// convert();
-	// 	} );
-	// } );
-	// cpro.addEventListener( "keyup", cpoChange );
 
-	cpro.addEventListener( "paste", function() {
+	cpro.addEventListener( "paste", function () {
 		// Small delay to ensure the pasted content is in the textarea
-		setTimeout( function() {
+		setTimeout( function () {
 			convert();
 		}, 10 );
 	} );

@@ -6,7 +6,7 @@ export default function ( eleventyConfig ) {
 			let minified = htmlmin.minify( content, {
 				useShortDoctype: true,
 				removeComments: true,
-				collapseWhitespace: true,
+				collapseWhitespace: true
 			} );
 
 			return minified;

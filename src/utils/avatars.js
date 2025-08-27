@@ -16,10 +16,11 @@ program
 	.action( async ( folder ) => {
 		const filesToConvert = await getUnprocessedFiles( folder );
 		if ( filesToConvert.length > 0 ) {
-			for( const f of filesToConvert ) {
+			for ( const f of filesToConvert ) {
 				console.log( f );
 			}
-		} else {
+		}
+		else {
 			console.log( "No files to convert" );
 		}
 	} );
@@ -67,7 +68,7 @@ async function getUnprocessedFiles( folder ) {
 	const srcFiles = await gallery.getOrderedFiles( srcFolder, true );
 	const filesToRename = [];
 
-	for( const f of srcFiles ) {
+	for ( const f of srcFiles ) {
 		if ( /^\d{3}-/gm.test( f ) === false ) {
 			filesToRename.push( f );
 		}
@@ -82,13 +83,14 @@ async function updateFileNames( folder, force ) {
 	const filesToRename = [];
 	const newFiles = [];
 
-	for( const f of srcFiles ) {
+	for ( const f of srcFiles ) {
 		if ( /^\d{3}-/gm.test( f ) ) {
 			goodFiles.push( f );
 			if ( force ) {
 				newFiles.push( f );
 			}
-		} else {
+		}
+		else {
 			filesToRename.push( f );
 		}
 	}
@@ -99,7 +101,7 @@ async function updateFileNames( folder, force ) {
 	}
 	goodFiles.sort().reverse();
 	let lastId = goodFiles.length > 0 ? parseInt( goodFiles[0].substring( 0, 3 ), 10 ) : -1;
-	for( const f of filesToRename ) {
+	for ( const f of filesToRename ) {
 		lastId++;
 		const newFile = `${ padZero( lastId, 3 ) }-${ f }`;
 		newFiles.push( newFile );
@@ -112,43 +114,7 @@ async function updateFileNames( folder, force ) {
 async function convertFiles( folder, filesToConvert ) {
 	const { avatarFolder, srcFolder } = getWorkingFolderPaths( folder );
 
-	for( const image of filesToConvert ) {
+	for ( const image of filesToConvert ) {
 		await gallery.convertImage( image, srcFolder, avatarFolder, 500 );
 	}
 }
-
-// async function updateNames( srcFiles, srcFolder, avatarFolder ) {
-// 	let i = -1;
-// 	const newFiles = [];
-// 	for( const f of srcFiles ) {
-// 		i++;
-// 		const newFile = `${ padZero( i, 3 ) }-${ f }`;
-// 		const dstFile = `${ path.basename( f, path.extname( f ) ) }${ ".jpg" }`;
-// 		const dstNewFile = `${ padZero( i, 3 ) }-${ dstFile }`;
-// 		newFiles.push( newFile );
-// 		console.log( "orig:", f, "->", newFile );
-// 		await fs.rename( path.join( srcFolder, f ), path.join( srcFolder, newFile ) );
-// 		const dstExists = await fs.pathExists( path.join( avatarFolder, dstFile ) );
-// 		if ( dstExists ) {
-// 			console.log( "avatar:", dstFile, "->", dstNewFile );
-// 			await fs.rename( path.join( avatarFolder, dstFile ), path.join( avatarFolder, dstNewFile ) );
-// 		}
-// 	}
-// 	return newFiles;
-// }
-
-// async function oldStuff() {
-// 	const avatarFolder = path.join( __dirname, "..", "site", "content", "images", "avatars" );
-// 	const srcFolder = path.join( avatarFolder, "orig" );
-// 	const srcFiles = await gallery.getOrderedFiles( srcFolder, true );
-// 	srcFiles.reverse();
-// 	updateNames( srcFiles, srcFolder, avatarFolder );
-// 	console.log( "converting image files..." );
-// 	for( const image of srcFiles ) {
-// 		await gallery.convertImage( image, srcFolder, avatarFolder, 500 );
-// 	}
-// 	console.log( "" );
-// 	console.log( "getting html..." );
-// 	const output = await gallery.getColumnHtml( avatarFolder, "/content/images/avatars" );
-// 	console.log( output );
-// }
