@@ -92,8 +92,7 @@ function parse( chordProText ) {
 					parsed[section.type] = section.text;
 					break;
 			}
-		}
-		else if ( lines[i].trim().length > 0 ) {
+		} else if ( lines[i].trim().length > 0 ) {
 			if ( lines[i].trim().startsWith( "CCLI" ) ) {
 				while ( i < lines.length ) {
 					if ( lines[i].trim().length > 0 ) {
@@ -121,8 +120,7 @@ const renderChartForPlanningCenter = ( song ) => {
 		if ( nextPageLineCount > MAX_LINES_PER_PAGE ) {
 			chart.push( "PAGE_BREAK" );
 			pageLineCount = 0;
-		}
-		else {
+		} else {
 			pageLineCount = nextPageLineCount;
 		}
 		chart.push( "" );

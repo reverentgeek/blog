@@ -45,8 +45,7 @@ slug: ${ slug }
 		}
 		console.log( "image path:", imgPath );
 		await fs.ensureDir( imgPath );
-	}
-	catch ( err ) {
+	} catch ( err ) {
 		console.log( "Error creating new page" );
 		console.log( err );
 	}

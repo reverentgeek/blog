@@ -1,4 +1,5 @@
-import rg from "eslint-config-reverentgeek"; // eslint-disable-line
+/* eslint-disable-next-line n/no-unpublished-import */
+import rg from "eslint-config-reverentgeek";
 
 export default [
 	{

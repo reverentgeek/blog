@@ -24,8 +24,7 @@ export async function getOrderedFiles( folder, sortByDate = false ) {
 			}
 			return 0;
 		} );
-	}
-	else {
+	} else {
 		images.sort( ( a, b ) => {
 			const n1 = a.f.toLowerCase();
 			const n2 = b.f.toLowerCase();

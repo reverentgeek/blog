@@ -19,8 +19,7 @@ program
 			for ( const f of filesToConvert ) {
 				console.log( f );
 			}
-		}
-		else {
+		} else {
 			console.log( "No files to convert" );
 		}
 	} );
@@ -89,8 +88,7 @@ async function updateFileNames( folder, force ) {
 			if ( force ) {
 				newFiles.push( f );
 			}
-		}
-		else {
+		} else {
 			filesToRename.push( f );
 		}
 	}
