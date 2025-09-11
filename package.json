@@ -10,7 +10,7 @@
 		"build:webpack": "webpack --mode production",
 		"build:eleventy": "ELEVENTY_ENV=production eleventy",
 		"build": "NODE_ENV=production run-s clean build:*",
-		"start": "npm run serve",
+		"start": "pnpm run serve",
 		"lint": "eslint . --ext .cjs --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
 		"post": "node src/utils/post.js",
