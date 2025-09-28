@@ -1,20 +1,18 @@
-/* eslint-disable-next-line n/no-unpublished-import */
-import rg from "eslint-config-reverentgeek";
+import { defineConfig } from "eslint/config"; // eslint-disable-line n/no-unpublished-import
+import rg from "eslint-config-reverentgeek"; // eslint-disable-line n/no-unpublished-import
 
-export default [
+export default defineConfig( [
+	{ ignores: [ "dist/", "**/*.cjs" ] },
 	{
-		ignores: [ "dist/", "**/*.cjs" ]
-	},
-	rg.configs["node-esm"],
-	{
+		extends: [ rg.configs["node-esm"] ]
+	}, {
+		extends: [ rg.configs["node-esm"] ],
 		files: [ "src/utils/**/*.js" ],
 		rules: {
 			"n/no-unpublished-import": "off"
 		}
-	},
-	// Add browser rules for JS files in /src/assets/js
-	{
+	}, {
 		files: [ "src/assets/**/*.js" ],
-		...rg.configs.browser
-	}
-];
+		extends: [ rg.configs.browser ]
+	} ] );
+

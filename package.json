@@ -21,7 +21,7 @@
 		"url": "git+https://github.com/reverentgeek/blog.git"
 	},
 	"engines": {
-		"node": ">=22.0.0"
+		"node": ">=22.16.0"
 	},
 	"keywords": [
 		"eleventy",
@@ -64,7 +64,7 @@
 	"devDependencies": {
 		"commander": "^14.0.1",
 		"eslint": "^9.36.0",
-		"eslint-config-reverentgeek": "^6.2.0",
+		"eslint-config-reverentgeek": "^6.3.0",
 		"fs-extra": "^11.3.2",
 		"jimp": "^1.6.0",
 		"lighthouse": "^12.8.2",
