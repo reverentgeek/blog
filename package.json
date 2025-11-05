@@ -63,7 +63,7 @@
 	},
 	"devDependencies": {
 		"commander": "^14.0.2",
-		"eslint": "^9.39.0",
+		"eslint": "^9.39.1",
 		"eslint-config-reverentgeek": "^6.3.2",
 		"fs-extra": "^11.3.2",
 		"jimp": "^1.6.0",
