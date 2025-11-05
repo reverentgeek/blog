@@ -25,6 +25,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 2025.11.08 | [Open Source Camp](https://www.drupalcampchattanooga.com)<sup>*</sup> | Chattanooga, TN |
 | 2024.11.02 | [Open Source Camp](https://www.drupalcampchattanooga.com) | Chattanooga, TN |
 | 2024.10.16 | [CamundaCon](https://newyork.camundacon.com/)<sup>*</sup> | New York, NY |
 | 2024.07.30 | [THAT Conference](https://thatconference.com/wi/2024/) | Wisconsin Dells, WI |
