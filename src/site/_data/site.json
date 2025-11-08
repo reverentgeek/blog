@@ -54,7 +54,7 @@
 	"twitter_image": null,
 	"twitter_title": null,
 	"twitter_description": null,
-	"codeinjection_head": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-DVT1KMSK18\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n  gtag('config', 'G-DVT1KMSK18');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />",
+	"codeinjection_head": "<script>\n(function(){\n  const GA_ID = 'G-DVT1KMSK18';\n  const loadAnalytics = () => {\n    if (window.__rgGaLoaded) {\n      return;\n    }\n    window.__rgGaLoaded = true;\n    window.dataLayer = window.dataLayer || [];\n    window.gtag = function gtag(){ dataLayer.push(arguments); };\n    window.gtag('js', new Date());\n    window.gtag('config', GA_ID);\n    const script = document.createElement('script');\n    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;\n    script.async = true;\n    document.head.appendChild(script);\n  };\n  const queueIdle = () => {\n    if ('requestIdleCallback' in window) {\n      requestIdleCallback(loadAnalytics, { timeout: 5000 });\n    } else {\n      setTimeout(loadAnalytics, 2000);\n    }\n  };\n  window.addEventListener('load', queueIdle, { once: true });\n  ['scroll','keydown','pointerdown'].forEach((eventName) => {\n    window.addEventListener(eventName, loadAnalytics, { once: true, passive: true });\n  });\n})();\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />",
 	"codeinjection_foot": null,
 	"disqus_id": "reverentgeek"
 }

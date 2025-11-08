@@ -18,6 +18,14 @@
 {% endblock %}
 
 {%- block seo -%}
+  {% set defaultImagePath = heroImage.social.url if heroImage else site.cover_image %}
+  {% if feature_image and feature_image.indexOf('http') == 0 %}
+    {% set pageImageAbsolute = feature_image %}
+    {% set pageImagePath = feature_image %}
+  {% else %}
+    {% set pageImagePath = feature_image or defaultImagePath %}
+    {% set pageImageAbsolute = site.url + pageImagePath %}
+  {% endif %}
   <!--Twitter Card-->
   <meta name="twitter:site" content="{{ site.twitter }}">
   <meta name="twitter:creator" content="{{ site.twitter }}">
@@ -25,24 +33,20 @@
   <meta name="twitter:url" content="{{ site.url + page.url }}">
   <meta name="twitter:title" content="{{ title }} – {{ site.title }}">
   <meta name="twitter:description" content="{{ description }}">
-  {% if feature_image %}
-    <meta name="twitter:image" content="{{ site.url + feature_image }}">
-  {% else %}
-    <meta name="twitter:image" content="{{ site.url + site.cover_image }}">
-  {% endif %}
+  <meta name="twitter:image" content="{{ pageImageAbsolute }}">
 
   <!--Schema-->
   <link rel="author" href="{{ site.author.url }}">
   <link rel="publisher" href="{{ site.url }}">
   <meta itemprop="name" content="{{ title }} – {{ site.title }}">
   <meta itemprop="description" content="{{ description }}">
-  <meta itemprop="image" content="{{ site.url + feature_image }}">
+  <meta itemprop="image" content="{{ pageImageAbsolute }}">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:url" content="{{ site.url + page.url }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }} – {{ site.title }}">
-  <meta property="og:image" content="{{ site.url + feature_image }}">
+  <meta property="og:image" content="{{ pageImageAbsolute }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="{{ site.lang }}">

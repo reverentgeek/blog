@@ -28,14 +28,17 @@
   <link rel="preload" href="/assets/index.css" as="style">
 
   {# Preload hero banner image on homepage for better LCP - use responsive image preload #}
-  {% if page.url == "/" %}
+  {% if page.url == "/" and heroImage %}
   <link rel="preload" as="image"
-    href="/.11ty/image/?src=src%2Fsite%2Fcontent%2Fimages%2Frg-banner-2024-min.png&width=1500&format=avif&via=transform"
-    type="image/avif"
+    href="{{ heroImage.preload.href }}"
+    type="{{ heroImage.preload.type }}"
     fetchpriority="high"
-    imagesrcset="/.11ty/image/?src=src%2Fsite%2Fcontent%2Fimages%2Frg-banner-2024-min.png&width=300&format=avif&via=transform 300w, /.11ty/image/?src=src%2Fsite%2Fcontent%2Fimages%2Frg-banner-2024-min.png&width=600&format=avif&via=transform 600w, /.11ty/image/?src=src%2Fsite%2Fcontent%2Fimages%2Frg-banner-2024-min.png&width=900&format=avif&via=transform 900w, /.11ty/image/?src=src%2Fsite%2Fcontent%2Fimages%2Frg-banner-2024-min.png&width=1200&format=avif&via=transform 1200w, /.11ty/image/?src=src%2Fsite%2Fcontent%2Fimages%2Frg-banner-2024-min.png&width=1500&format=avif&via=transform 1500w"
-    imagesizes="100vw">
+    imagesrcset="{{ heroImage.preload.imagesrcset }}"
+    imagesizes="{{ heroImage.sizes }}">
   {% endif %}
+
+  {% set socialImagePath = heroImage.social.url if heroImage else site.cover_image %}
+  {% set socialImageAbsolute = site.url + socialImagePath %}
 
   {%- block seo -%}
   <!--Twitter Card-->
@@ -45,20 +48,20 @@
   <meta name="twitter:url" content="{{ site.url + page.url }}">
   <meta name="twitter:title" content="{{ title + " – " + site.title if title else title }}">
   <meta name="twitter:description" content="{{ site.description }}">
-  <meta name="twitter:image" content="{{ site.url + site.cover_image }}">
+  <meta name="twitter:image" content="{{ socialImageAbsolute }}">
 
   <!--Schema-->
   <link rel="author" href="{{ site.author.url }}">
   <link rel="publisher" href="{{ site.url }}">
   <meta itemprop="name" content="{{ title + " – " + site.title if title else title }}">
   <meta itemprop="description" content="{{ site.description }}">
-  <meta itemprop="image" content="{{ site.cover_image }}">
+  <meta itemprop="image" content="{{ socialImagePath }}">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:url" content="{{site.url + page.url}}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title + " – " + site.title if title else title }}">
-  <meta property="og:image" content="{{ site.url + site.cover_image }}">
+  <meta property="og:image" content="{{ socialImageAbsolute }}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="{{ site.lang }}">

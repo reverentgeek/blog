@@ -12,8 +12,27 @@
 <header class="px-6 py-2  bg-rgblue/75 flex flex-wrap items-center lg:px-16">
   {% include "partials/navigation.njk" %}
 </header>
-{% if page.url == "/" %}
+{% if page.url == "/" and heroImage %}
   <div class="mb-4 w-full border-6 border-rgblue/15">
-    <img loading="eager" fetchpriority="high" decoding="async" class="w-full" src="{{ site.cover_image }}" alt="Site banner image with a collage of illustrations and doodles. The center image is the ReverentGeek logo with a speech bubble that reads, you don't need permission to be awesome.">
+    <picture>
+      {% if heroImage.srcset.avif %}
+        <source type="image/avif" srcset="{{ heroImage.srcset.avif }}" sizes="{{ heroImage.sizes }}">
+      {% endif %}
+      {% if heroImage.srcset.webp %}
+        <source type="image/webp" srcset="{{ heroImage.srcset.webp }}" sizes="{{ heroImage.sizes }}">
+      {% endif %}
+      <img
+        class="w-full"
+        eleventy:ignore
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        src="{{ heroImage.fallback.url }}"
+        {% if heroImage.srcset.fallback %}srcset="{{ heroImage.srcset.fallback }}"{% endif %}
+        sizes="{{ heroImage.sizes }}"
+        width="{{ heroImage.fallback.width }}"
+        height="{{ heroImage.fallback.height }}"
+        alt="{{ heroImage.alt }}">
+    </picture>
   </div>
 {% endif %}
