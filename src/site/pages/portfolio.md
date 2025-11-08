@@ -60,5 +60,5 @@ Want to use some of my illustrations? Go for it! I simply ask you [give attribut
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
-[![Creative Commons License](/content/images/creativecommons/by-4.0-88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/deed.en)  
+[![Creative Commons License](/content/images/creativecommons/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/deed.en)  
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en).

@@ -1,0 +1,1 @@
+- stop automatically committing changes to the repository
