@@ -10,6 +10,7 @@ node_modules/
 .cache/
 .netlify/
 dist
+!dist/img/
 .env
 .parcel-cache/
 reports/
