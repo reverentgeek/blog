@@ -2,7 +2,7 @@ import { rmSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const distPath = "./dist";
-const preserveFolders = [ "img" ]; // Preserve optimized images
+const preserveFolders = [ "img", "optimized-images" ]; // Preserve optimized images
 
 console.log( "Cleaning dist folder (preserving optimized images)..." );
 

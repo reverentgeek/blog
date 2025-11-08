@@ -29,32 +29,44 @@ export default async function ( config ) {
 	config.addPlugin( pluginRSS );
 
 	// Optimize images with better compression
-	config.addPlugin( eleventyImageTransformPlugin, {
-		// Generate modern formats
-		formats: [ "avif", "webp", "auto" ],
+	// Only run during development or when OPTIMIZE_IMAGES=true is set
+	// This prevents slow builds during deployment since images should be pre-optimized locally
+	if ( process.env.ELEVENTY_ENV === "development" || process.env.OPTIMIZE_IMAGES === "true" ) {
+		config.addPlugin( eleventyImageTransformPlugin, {
+			// Generate modern formats
+			formats: [ "avif", "webp", "auto" ],
 
-		// Generate multiple sizes for responsive images
-		widths: [ 300, 600, 900, 1200, 1500 ],
+			// Generate multiple sizes for responsive images
+			widths: [ 300, 600, 900, 1200, 1500 ],
 
-		// Default attributes for better performance
-		defaultAttributes: {
-			loading: "lazy",
-			decoding: "async",
-			sizes: "auto"
-		},
+			// Store optimized images in src so they can be committed
+			// They'll be copied to dist during build via passthrough
+			outputDir: "./src/site/optimized-images/",
+			urlPath: "/optimized-images/",
 
-		// Optimize WebP compression (balance quality vs size)
-		sharpWebpOptions: {
-			quality: 80,
-			effort: 4 // Higher effort = better compression (0-6)
-		},
+			// Default attributes for better performance
+			defaultAttributes: {
+				loading: "lazy",
+				decoding: "async",
+				sizes: "auto"
+			},
 
-		// Optimize AVIF compression (smaller files, better quality)
-		sharpAvifOptions: {
-			quality: 80,
-			effort: 4
-		}
-	} );
+			// Optimize WebP compression (balance quality vs size)
+			sharpWebpOptions: {
+				quality: 80,
+				effort: 4 // Higher effort = better compression (0-6)
+			},
+
+			// Optimize AVIF compression (smaller files, better quality)
+			sharpAvifOptions: {
+				quality: 80,
+				effort: 4
+			}
+		} );
+	}
+
+	// Always passthrough optimized images (whether generated locally or committed)
+	config.addPassthroughCopy( "./src/site/optimized-images/**" );
 
 	config.addPlugin( navigationPlugin );
 
