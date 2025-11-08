@@ -259,8 +259,6 @@ gallery](/avatars) for more examples.
 /*]]>*/
 </script>
 
-> Disclaimer: Please bear in mind an avatar illustration is a hand-drawn cartoon "likeness" at best, and is not a 100% accurate digital portrait.
-
 After your order, you should receive an email or text confirmation. Please reply to that message with the photo(s) you wish to be drawn, and include eye color or any other details.
 
 Got an idea for something else? Send it to me at [david@reverentgeek.com](mailto:david@reverentgeek.com)! I have drawn custom illustrations and artwork for events, conferences, meet-ups, advertising campaigns, books, and articles.
