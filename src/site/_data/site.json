@@ -21,7 +21,7 @@
 	"twitter": "@reverentgeek",
 	"lang": "en",
 	"timezone": "America/New_York",
-	"ghost_head": "<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />\n",
+	"ghost_head": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-DVT1KMSK18\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n  gtag('config', 'G-DVT1KMSK18');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />\n",
 	"ghost_foot": null,
 	"navigation": [
 		{
@@ -54,7 +54,7 @@
 	"twitter_image": null,
 	"twitter_title": null,
 	"twitter_description": null,
-	"codeinjection_head": "<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />",
+	"codeinjection_head": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-DVT1KMSK18\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n  gtag('config', 'G-DVT1KMSK18');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />",
 	"codeinjection_foot": null,
 	"disqus_id": "reverentgeek"
 }
