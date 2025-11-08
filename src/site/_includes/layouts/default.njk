@@ -19,6 +19,14 @@
   <link rel="icon" type="image/x-icon" href="{{ site.icon }}" />
   {% endif %}
 
+  {# Resource hints for better performance #}
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://{{ site.disqus_id }}.disqus.com">
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+  {# Preload critical CSS #}
+  <link rel="preload" href="/assets/index.css" as="style">
+
   {%- block seo -%}
   <!--Twitter Card-->
   <meta name="twitter:site" content="{{ site.twitter }}">
@@ -47,7 +55,7 @@
   <meta property="article:author" content="{{ site.author.url }}">
   {%- endblock -%}
 
-  <link rel="stylesheet" href="/assets/main.css" />
+  <link rel="stylesheet" href="/assets/index.css" />
   <script src="/assets/index.js" defer></script>
 
   <script>document.documentElement.classList.remove('no-js');</script>

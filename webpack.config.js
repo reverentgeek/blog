@@ -3,10 +3,13 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 const __dirname = import.meta.dirname;
 
 export default {
-	entry: "./src/assets/js/index.js",
+	entry: {
+		index: "./src/assets/js/index.js",
+		prism: "./src/assets/js/prism.js"
+	},
 	output: {
 		path: resolve( __dirname, "dist/assets" ),
-		filename: "index.js"
+		filename: "[name].js"
 	},
 	plugins: [ new MiniCssExtractPlugin() ],
 	module: {

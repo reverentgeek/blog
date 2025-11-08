@@ -1,2 +1,2 @@
 import "../css/styles.css";
-import "prismjs";
+// Prism.js is now loaded conditionally only on blog post pages
