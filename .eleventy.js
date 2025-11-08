@@ -46,14 +46,14 @@ export default async function ( config ) {
 
 		// Optimize WebP compression (balance quality vs size)
 		sharpWebpOptions: {
-			quality: 80,
-			effort: 6 // Higher effort = better compression (0-6)
+			quality: 75,
+			effort: 4 // Higher effort = better compression (0-6)
 		},
 
-		// Optimize AVIF compression (smaller files, better quality)
+		// Optimize AVIF compression (aggressive for LCP)
 		sharpAvifOptions: {
-			quality: 80,
-			effort: 6
+			quality: 50,
+			effort: 4 // Lower quality is fine for AVIF due to its efficiency
 		}
 	} );
 
