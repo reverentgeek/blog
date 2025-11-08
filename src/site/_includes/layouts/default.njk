@@ -27,6 +27,11 @@
   {# Preload critical CSS #}
   <link rel="preload" href="/assets/index.css" as="style">
 
+  {# Preload hero banner image on homepage for better LCP #}
+  {% if page.url == "/" %}
+  <link rel="preload" as="image" href="{{ site.cover_image }}" fetchpriority="high">
+  {% endif %}
+
   {%- block seo -%}
   <!--Twitter Card-->
   <meta name="twitter:site" content="{{ site.twitter }}">
