@@ -28,7 +28,33 @@ export default async function ( config ) {
 	// Assist RSS feed template
 	config.addPlugin( pluginRSS );
 
-	config.addPlugin( eleventyImageTransformPlugin );
+	// Optimize images with better compression
+	config.addPlugin( eleventyImageTransformPlugin, {
+		// Generate modern formats
+		formats: [ "avif", "webp", "auto" ],
+
+		// Generate multiple sizes for responsive images
+		widths: [ 300, 600, 900, 1200, 1500 ],
+
+		// Default attributes for better performance
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+			sizes: "auto"
+		},
+
+		// Optimize WebP compression (balance quality vs size)
+		sharpWebpOptions: {
+			quality: 80,
+			effort: 6 // Higher effort = better compression (0-6)
+		},
+
+		// Optimize AVIF compression (smaller files, better quality)
+		sharpAvifOptions: {
+			quality: 80,
+			effort: 6
+		}
+	} );
 
 	config.addPlugin( navigationPlugin );
 
