@@ -45,7 +45,7 @@
 		"@11ty/eleventy-navigation": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^2.0.4",
 		"@tailwindcss/postcss": "^4.1.17",
-		"autoprefixer": "^10.4.21",
+		"autoprefixer": "^10.4.22",
 		"clean-css": "^5.3.3",
 		"css-loader": "^7.1.2",
 		"eleventy-plugin-broken-links": "^2.2.1",
@@ -73,5 +73,6 @@
 		"probe-image-size": "^7.2.3",
 		"slug": "^11.0.1",
 		"uuid": "^13.0.0"
-	}
+	},
+	"packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
 }
