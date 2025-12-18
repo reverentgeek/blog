@@ -25,6 +25,7 @@ _<sup>*</sup> keynote, <sup>+</sup> workshop_
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 2026.06.02 | [DevSum 2026](https://www.devsum.se/) | Stockholm, Sweden |
 | 2025.12.04 | [Build Stuff](https://buildstuff.events/) | Vilnius, Lithuania |
 | 2025.11.08 | [Open Source Camp](https://www.drupalcampchattanooga.com)<sup>*</sup> | Chattanooga, TN |
 | 2024.11.02 | [Open Source Camp](https://www.drupalcampchattanooga.com) | Chattanooga, TN |
