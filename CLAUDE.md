@@ -1,1 +1,2 @@
 - stop automatically committing changes to the repository
+- always run `pnpm run lint` after adding or updating JavaScript files, and fix any errors

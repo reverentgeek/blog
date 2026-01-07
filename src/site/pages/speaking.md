@@ -20,9 +20,7 @@ slug: speaking
 * List of presentation and workshop [abstracts](/presentations/)
 * [Bio and headshots](/bio)
 
-## Speaking Engagements
-
-_<sup>*</sup> keynote, <sup>+</sup> workshop_
+## Past Speaking Engagements
 
 | Date | Event | Location |
 | --- | --- | --- |

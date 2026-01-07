@@ -159,8 +159,124 @@ pre[class*="language-"] {
 
 /* Page-specific styles */
 
-.page-portfolio .content-body img {
-	max-width: 300px;
+.portfolio-grid {
+	@apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8;
+}
+
+.portfolio-grid .portfolio-item {
+	@apply block rounded-lg overflow-hidden shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-lg;
+}
+
+.portfolio-grid .portfolio-item img {
+	@apply w-full h-56 object-cover;
+}
+
+.portfolio-grid .portfolio-item h3 {
+	@apply text-lg font-semibold p-3 bg-gray-100 m-0;
+}
+
+.portfolio-grid .portfolio-item h3 a {
+	@apply no-underline text-gray-800;
+}
+
+.developer-grid {
+	@apply grid grid-cols-1 md:grid-cols-3 gap-4 mb-8;
+}
+
+.developer-grid .developer-item {
+	@apply flex items-center gap-3 p-4 rounded-lg bg-gray-50 border border-gray-200 no-underline text-gray-800 transition-all duration-200 hover:bg-gray-100 hover:shadow-md;
+}
+
+.developer-grid .developer-item svg {
+	@apply w-8 h-8 flex-shrink-0;
+}
+
+.developer-grid .developer-item span {
+	@apply font-medium;
+}
+
+.cta-button {
+	@apply inline-block px-6 py-3 bg-blue-500 text-white! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-600 hover:shadow-lg;
+}
+
+/* Lightbox styles */
+.lightbox {
+	@apply fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox.active {
+	@apply opacity-100 pointer-events-auto;
+}
+
+.lightbox-content {
+	@apply relative max-w-[90vw] max-h-[90vh] flex items-center justify-center;
+}
+
+.lightbox-content img {
+	@apply max-w-full max-h-[90vh] object-contain;
+}
+
+.lightbox-close {
+	@apply absolute top-4 right-4 text-white text-4xl cursor-pointer z-10 w-12 h-12 flex items-center justify-center rounded-full transition-colors duration-200 hover:bg-white/20;
+}
+
+.lightbox-nav {
+	@apply absolute top-1/2 -translate-y-1/2 text-white text-5xl cursor-pointer z-10 w-14 h-14 flex items-center justify-center rounded-full transition-colors duration-200 hover:bg-white/20 select-none;
+}
+
+.lightbox-prev {
+	@apply left-4;
+}
+
+.lightbox-next {
+	@apply right-4;
+}
+
+.lightbox-counter {
+	@apply absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm;
+}
+
+/* Gallery masonry layout */
+.gallery-grid {
+	column-count: 2;
+	column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+	.gallery-grid {
+		column-count: 3;
+	}
+}
+
+.gallery-grid a {
+	@apply cursor-pointer relative block overflow-hidden rounded-lg shadow-md border-2 border-transparent transition-all duration-200 mb-4;
+	break-inside: avoid;
+}
+
+.gallery-grid a:hover {
+	@apply shadow-xl border-blue-400;
+}
+
+.gallery-grid a img {
+	@apply w-full h-auto block;
+}
+
+/* Single column gallery variant */
+.gallery-single {
+	column-count: 1;
+}
+
+.gallery-single a {
+	@apply cursor-pointer relative block overflow-hidden rounded-lg shadow-md border-2 border-transparent transition-all duration-200 mb-4;
+}
+
+.gallery-single a:hover {
+	@apply shadow-xl border-blue-400;
+}
+
+.gallery-single a img {
+	@apply w-full h-auto block;
 }
 
 /* purgecss end ignore */
