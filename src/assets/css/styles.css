@@ -51,6 +51,15 @@ pre[class*="language-"] {
 	.post {
 		@apply mb-16;
 	}
+	.post-card {
+		@apply p-4 -m-4 rounded-lg transition-all duration-200;
+	}
+	.post-card:hover {
+		@apply bg-gray-50 shadow-md;
+	}
+	.post-card:hover img {
+		@apply shadow-lg;
+	}
 	.post-date {
 		@apply text-gray-500 uppercase text-sm;
 	}

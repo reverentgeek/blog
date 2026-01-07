@@ -1,8 +1,8 @@
 {% macro card(post) %}
   <div class="post">
-    <div class="flex flex-wrap">
+    <div class="post-card flex flex-wrap items-start">
       {% if post.data.feature_image %}
-        <a class="w-full py-4 lg:w-1/3 lg:mb-0" href="{{ post.url }}">
+        <a class="w-full py-4 lg:py-0 lg:w-1/3 lg:mb-0" href="{{ post.url }}">
           <img
             eleventy:widths="300,600"
             class="shadow rounded-lg"
