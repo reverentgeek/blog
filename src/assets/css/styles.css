@@ -99,11 +99,21 @@ pre[class*="language-"] {
 		tbody {
 			tr {
 				td {
-					@apply p-2 border-b-2;
+					@apply p-2 border-b border-gray-200;
 				}
 				&:nth-of-type(even) {
 					td {
-						@apply bg-gray-200;
+						@apply bg-gray-100;
+					}
+				}
+				&:hover {
+					td {
+						@apply bg-gray-50;
+					}
+				}
+				&:last-child {
+					td {
+						@apply border-b-0;
 					}
 				}
 			}
