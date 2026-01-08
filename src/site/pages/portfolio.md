@@ -1,33 +1,29 @@
 ---
 id: 5c461a2dbc58620a44555950
 title: "Developer and Illustration Portfolio"
-feature_image: /content/images/2019/08/portfolio-title-image.jpg
+feature_image: 
 description:
 date: 2019-01-21
 slug: portfolio
 ---
 
-## Developer and Developer Relations
+<a href="/shop/" class="cta-button">Order an avatar!</a>
+<a href="mailto:david@reverentgeek.com" class="cta-button">Commission a custom illustration!</a>
 
 <div class="developer-grid">
   <a href="/devrel-portfolio" class="developer-item">
     <img src="/content/images/portfolio-briefcase.svg" alt="DevRel Portfolio">
-    <span>DevRel Portfolio</span>
+    <h3>DevRel Portfolio</h3>
   </a>
   <a href="/presentations" class="developer-item">
     <img src="/content/images/portfolio-presentation.svg" alt="Presentations">
-    <span>Presentations</span>
+    <h3>Presentations</h3>
   </a>
   <a href="https://github.com/reverentgeek" class="developer-item">
     <img src="/content/images/portfolio-github.svg" alt="GitHub">
-    <span>GitHub</span>
+    <h3>GitHub</h3>
   </a>
 </div>
-
-## Illustration and Artwork
-
-<a href="/shop/" class="cta-button">Order an avatar!</a>
-<a href="mailto:david@reverentgeek.com" class="cta-button">Commission a custom illustration!</a>
 
 <div class="portfolio-grid">
   <a href="/avatars/" class="portfolio-item">
