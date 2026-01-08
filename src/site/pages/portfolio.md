@@ -11,6 +11,14 @@ slug: portfolio
 <a href="mailto:david@reverentgeek.com" class="cta-button">Commission a custom illustration!</a>
 
 <div class="portfolio-grid">
+  <a href="/avatars/" class="portfolio-item">
+    <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="Avatars">
+    <h3>Avatars</h3>
+  </a>
+  <a href="/illustrations/" class="portfolio-item">
+    <img src="/content/images/portfolio/010-live-life-all-caps.jpg" alt="Logos, Stickers and Projects">
+    <h3>Logos, Stickers and Projects</h3>
+  </a>
   <a href="/devrel-portfolio" class="portfolio-item">
     <img src="/content/images/portfolio-briefcase.svg" alt="DevRel Portfolio">
     <h3>DevRel Portfolio</h3>
@@ -22,14 +30,6 @@ slug: portfolio
   <a href="https://github.com/reverentgeek" class="portfolio-item">
     <img src="/content/images/portfolio-github.svg" alt="GitHub">
     <h3>GitHub</h3>
-  </a>
-  <a href="/avatars/" class="portfolio-item">
-    <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="Avatars">
-    <h3>Avatars</h3>
-  </a>
-  <a href="/illustrations/" class="portfolio-item">
-    <img src="/content/images/portfolio/010-live-life-all-caps.jpg" alt="Logos, Stickers and Projects">
-    <h3>Logos, Stickers and Projects</h3>
   </a>
   <a href="/31-days-of-inspiration-january-2019/" class="portfolio-item">
     <img src="/content/images/2019/01/31DOI-19-a-a-milne-3.png" alt="31 Days of Inspiration">
