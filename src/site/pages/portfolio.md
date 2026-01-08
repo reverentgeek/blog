@@ -10,7 +10,7 @@ slug: portfolio
 <a href="/shop/" class="cta-button">Order an avatar!</a>
 <a href="mailto:david@reverentgeek.com" class="cta-button">Commission a custom illustration!</a>
 
-<div class="developer-grid">
+<div class="portfolio-grid">
   <a href="/devrel-portfolio" class="developer-item">
     <img src="/content/images/portfolio-briefcase.svg" alt="DevRel Portfolio">
     <h3>DevRel Portfolio</h3>
@@ -23,9 +23,6 @@ slug: portfolio
     <img src="/content/images/portfolio-github.svg" alt="GitHub">
     <h3>GitHub</h3>
   </a>
-</div>
-
-<div class="portfolio-grid">
   <a href="/avatars/" class="portfolio-item">
     <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="Avatars">
     <h3>Avatars</h3>
