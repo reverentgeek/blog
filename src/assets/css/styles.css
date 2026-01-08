@@ -200,12 +200,16 @@ pre[class*="language-"] {
 	@apply w-8 h-8 flex-shrink-0;
 }
 
+.developer-grid .developer-item img {
+	@apply w-6 h-6 flex-shrink-0;
+}
+
 .developer-grid .developer-item span {
 	@apply font-medium;
 }
 
 .cta-button {
-	@apply inline-block px-6 py-3 bg-blue-500 text-white! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-600 hover:shadow-lg;
+	@apply inline-block px-6 py-3 mr-3 mb-3 bg-blue-500 text-white! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-600 hover:shadow-lg;
 }
 
 /* Lightbox styles */
