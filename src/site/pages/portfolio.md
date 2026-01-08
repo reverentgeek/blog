@@ -11,15 +11,15 @@ slug: portfolio
 <a href="mailto:david@reverentgeek.com" class="cta-button">Commission a custom illustration!</a>
 
 <div class="portfolio-grid">
-  <a href="/devrel-portfolio" class="developer-item">
+  <a href="/devrel-portfolio" class="portfolio-item">
     <img src="/content/images/portfolio-briefcase.svg" alt="DevRel Portfolio">
     <h3>DevRel Portfolio</h3>
   </a>
-  <a href="/presentations" class="developer-item">
+  <a href="/presentations" class="portfolio-item">
     <img src="/content/images/portfolio-presentation.svg" alt="Presentations">
     <h3>Presentations</h3>
   </a>
-  <a href="https://github.com/reverentgeek" class="developer-item">
+  <a href="https://github.com/reverentgeek" class="portfolio-item">
     <img src="/content/images/portfolio-github.svg" alt="GitHub">
     <h3>GitHub</h3>
   </a>
