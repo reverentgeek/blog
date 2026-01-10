@@ -31,8 +31,8 @@ export async function getOrderedFiles( folder, sortByDate = false ) {
 			if ( n1 > n2 ) {
 				return -1;
 			}
-			if ( a.t < b.t ) {
-				return -1;
+			if ( n1 < n2 ) {
+				return 1;
 			}
 			return 0;
 		} );
@@ -82,6 +82,9 @@ export async function getFlexHtml( folder, htmlPath = "/content/images/avatars",
 	const imageHtml = [];
 	const imageFiles = await getOrderedFiles( folder );
 	for ( const imageFile of imageFiles ) {
+		if ( !/^\d{3}-/.test( imageFile ) ) {
+			continue;
+		}
 		index++;
 		const src = join( folder, imageFile );
 		const s = await fs.createReadStream( src );
