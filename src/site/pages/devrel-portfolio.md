@@ -33,6 +33,7 @@ The following links are highlights from content, talks, projects, interviews, an
 
 ## Code Samples
 
+* [Plaidypus](https://github.com/plaid/core-exchange-node-example): Complete end-to-end reference app for Plaid data partners running at [app.plaidypus.dev](https://app.plaidypus.dev/).
 * [Electron Teleprompter](https://github.com/reverentgeek/electron-teleprompter)
 * [Node Bacon Generator](https://github.com/reverentgeek/node-bacon-generator)
 * [Multi-Player Trivia Game](https://github.com/reverentgeek/ahot-trivia-game)
