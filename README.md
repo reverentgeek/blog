@@ -22,4 +22,4 @@ node src/utils/avatars.js html [folder]
 
 ## Copyright & License
 
-Copyright (c) 2010-2022 David Neal - Released under the [MIT license](LICENSE).
+Copyright (c) 2010-2026 David Neal - Released under the [MIT license](LICENSE).
