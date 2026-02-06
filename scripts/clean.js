@@ -1,4 +1,4 @@
-import { rmSync, readdirSync, statSync } from "node:fs";
+import { rmSync, readdirSync, statSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
 const distPath = "./dist";
@@ -37,3 +37,5 @@ try {
 		throw error;
 	}
 }
+
+mkdirSync( "dist/assets", { recursive: true } );

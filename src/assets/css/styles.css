@@ -1,5 +1,5 @@
 @import './fonts.css';
-@import '../../../node_modules/prismjs/themes/prism-okaidia.css';
+@import 'prismjs/themes/prism-okaidia.css';
 @import 'tailwindcss';
 
 @theme {
