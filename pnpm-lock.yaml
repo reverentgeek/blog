@@ -70,8 +70,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0(jiti@2.6.1)
       eslint-config-reverentgeek:
-        specifier: ^6.3.9
-        version: 6.3.9(eslint@10.0.0(jiti@2.6.1))(typescript@5.8.2)
+        specifier: ^7.0.0
+        version: 7.0.0(eslint@10.0.0(jiti@2.6.1))(typescript@5.8.2)
       fs-extra:
         specifier: ^11.3.3
         version: 11.3.3
@@ -346,6 +346,15 @@ packages:
   '@eslint/core@1.1.0':
     resolution: {integrity: sha512-/nr9K9wkr3P1EzFTdFdMoLuo1PmIxjmwvPozwoSodjNBdefGujXQUF93u1DDZpEaTuDvMsIQddsd35BwtrW9Xw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/js@10.0.1':
+    resolution: {integrity: sha512-zeR9k5pd4gxjZ0abRoIaxdc7I3nDktoXZk2qOv9gCNWx3mVwEn32VRhyLaRsDiJjTs0xq/T8mfPtyuXu7GWBcA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+    peerDependencies:
+      eslint: ^10.0.0
+    peerDependenciesMeta:
+      eslint:
+        optional: true
 
   '@eslint/object-schema@3.0.1':
     resolution: {integrity: sha512-P9cq2dpr+LU8j3qbLygLcSZrl2/ds/pUpfnHNNuk5HW7mnngHs+6WSq5C9mO3rqRX8A1poxqLTC9cu0KOyJlBg==}
@@ -1626,9 +1635,11 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-reverentgeek@6.3.9:
-    resolution: {integrity: sha512-yd3kNKwUXRJpEhRM2cjKp77sO19y3ORyZwZUuxhQ2453AUfp4CpArRL2TX+muyv+iKqLq5m+ySoZLBL/YuG7aA==}
+  eslint-config-reverentgeek@7.0.0:
+    resolution: {integrity: sha512-V3p80+w2ViOKaouZR3KiJVwkXNTU5p2Y+HTrg0KI1xtHn+bzxL1QSbNPSoxygVeIE8m0/5StkuwN4vSZg56jiA==}
     engines: {node: '>=18.0.0'}
+    peerDependencies:
+      eslint: '>=10.0.0'
 
   eslint-plugin-es-x@7.8.0:
     resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
@@ -3774,6 +3785,10 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
+  '@eslint/js@10.0.1(eslint@10.0.0(jiti@2.6.1))':
+    optionalDependencies:
+      eslint: 10.0.0(jiti@2.6.1)
+
   '@eslint/object-schema@3.0.1': {}
 
   '@eslint/plugin-kit@0.6.0':
@@ -5240,13 +5255,14 @@ snapshots:
       eslint: 10.0.0(jiti@2.6.1)
       semver: 7.7.4
 
-  eslint-config-reverentgeek@6.3.9(eslint@10.0.0(jiti@2.6.1))(typescript@5.8.2):
+  eslint-config-reverentgeek@7.0.0(eslint@10.0.0(jiti@2.6.1))(typescript@5.8.2):
     dependencies:
+      '@eslint/js': 10.0.1(eslint@10.0.0(jiti@2.6.1))
       '@stylistic/eslint-plugin': 5.7.1(eslint@10.0.0(jiti@2.6.1))
+      eslint: 10.0.0(jiti@2.6.1)
       eslint-plugin-n: 17.23.2(eslint@10.0.0(jiti@2.6.1))(typescript@5.8.2)
       globals: 17.3.0
     transitivePeerDependencies:
-      - eslint
       - typescript
 
   eslint-plugin-es-x@7.8.0(eslint@10.0.0(jiti@2.6.1)):
