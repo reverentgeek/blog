@@ -6,7 +6,7 @@ description: "The Monster at the end of this book..."
 date: 2018-05-25
 tags: posts
 slug: the-monster-at-the-end-of-this-book
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 The Monster at the end of this book...

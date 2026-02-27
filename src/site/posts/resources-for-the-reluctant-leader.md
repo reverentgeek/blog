@@ -6,7 +6,7 @@ description: "Here are some resources from my \"Guide to Leadership for the Relu
 date: 2017-07-29
 tags: posts
 slug: resources-for-the-reluctant-leader
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Here are some resources from my "Guide to Leadership for the Reluctant Leader" keynote presented at [Scenic City Summit 2017](https://www.sceniccitysummit.com/).

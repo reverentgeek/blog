@@ -6,7 +6,7 @@ description: "Early in my career, I worked under a manager who exemplified the D
 date: 2017-07-31
 tags: posts
 slug: life-is-too-short
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Early in my career, I worked under a manager who exemplified the Dilbert Principle:

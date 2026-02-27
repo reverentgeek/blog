@@ -6,7 +6,7 @@ description: "Ladies and gentlemen, I present to you David Giard, the hardest wo
 date: 2017-05-08
 tags: posts
 slug: community-spotlight-david-giard
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Ladies and gentlemen, I present to you [David Giard](https://twitter.com/davidgiard), the hardest working man in developer relations! Like Visa, he is everywhere you want to be.

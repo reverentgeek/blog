@@ -1,33 +1,33 @@
-{% if pagination.previousPageHref or pagination.nextPageHref %}
+@if(pagination.previousPageHref || pagination.nextPageHref)
   <nav class="flex flex-col items-center gap-4" role="navigation" aria-label="Pagination Navigation">
     <div class="flex flex-row justify-center items-center">
-      {% if page.permalink != pagination.previousPageHref %}
+      @if(page.permalink !== pagination.previousPageHref)
         <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold mx-2 py-2 px-4 rounded-full transition-colors duration-200" href="{{ pagination.previousPageHref }}">
           <span class="hidden sm:inline">Prev page</span>
           <span class="sm:hidden">&larr;</span>
         </a>
-      {% else %}
+      @else
         <span class="bg-gray-400 text-white font-bold mx-2 py-2 px-4 rounded-full cursor-not-allowed">
           <span class="hidden sm:inline">Prev page</span>
           <span class="sm:hidden">&larr;</span>
         </span>
-      {% endif %}
+      @end
 
       <span class="mx-4 text-gray-600 font-medium">
         Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}
       </span>
 
-      {% if page.permalink != pagination.nextPageHref %}
+      @if(page.permalink !== pagination.nextPageHref)
         <a class="bg-blue-600 hover:bg-blue-700 text-white font-bold mx-2 py-2 px-4 rounded-full transition-colors duration-200" href="{{ pagination.nextPageHref }}">
           <span class="hidden sm:inline">Next page</span>
           <span class="sm:hidden">&rarr;</span>
         </a>
-      {% else %}
+      @else
         <span class="bg-gray-400 text-white font-bold mx-2 py-2 px-4 rounded-full cursor-not-allowed">
           <span class="hidden sm:inline">Next page</span>
           <span class="sm:hidden">&rarr;</span>
         </span>
-      {% endif %}
+      @end
     </div>
   </nav>
-{% endif %}
+@end

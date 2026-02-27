@@ -6,7 +6,7 @@ description: "My most embarrassing mistakes as a programmer, in no particular or
 date: 2019-10-30
 tags: posts
 slug: my-most-embarrassing-mistakes-as-a-programmer
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 My most embarrassing mistakes as a programmer, in no particular order:

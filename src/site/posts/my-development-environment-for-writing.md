@@ -6,7 +6,7 @@ description: "I love to code, but I also spend a good bit of time writing. I wri
 date: 2015-04-15
 tags: posts
 slug: my-development-environment-for-writing
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I love to code, but I also spend a good bit of time writing. I write blog posts (like this one), tutorials, documentation, and a lot of notes. Chances are you also spend time writing, or need to do more of it. We all love documentation, right?

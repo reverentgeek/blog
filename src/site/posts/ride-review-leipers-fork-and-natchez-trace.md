@@ -6,7 +6,7 @@ description: "I've been in Franklin, TN this week for meetings at LeanKit. I mad
 date: 2015-04-25
 tags: posts
 slug: ride-review-leipers-fork-and-natchez-trace
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I've been in Franklin, TN this week for meetings at [LeanKit](http://leankit.com). I made the decision to stay through the weekend before heading off to [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY.

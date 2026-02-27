@@ -6,7 +6,7 @@ description: "Got a fresh Node.js application to deploy? Awesome! Microsoft Azur
 date: 2015-03-18
 tags: posts
 slug: hosting-node-js-on-microsoft-azure
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Got a fresh Node.js application to deploy? Awesome! Microsoft Azure has several options for hosting Node.js applications. In this article, we will be looking specifically at deploying to Windows Server websites and virtual machines.

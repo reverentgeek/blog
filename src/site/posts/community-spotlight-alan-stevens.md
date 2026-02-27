@@ -6,7 +6,7 @@ description: "It is my pleasure to present this community tribute to the beloved
 date: 2017-06-15
 tags: posts
 slug: community-spotlight-alan-stevens
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 _It is my pleasure to present this community tribute to the beloved Alan Stevens, written by guest author [Matt Groves](https://twitter.com/mgroves)._

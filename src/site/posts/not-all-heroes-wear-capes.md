@@ -6,7 +6,7 @@ description: "On the morning of November 25, 1982, we all piled in our car and m
 date: 2018-03-06
 tags: posts
 slug: not-all-heroes-wear-capes
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 On the morning of November 25, 1982, we all piled in our car and made the 2-hour trip to my Aunt and Uncle's house near Atlanta, GA. It's Thanksgiving. As was tradition on my mother's side of the family, we joined hands, gave thanks for our blessings, and enjoyed a meal together.

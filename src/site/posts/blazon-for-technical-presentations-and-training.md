@@ -6,7 +6,7 @@ description: "I recently switched to using Blazon for all my presentations, and 
 date: 2014-05-01
 tags: posts
 slug: blazon-for-technical-presentations-and-training
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I recently switched to using [Blazon](https://presentboldly.com/) for all my presentations, and I couldn't be happier. Here are some of my favorite features:

@@ -1,15 +1,9 @@
 ---
 permalink: 404.html
+layout: layouts/default.edge
+title: Error 404
 ---
 
-{% extends 'layouts/default.njk' %}
-
-{% set codeinjection_head = doc.codeinjection_head %}
-{% set codeinjection_foot = doc.codeinjection_foot %}
-
-{% set title = "Error 404" %}
-
-{% block content %}
     <article class="content text-center">
         <h1 class="text-3xl font-medium">Oh Noes!</h1>
 		<figure class="post-feature-image">
@@ -19,4 +13,3 @@ permalink: 404.html
 			<p><a href="/">Return home</a> to start over!</p>
 		</section>
     </article>
-{% endblock %}

@@ -6,7 +6,7 @@ description: "Last night at the Nashville .NET User Group we ended the evening w
 date: 2011-11-11
 tags: posts
 slug: brand-yourself
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Last night at the [Nashville .NET User Group](http://nashdotnet.org/) we ended the evening with a terrific discussion on careers. We had a great panel of developers, entrepreneurs, and recruiters. It was nice to hear the transparency between developers and recruiters. Here are some quick highlights:

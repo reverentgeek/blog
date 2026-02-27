@@ -6,7 +6,7 @@ description: "Scott has been one of my community heroes for many, many years. I'
 date: 2017-07-10
 tags: posts
 slug: community-spotlight-scott-hanselman
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Scott has been one of my community heroes for many, many years. I've long admired his writing skills, public speaking, humor, podcasts, and all the other outlets of his talents. Scott has inspired me to endeavor many things in the developer community, including writing, speaking, and being active on social media.

@@ -6,7 +6,7 @@ description: You can find me on Mastodon using @reverentgeek@reverentgeek.com! H
 date: 2023-01-02
 tags: posts
 slug: configure-eleventy-to-host-a-custom-mastodon-alias
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 You can find me on Mastodon using `@reverentgeek@reverentgeek.com`! Here's how I did it using 11ty and Netlify!

@@ -1,0 +1,17 @@
+---
+layout: layouts/default.edge
+---
+  <article class="content page-{{ slug }}">
+    <h1 class="text-4xl font-bold mt-4 mb-4">{{ title }}</h1>
+    @if(feature_image)
+      <figure class="post-feature-image">
+        <img fetchpriority="high" src="{{ feature_image }}" alt="{{ title }}" class="mx-auto">
+      </figure>
+    @end
+    <section class="content-body">
+      {{{ content }}}
+    </section>
+  </article>
+  @if(script)
+    <script src="/assets/{{ script }}" type="module"></script>
+  @end

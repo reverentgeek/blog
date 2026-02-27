@@ -6,7 +6,7 @@ description: "I've been a \"fat kid\" all my life. In school, I didn't play spor
 date: 2014-07-17
 tags: posts
 slug: im-not-nearly-the-man-i-used-to-be
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I've been a "fat kid" all my life. In school, I didn't play sports, and regularly felt humiliated in gym class. As an adult, my mass has been on an upward trend. Sure, I've been able to get my weight under control a few times. But, the weight loss came at extreme, unsustainable measures, and the joy never lasted long. Add the fact that my family has a history of diabetes, and... well, you get the picture.

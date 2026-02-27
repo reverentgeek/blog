@@ -11,19 +11,19 @@ metadata:
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ site.url + page.url }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ dateToRfc3339(getNewestCollectionItemDate(collections.posts)) }}</updated>
   <id>{{ site.url }}</id>
   <author>
-    <name>{{ collections.authors[0].name }}</name>
+    <name>{{ site.author.name }}</name>
   </author>
-  {%- for post in collections.posts %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+  @each(post in collections.posts)
+  @let(absolutePostUrl = absoluteUrl(url(post.url), site.url))
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <updated>{{ dateToRfc3339(post.date) }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content type="html">{{ htmlToAbsoluteUrls(post.templateContent, absolutePostUrl) }}</content>
   </entry>
-  {%- endfor %}
+  @end
 </feed>

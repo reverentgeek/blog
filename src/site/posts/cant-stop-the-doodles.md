@@ -6,7 +6,7 @@ description: "Ever since I discovered what an impact hand-drawn illustrations ca
 date: 2016-10-17
 tags: posts
 slug: cant-stop-the-doodles
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Ever since I discovered [what an impact hand-drawn illustrations can have on an audience](https://medium.com/@reverentgeek/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301#.gxhgacwox), I've been using them more and more in all of my presentations. It's become so much fun, I've been drawing more as a hobby, too.

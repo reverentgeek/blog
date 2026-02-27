@@ -6,7 +6,7 @@ description: "There's not a word yet, for old friends who just met. -- Gonzo"
 date: 2011-11-30
 tags: posts
 slug: fresh-brewed-code
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 > There's not a word yet, for old friends who just met. -- Gonzo

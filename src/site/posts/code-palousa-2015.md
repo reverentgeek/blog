@@ -6,7 +6,7 @@ description: "Last week I had the privilege of being a part of Code PaLOUsa in L
 date: 2015-05-04
 tags: posts
 slug: code-palousa-2015
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Last week I had the privilege of being a part of [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but this was my first time attending as a speaker and a sponsor.

@@ -3,12 +3,13 @@ import pluginRSS from "@11ty/eleventy-plugin-rss";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import navigationPlugin from "@11ty/eleventy-navigation";
 import brokenLinksPlugin from "eleventy-plugin-broken-links";
+import edgeJsPlugin from "eleventy-plugin-edgejs";
 
 import htmlMinTransform from "./src/utils/transforms/html-min-transform.js";
 
 export default async function ( config ) {
 	const isDev = process.env?.NODE_ENV === "development";
-	config.addNunjucksFilter( "isSiteMapSafe", function ( url ) {
+	config.addFilter( "isSiteMapSafe", function ( url ) {
 		const isSafe = !url.startsWith( "/_" );
 		return isSafe.toString();
 	} );
@@ -28,6 +29,18 @@ export default async function ( config ) {
 
 	// Assist RSS feed template
 	config.addPlugin( pluginRSS );
+
+	// Re-register RSS plugin filters as universal filters (the plugin uses addNunjucksFilter)
+	const { createRequire } = await import( "module" );
+	const require = createRequire( import.meta.url );
+	const getNewestCollectionItemDate = require( "@11ty/eleventy-plugin-rss/src/getNewestCollectionItemDate.js" );
+	const dateToRfc3339 = require( "@11ty/eleventy-plugin-rss/src/dateRfc3339.js" );
+	const absoluteUrl = require( "@11ty/eleventy-plugin-rss/src/absoluteUrl.js" );
+	const htmlToAbsoluteUrls = require( "@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls.js" );
+	config.addFilter( "getNewestCollectionItemDate", getNewestCollectionItemDate );
+	config.addFilter( "dateToRfc3339", dateToRfc3339 );
+	config.addFilter( "absoluteUrl", absoluteUrl );
+	config.addFilter( "htmlToAbsoluteUrls", htmlToAbsoluteUrls );
 
 	// Optimize images with better compression
 	// Images are cached in dist/img/ - commit this directory to avoid reprocessing on deploy
@@ -89,6 +102,9 @@ export default async function ( config ) {
 		return new Date().getFullYear();
 	} );
 
+	// Register Edge.js plugin after all filters/shortcodes
+	config.addPlugin( edgeJsPlugin );
+
 	// Don't ignore the same files ignored in the git repo
 	config.setUseGitIgnore( false );
 
@@ -100,8 +116,8 @@ export default async function ( config ) {
 			output: "dist"
 		},
 		passthroughFileCopy: true,
-		templateFormats: [ "njk", "md", "txt", "html" ],
-		htmlTemplateEngine: "njk",
-		markdownTemplateEngine: "njk"
+		templateFormats: [ "edge", "md", "txt", "html" ],
+		htmlTemplateEngine: "edge",
+		markdownTemplateEngine: "edge"
 	};
 }

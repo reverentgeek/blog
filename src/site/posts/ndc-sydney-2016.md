@@ -6,7 +6,7 @@ description: "Earlier this month I had the incredible privilege of speaking at N
 date: 2016-08-10
 tags: posts
 slug: ndc-sydney-2016
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Earlier this month I had the incredible privilege of speaking at [NDC Sydney](http://ndcsydney.com/)! Australia has been at the top of my most-wanted-to-visit places since I was young. I can't begin to tell you how excited I was to have this opportunity!

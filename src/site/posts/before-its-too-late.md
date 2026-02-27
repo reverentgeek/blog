@@ -6,7 +6,7 @@ description: "There are many life events when people are paid tribute. Job chang
 date: 2017-04-13
 tags: posts
 slug: before-its-too-late
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths.

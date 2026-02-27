@@ -6,7 +6,7 @@ description: "I'm excited to announce that my \"Introduction to RavenDB: NoSQL i
 date: 2012-02-28
 tags: posts
 slug: intro-to-ravendb-presentation
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I'm excited to announce that my "Introduction to RavenDB: NoSQL is Rapping at Your Door" presentation that I gave at [CodeMash 2012](http://codemash.org/) was recorded by InfoQ is [now available](http://www.infoq.com/presentations/Introducing-RavenDB-NoSQL-is-Rapping-at-Your-Door).

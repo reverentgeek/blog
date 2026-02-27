@@ -1,0 +1,17 @@
+<svg
+	@if(width)
+	width="{{ width }}"
+	@end
+	@if(height)
+	height="{{ height }}"
+	@end
+    class="{{ cls }}"
+    role="img"
+    aria-labelledby="{{ id || 'link' }}-title"
+>
+    <title id="{{ id || 'link' }}-title">{{ id || 'link' }}</title>
+    <use
+        href="#{{ id || 'link' }}"
+        fill="{{ color || 'currentColor' }}"
+    ></use>
+</svg>

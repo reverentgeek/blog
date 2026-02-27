@@ -6,7 +6,7 @@ description: "It is my pleasure to present this community tribute to Brendan For
 date: 2017-11-01
 tags: posts
 slug: community-spotlight-brendan-forster
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 _It is my pleasure to present this community tribute to Brendan Forster, written by guest author [Mord Zuber](https://twitter.com/mordzuber)._

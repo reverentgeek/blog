@@ -6,7 +6,7 @@ description: "Oh Great Cloud,"
 date: 2017-12-01
 tags: posts
 slug: developers-serenity-prayer
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Oh Great Cloud,

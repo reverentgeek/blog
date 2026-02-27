@@ -12,34 +12,33 @@
     <!-- Desktop Navigation (centered) -->
     <nav class="hidden md:flex flex-1 justify-center">
       <div class="flex space-x-8">
-        {% for item in site.navigation %}
-          <a class="px-3 py-2 font-bold text-base border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg" {% if
-    page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
+        @each(item in site.navigation)
+          <a class="px-3 py-2 font-bold text-base border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
             {{ item.label }}
           </a>
-        {% endfor %}
+        @end
       </div>
     </nav>
 
     <!-- Desktop Social Media Links -->
     <div class="hidden md:flex items-center space-x-4 flex-shrink-0">
       <a title="BlueSky" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-bluesky hover:bg-bluesky/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-bluesky" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer">
-        {{ icon({ id: 'bluesky', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+        @!component('components/icon', { id: 'bluesky', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
       </a>
       <a title="X (Twitter)" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-xtwitter hover:bg-xtwitter/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-xtwitter" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-        {{ icon({ id: 'x', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+        @!component('components/icon', { id: 'x', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
       </a>
       <a title="GitHub" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-github hover:bg-github/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-github" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-        {{ icon({ id: 'github', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+        @!component('components/icon', { id: 'github', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
       </a>
       <a title="Instagram" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-instagram hover:bg-instagram/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-instagram" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
-        {{ icon({ id: 'instagram', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+        @!component('components/icon', { id: 'instagram', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
       </a>
     </div>
 
     <div class="md:hidden">
       <label for="mobile-menu-toggle" class="cursor-pointer">
-        {{ icon({ id: 'burger', class: "text-white", width: "20", height: "20" }) }}
+        @!component('components/icon', { id: 'burger', cls: 'text-white', width: '20', height: '20' })
       </label>
     </div>
   </div>
@@ -49,27 +48,26 @@
   <div id="mobile-menu" class="md:hidden hidden">
     <div class="flex flex-col space-y-1 py-2">
       <!-- Navigation Links -->
-      {% for item in site.navigation %}
-        <a class="px-2 py-1 transition-colors font-bold text-base rounded-full bg-white/30 text-nowrap hover:border-l-white" {% if
-    page.url==item.url %} aria-current="page" {% endif %} href="{{ item.url }}">
+      @each(item in site.navigation)
+        <a class="px-2 py-1 transition-colors font-bold text-base rounded-full bg-white/30 text-nowrap hover:border-l-white" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
           {{ item.label }}
         </a>
-      {% endfor %}
+      @end
 
       <!-- Social Media Links -->
       <div class="pt-2 mt-2">
         <div class="flex justify-center space-x-6">
           <a title="BlueSky" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-bluesky hover:bg-bluesky/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-bluesky" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer">
-            {{ icon({ id: 'bluesky', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+            @!component('components/icon', { id: 'bluesky', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
           </a>
           <a title="X (Twitter)" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-xtwitter hover:bg-xtwitter/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-xtwitter" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-            {{ icon({ id: 'x', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+            @!component('components/icon', { id: 'x', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
           </a>
           <a title="GitHub" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-github hover:bg-github/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-github" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-            {{ icon({ id: 'github', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+            @!component('components/icon', { id: 'github', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
           </a>
           <a title="Instagram" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-instagram hover:bg-instagram/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-instagram" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
-            {{ icon({ id: 'instagram', class: "text-white w-8 h-8 md:w-6 md:h-6"  }) }}
+            @!component('components/icon', { id: 'instagram', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
           </a>
         </div>
       </div>

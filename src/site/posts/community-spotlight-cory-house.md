@@ -6,7 +6,7 @@ description: "Perhaps you've seen one of Cory's Pluralsight courses. Or, sat in 
 date: 2017-04-12
 tags: posts
 slug: community-spotlight-cory-house
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Perhaps you've seen one of Cory's [Pluralsight courses](https://www.pluralsight.com/authors/cory-house). Or, sat in one of his talks. Perhaps you've run across his [react-slingshot](https://github.com/coryhouse/react-slingshot) React + Redux starter kit.

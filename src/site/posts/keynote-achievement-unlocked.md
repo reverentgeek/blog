@@ -6,7 +6,7 @@ description: "Last week I had the privilege of speaking at Music City Agile and 
 date: 2016-08-22
 tags: posts
 slug: keynote-achievement-unlocked
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Last week I had the privilege of speaking at [Music City Agile](http://www.musiccityagile.org/) and [Music City Code](http://www.musiccitycode.com/). I had an absolute blast hanging out with old friends, and "old friends who've just met."

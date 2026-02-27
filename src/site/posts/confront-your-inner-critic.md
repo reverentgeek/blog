@@ -6,7 +6,7 @@ description: "Have you ever felt inadequate? Like a fraud? Like you don't belong
 date: 2018-03-02
 tags: posts
 slug: confront-your-inner-critic
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Have you ever felt inadequate? Like a fraud? Like you don't belong where you are? That someone is going to expose you for who you really are?

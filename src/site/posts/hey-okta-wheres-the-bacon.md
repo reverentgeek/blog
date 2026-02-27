@@ -6,7 +6,7 @@ description: "I am so excited to announce I have joined Okta's developer relatio
 date: 2018-09-06
 tags: posts
 slug: hey-okta-wheres-the-bacon
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I am so excited to announce I have joined [Okta](https://developer.okta.com/)'s developer relations team as a Senior Developer Advocate! My focus is on all the JavaScripts: Node.js, Vue, React, and a bazillion other things!

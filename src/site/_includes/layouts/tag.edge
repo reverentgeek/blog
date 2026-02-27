@@ -1,0 +1,16 @@
+---
+layout: layouts/default.edge
+---
+    <header class="tag-header">
+        <h1>{{ tag.name }}</h1>
+        <p>{{{ content }}}</p>
+    </header>
+    <section class="post-feed">
+        @if(tag.posts)
+            @each(post in tag.posts)
+                @!component('components/card', { post: post })
+            @end
+        @else
+            <p>No posts to be found</p>
+        @end
+    </section>

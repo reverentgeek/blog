@@ -6,7 +6,7 @@ description: "You might be thinking..."
 date: 2017-10-10
 tags: posts
 slug: reflecting-on-the-past-five-years
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 You might be thinking...

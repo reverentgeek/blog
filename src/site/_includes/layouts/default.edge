@@ -1,0 +1,136 @@
+{{-- Compute SEO variables with defaults --}}
+@let(seoDescription = description || site.description)
+@let(seoImage = site.url + (heroImage ? heroImage.social.url : site.cover_image))
+@let(seoTwitterCreator = site.twitter)
+@let(seoCardType = 'summary_large_image')
+@let(seoArticleAuthor = site.author ? site.author.url : site.url)
+@let(seoAuthorLink = site.author ? site.author.url : '')
+
+{{-- Override for tag pages --}}
+@if(tag)
+  @assign(seoDescription = tag.description || '')
+  @assign(seoImage = tag.feature_image || '')
+  @assign(seoArticleAuthor = site.url)
+  @assign(seoAuthorLink = '')
+{{-- Override for author pages --}}
+@elseif(author)
+  @assign(seoDescription = content || '')
+  @assign(seoImage = author.profile_image || '')
+  @assign(seoTwitterCreator = author.twitter || site.twitter)
+  @assign(seoCardType = 'summary')
+  @assign(seoArticleAuthor = site.url)
+  @assign(seoAuthorLink = author.website || '')
+{{-- Override for post/page with feature_image --}}
+@elseif(feature_image)
+  @if(feature_image.startsWith('http'))
+    @assign(seoImage = feature_image)
+  @else
+    @assign(seoImage = site.url + feature_image)
+  @end
+  @assign(seoDescription = description || site.description)
+  @assign(seoArticleAuthor = site.url)
+@end
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="no-js">
+
+<head>
+  <title>
+@if(title)~
+{{ title }} – {{ site.title }}
+@elseif(tag && tag.name)~
+{{ tag.name }} – {{ site.title }}
+@elseif(author && author.name)~
+{{ author.name }} – {{ site.title }}
+@else~
+{{ site.title }} – {{ site.description }}
+@end~
+  </title>
+  <meta name="description" content="{{ seoDescription }}">
+  <meta name="robots" content="index,follow">
+  <meta name="generator" content="Eleventy">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}"
+    href="{{ site.url }}/feed.xml" />
+  @if(site.icon)
+  <link rel="icon" type="image/x-icon" href="{{ site.icon }}" />
+  @end
+
+  {{-- Resource hints for better performance --}}
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://{{ site.disqus_id }}.disqus.com">
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
+  {{-- Preload critical CSS --}}
+  <link rel="preload" href="/assets/index.css" as="style">
+
+  {{-- Preload hero banner image on homepage for better LCP --}}
+  @if(page.url === '/' && heroImage)
+  <link rel="preload" as="image"
+    href="{{ heroImage.preload.href }}"
+    type="{{ heroImage.preload.type }}"
+    fetchpriority="high"
+    imagesrcset="{{ heroImage.preload.imagesrcset }}"
+    imagesizes="{{ heroImage.sizes }}">
+  @end
+
+  @let(displayTitle = title ? title + ' – ' + site.title : (tag && tag.name ? tag.name + ' – ' + site.title : (author && author.name ? author.name + ' – ' + site.title : site.title)))
+  <!--Twitter Card-->
+  <meta name="twitter:site" content="{{ site.twitter }}">
+  <meta name="twitter:creator" content="{{ seoTwitterCreator }}">
+  <meta name="twitter:card" content="{{ seoCardType }}">
+  <meta name="twitter:url" content="{{ site.url + page.url }}">
+  <meta name="twitter:title" content="{{ displayTitle }}">
+  <meta name="twitter:description" content="{{ seoDescription }}">
+  <meta name="twitter:image" content="{{ seoImage }}">
+
+  <!--Schema-->
+  @if(seoAuthorLink)
+  <link rel="author" href="{{ seoAuthorLink }}">
+  @end
+  <link rel="publisher" href="{{ site.url }}">
+  <meta itemprop="name" content="{{ displayTitle }}">
+  <meta itemprop="description" content="{{ seoDescription }}">
+  <meta itemprop="image" content="{{ seoImage }}">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:url" content="{{ site.url + page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ displayTitle }}">
+  <meta property="og:image" content="{{ seoImage }}">
+  <meta property="og:description" content="{{ seoDescription }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="article:author" content="{{ seoArticleAuthor }}">
+
+  <link rel="stylesheet" href="/assets/index.css" />
+  <script src="/assets/index.js" defer></script>
+
+  <script>document.documentElement.classList.remove('no-js');</script>
+
+  @if(site.codeinjection_head)
+  {{{ site.codeinjection_head }}}
+  @end
+  @if(codeinjection_head)
+  {{{ codeinjection_head }}}
+  @end
+</head>
+
+<body class="antialiased">
+  @include('partials/icons')
+  @include('partials/header')
+
+  <main class="px-8 max-w-4xl bg-white mx-auto py-2">
+    {{{ content }}}
+  </main>
+
+  @include('partials/footer')
+
+  @if(site.codeinjection_foot)
+  {{{ site.codeinjection_foot }}}
+  @end
+  @if(codeinjection_foot)
+  {{{ codeinjection_foot }}}
+  @end
+</body>
+
+</html>

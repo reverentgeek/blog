@@ -4,8 +4,12 @@ pagination:
   size: 1
   alias: 'author'
   addAllPagesToCollections: true
-layout: 'layouts/author.njk'
+layout: 'layouts/author.edge'
 permalink: '{{ author.url }}'
 ---
 
-{{ author.bio | safe if author.bio else "Bio not found" }}
+@if(author.bio)
+{{{ author.bio }}}
+@else
+Bio not found
+@end

@@ -6,7 +6,7 @@ description: "Much has been said about \"lean\" and \"agile\" approaches to work
 date: 2019-03-13
 tags: posts
 slug: respect-for-people
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Much has been said about "lean" and "agile" approaches to work. Reflecting over more than ten years of personal experience, I have come to this conclusion: Respect for people is the most fundamental principle. When respect is the lens and filter through which decisions are made, there is a much higher chance for success.

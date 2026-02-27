@@ -6,7 +6,7 @@ description: "Sketchnotes are amazing! Even if you don't think you can draw, I p
 date: 2019-08-31
 tags: posts
 slug: sketchnote-challenge
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Sketchnotes are amazing. Check out just a few of the many benefits.

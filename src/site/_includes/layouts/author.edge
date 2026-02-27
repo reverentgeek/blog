@@ -1,0 +1,14 @@
+---
+layout: layouts/default.edge
+---
+    @include('partials/author-header')
+
+    <section class="post-feed">
+        @if(author.posts)
+            @each(post in author.posts)
+                @!component('components/card', { post: post })
+            @end
+        @else
+            <p>No posts to be found</p>
+        @end
+    </section>

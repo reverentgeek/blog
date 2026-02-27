@@ -6,7 +6,7 @@ description: "How will your project die? Choose from 2,147,483,647 possible endi
 date: 2018-06-13
 tags: posts
 slug: choose-your-own-framework-the-curse-of-javascript-fatigue
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 How will your project die? Choose from 2,147,483,647 possible endings!

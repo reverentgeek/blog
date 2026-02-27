@@ -6,7 +6,7 @@ description: "One year ago, I retired my iPhone 3G and grabbed the new Samsung F
 date: 2011-12-24
 tags: posts
 slug: windows-phone-7-one-year-retrospective
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 One year ago, I retired my iPhone 3G and grabbed the new Samsung Focus Windows Phone 7. After a year of use, here's my take on the WP7 experience.

@@ -6,7 +6,7 @@ description: "The bad news is, the Docker version of SQL Server for Linux is a l
 date: 2017-03-02
 tags: posts
 slug: sql-server-for-linux-how-to-move-a-database-from-one-docker-container-to-another
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 The bad news is, the Docker version of SQL Server for Linux is a limited trial edition that will eventually expire. At some point, you will have to create a new Docker container.

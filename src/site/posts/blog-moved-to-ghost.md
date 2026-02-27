@@ -6,7 +6,7 @@ description: "I've moved my blog from Wordpress to Ghost. Because:"
 date: 2014-02-10
 tags: posts
 slug: blog-moved-to-ghost
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I've moved my blog from Wordpress to [Ghost](https://ghost.org/). Because:

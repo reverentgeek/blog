@@ -6,7 +6,7 @@ description: "You've probably seen the ShamWow meme. You know, the classic, chee
 date: 2017-09-15
 tags: posts
 slug: be-patient-and-keep-practicing
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 You've probably seen the [ShamWow meme](http://knowyourmeme.com/memes/vince-shlomi-shamwow-slap-chop). You know, the classic, cheesy infomercial guy.

@@ -6,7 +6,7 @@ description: "(Or any application icon, for that matter.)"
 date: 2017-10-27
 tags: posts
 slug: customize-your-vs-code-icon
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 (Or any application icon, for that matter.)

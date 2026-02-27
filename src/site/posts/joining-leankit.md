@@ -6,7 +6,7 @@ description: "I am excited to announce that I'm joining LeanKit as Senior Softwa
 date: 2013-03-02
 tags: posts
 slug: joining-leankit
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I am excited to announce that I'm joining [LeanKit](http://leankit.com) as Senior Software Developer and Technical Evangelist. [Chris Hefley](http://www.linkedin.com/in/chrishefley), co-founder and CEO, is a long-time friend I have had the pleasure of working with a couple of times in my career, which makes this move extra-special. Chris started LeanKit in 2009 with co-founders Stephen Franklin, Daniel Norton, and Jon Terry. Today LeanKit is a rapidly growing startup, and poised to be the premier online tool for Kanban.

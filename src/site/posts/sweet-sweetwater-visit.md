@@ -6,7 +6,7 @@ description: I recently visited Sweetwater's headquarters in Fort Wayne, IN, to 
 date: 2023-02-20
 tags: posts
 slug: sweet-sweetwater-visit
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I recently visited [Sweetwater](https://www.sweetwater.com/)'s headquarters in Fort Wayne, IN, to speak to their engineers on leadership. It was a huge honor, and I consider it one of my highest achievements as a tech speaker.

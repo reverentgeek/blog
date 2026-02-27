@@ -6,7 +6,7 @@ description: "I started speaking at tech conferences many years ago, and slowly 
 date: 2016-07-07
 tags: posts
 slug: engage-with-simple-illustrations
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I started speaking at tech conferences many years ago, and slowly improved with experience. However, I felt my audiences weren’t getting that much out of my talks. My fear was they were annoyed, bored, distracted, or apathetic to the information I was giving them. They seemed to think well of me, but it did not seem I was having any _meaningful_ impact. I had come to the depressing realization: I was a mediocre speaker.

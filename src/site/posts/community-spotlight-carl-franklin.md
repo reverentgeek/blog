@@ -6,7 +6,7 @@ description: "This guy. THIS guy. Carl has been one of my heroes since way back 
 date: 2017-05-22
 tags: posts
 slug: community-spotlight-carl-franklin
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 This guy. THIS guy. Carl has been one of my heroes since way back in the day of "Carl & Gary's Visual Basic Home Page." This long-gone-but-not-forgotten website was one of my go-to sources for helping me master Visual Basic.

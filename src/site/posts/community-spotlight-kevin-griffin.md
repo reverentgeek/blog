@@ -6,7 +6,7 @@ description: "I first met Kevin when he was heading up INETA, the now defunct In
 date: 2017-05-29
 tags: posts
 slug: community-spotlight-kevin-griffin
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I first met Kevin when he was heading up [INETA](http://www.ineta.org/), the now defunct International .NET Association. INETA was instrumental in helping me on both sides of the community table. As a speaker, INETA helped me speak at a lot of user groups within driving distance. It wasn't a lot of money, but it certainly helped pay for gas and maybe a meal. As a user group organizer, INETA helped me to find and bring in good speakers to the group.

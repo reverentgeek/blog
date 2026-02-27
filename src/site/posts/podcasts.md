@@ -6,7 +6,7 @@ description: "I had the honor of being on a few podcasts this year!"
 date: 2016-11-17
 tags: posts
 slug: podcasts
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I had the honor of being on a few podcasts this year!

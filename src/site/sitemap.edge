@@ -1,0 +1,17 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+@each(page in collections.all)~
+@let(isSafe = isSiteMapSafe(page.url))~
+@let(absUrl = absoluteUrl(url(page.url), site.url))~
+@if(isSafe === 'true')
+  <url>
+    <loc>{{ absUrl }}</loc>
+    <lastmod>{{ htmlDateString(page.date) }}</lastmod>
+  </url>
+@end~
+@end
+</urlset>

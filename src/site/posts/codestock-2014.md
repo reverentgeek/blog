@@ -6,7 +6,7 @@ description: "CodeStock's theme this year was \"Making Connections,\" and there 
 date: 2014-07-14
 tags: posts
 slug: codestock-2014
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 CodeStock's theme this year was "Making Connections," and there were plenty of opportunities for attendees to get connected. Connected to the latest technologies, and other professionals. The 2014 logo also carried this theme.

@@ -6,7 +6,7 @@ description: "March 28, 2015 I had the great pleasure of giving two talks at the
 date: 2015-03-28
 tags: posts
 slug: orlando-code-camp-2015
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 March 28, 2015 I had the great pleasure of giving two talks at the 10th annual [Orlando Code Camp](http://orlandocodecamp.com/). This was my first Orlando Code Camp, and I was quite impressed.

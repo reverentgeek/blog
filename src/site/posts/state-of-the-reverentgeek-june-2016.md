@@ -6,7 +6,7 @@ description: "I can't believe it's been a year since my last blog post! So much 
 date: 2016-06-30
 tags: posts
 slug: state-of-the-reverentgeek-june-2016
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I can't believe it's been a year since my last blog post! So much has happened. TL;DR: I am a very blessed man, and so grateful for the incredible opportunities I've had over the past year!

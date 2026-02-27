@@ -6,7 +6,7 @@ description: "Yep, that thing we keep saying is important and need to do, but ne
 date: 2014-07-10
 tags: posts
 slug: start-doing
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing weight, playing guitar, or any number of things we wish we could do.

@@ -6,7 +6,7 @@ description: "Nodevember 2016 was an amazing conference that included some of my
 date: 2016-11-29
 tags: posts
 slug: public-speaking-without-barfing-on-your-shoes
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 [Nodevember](http://nodevember.org/) 2016 was an amazing conference that included some of my favorite talks of the year. And, as is usually the case, a lot of the value of the conference came from the folks I met and the incredible conversations we had.

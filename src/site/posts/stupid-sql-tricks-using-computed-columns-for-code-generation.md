@@ -6,7 +6,7 @@ description: "I recently had a need to drop and recreate all the default constra
 date: 2011-11-04
 tags: posts
 slug: stupid-sql-tricks-using-computed-columns-for-code-generation
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 I recently had a need to drop and recreate all the default constraints on some tables so I could convert the data types of from varchar to nvarchar. The constraints were originally created allowing SQL Server to automatically name them. So, they looked something like: `DF__TableName__Colu__2BE6BFCF`. Maybe this doesn't bother you. To me, it's an abomination.

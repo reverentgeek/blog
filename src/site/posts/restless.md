@@ -6,7 +6,7 @@ description: "Being \"good enough\" is not good enough."
 date: 2011-11-02
 tags: posts
 slug: restless
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 **Being "good enough" is not good enough.**

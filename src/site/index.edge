@@ -1,0 +1,17 @@
+---
+title: Home
+layout: layouts/default.edge
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+---
+
+    <section class="post-list">
+        @each(post in posts)
+			@!component('components/card', { post: post })
+        @end
+    </section>
+
+    @include('partials/pagination')

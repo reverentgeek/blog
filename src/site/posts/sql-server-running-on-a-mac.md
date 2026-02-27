@@ -6,7 +6,7 @@ description: "Dogs and cats living together, mass hysteria!"
 date: 2016-11-16
 tags: posts
 slug: sql-server-running-on-a-mac
-layout: layouts/post.njk
+layout: layouts/post.edge
 ---
 
 Dogs and cats living together, mass hysteria!
