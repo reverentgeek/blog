@@ -52,7 +52,7 @@ description: "I love to play music, especially in a band. There's something amaz
 date: 2020-02-06
 tags: posts
 slug: create-pdfs-with-node-js-and-puppeteer
-layout: layouts/post.edge
+layout: layouts/post.njk
 ---
 
 I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and instruments. However, for a band to be successful, everyone needs to be on the _same page_ or it just sounds like a mess.

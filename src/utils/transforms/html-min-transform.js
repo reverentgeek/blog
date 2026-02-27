@@ -1,9 +1,9 @@
 import htmlmin from "html-minifier-terser";
 
 export default function ( eleventyConfig ) {
-	eleventyConfig.addTransform( "htmlmin", function ( content ) {
+	eleventyConfig.addTransform( "htmlmin", async function ( content ) {
 		if ( ( this.page.outputPath || "" ).endsWith( ".html" ) ) {
-			let minified = htmlmin.minify( content, {
+			let minified = await htmlmin.minify( content, {
 				useShortDoctype: true,
 				removeComments: true,
 				collapseWhitespace: true
