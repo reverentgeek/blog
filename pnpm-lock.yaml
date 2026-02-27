@@ -33,8 +33,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       eleventy-plugin-edgejs:
-        specifier: file:../11ty-edge
-        version: file:../11ty-edge(@11ty/eleventy@3.1.2)
+        specifier: ^1.1.0
+        version: 1.1.0(@11ty/eleventy@3.1.2)
       esbuild:
         specifier: ^0.27.3
         version: 0.27.3
@@ -1589,8 +1589,8 @@ packages:
   eleventy-plugin-broken-links@2.2.1:
     resolution: {integrity: sha512-2u1kzt7kuA9mryFa3U+hnO4J9ZUHZlfwpTXA9oB9Z/rKmZ1KXN098shWJCcYlEncg0Mky80I0iPhNcZw6/FKOg==}
 
-  eleventy-plugin-edgejs@file:../11ty-edge:
-    resolution: {directory: ../11ty-edge, type: directory}
+  eleventy-plugin-edgejs@1.1.0:
+    resolution: {integrity: sha512-9+Jxnv+rzJh8oRLZQ6V2fWoY4DgfXaH/tKrwI7HngYxgCBSvNcLgePrC/TLy2Gmp+bHE0U2ZG+1bfYcdSThyng==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@11ty/eleventy': ^3.0.0
@@ -5237,7 +5237,7 @@ snapshots:
       - encoding
       - supports-color
 
-  eleventy-plugin-edgejs@file:../11ty-edge(@11ty/eleventy@3.1.2):
+  eleventy-plugin-edgejs@1.1.0(@11ty/eleventy@3.1.2):
     dependencies:
       '@11ty/eleventy': 3.1.2
       edge.js: 6.5.0
