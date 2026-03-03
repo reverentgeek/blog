@@ -1,6 +1,6 @@
 import cleanCSS from "clean-css";
 import pluginRSS from "@11ty/eleventy-plugin-rss";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import navigationPlugin from "@11ty/eleventy-navigation";
 import brokenLinksPlugin from "eleventy-plugin-broken-links";
 import edgeJsPlugin from "eleventy-plugin-edgejs";
@@ -100,6 +100,32 @@ export default async function ( config ) {
 
 	config.addShortcode( "currentYear", async () => {
 		return new Date().getFullYear();
+	} );
+
+	// Generate a social-optimized image and return its URL, width, and height
+	const socialImageCache = new Map();
+	config.addFilter( "socialImage", async ( imagePath ) => {
+		if ( !imagePath || imagePath.startsWith( "http" ) ) {
+			return { url: imagePath || "", width: 1200, height: 630 };
+		}
+		if ( socialImageCache.has( imagePath ) ) {
+			return socialImageCache.get( imagePath );
+		}
+		try {
+			const sourcePath = `src/site${ imagePath.startsWith( "/" ) ? "" : "/" }${ imagePath }`;
+			const metadata = await Image( sourcePath, {
+				formats: [ "png" ],
+				widths: [ 1200 ],
+				outputDir: "./dist/img",
+				urlPath: "/img/"
+			} );
+			const img = metadata.png[0];
+			const result = { url: img.url, width: img.width, height: img.height };
+			socialImageCache.set( imagePath, result );
+			return result;
+		} catch {
+			return { url: imagePath, width: 1200, height: 630 };
+		}
 	} );
 
 	// Register Edge.js plugin after all filters/shortcodes

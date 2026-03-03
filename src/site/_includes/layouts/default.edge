@@ -1,10 +1,19 @@
 {{-- Compute SEO variables with defaults --}}
 @let(seoDescription = description || site.description)
-@let(seoImage = site.url + (heroImage ? heroImage.social.url : site.cover_image))
+@let(seoImageData = heroImage ? heroImage.social : { url: site.cover_image, width: 1200, height: 630 })
 @let(seoTwitterCreator = site.twitter)
 @let(seoCardType = 'summary_large_image')
 @let(seoArticleAuthor = site.author ? site.author.url : site.url)
 @let(seoAuthorLink = site.author ? site.author.url : '')
+
+{{-- Process feature_image through eleventy-img for correct social URL --}}
+@if(feature_image)
+  @assign(seoImageData = await socialImage(feature_image))
+@end
+
+@let(seoImage = site.url + seoImageData.url)
+@let(seoImageWidth = seoImageData.width)
+@let(seoImageHeight = seoImageData.height)
 
 {{-- Override for tag pages --}}
 @if(tag)
@@ -22,11 +31,6 @@
   @assign(seoAuthorLink = author.website || '')
 {{-- Override for post/page with feature_image --}}
 @elseif(feature_image)
-  @if(feature_image.startsWith('http'))
-    @assign(seoImage = feature_image)
-  @else
-    @assign(seoImage = site.url + feature_image)
-  @end
   @assign(seoDescription = description || site.description)
   @assign(seoArticleAuthor = site.url)
 @end
@@ -74,16 +78,32 @@
   @end
 
   @let(displayTitle = title ? title + ' – ' + site.title : (tag && tag.name ? tag.name + ' – ' + site.title : (author && author.name ? author.name + ' – ' + site.title : site.title)))
-  <!--Twitter Card-->
+  @let(seoImageAlt = title || tag && tag.name || site.title)
+  @let(seoOgType = date ? 'article' : 'website')
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="{{ site.url + page.url }}">
+  <meta property="og:type" content="{{ seoOgType }}">
+  <meta property="og:title" content="{{ displayTitle }}">
+  <meta property="og:description" content="{{ seoDescription }}">
+  <meta property="og:image" content="{{ seoImage }}">
+  <meta property="og:image:alt" content="{{ seoImageAlt }}">
+  <meta property="og:image:width" content="{{ seoImageWidth }}">
+  <meta property="og:image:height" content="{{ seoImageHeight }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="article:author" content="{{ seoArticleAuthor }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="{{ seoCardType }}">
   <meta name="twitter:site" content="{{ site.twitter }}">
   <meta name="twitter:creator" content="{{ seoTwitterCreator }}">
-  <meta name="twitter:card" content="{{ seoCardType }}">
-  <meta name="twitter:url" content="{{ site.url + page.url }}">
   <meta name="twitter:title" content="{{ displayTitle }}">
   <meta name="twitter:description" content="{{ seoDescription }}">
   <meta name="twitter:image" content="{{ seoImage }}">
+  <meta name="twitter:image:alt" content="{{ seoImageAlt }}">
 
-  <!--Schema-->
+  <!-- Schema -->
   @if(seoAuthorLink)
   <link rel="author" href="{{ seoAuthorLink }}">
   @end
@@ -91,16 +111,6 @@
   <meta itemprop="name" content="{{ displayTitle }}">
   <meta itemprop="description" content="{{ seoDescription }}">
   <meta itemprop="image" content="{{ seoImage }}">
-
-  <!-- Facebook OpenGraph -->
-  <meta property="og:url" content="{{ site.url + page.url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ displayTitle }}">
-  <meta property="og:image" content="{{ seoImage }}">
-  <meta property="og:description" content="{{ seoDescription }}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:locale" content="{{ site.lang }}">
-  <meta property="article:author" content="{{ seoArticleAuthor }}">
 
   <link rel="stylesheet" href="/assets/index.css" />
   <script src="/assets/index.js" defer></script>
