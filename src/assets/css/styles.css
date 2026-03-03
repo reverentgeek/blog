@@ -269,5 +269,37 @@ pre[class*="language-"] {
 	@apply w-full h-auto block;
 }
 
+/* Callout component */
+.callout {
+	@apply p-4 mb-8 border-l-4 rounded-r-md;
+}
+
+.callout-label {
+	@apply block text-xs font-bold uppercase tracking-wider mb-1;
+}
+
+.callout-content p:last-child {
+	@apply mb-0;
+}
+
+.callout-note {
+	@apply bg-blue-50 border-blue-400;
+	.callout-label { @apply text-blue-700; }
+}
+
+.callout-tip {
+	@apply bg-emerald-50 border-emerald-400;
+	.callout-label { @apply text-emerald-700; }
+}
+
+.callout-warning {
+	@apply bg-amber-50 border-amber-400;
+	.callout-label { @apply text-amber-700; }
+}
+
+.callout-quote {
+	@apply bg-gray-100 border-gray-400 italic;
+}
+
 /* purgecss end ignore */
 

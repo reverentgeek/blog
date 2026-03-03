@@ -1,0 +1,18 @@
+@let(typeClass = {
+  tip: 'callout-tip',
+  warning: 'callout-warning',
+  quote: 'callout-quote',
+  note: 'callout-note'
+}[type || 'note'] || 'callout-note')
+@let(label = {
+  tip: 'Pro tip',
+  warning: 'Warning',
+  quote: '',
+  note: 'Note'
+}[type || 'note'] || 'Note')
+<aside class="callout {{ typeClass }}" role="{{ type === 'warning' ? 'alert' : 'note' }}">
+  @if(label)
+    <span class="callout-label">{{ label }}</span>
+  @end
+  <div class="callout-content">{{{ await $slots.main() }}}</div>
+</aside>
