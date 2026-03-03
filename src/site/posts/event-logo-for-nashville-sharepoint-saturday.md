@@ -23,11 +23,11 @@ Here is the logo on one of the event posters.
 
 It's so exciting to see the final results!
 
-### Illustration Tools
+## Illustration Tools
 
 I used an iPad Pro and Apple Pencil to create all the artwork. Most of the work was done in my favorite sketching app, [Sketches Pro](http://www.tayasui.com/sketches/). I created the final guitar illustration using [Concepts](https://concepts.tophatch.com/), then imported it back into Sketches Pro to put it all together.
 
-### Evolution of Design Ideas
+## Evolution of Design Ideas
 
 Here are some of the design ideas that were generated along the way.
 

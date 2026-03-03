@@ -17,7 +17,7 @@ If you've ever followed one of the old Tech\*Ed conferences or a Microsoft MVP S
 
 Taking inspiration from "Party with Palermo," I've come up with my own event: "**Ride with ReverentGeek**." If you're keen to see some of the most beautiful sights in all creation, I would love for you to join me in riding/driving from Tellico Plains, TN to Knoxville, TN, taking in the Cherohala Skyway and "The Tail of the Dragon" along the way.
 
-### Trip Plan:
+## Trip Plan:
 
 * When: Thursday, July 14th, 2016
 * Where: [Hardee's](https://www.google.com/maps/place/127+Bank+St,+Tellico+Plains,+TN+37385/@35.3690569,-84.3039088,17z/data=!3m1!4b1!4m5!3m4!1s0x885e5f19d5c4e21f:0x3abb1a3f9bfc5df2!8m2!3d35.3690525!4d-84.3017148) Tellico Plains, TN

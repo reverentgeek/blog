@@ -11,7 +11,7 @@ layout: layouts/post.edge
 
 Dogs and cats living together, mass hysteria!
 
-### \[Update Oct 3, 2017\]
+## \[Update Oct 3, 2017\]
 
 This article has been updated to reflect changes in the latest [General Availability (GA)](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes) release of SQL Server for Linux.
 

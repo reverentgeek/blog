@@ -19,7 +19,7 @@ Here's a small example:
 
 David, thank you for your contributions to the developer community. Your heart to help others and dedication to being a positive influence is making an impact!
 
-### Share your story!
+## Share your story!
 
 "Today I am grateful to know David Giard..." Share your story in the comments below, or on Twitter!
 

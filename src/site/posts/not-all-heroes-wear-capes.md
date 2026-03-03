@@ -17,7 +17,7 @@ This particularly momentous Thanksgiving Day, I discovered the TRS-80.
 
 I don't remember if I spent the _entire_ day at that keyboard. What I do know is, I must have made an impression on my Uncle.
 
-### An amazing act of kindness
+## An amazing act of kindness
 
 Some time after that Thanksgiving, we made another trip to my Aunt and Uncle's house. Waiting for me there was a big cardboard box. Inside was the TRS-80, a cassette drive, a floppy drive, a dot matrix printer, cables, and a book titled, "Getting Started With Color BASIC."
 
@@ -25,7 +25,7 @@ Some time after that Thanksgiving, we made another trip to my Aunt and Uncle's h
 
 This one very kind and generous act launched me on a journey of computers and programming. I am forever grateful, and in their debt, for helping me to discover something that has not only been my career, but a source of learning, passion, and delight.
 
-### You can make an impact!
+## You can make an impact!
 
 _You_ have an amazing opportunity to impact your own family and community in powerful, and far-reaching ways! Even one simple act of kindness, encouragement, or investment of your time could be the catalyst that launches a young person's life-long journey of exploration and livelihood.
 
@@ -38,7 +38,7 @@ Here are just a few ways you can invest in someone:
 * Get involved in a local [makerspace](https://spaces.makerspace.com/directory/) or [maker meetup](https://www.meetup.com/topics/makers/).
 * Reach out to your local schools and ask how you can get involved.
 
-### Thank you
+## Thank you
 
 ![My aunt and uncle](/content/images/2018/03/aunt-and-uncle_sm.jpg)
 

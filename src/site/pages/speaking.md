@@ -198,4 +198,4 @@ slug: speaking
 | 2012.03.15 | [Code paLOUsa](http://www.codepalousa.com/) | Louisville, KY |
 | 2012.01.11 | [CodeMash](https://codemash.org/) | Sandusky, OH |
 | 2011.09.08 | [Nashville .NET User Group](http://nashdotnet.org) | Nashville, TN |
-||_<sup>*</sup> keynote, <sup>+</sup> workshop_||
+| | _<sup>*</sup> keynote, <sup>+</sup> workshop_ | |

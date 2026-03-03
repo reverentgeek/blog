@@ -13,7 +13,7 @@ It's my privilege to know Jim Holmes. He's one of my heroes. I owe Jim many, man
 
 I first met Jim when we worked at Telligent, around 2008. He took on the monumental task of software quality and testing. Not only did he make a huge difference to the product, he left a significant mark on everyone in the company with his infectious passion, dedication, and snarky get-off-my-lawn-no-bull attitude.
 
-### CodeMash
+## CodeMash
 
 Maybe you've heard about this little conference named [CodeMash](http://www.codemash.org/)? Held at an indoor water park in the winter? Tickets sell out in minutes?
 
@@ -21,7 +21,7 @@ The genius behind it: Jim Holmes.
 
 Jim handed over the reigns some time ago, but his legacy is cemented in creating one of the best software developer conferences. Ever. Countless developers _and_ their families have benefited.
 
-### A True MVP
+## A True MVP
 
 Jim fights tirelessly for just and noble causes:
 
@@ -32,11 +32,11 @@ Jim fights tirelessly for just and noble causes:
 * Abolishing SharePoint
 * Tabs vs. Spaces
 
-### Until next time...
+## Until next time...
 
 Jim, I don't know when our paths will cross again, but I'm looking forward to it including bacon, guitars, and lots of laughs.
 
-### Got a Jim Holmes story?
+## Got a Jim Holmes story?
 
 Share and let him know!
 

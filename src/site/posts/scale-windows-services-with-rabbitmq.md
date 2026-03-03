@@ -15,11 +15,11 @@ When I joined my current company, we had a mixed bag of Windows Services and sch
 
 Having attended a couple of Nashville .NET User Group lectures earlier in the year that touched on distributed architecture[\[1\]](#ref1), I had a good start on where to begin. A message queue-based system seemed to be the obvious answer.
 
-### **Competing Consumers Message Pattern**
+## **Competing Consumers Message Pattern**
 
 The "competing consumers" pattern comes from [Enterprise Integration Patterns](http://www.amazon.com/Enterprise-Integration-Patterns-Designing-Deploying/dp/0321200683/ref=sr_1_1?ie=UTF8&qid=1322663102&sr=8-1), and describes a message-based system where multiple consumers listen to a single message queue, and only one consumer is allowed to process any given message. The beauty of using a message queue is it makes no difference if these consumers are multiple instances of an application (or threads) on the same machine, or spread across multiple physical machines. Leveraging this pattern with a message queue platform makes it almost trivial to create a system that provides load balancing, scalability, and redundancy. You remain focused on implementing the business logic required to process a single message.
 
-### **Basic Pattern Implementation with RabbitMQ and C#**
+## **Basic Pattern Implementation with RabbitMQ and C#**
 
 If you don't already have the RabbitMQ Server installed, go to the [RabbitMQ Downloads](http://www.rabbitmq.com/download.html) page and click on the appropriate installation guide for your platform. If you are running Windows, you'll need to download and install[Erlang](http://www.erlang.org/download.html) first. I also recommend you install the [management plugin](http://www.rabbitmq.com/management.html), which will give you a web-based UI for monitoring and managing RabbitMQ Server.  You can easily add the latest RabbitMQ.Client .NET library to your Visual Studio project using [NuGet](http://nuget.org/List/Packages/RabbitMQ.Client). Or, see "Further Reading and Resources" below to download the compiled library and source code.
 
@@ -120,7 +120,7 @@ The second key step is configuring the consumer channel's **BasicQos** setting
 
 The last step is to acknowledge that the message has been processed, allowing the RabbitMQ server to delete the message from the queue, and the consumer to pick up the next available message.
 
-#### Running the Sample Code
+### Running the Sample Code
 
 1. [Download the sample project](https://github.com/reverentgeek/RabbitMQSamples).
 2. Load and build the solution.
@@ -128,7 +128,7 @@ The last step is to acknowledge that the message has been processed, allowing th
 4. Change the current directory of each command prompt to `[your-project-root]\CompetingConsumers.Consumer\bin\Debug` and launch `CompetingConsumers.Consumer.exe`
 5. In Visual Studio, press F5 to launch CompetingConsumers.Publisher.
 
-### Further Reading and Resources
+## Further Reading and Resources
 
 Hopefully this brief introduction has wet your appetite for further exploration into messaging and RabbitMQ. Here are a few links to get you down the road a bit further.
 

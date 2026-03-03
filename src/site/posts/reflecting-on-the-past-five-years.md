@@ -15,7 +15,7 @@ _Hey, David, don't you own a calendar? It's not even close to January 1st yet. W
 
 Well, my dear critical reader, I _do_ own a calendar, and here's a news flash: I'm fresh and unexpected like that. Get used to it.
 
-### Hi. I help people in technology be more awesome.
+## Hi. I help people in technology be more awesome.
 
 I believe one of my life's purposes is to inspire and encourage others. If you look at any of the presentations I've given over the last several years, you'll see that each one has this final call to action:
 
@@ -29,7 +29,7 @@ This resonates with people. By far, this slide is the one people remember and ta
 
 I want people in technology to see their work and skills with a bigger lens. We all have so much potential.
 
-### It's all about the community
+## It's all about the community
 
 When I joined [LeanKit](https://leankit.com/) in February 2013, I was given the incredible opportunity to build a developer community. I had been serving as President of the [Nashville .NET User Group](https://www.meetup.com/Nashville-NET-User-Group/) and speaking at conferences, and wanted to combine my passion for the developer community with my role at LeanKit.
 
@@ -43,7 +43,7 @@ Over the next few years:
 
 I discovered I love helping developers (and those who are about to rock). I take it very personally when someone experiences pain using the platform or tools I support. I want to do everything I can to make them successful.
 
-### The David went down to Georgia
+## The David went down to Georgia
 
 Speaking of love, I love Nashville. It's my favorite city. Nashville hot chicken will always have a special place in my heart. There's a chunk of [Hattie B's](http://hattieb.com/) lodged in my left ventricle.
 
@@ -53,7 +53,7 @@ Fall of 2012 we made the decision to move to Georgia to help take care of a coup
 
 It's not been easy, but it was the right thing to do. I am so very fortunate and grateful I work at a place like LeanKit that provides the flexibility of working from home.
 
-### Along the way, I became a Microsoft MVP
+## Along the way, I became a Microsoft MVP
 
 There was a time when we were working on a custom integration for Visual Studio Online (VSO), which is now [Visual Studio Team Services](https://www.visualstudio.com/team-services/) (VSTS). I ended up creating the first open-source [API client for VSO](https://github.com/reverentgeek/vso-client) in Node.js. This earned an MVP recommendation from the Microsoft team building the VSO APIs.
 
@@ -63,7 +63,7 @@ _CoffeeScript?!_
 
 Yeah, I know. It was an awkward phase I was going through. I've since repented. Please forgive me.
 
-### Leadership for the reluctant leader
+## Leadership for the reluctant leader
 
 I've been in many leadership roles in my career. Although I felt much more comfortable in my last leadership role, I kept thinking I wasn't cut out for it. In hindsight, I recognize leadership is a skill (or rather a set of skills) just like any other, requiring dedication and commitment to grow.
 
@@ -83,13 +83,13 @@ When the time comes and I am in a leadership role again, I'm confident I have th
 
 By the way, I've now given a [keynote on leadership](http://reverentgeek.com/resources-for-the-reluctant-leader/). Life is funny that way.
 
-### A new role
+## A new role
 
 In the Fall of 2016, due to changing business priorities, I moved to a Senior Developer role on one of our Web teams. My task was to build a new API specifically for custom reporting.
 
 I met the challenge head-on, and it has been an absolute blast. My goal was to design this new API to be a joy to use by our customers. The API is powered by Node.js using [hapi](https://hapijs.com/), and it's been amazing experience.
 
-### I still "moonlight" as a developer advocate
+## I still "moonlight" as a developer advocate
 
 You know what they say,
 
@@ -105,7 +105,7 @@ It's just so darn satisfying to hear feedback from customers when I've helped th
 
 I can't help myself.
 
-### Public speaking without barfing
+## Public speaking without barfing
 
 As a public speaker, I believe [I am just beginning to hit my stride](https://medium.com/@reverentgeek/please-give-public-speaking-a-try-c90c539012d5). I've started receiving _invitations_ to speak at public and private events, and opportunities to keynote conferences.
 
@@ -115,7 +115,7 @@ _What?! How is that even possible?_
 
 I know, right? Crazy talk. But, it's this kind of crazy talk that fuels me to keep going. Having an impact on someone like that is one of the most precious rewards I've experienced.
 
-### I didn't know I could draw
+## I didn't know I could draw
 
 A few years ago, I discovered I could keep an audience from falling asleep [with silly drawings](https://artplusmarketing.com/captivate-your-audience-using-simple-illustrations-5bf0fcd0e301).
 

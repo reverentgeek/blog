@@ -134,16 +134,16 @@ Once you've got the basics running, here's how to level it up:
 
 HopCounter is just a cute wrapper around a much bigger idea: running lightweight, dynamic logic at the edge without needing a server. If you can build a page view counter, you can build lots of useful features! Here are just a few ideas to keep you hopping!
 
-| Concept               | Real Use Case Example                                |
-|-----------------------|------------------------------------------------------|
-| Edge-based counters   | Blog views, download stats, or video play counts     |
-| Upvote APIs           | Let users cast a single upvote per item instantly |
-| Feature flags         | Dynamically enable or disable features |
-| Event tracking        | Button clicks, form submissions, or popup dismisses  |
-| Limited-time promos   | Serve time-based content or discounts that automatically activate and expire using edge logic and middleware |
-| Per-user limits       | Rate-limiting anonymous visits (e.g., 3 previews/day)|
-| Email sign-ups        | Collect and validate email addresses at the edge, then forward them securely to a mailing list provider via API |
-| A/B testing           | Deliver different versions of a page or element to users |
+| Concept | Real Use Case Example |
+| --- | --- |
+| Edge-based counters | Blog views, download stats, or video play counts |
+| Upvote APIs | Let users cast a single upvote per item instantly |
+| Feature flags | Dynamically enable or disable features |
+| Event tracking | Button clicks, form submissions, or popup dismisses |
+| Limited-time promos | Serve time-based content or discounts that automatically activate and expire using edge logic and middleware |
+| Per-user limits | Rate-limiting anonymous visits (e.g., 3 previews/day) |
+| Email sign-ups | Collect and validate email addresses at the edge, then forward them securely to a mailing list provider via API |
+| A/B testing | Deliver different versions of a page or element to users |
 
 Because your logic runs at the edge, you can **respond instantly and at scale**—no latency from centralized APIs or bloated trackers. All from the Bunny dashboard, deployed globally in seconds.
 

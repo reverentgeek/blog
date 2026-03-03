@@ -15,7 +15,7 @@ Maybe you're experiencing [impostor syndrome](https://en.wikipedia.org/wiki/Impo
 
 I would wager you do awesome things. Maybe you just don't realize it. Because your inner critic keeps cutting you down.
 
-### You're not alone
+## You're not alone
 
 I sometimes struggle with this, too. Most people have experienced, or are currently fighting with impostor syndrome right now.
 
@@ -23,13 +23,13 @@ Really successful people.
 
 I put on pants today. I consider that a win.
 
-### Don't fall into the comparison trap
+## Don't fall into the comparison trap
 
 There's no need to compare yourself to others. You aren't them. They aren't you. Focusing on someone else's accomplishments and using their success to beat yourself up is a terrible waste of time and only leads to despair.
 
 Let others inspire you. But, don't let their successes fuel your inner critic.
 
-### There's nothing wrong with being a beginner
+## There's nothing wrong with being a beginner
 
 Regardless of how long you've been doing your thing, there will be times when you are a beginner.
 
@@ -39,13 +39,13 @@ You _will_ have legitimate feelings of inadequacy and anxiety. This is totally n
 
 It's okay to speak up, and ask others for help!
 
-### Surround yourself with awesome people
+## Surround yourself with awesome people
 
 Find people who will not only encourage you, but who are transparent about their own struggles. It helps to know you're not alone.
 
 When someone gives you positive feedback, don't dismiss it! Write it down. Collect these moments to silence your inner critic.
 
-### Keep a record of what you've done
+## Keep a record of what you've done
 
 Day to day, or week by week, it may feel like you're not making any progress. However, if you look back over a longer period of time, such as six months or a year, you can start to see just how far you've come.
 
@@ -53,7 +53,7 @@ In software development, some teams have regular [retrospectives](https://en.wik
 
 Have a personal retrospective. No, this is not where you beat yourself up and have a pity party. Make a list of the things you've accomplished, no matter how small. Make a list of actionable goals and things you can improve.
 
-### Share your knowledge or time
+## Share your knowledge or time
 
 Teach others what you know. You may have this feeling the things you know are obvious and simple. It might surprise you to discover there are a lot of people who would love to possess the knowledge you already have.
 
@@ -63,15 +63,15 @@ Not ready to teach? How about volunteering to help a local non-profit? It doesn'
 
 Whether you teach or volunteer, you can have an amazing impact on others. The dividends are huge.
 
-### Be brave, and seek a mentor!
+## Be brave, and seek a mentor!
 
 I am very grateful to have a dear friend in my life who has been my cheerleader for many years. He has the gift of encouragement. He knows how to listen to my struggles, and always seems to uncover the gold in what only looks like a trash heap to me.
 
-### Be a mentor!
+## Be a mentor!
 
 Invest in someone. Encourage them. Help them to see their potential, and to believe. When they accomplish great things, you can know you played a part.
 
-### Be you!
+## Be you!
 
 Give yourself freedom to fail. Celebrate your successes. Keep challenging yourself.
 

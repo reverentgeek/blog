@@ -37,7 +37,7 @@ makeTheBacon: function() {
 },
 ```
 
-### Vue computed properties
+## Vue computed properties
 
 The Vue app uses a computed property, `hazBacon`, to show/hide the "Copy to the clipboard!" button based on there being any paragraphs of bacon text to display.
 
@@ -57,7 +57,7 @@ computed: {
 },
 ```
 
-### Other dependencies
+## Other dependencies
 
 In addition to Node.js, Hapi, and Vue, here are the dependencies and plugins used by the project. Some of these are my current favorites for building Node.js applications.
 
@@ -76,4 +76,4 @@ In addition to Node.js, Hapi, and Vue, here are the dependencies and plugins use
 
 [github.com/reverentgeek/node-bacon-generator](https://github.com/reverentgeek/node-bacon-generator)
 
-### Happy computering!
+## Happy computering!

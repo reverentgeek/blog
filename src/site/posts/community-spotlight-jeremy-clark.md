@@ -15,7 +15,7 @@ But, it doesn't stop at technical skills. Jeremy is also doing incredible work t
 
 Jeremy, thank you for all you're doing in the developer community! You are awesome, and you make people's lives brighter everywhere you go. I am grateful to call you "friend."
 
-### Are you a better developer because of Jeremy?
+## Are you a better developer because of Jeremy?
 
 Share your story and appreciation!
 

@@ -13,7 +13,7 @@ The bad news is, the Docker version of SQL Server for Linux is a limited trial e
 
 The good news is, SQL for Linux comes with a [`sqlpackage`](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-migrate-sqlpackage) utility you can use to create a backup of your database.
 
-### How many days do I have left?
+## How many days do I have left?
 
 The best way to know how many days are left in the trial is to look at the logs in the container. SQL Server reports how many days are left when it starts. Here's a screenshot from [Kitematic](https://kitematic.com/).
 
@@ -29,7 +29,7 @@ SELECT create_date AS InstallDate, DATEADD( DD, 180, create_date ) AS ExpiryDate
 
 Obviously, there's a two-day difference, but it's close enough.
 
-### Step 1: Create a .bacpac file
+## Step 1: Create a .bacpac file
 
 First, we need to create a backup of the database that is in your old Docker container. Open a Terminal or Command Prompt, and run the following command.
 
@@ -39,29 +39,29 @@ First, we need to create a backup of the database that is in your old Docker con
 docker exec container_name /opt/mssql/bin/sqlpackage /a:Export /ssn:tcp:localhost /sdn:your_db /su:sa /sp:P@55w0rd /tf:/tmp/your_db.bacpac
 ```
 
-### Step 2: Copy the .bacpac file to your host
+## Step 2: Copy the .bacpac file to your host
 
 Copy the `.bacpac` file to a folder on your host computer. In this example, it will copy the file to the Desktop. Of course, you may want to store the backup in a diffent folder.
 
-#### Copy the .bacpac File on Windows
+### Copy the .bacpac File on Windows
 
 ```sh
 docker cp container_name:/tmp/your_db.bacpac %USERPROFILE%\Desktop\your_db.bacpac
 ```
 
-#### Copy the .bacpac File on Mac or Linux
+### Copy the .bacpac File on Mac or Linux
 
 ```sh
 docker cp container_name:/tmp/your_db.bacpac ~/Desktop/your_db.bacpac
 ```
 
-### Step 3: Stop the old container
+## Step 3: Stop the old container
 
 ```sh
 docker stop container_name
 ```
 
-### Step 4: Pull down the latest image and create a new container
+## Step 4: Pull down the latest image and create a new container
 
 **Note:** Change `new_container_name` and password to the desired values.
 
@@ -71,21 +71,21 @@ docker pull microsoft/mssql-server-linux
 docker run -d --name new_container_name -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@55w0rd' -p 1433:1433 microsoft/mssql-server-linux
 ```
 
-### Step 5: Copy the .bacpac file to the new container
+## Step 5: Copy the .bacpac file to the new container
 
-#### Copy to container using Windows
+### Copy to container using Windows
 
 ```sh
 docker cp %USERPROFILE%\Desktop\your_db.bacpac container_name:/tmp/your_db.bacpac
 ```
 
-#### Copy to container using Mac or Linux
+### Copy to container using Mac or Linux
 
 ```sh
 docker cp ~/Desktop/your_db.bacpac container_name:/tmp/your_db.bacpac
 ```
 
-### Step 6: Import the .bacpac file
+## Step 6: Import the .bacpac file
 
 ```sh
 docker exec new_container_name /opt/mssql/bin/sqlpackage /a:Import /tsn:tcp:localhost /tdn:your_db /tu:sa /tp:P@55w0rd /sf:/tmp/your_db.bacpac

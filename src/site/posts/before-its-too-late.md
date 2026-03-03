@@ -23,7 +23,7 @@ I believe communicating our appreciation has the potential for profound and far-
 
 Here's a secret. Being grateful and honoring others is a vicious cycle. The more you give, the more you receive.
 
-### Think of someone who is awesome.
+## Think of someone who is awesome.
 
 Maybe that person is going through a really tough time. Maybe they are struggling with motivation, apathy, or depression. Maybe they could really use an encouraging word from you.
 
