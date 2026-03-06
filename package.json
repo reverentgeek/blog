@@ -65,7 +65,7 @@
 	"devDependencies": {
 		"commander": "^14.0.3",
 		"eslint": "^10.0.2",
-		"eslint-config-reverentgeek": "^7.0.4",
+		"eslint-config-reverentgeek": "^7.1.0",
 		"fs-extra": "^11.3.4",
 		"jimp": "^1.6.0",
 		"lighthouse": "^13.0.3",
