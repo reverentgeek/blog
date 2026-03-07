@@ -4,9 +4,7 @@ title: "Developer's Serenity Prayer"
 feature_image: /content/images/2019/03/developers-serenity-prayer-2.jpg
 description: "Oh Great Cloud,"
 date: 2017-12-01
-tags: posts
 slug: developers-serenity-prayer
-layout: layouts/post.edge
 ---
 
 Oh Great Cloud,

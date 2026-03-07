@@ -4,9 +4,7 @@ title: "Community Spotlight: Bryan Hunter"
 feature_image: /content/images/2017/05/bryan-hunter-1.jpg
 description: "Bryan Hunter is the quintessential community champion. Everywhere he goes, he is cheerfully spreading the good news of functional…"
 date: 2017-05-15
-tags: posts
 slug: community-spotlight-bryan-hunter
-layout: layouts/post.edge
 ---
 
 Bryan Hunter is the quintessential community champion. Everywhere he goes, he is cheerfully spreading the good news of functional programming and other technology he believes will benefit all developers.

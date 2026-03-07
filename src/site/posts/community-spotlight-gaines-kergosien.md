@@ -4,9 +4,7 @@ title: "Community Spotlight: Gaines Kergosien"
 feature_image: /content/images/2017/04/gaines-kergosien.png
 description: "In my opinion, Gaines is a community hero. He's not only been involved in the Nashville software development community, he's also been a…"
 date: 2017-04-24
-tags: posts
 slug: community-spotlight-gaines-kergosien
-layout: layouts/post.edge
 ---
 
 In my opinion, Gaines is a community hero. He's not only been involved in the Nashville software development community, he's also been a volunteer firefighter since 2013. Beginning in 2008, he has faithfully served the [Nashville .NET User Group](https://www.meetup.com/Nashville-NET-User-Group/) in every type of role, always eager to help in any way that he can.

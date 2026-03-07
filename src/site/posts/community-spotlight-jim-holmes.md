@@ -4,9 +4,7 @@ title: "Community Spotlight: Jim Holmes"
 feature_image: /content/images/2017/04/jim-holmes-2.png
 description: "It's my privilege to know Jim Holmes. He's one of my heroes. I owe Jim many, many thanks for the positive impact he's made on my career and…"
 date: 2017-04-17
-tags: posts
 slug: community-spotlight-jim-holmes
-layout: layouts/post.edge
 ---
 
 It's my privilege to know Jim Holmes. He's one of my heroes. I owe Jim many, many thanks for the positive impact he's made on my career and personal life.

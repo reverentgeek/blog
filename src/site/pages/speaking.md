@@ -1,7 +1,6 @@
 ---
 id: 5b7d83816ada047f703ba959
 title: "Upcoming Speaking Engagements"
-feature_image: 
 description: "Current speaking topics: leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving…"
 date: 2014-02-13
 slug: speaking

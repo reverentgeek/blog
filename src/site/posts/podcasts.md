@@ -4,9 +4,7 @@ title: "2016 Podcasts"
 feature_image: /content/images/2016/11/podcast.png
 description: "I had the honor of being on a few podcasts this year!"
 date: 2016-11-17
-tags: posts
 slug: podcasts
-layout: layouts/post.edge
 ---
 
 I had the honor of being on a few podcasts this year!

@@ -1,8 +1,7 @@
 ---
 id: a0baf47022e711edb818395c06af3095
 title: "DevRel Portfolio"
-feature_image: 
-description:
+description: "Highlights from content, talks, projects, interviews, and podcasts from David Neal's Developer Relations career."
 date: 2023-07-31
 slug: devrel-portfolio
 ---

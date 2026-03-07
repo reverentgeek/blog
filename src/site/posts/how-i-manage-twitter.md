@@ -4,9 +4,7 @@ title: "How I Consume Twitter"
 feature_image: /content/images/2017/07/consuming-twitter.jpg
 description: "I keep the people I follow to around 256. That's a good, nerdy number for me. And, it's still manageable to keep up with all the tweets in…"
 date: 2017-07-20
-tags: posts
 slug: how-i-manage-twitter
-layout: layouts/post.edge
 ---
 
 I keep the people I follow to around 256. That's a good, nerdy number for me. And, it's still manageable to keep up with all the tweets in this group, most of the time.

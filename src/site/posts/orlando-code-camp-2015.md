@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba960
 title: "Orlando Code Camp 2015"
-feature_image: 
 description: "March 28, 2015 I had the great pleasure of giving two talks at the 10th annual Orlando Code Camp. This was my first Orlando Code Camp, and…"
 date: 2015-03-28
-tags: posts
 slug: orlando-code-camp-2015
-layout: layouts/post.edge
 ---
 
 March 28, 2015 I had the great pleasure of giving two talks at the 10th annual [Orlando Code Camp](http://orlandocodecamp.com/). This was my first Orlando Code Camp, and I was quite impressed.

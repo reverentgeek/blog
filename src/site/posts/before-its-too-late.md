@@ -4,9 +4,7 @@ title: "Before it's too late"
 feature_image: /content/images/2017/04/thank-you.png
 description: "There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths."
 date: 2017-04-13
-tags: posts
 slug: before-its-too-late
-layout: layouts/post.edge
 ---
 
 There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths.

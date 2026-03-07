@@ -4,9 +4,7 @@ title: "Reflecting on the past five years"
 feature_image: /content/images/2017/10/looking-back.jpg
 description: "You might be thinking..."
 date: 2017-10-10
-tags: posts
 slug: reflecting-on-the-past-five-years
-layout: layouts/post.edge
 ---
 
 You might be thinking...

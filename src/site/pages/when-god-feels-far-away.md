@@ -1,8 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba958
 title: "When God Feels Far Away"
-feature_image: 
-description: ""
+description: "An excerpt from Faith Unraveled by Alisha Bozarth on feeling distant from God and finding hope in the Psalms."
 date: 2022-08-14
 slug: when-god-feels-far-away
 ---

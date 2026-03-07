@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba953
 title: "Intro to RavenDB Presentation"
-feature_image: 
 description: "I'm excited to announce that my \"Introduction to RavenDB: NoSQL is Rapping at Your Door\" presentation that I gave at CodeMash 2012 was…"
 date: 2012-02-28
-tags: posts
 slug: intro-to-ravendb-presentation
-layout: layouts/post.edge
 ---
 
 I'm excited to announce that my "Introduction to RavenDB: NoSQL is Rapping at Your Door" presentation that I gave at [CodeMash 2012](http://codemash.org/) was recorded by InfoQ is [now available](http://www.infoq.com/presentations/Introducing-RavenDB-NoSQL-is-Rapping-at-Your-Door).

@@ -1,7 +1,6 @@
 ---
 id: 5c49c74ebc58620a445559d3
 title: "Public Speaking Without Barfing On Your Shoes"
-feature_image: 
 description: "Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace,…"
 date: 2023-07-20
 slug: public-speaking-without-barfing

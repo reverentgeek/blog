@@ -4,9 +4,7 @@ title: "Life is Too Short"
 feature_image: /content/images/2017/07/life-is-too-short.jpg
 description: "Early in my career, I worked under a manager who exemplified the Dilbert Principle:"
 date: 2017-07-31
-tags: posts
 slug: life-is-too-short
-layout: layouts/post.edge
 ---
 
 Early in my career, I worked under a manager who exemplified the Dilbert Principle:

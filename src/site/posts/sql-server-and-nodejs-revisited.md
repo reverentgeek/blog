@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba968
 title: "SQL Server and Node.js Revisited"
-feature_image: 
 description: "A little more than a year ago, I wrote about accessing SQL Server from Node.js using Edge.js. Technology can change a lot in a year, and…"
 date: 2015-06-22
-tags: posts
 slug: sql-server-and-nodejs-revisited
-layout: layouts/post.edge
 ---
 
 A little more than a year ago, I wrote about accessing [SQL Server from Node.js using Edge.js](http://tech.pro/tutorial/1852/how-to-leverage-sql-server-with-nodejs-using-edgejs). Technology can change a lot in a year, and I'm happy to report the Node.js modules for SQL Server have greatly improved. Not only that, but some of the brilliant developers I work with at [LeanKit](http://leankit.com) have created seriate, designed to make working with SQL Server from Node.js as painless and friction-free as possible.

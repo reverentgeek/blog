@@ -4,9 +4,7 @@ title: "Do you hate JavaScript?"
 feature_image: /content/images/2017/02/js-khan.jpg
 description: "If you follow me on Twitter you know that I poke fun at JavaScript quite a bit. Someone recently asked me,"
 date: 2017-02-13
-tags: posts
 slug: do-you-hate-javascript
-layout: layouts/post.edge
 ---
 
 If you follow me on [Twitter](https://x.com/reverentgeek) you know that I poke fun at JavaScript quite a bit. Someone recently asked me,

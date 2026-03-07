@@ -1,8 +1,7 @@
 ---
 id: 5c461a2dbc58620a44555950ab
 title: "ChordPro to PCO Converter"
-feature_image: 
-description:
+description: "Convert ChordPro-formatted text to Planning Center Online format."
 date: 2025-03-12
 slug: pco
 script: pco.js

@@ -4,9 +4,7 @@ title: "NDC Sydney 2016"
 feature_image: /content/images/2016/08/IMG_2127-1.jpg
 description: "Earlier this month I had the incredible privilege of speaking at NDC Sydney! Australia has been at the top of my most-wanted-to-visit…"
 date: 2016-08-10
-tags: posts
 slug: ndc-sydney-2016
-layout: layouts/post.edge
 ---
 
 Earlier this month I had the incredible privilege of speaking at [NDC Sydney](http://ndcsydney.com/)! Australia has been at the top of my most-wanted-to-visit places since I was young. I can't begin to tell you how excited I was to have this opportunity!

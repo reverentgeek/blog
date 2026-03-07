@@ -1,8 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba953
 title: "Stream Starting Soon..."
-feature_image: 
-description: ""
+description: "Stream starting soon placeholder page."
 date: 2020-05-18
 slug: stream-starting-soon
 ---

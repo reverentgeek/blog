@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba957
 title: "Blog moved to Ghost"
-feature_image: 
 description: "I've moved my blog from Wordpress to Ghost. Because:"
 date: 2014-02-10
-tags: posts
 slug: blog-moved-to-ghost
-layout: layouts/post.edge
 ---
 
 I've moved my blog from Wordpress to [Ghost](https://ghost.org/). Because:

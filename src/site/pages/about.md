@@ -1,8 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba958
 title: "About Me"
-feature_image: 
-description: ""
+description: "David Neal is a family man, geek, musician, illustrator, international speaker, software developer, author, and Microsoft MVP."
 date: 2014-02-13
 slug: about
 ---

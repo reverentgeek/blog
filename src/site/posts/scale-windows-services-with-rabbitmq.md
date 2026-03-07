@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba949
 title: "Scale Windows Services with RabbitMQ"
-feature_image: 
 description: "(Cross-posted to FreshBrewedCode.com)"
 date: 2011-11-30
-tags: posts
 slug: scale-windows-services-with-rabbitmq
-layout: layouts/post.edge
 ---
 
 (Cross-posted to [FreshBrewedCode.com](http://freshbrewedcode.com/davidneal/2011/11/30/scale-windows-services-with-rabbitmq/))

@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba94d
 title: "Our Social Media Legacy"
-feature_image: 
 description: "Something I've been thinking about recently is the long-term impact that social media will have on society. Good or bad, everything we post…"
 date: 2013-06-23
-tags: posts
 slug: our-social-media-legacy
-layout: layouts/post.edge
 ---
 
 Something I've been thinking about recently is the long-term impact that social media will have on society. Good or bad, everything we post on Facebook, Twitter, blogs, or other social media becomes permanent public record. What impact will the content we publish today have on our lives 10, 20, or 30 years from now? What about after we are gone?

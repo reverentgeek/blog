@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba954
 title: "Power of Persuasive Speech"
-feature_image: 
 description: "I am truly honored to be selected as a speaker at the CodeMash developer conference in January. Being a regional conference, CodeMash is…"
 date: 2011-10-28
-tags: posts
 slug: power-of-persuasive-speech
-layout: layouts/post.edge
 ---
 
 I am truly honored to be selected as a speaker at the [CodeMash](http://codemash.org) developer conference in January. Being a regional conference, CodeMash is not very large compared to something like the Microsoft Professional Developers Conference (PDC). However, it has become _very_ popular. Most of the speakers are well-known and highly regarded in our industry. Last year, CodeMash sold out in 3 days. This year, it sold out in 20 _minutes_.

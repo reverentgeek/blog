@@ -1,8 +1,7 @@
 ---
 id: 37351a50952f11ea999c51aacc1dfd38
 title: "Heart for MVP Newsletter"
-feature_image: 
-description:
+description: "Illustrations created for the Microsoft MVP Newsletter."
 date: 2020-05-13
 slug: mvp-heart
 ---

@@ -1,8 +1,7 @@
 ---
 id: c1f090000dc511edb7fad3cc94e8de92
 title: "Reluctant Leader Resources"
-feature_image: 
-description:
+description: "Resources, recommended books, and links for the Reluctant Leader talk by David Neal."
 date: 2022-07-27
 slug: reluctant-leader
 ---

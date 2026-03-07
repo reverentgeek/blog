@@ -4,9 +4,7 @@ title: "Ride Review: Suches and Wolf Pen Gap"
 feature_image: /content/images/suches-and-wolf-pen-gap/IMG_5986.JPG
 description: "One of the advantages of living close to Dalton, GA, is access to some of the best roads in the country for motorcycle trips. After what…"
 date: 2015-04-04
-tags: posts
 slug: suches-and-wolf-pen-gap
-layout: layouts/post.edge
 ---
 
 One of the advantages of living close to Dalton, GA, is access to some of the best roads in the country for motorcycle trips. After what seems like an obnoxiously-long winter, I wake up itching to get some "wind therapy." The weather forecast is very cool, but thankfully, no rain.

@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba950
 title: "Restless"
-feature_image: 
 description: "Being \"good enough\" is not good enough."
 date: 2011-11-02
-tags: posts
 slug: restless
-layout: layouts/post.edge
 ---
 
 **Being "good enough" is not good enough.**

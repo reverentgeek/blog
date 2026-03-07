@@ -1,7 +1,6 @@
 ---
 id: 5b7d83816ada047f703ba963
 title: "Ahoy! Parse ye Node.js command args with yargs!"
-feature_image: 
 description: "Recently I was working on a code sample in Node.js and thought to meself, \"T'wouldn't it be grand to support me some command-line args for…"
 date: 2015-04-20
 slug: ahoy-parse-ye-node-js-command-args-with-yargs

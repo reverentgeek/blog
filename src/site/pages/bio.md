@@ -1,8 +1,7 @@
 ---
 id: a0baf47022e711edb818395c06af3095
 title: "Bio"
-feature_image: 
-description:
+description: "David Neal is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia."
 date: 2022-08-23
 slug: bio
 ---

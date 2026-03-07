@@ -4,9 +4,7 @@ title: "Community Spotlight: Brendan Forster"
 feature_image: /content/images/2017/11/Brendan-Forster.jpg
 description: "It is my pleasure to present this community tribute to Brendan Forster, written by guest author Mord Zuber."
 date: 2017-11-01
-tags: posts
 slug: community-spotlight-brendan-forster
-layout: layouts/post.edge
 ---
 
 _It is my pleasure to present this community tribute to Brendan Forster, written by guest author [Mord Zuber](https://twitter.com/mordzuber)._

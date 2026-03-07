@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba95c
 title: "Start doing."
-feature_image: 
 description: "Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing…"
 date: 2014-07-10
-tags: posts
 slug: start-doing
-layout: layouts/post.edge
 ---
 
 Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing weight, playing guitar, or any number of things we wish we could do.

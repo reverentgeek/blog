@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba962
 title: "My development environment (for writing)"
-feature_image: 
 description: "I love to code, but I also spend a good bit of time writing. I write blog posts (like this one), tutorials, documentation, and a lot of…"
 date: 2015-04-15
-tags: posts
 slug: my-development-environment-for-writing
-layout: layouts/post.edge
 ---
 
 I love to code, but I also spend a good bit of time writing. I write blog posts (like this one), tutorials, documentation, and a lot of notes. Chances are you also spend time writing, or need to do more of it. We all love documentation, right?

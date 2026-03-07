@@ -2,7 +2,7 @@
 id: 5b7d83816ada047f703ba98f
 title: "Buy My Stuff!"
 feature_image: /content/images/shop/buy-my-stuff.jpg
-description: ""
+description: "Commission custom illustrations, grab the Dad Joke book, stickers, t-shirts, and more from ReverentGeek."
 date: 2018-05-19
 slug: shop
 ---

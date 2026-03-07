@@ -4,9 +4,7 @@ title: "Moving From Ghost to Eleventy"
 feature_image: /content/images/moving-from-ghost-to-eleventy/moving-from-ghost-to-eleventy.jpg
 description: "My blog has been on Ghost for many years. It has been a solid platform, and I highly recommend it. However, I've been itching to try something new for a while..."
 date: 2020-04-29
-tags: posts
 slug: moving-from-ghost-to-eleventy
-layout: layouts/post.edge
 ---
 
 My blog has been on a self-hosted deployment of [Ghost](https://ghost.org/) for many years. It has been a solid platform, and I highly recommend it.
@@ -50,7 +48,6 @@ title: "Create PDFs with Node.js and Puppeteer"
 feature_image: /content/images/2020/02/charter-example.jpg
 description: "I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and…"
 date: 2020-02-06
-tags: posts
 slug: create-pdfs-with-node-js-and-puppeteer
 layout: layouts/post.njk
 ---

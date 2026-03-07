@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba95b
 title: "Blazon for Technical Presentations and Training"
-feature_image: 
 description: "I recently switched to using Blazon for all my presentations, and I couldn't be happier. Here are some of my favorite features:"
 date: 2014-05-01
-tags: posts
 slug: blazon-for-technical-presentations-and-training
-layout: layouts/post.edge
 ---
 
 I recently switched to using [Blazon](https://presentboldly.com/) for all my presentations, and I couldn't be happier. Here are some of my favorite features:

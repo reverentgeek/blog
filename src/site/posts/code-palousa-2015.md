@@ -1,12 +1,9 @@
 ---
 id: 5b7d83816ada047f703ba965
 title: "Code PaLOUsa 2015"
-feature_image: 
 description: "Last week I had the privilege of being a part of Code PaLOUsa in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but…"
 date: 2015-05-04
-tags: posts
 slug: code-palousa-2015
-layout: layouts/post.edge
 ---
 
 Last week I had the privilege of being a part of [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but this was my first time attending as a speaker and a sponsor.

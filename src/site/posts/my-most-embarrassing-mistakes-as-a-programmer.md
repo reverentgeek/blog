@@ -4,9 +4,7 @@ title: "My Most Embarrassing Mistakes as a Programmer"
 feature_image: /content/images/2019/10/IMG_2152.JPG
 description: "My most embarrassing mistakes as a programmer, in no particular order:"
 date: 2019-10-30
-tags: posts
 slug: my-most-embarrassing-mistakes-as-a-programmer
-layout: layouts/post.edge
 ---
 
 My most embarrassing mistakes as a programmer, in no particular order:

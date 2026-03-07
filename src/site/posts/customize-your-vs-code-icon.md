@@ -4,9 +4,7 @@ title: "Customize Your VS Code Icon"
 feature_image: /content/images/2017/10/vs-code-clippy-variations.jpg
 description: "(Or any application icon, for that matter.)"
 date: 2017-10-27
-tags: posts
 slug: customize-your-vs-code-icon
-layout: layouts/post.edge
 ---
 
 (Or any application icon, for that matter.)

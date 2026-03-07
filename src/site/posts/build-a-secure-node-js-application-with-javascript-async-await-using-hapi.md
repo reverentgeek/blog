@@ -4,9 +4,7 @@ title: "Build a Secure Node.js Application with JavaScript Async Await Using Hap
 feature_image: /content/images/2019/03/secure-hapi.jpg
 description: "At the core of the JavaScript language is its asynchronous programming model. Unfortunately, dealing with callback functions has long been…"
 date: 2019-01-18
-tags: posts
 slug: build-a-secure-node-js-application-with-javascript-async-await-using-hapi
-layout: layouts/post.edge
 ---
 
 At the core of the JavaScript language is its asynchronous programming model. Unfortunately, dealing with callback functions has long been a source of frustration for many developers. JavaScript Promises helped make writing complex asynchronous code more manageable, but brought its own set of challenges. With the introduction of async functions in ES2017 (and the `async` and `await` keywords), writing asynchronous JavaScript is now much easier.
