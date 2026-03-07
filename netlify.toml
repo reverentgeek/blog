@@ -4,3 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "24"
+
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = ["dist/img"]

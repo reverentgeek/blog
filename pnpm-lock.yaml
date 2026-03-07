@@ -87,6 +87,9 @@ importers:
       markdownlint-cli:
         specifier: ^0.48.0
         version: 0.48.0
+      netlify-plugin-cache:
+        specifier: ^1.0.3
+        version: 1.0.3
       probe-image-size:
         specifier: ^7.2.3
         version: 7.2.3
@@ -2624,6 +2627,9 @@ packages:
     resolution: {integrity: sha512-6R9fqJ5Zcmf+uYaFgdIHmLwNldn5HbK8L5ybn7Uz+ylX/rnOsSp1AHcvQSrCaFN+qNM1wpymHqD7mVasEOlHGQ==}
     engines: {node: '>= 4.4.x'}
     hasBin: true
+
+  netlify-plugin-cache@1.0.3:
+    resolution: {integrity: sha512-CTOwNWrTOP59T6y6unxQNnp1WX702v2R/faR5peSH94ebrYfyY4zT5IsRcIiHKq57jXeyCrhy0GLuTN8ktzuQg==}
 
   netmask@2.0.2:
     resolution: {integrity: sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==}
@@ -6456,6 +6462,8 @@ snapshots:
       sax: 1.5.0
     transitivePeerDependencies:
       - supports-color
+
+  netlify-plugin-cache@1.0.3: {}
 
   netmask@2.0.2: {}
 

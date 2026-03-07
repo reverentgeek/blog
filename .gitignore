@@ -9,9 +9,7 @@ node_modules/
 .vscode
 .cache/
 .netlify/
-dist/*
-!dist/img/
-!dist/img/**
+dist/
 .env
 .parcel-cache/
 reports/

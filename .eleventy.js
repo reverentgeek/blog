@@ -36,7 +36,7 @@ export default async function ( config ) {
 	registerRssFilters( config, pluginRSS );
 
 	// Optimize images with better compression
-	// Images are cached in dist/img/ - commit this directory to avoid reprocessing on deploy
+	// Images cached in dist/img/ via netlify-plugin-cache; stale derivatives pruned post-build
 	config.addPlugin( eleventyImageTransformPlugin, imageTransformOptions );
 
 	config.addPlugin( navigationPlugin );

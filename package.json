@@ -12,7 +12,8 @@
 		"build:css": "postcss src/assets/css/styles.css --output dist/assets/index.css --no-map",
 		"build:js": "esbuild src/assets/js/index.js src/assets/js/prism.js --bundle --outdir=dist/assets --minify",
 		"build:eleventy": "ELEVENTY_ENV=production eleventy",
-		"build": "NODE_ENV=production run-s clean build:css build:js build:eleventy",
+		"build:prune": "node scripts/prune-images.js",
+		"build": "NODE_ENV=production run-s clean build:css build:js build:eleventy build:prune",
 		"start": "pnpm run serve",
 		"lint": "eslint . --ext .cjs --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
@@ -72,6 +73,7 @@
 		"jimp": "^1.6.0",
 		"lighthouse": "^13.0.3",
 		"markdownlint-cli": "^0.48.0",
+		"netlify-plugin-cache": "^1.0.3",
 		"probe-image-size": "^7.2.3",
 		"slug": "^11.0.1",
 		"uuid": "^13.0.0"
