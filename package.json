@@ -17,6 +17,8 @@
 		"lint": "eslint . --ext .cjs --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
 		"post": "node src/utils/post.js",
+		"test": "pnpm run test:smoke",
+		"test:smoke": "pnpm run build && node --test test/smoke.test.js",
 		"test:lighthouse": "lighthouse --view https://reverentgeek.com --output html --output-path ./reports/report.html"
 	},
 	"repository": {
@@ -24,7 +26,7 @@
 		"url": "git+https://github.com/reverentgeek/blog.git"
 	},
 	"engines": {
-		"node": ">=22.19.0"
+		"node": ">=24"
 	},
 	"keywords": [
 		"eleventy",

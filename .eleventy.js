@@ -8,7 +8,8 @@ import edgeJsPlugin from "eleventy-plugin-edgejs";
 import htmlMinTransform from "./src/utils/transforms/html-min-transform.js";
 
 export default async function ( config ) {
-	const isDev = process.env?.NODE_ENV === "development";
+	const environment = process.env.ELEVENTY_ENV || process.env.NODE_ENV || "production";
+	const isDev = environment === "development";
 	config.addFilter( "isSiteMapSafe", function ( url ) {
 		const isSafe = !url.startsWith( "/_" );
 		return isSafe.toString();
@@ -23,7 +24,7 @@ export default async function ( config ) {
 	config.addPassthroughCopy( "./src/site/favicon.ico" );
 
 	// Minify HTML
-	if ( process.env.ELEVENTY_ENV === "production" ) {
+	if ( environment === "production" ) {
 		htmlMinTransform( config );
 	}
 
@@ -31,12 +32,12 @@ export default async function ( config ) {
 	config.addPlugin( pluginRSS );
 
 	// Re-register RSS plugin filters as universal filters (the plugin uses addNunjucksFilter)
-	const { createRequire } = await import( "module" );
-	const require = createRequire( import.meta.url );
-	const getNewestCollectionItemDate = require( "@11ty/eleventy-plugin-rss/src/getNewestCollectionItemDate.js" );
-	const dateToRfc3339 = require( "@11ty/eleventy-plugin-rss/src/dateRfc3339.js" );
-	const absoluteUrl = require( "@11ty/eleventy-plugin-rss/src/absoluteUrl.js" );
-	const htmlToAbsoluteUrls = require( "@11ty/eleventy-plugin-rss/src/htmlToAbsoluteUrls.js" );
+	const {
+		getNewestCollectionItemDate,
+		dateToRfc3339,
+		absoluteUrl,
+		convertHtmlToAbsoluteUrls: htmlToAbsoluteUrls
+	} = pluginRSS;
 	config.addFilter( "getNewestCollectionItemDate", getNewestCollectionItemDate );
 	config.addFilter( "dateToRfc3339", dateToRfc3339 );
 	config.addFilter( "absoluteUrl", absoluteUrl );
