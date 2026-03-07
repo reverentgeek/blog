@@ -29,7 +29,7 @@
 - [ ] Improve lightbox keyboard accessibility. The lightbox in `src/assets/js/index.js` does not trap focus, so keyboard users can tab behind the overlay. Adding a focus trap and restoring focus on close would improve accessibility.
 - [ ] Consider lazy-loading Disqus based on user intent. The current IntersectionObserver approach in `post.edge` is good; a "Show comments" button would avoid loading the Disqus script entirely unless the reader wants it.
 - [ ] Normalize `icon` path in `site.json`. The `icon` field uses a full absolute URL (`https://reverentgeek.com/favicon.ico`) while every other asset path is site-relative. This could cause mismatches if the site URL changes.
-- [ ] Add JSON-LD structured data for blog posts. The default layout uses microdata (`itemprop`) but not JSON-LD, which is preferred by search engines. Adding a `Article` schema block with `datePublished`, `author`, and `description` would improve search result presentation.
+- [x] Add JSON-LD structured data for blog posts. A `Article` JSON-LD block is now emitted in `default.edge` for all posts, with headline, description, image, dates, author, and publisher.
 - [ ] Consolidate `post.js` and `page.js` scaffolding utilities. These two files in `src/utils/` are nearly identical — they could share a common content-scaffolding function to reduce duplication.
 - [ ] Add `Sitemap` directive to `robots.txt`. The current `src/site/robots.edge` does not include `Sitemap: https://reverentgeek.com/sitemap.xml`, which helps search engine crawlers discover it.
 

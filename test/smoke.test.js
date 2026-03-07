@@ -27,6 +27,18 @@ test( "post page smoke test", async () => {
 	assert.match( postPage, /<h1[^>]*>\s*Edge\.js Template Plugin for 11ty\s*<\/h1>/i );
 	assert.match( postPage, /eleventy-plugin-edgejs/i );
 	assert.match( postPage, /<meta[^>]+property="og:title"[^>]+Edge\.js Template Plugin for 11ty/i );
+
+	// Extract and validate JSON-LD structured data
+	const jsonLdMatch = postPage.match( /<script type="application\/ld\+json">\s*([\s\S]*?)\s*<\/script>/ );
+	assert.ok( jsonLdMatch, "JSON-LD script block should be present" );
+	const jsonLd = JSON.parse( jsonLdMatch[1] );
+	assert.equal( jsonLd["@type"], "Article" );
+	assert.equal( jsonLd.headline, "Edge.js Template Plugin for 11ty" );
+	assert.ok( jsonLd.description, "description should not be empty" );
+	assert.match( jsonLd.datePublished, /^\d{4}-\d{2}-\d{2}$/ );
+	assert.equal( jsonLd.author["@type"], "Person" );
+	assert.equal( jsonLd.publisher["@type"], "Organization" );
+	assert.ok( !jsonLd.dateModified, "dateModified should not be present" );
 } );
 
 test( "feed smoke test", async () => {

@@ -113,6 +113,13 @@
   <meta itemprop="description" content="{{ seoDescription }}">
   <meta itemprop="image" content="{{ seoImage }}">
 
+  {{-- JSON-LD structured data for blog posts --}}
+  @if(date && tags && tags.includes('posts'))
+  <script type="application/ld+json">
+  {{{ jsonLdArticle({ title, description: seoDescription, image: seoImage, datePublished: htmlDateString(date), author: site.author, publisher: { name: site.title, logoUrl: site.url + site.logo }, pageUrl: site.url + page.url }) }}}
+  </script>
+  @end
+
   <link rel="stylesheet" href="/assets/index.css" />
   <script src="/assets/index.js" defer></script>
 

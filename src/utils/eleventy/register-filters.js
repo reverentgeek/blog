@@ -28,6 +28,35 @@ export function registerSiteFilters( config, { socialImageFilter } ) {
 
 	config.addFilter( "socialImage", socialImageFilter );
 
+	config.addFilter( "jsonLdArticle", ( { title, description, image, datePublished, author, publisher, pageUrl } ) => {
+		const ld = {
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": title,
+			"description": description,
+			"image": image,
+			"datePublished": datePublished,
+			"author": {
+				"@type": "Person",
+				"name": author.name,
+				"url": author.url
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": publisher.name,
+				"logo": {
+					"@type": "ImageObject",
+					"url": publisher.logoUrl
+				}
+			},
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": pageUrl
+			}
+		};
+		return JSON.stringify( ld, null, 2 );
+	} );
+
 	config.addShortcode( "currentYear", async () => {
 		return new Date().getFullYear();
 	} );
