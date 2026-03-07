@@ -1,0 +1,16 @@
+@let(items = links || [])
+@let(iconClasses = iconClass || 'text-white w-8 h-8 md:w-6 md:h-6')
+@let(containerClasses = containerClass || '')
+
+<div class="{{ containerClasses }}">
+  @each(item in items)
+    <a
+      title="{{ item.label }}"
+      class="{{ item.class }}"
+      href="{{ item.url }}"
+      target="_blank"
+      rel="noopener noreferrer">
+      @!component('components/icon', { id: item.icon, cls: iconClasses })
+    </a>
+  @end
+</div>

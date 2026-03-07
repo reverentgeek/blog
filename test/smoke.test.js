@@ -17,6 +17,8 @@ test( "homepage smoke test", async () => {
 	assert.match( homepage, /<title>Home\s+[–-]\s+ReverentGeek<\/title>/i );
 	assert.match( homepage, /<section class="post-list">/i );
 	assert.match( homepage, /href="\/feed\.xml"/i );
+	assert.match( homepage, /<link rel="canonical" href="https:\/\/reverentgeek\.com\/">/i );
+	assert.match( homepage, /data-mobile-menu-button/i );
 } );
 
 test( "post page smoke test", async () => {
@@ -33,4 +35,5 @@ test( "feed smoke test", async () => {
 	assert.match( feed, /<feed xmlns="http:\/\/www\.w3\.org\/2005\/Atom">/i );
 	assert.match( feed, /<title>ReverentGeek<\/title>/i );
 	assert.match( feed, /<link href="https:\/\/reverentgeek\.com\/edgejs-template-plugin-for-11ty\/"\/>/i );
+	assert.ok( ( feed.match( /<entry>/g ) || [] ).length <= 30 );
 } );

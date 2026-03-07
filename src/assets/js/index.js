@@ -1,5 +1,30 @@
 // Prism.js is now loaded conditionally only on blog post pages
 
+// Mobile navigation toggle
+( function () {
+	document.addEventListener( "DOMContentLoaded", () => {
+		const button = document.querySelector( "[data-mobile-menu-button]" );
+		const menu = document.querySelector( "[data-mobile-menu]" );
+
+		if ( !button || !menu ) return;
+
+		function closeMenu() {
+			button.setAttribute( "aria-expanded", "false" );
+			menu.classList.add( "hidden" );
+		}
+
+		button.addEventListener( "click", () => {
+			const isExpanded = button.getAttribute( "aria-expanded" ) === "true";
+			button.setAttribute( "aria-expanded", isExpanded ? "false" : "true" );
+			menu.classList.toggle( "hidden", isExpanded );
+		} );
+
+		menu.querySelectorAll( "a" ).forEach( ( link ) => {
+			link.addEventListener( "click", closeMenu );
+		} );
+	} );
+} )();
+
 // Lightbox functionality for image galleries
 ( function () {
 	let lightbox = null;

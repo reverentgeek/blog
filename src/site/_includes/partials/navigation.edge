@@ -21,31 +21,23 @@
     </nav>
 
     <!-- Desktop Social Media Links -->
-    <div class="hidden md:flex items-center space-x-4 flex-shrink-0">
-      <a title="BlueSky" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-bluesky hover:bg-bluesky/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-bluesky" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer">
-        @!component('components/icon', { id: 'bluesky', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-      </a>
-      <a title="X (Twitter)" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-xtwitter hover:bg-xtwitter/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-xtwitter" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-        @!component('components/icon', { id: 'x', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-      </a>
-      <a title="GitHub" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-github hover:bg-github/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-github" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-        @!component('components/icon', { id: 'github', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-      </a>
-      <a title="Instagram" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-instagram hover:bg-instagram/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-instagram" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
-        @!component('components/icon', { id: 'instagram', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-      </a>
-    </div>
+    @!component('components/social-links', { links: site.social_links, containerClass: 'hidden md:flex items-center space-x-4 flex-shrink-0' })
 
     <div class="md:hidden">
-      <label for="mobile-menu-toggle" class="cursor-pointer">
+      <button
+        type="button"
+        class="cursor-pointer"
+        data-mobile-menu-button
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu">
         @!component('components/icon', { id: 'burger', cls: 'text-white', width: '20', height: '20' })
-      </label>
+      </button>
     </div>
   </div>
 
   <!-- Mobile menu dropdown -->
-  <input type="checkbox" class="hidden" id="mobile-menu-toggle"/>
-  <div id="mobile-menu" class="md:hidden hidden">
+  <div id="mobile-menu" class="md:hidden hidden" data-mobile-menu>
     <div class="flex flex-col space-y-1 py-2">
       <!-- Navigation Links -->
       @each(item in site.navigation)
@@ -56,20 +48,7 @@
 
       <!-- Social Media Links -->
       <div class="pt-2 mt-2">
-        <div class="flex justify-center space-x-6">
-          <a title="BlueSky" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-bluesky hover:bg-bluesky/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-bluesky" href="https://bsky.app/profile/reverentgeek.com" target="_blank" rel="noopener noreferrer">
-            @!component('components/icon', { id: 'bluesky', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-          </a>
-          <a title="X (Twitter)" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-xtwitter hover:bg-xtwitter/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-xtwitter" href="https://x.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-            @!component('components/icon', { id: 'x', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-          </a>
-          <a title="GitHub" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-github hover:bg-github/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-github" href="https://github.com/reverentgeek" target="_blank" rel="noopener noreferrer">
-            @!component('components/icon', { id: 'github', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-          </a>
-          <a title="Instagram" class="group relative rounded-full border-2 border-gray-200 p-2 hover:border-instagram hover:bg-instagram/80 transition-all duration-300 hover:scale-110 hover:shadow-lg bg-instagram" href="https://www.instagram.com/reverentgeek/" target="_blank" rel="noopener noreferrer">
-            @!component('components/icon', { id: 'instagram', cls: 'text-white w-8 h-8 md:w-6 md:h-6' })
-          </a>
-        </div>
+        @!component('components/social-links', { links: site.social_links, containerClass: 'flex justify-center space-x-6' })
       </div>
     </div>
   </div>

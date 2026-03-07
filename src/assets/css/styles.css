@@ -27,8 +27,6 @@
 	}
   }
 
-/* purgecss start ignore */
-
 body {
 	font-size: 18px;
 	line-height: 1.7;
@@ -37,14 +35,6 @@ body {
 code[class*="language-"],
 pre[class*="language-"] {
 	@apply font-mono;
-}
-
-#menu-toggle:checked+#menu {
-	display: block;
-}
-
-#mobile-menu-toggle:checked+#mobile-menu {
-	display: block;
 }
 
 .post-list {
@@ -300,6 +290,4 @@ pre[class*="language-"] {
 .callout-quote {
 	@apply bg-gray-100 border-gray-400 italic;
 }
-
-/* purgecss end ignore */
 
