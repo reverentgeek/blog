@@ -28,7 +28,7 @@ slug: speaking
 | 2025.11.08 | [Open Source Camp](https://www.drupalcampchattanooga.com)<sup>*</sup> | Chattanooga, TN |
 | 2024.11.02 | [Open Source Camp](https://www.drupalcampchattanooga.com) | Chattanooga, TN |
 | 2024.10.16 | [CamundaCon](https://newyork.camundacon.com/)<sup>*</sup> | New York, NY |
-| 2024.07.30 | [THAT Conference](https://thatconference.com/wi/2024/) | Wisconsin Dells, WI |
+| 2024.07.30 | [THAT Conference](https://thatconference.com/) | Wisconsin Dells, WI |
 | 2024.07.23 | [GDevCon North America](https://www.gdevconna.org/)<sup>*</sup><sup>+</sup> | Golden, CO |
 | 2024.06.27 | [KCDC 2024](https://www.kcdc.info/) | Kansas City, MO |
 | 2024.05.03 | [Stir Trek 2024](https://stirtrek.com/) | Columbus, OH |
