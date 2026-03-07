@@ -1,6 +1,5 @@
 import pluginRSS from "@11ty/eleventy-plugin-rss";
 import Image, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import navigationPlugin from "@11ty/eleventy-navigation";
 import brokenLinksPlugin from "eleventy-plugin-broken-links";
 import edgeJsPlugin from "eleventy-plugin-edgejs";
 
@@ -38,8 +37,6 @@ export default async function ( config ) {
 	// Optimize images with better compression
 	// Images cached in dist/img/ via netlify-plugin-cache; stale derivatives pruned post-build
 	config.addPlugin( eleventyImageTransformPlugin, imageTransformOptions );
-
-	config.addPlugin( navigationPlugin );
 
 	if ( isDev ) {
 		config.addPlugin( brokenLinksPlugin );

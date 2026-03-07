@@ -1,5 +1,3 @@
-import cleanCSS from "clean-css";
-
 export function registerRssFilters( config, pluginRSS ) {
 	const {
 		getNewestCollectionItemDate,
@@ -18,16 +16,6 @@ export function registerSiteFilters( config, { socialImageFilter } ) {
 	config.addFilter( "isSiteMapSafe", function ( url ) {
 		const isSafe = !url.startsWith( "/_" );
 		return isSafe.toString();
-	} );
-
-	config.addFilter( "cssmin", ( code ) => {
-		return new cleanCSS( {} ).minify( code ).styles;
-	} );
-
-	config.addFilter( "getReadingTime", ( text ) => {
-		const wordsPerMinute = 200;
-		const numberOfWords = text.split( /\s/g ).length;
-		return Math.ceil( numberOfWords / wordsPerMinute );
 	} );
 
 	config.addFilter( "htmlDateString", ( dateObj ) => {
