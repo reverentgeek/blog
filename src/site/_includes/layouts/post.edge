@@ -6,7 +6,14 @@ layout: layouts/default.edge
     <div class="text-gray-500 uppercase text-sm mb-4">{{ postDate(date) }}</div>
     @if(feature_image)
       <figure class="post-feature-image">
-        <img fetchpriority="high" src="{{ feature_image }}" alt="{{ title }}">
+        <img
+          eleventy:widths="600,900,1200,1500"
+          fetchpriority="high"
+          src="{{ feature_image }}"
+          alt="{{ title }}"
+          sizes="(min-width: 1280px) 1200px, 100vw"
+          loading="eager"
+          decoding="async">
       </figure>
     @end
     <section class="content-body">
