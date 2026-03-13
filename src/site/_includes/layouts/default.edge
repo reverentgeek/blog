@@ -1,5 +1,5 @@
 {{-- Compute SEO variables with defaults --}}
-@let(seoDescription = description || site.description)
+@let(seoDescription = meta_description || description || site.description)
 @let(seoImageData = heroImage ? heroImage.social : { url: site.cover_image, width: 1200, height: 630 })
 @let(seoTwitterCreator = site.twitter)
 @let(seoCardType = 'summary_large_image')
@@ -31,7 +31,7 @@
   @assign(seoAuthorLink = author.website || '')
 {{-- Override for post/page with feature_image --}}
 @elseif(feature_image)
-  @assign(seoDescription = description || site.description)
+  @assign(seoDescription = meta_description || description || site.description)
   @assign(seoArticleAuthor = site.url)
 @end
 <!DOCTYPE html>

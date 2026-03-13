@@ -1,4 +1,4 @@
-@let(seoDescription = description || site.description)
+@let(seoDescription = meta_description || description || site.description)
 @let(seoImage = site.url + (heroImage ? heroImage.social.url : site.cover_image))
 
 @if(feature_image)
@@ -7,7 +7,7 @@
   @else
     @assign(seoImage = site.url + feature_image)
   @end
-  @assign(seoDescription = description || site.description)
+  @assign(seoDescription = meta_description || description || site.description)
 @end
 
 @let(displayTitle = title ? title + ' – ' + site.title : site.title)
