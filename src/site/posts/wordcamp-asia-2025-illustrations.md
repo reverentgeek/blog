@@ -3,6 +3,7 @@ id: e8b8f870f9c311ef978f9db086967e23
 title: "WordCamp Asia 2025 Illustrations"
 feature_image: /content/images/wordcamp-asia-2025-illustrations/wordcamp-asia-2025-illustrations.jpg
 description: I traveled to Manila, Philippines for WordCamp Asia 2025 to draw avatars for Wordpress.com!
+meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp Asia 2025."
 date: 2025-03-05
 slug: wordcamp-asia-2025-illustrations
 ---

@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba94c
 title: "Fresh Brewed Code"
 description: "There's not a word yet, for old friends who just met. -- Gonzo"
+meta_description: "A reflection on friendship, connection, and the beginning of Fresh Brewed Code."
 date: 2011-11-30
 slug: fresh-brewed-code
 ---

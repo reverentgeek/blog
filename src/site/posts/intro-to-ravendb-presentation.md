@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba953
 title: "Intro to RavenDB Presentation"
 description: "I'm excited to announce that my \"Introduction to RavenDB: NoSQL is Rapping at Your Door\" presentation that I gave at CodeMash 2012 was…"
+meta_description: "Watch my Intro to RavenDB presentation from CodeMash 2012 and get an introduction to RavenDB and document databases."
 date: 2012-02-28
 slug: intro-to-ravendb-presentation
 ---

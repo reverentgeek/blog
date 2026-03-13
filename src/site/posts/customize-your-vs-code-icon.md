@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba988
 title: "Customize Your VS Code Icon"
 feature_image: /content/images/2017/10/vs-code-clippy-variations.jpg
 description: "(Or any application icon, for that matter.)"
+meta_description: "Learn how to customize your VS Code icon and apply the same approach to other desktop application icons."
 date: 2017-10-27
 slug: customize-your-vs-code-icon
 ---

@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba97d
 title: "Community Spotlight: Carl Franklin"
 feature_image: /content/images/2017/05/carl-franklin.jpg
 description: "This guy. THIS guy. Carl has been one of my heroes since way back in the day of \"Carl & Gary's Visual Basic Home Page.\" This…"
+meta_description: "A community spotlight on Carl Franklin and their impact on developers, the broader tech community, and my own career."
 date: 2017-05-22
 slug: community-spotlight-carl-franklin
 ---

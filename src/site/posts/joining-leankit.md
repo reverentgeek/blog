@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba951
 title: "Joining LeanKit"
 description: "I am excited to announce that I'm joining LeanKit as Senior Software Developer and Technical Evangelist. Chris Hefley, co-founder and CEO,…"
+meta_description: "Why I joined LeanKit as a Senior Software Developer and Technical Evangelist, and what drew me to the role."
 date: 2013-03-02
 slug: joining-leankit
 ---

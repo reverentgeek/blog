@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba948
 title: "Book Review: \"Remote: Office Not Required\""
 description: "Jason Fried at 37signals has a new book out titled, \"Remote: Office Not Required.\" I listened to the audio version on a recent road trip.…"
+meta_description: "My review of \\\"Remote: Office Not Required\\\", including key takeaways, highlights, and what stood out to me."
 date: 2013-11-18
 slug: book-review-remote-office-not-required
 ---

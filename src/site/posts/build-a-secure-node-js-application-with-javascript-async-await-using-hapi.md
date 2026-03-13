@@ -3,6 +3,7 @@ id: 5c423d6dafe73327712d866f
 title: "Build a Secure Node.js Application with JavaScript Async Await Using Hapi"
 feature_image: /content/images/2019/03/secure-hapi.jpg
 description: "At the core of the JavaScript language is its asynchronous programming model. Unfortunately, dealing with callback functions has long been…"
+meta_description: "Learn how to build a secure Node.js application with async/await and Hapi while avoiding callback-heavy code."
 date: 2019-01-18
 slug: build-a-secure-node-js-application-with-javascript-async-await-using-hapi
 ---

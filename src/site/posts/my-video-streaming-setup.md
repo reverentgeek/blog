@@ -3,6 +3,7 @@ id: 8271b860c72d11ed835863a5309edcf8
 title: "My Office Studio Setup for Video Conferencing, Recordings, and Streaming"
 feature_image: /content/images/my-video-streaming-setup/my-video-streaming-setup.jpg
 description: "Over the last few years, I received many comments and questions about my office studio video and audio setup. In this post, I will walk through what I've put together, why it fits what I need, and hopefully, give you some ideas on how you can improve your audio and video."
+meta_description: "Over the last few years, I received many comments and questions about my office studio video and audio setup. In this post, I will walk through what I've..."
 date: 2023-03-22
 slug: my-video-streaming-setup
 ---

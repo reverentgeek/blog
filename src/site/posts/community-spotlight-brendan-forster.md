@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba989
 title: "Community Spotlight: Brendan Forster"
 feature_image: /content/images/2017/11/Brendan-Forster.jpg
 description: "It is my pleasure to present this community tribute to Brendan Forster, written by guest author Mord Zuber."
+meta_description: "A community spotlight on Brendan Forster and their impact on developers, the broader tech community, and my own career."
 date: 2017-11-01
 slug: community-spotlight-brendan-forster
 ---

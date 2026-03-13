@@ -3,6 +3,7 @@ id: 5e3c593e71e5d67de8259700
 title: "Create PDFs with Node.js and Puppeteer"
 feature_image: /content/images/2020/02/charter-example.jpg
 description: "I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and…"
+meta_description: "Learn how to generate PDFs with Node.js and Puppeteer, including rendering web pages and local HTML files into downloadable PDF documents."
 date: 2020-02-06
 slug: create-pdfs-with-node-js-and-puppeteer
 ---

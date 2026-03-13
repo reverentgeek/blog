@@ -3,6 +3,7 @@ id: a561e7d0294311f0965e39a7bd19db91
 title: "HopCounter: Build a Retro Page View Counter with Bunny Edge Scripting"
 feature_image: /content/images/hopcounter-bunny-edge-scripting/hopcounter-bunny-edge-scripting.jpg
 description: "Learn to build a retro page view counter using Bunny.net Edge Scripting!"
+meta_description: "Learn how to build a retro page view counter with Bunny Edge Scripting and add a nostalgic hit counter to your site."
 date: 2025-05-16
 slug: hopcounter-bunny-edge-scripting
 ---

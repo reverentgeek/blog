@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba977
 title: "Community Spotlight: Jim Holmes"
 feature_image: /content/images/2017/04/jim-holmes-2.png
 description: "It's my privilege to know Jim Holmes. He's one of my heroes. I owe Jim many, many thanks for the positive impact he's made on my career and…"
+meta_description: "A community spotlight on Jim Holmes and their impact on developers, the broader tech community, and my own career."
 date: 2017-04-17
 slug: community-spotlight-jim-holmes
 ---

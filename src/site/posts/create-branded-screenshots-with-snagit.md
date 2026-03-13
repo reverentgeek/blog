@@ -3,6 +3,7 @@ id: 5d2614bb4a35372945cc227f
 title: "Create Engaging Screen Shots with Snagit"
 feature_image: /content/images/2019/07/snagit-engaging-screenshots.jpg
 description: "Throughout my career, writing documentation and tutorials has been a critical skill. In my experience, good visuals can vastly improve the…"
+meta_description: "How to create more engaging screenshots with Snagit so your tutorials, documentation, and presentations communicate more clearly."
 date: 2019-07-12
 slug: create-branded-screenshots-with-snagit
 ---

@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba95d
 title: "Making Connections at CodeStock 2014"
 description: "CodeStock's theme this year was \"Making Connections,\" and there were plenty of opportunities for attendees to get connected. Connected to…"
+meta_description: "Reflections on CodeStock 2014, the Making Connections theme, and the relationships that made the conference memorable."
 date: 2014-07-14
 slug: codestock-2014
 ---

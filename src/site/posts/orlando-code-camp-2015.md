@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba960
 title: "Orlando Code Camp 2015"
 description: "March 28, 2015 I had the great pleasure of giving two talks at the 10th annual Orlando Code Camp. This was my first Orlando Code Camp, and…"
+meta_description: "Reflections on speaking at Orlando Code Camp 2015 and presenting two sessions at the conference."
 date: 2015-03-28
 slug: orlando-code-camp-2015
 ---

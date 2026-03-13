@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba974
 title: "SQL Server for Linux: How to Move a Database From One Docker Container to Another"
 description: "The bad news is, the Docker version of SQL Server for Linux is a limited trial edition that will eventually expire. At some point, you will…"
+meta_description: "Learn how to move a SQL Server for Linux database from one Docker container to another without losing your data."
 date: 2017-03-02
 slug: sql-server-for-linux-how-to-move-a-database-from-one-docker-container-to-another
 ---

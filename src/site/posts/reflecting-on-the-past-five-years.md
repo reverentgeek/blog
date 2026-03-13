@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba987
 title: "Reflecting on the past five years"
 feature_image: /content/images/2017/10/looking-back.jpg
 description: "You might be thinking..."
+meta_description: "A reflection on the past five years, the changes along the way, and the perspective that comes from looking back."
 date: 2017-10-10
 slug: reflecting-on-the-past-five-years
 ---

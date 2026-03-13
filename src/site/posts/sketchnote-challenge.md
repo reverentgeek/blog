@@ -3,6 +3,7 @@ id: 5d69901fd031bf06b18524c5
 title: "Sketchnote Challenge"
 feature_image: /content/images/2019/08/660414EF-3D8D-45EF-87AD-A8B5E13E67DA.png
 description: "Sketchnotes are amazing! Even if you don't think you can draw, I promise you can learn. And, there are so many benefits! Here are a bunch of drawing guides to help you get started!"
+meta_description: "A sketchnote challenge with drawing guides, inspiration, and encouragement for anyone who wants to learn visual note-taking."
 date: 2019-08-31
 slug: sketchnote-challenge
 ---

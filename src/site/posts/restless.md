@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba950
 title: "Restless"
 description: "Being \"good enough\" is not good enough."
+meta_description: "A short reflection on ambition, dissatisfaction, and why being good enough is not always enough."
 date: 2011-11-02
 slug: restless
 ---

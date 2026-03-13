@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba964
 title: "Ride Review: Leiper's Fork and Natchez Trace"
 feature_image: /content/images/ride-review-leipers-fork-and-natchez-trace/IMG_6126.jpg
 description: "I've been in Franklin, TN this week for meetings at LeanKit. I made the decision to stay through the weekend before heading off to Code…"
+meta_description: "A motorcycle ride review of Leiper's Fork and Natchez Trace, including the route, scenery, and why the ride is worth taking."
 date: 2015-04-25
 slug: ride-review-leipers-fork-and-natchez-trace
 ---

@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba971
 title: "2016 Podcasts"
 feature_image: /content/images/2016/11/podcast.png
 description: "I had the honor of being on a few podcasts this year!"
+meta_description: "A roundup of the podcasts I appeared on in 2016, with links to the episodes and conversations."
 date: 2016-11-17
 slug: podcasts
 ---

@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba98a
 title: "Developer's Serenity Prayer"
 feature_image: /content/images/2019/03/developers-serenity-prayer-2.jpg
 description: "Oh Great Cloud,"
+meta_description: "A short developer prayer about patience, perspective, and the daily realities of working in software."
 date: 2017-12-01
 slug: developers-serenity-prayer
 ---

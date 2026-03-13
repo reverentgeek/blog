@@ -3,6 +3,7 @@ id: b8f71250b16011ed9520d5f99e427504
 title: "A Really Sweet Visit to Sweetwater.com"
 feature_image: /content/images/sweet-sweetwater-visit/sweetwater-headquarters.jpg
 description: I recently visited Sweetwater's headquarters in Fort Wayne, IN, to speak to their engineers on leadership. It was a huge honor, and I consider it one of my highest achievements as a tech speaker.
+meta_description: "Reflections on visiting Sweetwater, speaking to their engineers on leadership, and why the experience meant so much."
 date: 2023-02-20
 slug: sweet-sweetwater-visit
 ---

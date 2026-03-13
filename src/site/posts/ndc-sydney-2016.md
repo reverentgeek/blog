@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba96d
 title: "NDC Sydney 2016"
 feature_image: /content/images/2016/08/IMG_2127-1.jpg
 description: "Earlier this month I had the incredible privilege of speaking at NDC Sydney! Australia has been at the top of my most-wanted-to-visit…"
+meta_description: "Reflections on speaking at NDC Sydney 2016, visiting Australia, and connecting with the developer community there."
 date: 2016-08-10
 slug: ndc-sydney-2016
 ---

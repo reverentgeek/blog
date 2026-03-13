@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba978
 title: "Before it's too late"
 feature_image: /content/images/2017/04/thank-you.png
 description: "There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths."
+meta_description: "A reflection on showing appreciation for people now instead of waiting until it is too late."
 date: 2017-04-13
 slug: before-its-too-late
 ---

@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba949
 title: "Scale Windows Services with RabbitMQ"
 description: "(Cross-posted to FreshBrewedCode.com)"
+meta_description: "How to scale Windows Services with RabbitMQ by moving work off individual processes and into a queue-driven architecture."
 date: 2011-11-30
 slug: scale-windows-services-with-rabbitmq
 ---

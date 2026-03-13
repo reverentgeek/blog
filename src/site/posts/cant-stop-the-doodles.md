@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba96f
 title: "Can't Stop the Doodles"
 feature_image: /content/images/2016/10/superman-manual.jpg
 description: "Ever since I discovered what an impact hand-drawn illustrations can have on an audience, I've been using them more and more in all of my…"
+meta_description: "How doodles and hand-drawn illustrations became a bigger part of my talks, teaching, and creative work."
 date: 2016-10-17
 slug: cant-stop-the-doodles
 ---

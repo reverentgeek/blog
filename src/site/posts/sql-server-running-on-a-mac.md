@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba970
 title: "SQL Server Running on a Mac?!"
 feature_image: /content/images/2019/02/doc-brown-shocked.jpg
 description: "Dogs and cats living together, mass hysteria!"
+meta_description: "Learn how to run SQL Server on a Mac using Docker, including setup steps, configuration tips, and tools for connecting to your database."
 date: 2016-11-16
 slug: sql-server-running-on-a-mac
 ---

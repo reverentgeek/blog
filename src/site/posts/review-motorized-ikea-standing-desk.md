@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba966
 title: "Review: Motorized IKEA Standing Desk"
 feature_image: /content/images/2015/05/ikea_standing_desk.jpg
 description: "Summary: After six weeks of use, I declare the IKEA BEKANT sit/stand desk to be fully awesome."
+meta_description: "My review of Motorized IKEA Standing Desk, including key takeaways, highlights, and what stood out to me."
 date: 2015-05-26
 slug: review-motorized-ikea-standing-desk
 ---

@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba95e
 title: "I'm not nearly the man I used to be"
 description: "I've been a \"fat kid\" all my life. In school, I didn't play sports, and regularly felt humiliated in gym class. As an adult, my mass has…"
+meta_description: "A personal reflection on weight, identity, and the long process of becoming a healthier version of myself."
 date: 2014-07-17
 slug: im-not-nearly-the-man-i-used-to-be
 ---

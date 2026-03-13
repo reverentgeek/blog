@@ -3,6 +3,7 @@ id: c19b71709d3611f080561fa0207711d1
 title: "Here, take my card..."
 feature_image: /content/images/here-take-my-card/here-take-my-card.jpg
 description: There was a time when business cards were important for sharing contact information, as well as your brand.
+meta_description: "There was a time when business cards were important for sharing contact information, as well as your brand."
 date: 2025-09-29
 slug: here-take-my-card
 ---

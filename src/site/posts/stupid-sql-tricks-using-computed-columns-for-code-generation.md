@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba94b
 title: "Stupid SQL Tricks - Using Computed Columns for Code Generation"
 description: "I recently had a need to drop and recreate all the default constraints on some tables so I could convert the data types of from varchar to…"
+meta_description: "A practical SQL trick for using computed columns to generate code and simplify repetitive database tasks."
 date: 2011-11-04
 slug: stupid-sql-tricks-using-computed-columns-for-code-generation
 ---

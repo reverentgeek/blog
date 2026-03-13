@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba955
 title: "Brand Yourself"
 description: "Last night at the Nashville .NET User Group we ended the evening with a terrific discussion on careers. We had a great panel of developers,…"
+meta_description: "Reflections on personal branding, career growth, and the discussion that followed at the Nashville .NET User Group."
 date: 2011-11-11
 slug: brand-yourself
 ---

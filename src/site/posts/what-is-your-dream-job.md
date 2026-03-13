@@ -3,6 +3,7 @@ id: 54bbfb5008f911f09d24b7d500ec17d4
 title: "What is Your Dream Job?"
 feature_image: /content/images/what-is-your-dream-job/what-is-your-dream-job.png
 description: When it comes to the work you do, have you ever dreamed big? Not just a title or paycheck. What kind of role, responsibilities, or tasks would motivate you to jump out of bed, even on a Monday? 🙃
+meta_description: "A reflection on defining your dream job by the kind of work, responsibilities, and impact that truly energize you."
 date: 2025-03-24
 slug: what-is-your-dream-job
 ---

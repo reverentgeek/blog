@@ -3,6 +3,7 @@ id: 512cfd10622c11ee8ffd6754bd2c62fe
 title: "MongoDB Podcast: Visual Storytelling"
 feature_image: /content/images/visual-storytelling-interview/visual-storytelling-interview.jpg
 description: I was a guest on the MongoDB Podcast Live show to talk about one of my favorite topics, Visual Storytelling. You can watch it here!
+meta_description: "I joined the MongoDB Podcast Live show to talk about visual storytelling, communication, and using illustrations to connect with technical audiences."
 date: 2023-10-03
 slug: visual-storytelling-mongodb-interview
 ---

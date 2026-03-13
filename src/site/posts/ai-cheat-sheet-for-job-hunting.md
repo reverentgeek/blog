@@ -3,6 +3,7 @@ id: 7a5971c030c811f0b64ee978a3fcde13
 title: "AI Cheat Sheet for Job Hunting"
 feature_image: /content/images/ai-cheat-sheet-for-job-hunting/ai-cheat-sheet-for-job-hunting.jpg
 description: Are you still applying for jobs like it's 2012? Level up your job hunt with these AI prompt tips!
+meta_description: "Practical AI prompts and job hunting tips to help you improve resumes, applications, networking, and interview preparation."
 date: 2025-05-14
 slug: ai-cheat-sheet-for-job-hunting
 ---

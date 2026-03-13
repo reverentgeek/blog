@@ -3,6 +3,7 @@ id: e1895450b4c611ebad1bd5bfcfd6e38e
 title: "Three Ways to Share Node.js Modules Across Multiple Projects"
 feature_image: /content/images/3-ways-to-share-nodejs-modules-across-multiple-projects/3-ways-to-share-nodejs-modules-across-multiple-projects.jpg
 description: "Three options for splitting Node.js code into shared libraries across multiple projects, with tradeoffs between convenience and portability."
+meta_description: "Three options for splitting Node.js code into shared libraries across multiple projects, with tradeoffs between convenience and portability."
 date: 2021-05-14
 slug: three-ways-to-share-nodejs-modules-across-multiple-projects
 ---

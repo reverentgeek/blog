@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba94d
 title: "Our Social Media Legacy"
 description: "Something I've been thinking about recently is the long-term impact that social media will have on society. Good or bad, everything we post…"
+meta_description: "A reflection on the long-term impact of social media and the legacy our posts leave behind."
 date: 2013-06-23
 slug: our-social-media-legacy
 ---

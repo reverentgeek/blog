@@ -3,6 +3,7 @@ id: 84b716c0821c11ed82cc8fdee474061f
 title: "Configure Eleventy to Host a Custom Mastodon Alias"
 feature_image: /content/images/configure-eleventy-to-host-a-custom-mastodon-alias/configure-eleventy-to-host-a-custom-mastodon-alias.jpg
 description: You can find me on Mastodon using @reverentgeek@reverentgeek.com! Here's how I did it using 11ty and Netlify!
+meta_description: "Learn how to configure an Eleventy site to host a custom Mastodon alias using 11ty and Netlify."
 date: 2023-01-02
 slug: configure-eleventy-to-host-a-custom-mastodon-alias
 ---

@@ -3,6 +3,7 @@ id: 42292e109ebc11efbfcacd7b86b62036
 title: "Build a Command-Line Application With Deno 2.0"
 feature_image: /content/images/build-a-cli-app-with-deno/build-a-cli-app-with-deno.jpg
 description: Learn to build a command-line application using Deno version 2.0!
+meta_description: "Learn how to build a command-line application with Deno 2.0, from setup and arguments to running the finished CLI."
 date: 2024-11-09
 slug: build-a-command-line-application-with-deno-2
 ---

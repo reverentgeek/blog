@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba952
 title: "How to leverage SQL Server with Node.js using Edge.js"
 description: "I've looked at Node.js many times over the past few years. It's hard to ignore all the attention it has received. Unfortunately, being…"
+meta_description: "Learn how to connect SQL Server and Node.js using Edge.js to take advantage of both environments in the same application."
 date: 2014-02-04
 slug: how-to-leverage-sql-server-with-node-js-using-edge-js
 ---

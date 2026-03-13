@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba965
 title: "Code PaLOUsa 2015"
 description: "Last week I had the privilege of being a part of Code PaLOUsa in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but…"
+meta_description: "Reflections on Code PaLOUsa 2015 in Louisville, including the talks, people, and overall conference experience."
 date: 2015-05-04
 slug: code-palousa-2015
 ---

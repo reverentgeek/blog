@@ -3,6 +3,7 @@ id: 0f4482a0193311f0b59da7fe582809c5
 title: "A Developer's Guide to Samsara Telematics"
 feature_image: /content/images/samsara/telematics-guide.png
 description: "This guide will help you wrangle Samsara's Telematics APIs like a pro."
+meta_description: "A practical guide to working with Samsara telematics APIs and building integrations that make fleet data easier to use."
 date: 2025-04-14
 slug: a-developers-guide-to-samsara-telematics
 ---

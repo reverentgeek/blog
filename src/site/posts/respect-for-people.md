@@ -3,6 +3,7 @@ id: 5c8677d4bc58620a44555a5c
 title: "Respect: The Most Fundamental Principle"
 feature_image: /content/images/2019/03/respect-for-people-1.jpg
 description: "Much has been said about \"lean\" and \"agile\" approaches to work. Reflecting over more than ten years of personal experience, I have come to…"
+meta_description: "A reflection on respect as the most fundamental principle behind healthy teams, leadership, lean, and agile."
 date: 2019-03-13
 slug: respect-for-people
 ---

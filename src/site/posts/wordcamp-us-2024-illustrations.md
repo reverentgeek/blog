@@ -3,6 +3,7 @@ id: ae22cbb080fa11efb57f673b60676d6a
 title: "WordCamp US 2024 Illustrations"
 feature_image: /content/images/wordcamp-us-2024-illustrations/wordcamp-us-2024-illustrations.jpg
 description: I recently traveled to Portland, OR for WordCamp US 2024 to draw avatars for Wordpress.com!
+meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp US 2024."
 date: 2024-10-02
 slug: wordcamp-us-2024-illustrations
 ---

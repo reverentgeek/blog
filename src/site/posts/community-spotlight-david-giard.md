@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba97b
 title: "Community Spotlight: David Giard"
 feature_image: /content/images/2017/05/david-giard.jpg
 description: "Ladies and gentlemen, I present to you David Giard, the hardest working man in developer relations! Like Visa, he is everywhere you want to…"
+meta_description: "A community spotlight on David Giard and their impact on developers, the broader tech community, and my own career."
 date: 2017-05-08
 slug: community-spotlight-david-giard
 ---

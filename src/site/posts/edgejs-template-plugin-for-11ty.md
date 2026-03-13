@@ -3,6 +3,7 @@ id: 048c7300168911f188522f54b403f1f8
 title: "Edge.js Template Plugin for 11ty"
 feature_image: /content/images/edgejs-template-plugin-for-11ty/edgejs-template-plugin-for-11ty.png
 description: "Ever felt frustrated with HTML templates like Pug, Handlebars, Liquid, or Nunjucks? If you know JavaScript, you might want to give Edge.js a try! I built a plugin for 11ty and converted my entire blog. TLDR: I like it!"
+meta_description: "Why I built an Edge.js template plugin for 11ty, how it works, and why JavaScript developers may prefer Edge.js over other template engines."
 date: 2026-03-02
 slug: edgejs-template-plugin-for-11ty
 templateEngineOverride: md

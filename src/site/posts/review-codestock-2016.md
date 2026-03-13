@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba96c
 title: "Review: CodeStock 2016"
 feature_image: /content/images/2016/07/codestock-review-2016.jpg
 description: "Year after year, CodeStock continues to expand, improve, and win a special place in my heart. As with any conference, the hallway…"
+meta_description: "My review of CodeStock 2016, including key takeaways, highlights, and what stood out to me."
 date: 2016-07-19
 slug: review-codestock-2016
 ---

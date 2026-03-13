@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba968
 title: "SQL Server and Node.js Revisited"
 description: "A little more than a year ago, I wrote about accessing SQL Server from Node.js using Edge.js. Technology can change a lot in a year, and…"
+meta_description: "A revisit of SQL Server and Node.js integration with updated guidance after changes in the surrounding tooling."
 date: 2015-06-22
 slug: sql-server-and-nodejs-revisited
 ---

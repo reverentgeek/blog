@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba954
 title: "Power of Persuasive Speech"
 description: "I am truly honored to be selected as a speaker at the CodeMash developer conference in January. Being a regional conference, CodeMash is…"
+meta_description: "Why persuasive speech matters and what I hoped to bring to my CodeMash talk on communication and influence."
 date: 2011-10-28
 slug: power-of-persuasive-speech
 ---

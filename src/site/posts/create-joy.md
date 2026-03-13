@@ -3,6 +3,7 @@ id: a534e000a97f11ed89f6dd459c1b8569
 title: "Create Joy"
 feature_image: /content/images/create-joy/create-joy.jpg
 description: Make your own luck? Nah. Create joy!
+meta_description: "A short reflection on choosing to create joy instead of waiting for luck, circumstances, or permission."
 date: 2023-02-10
 slug: create-joy
 ---

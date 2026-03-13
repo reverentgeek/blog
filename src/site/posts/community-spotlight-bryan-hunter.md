@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba97c
 title: "Community Spotlight: Bryan Hunter"
 feature_image: /content/images/2017/05/bryan-hunter-1.jpg
 description: "Bryan Hunter is the quintessential community champion. Everywhere he goes, he is cheerfully spreading the good news of functional…"
+meta_description: "A community spotlight on Bryan Hunter and their impact on developers, the broader tech community, and my own career."
 date: 2017-05-15
 slug: community-spotlight-bryan-hunter
 ---

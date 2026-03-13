@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba986
 title: "Be Patient and Keep Practicing"
 feature_image: /content/images/2017/09/demo.jpg
 description: "You've probably seen the ShamWow meme. You know, the classic, cheesy infomercial guy."
+meta_description: "A reminder that progress takes patience, practice, and persistence, even when growth feels slower than you want."
 date: 2017-09-15
 slug: be-patient-and-keep-practicing
 ---

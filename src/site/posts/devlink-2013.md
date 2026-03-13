@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba94a
 title: "devLink 2013"
 description: "devLink 2013 was yet another awesome conference. I have such a blast every year: great sessions, and invaluable networking opportunities…"
+meta_description: "Reflections on devLink 2013, including the sessions, conversations, and what made the conference stand out."
 date: 2013-09-05
 slug: devlink-2013
 ---

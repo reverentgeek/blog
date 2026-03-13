@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba96b
 title: "Ride with ReverentGeek, CodeStock 2016"
 feature_image: /content/images/2016/07/IMG_4434.JPG
 description: "Each year for the last several years, I have ridden my motorcycle to CodeStock in Knoxville, TN. Not very far from Knoxville is some of the…"
+meta_description: "A motorcycle ride to CodeStock 2016 through some of East Tennessee's best roads, plus the route and scenery along the way."
 date: 2016-07-05
 slug: ride-with-reverentgeek-codestock-2016
 ---

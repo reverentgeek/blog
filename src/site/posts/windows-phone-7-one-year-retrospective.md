@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba956
 title: "Windows Phone 7: One Year Retrospective"
 description: "One year ago, I retired my iPhone 3G and grabbed the new Samsung Focus Windows Phone 7. After a year of use, here's my take on the WP7…"
+meta_description: "My one-year retrospective on Windows Phone 7 after replacing an iPhone 3G and living with the Samsung Focus every day."
 date: 2011-12-24
 slug: windows-phone-7-one-year-retrospective
 ---

@@ -2,6 +2,7 @@
 id: 5b7d83816ada047f703ba95c
 title: "Start doing."
 description: "Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing…"
+meta_description: "A push to stop waiting for the perfect time and start doing the things that matter now."
 date: 2014-07-10
 slug: start-doing
 ---

@@ -3,6 +3,7 @@ id: 5b7d83816ada047f703ba975
 title: "Event Logo for Nashville SharePoint Saturday"
 feature_image: /content/images/2017/04/spsnashville-logo.png
 description: "I am so honored that Daniel Glenn reached out to me to design the logo for the 2017 Nashville SharePoint Saturday event. Here is the final…"
+meta_description: "I am so honored that Daniel Glenn reached out to me to design the logo for the 2017 Nashville SharePoint Saturday event. Here is the final."
 date: 2017-04-10
 slug: event-logo-for-nashville-sharepoint-saturday
 ---

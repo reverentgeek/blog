@@ -3,6 +3,7 @@ id: cc2b37203ebd11ef9e26dffca95c049b
 title: "WordCamp EU 2024 Illustrations"
 feature_image: /content/images/wordcamp-eu-2024/wordcamp-eu-2024.jpg
 description: I had the absolute pleasure of drawing avatars and custom Wappus for WordPress.com at WordCamp EU 2024! What's a Wapuu, you ask?
+meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp EU 2024."
 date: 2024-07-10
 slug: wordcamp-eu-2024-illustrations
 ---
