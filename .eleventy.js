@@ -20,7 +20,7 @@ export default async function ( config ) {
 	config.addWatchTarget( "./src/assets/" );
 	config.addPassthroughCopy( { "./src/assets/js/pco.js": "assets/pco.js" } );
 	config.addPassthroughCopy( { "./src/assets/fonts": "fonts" } );
-	// config.addPassthroughCopy( "./src/site/content/images/**" );
+	config.addPassthroughCopy( { "./src/site/static": "static" } );
 	config.addPassthroughCopy( "./src/site/favicon.ico" );
 
 	// Minify HTML

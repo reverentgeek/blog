@@ -34,7 +34,7 @@ From professional bios to networking messages, LinkedIn summaries to salary nego
 
 ![Job Hunt AI Cheat Sheet](/content/images/ai-cheat-sheet-for-job-hunting/job-hunt-ai-cheat-sheet.png)
 
-*Download the free [Job Hunting AI Cheat Sheet](/content/images/ai-cheat-sheet-for-job-hunting/job-hunt-ai-cheat-sheet.pdf) PDF*
+*Download the free [Job Hunting AI Cheat Sheet](/static/job-hunt-ai-cheat-sheet.pdf) PDF*
 
 ## Job Search
 
