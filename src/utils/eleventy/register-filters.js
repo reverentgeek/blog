@@ -1,15 +1,8 @@
-export function registerRssFilters( config, pluginRSS ) {
-	const {
-		getNewestCollectionItemDate,
-		dateToRfc3339,
-		absoluteUrl,
-		convertHtmlToAbsoluteUrls: htmlToAbsoluteUrls
-	} = pluginRSS;
-
+export function registerRssFilters( config, { getNewestCollectionItemDate, dateToRfc3339, absoluteUrl, convertHtmlToAbsoluteUrls } ) {
 	config.addFilter( "getNewestCollectionItemDate", getNewestCollectionItemDate );
 	config.addFilter( "dateToRfc3339", dateToRfc3339 );
 	config.addFilter( "absoluteUrl", absoluteUrl );
-	config.addFilter( "htmlToAbsoluteUrls", htmlToAbsoluteUrls );
+	config.addFilter( "htmlToAbsoluteUrls", convertHtmlToAbsoluteUrls );
 }
 
 export function registerSiteFilters( config, { socialImageFilter } ) {
