@@ -1,0 +1,139 @@
+# ReverentGeek
+
+> Personal website and blog of David Neal (aka ReverentGeek). David is a family man, geek, musician, illustrator, international speaker, software developer, author, and Microsoft MVP. He is currently a Developer Relations Engineer for Plaid. His mission is to help folks in technology be more awesome.
+
+## Main Pages
+
+- [About Me](https://reverentgeek.com/about/): Bio, background, and contact information for David Neal
+- [Speaking](https://reverentgeek.com/speaking/): Upcoming and past speaking engagements
+- [Portfolio](https://reverentgeek.com/portfolio/): Developer and illustration portfolio featuring avatars, logos, sketch notes, tech humor, and more
+- [Shop](https://reverentgeek.com/shop/): Commission custom illustrations, grab the Dad Joke book, stickers, t-shirts, and more
+- [DevRel Portfolio](https://reverentgeek.com/devrel-portfolio/): Highlights from content, talks, projects, interviews, and podcasts from David's Developer Relations career
+- [Keynotes and Presentations](https://reverentgeek.com/presentations/): Abstracts for keynotes, talks, and workshops
+- [Bio and Headshots](https://reverentgeek.com/bio/): Speaker bio and headshot photos
+
+## Blog Posts
+
+- [Developer Relations Activity Patterns](https://reverentgeek.com/developer-relations-activity-patterns/): Developer Relations Activity Patterns is now available. Reflections on publishing the book, collaborating with the author team, and creating the cover and chapter illustrations.
+- [39 Patterns to Transform Your Developer Relations Strategy](https://reverentgeek.com/announcing-devrel-activity-patterns-book/): An introduction to Developer Relations Activity Patterns, a practical book with 39 DevRel patterns focused on strategy, execution, and measurement.
+- [AI Really *Is* Taking My Job](https://reverentgeek.com/ai-really-is-taking-my-job/): A candid reflection on the tension between loving generative AI and wrestling with what it means for creative work and identity.
+- [AI Cheat Sheet for Job Hunting](https://reverentgeek.com/ai-cheat-sheet-for-job-hunting/): Practical AI prompts and job hunting tips to help you improve resumes, applications, networking, and interview preparation.
+- [WordCamp Asia 2025 Illustrations](https://reverentgeek.com/wordcamp-asia-2025-illustrations/): A look at the custom illustrations, avatars, and event art I created for WordCamp Asia 2025.
+- [WordCamp US 2024 Illustrations](https://reverentgeek.com/wordcamp-us-2024-illustrations/): A look at the custom illustrations, avatars, and event art I created for WordCamp US 2024.
+- [WordCamp EU 2024 Illustrations](https://reverentgeek.com/wordcamp-eu-2024-illustrations/): A look at the custom illustrations, avatars, and event art I created for WordCamp EU 2024.
+- [HopCounter: Build a Retro Page View Counter with Bunny Edge Scripting](https://reverentgeek.com/hopcounter-bunny-edge-scripting/): Learn how to build a retro page view counter with Bunny Edge Scripting and add a nostalgic hit counter to your site.
+- [Meet SurrealDB: The Multi-Tool Database Your Node.js App Needs](https://reverentgeek.com/meet-surrealdb-nodejs/): An introduction to SurrealDB for Node.js developers, including how to build a basic CRUD API with Fastify.
+- [Build a Command-Line Application With Deno 2.0](https://reverentgeek.com/build-a-command-line-application-with-deno-2/): Learn how to build a command-line application with Deno 2.0, from setup and arguments to running the finished CLI.
+- [Edge.js Template Plugin for 11ty](https://reverentgeek.com/edgejs-template-plugin-for-11ty/): Why I built an Edge.js template plugin for 11ty, how it works, and why JavaScript developers may prefer Edge.js over other template engines.
+- [Configure Eleventy to Host a Custom Mastodon Alias](https://reverentgeek.com/configure-eleventy-to-host-a-custom-mastodon-alias/): Learn how to configure an Eleventy site to host a custom Mastodon alias using 11ty and Netlify.
+- [Moving From Ghost to Eleventy](https://reverentgeek.com/moving-from-ghost-to-eleventy/): Why and how I moved my blog from Ghost to Eleventy.
+- [The Illustrated Book of Dad Jokes](https://reverentgeek.com/the-illustrated-book-of-dad-jokes/): My illustrated dad joke book is now available on Amazon, packed with groan-worthy jokes and original artwork.
+- [Create PDFs with Node.js and Puppeteer](https://reverentgeek.com/create-pdfs-with-node-js-and-puppeteer/): Learn how to generate PDFs with Node.js and Puppeteer, including rendering web pages and local HTML files into downloadable PDF documents.
+- [Customize Your VS Code Icon](https://reverentgeek.com/customize-your-vs-code-icon/): Learn how to customize your VS Code icon and apply the same approach to other desktop application icons.
+- [5 Essential Ingredients for an Awesome Tech Talk](https://reverentgeek.com/5-essential-ingredients-for-an-awesome-tech-talk/): Five practical ingredients that can help you craft a more compelling, memorable, and effective technical talk.
+- [How to be a Superhuman Communicator](https://reverentgeek.com/how-to-be-a-superhuman-communicator/): Practical advice for becoming a more effective communicator by understanding how different people learn and process information.
+- [Confront Your Inner Critic](https://reverentgeek.com/confront-your-inner-critic/): A reflection on impostor syndrome, self-doubt, and how to push back against the voice that says you are not enough.
+- [Please, Give Public Speaking a Try](https://reverentgeek.com/please-give-public-speaking-a-try/): Why public speaking is worth trying, even if it feels intimidating, and how it can open doors you never expected.
+- [Public Speaking without Barfing on Your Shoes](https://reverentgeek.com/public-speaking-without-barfing-on-your-shoes/): Practical encouragement for getting started with public speaking without letting fear keep you off the stage.
+- [My Most Embarrassing Mistakes as a Programmer](https://reverentgeek.com/my-most-embarrassing-mistakes-as-a-programmer/): A candid list of my most embarrassing programming mistakes and the lessons I learned from making them.
+- [Captivate Your Audience Using Simple Illustrations](https://reverentgeek.com/engage-with-simple-illustrations/): How simple illustrations can help you engage audiences and make technical talks easier to follow and remember.
+- [My Open-Source Desktop Teleprompter Built with Electron](https://reverentgeek.com/open-source-desktop-teleprompter-electron/): Why I built an open-source desktop teleprompter with Electron, what it does, and how you can use it.
+- [Resources for the Reluctant Leader](https://reverentgeek.com/resources-for-the-reluctant-leader/): Resources from the Guide to Leadership for the Reluctant Leader keynote.
+- [My Office Studio Setup for Video Conferencing, Recordings, and Streaming](https://reverentgeek.com/my-video-streaming-setup/): A walkthrough of my office studio video and audio setup for conferencing, recordings, and streaming.
+- [My development environment (for writing)](https://reverentgeek.com/my-development-environment-for-writing/): A tour of the tools, apps, and setup I use for writing blog posts, documentation, and other long-form content.
+- [Create Engaging Screen Shots with Snagit](https://reverentgeek.com/create-branded-screenshots-with-snagit/): How to create more engaging screenshots with Snagit so your tutorials, documentation, and presentations communicate more clearly.
+
+## Optional
+
+### Developer Tutorials
+
+- [A Developer's Guide to Samsara Telematics](https://reverentgeek.com/a-developers-guide-to-samsara-telematics/): This guide will help you wrangle Samsara's Telematics APIs like a pro.
+- [Three Ways to Share Node.js Modules Across Multiple Projects](https://reverentgeek.com/3-ways-to-share-nodejs-modules-across-multiple-projects/): Three options for splitting Node.js code into shared libraries across multiple projects, with tradeoffs between convenience and portability.
+- [Ahoy! Parse ye Node.js command args with yargs!](https://reverentgeek.com/ahoy-parse-ye-node-js-command-args-with-yargs/): Learn how to parse Node.js command-line arguments with yargs and build friendlier CLI tools.
+- [Build a Secure Node.js Application with JavaScript Async Await Using Hapi](https://reverentgeek.com/build-a-secure-node-js-application-with-javascript-async-await-using-hapi/): Learn how to build a secure Node.js application with async/await and Hapi while avoiding callback-heavy code.
+- [Makin' Bacon with Node.js, Hapi, and Vue](https://reverentgeek.com/makin-bacon-with-node-js-hapi-and-vue/): A walkthrough of a bacon ipsum demo app built with Node.js, Hapi, and Vue.
+- [Hosting Node.js on Microsoft Azure](https://reverentgeek.com/hosting-node-js-on-microsoft-azure/): An overview of the options for hosting Node.js applications on Microsoft Azure.
+- [SQL Server Running on a Mac?!](https://reverentgeek.com/sql-server-running-on-a-mac/): Learn how to run SQL Server on a Mac using Docker, including setup steps, configuration tips, and tools for connecting.
+- [SQL Server and Node.js Revisited](https://reverentgeek.com/sql-server-and-nodejs-revisited/): A revisit of SQL Server and Node.js integration with updated guidance.
+- [SQL Server for Linux: How to Move a Database From One Docker Container to Another](https://reverentgeek.com/sql-server-for-linux-how-to-move-a-database-from-one-docker-container-to-another/): Learn how to move a SQL Server for Linux database from one Docker container to another.
+- [How to leverage SQL Server with Node.js using Edge.js](https://reverentgeek.com/how-to-leverage-sql-server-with-node-js-using-edge-js/): Learn how to connect SQL Server and Node.js using Edge.js.
+- [Scale Windows Services with RabbitMQ](https://reverentgeek.com/scale-windows-services-with-rabbitmq/): How to scale Windows Services with RabbitMQ by moving work off individual processes and into a queue-driven architecture.
+- [Stupid SQL Tricks - Using Computed Columns for Code Generation](https://reverentgeek.com/stupid-sql-tricks-using-computed-columns-for-code-generation/): A practical SQL trick for using computed columns to generate code and simplify repetitive database tasks.
+
+### Personal and Inspirational
+
+- [A Note of Encouragement](https://reverentgeek.com/a-note-of-encouragement/): A personal story about leaving a note of encouragement and the lasting impact that small acts of kindness can have.
+- [Create Joy](https://reverentgeek.com/create-joy/): A short reflection on choosing to create joy instead of waiting for luck, circumstances, or permission.
+- [Not All Heroes Wear Capes](https://reverentgeek.com/not-all-heroes-wear-capes/): A personal story about everyday heroes and the impact they have.
+- [Before it's too late](https://reverentgeek.com/before-its-too-late/): A reflection on showing appreciation for people now instead of waiting until it is too late.
+- [Start doing.](https://reverentgeek.com/start-doing/): A push to stop waiting for the perfect time and start doing the things that matter now.
+- [What is Your Dream Job?](https://reverentgeek.com/what-is-your-dream-job/): A reflection on defining your dream job by the kind of work, responsibilities, and impact that truly energize you.
+- [Be Patient and Keep Practicing](https://reverentgeek.com/be-patient-and-keep-practicing/): A reminder that progress takes patience, practice, and persistence.
+- [Respect: The Most Fundamental Principle](https://reverentgeek.com/respect-for-people/): A reflection on respect as the most fundamental principle behind healthy teams, leadership, lean, and agile.
+- [Life is Too Short](https://reverentgeek.com/life-is-too-short/): A reflection on toxic leadership, the Dilbert Principle, and why life is too short to stay stuck under the wrong manager.
+- [Developer's Serenity Prayer](https://reverentgeek.com/developers-serenity-prayer/): A short developer prayer about patience, perspective, and the daily realities of working in software.
+- [Reflecting on the past five years](https://reverentgeek.com/reflecting-on-the-past-five-years/): A reflection on the past five years, the changes along the way, and the perspective that comes from looking back.
+- [I'm not nearly the man I used to be](https://reverentgeek.com/im-not-nearly-the-man-i-used-to-be/): A personal reflection on weight, identity, and the long process of becoming a healthier version of myself.
+- [Our Social Media Legacy](https://reverentgeek.com/our-social-media-legacy/): A reflection on the long-term impact of social media and the legacy our posts leave behind.
+- [Brand Yourself](https://reverentgeek.com/brand-yourself/): Reflections on personal branding, career growth, and community discussion.
+
+### Community Spotlights
+
+- [Community Spotlight: Scott Hanselman](https://reverentgeek.com/community-spotlight-scott-hanselman/): A community spotlight on Scott Hanselman and their impact on developers and the broader tech community.
+- [Community Spotlight: Carl Franklin](https://reverentgeek.com/community-spotlight-carl-franklin/): A community spotlight on Carl Franklin and their impact on developers and the broader tech community.
+- [Community Spotlight: Jeremy Clark](https://reverentgeek.com/community-spotlight-jeremy-clark/): A community spotlight on Jeremy Clark and their impact on developers and the broader tech community.
+- [Community Spotlight: Cory House](https://reverentgeek.com/community-spotlight-cory-house/): A community spotlight on Cory House and their impact on developers and the broader tech community.
+- [Community Spotlight: Alan Stevens](https://reverentgeek.com/community-spotlight-alan-stevens/): A community spotlight on Alan Stevens and their impact on developers and the broader tech community.
+- [Community Spotlight: Bryan Hunter](https://reverentgeek.com/community-spotlight-bryan-hunter/): A community spotlight on Bryan Hunter and their impact on developers and the broader tech community.
+- [Community Spotlight: Jim Holmes](https://reverentgeek.com/community-spotlight-jim-holmes/): A community spotlight on Jim Holmes and their impact on developers and the broader tech community.
+- [Community Spotlight: Kevin Griffin](https://reverentgeek.com/community-spotlight-kevin-griffin/): A community spotlight on Kevin Griffin and their impact on developers and the broader tech community.
+- [Community Spotlight: David Giard](https://reverentgeek.com/community-spotlight-david-giard/): A community spotlight on David Giard and their impact on developers and the broader tech community.
+- [Community Spotlight: Brendan Forster](https://reverentgeek.com/community-spotlight-brendan-forster/): A community spotlight on Brendan Forster and their impact on developers and the broader tech community.
+- [Community Spotlight: Gaines Kergosien](https://reverentgeek.com/community-spotlight-gaines-kergosien/): A community spotlight on Gaines Kergosien and their impact on developers and the broader tech community.
+
+### Conference Reviews and Recaps
+
+- [Kansas City Developers Conference 2017](https://reverentgeek.com/kcdc-2017/): Why KCDC 2017 was such a great conference for both developers and speakers.
+- [NDC Sydney 2016](https://reverentgeek.com/ndc-sydney-2016/): Reflections on speaking at NDC Sydney 2016, visiting Australia, and connecting with the developer community.
+- [Review: CodeStock 2016](https://reverentgeek.com/review-codestock-2016/): Review of CodeStock 2016, including key takeaways and highlights.
+- [Code PaLOUsa 2015](https://reverentgeek.com/code-palousa-2015/): Reflections on Code PaLOUsa 2015 in Louisville.
+- [Making Connections at CodeStock 2014](https://reverentgeek.com/codestock-2014/): Reflections on CodeStock 2014 and the Making Connections theme.
+- [Orlando Code Camp 2015](https://reverentgeek.com/orlando-code-camp-2015/): Reflections on speaking at Orlando Code Camp 2015.
+- [devLink 2013](https://reverentgeek.com/devlink-2013/): Reflections on devLink 2013.
+- [Keynote Achievement Unlocked!](https://reverentgeek.com/keynote-achievement-unlocked/): Reflections on speaking at Music City Agile and Music City Code and reaching a keynote milestone.
+
+### Motorcycle Rides
+
+- [Ride Review: Leiper's Fork and Natchez Trace](https://reverentgeek.com/ride-review-leipers-fork-and-natchez-trace/): A motorcycle ride review of Leiper's Fork and Natchez Trace.
+- [Ride Review: Suches and Wolf Pen Gap](https://reverentgeek.com/suches-and-wolf-pen-gap/): A motorcycle ride review of Suches and Wolf Pen Gap.
+- [Ride with ReverentGeek, CodeStock 2016](https://reverentgeek.com/ride-with-reverentgeek-codestock-2016/): A motorcycle ride to CodeStock 2016 through East Tennessee's best roads.
+
+### Other
+
+- [Do you hate JavaScript?](https://reverentgeek.com/do-you-hate-javascript/): A response to the question of whether I hate JavaScript, plus some perspective on humor and frustration.
+- [Choose Your Own Framework: The Curse of JavaScript Fatigue](https://reverentgeek.com/choose-your-own-framework-the-curse-of-javascript-fatigue/): A tongue-in-cheek look at JavaScript fatigue and the endless framework choices developers face.
+- [Blazon for Technical Presentations and Training](https://reverentgeek.com/blazon-for-technical-presentations-and-training/): Why I switched to Blazon for technical presentations and training.
+- [Review: Motorized IKEA Standing Desk](https://reverentgeek.com/review-motorized-ikea-standing-desk/): My review of my motorized IKEA standing desk.
+- [Book Review: "Remote: Office Not Required"](https://reverentgeek.com/book-review-remote-office-not-required/): My review of the book Remote: Office Not Required.
+- [Here, take my card...](https://reverentgeek.com/here-take-my-card/): Reflections on the era when business cards were important for sharing contact information.
+- [MongoDB Podcast: Visual Storytelling](https://reverentgeek.com/visual-storytelling-mongodb-interview/): I joined the MongoDB Podcast Live show to talk about visual storytelling and using illustrations to connect with technical audiences.
+- [2016 Podcasts](https://reverentgeek.com/podcasts/): A roundup of the podcasts I appeared on in 2016.
+- [Sketchnote Challenge](https://reverentgeek.com/sketchnote-challenge/): A sketchnote challenge with drawing guides and encouragement for anyone who wants to learn visual note-taking.
+- [Can't Stop the Doodles](https://reverentgeek.com/cant-stop-the-doodles/): How doodles and hand-drawn illustrations became a bigger part of my talks, teaching, and creative work.
+- [Power of Persuasive Speech](https://reverentgeek.com/power-of-persuasive-speech/): Why persuasive speech matters and what I hoped to bring to my CodeMash talk on communication and influence.
+- [Windows Phone 7: One Year Retrospective](https://reverentgeek.com/windows-phone-7-one-year-retrospective/): My one-year retrospective on Windows Phone 7 after replacing an iPhone 3G.
+- [Hey, Okta! Where's the Bacon?](https://reverentgeek.com/hey-okta-wheres-the-bacon/): Why I joined Okta as a Senior Developer Advocate.
+- [Joining LeanKit](https://reverentgeek.com/joining-leankit/): Why I joined LeanKit as a Senior Software Developer and Technical Evangelist.
+- [How I Consume Twitter](https://reverentgeek.com/how-i-manage-twitter/): How I manage Twitter with a deliberately small following list.
+- [A Really Sweet Visit to Sweetwater.com](https://reverentgeek.com/sweet-sweetwater-visit/): Reflections on visiting Sweetwater and speaking to their engineers on leadership.
+- [The MONSTER at the end of this Book](https://reverentgeek.com/the-monster-at-the-end-of-this-book/): A playful post inspired by The Monster at the End of This Book.
+- [Restless](https://reverentgeek.com/restless/): A short reflection on ambition, dissatisfaction, and why being good enough is not always enough.
+- [Fresh Brewed Code](https://reverentgeek.com/fresh-brewed-code/): A reflection on friendship, connection, and the beginning of Fresh Brewed Code.
+- [Event Logo for Nashville SharePoint Saturday](https://reverentgeek.com/event-logo-for-nashville-sharepoint-saturday/): I designed the logo for the 2017 Nashville SharePoint Saturday event.
+- [State of the ReverentGeek, June 2016](https://reverentgeek.com/state-of-the-reverentgeek-june-2016/): A midyear update on life, work, speaking, and what was happening behind the scenes at ReverentGeek.
+- [Blog moved to Ghost](https://reverentgeek.com/blog-moved-to-ghost/): Why I moved my blog from WordPress to Ghost.
+- [And So It Begins...](https://reverentgeek.com/and-so-it-begins/): The launch post for ReverentGeek.
+- [Speaking at 2014 NDC](https://reverentgeek.com/speaking-at-2014-ndc/): Reflections on having my Edge.js talk selected for NDC 2014 in Oslo.
+- [Intro to RavenDB Presentation](https://reverentgeek.com/intro-to-ravendb-presentation/): Intro to RavenDB presentation from CodeMash 2012.
+- [Intro to RavenDB on Channel 9](https://reverentgeek.com/intro-to-ravendb-on-channel-9/): Intro to RavenDB presentation on Channel 9.
+- [Node.js for .NET Developers on Channel 9](https://reverentgeek.com/node-js-for-net-developers-on-channel-9/): Node.js for .NET Developers presentation on Channel 9.
