@@ -9,6 +9,7 @@ slug: presentations
 * [Leadership Guide for the Reluctant Leader](#leadership)
 * [You. Are. Awesome.](#awesome)
 * [Unlock Your Potential](#unlock)
+* [The Art of Delightful Developer Experience](#devex)
 * [The Illustrated Guide to Node.js](#nodejs-guide)
 * [The Illustrated Guide to Electron](#electron)
 * [JavaScript: Past, Present, and Future](#javascript-future)
@@ -56,6 +57,16 @@ _Note: This is the keynote I have given for conferences such as That Conference,
 ## Unlock Your Potential
 
 Regardless of your job title or the technology you use, you have amazing potential to impact your workplace, community, and beyond in powerful ways. I want to share with you some of the essential skills you can develop to maximize your awesomeness!
+
+<a name="devex"></a>
+
+## The Art of Delightful Developer Experience
+
+Developers don’t judge a platform solely by its features. They judge it by how it feels to use. A confusing onboarding flow, inconsistent API behavior, or vague error message can turn even the most powerful system into a frustrating one. But a thoughtful, well-crafted developer experience (DX) can transform complexity into clarity, reduce integration time, and turn adopters into enthusiastic advocates.
+
+In this session, we’ll explore what truly makes a developer experience delightful, from first impressions and documentation to API design, trust-building behaviors, and continuous iteration. Drawing from 20+ years of software engineering and 10+ years in developer relations, I’ll share practical patterns and real-world examples to show how small improvements can make a massive difference.
+
+Whether you’re building APIs, SDKs, standards, platforms, or internal tools, you’ll learn how to reduce friction, improve usability, and create a developer journey that feels intuitive, humane, and irresistible to use.
 
 <a name="javascript-future"></a>
 
