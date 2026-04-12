@@ -10,7 +10,6 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
-| 2026.04.09 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
 | 2026.06.02 | [DevSum 2026](https://www.devsum.se/) | Stockholm, Sweden |
 
 ## Resources
@@ -23,6 +22,7 @@ slug: speaking
 
 | Date | Event | Location |
 | --- | --- | --- |
+| 2026.04.09 | [CodeStock](https://www.codestock.org/) | Knoxville, TN |
 | 2025.12.04 | [Build Stuff](https://buildstuff.events/) | Vilnius, Lithuania |
 | 2025.11.08 | [Open Source Camp](https://www.drupalcampchattanooga.com)<sup>*</sup> | Chattanooga, TN |
 | 2024.11.02 | [Open Source Camp](https://www.drupalcampchattanooga.com) | Chattanooga, TN |
