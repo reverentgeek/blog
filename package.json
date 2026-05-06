@@ -50,7 +50,7 @@
 		"@11ty/eleventy-plugin-rss": "^3.0.0",
 		"@tailwindcss/postcss": "^4.2.4",
 		"eleventy-plugin-broken-links": "^2.2.1",
-		"eleventy-plugin-edgejs": "^1.1.7",
+		"eleventy-plugin-edgejs": "^1.1.8",
 		"esbuild": "^0.28.0",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^8.0.4",
