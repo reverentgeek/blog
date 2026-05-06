@@ -54,7 +54,7 @@
 		"esbuild": "^0.28.0",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^8.0.4",
-		"postcss": "^8.5.13",
+		"postcss": "^8.5.14",
 		"postcss-cli": "^11.0.1",
 		"postcss-import": "^16.1.1",
 		"prismjs": "^1.30.0",
@@ -64,17 +64,17 @@
 	"devDependencies": {
 		"commander": "^14.0.3",
 		"eslint": "^10.3.0",
-		"eslint-config-reverentgeek": "^7.1.5",
+		"eslint-config-reverentgeek": "^7.1.6",
 		"fs-extra": "^11.3.4",
 		"jimp": "^1.6.1",
 		"lighthouse": "^13.2.0",
 		"markdownlint-cli": "^0.48.0",
 		"netlify-plugin-cache": "^1.0.3",
-		"probe-image-size": "^7.2.3",
+		"probe-image-size": "^7.3.0",
 		"slug": "^11.0.1",
 		"uuid": "^14.0.0"
 	},
-	"packageManager": "pnpm@11.0.3+sha512.10448f2988933787c6699aef683174c741f6472ad91b7e3c8fe3e2bda57be8a0f7caf58949b8bc22e624578b3dc6e57876ba4c631928a1b84cc141e12c79bccd",
+	"packageManager": "pnpm@11.0.6+sha512.97f906e1da2bedac3df83cadae04b4753a130092dd49d55cd36825ad3e623e9df3f97754f8f259e699172a360fac569acf2f908e7732bdae3eddb2dcf7e121fd",
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"@tailwindcss/oxide",
