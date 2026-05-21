@@ -279,7 +279,7 @@ You can order all my best stickers [directly from StickerMule](https://www.stick
 
 [![Buy stickers on StickerMule!](/content/images/shop/stickermule-stickers.jpg)](https://www.stickermule.com/reverentgeek)
 
-<a href="https://www.stickermule.com/unlock?ref_id=9265870701&utm_medium=embed&utm_source=invite&utm_content=728x90" target="_blank"><img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" height="90" src="https://assets.stickermule.com/image/upload/c_lfill,fl_lossy,f_auto,q_auto:best,w_auto/banners/stickermule-invite-friends-large.jpg" width="728" /></a>
+<a href="https://www.stickermule.com/unlock?ref_id=9265870701&utm_medium=embed&utm_source=invite&utm_content=728x90" target="_blank"><img alt="Custom Stickers, Die Cut Stickers, Bumper Stickers - Sticker Mule" height="90" src="https://assets.stickermule.com/image/upload/c_lfill,fl_lossy,f_auto,q_auto:best,w_auto/banners/stickermule-invite-friends-large.jpg" width="728" eleventy:ignore /></a>
 
 <a name="tshirts"></a>
 
