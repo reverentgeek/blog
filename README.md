@@ -4,10 +4,14 @@
 
 Built with [Eleventy](https://www.11ty.io). Deployed to [Netlify](https://www.netlify.com/).
 
-## Creating a New Post
+## Creating a New Post or Page
 
 ```sh
-npm run post create "Title of Super-Awesome Post"
+# Blog post
+pnpm post create "Title of Super-Awesome Post"
+
+# New page
+pnpm page create "Title of Super-Awesome Page"
 ```
 
 ## Updating a Photo Gallery

@@ -17,6 +17,7 @@
 		"start": "pnpm run serve",
 		"lint": "eslint . --ext .cjs --ext .js --cache",
 		"lint:markdown": "markdownlint src/**/*.md",
+		"page": "node src/utils/page.js",
 		"post": "node src/utils/post.js",
 		"test": "pnpm run test:smoke",
 		"test:smoke": "pnpm run build && node --test test/smoke.test.js",
