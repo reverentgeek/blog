@@ -3,3 +3,7 @@ allowBuilds:
   sharp: true
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
+overrides:
+  'file-type@>=13.0.0 <21.3.1': '>=21.3.1'
+  'brace-expansion@<1.1.13': '>=1.1.13'
+  'brace-expansion@>=2.0.0 <2.0.3': '>=2.0.3'

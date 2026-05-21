@@ -54,7 +54,7 @@
 		"esbuild": "^0.28.0",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^8.0.4",
-		"postcss": "^8.5.14",
+		"postcss": "^8.5.15",
 		"postcss-cli": "^11.0.1",
 		"postcss-import": "^16.1.1",
 		"prismjs": "^1.30.0",
@@ -74,16 +74,11 @@
 		"slug": "^11.0.1",
 		"uuid": "^14.0.0"
 	},
-	"packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"@tailwindcss/oxide",
-			"esbuild"
-		],
-		"overrides": {
-			"file-type@>=13.0.0 <21.3.1": ">=21.3.1",
-			"brace-expansion@<1.1.13": ">=1.1.13",
-			"brace-expansion@>=2.0.0 <2.0.3": ">=2.0.3"
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": ">=11.0.0",
+			"onFail": "download"
 		}
 	}
 }
