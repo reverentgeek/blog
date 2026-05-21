@@ -36,6 +36,7 @@ id: ${ getId() }
 title: "${ title }"
 feature_image: /content/images/${ slug }/${ slug }.jpg
 description:
+meta_description:
 date: ${ formatDate( new Date() ) }
 slug: ${ slug }
 ---
