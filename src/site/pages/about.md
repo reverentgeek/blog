@@ -10,7 +10,7 @@ slug: about
 
 Hi! I'm David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, and author living in North Georgia. I've been in Developer Relations roles for more than a decade. My mission is to help folks in technology be more awesome! I am currently a Senior Developer Advocate for [MongoDB](https://www.mongodb.com/). My past DevRel experiences include [Plaid](https://plaid.com), [Slack](https://slack.dev/), [Asana](https://asana.com), and [Okta](https://developer.okta.com), among others. Before my DevRel journey, I spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓 😉.
 
-Along the way, I've learned that leadership in technology is less about having the loudest voice in the room and more about helping people do their best work. I've led teams, mentored developers, guided technical strategy, partnered across product and engineering, and helped turn messy problems into clear next steps. Whether I'm building a platform, improving documentation, or shaping developer experience, I try to lead with empathy, curiosity, and a healthy bias toward making things better.
+Along the way, I've learned that leadership includes creating clarity, building trust, and helping people do their best work. I've led teams, mentored developers, guided technical strategy, and partnered across organizations to make good things happen.
 
 * Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
 * Follow my silly shenanigans on:
