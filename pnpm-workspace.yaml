@@ -2,8 +2,8 @@ allowBuilds:
   esbuild: true
   sharp: true
 minimumReleaseAgeExclude:
-  - eslint-config-reverentgeek@7.1.8
-  - eslint-config-reverentgeek@7.1.10
+  - eslint-config-reverentgeek
+  - eleventy-plugin-edgejs
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
 overrides:

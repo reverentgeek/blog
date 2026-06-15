@@ -228,8 +228,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       eleventy-plugin-edgejs:
-        specifier: ^1.1.13
-        version: 1.1.13(@11ty/eleventy@4.0.0-alpha.7)
+        specifier: ^1.1.14
+        version: 1.1.14(@11ty/eleventy@4.0.0-alpha.7)
       esbuild:
         specifier: ^0.28.1
         version: 0.28.1
@@ -371,8 +371,8 @@ packages:
   '@borewit/text-codec@0.2.2':
     resolution: {integrity: sha512-DDaRehssg1aNrH4+2hnj1B7vnUGEjU6OIlyRdkMd0aUdIUvKXrJfXsy8LVtXAy7DRvYVluWbMspsRhz2lcW0mQ==}
 
-  '@emnapi/runtime@1.11.0':
-    resolution: {integrity: sha512-55coeOFKHv1ywEcUXJtWU5f+Jr/W5tZDvZig8DLKSwUN1JpROQ4rk/SNOQiFWmaR/VKF4zuFyW1B8JduOSv6Pg==}
+  '@emnapi/runtime@1.11.1':
+    resolution: {integrity: sha512-vgj7R3y3Wgx24IQaGPA/R6YFXLHVMOZ0uVEyIQPaWs+rd1AzfEMXlAC22FYwO1XkKR6NPsq7mUandH8oIRdZFw==}
 
   '@esbuild/aix-ppc64@0.28.1':
     resolution: {integrity: sha512-Svl7tq8k/08+p6CXPpRjQ1fKX+1odH/BQbb48fV6fj3CWHhsoIOoY87w1oHXm0qEpkIK3ZfVgp0hed3XBXzXMQ==}
@@ -1604,8 +1604,8 @@ packages:
   eleventy-plugin-broken-links@2.2.1:
     resolution: {integrity: sha512-2u1kzt7kuA9mryFa3U+hnO4J9ZUHZlfwpTXA9oB9Z/rKmZ1KXN098shWJCcYlEncg0Mky80I0iPhNcZw6/FKOg==}
 
-  eleventy-plugin-edgejs@1.1.13:
-    resolution: {integrity: sha512-0JoPQnRfQl+skL0Cjcr42PJCkrzWn/RcYN6q6sW4Yp6k9IwDGrq8AsL6TP451u47J9aASWoIhegkY16ny6w5jQ==}
+  eleventy-plugin-edgejs@1.1.14:
+    resolution: {integrity: sha512-G9/bX1XcG5e3MuteElEFu9lLIsmdQ2NSJ6wuKjZQf8YBTHyD7luC5zQF9t20FqGZHHD3/NdHKzp3uebjZZmB2A==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@11ty/eleventy': ^3.0.0 || ^4.0.0
@@ -3242,7 +3242,7 @@ snapshots:
 
   '@borewit/text-codec@0.2.2': {}
 
-  '@emnapi/runtime@1.11.0':
+  '@emnapi/runtime@1.11.1':
     dependencies:
       tslib: 2.8.1
     optional: true
@@ -3467,7 +3467,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.33.5':
     dependencies:
-      '@emnapi/runtime': 1.11.0
+      '@emnapi/runtime': 1.11.1
     optional: true
 
   '@img/sharp-win32-ia32@0.33.5':
@@ -4530,7 +4530,7 @@ snapshots:
       - encoding
       - supports-color
 
-  eleventy-plugin-edgejs@1.1.13(@11ty/eleventy@4.0.0-alpha.7):
+  eleventy-plugin-edgejs@1.1.14(@11ty/eleventy@4.0.0-alpha.7):
     dependencies:
       '@11ty/eleventy': 4.0.0-alpha.7
       edge.js: 6.5.1

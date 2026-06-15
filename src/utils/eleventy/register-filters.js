@@ -25,24 +25,24 @@ export function registerSiteFilters( config, { socialImageFilter } ) {
 		const ld = {
 			"@context": "https://schema.org",
 			"@type": "Article",
-			"headline": title,
-			"description": description,
-			"image": image,
-			"datePublished": datePublished,
-			"author": {
+			headline: title,
+			description: description,
+			image: image,
+			datePublished: datePublished,
+			author: {
 				"@type": "Person",
-				"name": author.name,
-				"url": author.url
+				name: author.name,
+				url: author.url
 			},
-			"publisher": {
+			publisher: {
 				"@type": "Organization",
-				"name": publisher.name,
-				"logo": {
+				name: publisher.name,
+				logo: {
 					"@type": "ImageObject",
-					"url": publisher.logoUrl
+					url: publisher.logoUrl
 				}
 			},
-			"mainEntityOfPage": {
+			mainEntityOfPage: {
 				"@type": "WebPage",
 				"@id": pageUrl
 			}
