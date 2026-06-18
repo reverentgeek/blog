@@ -70,7 +70,7 @@ My workflow is now pretty straightforward:
 6. Adjust the output until it hits my target.
 7. Repeat until I question all my life choices.
 
-If one patch measures `-15.7 LUFS` and my target is `-14 LUFS`, MeterMaid tells me to add `+2.3 dB` of gain to my signal chain.
+If one patch measures `-16.7 LUFS` and my target is `-14 LUFS`, MeterMaid tells me to add `+2.7 dB` of gain to my signal chain.
 
 That's it. That's the whole magic trick.
 
