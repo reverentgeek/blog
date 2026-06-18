@@ -4,6 +4,7 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - eslint-config-reverentgeek
   - eleventy-plugin-edgejs
+  - '@11ty/eleventy@4.0.0-alpha.8'
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
 overrides:

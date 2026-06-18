@@ -46,7 +46,7 @@
 	"homepage": "https://github.com/reverentgeek/blog#readme",
 	"type": "module",
 	"dependencies": {
-		"@11ty/eleventy": "4.0.0-alpha.7",
+		"@11ty/eleventy": "4.0.0-alpha.8",
 		"@11ty/eleventy-img": "^6.0.4",
 		"@11ty/eleventy-plugin-rss": "^3.0.0",
 		"@tailwindcss/postcss": "^4.3.1",
