@@ -3,6 +3,7 @@ import { join } from "node:path";
 import fs from "fs-extra";
 import slugger from "slug";
 import { getId } from "./get-id.js";
+import { makePlaceholder } from "./make-placeholder.js";
 
 const zeroPad = ( number ) => {
 	const l = number.toString().length;
@@ -41,6 +42,7 @@ export const createContent = async ( { kind, contentDir, imagesDir, title } ) =>
 		}
 		const filePath = join( contentDir, `${ slug }.md` );
 		const imgPath = join( imagesDir, slug );
+		const featureImagePath = join( imgPath, `${ slug }.jpg` );
 		const exists = await fs.pathExists( filePath );
 		if ( !exists ) {
 			const frontMatter = `---
@@ -57,6 +59,14 @@ slug: ${ slug }
 		}
 		console.log( "image path:", imgPath );
 		await fs.ensureDir( imgPath );
+		if ( !( await fs.pathExists( featureImagePath ) ) ) {
+			await makePlaceholder( {
+				title,
+				subtitle: kind === "post" ? "New blog post" : "New page",
+				outputPath: featureImagePath
+			} );
+			console.log( "wrote placeholder:", featureImagePath );
+		}
 		openInOS( imgPath );
 	} catch ( err ) {
 		console.log( `Error creating new ${ kind }` );
