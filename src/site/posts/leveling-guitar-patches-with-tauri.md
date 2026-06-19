@@ -22,7 +22,7 @@ I've run into this a lot while building patches or comparing patches I've downlo
 
 My brain wasn't comparing tone. It was getting bribed.
 
-So I built a small desktop app to _objectively_ normalize all of my patches. It's called [MeterMaid](https://github.com/reverentgeek/metermaid), and it measures loudness in real time so I can level my guitar patches properly instead of guessing.
+So I built a small desktop app to _objectively_ normalize all of my patches. It's called [MeterMaid](https://github.com/reverentgeek/metermaid) ([downloads](https://github.com/reverentgeek/metermaid/releases/latest)), and it measures loudness in real time so I can level my guitar patches properly instead of guessing.
 
 ## The patch-leveling problem
 
