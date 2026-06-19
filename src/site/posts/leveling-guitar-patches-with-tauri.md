@@ -64,11 +64,13 @@ My workflow is now pretty straightforward:
 
 1. Plug the Helix into my computer over USB.
 2. Open MeterMaid and make sure the correct audio source is selected.
-3. Isolate the target amp/clone/effect in my signal chain.
-4. Play the biggest chords (e.g., E, A, D).
-5. Watch the integrated LUFS reading.
-6. Adjust the output until it hits my target.
-7. Repeat until I question all my life choices.
+3. Optional: Isolate the target amp/clone/effect in my signal chain that needs leveling.
+4. Click **Start**.
+5. Play the biggest chords (e.g., E, A, D).
+6. Watch the integrated LUFS reading.
+7. Use the **Apply** value to adjust the output.
+8. Click **Reset** to start a new average.
+9. Repeat 5-8 until I hit my target or I question all my life choices.
 
 If one patch measures `-16.7 LUFS` and my target is `-14 LUFS`, MeterMaid tells me to add `+2.7 dB` of gain to my signal chain.
 
