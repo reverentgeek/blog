@@ -52,7 +52,7 @@ That gives us **LUFS**, which stands for **Loudness Units relative to Full Scale
 
 MeterMaid measures:
 
-* **Integrated loudness**: which is the overall loudness across the measurement
+* **Integrated loudness**: the overall loudness averaged across the whole measurement (use the Reset button to start a fresh average)
 * **Short-term loudness**: measured over about 3 seconds
 * **Momentary loudness**: measured over about 400 milliseconds
 * **Loudness Range**: which gives a sense of dynamics
@@ -71,6 +71,8 @@ My workflow is now pretty straightforward:
 7. Repeat until I question all my life choices.
 
 If one patch measures `-16.7 LUFS` and my target is `-14 LUFS`, MeterMaid tells me to add `+2.7 dB` of gain to my signal chain.
+
+> **Tip:** The integrated reading (and the gain suggestion that comes from it) is a _long-term average_ of everything MeterMaid has heard since you started measuring. It smooths out the moment-to-moment swings of playing. But it also means it won't jump the instant you change your output level, because the earlier, louder (or quieter) signal is still baked into the average. After you make a change, click **Reset**, play for a few seconds, and the suggested gain will settle on the new value.
 
 That's it. That's the whole magic trick.
 
