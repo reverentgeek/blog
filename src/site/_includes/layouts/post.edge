@@ -19,37 +19,44 @@ layout: layouts/default.edge
     <section class="content-body">
       {{{ content }}}
     </section>
-    <div id="disqus_thread"></div>
+    <div id="comments" class="giscus mt-8"></div>
     <script>
-      var disqus_config = function () {
-        this.page.url = "{{ site.url + page.url }}";
-        this.page.identifier = "ghost-{{ id }}";
-      };
       (function () {
-        var target = document.getElementById("disqus_thread");
+        var target = document.getElementById("comments");
         if (!target) return;
         var loaded = false;
-        var loadDisqus = function () {
+        var loadGiscus = function () {
           if (loaded) return;
           loaded = true;
-          var d = document,
-            s = d.createElement("script");
-          s.src = "https://{{ site.disqus_id }}.disqus.com/embed.js";
-          s.setAttribute("data-timestamp", + new Date());
-          (d.head || d.body).appendChild(s);
+          var s = document.createElement("script");
+          s.src = "https://giscus.app/client.js";
+          s.setAttribute("data-repo", "{{ site.giscus.repo }}");
+          s.setAttribute("data-repo-id", "{{ site.giscus.repoId }}");
+          s.setAttribute("data-category", "{{ site.giscus.category }}");
+          s.setAttribute("data-category-id", "{{ site.giscus.categoryId }}");
+          s.setAttribute("data-mapping", "{{ site.giscus.mapping }}");
+          s.setAttribute("data-strict", "0");
+          s.setAttribute("data-reactions-enabled", "{{ site.giscus.reactionsEnabled }}");
+          s.setAttribute("data-emit-metadata", "0");
+          s.setAttribute("data-input-position", "{{ site.giscus.inputPosition }}");
+          s.setAttribute("data-theme", "{{ site.giscus.theme }}");
+          s.setAttribute("data-lang", "{{ site.lang }}");
+          s.setAttribute("data-loading", "lazy");
+          s.crossOrigin = "anonymous";
+          s.async = true;
+          target.appendChild(s);
         };
         var observer = new IntersectionObserver(function (entries) {
           if (entries[0].isIntersecting) {
             observer.disconnect();
-            loadDisqus();
+            loadGiscus();
           }
         }, { rootMargin: "200px" });
         observer.observe(target);
       })();
     </script>
-    <noscript>Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
+    <noscript>Please enable JavaScript to view the comments.</noscript>
+    @include('partials/legacy-comments')
 
   </article>
 

@@ -77,5 +77,14 @@
 	"twitter_description": null,
 	"codeinjection_head": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-DVT1KMSK18\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-DVT1KMSK18');\n</script>\n<meta name=\"google-site-verification\" content=\"mrmoz4MbkBPe8lPD5kHTGgXCOjuT0nRy2WDQvEB03yA\" />",
 	"codeinjection_foot": null,
-	"disqus_id": "reverentgeek"
+	"giscus": {
+		"repo": "reverentgeek/blog",
+		"repoId": "MDEwOlJlcG9zaXRvcnkyNTkzODU4NTY=",
+		"category": "Announcements",
+		"categoryId": "DIC_kwDOD3XqAM4C_-DR",
+		"mapping": "pathname",
+		"theme": "light",
+		"reactionsEnabled": "1",
+		"inputPosition": "top"
+	}
 }

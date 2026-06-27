@@ -1,0 +1,855 @@
+{
+	"3-ways-to-share-nodejs-modules-across-multiple-projects": [
+		{
+			"author": "trakkif Ltd",
+			"datetime": "2021-10-14T16:01:18Z",
+			"date": "October 14, 2021",
+			"html": "<p>hi, thanks for tabling out these 3 options. The trouble is that all are quite 'clunky' - developers have to ensure they are pulling/updating with the latest changes at all times, not just automatically getting those updates. The least clunky is using npm publish, but this requires every slight change to increment the version number to ensure its seen as an update - which is ok in a very controlled environment but not when a lot of co-development is going on (imagine a repo that is being updated 20 ... 50 times a day).  I did think npm link might be a good option here, but this doesn't appear to be a robust approach.  I'm still stuck on a better option!</p>",
+			"depth": 0
+		},
+		{
+			"author": "code",
+			"datetime": "2022-07-05T12:45:27Z",
+			"date": "July 5, 2022",
+			"html": "<p>Honestly by far the best option is just to use Bit: <a href=\"https://bit.dev\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://bit.dev</a></p><p>It's the fastest, simplest, and most scalable way to share NodeSJ code in a managed way. It's open source and free enjoy.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Elvis Van",
+			"datetime": "2022-07-23T14:29:04Z",
+			"date": "July 23, 2022",
+			"html": "<p>how do you know that? can you describe in details how bitdev is better?</p>",
+			"depth": 1
+		},
+		{
+			"author": "mitya33",
+			"datetime": "2023-05-04T16:46:59Z",
+			"date": "May 4, 2023",
+			"html": "<p>The obvious problem with option 3 is you may not (probably won't) want your shared library to be public if its reason for being is to service your own apps. npm link isn't an option for most cloud hosting since you wouldn't normally check in your node_modules folder (the cloud service builds that directory itself) and thus any \"linked\" modules wouldn't get pulled in.</p><p>Option 2 is the most viable and scalable, I'd say. The issue of developers having to repeatedly pull down changes to your library can be mitigated by building that step into the startup command e.g. by running the whole app in a Docker container.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Annonymous",
+			"datetime": "2024-01-08T14:48:23Z",
+			"date": "January 8, 2024",
+			"html": "<p>What about pnpm?</p>",
+			"depth": 0
+		}
+	],
+	"5-essential-ingredients-for-an-awesome-tech-talk": [
+		{
+			"author": "JDub",
+			"datetime": "2018-01-17T17:14:38Z",
+			"date": "January 17, 2018",
+			"html": "<p>These 5 points are great.  I've been wanting to do some sort of intro to programming course and I think these are great points to follow.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2018-01-18T13:31:28Z",
+			"date": "January 18, 2018",
+			"html": "<p>Glad to hear it! Go do it!</p>",
+			"depth": 1
+		}
+	],
+	"ahoy-parse-ye-node-js-command-args-with-yargs": [
+		{
+			"author": "Justin",
+			"datetime": "2016-07-22T16:28:07Z",
+			"date": "July 22, 2016",
+			"html": "<p>Nice example. 'url' is not a command though and it's listed as a command in the help output.</p><p>I'm looking for an example of yargs usage where there are multiple commands… and by default if no command is given, I want to fall back to --help output. Do you happen to know how to do this?</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-07-22T16:46:31Z",
+			"date": "July 22, 2016",
+			"html": "<p>Hi Justin,</p><p>In this example, the <code>url</code> command is any text you might type in as the first argument. You can certainly have more than one. I think it's a good practice to have arbitrary input arguments first, then followed by any command-line switches.</p><p>There are a couple of ways you can trigger help output. One is to make at least one of the commands required. Another is to check the length of the arguments, and use <code>yargs.showHelp()</code>. Here's an example:</p><p><code><pre>var yargs = require( \"yargs\" );<br>var options = yargs<br>.usage( \"Usage: $0 &lt;url&gt; [-u \\\"username\\\"] [-p \\\"password\\\"] [--post] [--data \\\"{key:value}\\\"]\" )<br>.command( \"url\", \"URL to request\", { alias: \"url\" } )<br>// .required( 1, \"URL is required\" )<br>.option( \"u\", { alias: \"user\", demand: false, describe: \"Username\", type: \"string\" } )<br>.option( \"p\", { alias: \"password\", demand: false, describe: \"Password\", type: \"string\" } )<br>.option( \"d\", { alias: \"data\", describe: \"Data to send as JSON\", type: \"string\" } )<br>.option( \"get\", { describe: \"Use HTTP GET\", type: \"boolean\" } )<br>.option( \"post\", { describe: \"Use HTTP POST\", type: \"boolean\" } )<br>.option( \"put\", { describe: \"Use HTTP PUT\", type: \"boolean\" } )<br>.option( \"del\", { describe: \"Use HTTP DELETE\", type: \"boolean\" } )<br>.help( \"?\" )<br>.alias( \"?\", \"help\" )<br>.example( \"$0 https://example.com/api/posts\", \"Get a list of posts\" )<br>.example( \"$0 https://example.com/api/posts --post --data \\\"{ 'title': 'Avast ye!', 'body': 'Thar be a post hyar!'}\\\"\", \"Create a new post\" )<br>.epilog( \"Copyright 2015 ReverentGeek\" )<br>.argv;<br><br>// Check to see if no args were passed<br>if ( options._.length === 0 ) {<br>yargs.showHelp();<br>} else {<br>// Get the URL from the first parameter<br>var url = options._[ 0 ];<br><br>console.log( \"url:\", url );<br><br>// Make \"get\" the default if no verb is specified<br>if ( !options.get &amp;&amp; !options.post &amp;&amp; !options.put &amp;&amp; !options.del ) {<br>options.get = true;<br>}<br>}<br><br>console.log( \"options:\", options );<br></pre></code></p><p>Hope this helps!</p>",
+			"depth": 1
+		},
+		{
+			"author": "Justin",
+			"datetime": "2016-07-22T17:00:57Z",
+			"date": "July 22, 2016",
+			"html": "<p>Thanks David! Ye the simplest way seems to be:</p><p></p><pre><code><br>  .required( 1, 'At least one command is required')<br></code></pre><p></p><p>:)</p>",
+			"depth": 2
+		},
+		{
+			"author": "dissertation writing help",
+			"datetime": "2016-10-08T10:44:48Z",
+			"date": "October 8, 2016",
+			"html": "<p>Seems pretty effective to consider in using Yargs into someone's work especially if they wanted to build some new ideas and techniques that will totally be a perfect advantage for their future. For sure, they can be able to come up with a better output from this idea that you give.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Nathaniel Perez",
+			"datetime": "2017-03-22T10:01:51Z",
+			"date": "March 22, 2017",
+			"html": "<p>hi David,</p><p>do you know whether there is a way of configuring usage with more than one possible command<br>let's say my script is named app.js and can log in and out a web session.<br>so I have 2 possible commands: <br>node app.js login --user \"user\" --pw \"password\"<br>or<br>node app.js logout.<br>How can i constrain this in usage?</p><p>Thank you<br>Nathaniel</p>",
+			"depth": 0
+		}
+	],
+	"ai-really-is-taking-my-job": [
+		{
+			"author": "Rick Culpepper",
+			"datetime": "2025-05-20T18:51:14Z",
+			"date": "May 20, 2025",
+			"html": "<p>Great post, David... and so very, very true.</p>",
+			"depth": 0
+		},
+		{
+			"author": "RandomCake",
+			"datetime": "2025-05-23T11:43:05Z",
+			"date": "May 23, 2025",
+			"html": "<p>Great post, gen AI is so handy, but it's pretty concerning that we might stop actually creating new styles, with just re-hashed versions of what we've already done.</p><p>Sure, there will be new creative things done with the gen AI, but I don't think that's a great substitute for human creators who have new ideas.</p>",
+			"depth": 0
+		},
+		{
+			"author": "undisclosed location",
+			"datetime": "2025-05-23T20:31:54Z",
+			"date": "May 23, 2025",
+			"html": "<p>We used to call rehashed art ideas \"schools of art\" such as the Hudson River Valley, Impressionist, Pointillist, etc.</p><p>I'm not concerned with rehashing versions of what we have already. Almost all commercial art is a rehash, a lot of new art is a rehash of what people have seen, poorly remembered, and some even deliberately try to obscure the origins.</p><p>I suggest examining why you feel rehashing is a problem.</p><p>Is it ego? Is it some loss of humanness? If you think it's something unique to humans, look over history and see just how many times humans have been knocked out of their special places in the universe over and over and over again to the point where now we finally understand that we're not the only sapient beings with tool use and language. We've just been at it longer on this planet.</p><p>Interested in hearing your thoughts on the matter!</p>",
+			"depth": 1
+		}
+	],
+	"be-patient-and-keep-practicing": [
+		{
+			"author": "Philippe Bourgau",
+			"datetime": "2018-01-18T12:22:20Z",
+			"date": "January 18, 2018",
+			"html": "<p>Hi David, I too started to add sketches in my blog (<a href=\"http://philippe.bourgau.net/)\" rel=\"nofollow ugc noopener\" target=\"_blank\">http://philippe.bourgau.net/)</a>. I've always loved to draw, and to see how you improved with repeated practice is very inspiring ! Maybe I'll be able to draw that comic when I retire eventually. Thanks a lot.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2018-01-18T13:36:40Z",
+			"date": "January 18, 2018",
+			"html": "<p>Awesome! Your drawings are great! Keep working at it, and I’m sure you’ll make improvements and progress over time.</p>",
+			"depth": 1
+		},
+		{
+			"author": "Philippe Bourgau",
+			"datetime": "2018-01-18T16:14:23Z",
+			"date": "January 18, 2018",
+			"html": "<p>Thanks a lot for the encouragements !</p>",
+			"depth": 2
+		}
+	],
+	"blazon-for-technical-presentations-and-training": [
+		{
+			"author": "Josh Carroll",
+			"datetime": "2014-05-01T15:01:49Z",
+			"date": "May 1, 2014",
+			"html": "<p>I've been using Blazon for the past couple of presentations, and after David Neal took the time to show me the shared code blocks feature I was blown away.</p><p><strong>Just that feature alone is completely worth using this product for technical presentations.</strong> The fact that I can give my audience a public url, and download the entire thing for offline use are amazing bonuses.</p><p>I completely agree that anybody doing technical presentations should be using Blazon.</p><p><em>P.S. I am in no way affiliated with Blazon, or getting paid to promote them. I just think it's an awesome product and everybody should use it.</em></p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2014-05-01T15:12:36Z",
+			"date": "May 1, 2014",
+			"html": "<p>+1000, Josh!</p><p>And, just to be clear, I'm not getting any kickbacks from Blazon or the wizards at appendTo for this review. Not that I'm above such things ;-)</p>",
+			"depth": 1
+		}
+	],
+	"build-a-command-line-application-with-deno-2": [
+		{
+			"author": "Justin Oneill",
+			"datetime": "2024-12-18T11:04:54Z",
+			"date": "December 18, 2024",
+			"html": "<p>Great breakdown thanks!</p>",
+			"depth": 0
+		}
+	],
+	"build-a-secure-node-js-application-with-javascript-async-await-using-hapi": [
+		{
+			"author": "ShellyBranch",
+			"datetime": "2019-04-10T18:41:50Z",
+			"date": "April 10, 2019",
+			"html": "<p>I followed the steps but I'm getting the following:</p><p>{ ValidationError: {<br>  \"password\": \"superAwesomePasswordStringThatIsAtLeast32CharactersLong!\",<br>  \"redirectTo\": \"/authorization-code/callback\",<br>  \"isSecure\": true,<br>  \"cookie\" [1]: -- missing --<br>}</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2019-04-10T18:50:13Z",
+			"date": "April 10, 2019",
+			"html": "<p>Have you tried running the code that is in the GitHub repository? Clone or download the source files and run <code>npm install</code> to install the dependencies.You will need to copy the <code>.env.sample</code> to <code>.env</code> and fill in the values with your settings.</p>",
+			"depth": 1
+		},
+		{
+			"author": "ShellyBranch",
+			"datetime": "2019-04-10T18:56:11Z",
+			"date": "April 10, 2019",
+			"html": "<p>Thanks, I'll do that.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Shin Shinue",
+			"datetime": "2020-09-13T00:41:17Z",
+			"date": "September 12, 2020",
+			"html": "<p>how can i run this app without okta authentication? List events only for 'os' user?</p>",
+			"depth": 0
+		}
+	],
+	"cant-stop-the-doodles": [
+		{
+			"author": "Gjermund Bjaanes",
+			"datetime": "2016-11-28T07:20:37Z",
+			"date": "November 28, 2016",
+			"html": "<p>I was actually inspired by a previous post you did on this. I decided I wanted to try this myself. I recently did a session on a local meetup, with the entire presentation deck full of hand drawn illustrations. It worked like a charm. People actually responded really well to them!</p><p>And I SUCK at drawing, but you don't have to be good at drawing to create doodles that illustrates points 100x better than any stock photo or whatever can do.</p><p>Thanks for sharing David! :)</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-11-28T18:48:31Z",
+			"date": "November 28, 2016",
+			"html": "<p>YES! Thank you for sharing your experience! I'm glad to hear you tried it, and you were successful, regardless of being \"good at drawing.\" I bet if you asked some of your audience, they would say your drawings were \"good\" or even better, because they are so personal and effective. Keep it up! And keep me updated on your progress! :)</p>",
+			"depth": 1
+		},
+		{
+			"author": "Pavneet Singh Saund",
+			"datetime": "2016-11-29T20:13:34Z",
+			"date": "November 29, 2016",
+			"html": "<p>Spot on! I was on the receiving end of @gjermundbjaanes:disqus' doodled presentation. Keeping it personal and effective really sums it up well.</p><p>Keep on doodling! :)</p>",
+			"depth": 2
+		}
+	],
+	"community-spotlight-cory-house": [
+		{
+			"author": "housecor",
+			"datetime": "2017-04-12T15:57:17Z",
+			"date": "April 12, 2017",
+			"html": "<p>Wow, thanks Dave! Your drawing skills are spot on - You've perfected captured my (unfortunate) hairline. :)</p><p>And that Google result is news to me. You've made my day!</p><p>Thanks so much for the kind words Dave. Right back at ya - I always enjoy your humor - And can't wait to see what T-shirt you're sporting at the next conf!</p>",
+			"depth": 0
+		}
+	],
+	"configure-eleventy-to-host-a-custom-mastodon-alias": [
+		{
+			"author": "Raymond Camden",
+			"datetime": "2023-01-03T15:39:50Z",
+			"date": "January 3, 2023",
+			"html": "<p>Hey - so a question on this. When you added this, and confirmed it worked, did you start telling people your new Mastodon account it? Ie link to it in your blog, profiles, etc? I guess what I'm confused by is - this is creating an _alias_, right? So your \"real\" account doesn't change, but the custom one works as an alias, right?</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2023-01-03T16:44:50Z",
+			"date": "January 3, 2023",
+			"html": "<p>Yes, the \"real\" account doesn't change. If someone searches \"@reverentgeek@reverentgeek.com\" using their Mastodon, it resolves to my \"real\" <a href=\"http://techhub.social\" rel=\"nofollow ugc noopener\" target=\"_blank\">techhub.social</a> account. I've put this in a few places as part of my profile, but the links still point directly to <a href=\"http://techhub.social\" rel=\"nofollow ugc noopener\" target=\"_blank\">techhub.social</a>.</p>",
+			"depth": 1
+		}
+	],
+	"confront-your-inner-critic": [
+		{
+			"author": "Edu Costa Dev",
+			"datetime": "2019-10-28T12:06:50Z",
+			"date": "October 28, 2019",
+			"html": "<p>Keep a \"Daily journal\" have been helped me a lot. As you have said, if you look back you can start to see just how far you've come.</p><p><a href=\"https://youtu.be/Niou-6HrqVo\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://youtu.be/Niou-6HrqVo</a></p>",
+			"depth": 0
+		}
+	],
+	"customize-your-vs-code-icon": [
+		{
+			"author": "MatthieuScarset",
+			"datetime": "2018-03-08T12:17:44Z",
+			"date": "March 8, 2018",
+			"html": "<p>Could you add the How to for Linux :) ?</p>",
+			"depth": 0
+		},
+		{
+			"author": "ENT PRESTIGIOUS",
+			"datetime": "2021-05-09T04:29:11Z",
+			"date": "May 9, 2021",
+			"html": "<p>So after changing it, how to we change it back?</p>",
+			"depth": 0
+		}
+	],
+	"do-you-hate-javascript": [
+		{
+			"author": "Gjermund Bjaanes",
+			"datetime": "2017-03-18T12:08:22Z",
+			"date": "March 18, 2017",
+			"html": "<p>Great resources, thanks for the post David. I literally laughed out loud at the \"In case of emergency\" drawing. Fantastic work! :)</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2017-03-18T14:03:23Z",
+			"date": "March 18, 2017",
+			"html": "<p>Thank you! Glad to hear you got a laugh out of that one :)</p>",
+			"depth": 1
+		}
+	],
+	"here-take-my-card": [
+		{
+			"author": "eswat2",
+			"datetime": "2026-03-05T02:22:07Z",
+			"date": "March 4, 2026",
+			"html": "<p>Yes, that’s an awesome card.  Mine aren’t nearly as creative…</p><p>npx eswat2<br>npx eswat42</p>",
+			"depth": 0
+		}
+	],
+	"hosting-node-js-on-microsoft-azure": [
+		{
+			"author": "Faran Iqbal",
+			"datetime": "2015-05-19T13:00:51Z",
+			"date": "May 19, 2015",
+			"html": "<p>David, I need your help.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Faran Iqbal",
+			"datetime": "2015-05-19T13:02:24Z",
+			"date": "May 19, 2015",
+			"html": "<p>I have made a virtual machine with windows server R2 2012 on windows azure, I have configured mongodb and nodejs restful api on the virtual machine, but i don't know how to make my node app public.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2015-05-19T14:13:37Z",
+			"date": "May 19, 2015",
+			"html": "<p>By default, all public ports are turned off on Azure virtual machines. You will need to open a public port in the Azure management portal for HTTP traffic. In the Azure management portal, click on \"Virtual machines,\" click on your virtual machine, and then click on the \"Endpoints\" tab. From there you can add a public port 80 (HTTP) to point to the port your Node.js application is listening on (private port). Node.js can be listening on port 80, or any other port that is available. Hope this helps!</p>",
+			"depth": 1
+		},
+		{
+			"author": "Quantumventura",
+			"datetime": "2015-09-21T05:15:26Z",
+			"date": "September 21, 2015",
+			"html": "<p>Hello David, we are running node.js/mongoDb/ <a href=\"http://socket.io\" rel=\"nofollow ugc noopener\" target=\"_blank\">socket.io</a> as a windows app. The app works fine on a local server but once published on azure, the app is unstable. Keep getting http status 500 and substatus 1013 errors. node.exe works fine but it looks like IIS is the culprit. Our app reads twitter realtime streams based on user defined search criteria.  I have 2 questions. a) if we go for dedicated VM instead of running it as windows app, do we still need IIS or we can run without it? b) If IIS server is a must, what are the best debugging tools? someone suggested node inspector.  thanks so much. Mike</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2015-09-28T20:15:38Z",
+			"date": "September 28, 2015",
+			"html": "<p>If you run a dedicated VM, you do not have to use IIS to host Node.js. You can use something like winser to manage an instance of your application as if it were a Windows service (start/stop/restart).</p>",
+			"depth": 1
+		},
+		{
+			"author": "Najam Sikander Awan",
+			"datetime": "2016-01-13T11:42:23Z",
+			"date": "January 13, 2016",
+			"html": "<p>can you please tell how to run a basic web app written with koa.js to host with iis and iisnode. for koa.js you need to put --harmony flag with node</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-01-14T16:43:38Z",
+			"date": "January 14, 2016",
+			"html": "<p>I'm not very familiar with koa.js, but my understanding is if you are using any recent version of Node.js (above v0.11.x) you do not need the --harmony flag. If you are running an older version of Node.js, then this closed issue on GitHub might help: <a href=\"https://github.com/tjanczuk/iisnode/issues/315\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://github.com/tjanczuk...</a></p>",
+			"depth": 1
+		},
+		{
+			"author": "Najam Sikander Awan",
+			"datetime": "2016-01-15T06:48:33Z",
+			"date": "January 15, 2016",
+			"html": "<p>i finally got it working. by selecting engine in package.json file then iisnode.yml was generated. And yes you were right with latest versions you dont need to supply --harmony flag. my test koajs web app is working now. <a href=\"http://koa83.azurewebsites.net/\" rel=\"nofollow ugc noopener\" target=\"_blank\">http://koa83.azurewebsites....</a></p>",
+			"depth": 2
+		},
+		{
+			"author": "Najam Sikander Awan",
+			"datetime": "2016-01-15T05:51:38Z",
+			"date": "January 15, 2016",
+			"html": "<p>please check my server.js code <a href=\"https://jsfiddle.net/ryvz2r5s/\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://jsfiddle.net/ryvz2r5s/</a>. my web app on azure show node.js version 4.2.3. also when i ftp to site wwwroot folder there is no iiisnode.yml file available</p>",
+			"depth": 0
+		},
+		{
+			"author": "দেবাশীষ",
+			"datetime": "2017-11-05T13:43:28Z",
+			"date": "November 5, 2017",
+			"html": "<p>in azure app service, I cant run node js app. Its pointing the old version. Please help me to install a latest Node.js and a node module like botpress</p>",
+			"depth": 0
+		}
+	],
+	"im-not-nearly-the-man-i-used-to-be": [
+		{
+			"author": "Jim Cowart",
+			"datetime": "2014-07-17T14:02:57Z",
+			"date": "July 17, 2014",
+			"html": "<p>Congrats to you and your wife both! That's amazing effort and reward - and very glad it's improving quality of life for both of you.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Nate Kohari",
+			"datetime": "2014-07-17T16:41:09Z",
+			"date": "July 17, 2014",
+			"html": "<p>Congratulations David!</p>",
+			"depth": 0
+		},
+		{
+			"author": "jcreamer898",
+			"datetime": "2014-07-17T17:01:55Z",
+			"date": "July 17, 2014",
+			"html": "<p>Congrats David! Keep it up. But, don't forget to still eat some bacon every now and then. ;)</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2014-07-17T18:20:39Z",
+			"date": "July 17, 2014",
+			"html": "<p>Oh... you *know* I wouldn't stand for any diet that didn't allow bacon ;)</p>",
+			"depth": 1
+		},
+		{
+			"author": "Dan Hounshell",
+			"datetime": "2014-07-17T20:34:14Z",
+			"date": "July 17, 2014",
+			"html": "<p>I'm proud of David and inspired as well. My wife and I have both started eating better and exercising more after seeing his results. Congrats, thanks, and keep it up!</p>",
+			"depth": 0
+		},
+		{
+			"author": "Doug Stiers",
+			"datetime": "2014-08-14T10:21:52Z",
+			"date": "August 14, 2014",
+			"html": "<p>I saw you last night at the TRINUG group meeting. Congrats on the weight loss.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2014-08-14T10:38:02Z",
+			"date": "August 14, 2014",
+			"html": "<p>Thanks, Doug! I really appreciate it. I enjoyed speaking at the group last night!</p>",
+			"depth": 1
+		}
+	],
+	"leveling-guitar-patches-with-tauri": [
+		{
+			"author": "Rob Rez",
+			"datetime": "2026-06-22T23:21:18Z",
+			"date": "June 22, 2026",
+			"html": "<p>I receive an error each time I try to start the analysis.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2026-06-22T23:55:52Z",
+			"date": "June 22, 2026",
+			"html": "<p>Can you give me any other details about the error? Is there an error message? Are you running on Windows or Mac, and which version of Windows or Mac?</p>",
+			"depth": 1
+		},
+		{
+			"author": "Rob Rez",
+			"datetime": "2026-06-23T20:00:19Z",
+			"date": "June 23, 2026",
+			"html": "<p>Thanks David! I updated to the newest version and the error code received mentioned turning on Microphone access for desktop apps. Once turned on, everything worked as expected.</p>",
+			"depth": 2
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2026-06-24T19:03:09Z",
+			"date": "June 24, 2026",
+			"html": "<p>Glad to hear it's working now!</p>",
+			"depth": 3
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2026-06-23T02:20:45Z",
+			"date": "June 22, 2026",
+			"html": "<p>I've published a new version. It probably won't fix whatever issue you're seeing, but it should report more information on what's happening. Please install, try again, and let me know what the app reports. Thanks!   <a href=\"https://github.com/reverentgeek/metermaid/releases/latest\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://github.com/reverentgeek/metermaid/releases/latest</a></p>",
+			"depth": 1
+		},
+		{
+			"author": "Gabe T.",
+			"datetime": "2026-06-24T23:44:29Z",
+			"date": "June 24, 2026",
+			"html": "<p>I’ve been waiting for an app like this for a long time...seriously, thank you! I just finished leveling all my presets. Like you, I run a dedicated preset with snapshots for each song in Band #1, and with my other band, I use one full-blown preset with all 8 snapshots that covers everything from ’70s tones to modern rock. This tool finally makes managing all of that so much easier. BRAVO!!!</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2026-06-25T01:01:01Z",
+			"date": "June 24, 2026",
+			"html": "<p>Awesome!! I'm glad to hear it's helped you :)</p>",
+			"depth": 1
+		},
+		{
+			"author": "JT",
+			"datetime": "2026-06-25T15:21:47Z",
+			"date": "June 25, 2026",
+			"html": "<p>I'm super excited for this app! Just installed it and did the drop down menu to my helix, pressed start and no readings. Please help</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2026-06-25T18:01:27Z",
+			"date": "June 25, 2026",
+			"html": "<p>Are you on Mac or Windows? And, which version? Are you using Helix Floor/LT or Helix Stadium?</p>",
+			"depth": 1
+		},
+		{
+			"author": "JT",
+			"datetime": "2026-06-25T19:57:56Z",
+			"date": "June 25, 2026",
+			"html": "<p>On Mac (intel) and Stadium</p>",
+			"depth": 2
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2026-06-26T14:00:00Z",
+			"date": "June 26, 2026",
+			"html": "<p>Did you allow access to the Microphone? It's a little misleading, but you must grant permission for the app to use any audio source. You can enable this by going to System Settings -&gt; Privacy &amp; Security -&gt; Microphone and toggle on MeterMaid. Let me know if that's the fix. I've got access to an Intel Mac, so if you're still having an issue, I'll see if I can reproduce.</p>",
+			"depth": 1
+		}
+	],
+	"meet-surrealdb-nodejs": [
+		{
+			"author": "Rick Culpepper",
+			"datetime": "2025-06-14T12:25:15Z",
+			"date": "June 14, 2025",
+			"html": "<p>Holy guacamole, Batman!</p><p>After reading this post, I spent a couple of days investigating SurrealDB. They got the name right—surreal.</p><p>I haven’t used SurrealDB for anything serious yet, but the possibilities are staggering. It seems inevitable that someone will develop a single platform supporting SQL, NoSQL, and GraphQL. This is like the Swiss Army knife of database platforms.</p><p>However, SurrealDB faces challenges in the real world of software engineering and application performance.</p><p>First, SurrealDB’s complexity may overwhelm developers, especially those unfamiliar with SQL, NoSQL, and GraphQL. Engineers familiar with all three should focus on using SurrealDB effectively for each use case. Less experienced engineers might struggle to choose the right options, leading to confusion, lack of focus, and slow development. This doesn’t account for the initial learning curve to adopt SurrealDB.</p><p>Second, I wonder about SurrealDB’s performance at scale. Can it perform on par with existing SQL, NoSQL, and GraphQL platforms? Maybe. While a Swiss Army knife can address many tooling needs, it can be hard to find the right “blade” when needed. One or two tools might be more useful in most situations. “Do-it-all” tools like SurrealDB may sacrifice performance for flexibility. More specialized tools (e.g., MongoDB, SQL Server, PostgreSQL) typically provide top-notch performance for specific use cases.</p><p>Thanks for sharing!</p>",
+			"depth": 0
+		}
+	],
+	"moving-from-ghost-to-eleventy": [
+		{
+			"author": "mattlacey",
+			"datetime": "2020-07-24T11:15:09Z",
+			"date": "July 24, 2020",
+			"html": "<p>Looks like the last time I searched for \"ghost to eleventy\" I was a bit too early, this time however... new story! Running the exporter now and seems to be working a treat judging by the logs. Nice one :)</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2020-07-24T16:09:05Z",
+			"date": "July 24, 2020",
+			"html": "<p>Cool! I'm glad to hear it! Let me know if you run into any issues or anything I could do to improve it!</p>",
+			"depth": 1
+		}
+	],
+	"my-most-embarrassing-mistakes-as-a-programmer": [
+		{
+			"author": "Александр Черепанов",
+			"datetime": "2020-03-07T09:06:14Z",
+			"date": "March 7, 2020",
+			"html": "<p>You are absolutely right! You motivate me to be more social in my team. However, it's not so easy when your teammates also don't follow most of these core skills. Lack of empathy and \"screw it all\" attitude makes me sad.</p>",
+			"depth": 0
+		}
+	],
+	"ndc-sydney-2016": [
+		{
+			"author": "Gjermund Bjaanes",
+			"datetime": "2016-09-25T13:01:00Z",
+			"date": "September 25, 2016",
+			"html": "<p>Sounds like an amazing event and vacation. I need to get my ass to NDC Sydney some time.</p><p>Thanks for sharing, David - you got me even more psyched about next years NDC (If I can get myself there of course :))</p>",
+			"depth": 0
+		}
+	],
+	"node-js-for-net-developers-on-channel-9": [
+		{
+			"author": "Mark Mitchell",
+			"datetime": "2015-10-26T02:56:33Z",
+			"date": "October 25, 2015",
+			"html": "<p>David - I tried to view the presentation from Channel 9 - but there is not any audio - I went to the channel 9 site directly - same result - tried the audio only mp3 - and there is not any sound.<br>Your talk was the best of the talks I saw at the Atlanta Code camp - I sat next to you in the Clojure class. <br>I have followed you for a while on twitter.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2015-10-26T14:34:08Z",
+			"date": "October 26, 2015",
+			"html": "<p>Thanks, Mark! I just tested the video, and the audio is working for me in Chrome and Firefox. Not sure what could be going on :-/</p><p>Wow, I really appreciate your feedback. I'm glad to hear you thought so highly of my talk! Of course, my \"impostor syndrome\" is yelling, \"You gotta be kidding! Don't encourage him!\" ;-) If I may ask, what did you like most about the talk? Was it the case studies, demos, delivery (I've been trying to improve my enthusiasm and be more entertaining), or anything else? Anything I could add, remove, or improve?</p>",
+			"depth": 1
+		}
+	],
+	"please-give-public-speaking-a-try": [
+		{
+			"author": "William Gant",
+			"datetime": "2017-08-10T17:46:42Z",
+			"date": "August 10, 2017",
+			"html": "<p>I took your advice. Speaking at Devspace in October, plus a couple of local things before then. Catch you over there, boss man.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2017-08-10T17:48:33Z",
+			"date": "August 10, 2017",
+			"html": "<p>Awesome! See you in Huntsville!</p>",
+			"depth": 1
+		},
+		{
+			"author": "Dustin Davis",
+			"datetime": "2017-09-22T18:01:32Z",
+			"date": "September 22, 2017",
+			"html": "<p>You did a great job. I've tried my hand at presenting a few times and I NEED to do it more. I just attended your <a href=\"http://Connect.tech\" rel=\"nofollow ugc noopener\" target=\"_blank\">Connect.tech</a> talk on Electron. Well done!</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2017-09-22T18:20:19Z",
+			"date": "September 22, 2017",
+			"html": "<p>Thank you! If there's anything I can do to help you get out there and keep trying, let me know :)</p>",
+			"depth": 1
+		}
+	],
+	"public-speaking-without-barfing-on-your-shoes": [
+		{
+			"author": "Taylor Brazelton",
+			"datetime": "2016-12-12T19:25:28Z",
+			"date": "December 12, 2016",
+			"html": "<p>The owner of the video disabled playing it from embedded html. :/</p>",
+			"depth": 0
+		}
+	],
+	"reflecting-on-the-past-five-years": [
+		{
+			"author": "Chang Lee",
+			"datetime": "2017-10-16T00:23:07Z",
+			"date": "October 15, 2017",
+			"html": "<p>I went to your talk at Music City Code on public speaking. I start drawing stuff for fun again, first time since I was 10. There's so much value that a person can add to the community, all for the better. Thanks!</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2017-10-16T13:28:07Z",
+			"date": "October 16, 2017",
+			"html": "<p>That's awesome! Thank you for sharing that with me. I'm so glad to hear you were inspired by my talk.</p>",
+			"depth": 1
+		}
+	],
+	"review-codestock-2016": [
+		{
+			"author": "Gjermund Bjaanes",
+			"datetime": "2016-07-26T05:37:35Z",
+			"date": "July 26, 2016",
+			"html": "<p>That certainly looks like an awesome conference. I hope I get to go sometime :)</p><p>As always, the hand drawn slides are epic! :)</p>",
+			"depth": 0
+		}
+	],
+	"review-motorized-ikea-standing-desk": [
+		{
+			"author": "Justin",
+			"datetime": "2016-07-22T16:34:52Z",
+			"date": "July 22, 2016",
+			"html": "<p>Cool :)</p><p>Just got one (my first) from Varidesk this week and I love it so far. It's manual so this one is looking pretty cool in comparison (price range is close enough). … lol too bad. Still like mine (didn't know there were electrical ones. I would imagine it's still manually adjustable right? I mean what happens when there's a power cut?).</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-07-22T16:50:37Z",
+			"date": "July 22, 2016",
+			"html": "<p>The IKEA sit/stand motorized desk has no practical manual adjustment. If I lose power, I'm probably going to stop using the computer, and go sit in my easy chair with a book ;)</p>",
+			"depth": 1
+		},
+		{
+			"author": "Justin",
+			"datetime": "2016-07-22T16:57:54Z",
+			"date": "July 22, 2016",
+			"html": "<p>lol fair enough. It did cross my mind that no power = less need for a desk, but still, it's nice to have a contingency plan (e.g. fault in the desk itself). Oh well, cool stuff anyway!</p>",
+			"depth": 2
+		},
+		{
+			"author": "Larry E",
+			"datetime": "2016-09-30T15:07:58Z",
+			"date": "September 30, 2016",
+			"html": "<p>I got this one to test out: <a href=\"http://oristand.co/\" rel=\"nofollow ugc noopener\" target=\"_blank\">http://oristand.co/</a>  <br>Only $40 shipped, so not a ton just to see if you like standing desks.</p><p>So far I like it for short periods, but not ready to switch completely.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Corner Desks for Sale",
+			"datetime": "2025-11-25T11:07:04Z",
+			"date": "November 25, 2025",
+			"html": "<p>Thanks for sharing — that’s a really solid review. The IKEA BEKANT motorized standing desk seems like a great value: easy to assemble, very stable, smooth height adjustment, and even has cable management.</p>",
+			"depth": 0
+		}
+	],
+	"ride-review-leipers-fork-and-natchez-trace": [
+		{
+			"author": "plodder",
+			"datetime": "2015-05-02T12:39:44Z",
+			"date": "May 2, 2015",
+			"html": "<p>Good pics</p>",
+			"depth": 0
+		}
+	],
+	"ride-with-reverentgeek-codestock-2016": [
+		{
+			"author": "philsherwood",
+			"datetime": "2016-07-05T19:32:22Z",
+			"date": "July 5, 2016",
+			"html": "<p>I won't get to come to Codestock this year but I'd love to do this ride. I'm in Winston-Salem, NC and can ride over and meet you possibly. Will have to figure out if I can make this work.</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-07-05T19:33:39Z",
+			"date": "July 5, 2016",
+			"html": "<p>Sure! That would be great!</p>",
+			"depth": 1
+		}
+	],
+	"scale-windows-services-with-rabbitmq": [
+		{
+			"author": "Jorge Alan CAMEY VÁSQUEZ",
+			"datetime": "2015-09-21T05:06:25Z",
+			"date": "September 21, 2015",
+			"html": "<p>HI, good night, i'm searching how implement the rabbitMQ with windows serivice but have some problem, when execute in console project work it well, but wen implement in project windwos service  don't get o don't obtain the value of message , because read message by message , but is lost and can't read because retrieve null the variable message, need some help for this, i'll  be very thanks full if somebody help me. My email is jcameyv@umg.edu.gt regards.</p>",
+			"depth": 0
+		},
+		{
+			"author": "Jayakumar",
+			"datetime": "2015-09-24T06:44:26Z",
+			"date": "September 24, 2015",
+			"html": "<p>hai jorge Alen... me also getting same problem... if you Got any solution Please let me <a href=\"http://know.my\" rel=\"nofollow ugc noopener\" target=\"_blank\">know.my</a> mail id is tvjmanoj21@gmail.com</p>",
+			"depth": 1
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2015-09-28T20:19:42Z",
+			"date": "September 28, 2015",
+			"html": "<p>Unfortunately, I don't work much with RabbitMQ these days. I would recommend posting your question, along with specific code that demonstrates the issue you are having, on StackOverflow. I'm sure someone there may be able to help you.</p>",
+			"depth": 1
+		}
+	],
+	"speaking-at-2014-ndc": [
+		{
+			"author": "Terry Lewis",
+			"datetime": "2014-05-07T17:02:54Z",
+			"date": "May 7, 2014",
+			"html": "<p>WAY cool, friend!</p>",
+			"depth": 0
+		}
+	],
+	"sql-server-and-nodejs-revisited": [
+		{
+			"author": "Pierre Bourgault",
+			"datetime": "2015-12-14T18:16:10Z",
+			"date": "December 14, 2015",
+			"html": "<p>Took a quick look at seriate, looks cool. I could not see support for Integrated Security (SSPI) though. Am I correct ?</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2015-12-14T18:52:21Z",
+			"date": "December 14, 2015",
+			"html": "<p>Seriate supports trusted/NTLM authentication, which you can read about on the seriate repository at <a href=\"https://github.com/LeanKit-Labs/seriate\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://github.com/LeanKit-...</a>.</p><p>By SSPI, I'm assuming you mean it authenticates with the user context under which the node application is currently running? Seriate depends on the mssql module for the underlying SQL work. As far as I can tell, mssql does not support SSPI.</p>",
+			"depth": 1
+		},
+		{
+			"author": "Pierre Bourgault",
+			"datetime": "2015-12-14T19:19:22Z",
+			"date": "December 14, 2015",
+			"html": "<p>Thanks for the quick reply! Yes, that's what I meant. I can do SSPI authentication easily with pyodbc in python but fails to find something as easy for node.js.</p>",
+			"depth": 2
+		}
+	],
+	"sql-server-for-linux-how-to-move-a-database-from-one-docker-container-to-another": [
+		{
+			"author": "lporras16",
+			"datetime": "2018-02-19T20:47:29Z",
+			"date": "February 19, 2018",
+			"html": "<p>Hey I'm using this repository to use sql server on docker: <a href=\"https://hub.docker.com/r/microsoft/mssql-server-linux/\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://hub.docker.com/r/mi...</a> but it does not include the command sqlpackage on /opt/mssql/bin/, it has:</p><p>root@7fb9d1dbbf00:/opt/mssql-tools/bin# ls<br>bcp  sqlcmd</p><p>How can I restore a database from a bacpac file if I don't have sqlpackage?</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2018-02-19T20:52:18Z",
+			"date": "February 19, 2018",
+			"html": "<p>Hey! Yeah, MS removed the sqlpackage tools at some point. You can use the BACKUP and RESTORE DATABASE sql commands to restore a backup (.bak) file created on a Windows Server. The same steps to copy a file into a Docker container still apply. This article might help: <a href=\"https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-migrate-restore-database\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://docs.microsoft.com/...</a></p>",
+			"depth": 1
+		},
+		{
+			"author": "lporras16",
+			"datetime": "2018-02-19T21:34:38Z",
+			"date": "February 19, 2018",
+			"html": "<p>thanks for your response.  Do you know if I can use RESTORE DATABASE with a bacpac file?  I don't have a .bak file, I'm using Azure to create the backup file, and it only returns a bacpac file.  I tried to restore using the software sql Operations Studio, but it only opens .bak files :/</p>",
+			"depth": 2
+		}
+	],
+	"sql-server-running-on-a-mac": [
+		{
+			"author": "Vincent Congini",
+			"datetime": "2016-12-13T20:58:40Z",
+			"date": "December 13, 2016",
+			"html": "<p>I didn't even think about scripting out the database, so thanks for that tip.  I was curious if you've been able to perform a restore into the docker container successfully?  I'm just scratching my head at it today.</p>",
+			"depth": 0
+		},
+		{
+			"author": "anon",
+			"datetime": "2017-03-06T15:06:12Z",
+			"date": "March 6, 2017",
+			"html": "<p>1) get container ID: $docker inspect -f '{{.Id}}' my-mssql</p><p>2) copy BAK file to docker instance: docker exec -i &lt;container_id&gt; bash -c 'cat &gt; /var/opt/mssql/backup.bak' &lt; '/source/path/backup.bak'</p><p>3) log into mssql: mssql -u sa -p 'myPassword'</p><p>3) restore db: RESTORE DATABASE [MyDatabase] FROM  DISK = N'/var/opt/mssql/backup.bak' WITH  FILE = 1,  NOUNLOAD,  REPLACE,  STATS = 5</p>",
+			"depth": 1
+		},
+		{
+			"author": "Theara",
+			"datetime": "2017-01-20T13:21:37Z",
+			"date": "January 20, 2017",
+			"html": "<p>I run `docker run --name name_your_container -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=123456' -p 1433:1433 -d microsoft/mssql-server-linux`.<br>It show <br>```<br>Microsoft(R) SQL Server(R) setup failed with error code 1. Please check the setup log in /var/opt/mssql/log for more information.<br>```<br>But I check the status it work fine (docker ps -a).<br>And then I run connect by `mssql -s localhost -u sa -p 123456 -o 1433`:</p><p>```<br>2017-01-20 13:14:56.46 Logon       Error: 18456, Severity: 14, State: 7.<br>2017-01-20 13:14:56.46 Logon       Login failed for user 'sa'. Reason: An error occurred while evaluating the password. [CLIENT: 172.17.0.1]<br>```</p>",
+			"depth": 0
+		},
+		{
+			"author": "anon",
+			"datetime": "2017-03-06T15:05:39Z",
+			"date": "March 6, 2017",
+			"html": "<p>I would get this error when my password did not meet microsoft's standards for a password, which I believe needs a special char, numbers, letters (lower and cap). you should create a new docker container with a valid password and you should be able to login no problem</p>",
+			"depth": 1
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2017-11-03T20:34:42Z",
+			"date": "November 3, 2017",
+			"html": "<p>Hi Stephen... I think it might help if you described the exact steps you performed up until the error. I'll try to reproduce or see where the issue may be. Maybe use screencast <a href=\"https://www.techsmith.com/screencastcom.html\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://www.techsmith.com/s...</a> to record the steps and error?</p><p>Best regards,<br>David</p>",
+			"depth": 0
+		},
+		{
+			"author": "Omid Sakhdari",
+			"datetime": "2018-11-15T10:20:08Z",
+			"date": "November 15, 2018",
+			"html": "<p>Hi how do i remove an SQL server from my mac</p>",
+			"depth": 0
+		},
+		{
+			"author": "Doron Farber",
+			"datetime": "2024-06-27T13:12:29Z",
+			"date": "June 27, 2024",
+			"html": "<p>I was unaware of much of what you wrote about in your article. Your information was very helpful and I hope others feel the same. Wonderful work.<br> <a href=\"https://www.dfarber.com/computer-consulting-blog/everything-you-need-to-know-about-sql-server-consulting/\" rel=\"nofollow ugc noopener\" target=\"_blank\">SQL Server Consulting</a></p>",
+			"depth": 0
+		}
+	],
+	"state-of-the-reverentgeek-june-2016": [
+		{
+			"author": "Pavneet Singh Saund",
+			"datetime": "2016-06-30T19:54:08Z",
+			"date": "June 30, 2016",
+			"html": "<p>David, it was great to get to meet you at NDC Oslo. First on Jeremy Clark's slides, then in person during the conference. It's also been a pleasure following you on twitter.<br>Haven't seen your Electron talk yet, but it's on my watch-playlist :).</p><p>Really inspiring to see how you created your avatar. Makes me want to invest in an iPad pro / pencil and start drawing myself.</p><p>Could have really used your upcoming talk on public speaking before I went on the stage at NDC Oslo. Sounds like an awesome topic.</p><p>Great tip on writing down what you're grateful for daily. I think Kylie Hunt also mentioned that in her talk. Something I've started doing actually.</p><p>Hope to bump in to you some time soon!</p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-07-02T17:15:29Z",
+			"date": "July 2, 2016",
+			"html": "<p>It was a pleasure to meet you! Thanks for the encouragement. My plan is to publish a blog post on using hand-drawn illustrations. Feedback from the public speaking idea has been very positive. I hope I can deliver!</p><p>Hope you have a great day!</p>",
+			"depth": 1
+		},
+		{
+			"author": "Matthew Groves",
+			"datetime": "2016-06-30T21:33:03Z",
+			"date": "June 30, 2016",
+			"html": "<p><a href=\"https://www.youtube.com/watch?v=qybUFnY7Y8w\" rel=\"nofollow ugc noopener\" target=\"_blank\">https://www.youtube.com/wat...</a></p>",
+			"depth": 0
+		},
+		{
+			"author": "David Neal",
+			"datetime": "2016-07-02T17:11:33Z",
+			"date": "July 2, 2016",
+			"html": "<p>Always a joy to watch that.</p>",
+			"depth": 1
+		}
+	],
+	"the-illustrated-book-of-dad-jokes": [
+		{
+			"author": "Elvis Van",
+			"datetime": "2022-07-24T23:54:38Z",
+			"date": "July 24, 2022",
+			"html": "<p>Lookin' sharp indeed :&gt;</p>",
+			"depth": 0
+		}
+	],
+	"the-monster-at-the-end-of-this-book": [
+		{
+			"author": "David McClelland",
+			"datetime": "2018-05-26T19:00:19Z",
+			"date": "May 26, 2018",
+			"html": "<p>Love it!</p>",
+			"depth": 0
+		}
+	]
+}

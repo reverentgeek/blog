@@ -1,0 +1,21 @@
+{{-- Read-only archive of comments imported from the old Disqus system. --}}
+{{-- Keyed by page.fileSlug to match giscus's `pathname` mapping. --}}
+@if(legacyComments && legacyComments[page.fileSlug] && legacyComments[page.fileSlug].length)
+  <section class="legacy-comments mt-12 border-t border-gray-200 pt-8" aria-label="Archived comments">
+    <h2 class="text-2xl font-bold mb-1">Comments</h2>
+    <p class="text-sm text-gray-500 mb-6">
+      {{ legacyComments[page.fileSlug].length }} archived comment(s) from this site's previous comment system. These are read-only — join the discussion above.
+    </p>
+    <ol class="legacy-comments-list space-y-6">
+      @each(comment in legacyComments[page.fileSlug])
+        <li class="legacy-comment" style="margin-left: {{ comment.depth * 1.5 }}rem">
+          <div class="flex items-baseline gap-2 mb-1">
+            <span class="font-semibold text-gray-900">{{ comment.author }}</span>
+            <time datetime="{{ comment.datetime }}" class="text-xs uppercase text-gray-500">{{ comment.date }}</time>
+          </div>
+          <div class="legacy-comment-body text-gray-700">{{{ comment.html }}}</div>
+        </li>
+      @end
+    </ol>
+  </section>
+@end

@@ -138,6 +138,33 @@ pre[class*="language-"] {
 	}
 }
 
+.legacy-comment-body {
+	p, pre, ul, ol {
+		@apply mb-3;
+	}
+	> :last-child {
+		@apply mb-0;
+	}
+	a {
+		@apply text-blue-500 underline;
+	}
+	ul {
+		@apply list-disc ml-6 list-outside;
+	}
+	ol {
+		@apply list-decimal ml-6 list-outside;
+	}
+	pre {
+		@apply overflow-auto font-mono bg-gray-100 p-3 text-sm;
+	}
+	:not(pre) > code {
+		@apply bg-gray-200 p-1 text-sm;
+	}
+	blockquote {
+		@apply pl-4 border-l-4 border-gray-300 text-gray-600;
+	}
+}
+
 .content .post-feature-image {
 	@apply mb-8;
 }
