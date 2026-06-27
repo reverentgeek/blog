@@ -24,6 +24,8 @@ My brain wasn't comparing tone. It was getting bribed.
 
 So I built a small desktop app to _objectively_ normalize all of my patches. It's called [MeterMaid](https://getmetermaid.com), and it measures loudness in real time so I can level my guitar patches properly instead of guessing.
 
+![MeterMaid showing integrated loudness of -14.2 LUFS for a Helix Stadium XL patch, along with short-term, momentary, loudness range, and true peak meters above a colorful frequency spectrum](/content/images/leveling-guitar-patches-with-tauri/metermaid-screenshot.png)
+
 <a href="https://getmetermaid.com" class="cta-button">Download MeterMaid</a>
 
 ## The patch-leveling problem
