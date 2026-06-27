@@ -100,13 +100,13 @@ The result is a much smaller app (usually less than 10MB) and much lower memory 
 
 I don't think there's one correct answer here. These are both good tools. They just optimize for different things.
 
-|                       | **Tauri**             | **Electron**                |
-| --------------------- | --------------------- | --------------------------- |
-| **Typical app size**  | 10 MB                 | 270+ MB                     |
-| **Memory usage**      | 50 MB                 | 300 MB                      |
-| **UI rendering**      | OS webview            | Bundled Chromium            |
-| **UI consistency**    | Depends on OS webview | Very consistent             |
-| **Backend language**  | Rust by default;<br>`sidecar` feature | Node.js / JavaScript        |
+|                      | **Tauri**                               | **Electron**         |
+| -------------------- | --------------------------------------- | -------------------- |
+| **Typical app size** | 10 MB                                   | 270+ MB              |
+| **Memory usage**     | 50 MB                                   | 300 MB               |
+| **UI rendering**     | OS webview                              | Bundled Chromium     |
+| **UI consistency**   | Depends on OS webview                   | Very consistent      |
+| **Backend language** | Rust by default;<br />`sidecar` feature | Node.js / JavaScript |
 
 Electron's biggest strength is also its hightest cost: it ships Chromium with your app. That means consistent rendering, modern web APIs, and fewer surprises across platforms. For a big, complex app, that's a very reasonable tradeoff.
 
