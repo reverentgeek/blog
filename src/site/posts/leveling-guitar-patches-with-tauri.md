@@ -22,7 +22,9 @@ I've run into this a lot while building patches or comparing patches I've downlo
 
 My brain wasn't comparing tone. It was getting bribed.
 
-So I built a small desktop app to _objectively_ normalize all of my patches. It's called [MeterMaid](https://github.com/reverentgeek/metermaid) ([downloads](https://github.com/reverentgeek/metermaid/releases/latest)), and it measures loudness in real time so I can level my guitar patches properly instead of guessing.
+So I built a small desktop app to _objectively_ normalize all of my patches. It's called [MeterMaid](https://getmetermaid.com), and it measures loudness in real time so I can level my guitar patches properly instead of guessing.
+
+<a href="https://getmetermaid.com" class="cta-button">Download MeterMaid</a>
 
 ## The patch-leveling problem
 
@@ -130,3 +132,5 @@ MeterMaid exists because I got tired of fighting guitar patches. Will this make 
 No. Unfortunately, that still requires practicing. Rude. ANYWAY...
 
 If you use a digital modeler, such as Line 6 Helix, Fractal Axe-FX, Quad Cortex, Fender Tone Master Pro, ToneX, Boss, HeadRush, or anything else that needs consistent loudness, give it a try. And let me know your thoughts on it!
+
+<a href="https://getmetermaid.com" class="cta-button">Download MeterMaid</a>
