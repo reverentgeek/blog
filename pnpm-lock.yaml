@@ -267,9 +267,6 @@ importers:
       eslint-config-reverentgeek:
         specifier: ^7.1.12
         version: 7.1.12(eslint@10.6.0(jiti@2.7.0))
-      fs-extra:
-        specifier: ^11.3.5
-        version: 11.3.5
       jimp:
         specifier: ^1.6.1
         version: 1.6.1

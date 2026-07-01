@@ -1,5 +1,5 @@
 import path from "node:path";
-import fs from "fs-extra";
+import { rename } from "node:fs/promises";
 import { program } from "commander";
 import * as gallery from "./gallery.js";
 const __dirname = import.meta.dirname;
@@ -104,7 +104,7 @@ async function updateFileNames( folder, force ) {
 		const newFile = `${ padZero( lastId, 3 ) }-${ f }`;
 		newFiles.push( newFile );
 		console.log( `renaming [${ f }] -> [${ newFile }]` );
-		await fs.rename( path.join( srcFolder, f ), path.join( srcFolder, newFile ) );
+		await rename( path.join( srcFolder, f ), path.join( srcFolder, newFile ) );
 	}
 	return newFiles;
 }

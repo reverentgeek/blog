@@ -1,5 +1,5 @@
 import { join } from "node:path";
-import fs from "fs-extra";
+import { writeFile } from "node:fs/promises";
 
 const __dirname = import.meta.dirname;
 
@@ -9,7 +9,7 @@ const pullMyWebFinger = async ( domain, user ) => {
 	const body = await res.text();
 	const profile = JSON.parse( body );
 	const filePath = join( __dirname, "mastodon.json" );
-	await fs.writeJson( filePath, profile, { spaces: 2 } );
+	await writeFile( filePath, JSON.stringify( profile, null, 2 ) );
 	console.log( profile );
 };
 

@@ -1,16 +1,17 @@
-import fs from "fs-extra";
+import { createReadStream } from "node:fs";
+import { readdir, stat } from "node:fs/promises";
 import { Jimp as jmp } from "jimp";
 import probe from "probe-image-size";
 import { join, basename, extname } from "node:path";
 
 export async function getOrderedFiles( folder, sortByDate = false ) {
-	const imageFiles = await fs.readdir( folder );
+	const imageFiles = await readdir( folder );
 	const images = [];
 	for ( const imageFile of imageFiles ) {
 		const img = imageFile.toLowerCase();
 		if ( img.endsWith( ".png" ) || img.endsWith( ".jpg" ) || img.endsWith( ".jpeg" ) ) {
 			const src = join( folder, imageFile );
-			const stats = await fs.stat( src );
+			const stats = await stat( src );
 			images.push( { f: imageFile, t: stats.birthtime } );
 		}
 	}
@@ -61,7 +62,7 @@ export async function getColumnHtml( folder, htmlPath = "/content/images/avatars
 	const imageFiles = await getOrderedFiles( folder );
 	for ( const imageFile of imageFiles ) {
 		const src = join( folder, imageFile );
-		const s = await fs.createReadStream( src );
+		const s = createReadStream( src );
 		const info = await probe( s );
 		imageHtml.push( `<div class="kg-gallery-image"><img src="${ htmlPath }/${ imageFile }" width="${ info.width }" height="${ info.height }"></div>` );
 	}
@@ -87,7 +88,7 @@ export async function getFlexHtml( folder, htmlPath = "/content/images/avatars",
 		}
 		index++;
 		const src = join( folder, imageFile );
-		const s = await fs.createReadStream( src );
+		const s = createReadStream( src );
 		const info = await probe( s );
 		imageHtml.push( `<a href="${ htmlPath }/${ imageFile }"><img class="${ contentType }-image" alt="${ contentType } illustration" width="${ info.width }" height="${ info.height }" src="${ htmlPath }/${ imageFile }"></a>` );
 		if ( limit > 0 && index >= limit ) {
@@ -103,7 +104,7 @@ export async function getHtml( folder, htmlPath = "/content/images/avatars", cap
 	// console.log( captions );
 	for ( const imageFile of imageFiles ) {
 		const src = join( folder, imageFile );
-		const s = await fs.createReadStream( src );
+		const s = createReadStream( src );
 		const info = await probe( s );
 		const caption = captions[imageFile];
 		// console.log( imageFile, caption );

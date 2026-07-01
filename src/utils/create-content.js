@@ -1,6 +1,6 @@
 import { execFile } from "node:child_process";
 import { join } from "node:path";
-import fs from "fs-extra";
+import { access, mkdir, writeFile } from "node:fs/promises";
 import slugger from "slug";
 import { getId } from "./get-id.js";
 import { makePlaceholder } from "./make-placeholder.js";
@@ -15,6 +15,15 @@ const zeroPad = ( number ) => {
 
 const formatDate = ( dt ) => {
 	return `${ dt.getFullYear() }-${ zeroPad( dt.getMonth() + 1 ) }-${ zeroPad( dt.getDate() ) }`;
+};
+
+const pathExists = async ( p ) => {
+	try {
+		await access( p );
+		return true;
+	} catch {
+		return false;
+	}
 };
 
 const openInOS = ( folderPath ) => {
@@ -43,7 +52,7 @@ export const createContent = async ( { kind, contentDir, imagesDir, title } ) =>
 		const filePath = join( contentDir, `${ slug }.md` );
 		const imgPath = join( imagesDir, slug );
 		const featureImagePath = join( imgPath, `${ slug }.jpg` );
-		const exists = await fs.pathExists( filePath );
+		const exists = await pathExists( filePath );
 		if ( !exists ) {
 			const frontMatter = `---
 id: ${ getId() }
@@ -55,11 +64,11 @@ date: ${ formatDate( new Date() ) }
 slug: ${ slug }
 ---
 `;
-			await fs.writeFile( filePath, frontMatter, { encoding: "UTF-8" } );
+			await writeFile( filePath, frontMatter, { encoding: "UTF-8" } );
 		}
 		console.log( "image path:", imgPath );
-		await fs.ensureDir( imgPath );
-		if ( !( await fs.pathExists( featureImagePath ) ) ) {
+		await mkdir( imgPath, { recursive: true } );
+		if ( !( await pathExists( featureImagePath ) ) ) {
 			await makePlaceholder( {
 				title,
 				subtitle: kind === "post" ? "New blog post" : "New page",
