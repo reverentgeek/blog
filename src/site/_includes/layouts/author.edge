@@ -5,8 +5,8 @@ layout: layouts/default.edge
 
     <section class="post-feed">
         @if(author.posts)
-            @each(post in author.posts)
-                @!component('components/card', { post: post })
+            @each((post, index) in author.posts)
+                @!component('components/card', { post: post, eager: index === 0 })
             @end
         @else
             <p>No posts to be found</p>

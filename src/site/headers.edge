@@ -18,3 +18,14 @@ permalink: '_headers'
   X-Frame-Options: SAMEORIGIN
   X-Xss-Protection:	1; mode=block
   Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+
+# Image derivatives have content-hashed filenames, safe to cache forever
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS/JS are not fingerprinted, so use a short cache with background revalidation
+/assets/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

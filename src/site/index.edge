@@ -9,8 +9,8 @@ pagination:
 ---
 
     <section class="post-list">
-        @each(post in posts)
-			@!component('components/card', { post: post })
+        @each((post, index) in posts)
+			@!component('components/card', { post: post, eager: index === 0 && pagination.pageNumber === 0 })
         @end
     </section>
 

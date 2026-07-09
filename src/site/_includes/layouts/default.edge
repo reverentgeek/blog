@@ -61,12 +61,13 @@
   @end
 
   {{-- Resource hints for better performance --}}
+  <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
   <link rel="dns-prefetch" href="https://giscus.app">
-  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
-  {{-- Preload critical CSS --}}
-  <link rel="preload" href="/assets/index.css" as="style">
+  {{-- Preload critical fonts (discovered late via CSS otherwise) --}}
+  <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
   {{-- Preload hero banner image on homepage for better LCP --}}
   @if(page.url === '/' && heroImage)

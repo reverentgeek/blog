@@ -8,7 +8,8 @@
           src="{{ post.data.feature_image }}"
           alt="{{ post.data.title }}"
           sizes="(min-width: 1024px) 300px, 90vw"
-          loading="lazy"
+          loading="{{ eager ? 'eager' : 'lazy' }}"
+          {{{ eager ? 'fetchpriority="high"' : '' }}}
           decoding="async">
       </a>
     @else
