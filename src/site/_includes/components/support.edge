@@ -1,0 +1,18 @@
+{{--
+  Components have an isolated scope, so the Ko-fi URL must be passed in as a prop
+  rather than read from `site`. Do not rename the prop to `url` — that collides
+  with Eleventy's built-in `url` filter, which is truthy and wins the `||`.
+--}}
+@let(kofiUrl = kofiLink)
+@if(kofiUrl)
+  <aside class="callout callout-support" role="note">
+    <span class="callout-label">Enjoyed this?</span>
+    <div class="callout-content">
+      <p>If this was useful, you can buy me a coffee. It keeps the doodles and blog posts coming.</p>
+      <a class="kofi-button" href="{{ kofiUrl }}" target="_blank" rel="noopener noreferrer">
+        @!component('components/icon', { id: 'kofi' })
+        Buy me a coffee
+      </a>
+    </div>
+  </aside>
+@end

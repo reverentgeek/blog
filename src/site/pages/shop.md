@@ -11,6 +11,7 @@ slug: shop
 * [My Dad Joke Book!](#dadjokebook)
 * [Stickers!](#stickers)
 * [T-Shirts!](#tshirts)
+* [Buy Me a Coffee!](#coffee)
 
 <a name="commission"></a>
 
@@ -289,3 +290,11 @@ Get my t-shirts on [Amazon](https://www.amazon.com/s?rh=n%3A7141123011%2Cp_4%3AR
 
 [![Buy my t-shirts on
 Amazon!](/content/images/shop/t-shirts-2021-10.jpg)](https://www.amazon.com/s?rh=n%3A7141123011%2Cp_4%3AReverentGeek)
+
+<a name="coffee"></a>
+
+## Buy Me a Coffee!
+
+Not in the market for an illustration, sticker, or t-shirt, but still want to say thanks? You can [buy me a coffee](https://ko-fi.com/reverentgeek). Every cup fuels more drawings, blog posts, and dad jokes.
+
+<a class="kofi-button" href="https://ko-fi.com/reverentgeek" target="_blank" rel="noopener noreferrer"><svg class="w-5 h-5" role="img" aria-hidden="true"><use href="#kofi" fill="currentColor"></use></svg>Buy me a coffee</a>

@@ -15,6 +15,7 @@
   --color-youtube: #FF0000;
   --color-bluesky: #00A8E8;
   --color-rss: #FF6600;
+  --color-kofi: #FF5E5B;
 }
 
 @layer components {
@@ -316,5 +317,20 @@ pre[class*="language-"] {
 
 .callout-quote {
 	@apply bg-gray-100 border-gray-400 italic;
+}
+
+/* Ko-fi support card */
+.callout-support {
+	@apply bg-orange-50 border-kofi;
+	.callout-label { @apply text-kofi; }
+}
+
+.kofi-button {
+	/* text-white and no-underline need `!` to beat the `.content-body a` rule above. */
+	@apply inline-flex items-center gap-2 mt-3 px-4 py-2 rounded-full font-bold text-white! bg-kofi no-underline! transition-all duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+.kofi-button svg {
+	@apply block w-5 h-5;
 }
 

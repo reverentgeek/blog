@@ -19,6 +19,8 @@ layout: layouts/default.edge
     <section class="content-body">
       {{{ content }}}
     </section>
+    @!component('components/support', { kofiLink: site.kofi })
+
     <div id="comments" class="giscus mt-8"></div>
     <script>
       (function () {
