@@ -9,3 +9,18 @@
   package = "netlify-plugin-cache"
   [plugins.inputs]
     paths = ["dist/img"]
+
+# Fingerprinted assets (index.<hash>.css, index.<hash>.js, prism.<hash>.js) are safe to
+# cache forever: changing the contents changes the filename, so browsers fetch the new
+# URL immediately instead of sitting on a stale copy.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# pco.js is a passthrough copy with a stable filename, so it must stay revalidatable.
+# This more specific rule overrides the wildcard above.
+[[headers]]
+  for = "/assets/pco.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

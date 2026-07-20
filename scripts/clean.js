@@ -2,6 +2,7 @@ import { rmSync, readdirSync, statSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 
 const distPath = "./dist";
+const manifestPath = "./.asset-manifest.json";
 const preserveFolders = [ "img", "optimized-images" ]; // Preserve optimized images
 
 console.log( "Cleaning dist folder (preserving optimized images)..." );
@@ -37,5 +38,9 @@ try {
 		throw error;
 	}
 }
+
+// Drop the fingerprint manifest too, so the dev server never serves hashed URLs for
+// files the watchers write unhashed.
+rmSync( manifestPath, { force: true } );
 
 mkdirSync( "dist/assets", { recursive: true } );
