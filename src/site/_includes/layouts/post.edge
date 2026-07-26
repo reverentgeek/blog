@@ -4,7 +4,7 @@ layout: layouts/default.edge
   @let(postTopics = topicsOnly(tags))
   <article class="content page-{{ slug }}">
     <h1 class="text-4xl font-bold mt-4">{{ title }}</h1>
-    <div class="text-gray-500 uppercase text-sm mb-4">
+    <div class="post-meta text-gray-500 uppercase text-sm mb-4">
       {{ postDate(date) }}
       &middot;
       {{ readingTime(content) }} min read

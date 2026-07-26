@@ -162,11 +162,13 @@ pre[class*="language-"] {
 	a {
 		@apply text-blue-500 underline;
 	}
+	/* Indent with padding, not margin — the reading-column rule below centres
+	   these with `mx-auto`, and a margin-left utility would override it. */
 	ul {
-		@apply list-disc ml-8 mb-8 list-outside;
+		@apply list-disc pl-8 mb-8 list-outside;
 	}
 	ol {
-		@apply list-decimal ml-8 mb-8 list-outside;
+		@apply list-decimal pl-8 mb-8 list-outside;
 	}
 	table {
 		@apply table-auto w-full;
@@ -209,8 +211,11 @@ pre[class*="language-"] {
 	pre {
 		@apply overflow-auto font-mono;
 	}
+	/* Long inline code (package names, paths) would otherwise refuse to wrap
+	   and push the page sideways on narrow screens. */
 	:not(pre)>code {
 		@apply bg-gray-200 p-1;
+		overflow-wrap: break-word;
 	}
 	.kg-card {
 		@apply mb-8;
@@ -244,6 +249,51 @@ pre[class*="language-"] {
 	}
 	blockquote {
 		@apply pl-4 border-l-4 border-gray-300 text-gray-600;
+	}
+}
+
+/* Reading column.
+   `main` stays at max-w-4xl so feature images, code blocks, tables, and
+   galleries keep their full width. Only the prose narrows to a comfortable
+   measure, centred so the wide media reads as a deliberate breakout.
+
+   Deliberately a rem, not `ch`: `ch` resolves against each element's own font
+   size, which gave the 36px h1 an 1189px column and the 14px meta line a 456px
+   one. A rem keeps every element in the same column. Measured at 18px Roboto,
+   36.5rem fits ~75 characters at full fill; wrapped lines land around 62.
+
+   Tables are in the column too. Nearly all of them here are 2-3 columns of
+   short text, and letting those run to the full container made them look
+   detached from the prose. A table that genuinely needs more room can opt out
+   with `.table-wide`. */
+:root {
+	--reading-column: 36.5rem;
+}
+
+.content > :is(h1, .post-meta, .post-topics, .callout, .post-nav),
+.content-body > :is(p, ul, ol, blockquote, h2, h3, h4, h5, h6, .callout, table) {
+	max-width: var(--reading-column);
+	margin-inline: auto;
+}
+
+/* Opt-out for a table with too many columns to read in the narrow column.
+   Add it in markdown with: <table class="table-wide"> ... </table> */
+.content-body > table.table-wide {
+	max-width: none;
+}
+
+/* On narrow screens a table whose columns cannot fit used to push the whole
+   page sideways. Scroll it inside its own box instead — `display: block` is
+   what makes overflow apply to a table element.
+
+   Scoped to small screens on purpose: `display: block` also makes a table
+   shrink to its content, which stops `w-full` from filling the reading column
+   and leaves two tables on the same page misaligned. Desktop keeps
+   `display: table`, where there is room for the columns anyway. */
+@media (max-width: 48rem) {
+	.content-body > table {
+		display: block;
+		overflow-x: auto;
 	}
 }
 
