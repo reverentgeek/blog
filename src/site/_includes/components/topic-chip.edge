@@ -1,0 +1,7 @@
+{{-- Edge block tags must start a line, so keep @if on its own row. --}}
+<a class="topic-chip" href="/topics/{{ slug }}/">
+  <span>{{ topicLabel(slug) }}</span>
+  @if(count)
+    <span class="topic-chip-count">{{ count }}</span>
+  @end
+</a>

@@ -6,6 +6,8 @@ description: "I've been in Franklin, TN this week for meetings at LeanKit. I mad
 meta_description: "A motorcycle ride review of Leiper's Fork and Natchez Trace, including the route, scenery, and why the ride is worth taking."
 date: 2015-04-25
 slug: ride-review-leipers-fork-and-natchez-trace
+tags:
+  - motorcycle
 ---
 
 I've been in Franklin, TN this week for meetings at [LeanKit](http://leankit.com). I made the decision to stay through the weekend before heading off to [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY.

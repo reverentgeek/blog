@@ -6,6 +6,8 @@ description: "Self-titled \"Developer Betterer,\" Jeremy Clark's personal missio
 meta_description: "A community spotlight on Jeremy Clark and their impact on developers, the broader tech community, and my own career."
 date: 2017-05-01
 slug: community-spotlight-jeremy-clark
+tags:
+  - community
 ---
 
 Self-titled "Developer Betterer," [Jeremy Clark's](https://twitter.com/jeremybytes) personal mission is to help developers. This passion manifests itself it many ways. He has an excellent set of courses he's created for [Pluralsight](https://www.pluralsight.com/authors/jeremy-clark), speaks at conferences all over the place, and regularly blogs about things he's learning at [jeremybytes.com](http://www.jeremybytes.com/).

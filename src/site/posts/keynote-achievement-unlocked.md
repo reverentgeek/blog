@@ -6,6 +6,9 @@ description: "Last week I had the privilege of speaking at Music City Agile and 
 meta_description: "Reflections on speaking at Music City Agile and Music City Code and the significance of reaching a keynote milestone."
 date: 2016-08-22
 slug: keynote-achievement-unlocked
+tags:
+  - speaking
+  - conferences
 ---
 
 Last week I had the privilege of speaking at [Music City Agile](http://www.musiccityagile.org/) and [Music City Code](http://www.musiccitycode.com/). I had an absolute blast hanging out with old friends, and "old friends who've just met."

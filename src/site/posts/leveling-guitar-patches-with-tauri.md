@@ -6,6 +6,10 @@ description: I built a desktop loudness meter to stop my own ears from lying to 
 meta_description: "How and why I built MeterMaid, a cross-platform LUFS loudness meter for digital guitar modelers: Line 6 Helix Stadium, Fractal Axe-FX, Neural DSP Quad Cortex, HeadRush Prime, Kemper Profiler, and ToneX. Built with Tauri 2 with a Rust audio engine."
 date: 2026-06-17
 slug: leveling-guitar-patches-with-tauri
+tags:
+  - music
+  - projects
+  - tools
 ---
 
 Your ears are lying to you.

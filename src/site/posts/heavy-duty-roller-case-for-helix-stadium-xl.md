@@ -6,6 +6,8 @@ description: I customized an Apache 5800 case to perfectly fit the Helix Stadium
 meta_description: "How I modified an Apache 5800 roller case with custom EVA foam padding to fit my Line 6 Helix Stadium XL pedalboard — plus tools, tips, and lessons learned."
 date: 2026-05-21
 slug: heavy-duty-roller-case-for-helix-stadium-xl
+tags:
+  - music
 ---
 
 I play a lot of guitar gigs, and my favorite rig is the [Helix Stadium XL](https://line6.com/helix-stadium). I bought the official backpack, but I've not been happy with the total weight or the ergonomics of getting a laptop in/out under the straps. So, I decided I'd like to get a roller case for the Helix Stadium XL and carry my laptop and the rest of my gear in a normal backpack.

@@ -6,6 +6,9 @@ description: "Earlier this year, I set up a new computer for my son. In the proc
 meta_description: "A personal story about leaving a note of encouragement and the lasting impact that small acts of kindness can have."
 date: 2019-10-23
 slug: a-note-of-encouragement
+tags:
+  - personal
+  - projects
 ---
 
 Earlier this year, I set up a new computer for my son. In the process, I created an "Easter Egg" for him to find. I left a note on the desktop with some instructions on how to run a command-line interface (CLI) application I created.

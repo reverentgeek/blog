@@ -6,6 +6,9 @@ description: It's finally here! I'm grateful to have been part of this amazing t
 meta_description: Developer Relations Activity Patterns is now available. Reflections on publishing the book, collaborating with the author team, and creating the cover and chapter illustrations.
 date: 2026-03-13
 slug: developer-relations-activity-patterns
+tags:
+  - books
+  - devrel
 ---
 
 It's finally here! After all the writing, editing, illustrating, and waiting, *Developer Relations Activity Patterns* is out in the world 🤓

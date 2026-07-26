@@ -6,6 +6,9 @@ description: "Year after year, CodeStock continues to expand, improve, and win a
 meta_description: "My review of CodeStock 2016, including key takeaways, highlights, and what stood out to me."
 date: 2016-07-19
 slug: review-codestock-2016
+tags:
+  - conferences
+  - community
 ---
 
 Year after year, CodeStock continues to expand, improve, and win a special place in my heart. As with any conference, the hallway conversations and opportunity to get to meet amazing people is every bit as valuable as the sessions.

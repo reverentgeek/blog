@@ -6,6 +6,10 @@ description: My open-source teleprompter now listens to you and scrolls along wh
 meta_description: "Voice-driven auto-scroll for my open-source Electron teleprompter — speak your script and the prompter follows you, powered by Deepgram."
 date: 2026-05-01
 slug: teaching-my-teleprompter-to-listen
+tags:
+  - projects
+  - ai
+  - javascript
 ---
 
 I've long enjoyed using [my open-source desktop teleprompter](https://github.com/reverentgeek/electron-teleprompter) for recording videos and presentations. But there's been one feature I've wanted to add for years. Auto-scrolling. Not a fixed scroll speed. One that follows what I'm actually saying.

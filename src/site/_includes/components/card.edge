@@ -1,31 +1,31 @@
-<div class="post">
+{{--
+  One link per card. The title anchor is stretched over the whole card via a
+  ::after overlay (see .post-link in styles.css), so the image and description
+  are clickable without being separate links a screen reader has to repeat.
+--}}
+<article class="post">
   <div class="post-card flex flex-wrap items-start">
     @if(post.data.feature_image)
-      <a class="w-full py-4 lg:py-0 lg:w-1/3 lg:mb-0" href="{{ post.url }}">
+      <div class="w-full py-4 lg:py-0 lg:w-1/3 lg:mb-0">
         <img
+          class="post-thumb"
           eleventy:widths="300,600"
-          class="shadow rounded-lg"
           src="{{ post.data.feature_image }}"
-          alt="{{ post.data.title }}"
+          alt=""
           sizes="(min-width: 1024px) 300px, 90vw"
           loading="{{ eager ? 'eager' : 'lazy' }}"
           {{{ eager ? 'fetchpriority="high"' : '' }}}
           decoding="async">
-      </a>
+      </div>
     @else
       <div class="hidden lg:block lg:w-1/3"></div>
     @end
     <div class="w-full lg:w-2/3 lg:pl-4">
       <h2 class="post-title">
-        <a class="" href="{{ post.url }}">{{ post.data.title }}</a>
+        <a class="post-link" href="{{ post.url }}">{{ post.data.title }}</a>
       </h2>
       <div class="post-date">{{ postDate(post.data.date) }}</div>
-      <div class="">
-        <a class="" href="{{ post.url }}">{{ post.data.description }}</a>
-      </div>
-      <div class="my-2">
-        <a class="underline text-blue-600" href="{{ post.url }}">Read more...</a>
-      </div>
+      <p class="post-description">{{ post.data.description }}</p>
     </div>
   </div>
-</div>
+</article>

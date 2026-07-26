@@ -9,6 +9,7 @@ import brokenLinksPlugin from "eleventy-plugin-broken-links";
 import edgeJsPlugin from "eleventy-plugin-edgejs";
 
 import { imageTransformOptions } from "./src/utils/eleventy/image-transform-options.js";
+import { registerCollections } from "./src/utils/eleventy/collections.js";
 import { registerRssFilters, registerSiteFilters } from "./src/utils/eleventy/register-filters.js";
 import { createSocialImageFilter } from "./src/utils/eleventy/social-image-filter.js";
 import htmlMinTransform from "./src/utils/transforms/html-min-transform.js";
@@ -19,6 +20,7 @@ export default async function ( config ) {
 	const socialImageFilter = createSocialImageFilter( Image );
 
 	registerSiteFilters( config, { socialImageFilter } );
+	registerCollections( config );
 
 	config.setDataDeepMerge( true );
 

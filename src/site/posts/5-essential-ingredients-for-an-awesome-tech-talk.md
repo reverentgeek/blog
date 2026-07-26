@@ -6,6 +6,8 @@ description: "I believe one of the big reasons people are afraid of public speak
 meta_description: "Five practical ingredients that can help you craft a more compelling, memorable, and effective technical talk."
 date: 2018-01-01
 slug: 5-essential-ingredients-for-an-awesome-tech-talk
+tags:
+  - speaking
 ---
 
 I believe one of the big reasons people are afraid of public speaking (or writing) is [impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome). You may think...

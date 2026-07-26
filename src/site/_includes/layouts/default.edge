@@ -15,22 +15,8 @@
 @let(seoImageWidth = seoImageData.width)
 @let(seoImageHeight = seoImageData.height)
 
-{{-- Override for tag pages --}}
-@if(tag)
-  @assign(seoDescription = tag.description || '')
-  @assign(seoImage = tag.feature_image || '')
-  @assign(seoArticleAuthor = site.url)
-  @assign(seoAuthorLink = '')
-{{-- Override for author pages --}}
-@elseif(author)
-  @assign(seoDescription = content || '')
-  @assign(seoImage = author.profile_image || '')
-  @assign(seoTwitterCreator = author.twitter || site.twitter)
-  @assign(seoCardType = 'summary')
-  @assign(seoArticleAuthor = site.url)
-  @assign(seoAuthorLink = author.website || '')
 {{-- Override for post/page with feature_image --}}
-@elseif(feature_image)
+@if(feature_image)
   @assign(seoDescription = meta_description || description || site.description)
   @assign(seoArticleAuthor = site.url)
 @end
@@ -41,10 +27,6 @@
   <title>
 @if(title)~
 {{ title }} – {{ site.title }}
-@elseif(tag && tag.name)~
-{{ tag.name }} – {{ site.title }}
-@elseif(author && author.name)~
-{{ author.name }} – {{ site.title }}
 @else~
 {{ site.title }} – {{ site.description }}
 @end~
@@ -79,8 +61,8 @@
     imagesizes="{{ heroImage.sizes }}">
   @end
 
-  @let(displayTitle = title ? title + ' – ' + site.title : (tag && tag.name ? tag.name + ' – ' + site.title : (author && author.name ? author.name + ' – ' + site.title : site.title)))
-  @let(seoImageAlt = title || tag && tag.name || site.title)
+  @let(displayTitle = title ? title + ' – ' + site.title : site.title)
+  @let(seoImageAlt = title || site.title)
   @let(seoOgType = date ? 'article' : 'website')
 
   <!-- Open Graph -->

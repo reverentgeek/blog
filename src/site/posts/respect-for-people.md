@@ -6,6 +6,8 @@ description: "Much has been said about \"lean\" and \"agile\" approaches to work
 meta_description: "A reflection on respect as the most fundamental principle behind healthy teams, leadership, lean, and agile."
 date: 2019-03-13
 slug: respect-for-people
+tags:
+  - leadership
 ---
 
 Much has been said about "lean" and "agile" approaches to work. Reflecting over more than ten years of personal experience, I have come to this conclusion: Respect for people is the most fundamental principle. When respect is the lens and filter through which decisions are made, there is a much higher chance for success.

@@ -6,6 +6,9 @@ description: "Here are some resources from my \"Guide to Leadership for the Relu
 meta_description: "Here are some resources from my \\\"Guide to Leadership for the Reluctant Leader\\\" keynote presented at Scenic City Summit 2017."
 date: 2017-07-29
 slug: resources-for-the-reluctant-leader
+tags:
+  - leadership
+  - speaking
 ---
 
 Here are some resources from my "Guide to Leadership for the Reluctant Leader" keynote presented at [Scenic City Summit 2017](https://www.sceniccitysummit.com/).

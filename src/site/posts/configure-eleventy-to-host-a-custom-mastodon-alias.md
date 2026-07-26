@@ -6,6 +6,9 @@ description: You can find me on Mastodon using @reverentgeek@reverentgeek.com! H
 meta_description: "Learn how to configure an Eleventy site to host a custom Mastodon alias using 11ty and Netlify."
 date: 2023-01-02
 slug: configure-eleventy-to-host-a-custom-mastodon-alias
+tags:
+  - web-development
+  - projects
 ---
 
 You can find me on Mastodon using `@reverentgeek@reverentgeek.com`! Here's how I did it using 11ty and Netlify!

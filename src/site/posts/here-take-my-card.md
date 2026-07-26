@@ -6,6 +6,9 @@ description: There was a time when business cards were important for sharing con
 meta_description: "There was a time when business cards were important for sharing contact information, as well as your brand."
 date: 2025-09-29
 slug: here-take-my-card
+tags:
+  - illustration
+  - personal
 ---
 
 There was a time when business cards were important for sharing contact information, as well as your brand. I was certainly very proud of the business cards I carried during my early career.

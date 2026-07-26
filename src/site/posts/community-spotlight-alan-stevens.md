@@ -6,6 +6,8 @@ description: "It is my pleasure to present this community tribute to the beloved
 meta_description: "A community spotlight on Alan Stevens and their impact on developers, the broader tech community, and my own career."
 date: 2017-06-15
 slug: community-spotlight-alan-stevens
+tags:
+  - community
 ---
 
 _It is my pleasure to present this community tribute to the beloved Alan Stevens, written by guest author [Matt Groves](https://twitter.com/mgroves)._

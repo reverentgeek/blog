@@ -5,6 +5,9 @@ description: "March 28, 2015 I had the great pleasure of giving two talks at the
 meta_description: "Reflections on speaking at Orlando Code Camp 2015 and presenting two sessions at the conference."
 date: 2015-03-28
 slug: orlando-code-camp-2015
+tags:
+  - conferences
+  - speaking
 ---
 
 March 28, 2015 I had the great pleasure of giving two talks at the 10th annual [Orlando Code Camp](http://orlandocodecamp.com/). This was my first Orlando Code Camp, and I was quite impressed.

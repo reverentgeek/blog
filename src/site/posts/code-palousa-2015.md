@@ -5,6 +5,9 @@ description: "Last week I had the privilege of being a part of Code PaLOUsa in L
 meta_description: "Reflections on Code PaLOUsa 2015 in Louisville, including the talks, people, and overall conference experience."
 date: 2015-05-04
 slug: code-palousa-2015
+tags:
+  - conferences
+  - speaking
 ---
 
 Last week I had the privilege of being a part of [Code PaLOUsa](http://codepalousa.com/) in Louisville, KY. I have spoken at Code PaLOUsa conferences in the past, but this was my first time attending as a speaker and a sponsor.

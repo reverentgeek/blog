@@ -6,6 +6,8 @@ description: Make your own luck? Nah. Create joy!
 meta_description: "A short reflection on choosing to create joy instead of waiting for luck, circumstances, or permission."
 date: 2023-02-10
 slug: create-joy
+tags:
+  - personal
 ---
 
 You may have heard the idea of "make your own luck." It's a common theme in "hustle culture" where the harder you work, the more connections you make, the more obstacles you overcome, you increase the opportunities for good fortune that others might see as "luck."

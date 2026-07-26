@@ -6,6 +6,8 @@ description: "In my opinion, Gaines is a community hero. He's not only been invo
 meta_description: "A community spotlight on Gaines Kergosien and their impact on developers, the broader tech community, and my own career."
 date: 2017-04-24
 slug: community-spotlight-gaines-kergosien
+tags:
+  - community
 ---
 
 In my opinion, Gaines is a community hero. He's not only been involved in the Nashville software development community, he's also been a volunteer firefighter since 2013. Beginning in 2008, he has faithfully served the [Nashville .NET User Group](https://www.meetup.com/Nashville-NET-User-Group/) in every type of role, always eager to help in any way that he can.

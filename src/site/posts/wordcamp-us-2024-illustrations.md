@@ -6,6 +6,9 @@ description: I recently traveled to Portland, OR for WordCamp US 2024 to draw av
 meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp US 2024."
 date: 2024-10-02
 slug: wordcamp-us-2024-illustrations
+tags:
+  - illustration
+  - conferences
 ---
 
 [Earlier this year](/wordcamp-eu-2024-illustrations/) I had an incredible opportunity to draw avatars at the [WordPress.com](https://wordpress.com/) booth at WordCamp EU in Turin, Italy. I was delighted to be asked to reprise my role at [WordCamp US 2024](https://us.wordcamp.org/2024/) in Portland, Oregon!

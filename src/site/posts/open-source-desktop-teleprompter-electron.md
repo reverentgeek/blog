@@ -6,6 +6,10 @@ description: I wasn't happy with the teleprompter apps I found, so I built my ow
 meta_description: "Why I built an open-source desktop teleprompter with Electron, what it does, and how you can use it."
 date: 2024-02-24
 slug: open-source-desktop-teleprompter-electron
+tags:
+  - projects
+  - javascript
+  - tools
 ---
 
 For several years, I've created videos and delivered presentations from [my home studio](/my-video-streaming-setup/). I invested in a teleprompter rig to use my iPad to view notes or a script while maintaining eye contact with the camera.

@@ -6,6 +6,8 @@ description: "Throughout my career, writing documentation and tutorials has been
 meta_description: "How to create more engaging screenshots with Snagit so your tutorials, documentation, and presentations communicate more clearly."
 date: 2019-07-12
 slug: create-branded-screenshots-with-snagit
+tags:
+  - tools
 ---
 
 Throughout my career, writing documentation and tutorials has been a critical skill. In my experience, good visuals can vastly improve the quality of communication. Explaining a lengthy process with multiple steps, how to use a complex interface, and where to look for features are just a few examples where visuals may benefit the reader. "A picture is worth a thousand words" is certainly true for documentation, too!

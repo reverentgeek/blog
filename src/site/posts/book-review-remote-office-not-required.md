@@ -5,6 +5,9 @@ description: "Jason Fried at 37signals has a new book out titled, \"Remote: Offi
 meta_description: "My review of \\\"Remote: Office Not Required\\\", including key takeaways, highlights, and what stood out to me."
 date: 2013-11-18
 slug: book-review-remote-office-not-required
+tags:
+  - books
+  - career
 ---
 
 Jason Fried at 37signals has a new book out titled, "Remote: Office Not Required." I listened to the audio version on a recent road trip. I've now purchased the Kindle version so I could go back through it more carefully. Not only is it full of good arguments and practical tips on working remotely, but also ends up having great lessons on company culture, recruiting and retaining top talent, motivation, preventing burnout, and removing roadblocks. Essentially, it's about creating a healthy work environment that enables everyone in a company to do amazing work, whether they are in the office or not. One of my favorite quotes:

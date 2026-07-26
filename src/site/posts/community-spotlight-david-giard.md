@@ -6,6 +6,8 @@ description: "Ladies and gentlemen, I present to you David Giard, the hardest wo
 meta_description: "A community spotlight on David Giard and their impact on developers, the broader tech community, and my own career."
 date: 2017-05-08
 slug: community-spotlight-david-giard
+tags:
+  - community
 ---
 
 Ladies and gentlemen, I present to you [David Giard](https://twitter.com/davidgiard), the hardest working man in developer relations! Like Visa, he is everywhere you want to be.

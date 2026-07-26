@@ -5,6 +5,8 @@ description: "Something I've been thinking about recently is the long-term impac
 meta_description: "A reflection on the long-term impact of social media and the legacy our posts leave behind."
 date: 2013-06-23
 slug: our-social-media-legacy
+tags:
+  - personal
 ---
 
 Something I've been thinking about recently is the long-term impact that social media will have on society. Good or bad, everything we post on Facebook, Twitter, blogs, or other social media becomes permanent public record. What impact will the content we publish today have on our lives 10, 20, or 30 years from now? What about after we are gone?

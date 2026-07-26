@@ -5,6 +5,9 @@ description: "I've moved my blog from Wordpress to Ghost. Because:"
 meta_description: "Why I moved my blog from WordPress to Ghost and what I hoped to gain from the change."
 date: 2014-02-10
 slug: blog-moved-to-ghost
+tags:
+  - web-development
+  - personal
 ---
 
 I've moved my blog from Wordpress to [Ghost](https://ghost.org/). Because:

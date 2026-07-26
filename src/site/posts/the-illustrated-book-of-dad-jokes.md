@@ -6,6 +6,9 @@ description: My book, "The Illustrated Book of Dad Jokes," is now available for 
 meta_description: "My illustrated dad joke book is now available on Amazon, packed with groan-worthy jokes and original artwork."
 date: 2022-05-23
 slug: the-illustrated-book-of-dad-jokes
+tags:
+  - books
+  - illustration
 ---
 
 I am so excited to announce my book, "The Illustrated Book of Dad Jokes," is now available as a paperback and for the Kindle on [Amazon](https://www.amazon.com/Illustrated-Book-Dad-Jokes/dp/B0B19GST26/)! Authoring a book has been a dream for more than 20 years, and I would never have imagined it would be a book of cartoons. This has been quite a journey. I have learned a lot and am grateful to have reached this goal!

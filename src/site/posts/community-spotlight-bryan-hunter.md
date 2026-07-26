@@ -6,6 +6,8 @@ description: "Bryan Hunter is the quintessential community champion. Everywhere 
 meta_description: "A community spotlight on Bryan Hunter and their impact on developers, the broader tech community, and my own career."
 date: 2017-05-15
 slug: community-spotlight-bryan-hunter
+tags:
+  - community
 ---
 
 Bryan Hunter is the quintessential community champion. Everywhere he goes, he is cheerfully spreading the good news of functional programming and other technology he believes will benefit all developers.

@@ -6,6 +6,9 @@ description: "I am so honored that Daniel Glenn reached out to me to design the 
 meta_description: "I am so honored that Daniel Glenn reached out to me to design the logo for the 2017 Nashville SharePoint Saturday event. Here is the final."
 date: 2017-04-10
 slug: event-logo-for-nashville-sharepoint-saturday
+tags:
+  - illustration
+  - community
 ---
 
 I am so honored that [Daniel Glenn](https://twitter.com/DanielGlenn) reached out to me to design the logo for the [2017 Nashville SharePoint Saturday](http://www.spsevents.org/city/Nashville/Nashville2017) event. Above is the final design we landed on.

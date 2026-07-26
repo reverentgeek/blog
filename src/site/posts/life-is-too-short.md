@@ -6,6 +6,9 @@ description: "Early in my career, I worked under a manager who exemplified the D
 meta_description: "A reflection on toxic leadership, the Dilbert Principle, and why life is too short to stay stuck under the wrong manager."
 date: 2017-07-31
 slug: life-is-too-short
+tags:
+  - career
+  - leadership
 ---
 
 Early in my career, I worked under a manager who exemplified the Dilbert Principle:

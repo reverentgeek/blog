@@ -6,6 +6,8 @@ description: "This guide will help you wrangle Samsara's Telematics APIs like a 
 meta_description: "A practical guide to working with Samsara telematics APIs and building integrations that make fleet data easier to use."
 date: 2025-04-14
 slug: a-developers-guide-to-samsara-telematics
+tags:
+  - web-development
 ---
 
 Ah, telematics—where code meets the open road. Whether you're here because your boss needs reports or you're just genuinely excited about analyzing vehicle data, this guide will help you wrangle Samsara's telematics APIs like a pro.

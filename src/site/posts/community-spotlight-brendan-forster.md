@@ -6,6 +6,8 @@ description: "It is my pleasure to present this community tribute to Brendan For
 meta_description: "A community spotlight on Brendan Forster and their impact on developers, the broader tech community, and my own career."
 date: 2017-11-01
 slug: community-spotlight-brendan-forster
+tags:
+  - community
 ---
 
 _It is my pleasure to present this community tribute to Brendan Forster, written by guest author [Mord Zuber](https://twitter.com/mordzuber)._

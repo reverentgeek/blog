@@ -6,6 +6,8 @@ description: "Summary: After six weeks of use, I declare the IKEA BEKANT sit/sta
 meta_description: "My review of Motorized IKEA Standing Desk, including key takeaways, highlights, and what stood out to me."
 date: 2015-05-26
 slug: review-motorized-ikea-standing-desk
+tags:
+  - tools
 ---
 
 **Summary:** After six weeks of use, I declare the [IKEA BEKANT sit/stand desk](http://www.ikea.com/us/en/catalog/products/S49022524/) to be fully awesome.

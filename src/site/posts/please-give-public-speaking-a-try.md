@@ -6,6 +6,8 @@ description: "When I talk to people about public speaking, I tell them of the op
 meta_description: "Why public speaking is worth trying, even if it feels intimidating, and how it can open doors you never expected."
 date: 2017-08-10
 slug: please-give-public-speaking-a-try
+tags:
+  - speaking
 ---
 
 When I talk to people about [public speaking](https://www.youtube.com/watch?v=aPSvHT9USO8), I tell them of the opportunities it opens up to travel to fun places, and meet awesome people. I have had some amazing adventures in the last several years, all because I got up the courage to get up and speak to a bunch of geeks like myself.

@@ -54,6 +54,9 @@ export const createContent = async ( { kind, contentDir, imagesDir, title } ) =>
 		const featureImagePath = join( imgPath, `${ slug }.jpg` );
 		const exists = await pathExists( filePath );
 		if ( !exists ) {
+			// Posts get an empty tags list to fill in; topics drive /topics/ and
+			// the chips on a post. Pages are not topic-indexed, so they skip it.
+			const tagsLine = kind === "post" ? "tags:\n" : "";
 			const frontMatter = `---
 id: ${ getId() }
 title: "${ title }"
@@ -62,7 +65,7 @@ description:
 meta_description:
 date: ${ formatDate( new Date() ) }
 slug: ${ slug }
----
+${ tagsLine }---
 `;
 			await writeFile( filePath, frontMatter, { encoding: "UTF-8" } );
 		}

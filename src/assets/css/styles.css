@@ -43,13 +43,20 @@ pre[class*="language-"] {
 		@apply mb-16;
 	}
 	.post-card {
-		@apply p-4 -m-4 rounded-lg transition-all duration-200;
+		@apply relative p-4 -m-4 rounded-lg transition-all duration-200;
 	}
 	.post-card:hover {
 		@apply bg-gray-50 shadow-md;
 	}
-	.post-card:hover img {
+	.post-card:hover .post-thumb {
 		@apply shadow-lg;
+	}
+	/* Keyboard users get the same affordance the mouse hover gives. */
+	.post-card:has(.post-link:focus-visible) {
+		@apply bg-gray-50 shadow-md outline-2 outline-offset-2 outline-blue-500;
+	}
+	.post-card .post-link:focus-visible {
+		@apply outline-none;
 	}
 	.post-date {
 		@apply text-gray-500 uppercase text-sm;
@@ -57,12 +64,86 @@ pre[class*="language-"] {
 	.post-title {
 		@apply text-3xl font-medium;
 	}
+	/* Stretches the title link across the whole card so image and description
+	   are clickable without adding duplicate links to the accessibility tree. */
+	.post-link::after {
+		content: "";
+		@apply absolute inset-0 rounded-lg;
+	}
+	/* Uniform box regardless of source aspect ratio. `contain` rather than
+	   `cover` so square book covers and tall sketchnotes are not cropped. */
+	.post-thumb {
+		@apply w-full aspect-video object-contain bg-gray-50 rounded-lg shadow transition-all duration-200;
+	}
 	.post-feature-image {
 		@apply h-auto;
 	}
 	.post-description {
 		@apply text-lg;
 	}
+}
+
+/* Topic chips */
+.topic-list {
+	@apply flex flex-wrap gap-2;
+}
+
+.topic-chip {
+	@apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-300 bg-gray-50 text-base text-gray-800 no-underline! transition-colors duration-200 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700;
+}
+
+.topic-chip-count {
+	@apply text-xs text-gray-500 tabular-nums;
+}
+
+.post-topics {
+	@apply flex flex-wrap items-center gap-2 mb-8;
+}
+
+/* Archive page */
+.archive-year {
+	@apply mb-10;
+}
+
+.archive-year-heading {
+	@apply text-2xl font-bold border-b border-gray-200 pb-1 mb-3;
+}
+
+.archive-list {
+	@apply list-none m-0 p-0;
+}
+
+.archive-item {
+	@apply flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0 py-1.5 border-b border-gray-100;
+}
+
+.archive-link {
+	@apply text-blue-600 underline;
+}
+
+.archive-date {
+	@apply text-gray-500 uppercase text-xs whitespace-nowrap;
+}
+
+/* Post footer navigation */
+.post-nav {
+	@apply grid gap-4 mt-12 pt-8 border-t border-gray-200 sm:grid-cols-2;
+}
+
+.post-nav-link {
+	@apply block p-4 rounded-lg border border-gray-200 no-underline! text-gray-800 transition-all duration-200 hover:bg-gray-50 hover:shadow-md;
+}
+
+.post-nav-label {
+	@apply block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1;
+}
+
+.post-nav-title {
+	@apply block font-medium;
+}
+
+.post-nav-next {
+	@apply sm:text-right;
 }
 
 .content-body {
@@ -204,6 +285,35 @@ pre[class*="language-"] {
 
 .cta-button {
 	@apply inline-block px-6 py-3 mr-3 mb-3 bg-blue-500 text-white! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-600 hover:shadow-lg;
+}
+
+.cta-button-secondary {
+	@apply inline-block px-6 py-3 mr-3 mb-3 border-2 border-blue-500 text-blue-700! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-50 hover:shadow-md;
+}
+
+/* Homepage introduction */
+.home-intro {
+	@apply flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-12 pb-8 border-b border-gray-200;
+}
+
+.home-intro-avatar-wrap {
+	@apply w-20 h-20 sm:w-24 sm:h-24 shrink-0;
+}
+
+.home-intro-avatar {
+	@apply w-full h-full object-cover rounded-full border-2 border-rgblue;
+}
+
+.home-intro-heading {
+	@apply text-3xl font-bold mb-2;
+}
+
+.home-intro-text {
+	@apply mb-3;
+}
+
+.home-intro-actions {
+	@apply mt-4 -mb-3;
 }
 
 /* Lightbox styles */

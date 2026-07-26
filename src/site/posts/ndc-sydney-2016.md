@@ -6,6 +6,9 @@ description: "Earlier this month I had the incredible privilege of speaking at N
 meta_description: "Reflections on speaking at NDC Sydney 2016, visiting Australia, and connecting with the developer community there."
 date: 2016-08-10
 slug: ndc-sydney-2016
+tags:
+  - conferences
+  - speaking
 ---
 
 Earlier this month I had the incredible privilege of speaking at [NDC Sydney](http://ndcsydney.com/)! Australia has been at the top of my most-wanted-to-visit places since I was young. I can't begin to tell you how excited I was to have this opportunity!

@@ -7,6 +7,10 @@ meta_description: "Why I built an Edge.js template plugin for 11ty, how it works
 date: 2026-03-02
 slug: edgejs-template-plugin-for-11ty
 templateEngineOverride: md
+tags:
+  - web-development
+  - javascript
+  - projects
 ---
 
 I was recently browsing the [Node Weekly](https://nodeweekly.com/issues/613) newsletter (as one does with a cup of coffee in hand) when a mention of [Edge.js](https://edgejs.dev/docs/introduction) caught my eye.

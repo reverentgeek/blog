@@ -6,6 +6,9 @@ description: "My most embarrassing mistakes as a programmer, in no particular or
 meta_description: "A candid list of my most embarrassing programming mistakes and the lessons I learned from making them."
 date: 2019-10-30
 slug: my-most-embarrassing-mistakes-as-a-programmer
+tags:
+  - personal
+  - career
 ---
 
 My most embarrassing mistakes as a programmer, in no particular order:

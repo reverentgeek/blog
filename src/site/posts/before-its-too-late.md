@@ -6,6 +6,8 @@ description: "There are many life events when people are paid tribute. Job chang
 meta_description: "A reflection on showing appreciation for people now instead of waiting until it is too late."
 date: 2017-04-13
 slug: before-its-too-late
+tags:
+  - personal
 ---
 
 There are many life events when people are paid tribute. Job changes. Relocations. Tragedies. Deaths.

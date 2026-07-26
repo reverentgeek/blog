@@ -6,6 +6,9 @@ description: "You might be thinking..."
 meta_description: "A reflection on the past five years, the changes along the way, and the perspective that comes from looking back."
 date: 2017-10-10
 slug: reflecting-on-the-past-five-years
+tags:
+  - personal
+  - career
 ---
 
 You might be thinking...

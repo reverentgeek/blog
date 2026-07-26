@@ -6,6 +6,8 @@ description: "Sketchnotes are amazing! Even if you don't think you can draw, I p
 meta_description: "A sketchnote challenge with drawing guides, inspiration, and encouragement for anyone who wants to learn visual note-taking."
 date: 2019-08-31
 slug: sketchnote-challenge
+tags:
+  - illustration
 ---
 
 Sketchnotes are amazing. Check out just a few of the many benefits.

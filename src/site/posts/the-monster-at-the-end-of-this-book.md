@@ -6,6 +6,8 @@ description: "The Monster at the end of this book..."
 meta_description: "A playful post inspired by The Monster at the End of This Book, with a quick nod to a beloved childhood classic."
 date: 2018-05-25
 slug: the-monster-at-the-end-of-this-book
+tags:
+  - personal
 ---
 
 The Monster at the end of this book...

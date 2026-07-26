@@ -1,0 +1,18 @@
+---
+title: Topics
+description: Browse every post on ReverentGeek by topic — from Node.js and databases to sketchnoting, public speaking, and motorcycles.
+layout: layouts/default.edge
+---
+<h1 class="text-4xl font-bold mt-4 mb-2">Browse by Topic</h1>
+<p class="text-gray-600 mb-8">All {{ collections.posts.length }} posts, sorted into the things I keep coming back to.</p>
+
+<div class="topic-list mb-12">
+  @each(topic in collections.topics)
+    @!component('components/topic-chip', { slug: topic.slug, count: topic.count })
+  @end
+</div>
+
+<p class="text-gray-600">
+  Looking for something specific? The <a class="underline text-blue-600" href="/archive/">full archive</a>
+  lists every post by year, or grab the <a class="underline text-blue-600" href="/feed.xml">RSS feed</a>.
+</p>

@@ -1,0 +1,25 @@
+---
+title: Archive
+description: Every post on ReverentGeek, listed by year.
+layout: layouts/default.edge
+permalink: /archive/
+---
+<h1 class="text-4xl font-bold mt-4 mb-2">Archive</h1>
+<p class="text-gray-600 mb-8">
+  Every post, newest first. You can also
+  <a class="underline text-blue-600" href="/topics/">browse by topic</a>.
+</p>
+
+@each(group in collections.postsByYear)
+  <section class="archive-year">
+    <h2 class="archive-year-heading">{{ group.year }}</h2>
+    <ul class="archive-list">
+      @each(post in group.posts)
+        <li class="archive-item">
+          <a class="archive-link" href="{{ post.url }}">{{ post.data.title }}</a>
+          <span class="archive-date">{{ postDate(post.data.date) }}</span>
+        </li>
+      @end
+    </ul>
+  </section>
+@end

@@ -5,6 +5,9 @@ description: "Yep, that thing we keep saying is important and need to do, but ne
 meta_description: "A push to stop waiting for the perfect time and start doing the things that matter now."
 date: 2014-07-10
 slug: start-doing
+tags:
+  - personal
+  - career
 ---
 
 Yep, that thing we keep saying is important and need to do, but never seem to find the time. Like blogging, learning a new language, losing weight, playing guitar, or any number of things we wish we could do.

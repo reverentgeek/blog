@@ -6,6 +6,8 @@ description: "Perhaps you've seen one of Cory's Pluralsight courses. Or, sat in 
 meta_description: "A community spotlight on Cory House and their impact on developers, the broader tech community, and my own career."
 date: 2017-04-12
 slug: community-spotlight-cory-house
+tags:
+  - community
 ---
 
 Perhaps you've seen one of Cory's [Pluralsight courses](https://www.pluralsight.com/authors/cory-house). Or, sat in one of his talks. Perhaps you've run across his [react-slingshot](https://github.com/coryhouse/react-slingshot) React + Redux starter kit.

@@ -6,6 +6,9 @@ description: "I am so excited to announce I have joined Okta's developer relatio
 meta_description: "Why I joined Okta as a Senior Developer Advocate and what excited me most about the role and team."
 date: 2018-09-06
 slug: hey-okta-wheres-the-bacon
+tags:
+  - career
+  - devrel
 ---
 
 I am so excited to announce I have joined [Okta](https://developer.okta.com/)'s developer relations team as a Senior Developer Advocate! My focus is on all the JavaScripts: Node.js, Vue, React, and a bazillion other things!

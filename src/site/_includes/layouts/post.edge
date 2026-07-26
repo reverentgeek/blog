@@ -1,9 +1,14 @@
 ---
 layout: layouts/default.edge
 ---
+  @let(postTopics = topicsOnly(tags))
   <article class="content page-{{ slug }}">
     <h1 class="text-4xl font-bold mt-4">{{ title }}</h1>
-    <div class="text-gray-500 uppercase text-sm mb-4">{{ postDate(date) }}</div>
+    <div class="text-gray-500 uppercase text-sm mb-4">
+      {{ postDate(date) }}
+      &middot;
+      {{ readingTime(content) }} min read
+    </div>
     @if(feature_image)
       <figure class="post-feature-image">
         <img
@@ -19,7 +24,37 @@ layout: layouts/default.edge
     <section class="content-body">
       {{{ content }}}
     </section>
+
+    @if(postTopics.length)
+      <nav class="post-topics" aria-label="Topics">
+        <span class="text-gray-500 uppercase text-sm">Topics</span>
+        @each(topic in postTopics)
+          @!component('components/topic-chip', { slug: topic })
+        @end
+      </nav>
+    @end
+
     @!component('components/support', { kofiLink: site.kofi })
+
+    @let(nav = adjacentPosts(collections.posts, page.url))
+    @if(nav.older || nav.newer)
+      <nav class="post-nav" aria-label="More posts">
+        @if(nav.older)
+          <a class="post-nav-link" href="{{ nav.older.url }}">
+            <span class="post-nav-label">&larr; Older post</span>
+            <span class="post-nav-title">{{ nav.older.data.title }}</span>
+          </a>
+        @else
+          <div></div>
+        @end
+        @if(nav.newer)
+          <a class="post-nav-link post-nav-next" href="{{ nav.newer.url }}">
+            <span class="post-nav-label">Newer post &rarr;</span>
+            <span class="post-nav-title">{{ nav.newer.data.title }}</span>
+          </a>
+        @end
+      </nav>
+    @end
 
     <div id="comments" class="giscus mt-8"></div>
     <script>

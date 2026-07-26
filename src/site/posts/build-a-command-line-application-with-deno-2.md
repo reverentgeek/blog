@@ -6,6 +6,9 @@ description: Learn to build a command-line application using Deno version 2.0!
 meta_description: "Learn how to build a command-line application with Deno 2.0, from setup and arguments to running the finished CLI."
 date: 2024-11-09
 slug: build-a-command-line-application-with-deno-2
+tags:
+  - javascript
+  - tools
 ---
 
 Command-line interfaces (CLI) are often used for automating tasks, such as building reports, synchronizing data between systems, migrating data, deploying applications, and so on and on. Over the years, I have built countless CLI apps to save time. If I ever find myself doing something more than once, I try to find a way to automate it!

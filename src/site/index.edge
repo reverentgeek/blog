@@ -8,6 +8,29 @@ pagination:
   reverse: true
 ---
 
+    {{-- Page 1 only — pages 2+ are just more of the post list. --}}
+    @if(pagination.pageNumber === 0)
+      <section class="home-intro">
+        {{-- The image transform wraps this in <picture>, so the sizing lives on
+             a wrapper the flex layout can measure. --}}
+        <div class="home-intro-avatar-wrap">
+          <img class="home-intro-avatar" src="{{ site.logo }}" alt="" width="96" height="96" loading="eager" decoding="async">
+        </div>
+        <div>
+          <h1 class="home-intro-heading">Hi, I'm David Neal.</h1>
+          <p class="home-intro-text">
+            I'm a family man, geek, musician, illustrator, international speaker, software developer,
+            and author living in North Georgia. My mission is to help folks in technology be more awesome.
+          </p>
+          <div class="home-intro-actions">
+            <a class="cta-button" href="/topics/">Browse by topic</a>
+            <a class="cta-button-secondary" href="/feed.xml">Subscribe via RSS</a>
+            <a class="cta-button-secondary" href="/about/">More about me</a>
+          </div>
+        </div>
+      </section>
+    @end
+
     <section class="post-list">
         @each((post, index) in posts)
 			@!component('components/card', { post: post, eager: index === 0 && pagination.pageNumber === 0 })

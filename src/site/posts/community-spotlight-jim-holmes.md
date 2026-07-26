@@ -6,6 +6,8 @@ description: "It's my privilege to know Jim Holmes. He's one of my heroes. I owe
 meta_description: "A community spotlight on Jim Holmes and their impact on developers, the broader tech community, and my own career."
 date: 2017-04-17
 slug: community-spotlight-jim-holmes
+tags:
+  - community
 ---
 
 It's my privilege to know Jim Holmes. He's one of my heroes. I owe Jim many, many thanks for the positive impact he's made on my career and personal life.

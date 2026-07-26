@@ -5,6 +5,10 @@ description: "I recently gave my Intro to RavenDB presentation at the virtual as
 meta_description: "Watch my Intro to RavenDB presentation on Channel 9 and get an overview of RavenDB and document databases."
 date: 2012-08-06
 slug: intro-to-ravendb-on-channel-9
+tags:
+  - databases
+  - speaking
+  - dotnet
 ---
 
 I recently gave my Intro to RavenDB presentation at the virtual [aspConf](http://www.aspconf.net/). The presentation was recorded and is now up on [Channel 9](http://channel9.msdn.com/Events/aspConf/aspConf/Intro-to-RavenDB-NoSQL-is-Rapping-at-Your-Door).

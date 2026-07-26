@@ -5,6 +5,8 @@ description: "Last night at the Nashville .NET User Group we ended the evening w
 meta_description: "Reflections on personal branding, career growth, and the discussion that followed at the Nashville .NET User Group."
 date: 2011-11-11
 slug: brand-yourself
+tags:
+  - career
 ---
 
 Last night at the [Nashville .NET User Group](http://nashdotnet.org/) we ended the evening with a terrific discussion on careers. We had a great panel of developers, entrepreneurs, and recruiters. It was nice to hear the transparency between developers and recruiters. Here are some quick highlights:

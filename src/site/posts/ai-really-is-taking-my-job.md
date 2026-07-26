@@ -6,6 +6,9 @@ description: Generative AI is incredible and empowering and will only get better
 meta_description: "A candid reflection on the tension between loving generative AI and wrestling with what it means for creative work and identity."
 date: 2025-05-20
 slug: ai-really-is-taking-my-job
+tags:
+  - ai
+  - personal
 ---
 
 Hello, I am a creative professional.

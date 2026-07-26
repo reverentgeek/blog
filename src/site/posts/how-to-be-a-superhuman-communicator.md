@@ -6,6 +6,9 @@ description: "People learn in a variety of ways, such as watching videos, listen
 meta_description: "Practical advice for becoming a more effective communicator by understanding how different people learn and process information."
 date: 2019-04-12
 slug: how-to-be-a-superhuman-communicator
+tags:
+  - speaking
+  - career
 ---
 
 People learn in a variety of ways, such as watching videos, listening to podcasts, reading books and articles, and exploring hands-on. For everyone fortunate to have good vision, visuals such as pictures, illustrations, or diagrams, are a universal and powerful way to learn and understand information.

@@ -6,6 +6,9 @@ description: "My blog has been on Ghost for many years. It has been a solid plat
 meta_description: "My blog has been on Ghost for many years. It has been a solid platform, and I highly recommend it. However, I've been itching to try something new for a while."
 date: 2020-04-29
 slug: moving-from-ghost-to-eleventy
+tags:
+  - web-development
+  - projects
 ---
 
 My blog has been on a self-hosted deployment of [Ghost](https://ghost.org/) for many years. It has been a solid platform, and I highly recommend it.

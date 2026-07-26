@@ -6,6 +6,9 @@ description: I had the absolute pleasure of drawing avatars and custom Wappus fo
 meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp EU 2024."
 date: 2024-07-10
 slug: wordcamp-eu-2024-illustrations
+tags:
+  - illustration
+  - conferences
 ---
 
 I've finally checked off a dream I've had for many years! At [WordCamp EU 2024](https://europe.wordcamp.org/2024/), I had the absolute pleasure of drawing custom avatars (and Wapuus) for the [WordPress.com](https://wordpress.com/) booth 😊 It was a blast!

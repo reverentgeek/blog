@@ -6,6 +6,8 @@ description: "(Or any application icon, for that matter.)"
 meta_description: "Learn how to customize your VS Code icon and apply the same approach to other desktop application icons."
 date: 2017-10-27
 slug: customize-your-vs-code-icon
+tags:
+  - tools
 ---
 
 (Or any application icon, for that matter.)

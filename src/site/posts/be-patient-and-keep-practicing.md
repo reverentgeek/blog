@@ -6,6 +6,8 @@ description: "You've probably seen the ShamWow meme. You know, the classic, chee
 meta_description: "A reminder that progress takes patience, practice, and persistence, even when growth feels slower than you want."
 date: 2017-09-15
 slug: be-patient-and-keep-practicing
+tags:
+  - personal
 ---
 
 You've probably seen the [ShamWow meme](http://knowyourmeme.com/memes/vince-shlomi-shamwow-slap-chop). You know, the classic, cheesy infomercial guy.

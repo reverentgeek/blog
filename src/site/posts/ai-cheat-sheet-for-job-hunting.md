@@ -6,6 +6,9 @@ description: Are you still applying for jobs like it's 2012? Level up your job h
 meta_description: "Practical AI prompts and job hunting tips to help you improve resumes, applications, networking, and interview preparation."
 date: 2025-05-14
 slug: ai-cheat-sheet-for-job-hunting
+tags:
+  - ai
+  - career
 ---
 
 Ghosted again? It might be because you're still applying for jobs like it's 2012. Let's talk about it.

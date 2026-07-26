@@ -6,6 +6,8 @@ description: "If you follow me on Twitter you know that I poke fun at JavaScript
 meta_description: "A response to the question of whether I hate JavaScript, plus some perspective on humor, frustration, and why I still use it."
 date: 2017-02-13
 slug: do-you-hate-javascript
+tags:
+  - javascript
 ---
 
 If you follow me on [Twitter](https://x.com/reverentgeek) you know that I poke fun at JavaScript quite a bit. Someone recently asked me,

@@ -5,6 +5,9 @@ description: "devLink 2013 was yet another awesome conference. I have such a bla
 meta_description: "Reflections on devLink 2013, including the sessions, conversations, and what made the conference stand out."
 date: 2013-09-05
 slug: devlink-2013
+tags:
+  - conferences
+  - community
 ---
 
 [devLink 2013](http://www.devlink.net/) was yet another awesome conference. I have such a blast every year: great sessions, and invaluable networking opportunities with old friends and "old friends who've just met."

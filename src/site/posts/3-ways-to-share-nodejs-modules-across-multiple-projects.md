@@ -6,6 +6,9 @@ description: "Three options for splitting Node.js code into shared libraries acr
 meta_description: "Three options for splitting Node.js code into shared libraries across multiple projects, with tradeoffs between convenience and portability."
 date: 2021-05-14
 slug: three-ways-to-share-nodejs-modules-across-multiple-projects
+tags:
+  - nodejs
+  - javascript
 ---
 
 A friend recently asked me about splitting some of their Node.js application into a shared library to be used across multiple projects. There are at least three solutions, and they all have tradeoffs between convenience and portability.

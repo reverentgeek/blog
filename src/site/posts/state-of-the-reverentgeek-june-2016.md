@@ -6,6 +6,8 @@ description: "I can't believe it's been a year since my last blog post! So much 
 meta_description: "A midyear update on life, work, speaking, and what was happening behind the scenes at ReverentGeek in June 2016."
 date: 2016-06-30
 slug: state-of-the-reverentgeek-june-2016
+tags:
+  - personal
 ---
 
 I can't believe it's been a year since my last blog post! So much has happened. TL;DR: I am a very blessed man, and so grateful for the incredible opportunities I've had over the past year!

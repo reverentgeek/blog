@@ -5,6 +5,8 @@ description: "(Cross-posted to FreshBrewedCode.com)"
 meta_description: "How to scale Windows Services with RabbitMQ by moving work off individual processes and into a queue-driven architecture."
 date: 2011-11-30
 slug: scale-windows-services-with-rabbitmq
+tags:
+  - dotnet
 ---
 
 (Cross-posted to [FreshBrewedCode.com](http://freshbrewedcode.com/davidneal/2011/11/30/scale-windows-services-with-rabbitmq/))

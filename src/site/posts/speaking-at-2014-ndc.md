@@ -5,6 +5,9 @@ description: "I'm still in shock. My talk on Edge.js was selected for the 2014 N
 meta_description: "Reflections on having my Edge.js talk selected for NDC 2014 in Oslo and what the opportunity meant to me."
 date: 2014-03-15
 slug: speaking-at-2014-ndc
+tags:
+  - speaking
+  - conferences
 ---
 
 I'm still in shock. My [talk](http://ndcoslo.oktaset.com/t-13891) on [Edge.js](http://tjanczuk.github.io/edge/) was selected for the 2014 Norwegian Developers Conference in Oslo, Norway. I can't believe I'm sharing the same page with these [NDC speakers](http://ndcoslo.oktaset.com/speakers).

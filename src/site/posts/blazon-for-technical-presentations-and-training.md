@@ -5,6 +5,9 @@ description: "I recently switched to using Blazon for all my presentations, and 
 meta_description: "Why I switched to Blazon for technical presentations and training, plus the features I appreciate most."
 date: 2014-05-01
 slug: blazon-for-technical-presentations-and-training
+tags:
+  - tools
+  - speaking
 ---
 
 I recently switched to using [Blazon](https://presentboldly.com/) for all my presentations, and I couldn't be happier. Here are some of my favorite features:

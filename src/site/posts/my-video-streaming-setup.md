@@ -6,6 +6,8 @@ description: "Over the last few years, I received many comments and questions ab
 meta_description: "Over the last few years, I received many comments and questions about my office studio video and audio setup. In this post, I will walk through what I've..."
 date: 2023-03-22
 slug: my-video-streaming-setup
+tags:
+  - tools
 ---
 
 Over the last few years, I received many comments and questions about my office studio video and audio setup. In this post, I will walk through what I've put together, why it fits what I need, and hopefully, give you some ideas on how you can improve your audio and video.

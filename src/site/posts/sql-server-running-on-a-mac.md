@@ -6,6 +6,8 @@ description: "Dogs and cats living together, mass hysteria!"
 meta_description: "Learn how to run SQL Server on a Mac using Docker, including setup steps, configuration tips, and tools for connecting to your database."
 date: 2016-11-16
 slug: sql-server-running-on-a-mac
+tags:
+  - databases
 ---
 
 Dogs and cats living together, mass hysteria!

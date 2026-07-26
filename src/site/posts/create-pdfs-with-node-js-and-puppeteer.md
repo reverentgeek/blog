@@ -6,6 +6,10 @@ description: "I love to play music, especially in a band. There's something amaz
 meta_description: "Learn how to generate PDFs with Node.js and Puppeteer, including rendering web pages and local HTML files into downloadable PDF documents."
 date: 2020-02-06
 slug: create-pdfs-with-node-js-and-puppeteer
+tags:
+  - nodejs
+  - javascript
+  - music
 ---
 
 I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and instruments. However, for a band to be successful, everyone needs to be on the _same page_ or it just sounds like a mess.

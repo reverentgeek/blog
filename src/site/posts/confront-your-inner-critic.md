@@ -6,6 +6,9 @@ description: "Have you ever felt inadequate? Like a fraud? Like you don't belong
 meta_description: "A reflection on impostor syndrome, self-doubt, and how to push back against the voice that says you are not enough."
 date: 2018-03-02
 slug: confront-your-inner-critic
+tags:
+  - personal
+  - career
 ---
 
 Have you ever felt inadequate? Like a fraud? Like you don't belong where you are? That someone is going to expose you for who you really are?

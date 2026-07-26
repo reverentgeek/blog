@@ -1,3 +1,5 @@
+import { adjacentPosts, topicLabel, topicsOnly } from "./collections.js";
+
 export function registerRssFilters( config, { getNewestCollectionItemDate, dateToRfc3339, absoluteUrl, convertHtmlToAbsoluteUrls } ) {
 	config.addFilter( "getNewestCollectionItemDate", getNewestCollectionItemDate );
 	config.addFilter( "dateToRfc3339", dateToRfc3339 );
@@ -20,6 +22,22 @@ export function registerSiteFilters( config, { socialImageFilter } ) {
 	} );
 
 	config.addFilter( "socialImage", socialImageFilter );
+
+	// Drops the organizational tags (posts, page) so only real topics render.
+	config.addFilter( "topicsOnly", topicsOnly );
+
+	config.addFilter( "topicLabel", topicLabel );
+
+	config.addFilter( "adjacentPosts", adjacentPosts );
+
+	// Rounded minutes, based on rendered post HTML at ~200 words per minute.
+	config.addFilter( "readingTime", ( html ) => {
+		const words = String( html || "" )
+			.replace( /<[^>]+>/g, " " )
+			.split( /\s+/ )
+			.filter( Boolean ).length;
+		return Math.max( 1, Math.round( words / 200 ) );
+	} );
 
 	config.addFilter( "jsonLdArticle", ( { title, description, image, datePublished, author, publisher, pageUrl } ) => {
 		const ld = {

@@ -5,6 +5,10 @@ description: "I recently had the honor of presenting my \"Node.js for .NET Devel
 meta_description: "Watch my Node.js for .NET Developers presentation on Channel 9 and learn how Node.js maps to familiar .NET concepts."
 date: 2015-06-17
 slug: node-js-for-net-developers-on-channel-9
+tags:
+  - nodejs
+  - speaking
+  - dotnet
 ---
 
 I recently had the honor of presenting my "Node.js for .NET Developers" talk for the the [Microsoft MVP Virtual Conference](http://mvp.microsoft.com/en-us/virtualconference.aspx). The recording of that talk is now available on [Channel 9](http://channel9.msdn.com/Events/MVP-Virtual-Conference/MVP-Virtual-Conference-Americas-2015/DEV-Track-Day1-Nodejs-for-NET-Developers). I would appreciate your feedback!
