@@ -1,23 +1,41 @@
-<footer class="text-gray-500 uppercase text-sm m-4 p-4 text-center">
-  <div class="p-2">
-    {{ site.title }}
-    &copy; 2010 -
-    {{ currentYear() }}
-    David Neal
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-brand">
+      <a class="footer-brand-link" href="{{ site.url }}">
+        {{-- No `width` attribute on purpose: a plain width overrides the widths
+             list entirely (eleventy-img reads eleventy:widths only when width is
+             absent), which pins the logo to a single 1x file and blurs it on
+             retina. 2x/3x for the 48px box; .footer-logo sets the display size. --}}
+        <img class="footer-logo" src="{{ site.logo }}" alt="" eleventy:widths="48,96,144" sizes="48px">
+        <span>{{ site.title }}</span>
+      </a>
+      <p class="footer-tagline">{{ site.description }}</p>
+      @!component('components/social-links', { links: site.social_links, containerClass: 'footer-social', iconClass: 'text-white w-5 h-5' })
+    </div>
+
+    <nav class="footer-nav" aria-labelledby="footer-explore">
+      <h2 class="footer-heading" id="footer-explore">Explore</h2>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="/topics/">Topics</a></li>
+        <li><a class="footer-link" href="/archive/">Archive</a></li>
+        <li><a class="footer-link" href="https://github.com/reverentgeek/blog">Source Code</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-nav" aria-labelledby="footer-connect">
+      <h2 class="footer-heading" id="footer-connect">Connect</h2>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="mailto:david@reverentgeek.com">Contact</a></li>
+        <li><a class="footer-link" href="/feed.xml">RSS</a></li>
+        <li><a class="footer-link" href="{{ site.kofi }}" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
+      </ul>
+    </nav>
   </div>
-  <div class="">Built with
-    <a class="underline" href="https://www.11ty.dev/">11ty {{ eleventy.version }}</a>
-    |
-    <a class="underline" href="/topics/">Topics</a>
-    |
-    <a class="underline" href="/archive/">Archive</a>
-    |
-    <a class="underline" href="https://github.com/reverentgeek/blog">Source Code</a>
-    |
-    <a class="underline" href="/feed.xml">RSS</a>
-    |
-    <a class="underline" href="mailto:david@reverentgeek.com">Contact</a>
-    |
-    <a class="underline" href="{{ site.kofi }}" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p>&copy; 2010&ndash;{{ currentYear() }} David Neal</p>
+      <p>Built with <a class="footer-link" href="https://www.11ty.dev/">11ty {{ eleventy.version }}</a></p>
+    </div>
   </div>
 </footer>

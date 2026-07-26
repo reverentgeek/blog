@@ -366,6 +366,65 @@ pre[class*="language-"] {
 	@apply mt-4 -mb-3;
 }
 
+/* Site footer.
+   A full-bleed tinted band so the page reads as finished rather than just
+   running out of content, with an rgblue top rule that bookends the header.
+   The inner grid is capped at the same max-w-4xl as `main` so the columns line
+   up with the article text above them. */
+.site-footer {
+	@apply mt-16 border-t-4 border-rgblue/60 bg-gray-50 text-gray-700;
+}
+
+/* Brand column gets the extra width — it holds the tagline, which needs a
+   readable measure; the two link columns only ever hold short labels. */
+.site-footer-inner {
+	@apply max-w-4xl mx-auto px-8 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr];
+}
+
+.footer-brand {
+	@apply sm:col-span-2 md:col-span-1;
+}
+
+.footer-brand-link {
+	@apply inline-flex items-center gap-3 text-lg font-bold text-gray-900 no-underline;
+}
+
+.footer-logo {
+	@apply w-12 h-12 rounded-full border-2 border-rgblue;
+}
+
+.footer-tagline {
+	@apply mt-3 mb-4 text-base text-gray-600;
+}
+
+.footer-social {
+	@apply flex items-center gap-3;
+}
+
+.footer-heading {
+	@apply text-xs font-bold uppercase tracking-wider text-gray-500 mb-3;
+}
+
+.footer-list {
+	@apply list-none m-0 p-0;
+}
+
+/* Underline only on hover: seven permanently underlined links read as clutter,
+   but the links still need to look like links, hence the offset rule on hover
+   plus the colour shift. `inline-block` with vertical padding gives each row a
+   tap target taller than the 18px text. */
+.footer-link {
+	@apply inline-block py-1 text-gray-700 no-underline transition-colors duration-200 hover:text-blue-700 hover:underline underline-offset-4;
+}
+
+.footer-bottom {
+	@apply border-t border-gray-200;
+}
+
+.footer-bottom-inner {
+	@apply max-w-4xl mx-auto px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-1 text-sm text-gray-500;
+}
+
 /* Lightbox styles */
 .lightbox {
 	@apply fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300;

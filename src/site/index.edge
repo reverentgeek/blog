@@ -14,7 +14,10 @@ pagination:
         {{-- The image transform wraps this in <picture>, so the sizing lives on
              a wrapper the flex layout can measure. --}}
         <div class="home-intro-avatar-wrap">
-          <img class="home-intro-avatar" src="{{ site.logo }}" alt="" width="96" height="96" loading="eager" decoding="async">
+          {{-- The wrap is 80px, growing to 96px at sm. No `width` attribute: it would
+               override the widths list and emit a single 1x file, which is what made
+               this avatar blurry on retina. 2x/3x capped at the 256px source. --}}
+          <img class="home-intro-avatar" src="{{ site.logo }}" alt="" loading="eager" decoding="async" eleventy:widths="96,192,256" sizes="(min-width: 640px) 96px, 80px">
         </div>
         <div>
           <h1 class="home-intro-heading">Hi, I'm David Neal.</h1>
