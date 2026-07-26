@@ -228,8 +228,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       eleventy-plugin-edgejs:
-        specifier: ^1.1.16
-        version: 1.1.16(@11ty/eleventy@4.0.0-alpha.10)
+        specifier: ^1.1.17
+        version: 1.1.17(@11ty/eleventy@4.0.0-alpha.10)
       esbuild:
         specifier: ^0.28.1
         version: 0.28.1
@@ -265,8 +265,8 @@ importers:
         specifier: ^10.8.0
         version: 10.8.0(jiti@2.7.0)
       eslint-config-reverentgeek:
-        specifier: ^7.1.13
-        version: 7.1.13(eslint@10.8.0(jiti@2.7.0))
+        specifier: ^7.1.14
+        version: 7.1.14(eslint@10.8.0(jiti@2.7.0))
       jimp:
         specifier: ^1.6.1
         version: 1.6.1
@@ -1615,8 +1615,8 @@ packages:
   eleventy-plugin-broken-links@2.2.1:
     resolution: {integrity: sha512-2u1kzt7kuA9mryFa3U+hnO4J9ZUHZlfwpTXA9oB9Z/rKmZ1KXN098shWJCcYlEncg0Mky80I0iPhNcZw6/FKOg==}
 
-  eleventy-plugin-edgejs@1.1.16:
-    resolution: {integrity: sha512-KiplKZIwq2saWG7VAVPhWwhUaPEORRr3T/TrECBYB6dlDJnzltU8Ici2uCHekRHRmuX6Ouqne+NUcRpcGQR/qQ==}
+  eleventy-plugin-edgejs@1.1.17:
+    resolution: {integrity: sha512-+31jElXVENkFUFpU7goMDYWCdmovwMqL/adAMKzclHr8R9Xk2bhoGNx31xRNxGOqthWvAjURzjWxiV0F0K2zvQ==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@11ty/eleventy': ^3.0.0 || ^4.0.0
@@ -1699,8 +1699,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-reverentgeek@7.1.13:
-    resolution: {integrity: sha512-Zy458PA4XUIpC0SvuRKCmtWkUWElXmkqC6596db5044VvkQEn68vBT3EJDEDWh8SPPQ/2h9FV3dMs0zAMlB/SQ==}
+  eslint-config-reverentgeek@7.1.14:
+    resolution: {integrity: sha512-pxrsCqnBXhgdA1GCfF/3yfGgvWh3kDEm8P1kln6/1yXppg0YcTyDileLk6wQ4CHrOtDSAYgQvzxUqCXjs76FJg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       eslint: '>=10.0.0'
@@ -4415,7 +4415,7 @@ snapshots:
       - encoding
       - supports-color
 
-  eleventy-plugin-edgejs@1.1.16(@11ty/eleventy@4.0.0-alpha.10):
+  eleventy-plugin-edgejs@1.1.17(@11ty/eleventy@4.0.0-alpha.10):
     dependencies:
       '@11ty/eleventy': 4.0.0-alpha.10
       edge.js: 6.5.1
@@ -4498,7 +4498,7 @@ snapshots:
       eslint: 10.8.0(jiti@2.7.0)
       semver: 7.8.5
 
-  eslint-config-reverentgeek@7.1.13(eslint@10.8.0(jiti@2.7.0)):
+  eslint-config-reverentgeek@7.1.14(eslint@10.8.0(jiti@2.7.0)):
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.8.0(jiti@2.7.0))
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.8.0(jiti@2.7.0))
