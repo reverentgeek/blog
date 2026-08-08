@@ -57,7 +57,7 @@
 		"esbuild": "^0.28.1",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^9.0.3",
-		"postcss": "^8.5.25",
+		"postcss": "^8.5.26",
 		"postcss-cli": "^11.0.1",
 		"postcss-import": "^16.1.1",
 		"prismjs": "^1.30.0",
