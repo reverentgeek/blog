@@ -8,8 +8,10 @@ slug: speaking
 
 **Current speaking topics:** leadership, public speaking, JavaScript, Node.js, Electron.js, sketch notes, improving workflow, and Kanban.
 
-| Date | Event | Location |
-| --- | --- | --- |
+_No speaking engagements currently scheduled._
+
+<!-- | Date | Event | Location |
+| --- | --- | --- | -->
 
 ## Resources
 
