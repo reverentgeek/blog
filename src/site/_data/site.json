@@ -26,10 +26,6 @@
 			"url": "/"
 		},
 		{
-			"label": "Topics",
-			"url": "/topics/"
-		},
-		{
 			"label": "About",
 			"url": "/about/"
 		},
