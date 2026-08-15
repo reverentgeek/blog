@@ -53,13 +53,13 @@
 		"@11ty/eleventy-plugin-rss": "^3.0.0",
 		"@tailwindcss/postcss": "^4.3.3",
 		"eleventy-plugin-broken-links": "^2.2.1",
-		"eleventy-plugin-edgejs": "^1.1.19",
+		"eleventy-plugin-edgejs": "^1.1.21",
 		"esbuild": "^0.28.2",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^9.0.3",
 		"postcss": "^8.5.26",
 		"postcss-cli": "^11.0.1",
-		"postcss-import": "^16.1.1",
+		"postcss-import": "^17.0.0",
 		"prismjs": "^1.30.0",
 		"rimraf": "^6.1.3",
 		"tailwindcss": "^4.3.3"
@@ -67,7 +67,7 @@
 	"devDependencies": {
 		"commander": "^15.0.0",
 		"eslint": "^10.8.1",
-		"eslint-config-reverentgeek": "^7.1.17",
+		"eslint-config-reverentgeek": "^7.1.18",
 		"jimp": "^1.6.1",
 		"lighthouse": "^13.4.1",
 		"markdownlint-cli": "^0.49.1",
@@ -77,5 +77,5 @@
 		"slug": "^12.0.1",
 		"uuid": "^14.0.1"
 	},
-	"packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee"
+	"packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621"
 }
