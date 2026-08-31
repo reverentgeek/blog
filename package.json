@@ -53,7 +53,7 @@
 		"@11ty/eleventy-plugin-rss": "^3.0.0",
 		"@tailwindcss/postcss": "^4.3.3",
 		"eleventy-plugin-broken-links": "^2.2.1",
-		"eleventy-plugin-edgejs": "^1.1.21",
+		"eleventy-plugin-edgejs": "^1.1.22",
 		"esbuild": "^0.28.2",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^9.0.3",
@@ -66,8 +66,8 @@
 	},
 	"devDependencies": {
 		"commander": "^15.0.0",
-		"eslint": "^10.8.1",
-		"eslint-config-reverentgeek": "^7.1.18",
+		"eslint": "^10.9.1",
+		"eslint-config-reverentgeek": "^7.1.19",
 		"jimp": "^1.6.1",
 		"lighthouse": "^13.4.1",
 		"markdownlint-cli": "^0.49.1",
@@ -75,7 +75,7 @@
 		"probe-image-size": "^7.4.0",
 		"sharp": "0.35.3",
 		"slug": "^12.0.1",
-		"uuid": "^14.0.1"
+		"uuid": "^14.0.2"
 	},
-	"packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621"
+	"packageManager": "pnpm@11.25.0+sha512.5cde925b4f075f725eb71fbae18a42ffe784524789f19b61c731cb8721ec28aaee160e01a8d5af4fedb2a42cdbf300efe23db356b0d4a17b4d63e11f8ab7c956"
 }
