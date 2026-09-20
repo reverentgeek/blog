@@ -176,7 +176,7 @@ importers:
         version: 4.0.0-alpha.10
       '@11ty/eleventy-img':
         specifier: ^7.0.0
-        version: 7.0.0(@types/node@26.6.1)
+        version: 7.0.0(@types/node@26.6.2)
       '@11ty/eleventy-plugin-rss':
         specifier: ^3.0.0
         version: 3.0.0
@@ -187,8 +187,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       eleventy-plugin-edgejs:
-        specifier: ^1.1.25
-        version: 1.1.25(@11ty/eleventy@4.0.0-alpha.10)
+        specifier: ^1.1.26
+        version: 1.1.26(@11ty/eleventy@4.0.0-alpha.10)
       esbuild:
         specifier: ^0.28.2
         version: 0.28.2
@@ -221,11 +221,11 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0
       eslint:
-        specifier: ^10.10.0
-        version: 10.10.0(jiti@2.7.0)
+        specifier: ^10.11.0
+        version: 10.11.0(jiti@2.7.0)
       eslint-config-reverentgeek:
-        specifier: ^7.1.21
-        version: 7.1.21(eslint@10.10.0(jiti@2.7.0))
+        specifier: ^7.1.22
+        version: 7.1.22(eslint@10.11.0(jiti@2.7.0))
       jimp:
         specifier: ^1.6.1
         version: 1.6.1
@@ -243,7 +243,7 @@ importers:
         version: 7.4.0
       sharp:
         specifier: 0.35.4
-        version: 0.35.4(@types/node@26.6.1)
+        version: 0.35.4(@types/node@26.6.2)
       slug:
         specifier: ^12.0.1
         version: 12.0.1
@@ -1139,8 +1139,8 @@ packages:
   '@types/node@16.9.1':
     resolution: {integrity: sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==}
 
-  '@types/node@26.6.1':
-    resolution: {integrity: sha512-VqGJBMCtdhqkBUCcBLvywI0NJ+KLuVzgNnlBUNFOQjqVxzo2lxLUNg1DSey8+u2u6ktswSAxg+s68QLzWHNOuA==}
+  '@types/node@26.6.2':
+    resolution: {integrity: sha512-X1P21scMv4zGKLYqjdGjaKa7COa0RKVYYZZN/NfvLQ1JegxFhdhpZG/Lyn8AXx6CDUavKAd11v6BvfpkDByK8g==}
 
   '@types/pluralize@0.0.33':
     resolution: {integrity: sha512-JOqsl+ZoCpP4e8TDke9W79FDcSgPAR0l6pixx2JHkhnRjvShyYiAYw2LVsnA7K08Y6DeOnaU6ujmENO4os/cYg==}
@@ -1261,8 +1261,8 @@ packages:
   camel-case@4.1.2:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
 
-  case-anything@3.1.3:
-    resolution: {integrity: sha512-gyJjZtdGHJ+fU44xGUZUOSORgaay1eibqxhjCACBGbNRBYwf3rF0rg80hRy14teX3GfOYojCSwiSoNSYpibj2w==}
+  case-anything@3.1.4:
+    resolution: {integrity: sha512-fVBdk3zST9UiRxeWQECOW/3+cOvLCg37qNPHrI/F9Mupi6T1WBYKqWYB139uBN34W/7iMkSeE3hnHWbivCS4eg==}
     engines: {node: '>=18'}
 
   character-entities-legacy@3.0.0:
@@ -1452,8 +1452,8 @@ packages:
   eleventy-plugin-broken-links@2.2.1:
     resolution: {integrity: sha512-2u1kzt7kuA9mryFa3U+hnO4J9ZUHZlfwpTXA9oB9Z/rKmZ1KXN098shWJCcYlEncg0Mky80I0iPhNcZw6/FKOg==}
 
-  eleventy-plugin-edgejs@1.1.25:
-    resolution: {integrity: sha512-RNsISGufMyH1+tR5MJo8VByY7D1pW0KDBOAXkOYrtFeqHxF95FGBEZHyfCH5pKHRQ6Z+K8ldfOOnwq9yNSF8mA==}
+  eleventy-plugin-edgejs@1.1.26:
+    resolution: {integrity: sha512-gznhCVN9hHOfi/2JvtWJBm2evu9Njpi8GqErBh37xF+HzmbPntmbNFUvbcExaLEXQT8rBROEZTCvNn4bf/CjsA==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@11ty/eleventy': ^3.0.0 || ^4.0.0
@@ -1532,8 +1532,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-reverentgeek@7.1.21:
-    resolution: {integrity: sha512-rVRU3cpWnOslInJLPKwlHaKxPcVy0BH9+16SVdiKTKYNqdLgcTPxdGzLu7pYLlQrgBEIJUjHSprMqx/DB6E87Q==}
+  eslint-config-reverentgeek@7.1.22:
+    resolution: {integrity: sha512-FQU9V/AzKujm+NhCBA1wLqJereLvHU5JY2OWM0WyE4bXqHu1Q8AA/PtFhMeLF3TY6/E3jWmlqzlIUgj0dZ8Wsg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       eslint: '>=10.0.0'
@@ -1573,8 +1573,8 @@ packages:
     resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  eslint@10.10.0:
-    resolution: {integrity: sha512-NPXn6r5zl4uET1DAVPaOwzX3rut4c0wcmw3dWJAfOsTM5+TogXo0DDjz8pwm/hL8cyVNpHqeK4JpN0NjnyFFNw==}
+  eslint@10.11.0:
+    resolution: {integrity: sha512-P7a6UEEqb9G95MYAtqkmsTbVXIYyzIfl6NGOIJk162PaahFxFyeGcrlXYFSiagECg4sEm8IseJdZBKR3rx6MsQ==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     hasBin: true
     peerDependencies:
@@ -2052,8 +2052,8 @@ packages:
   lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
 
-  lru-cache@11.5.2:
-    resolution: {integrity: sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==}
+  lru-cache@11.5.3:
+    resolution: {integrity: sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg==}
     engines: {node: 20 || >=22}
 
   magic-string@0.30.21:
@@ -2907,7 +2907,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@11ty/eleventy-img@7.0.0(@types/node@26.6.1)':
+  '@11ty/eleventy-img@7.0.0(@types/node@26.6.2)':
     dependencies:
       '@11ty/eleventy-fetch': 5.1.3
       '@11ty/eleventy-utils': 2.0.7
@@ -2915,7 +2915,7 @@ snapshots:
       entities: 8.1.0
       obug: 2.2.1
       p-queue: 9.3.3
-      sharp: 0.35.4(@types/node@26.6.1)
+      sharp: 0.35.4(@types/node@26.6.2)
     transitivePeerDependencies:
       - '@types/node'
       - supports-color
@@ -3105,9 +3105,9 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.10.1(eslint@10.10.0(jiti@2.7.0))':
+  '@eslint-community/eslint-utils@4.10.1(eslint@10.11.0(jiti@2.7.0))':
     dependencies:
-      eslint: 10.10.0(jiti@2.7.0)
+      eslint: 10.11.0(jiti@2.7.0)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.2': {}
@@ -3128,9 +3128,9 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  '@eslint/js@10.0.1(eslint@10.10.0(jiti@2.7.0))':
+  '@eslint/js@10.0.1(eslint@10.11.0(jiti@2.7.0))':
     optionalDependencies:
-      eslint: 10.10.0(jiti@2.7.0)
+      eslint: 10.11.0(jiti@2.7.0)
 
   '@eslint/object-schema@3.0.5': {}
 
@@ -3601,7 +3601,7 @@ snapshots:
   '@poppinss/string@1.7.2':
     dependencies:
       '@types/pluralize': 0.0.33
-      case-anything: 3.1.3
+      case-anything: 3.1.4
       pluralize: 8.0.0
       slugify: 1.6.9
 
@@ -3676,11 +3676,11 @@ snapshots:
 
   '@sindresorhus/transliterate@2.3.1': {}
 
-  '@stylistic/eslint-plugin@5.10.0(eslint@10.10.0(jiti@2.7.0))':
+  '@stylistic/eslint-plugin@5.10.0(eslint@10.11.0(jiti@2.7.0))':
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.11.0(jiti@2.7.0))
       '@typescript-eslint/types': 8.70.0
-      eslint: 10.10.0(jiti@2.7.0)
+      eslint: 10.11.0(jiti@2.7.0)
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
       estraverse: 5.3.0
@@ -3784,7 +3784,7 @@ snapshots:
 
   '@types/node@16.9.1': {}
 
-  '@types/node@26.6.1':
+  '@types/node@26.6.2':
     dependencies:
       undici-types: 8.9.0
 
@@ -3893,7 +3893,7 @@ snapshots:
       pascal-case: 3.1.2
       tslib: 2.8.1
 
-  case-anything@3.1.3: {}
+  case-anything@3.1.4: {}
 
   character-entities-legacy@3.0.0: {}
 
@@ -3907,7 +3907,7 @@ snapshots:
 
   chrome-launcher@1.2.1:
     dependencies:
-      '@types/node': 26.6.1
+      '@types/node': 26.6.2
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 2.0.2
@@ -4084,7 +4084,7 @@ snapshots:
       - encoding
       - supports-color
 
-  eleventy-plugin-edgejs@1.1.25(@11ty/eleventy@4.0.0-alpha.10):
+  eleventy-plugin-edgejs@1.1.26(@11ty/eleventy@4.0.0-alpha.10):
     dependencies:
       '@11ty/eleventy': 4.0.0-alpha.10
       edge.js: 6.5.1
@@ -4160,35 +4160,35 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-compat-utils@0.5.1(eslint@10.10.0(jiti@2.7.0)):
+  eslint-compat-utils@0.5.1(eslint@10.11.0(jiti@2.7.0)):
     dependencies:
-      eslint: 10.10.0(jiti@2.7.0)
+      eslint: 10.11.0(jiti@2.7.0)
       semver: 7.8.5
 
-  eslint-config-reverentgeek@7.1.21(eslint@10.10.0(jiti@2.7.0)):
+  eslint-config-reverentgeek@7.1.22(eslint@10.11.0(jiti@2.7.0)):
     dependencies:
-      '@eslint/js': 10.0.1(eslint@10.10.0(jiti@2.7.0))
-      '@stylistic/eslint-plugin': 5.10.0(eslint@10.10.0(jiti@2.7.0))
-      eslint: 10.10.0(jiti@2.7.0)
-      eslint-plugin-n: 18.3.0(eslint@10.10.0(jiti@2.7.0))
+      '@eslint/js': 10.0.1(eslint@10.11.0(jiti@2.7.0))
+      '@stylistic/eslint-plugin': 5.10.0(eslint@10.11.0(jiti@2.7.0))
+      eslint: 10.11.0(jiti@2.7.0)
+      eslint-plugin-n: 18.3.0(eslint@10.11.0(jiti@2.7.0))
       globals: 17.12.0
     transitivePeerDependencies:
       - ts-declaration-location
       - typescript
 
-  eslint-plugin-es-x@7.8.0(eslint@10.10.0(jiti@2.7.0)):
+  eslint-plugin-es-x@7.8.0(eslint@10.11.0(jiti@2.7.0)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.11.0(jiti@2.7.0))
       '@eslint-community/regexpp': 4.12.2
-      eslint: 10.10.0(jiti@2.7.0)
-      eslint-compat-utils: 0.5.1(eslint@10.10.0(jiti@2.7.0))
+      eslint: 10.11.0(jiti@2.7.0)
+      eslint-compat-utils: 0.5.1(eslint@10.11.0(jiti@2.7.0))
 
-  eslint-plugin-n@18.3.0(eslint@10.10.0(jiti@2.7.0)):
+  eslint-plugin-n@18.3.0(eslint@10.11.0(jiti@2.7.0)):
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.11.0(jiti@2.7.0))
       enhanced-resolve: 5.25.1
-      eslint: 10.10.0(jiti@2.7.0)
-      eslint-plugin-es-x: 7.8.0(eslint@10.10.0(jiti@2.7.0))
+      eslint: 10.11.0(jiti@2.7.0)
+      eslint-plugin-es-x: 7.8.0(eslint@10.11.0(jiti@2.7.0))
       get-tsconfig: 4.14.3
       globals: 15.15.0
       globrex: 0.1.2
@@ -4208,9 +4208,9 @@ snapshots:
 
   eslint-visitor-keys@5.0.1: {}
 
-  eslint@10.10.0(jiti@2.7.0):
+  eslint@10.11.0(jiti@2.7.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.10.1(eslint@10.10.0(jiti@2.7.0))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.11.0(jiti@2.7.0))
       '@eslint-community/regexpp': 4.12.2
       '@eslint/config-array': 0.23.5
       '@eslint/config-helpers': 0.7.0
@@ -4716,7 +4716,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  lru-cache@11.5.2: {}
+  lru-cache@11.5.3: {}
 
   magic-string@0.30.21:
     dependencies:
@@ -5127,7 +5127,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.5.2
+      lru-cache: 11.5.3
       minipass: 7.1.3
 
   picocolors@1.1.1: {}
@@ -5311,7 +5311,7 @@ snapshots:
 
   semver@7.8.5: {}
 
-  sharp@0.35.4(@types/node@26.6.1):
+  sharp@0.35.4(@types/node@26.6.2):
     dependencies:
       '@img/colour': 1.1.0
       detect-libc: 2.1.2
@@ -5342,7 +5342,7 @@ snapshots:
       '@img/sharp-win32-arm64': 0.35.4
       '@img/sharp-win32-ia32': 0.35.4
       '@img/sharp-win32-x64': 0.35.4
-      '@types/node': 26.6.1
+      '@types/node': 26.6.2
 
   shebang-command@2.0.0:
     dependencies:
@@ -5373,7 +5373,7 @@ snapshots:
 
   speedline-core@1.4.3:
     dependencies:
-      '@types/node': 26.6.1
+      '@types/node': 26.6.2
       image-ssim: 0.2.0
       jpeg-js: 0.4.4
 
