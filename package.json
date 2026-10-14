@@ -57,7 +57,7 @@
 		"esbuild": "^0.28.2",
 		"html-minifier-terser": "^7.2.0",
 		"npm-run-all2": "^9.0.3",
-		"postcss": "^8.5.29",
+		"postcss": "^8.5.30",
 		"postcss-cli": "^12.0.0",
 		"postcss-import": "^17.0.0",
 		"prismjs": "^1.30.0",
@@ -75,7 +75,7 @@
 		"probe-image-size": "^7.4.0",
 		"sharp": "^0.35.5",
 		"slug": "^12.0.1",
-		"uuid": "^14.0.2"
+		"uuid": "^14.0.3"
 	},
-	"packageManager": "pnpm@12.10.1+sha512.ba40a37eb1a370d60fea8c4cf1d364c13bcccef518e98ad2bcee954f539d38da37458e58261a3fa55e06523450ea0ffff9f497b135be41f2c15c1642bacace6c"
+	"packageManager": "pnpm@12.13.0+sha512.1e55719bf26e809dce5c5084fdebaa64efb3da9038ae5d68a9f8a68311f1a45841c8c3b76a37298c3b66f6bcc80409a9b7f33c78a7168a3e90fb65a5d8235ae4"
 }
