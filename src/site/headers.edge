@@ -3,21 +3,20 @@ permalink: '_headers'
 ---
 
 /feed.xml
-  content-type: application/rss+xml; charset=UTF-8
+  content-type: application/atom+xml; charset=UTF-8
 
 /.well-known/webfinger
   content-type: application/jrd+json; charset=UTF-8
 
-# These are default recommended security headers, for Netlify
-# https://www.netlify.com/docs/headers-and-basic-auth/
+# Security headers, for Netlify
+# https://docs.netlify.com/routing/headers/
 
 /*
-  Referrer-Policy: no-referrer-when-downgrade
+  Referrer-Policy: strict-origin-when-cross-origin
   Strict-Transport-Security: max-age=31536000
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Xss-Protection:	1; mode=block
-  Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
 
 # Image derivatives have content-hashed filenames, safe to cache forever
 /img/*
@@ -26,6 +25,4 @@ permalink: '_headers'
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-# CSS/JS are not fingerprinted, so use a short cache with background revalidation
-/assets/*
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+# /assets/* caching is configured in netlify.toml

@@ -1,46 +1,8 @@
-{{-- Compute SEO variables with defaults --}}
-@let(seoDescription = meta_description || description || site.description)
-@let(seoImageData = heroImage ? heroImage.social : { url: site.cover_image, width: 1200, height: 630 })
-@let(seoTwitterCreator = site.twitter)
-@let(seoCardType = 'summary_large_image')
-@let(seoArticleAuthor = site.author ? site.author.url : site.url)
-@let(seoAuthorLink = site.author ? site.author.url : '')
-
-{{-- Process feature_image through eleventy-img for correct social URL --}}
-@if(feature_image)
-  @assign(seoImageData = await socialImage(feature_image))
-@end
-
-@let(seoImage = site.url + seoImageData.url)
-@let(seoImageWidth = seoImageData.width)
-@let(seoImageHeight = seoImageData.height)
-
-{{-- Override for post/page with feature_image --}}
-@if(feature_image)
-  @assign(seoDescription = meta_description || description || site.description)
-  @assign(seoArticleAuthor = site.url)
-@end
 <!DOCTYPE html>
 <html lang="{{ site.lang }}" class="no-js">
 
 <head>
-  <title>
-@if(title)~
-{{ title }} – {{ site.title }}
-@else~
-{{ site.title }} – {{ site.description }}
-@end~
-  </title>
-  <meta name="description" content="{{ seoDescription }}">
-  <meta name="robots" content="index,follow">
-  <meta name="generator" content="Eleventy">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="canonical" href="{{ site.url + page.url }}" />
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}"
-    href="{{ site.url }}/feed.xml" />
-  @if(site.icon)
-  <link rel="icon" type="image/x-icon" href="{{ site.icon }}" />
-  @end
+  @include('partials/head')
 
   {{-- Resource hints for better performance --}}
   <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -59,48 +21,6 @@
     fetchpriority="high"
     imagesrcset="{{ heroImage.preload.imagesrcset }}"
     imagesizes="{{ heroImage.sizes }}">
-  @end
-
-  @let(displayTitle = title ? title + ' – ' + site.title : site.title)
-  @let(seoImageAlt = title || site.title)
-  @let(seoOgType = date ? 'article' : 'website')
-
-  <!-- Open Graph -->
-  <meta property="og:url" content="{{ site.url + page.url }}">
-  <meta property="og:type" content="{{ seoOgType }}">
-  <meta property="og:title" content="{{ displayTitle }}">
-  <meta property="og:description" content="{{ seoDescription }}">
-  <meta property="og:image" content="{{ seoImage }}">
-  <meta property="og:image:alt" content="{{ seoImageAlt }}">
-  <meta property="og:image:width" content="{{ seoImageWidth }}">
-  <meta property="og:image:height" content="{{ seoImageHeight }}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:locale" content="{{ site.lang }}">
-  <meta property="article:author" content="{{ seoArticleAuthor }}">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="{{ seoCardType }}">
-  <meta name="twitter:site" content="{{ site.twitter }}">
-  <meta name="twitter:creator" content="{{ seoTwitterCreator }}">
-  <meta name="twitter:title" content="{{ displayTitle }}">
-  <meta name="twitter:description" content="{{ seoDescription }}">
-  <meta name="twitter:image" content="{{ seoImage }}">
-  <meta name="twitter:image:alt" content="{{ seoImageAlt }}">
-
-  <!-- Schema -->
-  @if(seoAuthorLink)
-  <link rel="author" href="{{ seoAuthorLink }}">
-  @end
-  <link rel="publisher" href="{{ site.url }}">
-  <meta itemprop="name" content="{{ displayTitle }}">
-  <meta itemprop="description" content="{{ seoDescription }}">
-  <meta itemprop="image" content="{{ seoImage }}">
-
-  {{-- JSON-LD structured data for blog posts --}}
-  @if(date && tags && tags.includes('posts'))
-  <script type="application/ld+json">
-  {{{ jsonLdArticle({ title, description: seoDescription, image: seoImage, datePublished: htmlDateString(date), author: site.author, publisher: { name: site.title, logoUrl: site.url + site.logo }, pageUrl: site.url + page.url }) }}}
-  </script>
   @end
 
   <link rel="stylesheet" href="{{ assets.css }}" />
