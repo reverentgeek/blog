@@ -4,5 +4,3 @@ export function getId() {
 	return v1().replace( /-/g, "" );
 }
 
-console.log( getId() );
-

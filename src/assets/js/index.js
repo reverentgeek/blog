@@ -32,12 +32,19 @@
 	let lightboxCounter = null;
 	let currentImages = [];
 	let currentIndex = 0;
+	let lastTrigger = null;
+	let inertSiblings = [];
 
 	function createLightbox() {
 		if ( lightbox ) return;
 
 		lightbox = document.createElement( "div" );
 		lightbox.className = "lightbox";
+		lightbox.setAttribute( "role", "dialog" );
+		lightbox.setAttribute( "aria-modal", "true" );
+		lightbox.setAttribute( "aria-label", "Image viewer" );
+		// Hidden with opacity, so keep the buttons out of the tab order until opened
+		lightbox.inert = true;
 		lightbox.innerHTML = `
       <button class="lightbox-close" aria-label="Close">&times;</button>
       <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
@@ -45,7 +52,7 @@
         <img src="" alt="">
       </div>
       <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
-      <div class="lightbox-counter"></div>
+      <div class="lightbox-counter" aria-live="polite"></div>
     `;
 		document.body.appendChild( lightbox );
 
@@ -72,24 +79,44 @@
 		if ( e.key === "ArrowRight" ) showNext();
 	}
 
-	function openLightbox( images, index ) {
+	function openLightbox( images, index, trigger ) {
 		createLightbox();
 		currentImages = images;
 		currentIndex = index;
+		lastTrigger = trigger;
 		showImage();
+
+		// Make the rest of the page inert so focus stays inside the lightbox
+		inertSiblings = Array.from( document.body.children ).filter( el => el !== lightbox && !el.inert );
+		inertSiblings.forEach( ( el ) => {
+			el.inert = true;
+		} );
+
+		lightbox.inert = false;
 		lightbox.classList.add( "active" );
 		document.body.style.overflow = "hidden";
+		lightbox.querySelector( ".lightbox-close" ).focus();
 	}
 
 	function closeLightbox() {
-		if ( !lightbox ) return;
+		if ( !lightbox || !lightbox.classList.contains( "active" ) ) return;
 		lightbox.classList.remove( "active" );
+		lightbox.inert = true;
 		document.body.style.overflow = "";
+
+		inertSiblings.forEach( ( el ) => {
+			el.inert = false;
+		} );
+		inertSiblings = [];
+
+		if ( lastTrigger ) lastTrigger.focus();
 	}
 
 	function showImage() {
 		if ( !lightboxImg || currentImages.length === 0 ) return;
-		lightboxImg.src = currentImages[currentIndex];
+		const { src, alt } = currentImages[currentIndex];
+		lightboxImg.src = src;
+		lightboxImg.alt = alt;
 		lightboxCounter.textContent = `${ currentIndex + 1 } / ${ currentImages.length }`;
 	}
 
@@ -118,17 +145,17 @@
 					if ( img.srcset ) {
 						const srcsetParts = img.srcset.split( "," ).map( s => s.trim() );
 						const lastSrc = srcsetParts[srcsetParts.length - 1];
-						return lastSrc.split( " " )[0]; // Get URL without size descriptor
+						return { src: lastSrc.split( " " )[0], alt: img.alt }; // URL without size descriptor
 					}
-					return img.src;
+					return { src: img.src, alt: img.alt };
 				}
-				return link.href;
+				return { src: link.href, alt: "" };
 			} );
 
 			links.forEach( ( link, index ) => {
 				link.addEventListener( "click", ( e ) => {
 					e.preventDefault();
-					openLightbox( images, index );
+					openLightbox( images, index, link );
 				} );
 			} );
 		} );

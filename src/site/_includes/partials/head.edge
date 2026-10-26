@@ -14,6 +14,7 @@
 @let(displayTitle = title ? title + ' – ' + site.title : site.title)
 @let(seoImageAlt = title || site.title)
 @let(seoOgType = date ? 'article' : 'website')
+  <meta charset="utf-8">
   <title>
 @if(title)~
 {{ title }} – {{ site.title }}
@@ -24,7 +25,7 @@
   <meta name="description" content="{{ seoDescription }}">
   <meta name="robots" content="index,follow">
   <meta name="generator" content="Eleventy">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="{{ site.url + page.url }}" />
   <link rel="alternate" type="application/atom+xml" title="Atom Feed for {{ site.title }}"
     href="{{ site.url }}/feed.xml" />
@@ -42,7 +43,7 @@
   <meta property="og:image:width" content="{{ seoImageData.width }}">
   <meta property="og:image:height" content="{{ seoImageData.height }}">
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:locale" content="{{ site.lang }}">
+  <meta property="og:locale" content="{{ site.locale }}">
   <meta property="article:author" content="{{ seoArticleAuthor }}">
 
   <!-- Twitter Card -->
@@ -58,10 +59,6 @@
   @if(seoAuthorLink)
   <link rel="author" href="{{ seoAuthorLink }}">
   @end
-  <link rel="publisher" href="{{ site.url }}">
-  <meta itemprop="name" content="{{ displayTitle }}">
-  <meta itemprop="description" content="{{ seoDescription }}">
-  <meta itemprop="image" content="{{ seoImage }}">
 
   {{-- JSON-LD structured data for blog posts --}}
   @if(date && tags && tags.includes('posts'))

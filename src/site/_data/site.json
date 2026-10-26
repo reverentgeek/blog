@@ -14,11 +14,12 @@
 		"url": "https://reverentgeek.com/about/"
 	},
 	"logo": "/content/images/rg-sticker-circle.png",
-	"icon": "https://reverentgeek.com/favicon.ico",
+	"icon": "/favicon.ico",
 	"cover_image": "/content/images/rg-banner-2024-min.png",
 	"twitter": "@reverentgeek",
 	"kofi": "https://ko-fi.com/reverentgeek",
 	"lang": "en",
+	"locale": "en_US",
 	"timezone": "America/New_York",
 	"navigation": [
 		{

@@ -1,11 +1,13 @@
 ---
-title: Home
 layout: layouts/default.edge
 pagination:
   data: collections.posts
   size: 10
   alias: posts
   reverse: true
+eleventyComputed:
+  title: '{{ pagination.pageNumber ? "Posts, Page " + (pagination.pageNumber + 1) : "Home" }}'
+  description: '{{ pagination.pageNumber ? site.description + ". Page " + (pagination.pageNumber + 1) + " of " + pagination.pages.length + "." : "" }}'
 ---
 
     {{-- Page 1 only — pages 2+ are just more of the post list. --}}
