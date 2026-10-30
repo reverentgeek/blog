@@ -69,7 +69,7 @@
 		"eslint": "^10.13.0",
 		"eslint-config-reverentgeek": "^7.1.25",
 		"jimp": "^1.6.1",
-		"lighthouse": "^13.5.0",
+		"lighthouse": "^13.6.0",
 		"markdownlint-cli": "~0.50.0",
 		"netlify-plugin-cache": "^1.0.3",
 		"probe-image-size": "^7.5.0",
