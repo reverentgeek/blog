@@ -187,8 +187,8 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1(supports-color@8.1.1)
       eleventy-plugin-edgejs:
-        specifier: ^1.1.29
-        version: 1.1.29(@11ty/eleventy@4.0.0-alpha.10)
+        specifier: ^1.1.30
+        version: 1.1.30(@11ty/eleventy@4.0.0-alpha.10)
       esbuild:
         specifier: ^0.28.2
         version: 0.28.2
@@ -224,8 +224,8 @@ importers:
         specifier: ^10.13.0
         version: 10.13.0(jiti@2.7.0)(supports-color@8.1.1)
       eslint-config-reverentgeek:
-        specifier: ^7.1.25
-        version: 7.1.25(eslint@10.13.0(jiti@2.7.0)(supports-color@8.1.1))
+        specifier: ^7.1.26
+        version: 7.1.26(eslint@10.13.0(jiti@2.7.0)(supports-color@8.1.1))
       jimp:
         specifier: ^1.6.1
         version: 1.6.1(supports-color@8.1.1)
@@ -1531,8 +1531,8 @@ packages:
   eleventy-plugin-broken-links@2.2.1:
     resolution: {integrity: sha512-2u1kzt7kuA9mryFa3U+hnO4J9ZUHZlfwpTXA9oB9Z/rKmZ1KXN098shWJCcYlEncg0Mky80I0iPhNcZw6/FKOg==}
 
-  eleventy-plugin-edgejs@1.1.29:
-    resolution: {integrity: sha512-PpjtO7T8DQc4RppjKpQj/N9NalE1eMPyku6VQbyB02bcRDDUdEhG/PouBoP0iBkqTppowQnnGIn23A4qx7CxTw==}
+  eleventy-plugin-edgejs@1.1.30:
+    resolution: {integrity: sha512-46P/S1Jp/qrREQ0De1fI4f9ztTrVcN8utcF/MNo+qastHfXejlTsrx5sSTPyGY/kPPPsUzFAVszAYGxqhgznSA==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@11ty/eleventy': ^3.0.0 || ^4.0.0
@@ -1598,8 +1598,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-reverentgeek@7.1.25:
-    resolution: {integrity: sha512-b1O2WUhq93MQej1+RyL1KOR9eC+NKq7hmeqPLaVNqrPD0D9dyh7BWRNfVfsSUxldqVyXYn4F1fy+AQpadngPnA==}
+  eslint-config-reverentgeek@7.1.26:
+    resolution: {integrity: sha512-43k/7mNfxfk14nh6OkhXsSv+sOLsHjRZLAeu+d7jNUSCVwuW2fDsBkd/rjnwxyH2aIZxLnJpwP62ZKJlws+cJw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       eslint: '>=10.0.0'
@@ -4155,7 +4155,7 @@ snapshots:
       - encoding
       - supports-color
 
-  eleventy-plugin-edgejs@1.1.29(@11ty/eleventy@4.0.0-alpha.10):
+  eleventy-plugin-edgejs@1.1.30(@11ty/eleventy@4.0.0-alpha.10):
     dependencies:
       '@11ty/eleventy': 4.0.0-alpha.10
       edge.js: 6.5.1
@@ -4228,7 +4228,7 @@ snapshots:
       eslint: 10.13.0(jiti@2.7.0)(supports-color@8.1.1)
       semver: 7.8.5
 
-  eslint-config-reverentgeek@7.1.25(eslint@10.13.0(jiti@2.7.0)(supports-color@8.1.1)):
+  eslint-config-reverentgeek@7.1.26(eslint@10.13.0(jiti@2.7.0)(supports-color@8.1.1)):
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.13.0(jiti@2.7.0)(supports-color@8.1.1))
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.13.0(jiti@2.7.0)(supports-color@8.1.1))
