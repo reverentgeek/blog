@@ -66,8 +66,8 @@
 	},
 	"devDependencies": {
 		"commander": "^15.0.0",
-		"eslint": "^10.13.0",
-		"eslint-config-reverentgeek": "^7.1.26",
+		"eslint": "^10.14.0",
+		"eslint-config-reverentgeek": "^7.1.27",
 		"jimp": "^1.6.1",
 		"lighthouse": "^13.6.0",
 		"markdownlint-cli": "~0.50.0",
