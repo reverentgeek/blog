@@ -36,8 +36,10 @@ jobs:
           path: .cache/ssqch-src
       - id: ssqch
         run: echo "sha=$(git -C .cache/ssqch-src rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      # Caches are saved as soon as their step succeeds, not at the end of the
+      # job, so a failed deploy doesn't throw away a compile or image encode.
       - id: ssqch-cache
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: .cache/bin/reverentgeek
           key: ssqch-${{ runner.os }}-${{ steps.ssqch.outputs.sha }}
@@ -46,16 +48,23 @@ jobs:
           cargo build --release --locked -p reverentgeek --manifest-path .cache/ssqch-src/Cargo.toml
           mkdir -p .cache/bin
           cp .cache/ssqch-src/target/release/reverentgeek .cache/bin/
+      - if: steps.ssqch-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/bin/reverentgeek
+          key: ${{ steps.ssqch-cache.outputs.cache-primary-key }}
 
       # ---- Responsive images: restored so warm builds encode nothing. The key
       # changes only when a source image changes, so unchanged pushes don't
       # re-upload the cache.
-      - uses: actions/cache@v4
+      - id: img-cache
+        uses: actions/cache/restore@v4
         with:
           path: dist/img
           key: img-v1-${{ hashFiles('src/**/*.jpg', 'src/**/*.jpeg', 'src/**/*.png', 'src/**/*.gif', 'src/**/*.webp', 'src/**/*.svg') }}
           restore-keys: img-v1-
-      - uses: actions/cache@v4
+      - id: tools-cache
+        uses: actions/cache/restore@v4
         with:
           path: .cache/tools
           key: tools-${{ runner.os }}-${{ hashFiles('scripts/build-native.sh') }}
@@ -65,11 +74,24 @@ jobs:
         env:
           SSQCH_BIN: .cache/bin/reverentgeek
 
+      - if: steps.img-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: dist/img
+          key: ${{ steps.img-cache.outputs.cache-primary-key }}
+      - if: steps.tools-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/tools
+          key: ${{ steps.tools-cache.outputs.cache-primary-key }}
+
       - name: Smoke test
         run: node --test test/smoke.test.js
 
+      # --no-build: the site is already built. Without it, netlify-cli runs
+      # the netlify.toml build (pnpm run build and its plugins) first.
       - name: Deploy to Netlify
-        run: npx --yes "netlify-cli@$NETLIFY_CLI_VERSION" deploy --prod --dir dist --message "$GITHUB_SHA"
+        run: npx --yes "netlify-cli@$NETLIFY_CLI_VERSION" deploy --prod --no-build --dir dist --message "$GITHUB_SHA"
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
