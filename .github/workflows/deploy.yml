@@ -1,0 +1,75 @@
+# Build with SiteSquatch (no Node toolchain) and deploy the output to Netlify.
+#
+# Needs repository secrets:
+#   NETLIFY_AUTH_TOKEN  a Netlify personal access token
+#   NETLIFY_SITE_ID     the site's API ID (Site configuration > General)
+#   SSQCH_TOKEN         read access to the sitesquatch repo (only if it becomes private)
+# and Netlify's own builds turned off (Site configuration > Build & deploy >
+# Continuous deployment > Build settings > Stop builds), so pushes don't build twice.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  SSQCH_REPO: reverentgeek/sitesquatch
+  NETLIFY_CLI_VERSION: "23"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      # ---- SiteSquatch: compiled only when the sitesquatch repo has new commits.
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ env.SSQCH_REPO }}
+          token: ${{ secrets.SSQCH_TOKEN || github.token }}
+          path: .cache/ssqch-src
+      - id: ssqch
+        run: echo "sha=$(git -C .cache/ssqch-src rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - id: ssqch-cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/bin/reverentgeek
+          key: ssqch-${{ runner.os }}-${{ steps.ssqch.outputs.sha }}
+      - if: steps.ssqch-cache.outputs.cache-hit != 'true'
+        run: |
+          cargo build --release --locked -p reverentgeek --manifest-path .cache/ssqch-src/Cargo.toml
+          mkdir -p .cache/bin
+          cp .cache/ssqch-src/target/release/reverentgeek .cache/bin/
+
+      # ---- Responsive images: restored so warm builds encode nothing. The key
+      # changes only when a source image changes, so unchanged pushes don't
+      # re-upload the cache.
+      - uses: actions/cache@v4
+        with:
+          path: dist/img
+          key: img-v1-${{ hashFiles('src/**/*.jpg', 'src/**/*.jpeg', 'src/**/*.png', 'src/**/*.gif', 'src/**/*.webp', 'src/**/*.svg') }}
+          restore-keys: img-v1-
+      - uses: actions/cache@v4
+        with:
+          path: .cache/tools
+          key: tools-${{ runner.os }}-${{ hashFiles('scripts/build-native.sh') }}
+
+      - name: Build
+        run: scripts/build-native.sh
+        env:
+          SSQCH_BIN: .cache/bin/reverentgeek
+
+      - name: Smoke test
+        run: node --test test/smoke.test.js
+
+      - name: Deploy to Netlify
+        run: npx --yes "netlify-cli@$NETLIFY_CLI_VERSION" deploy --prod --dir dist --message "$GITHUB_SHA"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
