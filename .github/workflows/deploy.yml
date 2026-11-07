@@ -44,6 +44,9 @@ jobs:
           path: .cache/bin/reverentgeek
           # Includes the features, so changing them rebuilds the binary.
           key: ssqch-${{ runner.os }}-avif-${{ steps.ssqch.outputs.sha }}
+      # The AVIF encoder (rav1e) needs the nasm assembler on x86_64 Linux.
+      - if: steps.ssqch-cache.outputs.cache-hit != 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq nasm
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
         run: |
           # AVIF: about a third smaller than WebP, slower to encode (once per image).
