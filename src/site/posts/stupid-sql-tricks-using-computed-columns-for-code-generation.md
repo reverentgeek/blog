@@ -93,4 +93,4 @@ PRINT N'';
 
 [View and download](https://gist.github.com/1336229) this script from GitHub.
 
-Granted, you could accomplish the same thing by moving the "templates" to the SELECT statement that inserts rows into the the table variable. I just felt especially nerdy using computed columns. I like being especially nerdy.
+Granted, you could accomplish the same thing by moving the "templates" to the SELECT statement that inserts rows into the table variable. I just felt especially nerdy using computed columns. I like being especially nerdy.
