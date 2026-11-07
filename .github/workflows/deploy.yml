@@ -26,10 +26,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+
+      # The newest Node.js LTS, for the smoke test and netlify-cli (the site
+      # build itself doesn't use Node). check-latest gets the newest patch.
+      - uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+          check-latest: true
 
       # ---- SiteSquatch: compiled only when the sitesquatch repo has new commits.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: ${{ env.SSQCH_REPO }}
           token: ${{ secrets.SSQCH_TOKEN || github.token }}
@@ -39,7 +46,7 @@ jobs:
       # Caches are saved as soon as their step succeeds, not at the end of the
       # job, so a failed deploy doesn't throw away a compile or image encode.
       - id: ssqch-cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .cache/bin/reverentgeek
           # Includes the features, so changing them rebuilds the binary.
@@ -54,7 +61,7 @@ jobs:
           mkdir -p .cache/bin
           cp .cache/ssqch-src/target/release/reverentgeek .cache/bin/
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .cache/bin/reverentgeek
           key: ${{ steps.ssqch-cache.outputs.cache-primary-key }}
@@ -63,7 +70,7 @@ jobs:
       # changes only when a source image changes, so unchanged pushes don't
       # re-upload the cache.
       - id: img-cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: dist/img
           # v2: adds AVIF. Falling back to the v1 (WebP/JPEG) cache means only
@@ -73,7 +80,7 @@ jobs:
             img-v2-
             img-v1-
       - id: tools-cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .cache/tools
           key: tools-${{ runner.os }}-${{ hashFiles('scripts/build-native.sh') }}
@@ -84,12 +91,12 @@ jobs:
           SSQCH_BIN: .cache/bin/reverentgeek
 
       - if: steps.img-cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: dist/img
           key: ${{ steps.img-cache.outputs.cache-primary-key }}
       - if: steps.tools-cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .cache/tools
           key: ${{ steps.tools-cache.outputs.cache-primary-key }}
