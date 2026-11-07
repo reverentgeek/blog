@@ -42,10 +42,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: .cache/bin/reverentgeek
-          key: ssqch-${{ runner.os }}-${{ steps.ssqch.outputs.sha }}
+          # Includes the features, so changing them rebuilds the binary.
+          key: ssqch-${{ runner.os }}-avif-${{ steps.ssqch.outputs.sha }}
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
         run: |
-          cargo build --release --locked -p reverentgeek --manifest-path .cache/ssqch-src/Cargo.toml
+          # AVIF: about a third smaller than WebP, slower to encode (once per image).
+          cargo build --release --locked -p reverentgeek --features avif --manifest-path .cache/ssqch-src/Cargo.toml
           mkdir -p .cache/bin
           cp .cache/ssqch-src/target/release/reverentgeek .cache/bin/
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
@@ -61,8 +63,12 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: dist/img
-          key: img-v1-${{ hashFiles('src/**/*.jpg', 'src/**/*.jpeg', 'src/**/*.png', 'src/**/*.gif', 'src/**/*.webp', 'src/**/*.svg') }}
-          restore-keys: img-v1-
+          # v2: adds AVIF. Falling back to the v1 (WebP/JPEG) cache means only
+          # the AVIF files are encoded once, then saved under v2.
+          key: img-v2-${{ hashFiles('src/**/*.jpg', 'src/**/*.jpeg', 'src/**/*.png', 'src/**/*.gif', 'src/**/*.webp', 'src/**/*.svg') }}
+          restore-keys: |
+            img-v2-
+            img-v1-
       - id: tools-cache
         uses: actions/cache/restore@v4
         with:
