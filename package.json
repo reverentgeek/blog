@@ -51,7 +51,7 @@
 		"@11ty/eleventy": "4.0.0-alpha.10",
 		"@11ty/eleventy-img": "^7.1.1",
 		"@11ty/eleventy-plugin-rss": "^3.1.0",
-		"@tailwindcss/postcss": "^4.3.4",
+		"@tailwindcss/postcss": "^4.3.5",
 		"eleventy-plugin-broken-links": "^2.2.1",
 		"eleventy-plugin-edgejs": "^1.1.31",
 		"esbuild": "^0.28.2",
@@ -62,10 +62,10 @@
 		"postcss-import": "^17.0.1",
 		"prismjs": "^1.30.0",
 		"rimraf": "^6.1.4",
-		"tailwindcss": "^4.3.4"
+		"tailwindcss": "^4.3.5"
 	},
 	"devDependencies": {
-		"commander": "^15.0.0",
+		"commander": "^15.1.0",
 		"eslint": "^10.14.0",
 		"eslint-config-reverentgeek": "^7.1.27",
 		"jimp": "^1.6.1",
