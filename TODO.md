@@ -27,7 +27,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] Cache `dist/img` and `.cache/ssqch` with `netlify-plugin-cache`.
 - [x] Check the cold-cache build time against Netlify's build timeout: the first Netlify build (2026-11-08, deploy `6af12456`) took 259 s and published fine.
 - [x] Netlify's builds are back on, and `.github/workflows/deploy.yml` is deleted.
-- [ ] Delete the `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` repository secrets (and `SSQCH_TOKEN`, if it was ever set), and revoke the personal access token behind `NETLIFY_AUTH_TOKEN` in Netlify.
+- [x] Delete the `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` repository secrets (and `SSQCH_TOKEN`, if it was ever set), and revoke the personal access token behind `NETLIFY_AUTH_TOKEN` in Netlify.
 - [x] Delete `scripts/build-native.sh` (only the GitHub deploy used it). That also settles two old items: there's one CSS pipeline (PostCSS and esbuild from `package.json`), and no Tailwind version pin to keep in sync with `package.json`.
 - [x] Update `CLAUDE.md` for the Netlify build, and `scripts/ssqch.sh`'s "not found" hint to point at the install script.
 
