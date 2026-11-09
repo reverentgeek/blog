@@ -39,6 +39,15 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [ ] **Needs ssqch:** built-in link checker. Turn it on for production builds. Use `lychee` (locally or in CI) for external links if those matter.
 - [ ] Compare AVIF quality. ssqch encodes with ravif at speed 8; the old Eleventy build used libaom at effort 4. Total sizes are about the same, but quality hasn't been compared. Tune `avifSpeed` / `avifQuality` if needed, keeping Netlify's build time in mind.
 
+## Site quality (blog only)
+
+- [ ] Review the Lighthouse report in `reports/report.html` (gitignored, so local only; mobile, homepage, Lighthouse 13.6, run 2026-11-09 before the ssqch 0.2.2 deploy; regenerate with `pnpm run test:lighthouse`). Scores: Performance 86, Accessibility 96, Best Practices 100, SEO 100. What it flags:
+  - Largest Contentful Paint 4.3 s (and Time to Interactive 4.3 s).
+  - Render-blocking requests (estimated 170 ms savings) and the network dependency tree.
+  - Unused JavaScript (estimated 72 KiB).
+  - Text without enough color contrast (the Accessibility deduction).
+  - Image delivery (estimated 12 KiB).
+
 ## Output differences from the old Eleventy build
 
 Nothing has to match the old build anymore. The sitesquatch TODO fixes the ones that are wrong (Markdown leaving `"` unescaped, the minifier not shortening attribute values). Kept on purpose:
