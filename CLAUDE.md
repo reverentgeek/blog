@@ -28,7 +28,7 @@ The `<head>` SEO and social metadata lives in `src/site/_includes/partials/head.
 
 ## Assets
 
-Production builds fingerprint CSS and JS (`scripts/hash-assets.js` writes `.asset-manifest.json`). Reference them in templates with `{{ assets.css }}`, `{{ assets.js }}`, and `{{ assets.prism }}`, never hard-coded `/assets/index.css` paths. `pco.js` is the exception: it keeps a stable name because `src/site/pages/pco.md` imports it directly.
+Production builds fingerprint CSS and JS: the `ssqch/assets` plugin (in `ssqch.config.js`) renames `dist/assets/index.css`, `index.js` and `prism.js` to content-hashed names and rewrites every `href` and `src` that points at them. In templates, link the plain paths (`/assets/index.css`); `ssqch serve` leaves them plain. `pco.js` keeps a stable name because `src/site/pages/pco.md` imports it directly, so it isn't in the plugin's list.
 
 ## Image Pipeline
 

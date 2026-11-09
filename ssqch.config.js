@@ -1,4 +1,5 @@
 import { defineConfig } from "ssqch";
+import { assetsPlugin } from "ssqch/assets";
 import { imagePlugin } from "ssqch/image";
 import { minifyPlugin } from "ssqch/minify";
 import { rssPlugin } from "ssqch/rss";
@@ -32,6 +33,10 @@ export default defineConfig( ( { env } ) => ( {
 		// Responsive <picture> markup for every <img>. Derivatives are cached in dist/img/
 		// (via netlify-plugin-cache), and scripts/prune-images.js removes stale ones.
 		imagePlugin( imageOptions ),
-		env === "production" && minifyPlugin()
+		env === "production" && minifyPlugin(),
+		// Production builds rename the CSS and JS (written by PostCSS and esbuild) to
+		// content-hashed names and rewrite the links to them. pco.js keeps its name,
+		// because src/site/pages/pco.md imports it by path.
+		assetsPlugin( { files: [ "/assets/index.css", "/assets/index.js", "/assets/prism.js" ] } )
 	]
 } ) );
