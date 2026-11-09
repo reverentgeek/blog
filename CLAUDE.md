@@ -16,7 +16,7 @@ Standard scripts are in `package.json`. The non-obvious ones:
 
 ## Build
 
-The site is built by [SiteSquatch](https://github.com/reverentgeek/sitesquatch) (`ssqch`). `ssqch.config.js` is the site config (`defineConfig` from `ssqch`): directories, passthrough copies, filters (`src/utils/site/filters.js`), collections (`src/utils/site/collections.js`) and the built-in `ssqch/rss`, `ssqch/image` and `ssqch/minify` plugins. It runs on ssqch's embedded JavaScript engine, so `ssqch/*` imports come from the binary, not `node_modules`. `scripts/ssqch.sh` finds the binary (`$SSQCH_BIN`, then `ssqch` on PATH, then `../ssqch/target/release/ssqch`). The production deploy (`.github/workflows/deploy.yml`) compiles `ssqch` from the sitesquatch repo at the commit in `SSQCH_REF` and runs `scripts/build-native.sh`.
+The site is built by [SiteSquatch](https://github.com/reverentgeek/sitesquatch) (`ssqch`). `ssqch.config.js` is the site config (`defineConfig` from `ssqch`): directories, passthrough copies, filters (`src/utils/site/filters.js`), collections (`src/utils/site/collections.js`) and the built-in `ssqch/rss`, `ssqch/image` and `ssqch/minify` plugins. It runs on ssqch's embedded JavaScript engine, so `ssqch/*` imports come from the binary, not `node_modules`. `scripts/ssqch.sh` finds the binary (`$SSQCH_BIN`, then `ssqch` on PATH, then `../ssqch/target/release/ssqch`). The production deploy (`.github/workflows/deploy.yml`) installs the prebuilt `ssqch` release named by `SSQCH_VERSION` and runs `scripts/build-native.sh`.
 
 `pnpm test` builds the site, then runs the smoke tests in `test/smoke.test.js`. `pnpm run test:lighthouse` audits the **production** site; use `test:lighthouse:local` for a local build.
 

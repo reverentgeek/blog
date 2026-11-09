@@ -3,7 +3,6 @@
 # Needs repository secrets:
 #   NETLIFY_AUTH_TOKEN  a Netlify personal access token
 #   NETLIFY_SITE_ID     the site's API ID (Site configuration > General)
-#   SSQCH_TOKEN         read access to the sitesquatch repo (only if it becomes private)
 # and Netlify's own builds turned off (Site configuration > Build & deploy >
 # Continuous deployment > Build settings > Stop builds), so pushes don't build twice.
 name: Deploy
@@ -18,10 +17,9 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  SSQCH_REPO: reverentgeek/sitesquatch
-  # The sitesquatch commit to build, pinned so a breaking ssqch change can't
+  # The SiteSquatch release to install, pinned so a breaking ssqch change can't
   # break a deploy. Bump it on purpose, after a local `pnpm test` passes.
-  SSQCH_REF: 8795067e9a3beca78d2a8bd435ff02b86e6fe490
+  SSQCH_VERSION: "0.2.0"
   NETLIFY_CLI_VERSION: "23"
 
 jobs:
@@ -38,37 +36,15 @@ jobs:
           node-version: lts/*
           check-latest: true
 
-      # ---- SiteSquatch: compiled only when SSQCH_REF changes.
-      - uses: actions/checkout@v7
-        with:
-          repository: ${{ env.SSQCH_REPO }}
-          ref: ${{ env.SSQCH_REF }}
-          token: ${{ secrets.SSQCH_TOKEN || github.token }}
-          path: .cache/ssqch-src
-      - id: ssqch
-        run: echo "sha=$(git -C .cache/ssqch-src rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      # Caches are saved as soon as their step succeeds, not at the end of the
-      # job, so a failed deploy doesn't throw away a compile or image encode.
-      - id: ssqch-cache
-        uses: actions/cache/restore@v6
-        with:
-          path: .cache/bin/ssqch
-          # Includes the features, so changing them rebuilds the binary.
-          key: ssqch-cli-${{ runner.os }}-avif-${{ steps.ssqch.outputs.sha }}
-      # The AVIF encoder (rav1e) needs the nasm assembler on x86_64 Linux.
-      - if: steps.ssqch-cache.outputs.cache-hit != 'true'
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq nasm
-      - if: steps.ssqch-cache.outputs.cache-hit != 'true'
+      # ---- SiteSquatch: the prebuilt release binary (static Linux x86_64, with
+      # AVIF). The installer checks the archive's SHA-256 checksum, and
+      # SSQCH_UNMANAGED_INSTALL puts the binary in .cache/bin without touching
+      # shell profiles.
+      - name: Install ssqch
         run: |
-          # AVIF: about a third smaller than WebP, slower to encode (once per image).
-          cargo build --release --locked -p ssqch --features avif --manifest-path .cache/ssqch-src/Cargo.toml
-          mkdir -p .cache/bin
-          cp .cache/ssqch-src/target/release/ssqch .cache/bin/
-      - if: steps.ssqch-cache.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v6
-        with:
-          path: .cache/bin/ssqch
-          key: ${{ steps.ssqch-cache.outputs.cache-primary-key }}
+          curl --proto '=https' --tlsv1.2 -fsSL "https://github.com/reverentgeek/sitesquatch/releases/download/v$SSQCH_VERSION/ssqch-installer.sh" \
+            | SSQCH_UNMANAGED_INSTALL=.cache/bin sh
+          .cache/bin/ssqch --version
 
       # ---- Responsive images: restored so warm builds encode nothing. The key
       # changes only when a source image changes, so unchanged pushes don't
