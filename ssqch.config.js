@@ -1,6 +1,7 @@
 import { defineConfig } from "ssqch";
 import { assetsPlugin } from "ssqch/assets";
 import { imagePlugin } from "ssqch/image";
+import { linksPlugin } from "ssqch/links";
 import { minifyPlugin } from "ssqch/minify";
 import { rssPlugin } from "ssqch/rss";
 
@@ -37,6 +38,9 @@ export default defineConfig( ( { env } ) => ( {
 		// Production builds rename the CSS and JS (written by PostCSS and esbuild) to
 		// content-hashed names and rewrite the links to them. pco.js keeps its name,
 		// because src/site/pages/pco.md imports it by path.
-		assetsPlugin( { files: [ "/assets/index.css", "/assets/index.js", "/assets/prism.js" ] } )
+		assetsPlugin( { files: [ "/assets/index.css", "/assets/index.js", "/assets/prism.js" ] } ),
+		// Every internal link and #anchor has to resolve; broken ones fail production
+		// builds (so a deploy never ships them) and are warnings in `pnpm run serve`.
+		linksPlugin()
 	]
 } ) );

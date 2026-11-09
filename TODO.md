@@ -16,7 +16,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] ESLint allows the `ssqch` modules (`allowModules` in `eslint.config.js`), since they're built into the binary.
 - [x] Eleventy wording removed from `package.json`, template comments and `scripts/hash-assets.js`; `README.md`, `CLAUDE.md` and `RECOMMENDATIONS.md` updated.
 - [x] The deploy builds `-p ssqch --features avif`, and `scripts/build-native.sh` runs `hash-assets.js` and `prune-images.js` around the site build (checked locally, smoke tests pass).
-- [x] The deploy is pinned: it installs the prebuilt sitesquatch release in `SSQCH_VERSION` (`0.2.3`) instead of compiling a pinned commit.
+- [x] The deploy is pinned: it installs the prebuilt sitesquatch release in `SSQCH_VERSION` (`0.2.5`) instead of compiling a pinned commit.
 - [x] Try live reload in `pnpm run serve`: post and CSS edits rebuild and reload (checked 2026-11-08).
 
 ## Step 2: back to Netlify builds
@@ -36,7 +36,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] **Needs ssqch:** color profile conversion, in ssqch 0.2.2. Display P3 and other non-sRGB images are converted to sRGB (39 of the build's 737 source images).
 - [x] The 4 HDR iPhone photos in `src/site/content/images/heavy-duty-roller-case-for-helix-stadium-xl/` are converted to sRGB (`sips -m ".../sRGB Profile.icc" -s formatOptions 90`), since ssqch can't convert their HDR profiles. Do the same for future HDR photos; ssqch warns about them.
 - [x] **Needs ssqch:** built-in asset fingerprinting, in ssqch 0.2.3 (`ssqch/assets`). `ssqch.config.js` lists `/assets/index.css`, `index.js` and `prism.js`; the layouts link plain paths; `scripts/hash-assets.js`, `src/site/_data/assets.js` and the `build:hash` script are gone.
-- [ ] **Needs ssqch:** built-in link checker (`ssqch/links`, done but not released yet). Run against the blog, it found 413 broken links on 8 pages: `/avatars/` (209), `/illustrations/` (77), `/sketch-notes/` (35), `/doodles/` (30), `/31-days-of-inspiration-january-2019/` (30), `/tech-humor/` (28) and 2 more. All of them link to full-size originals under `/content/images/` that the build never publishes, so they 404 on the live site. Decide how to fix them (publish the linked originals with a passthrough copy, or link to a large generated derivative instead), then add `linksPlugin()` to `ssqch.config.js` so production builds fail on new broken links.
+- [x] **Needs ssqch:** built-in link checker, in ssqch 0.2.5 (`linksPlugin()` in `ssqch.config.js`). The 413 broken gallery links (full-size originals under `/content/images/`) are fixed by 0.2.5 pointing links to local images at a generated copy: 17,423 links checked, 0 broken. Production builds now fail on a broken link.
 - [ ] Compare AVIF quality. ssqch encodes with ravif at speed 8; the old Eleventy build used libaom at effort 4. Total sizes are about the same, but quality hasn't been compared. Tune `avifSpeed` / `avifQuality` if needed, keeping Netlify's build time in mind.
 
 ## Site quality (blog only)

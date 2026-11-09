@@ -10,7 +10,7 @@
   NODE_VERSION = "24"
   # The SiteSquatch release to install. Bump it on purpose, after a local
   # `pnpm test` passes.
-  SSQCH_VERSION = "0.2.3"
+  SSQCH_VERSION = "0.2.5"
 
 # Image derivatives (dist/img) and ssqch's image-hash cache (.cache/ssqch)
 # carry over between builds, so a build with no new images encodes nothing.
