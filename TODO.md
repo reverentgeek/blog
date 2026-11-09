@@ -23,12 +23,12 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 
 **Needs ssqch:** "Netlify first" in the sitesquatch TODO: a Linux x86_64 release binary and an install script. Netlify has Node, so `pnpm run build` works there as it does locally, fingerprinting and image pruning included. Nothing else from ssqch is needed.
 
-- [ ] Set `netlify.toml`'s build command to install a pinned ssqch release, run `pnpm run build`, then `node --test test/smoke.test.js`, so a failing smoke test stops the deploy.
-- [ ] Cache `dist/img` and `.cache/ssqch` with `netlify-plugin-cache` (it only caches `dist/img` today).
+- [x] `netlify.toml`'s build command installs the pinned ssqch release (`SSQCH_VERSION`), runs `pnpm run build`, then `node --test test/smoke.test.js`, so a failing smoke test stops the deploy.
+- [x] Cache `dist/img` and `.cache/ssqch` with `netlify-plugin-cache`.
 - [ ] Check the cold-cache build time (about 3,200 image derivatives with AVIF) against Netlify's build timeout. The sitesquatch TODO has a matching item.
 - [ ] Turn Netlify's builds back on, then delete `.github/workflows/deploy.yml` and the `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` repository secrets (and `SSQCH_TOKEN`, which the deploy no longer uses, if it was ever set).
 - [ ] Delete `scripts/build-native.sh` (only the GitHub deploy uses it). That also settles two old items: there's one CSS pipeline (PostCSS and esbuild from `package.json`), and no Tailwind version pin to keep in sync with `package.json`.
-- [ ] Update the README and `CLAUDE.md` for the Netlify build, and `scripts/ssqch.sh`'s "not found" hint to point at the install script instead of `cargo install --path crates/ssqch`.
+- [x] Update `CLAUDE.md` for the Netlify build, and `scripts/ssqch.sh`'s "not found" hint to point at the install script.
 
 ## Step 3: ssqch features as they land
 
