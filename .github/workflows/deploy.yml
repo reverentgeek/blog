@@ -19,7 +19,7 @@ concurrency:
 env:
   # The SiteSquatch release to install, pinned so a breaking ssqch change can't
   # break a deploy. Bump it on purpose, after a local `pnpm test` passes.
-  SSQCH_VERSION: "0.2.0"
+  SSQCH_VERSION: "0.2.1"
   NETLIFY_CLI_VERSION: "23"
 
 jobs:
