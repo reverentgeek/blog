@@ -43,12 +43,10 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 
 - [x] Fix the 2 Dependabot alerts: `minimatch` (moderate, GHSA-g3hv-75wg-m249) and `katex` (low, GHSA-238p-pmpm-9mq7). Both come in through eslint and markdownlint-cli, whose latest versions still ask for vulnerable ranges, so `pnpm-workspace.yaml` overrides them to `^11.0.1` and `^0.18.2`. Remove those overrides once upstream catches up.
 
-- [ ] Review the Lighthouse report in `reports/report.html` (gitignored, so local only; mobile, homepage, Lighthouse 13.6, run 2026-11-09 before the ssqch 0.2.2 deploy; regenerate with `pnpm run test:lighthouse`). Scores: Performance 86, Accessibility 96, Best Practices 100, SEO 100. What it flags:
-  - Largest Contentful Paint 4.3 s (and Time to Interactive 4.3 s).
-  - Render-blocking requests (estimated 170 ms savings) and the network dependency tree.
-  - Unused JavaScript (estimated 72 KiB).
-  - Text without enough color contrast (the Accessibility deduction).
-  - Image delivery (estimated 12 KiB).
+- [x] Review the Lighthouse report. Rerun on the live homepage (mobile, Lighthouse 13.6, 2026-11-09, three runs; reports in `reports/live-*`, gitignored): Performance 93, 100, 100 (was 86), Largest Contentful Paint 1.9 s typical (was 4.3 s), Best Practices 100, SEO 100. Fixed the one Accessibility issue, the "Browse by topic" button's contrast (`.cta-button` from `blue-500`, 3.76:1, to `blue-600`, 5.26:1), so Accessibility is now 100. Left as they are, on purpose:
+  - Render-blocking CSS (about 150-180 ms for the 8 KB stylesheet). Inlining critical CSS would add build complexity for a small gain.
+  - Unused JavaScript (about 73 KB), all Google Analytics' `gtag.js`. It doesn't block anything (Total Blocking Time 0 ms); loading it later, a lighter analytics tool, or dropping it is a preference.
+  - Image delivery (about 12 KB for one homepage AVIF served a bit larger than shown).
 
 ## Output differences from the old Eleventy build
 
