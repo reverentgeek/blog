@@ -17,7 +17,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] Eleventy wording removed from `package.json`, template comments and `scripts/hash-assets.js`; `README.md`, `CLAUDE.md` and `RECOMMENDATIONS.md` updated.
 - [x] The deploy builds `-p ssqch --features avif`, and `scripts/build-native.sh` runs `hash-assets.js` and `prune-images.js` around the site build (checked locally, smoke tests pass).
 - [x] The deploy is pinned: it installs the prebuilt sitesquatch release in `SSQCH_VERSION` (`0.2.2`) instead of compiling a pinned commit.
-- [ ] Try live reload in `pnpm run serve` (template and CSS edits). The server starts and serves pages with the native config.
+- [x] Try live reload in `pnpm run serve`: post and CSS edits rebuild and reload (checked 2026-11-08).
 
 ## Step 2: back to Netlify builds
 
