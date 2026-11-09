@@ -16,7 +16,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] ESLint allows the `ssqch` modules (`allowModules` in `eslint.config.js`), since they're built into the binary.
 - [x] Eleventy wording removed from `package.json`, template comments and `scripts/hash-assets.js`; `README.md`, `CLAUDE.md` and `RECOMMENDATIONS.md` updated.
 - [x] The deploy builds `-p ssqch --features avif`, and `scripts/build-native.sh` runs `hash-assets.js` and `prune-images.js` around the site build (checked locally, smoke tests pass).
-- [x] The deploy is pinned: it installs the prebuilt sitesquatch release in `SSQCH_VERSION` (`0.2.1`) instead of compiling a pinned commit.
+- [x] The deploy is pinned: it installs the prebuilt sitesquatch release in `SSQCH_VERSION` (`0.2.2`) instead of compiling a pinned commit.
 - [ ] Try live reload in `pnpm run serve` (template and CSS edits). The server starts and serves pages with the native config.
 
 ## Step 2: back to Netlify builds
@@ -25,14 +25,16 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 
 - [x] `netlify.toml`'s build command installs the pinned ssqch release (`SSQCH_VERSION`), runs `pnpm run build`, then `node --test test/smoke.test.js`, so a failing smoke test stops the deploy.
 - [x] Cache `dist/img` and `.cache/ssqch` with `netlify-plugin-cache`.
-- [ ] Check the cold-cache build time (about 3,200 image derivatives with AVIF) against Netlify's build timeout. The sitesquatch TODO has a matching item.
-- [ ] Turn Netlify's builds back on, then delete `.github/workflows/deploy.yml` and the `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` repository secrets (and `SSQCH_TOKEN`, which the deploy no longer uses, if it was ever set).
-- [ ] Delete `scripts/build-native.sh` (only the GitHub deploy uses it). That also settles two old items: there's one CSS pipeline (PostCSS and esbuild from `package.json`), and no Tailwind version pin to keep in sync with `package.json`.
+- [x] Check the cold-cache build time against Netlify's build timeout: the first Netlify build (2026-11-08, deploy `6af12456`) took 259 s and published fine.
+- [x] Netlify's builds are back on, and `.github/workflows/deploy.yml` is deleted.
+- [ ] Delete the `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` repository secrets (and `SSQCH_TOKEN`, if it was ever set), and revoke the personal access token behind `NETLIFY_AUTH_TOKEN` in Netlify.
+- [x] Delete `scripts/build-native.sh` (only the GitHub deploy used it). That also settles two old items: there's one CSS pipeline (PostCSS and esbuild from `package.json`), and no Tailwind version pin to keep in sync with `package.json`.
 - [x] Update `CLAUDE.md` for the Netlify build, and `scripts/ssqch.sh`'s "not found" hint to point at the install script.
 
 ## Step 3: ssqch features as they land
 
-- [ ] **Needs ssqch:** color profile conversion. Check the 40 Display P3 JPEGs under `src/site/content/images` (including `rg-banner-2023.jpg`, the WordCamp Asia 2025 illustrations and the MVP heart photos), and the PNGs.
+- [x] **Needs ssqch:** color profile conversion, in ssqch 0.2.2. Display P3 and other non-sRGB images are converted to sRGB (39 of the build's 737 source images).
+- [x] The 4 HDR iPhone photos in `src/site/content/images/heavy-duty-roller-case-for-helix-stadium-xl/` are converted to sRGB (`sips -m ".../sRGB Profile.icc" -s formatOptions 90`), since ssqch can't convert their HDR profiles. Do the same for future HDR photos; ssqch warns about them.
 - [ ] **Needs ssqch:** built-in asset fingerprinting. Then remove `scripts/hash-assets.js`, `.asset-manifest.json`, `src/site/_data/assets.js` and the `build:hash` script, and update the "Assets" section of `CLAUDE.md`.
 - [ ] **Needs ssqch:** built-in link checker. Turn it on for production builds. Use `lychee` (locally or in CI) for external links if those matter.
 - [ ] Compare AVIF quality. ssqch encodes with ravif at speed 8; the old Eleventy build used libaom at effort 4. Total sizes are about the same, but quality hasn't been compared. Tune `avifSpeed` / `avifQuality` if needed, keeping Netlify's build time in mind.
