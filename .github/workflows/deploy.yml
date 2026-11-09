@@ -21,7 +21,7 @@ env:
   SSQCH_REPO: reverentgeek/sitesquatch
   # The sitesquatch commit to build, pinned so a breaking ssqch change can't
   # break a deploy. Bump it on purpose, after a local `pnpm test` passes.
-  SSQCH_REF: 76aae5fbdc7efcc6a6a1179404b935ac6591c57a
+  SSQCH_REF: 8795067e9a3beca78d2a8bd435ff02b86e6fe490
   NETLIFY_CLI_VERSION: "23"
 
 jobs:

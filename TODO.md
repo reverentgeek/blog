@@ -16,7 +16,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] ESLint allows the `ssqch` modules (`allowModules` in `eslint.config.js`), since they're built into the binary.
 - [x] Eleventy wording removed from `package.json`, template comments and `scripts/hash-assets.js`; `README.md`, `CLAUDE.md` and `RECOMMENDATIONS.md` updated.
 - [x] The deploy builds `-p ssqch --features avif`, and `scripts/build-native.sh` runs `hash-assets.js` and `prune-images.js` around the site build (checked locally, smoke tests pass).
-- [x] The deploy is pinned: `SSQCH_REF` in `.github/workflows/deploy.yml` is the sitesquatch commit that adds `defineConfig` (`76aae5f`). Push sitesquatch before this repository, or the deploy's checkout can't find that commit.
+- [x] The deploy is pinned: `SSQCH_REF` in `.github/workflows/deploy.yml` is a sitesquatch commit with `defineConfig` (`8795067`, which also adds the build summary). Push sitesquatch before this repository, or the deploy's checkout can't find that commit.
 - [ ] Try live reload in `pnpm run serve` (template and CSS edits). The server starts and serves pages with the native config.
 
 ## Step 2: back to Netlify builds
