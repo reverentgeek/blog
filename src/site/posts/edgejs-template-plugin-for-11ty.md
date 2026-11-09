@@ -6,7 +6,7 @@ description: "Ever felt frustrated with HTML templates like Pug, Handlebars, Liq
 meta_description: "Why I built an Edge.js template plugin for 11ty, how it works, and why JavaScript developers may prefer Edge.js over other template engines."
 date: 2026-03-02
 slug: edgejs-template-plugin-for-11ty
-templateEngineOverride: md
+render: md
 tags:
   - web-development
   - javascript
