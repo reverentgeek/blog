@@ -41,7 +41,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 
 ## Site quality (blog only)
 
-- [ ] GitHub reports 2 vulnerabilities in the blog's dependencies (1 moderate, 1 low): https://github.com/reverentgeek/blog/security/dependabot
+- [x] Fix the 2 Dependabot alerts: `minimatch` (moderate, GHSA-g3hv-75wg-m249) and `katex` (low, GHSA-238p-pmpm-9mq7). Both come in through eslint and markdownlint-cli, whose latest versions still ask for vulnerable ranges, so `pnpm-workspace.yaml` overrides them to `^11.0.1` and `^0.18.2`. Remove those overrides once upstream catches up.
 
 - [ ] Review the Lighthouse report in `reports/report.html` (gitignored, so local only; mobile, homepage, Lighthouse 13.6, run 2026-11-09 before the ssqch 0.2.2 deploy; regenerate with `pnpm run test:lighthouse`). Scores: Performance 86, Accessibility 96, Best Practices 100, SEO 100. What it flags:
   - Largest Contentful Paint 4.3 s (and Time to Interactive 4.3 s).

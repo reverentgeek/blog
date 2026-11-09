@@ -24,3 +24,7 @@ overrides:
   'file-type@>=13.0.0 <21.3.1': '>=21.3.1'
   'brace-expansion@<1.1.13': '>=1.1.13'
   'brace-expansion@>=2.0.0 <2.0.3': '>=2.0.3'
+  # GHSA-g3hv-75wg-m249 (eslint and markdownlint-cli still ask for minimatch 10)
+  'minimatch@>=7.0.0 <11.0.1': '^11.0.1'
+  # GHSA-238p-pmpm-9mq7 (markdownlint's math extension still asks for katex 0.16)
+  'katex@>=0.11.0 <0.18.2': '^0.18.2'
