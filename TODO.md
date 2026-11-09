@@ -36,10 +36,12 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] **Needs ssqch:** color profile conversion, in ssqch 0.2.2. Display P3 and other non-sRGB images are converted to sRGB (39 of the build's 737 source images).
 - [x] The 4 HDR iPhone photos in `src/site/content/images/heavy-duty-roller-case-for-helix-stadium-xl/` are converted to sRGB (`sips -m ".../sRGB Profile.icc" -s formatOptions 90`), since ssqch can't convert their HDR profiles. Do the same for future HDR photos; ssqch warns about them.
 - [x] **Needs ssqch:** built-in asset fingerprinting, in ssqch 0.2.3 (`ssqch/assets`). `ssqch.config.js` lists `/assets/index.css`, `index.js` and `prism.js`; the layouts link plain paths; `scripts/hash-assets.js`, `src/site/_data/assets.js` and the `build:hash` script are gone.
-- [ ] **Needs ssqch:** built-in link checker. Turn it on for production builds. Use `lychee` (locally or in CI) for external links if those matter.
+- [ ] **Needs ssqch:** built-in link checker (`ssqch/links`, done but not released yet). Run against the blog, it found 413 broken links on 8 pages: `/avatars/` (209), `/illustrations/` (77), `/sketch-notes/` (35), `/doodles/` (30), `/31-days-of-inspiration-january-2019/` (30), `/tech-humor/` (28) and 2 more. All of them link to full-size originals under `/content/images/` that the build never publishes, so they 404 on the live site. Decide how to fix them (publish the linked originals with a passthrough copy, or link to a large generated derivative instead), then add `linksPlugin()` to `ssqch.config.js` so production builds fail on new broken links.
 - [ ] Compare AVIF quality. ssqch encodes with ravif at speed 8; the old Eleventy build used libaom at effort 4. Total sizes are about the same, but quality hasn't been compared. Tune `avifSpeed` / `avifQuality` if needed, keeping Netlify's build time in mind.
 
 ## Site quality (blog only)
+
+- [ ] GitHub reports 2 vulnerabilities in the blog's dependencies (1 moderate, 1 low): https://github.com/reverentgeek/blog/security/dependabot
 
 - [ ] Review the Lighthouse report in `reports/report.html` (gitignored, so local only; mobile, homepage, Lighthouse 13.6, run 2026-11-09 before the ssqch 0.2.2 deploy; regenerate with `pnpm run test:lighthouse`). Scores: Performance 86, Accessibility 96, Best Practices 100, SEO 100. What it flags:
   - Largest Contentful Paint 4.3 s (and Time to Interactive 4.3 s).
