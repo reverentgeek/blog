@@ -4,7 +4,7 @@
 @let(seoArticleAuthor = site.author ? site.author.url : site.url)
 @let(seoAuthorLink = site.author ? site.author.url : '')
 
-{{-- Process feature_image through eleventy-img for correct social URL --}}
+{{-- Process feature_image through ssqch/image for correct social URL --}}
 @if(feature_image)
   @assign(seoImageData = await socialImage(feature_image))
   @assign(seoArticleAuthor = site.url)

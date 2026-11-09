@@ -2,7 +2,7 @@
 
 ## High Priority
 
-- [ ] Track Eleventy stable release. The project depends on `@11ty/eleventy` 4.0.0-alpha.10 (a pre-release); the latest stable is 3.1.7. Pin to a stable version once Eleventy 4 ships to avoid surprise breakage from alpha churn.
+- [x] ~~Track Eleventy stable release.~~ No longer applies: the site builds with SiteSquatch, and the Eleventy packages are gone.
 - [x] Remove unused `@11ty/eleventy-navigation` plugin. It has been removed from `.eleventy.js` and `package.json`.
 - [x] Remove dead filters: `cssmin` and `getReadingTime`. The unused filters were removed from `src/utils/eleventy/register-filters.js`, and the unused `clean-css` dependency was removed from `package.json`.
 - [x] Keep non-page files out of the sitemap. `404.html`, `.htaccess`, and `robots.txt` were listed in `sitemap.xml`; they are now excluded with `eleventyExcludeFromCollections`, and a smoke test guards against regressions.
@@ -42,7 +42,7 @@
 - [x] Add `Sitemap` directive to `robots.txt`. `src/site/robots.edge` now includes `Sitemap: https://reverentgeek.com/sitemap.xml`.
 - [x] Clean up `<head>` tags. Added `<meta charset="utf-8">` (pages relied on Netlify's HTTP header), set `og:locale` to `en_US`, and removed `shrink-to-fit=no`, unscoped `itemprop` tags, and `rel="publisher"`.
 - [x] Remove `.htaccess`. Netlify ignores it, and it was showing up in the sitemap.
-- [ ] Remove the stale `@11ty/eleventy@4.0.0-alpha.8` entry from `minimumReleaseAgeExclude` in `pnpm-workspace.yaml`. The project is on alpha.10.
+- [x] Remove the stale `@11ty/eleventy@4.0.0-alpha.8` entry from `minimumReleaseAgeExclude` in `pnpm-workspace.yaml`. Removed along with the Eleventy packages.
 
 ## Notes
 

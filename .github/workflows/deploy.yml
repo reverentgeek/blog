@@ -19,6 +19,9 @@ concurrency:
 
 env:
   SSQCH_REPO: reverentgeek/sitesquatch
+  # The sitesquatch commit to build, pinned so a breaking ssqch change can't
+  # break a deploy. Bump it on purpose, after a local `pnpm test` passes.
+  SSQCH_REF: 76aae5fbdc7efcc6a6a1179404b935ac6591c57a
   NETLIFY_CLI_VERSION: "23"
 
 jobs:
@@ -28,17 +31,18 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      # The newest Node.js LTS, for the smoke test and netlify-cli (the site
-      # build itself doesn't use Node). check-latest gets the newest patch.
+      # The newest Node.js LTS, for fingerprinting assets, pruning images, the
+      # smoke test and netlify-cli. check-latest gets the newest patch.
       - uses: actions/setup-node@v7
         with:
           node-version: lts/*
           check-latest: true
 
-      # ---- SiteSquatch: compiled only when the sitesquatch repo has new commits.
+      # ---- SiteSquatch: compiled only when SSQCH_REF changes.
       - uses: actions/checkout@v7
         with:
           repository: ${{ env.SSQCH_REPO }}
+          ref: ${{ env.SSQCH_REF }}
           token: ${{ secrets.SSQCH_TOKEN || github.token }}
           path: .cache/ssqch-src
       - id: ssqch
@@ -48,22 +52,22 @@ jobs:
       - id: ssqch-cache
         uses: actions/cache/restore@v6
         with:
-          path: .cache/bin/reverentgeek
+          path: .cache/bin/ssqch
           # Includes the features, so changing them rebuilds the binary.
-          key: ssqch-${{ runner.os }}-avif-${{ steps.ssqch.outputs.sha }}
+          key: ssqch-cli-${{ runner.os }}-avif-${{ steps.ssqch.outputs.sha }}
       # The AVIF encoder (rav1e) needs the nasm assembler on x86_64 Linux.
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq nasm
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
         run: |
           # AVIF: about a third smaller than WebP, slower to encode (once per image).
-          cargo build --release --locked -p reverentgeek --features avif --manifest-path .cache/ssqch-src/Cargo.toml
+          cargo build --release --locked -p ssqch --features avif --manifest-path .cache/ssqch-src/Cargo.toml
           mkdir -p .cache/bin
-          cp .cache/ssqch-src/target/release/reverentgeek .cache/bin/
+          cp .cache/ssqch-src/target/release/ssqch .cache/bin/
       - if: steps.ssqch-cache.outputs.cache-hit != 'true'
         uses: actions/cache/save@v6
         with:
-          path: .cache/bin/reverentgeek
+          path: .cache/bin/ssqch
           key: ${{ steps.ssqch-cache.outputs.cache-primary-key }}
 
       # ---- Responsive images: restored so warm builds encode nothing. The key
@@ -88,7 +92,7 @@ jobs:
       - name: Build
         run: scripts/build-native.sh
         env:
-          SSQCH_BIN: .cache/bin/reverentgeek
+          SSQCH_BIN: .cache/bin/ssqch
 
       - if: steps.img-cache.outputs.cache-hit != 'true'
         uses: actions/cache/save@v6

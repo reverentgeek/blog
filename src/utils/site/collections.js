@@ -33,8 +33,8 @@ function byNewestFirst( a, b ) {
 	return new Date( b.date ) - new Date( a.date );
 }
 
-// Neighbours of the current page within a collection. Eleventy hands collections
-// back oldest-first, so the preceding entry is the older post.
+// Neighbours of the current page within a collection. Collections are
+// oldest-first, so the preceding entry is the older post.
 export function adjacentPosts( collection, url ) {
 	const items = Array.isArray( collection ) ? collection : [];
 	const index = items.findIndex( item => item.url === url );
@@ -47,12 +47,12 @@ export function adjacentPosts( collection, url ) {
 	};
 }
 
-export function registerCollections( config ) {
+export const collections = {
 	// One entry per topic, newest posts first, most-used topics first.
-	config.addCollection( "topics", ( collectionApi ) => {
+	topics( pages ) {
 		const byTopic = new Map();
 
-		for ( const post of collectionApi.getFilteredByTag( "posts" ) ) {
+		for ( const post of pages.byTag( "posts" ) ) {
 			for ( const tag of topicsOnly( post.data.tags ) ) {
 				if ( !byTopic.has( tag ) ) {
 					byTopic.set( tag, [] );
@@ -70,13 +70,13 @@ export function registerCollections( config ) {
 				posts: posts.sort( byNewestFirst )
 			} ) )
 			.sort( ( a, b ) => b.count - a.count || a.label.localeCompare( b.label ) );
-	} );
+	},
 
 	// Posts grouped by year, newest year first, for the archive page.
-	config.addCollection( "postsByYear", ( collectionApi ) => {
+	postsByYear( pages ) {
 		const byYear = new Map();
 
-		for ( const post of [ ...collectionApi.getFilteredByTag( "posts" ) ].sort( byNewestFirst ) ) {
+		for ( const post of [ ...pages.byTag( "posts" ) ].sort( byNewestFirst ) ) {
 			const year = new Date( post.date ).getFullYear();
 			if ( !byYear.has( year ) ) {
 				byYear.set( year, [] );
@@ -87,5 +87,5 @@ export function registerCollections( config ) {
 		return [ ...byYear.entries() ]
 			.map( ( [ year, posts ] ) => ( { year, posts } ) )
 			.sort( ( a, b ) => b.year - a.year );
-	} );
-}
+	}
+};

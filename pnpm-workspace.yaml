@@ -3,8 +3,6 @@ allowBuilds:
   sharp: true
 minimumReleaseAgeExclude:
   - eslint-config-reverentgeek
-  - eleventy-plugin-edgejs
-  - '@11ty/eleventy@4.0.0-alpha.8'
   - '@pnpm/exe.android-arm64@12.10.0 || 12.10.1 || 12.11.2 || 12.15.0 || 12.16.0 || 12.16.1 || 12.18.0'
   - '@pnpm/exe.android-x64@12.10.0 || 12.10.1 || 12.11.2 || 12.15.0 || 12.16.0 || 12.16.1 || 12.18.0'
   - '@pnpm/exe.darwin-arm64@12.10.0 || 12.10.1 || 12.11.2 || 12.15.0 || 12.16.0 || 12.16.1 || 12.18.0'

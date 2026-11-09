@@ -1,7 +1,7 @@
 {{--
   Components have an isolated scope, so the Ko-fi URL must be passed in as a prop
   rather than read from `site`. Do not rename the prop to `url` — that collides
-  with Eleventy's built-in `url` filter, which is truthy and wins the `||`.
+  with the built-in `url` filter (from ssqch/rss), which is truthy and wins the `||`.
 --}}
 @let(kofiUrl = kofiLink)
 @if(kofiUrl)

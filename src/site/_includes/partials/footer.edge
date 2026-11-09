@@ -3,10 +3,10 @@
     <div class="footer-brand">
       <a class="footer-brand-link" href="{{ site.url }}">
         {{-- No `width` attribute on purpose: a plain width overrides the widths
-             list entirely (eleventy-img reads eleventy:widths only when width is
+             list entirely (ssqch/image reads ssqch:widths only when width is
              absent), which pins the logo to a single 1x file and blurs it on
              retina. 2x/3x for the 48px box; .footer-logo sets the display size. --}}
-        <img class="footer-logo" src="{{ site.logo }}" alt="" eleventy:widths="48,96,144" sizes="48px">
+        <img class="footer-logo" src="{{ site.logo }}" alt="" ssqch:widths="48,96,144" sizes="48px">
         <span>{{ site.title }}</span>
       </a>
       <p class="footer-tagline">{{ site.description }}</p>

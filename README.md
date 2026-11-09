@@ -2,7 +2,18 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/34284d7b-11e9-4ae0-81a6-eac37da2b351/deploy-status)](https://app.netlify.com/sites/reverentgeek/deploys)
 
-Built with [Eleventy](https://www.11ty.io). Deployed to [Netlify](https://www.netlify.com/).
+Built with [SiteSquatch](https://github.com/reverentgeek/sitesquatch) (`ssqch`), configured by `ssqch.config.js`. Deployed to [Netlify](https://www.netlify.com/).
+
+## Building
+
+Install `ssqch` (`cargo install --path crates/ssqch --features avif` from a sitesquatch checkout), or build it in `../ssqch`, or set `SSQCH_BIN` to its path. Then:
+
+```sh
+pnpm install
+pnpm run build   # production build to dist/
+pnpm run serve   # dev server with live reload on http://localhost:8080
+pnpm test        # build, then smoke tests
+```
 
 ## Creating a New Post or Page
 

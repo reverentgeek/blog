@@ -6,7 +6,7 @@ const assetDir = "./dist/assets";
 const manifestPath = "./.asset-manifest.json";
 
 // Built entry points to fingerprint, keyed by the name templates use ({{ assets.css }}).
-// `assets/pco.js` is deliberately excluded: it is an Eleventy passthrough copy that
+// `assets/pco.js` is deliberately excluded: it is a passthrough copy that
 // src/site/pages/pco.md imports by a hard-coded path, so its name has to stay stable.
 const entries = {
 	css: "index.css",

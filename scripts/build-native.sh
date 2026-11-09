@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-# Production build without Node: standalone Tailwind and esbuild binaries for the
-# CSS/JS, then SiteSquatch (the `reverentgeek` binary) for the site, which also
-# fingerprints the assets and prunes unused images (replacing hash-assets.js and
-# prune-images.js).
+# Production build without a Node toolchain for the CSS/JS: standalone Tailwind
+# and esbuild binaries, then SiteSquatch (`ssqch`) for the site with
+# ssqch.config.js. Fingerprinting the assets and pruning unused images still use
+# Node (scripts/hash-assets.js and scripts/prune-images.js) until ssqch does them
+# itself.
 #
 #   scripts/build-native.sh
 #
-# SSQCH_BIN   SiteSquatch site binary (default: `reverentgeek` on PATH)
+# SSQCH_BIN   the ssqch binary (default: `ssqch` on PATH)
 # TOOLS_DIR   where downloaded tools are kept (default: .cache/tools)
 #
 # Keep these versions in step with package.json / pnpm-lock.yaml.
@@ -17,7 +18,7 @@ ESBUILD_VERSION=0.28.2
 PRISM_VERSION=1.30.0
 
 cd "$(dirname "$0")/.."
-SSQCH_BIN=${SSQCH_BIN:-reverentgeek}
+SSQCH_BIN=${SSQCH_BIN:-ssqch}
 TOOLS_DIR=${TOOLS_DIR:-.cache/tools}
 
 case "$(uname -s)-$(uname -m)" in
@@ -61,4 +62,6 @@ mkdir -p dist/assets
 
 "$tailwind" -i src/assets/css/styles.css -o dist/assets/index.css --minify
 "$esbuild" src/assets/js/index.js src/assets/js/prism.js --bundle --outdir=dist/assets --minify --log-level=warning
+node scripts/hash-assets.js
 "$SSQCH_BIN" build --root . --env production
+node scripts/prune-images.js
