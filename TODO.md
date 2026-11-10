@@ -49,6 +49,9 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 
   The current AVIFs are about the size of libaom's at quality 50 but have about 1.8x the distortion. `avifSpeed: 4, avifQuality: 60` roughly matches libaom's quality for 2% more bytes, at about 2.4x the AVIF encode time. Only cold builds pay that (the image cache keeps the rest), but changing the settings re-encodes every AVIF once, and the first cold Netlify build took 259 s. Switched to `avifSpeed: 4, avifQuality: 60` in `src/utils/site/image-options.js`: a full local re-encode and build took 51 s. Watch the first Netlify build's time after it deploys.
 
+- [x] Headings get `id`s from ssqch's Markdown (unreleased; GitHub-style, like `#testing-with-postman`). Nothing to change: the build's only difference is the new `id`s, and the link checker still finds 0 broken links. The hand-written `<a name>` and `<a id>` anchors keep working.
+- [ ] **Needs ssqch:** build-time highlighting with an Edge grammar. `markdown: { highlight: true }` works today for the other languages (bash, JavaScript, HTML, JSON: about 60 ms more per build) and writes `/highlight.css`, but the 9 `edge` fences would lose their colors. Once Edge highlights, drop `prism.js` (20 KB) from the layouts, esbuild and `assetsPlugin`'s `files`, and restyle with the `--hl-*` properties.
+
 ## Site quality (blog only)
 
 - [x] Fix the 2 Dependabot alerts: `minimatch` (moderate, GHSA-g3hv-75wg-m249) and `katex` (low, GHSA-238p-pmpm-9mq7). Both come in through eslint and markdownlint-cli, whose latest versions still ask for vulnerable ranges, so `pnpm-workspace.yaml` overrides them to `^11.0.1` and `^0.18.2`. Remove those overrides once upstream catches up.
