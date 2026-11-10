@@ -6,11 +6,11 @@
 		"clean": "node scripts/clean.js",
 		"clean:all": "rimraf dist",
 		"serve:css": "postcss src/assets/css/styles.css --output dist/assets/index.css --watch",
-		"serve:js": "esbuild src/assets/js/index.js src/assets/js/prism.js --bundle --outdir=dist/assets --watch",
+		"serve:js": "esbuild src/assets/js/index.js --bundle --outdir=dist/assets --watch",
 		"serve:site": "scripts/ssqch.sh serve",
 		"serve": "npm-run-all2 clean --parallel serve:*",
 		"build:css": "postcss src/assets/css/styles.css --output dist/assets/index.css --no-map",
-		"build:js": "esbuild src/assets/js/index.js src/assets/js/prism.js --bundle --outdir=dist/assets --minify",
+		"build:js": "esbuild src/assets/js/index.js --bundle --outdir=dist/assets --minify",
 		"build:site": "scripts/ssqch.sh build --env production",
 		"build:prune": "node scripts/prune-images.js",
 		"build": "NODE_ENV=production run-s clean build:css build:js build:site build:prune",
@@ -53,7 +53,6 @@
 		"postcss": "^8.5.32",
 		"postcss-cli": "^12.0.0",
 		"postcss-import": "^17.0.1",
-		"prismjs": "^1.30.0",
 		"rimraf": "^6.1.4",
 		"tailwindcss": "^4.3.5"
 	},
@@ -70,5 +69,5 @@
 		"slug": "^12.0.1",
 		"uuid": "^14.0.3"
 	},
-	"packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3"
+	"packageManager": "pnpm@12.19.0+sha512.87327b6619853205834e4be59ba3a231e303d9f5e435912ede3312b7539b79af890942f6513b05a4690745666888045c09b33fc420c2cd2d3bd95c01ba21dbeb"
 }

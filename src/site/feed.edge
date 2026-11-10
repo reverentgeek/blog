@@ -18,7 +18,7 @@ metadata:
   </author>
   @let(feedPosts = collections.posts.slice().reverse().slice(0, 30))
   @each(post in feedPosts)
-  @let(absolutePostUrl = absoluteUrl(url(post.url), site.url))
+  @let(absolutePostUrl = absoluteUrl(post.url, site.url))
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>

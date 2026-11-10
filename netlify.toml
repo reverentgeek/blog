@@ -10,7 +10,7 @@
   NODE_VERSION = "24"
   # The SiteSquatch release to install. Bump it on purpose, after a local
   # `pnpm test` passes.
-  SSQCH_VERSION = "0.3.2"
+  SSQCH_VERSION = "0.4.0"
 
 # Image derivatives (dist/img) and ssqch's image-hash cache (.cache/ssqch)
 # carry over between builds, so a build with no new images encodes nothing.
@@ -19,7 +19,7 @@
   [plugins.inputs]
     paths = ["dist/img", ".cache/ssqch"]
 
-# Fingerprinted assets (index.<hash>.css, index.<hash>.js, prism.<hash>.js) are safe to
+# Fingerprinted assets (index.<hash>.css, index.<hash>.js) are safe to
 # cache forever: changing the contents changes the filename, so browsers fetch the new
 # URL immediately instead of sitting on a stale copy.
 [[headers]]

@@ -1,5 +1,4 @@
 @import './fonts.css';
-@import 'prismjs/themes/prism-okaidia.css';
 @import 'tailwindcss';
 
 @theme {
@@ -33,10 +32,70 @@ body {
 	line-height: 1.7;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
+/* Code fences, highlighted while the site builds (`markdown: { highlight: true }` in
+   ssqch.config.js): a dark block in Prism's Okaidia colors, which the site used before. */
+pre.highlight {
+	--hl-comment: #8292a2;
+	--hl-keyword: #66d9ef;
+	--hl-operator: #f8f8f2;
+	--hl-string: #a6e22e;
+	--hl-regexp: #fd971f;
+	--hl-escape: #fd971f;
+	--hl-number: #ae81ff;
+	--hl-constant: #ae81ff;
+	--hl-builtin: #a6e22e;
+	--hl-property: #f92672;
+	--hl-attribute: #a6e22e;
+	--hl-function: #e6db74;
+	--hl-type: #e6db74;
+	--hl-parameter: #fd971f;
+	--hl-tag: #f92672;
+	--hl-heading: #66d9ef;
+	--hl-link: #e6db74;
+	--hl-inserted: #a6e22e;
+	--hl-inserted-bg: transparent;
+	--hl-deleted: #f92672;
+	--hl-deleted-bg: transparent;
+	--hl-line-bg: rgba(255, 255, 255, 0.08);
+	margin: 0.5em 0;
+	padding: 1em;
+	overflow: auto;
+	border-radius: 0.3em;
+	background: #272822;
+	color: #f8f8f2;
+	font-size: 1em;
+	line-height: 1.5;
+	tab-size: 4;
 	@apply font-mono;
 }
+pre.highlight code {
+	background: none;
+	color: inherit;
+	font: inherit;
+}
+.hl-comment { color: var(--hl-comment); font-style: italic; }
+.hl-keyword { color: var(--hl-keyword); }
+.hl-operator { color: var(--hl-operator); }
+.hl-string { color: var(--hl-string); }
+.hl-regexp { color: var(--hl-regexp); }
+.hl-escape { color: var(--hl-escape); font-weight: bold; }
+.hl-number { color: var(--hl-number); }
+.hl-constant { color: var(--hl-constant); }
+.hl-builtin { color: var(--hl-builtin); }
+.hl-property { color: var(--hl-property); }
+.hl-attribute { color: var(--hl-attribute); }
+.hl-function { color: var(--hl-function); }
+.hl-type { color: var(--hl-type); }
+.hl-parameter { color: var(--hl-parameter); }
+.hl-tag { color: var(--hl-tag); }
+.hl-heading { color: var(--hl-heading); font-weight: bold; }
+.hl-strong { font-weight: bold; }
+.hl-emphasis { font-style: italic; }
+.hl-link { color: var(--hl-link); text-decoration: underline; }
+.hl-inserted { color: var(--hl-inserted); background: var(--hl-inserted-bg); }
+.hl-deleted { color: var(--hl-deleted); background: var(--hl-deleted-bg); }
+pre.highlight .line { display: inline-block; min-width: 100%; }
+pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .post-list {
 	.post {

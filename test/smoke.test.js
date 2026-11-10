@@ -1,12 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { access, readdir, readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname( fileURLToPath( import.meta.url ) );
 const distDir = path.join( __dirname, "..", "dist" );
-const siteDir = path.join( __dirname, "..", "src", "site" );
 
 async function readDistFile( relativePath ) {
 	return readFile( path.join( distDir, relativePath ), "utf8" );
@@ -56,19 +55,15 @@ async function listBuiltPages() {
 	return files.filter( file => file.endsWith( "index.html" ) && !file.startsWith( "img" ) );
 }
 
-function readFrontMatter( source ) {
-	const [ , frontMatter = "" ] = source.split( /^---$/m );
-	const data = {};
+// Code fences are highlighted while the site builds, so posts load no highlighting script.
+// (Front matter is checked by the `posts` schema in ssqch.config.js on every build.)
+test( "code is highlighted at build time", async () => {
+	const postPage = await readDistFile( "edgejs-template-plugin-for-11ty/index.html" );
 
-	for ( const line of frontMatter.split( "\n" ) ) {
-		const match = line.match( /^(\w+):\s*(.*)$/ );
-		if ( match ) {
-			data[match[1]] = match[2].replace( /^["']|["']$/g, "" ).trim();
-		}
-	}
-
-	return data;
-}
+	assert.match( postPage, /<pre class="highlight"><code class="language-edge">/ );
+	assert.match( postPage, /<span class="hl-keyword">@if<\/span>/ );
+	assert.doesNotMatch( postPage, /prism/i );
+} );
 
 test( "sitemap lists only pages", async () => {
 	const sitemap = await readDistFile( "sitemap.xml" );
@@ -92,20 +87,5 @@ test( "every page has a unique title", async () => {
 		assert.ok( title, `${ file } should have a <title>` );
 		assert.ok( !seen.has( title ), `${ file } and ${ seen.get( title ) } share the title "${ title }"` );
 		seen.set( title, file );
-	}
-} );
-
-test( "posts have a description and an existing feature image", async () => {
-	const postsDir = path.join( siteDir, "posts" );
-	const posts = ( await readdir( postsDir ) ).filter( file => file.endsWith( ".md" ) );
-
-	for ( const file of posts ) {
-		const data = readFrontMatter( await readFile( path.join( postsDir, file ), "utf8" ) );
-
-		assert.ok( data.description, `${ file } is missing a description` );
-
-		if ( data.feature_image && !data.feature_image.startsWith( "http" ) ) {
-			await assert.doesNotReject( access( path.join( siteDir, data.feature_image ) ), `${ file } feature_image not found: ${ data.feature_image }` );
-		}
 	}
 } );

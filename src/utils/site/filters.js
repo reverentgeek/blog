@@ -3,11 +3,6 @@ import { adjacentPosts, topicLabel, topicsOnly } from "./collections.js";
 // Functions templates can call: {{ postDate(page.date) }}.
 export function siteFilters( { socialImage } ) {
 	return {
-		isSiteMapSafe( url ) {
-			const isSafe = !url.startsWith( "/_" );
-			return isSafe.toString();
-		},
-
 		htmlDateString( dateObj ) {
 			return new Date( dateObj ).toISOString().split( "T" )[0];
 		},

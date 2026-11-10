@@ -24,11 +24,13 @@ The site is built by [SiteSquatch](https://github.com/reverentgeek/sitesquatch) 
 
 Templates use **Edge.js** (built into ssqch), not Nunjucks or Liquid. Edge.js syntax: `@if`/`@each`/`@include` directives, `{{ }}` for escaped output, `{{{ }}}` for raw HTML, `{{-- --}}` for comments.
 
+Code fences are highlighted when the site builds (`markdown: { highlight: { css: false } }` in `ssqch.config.js`); the colors are the `--hl-*` properties on `pre.highlight` in `src/assets/css/styles.css`. There's no Prism. Every post's front matter is checked by the `posts` schema in `ssqch.config.js`: a missing `description` or a `feature_image` file that isn't there fails the build, and an unknown key is a warning. `sitemap.xml` comes from `sitemapPlugin()`.
+
 The `<head>` SEO and social metadata lives in `src/site/_includes/partials/head.edge`, shared by every layout. Edit it there, not in individual layouts.
 
 ## Assets
 
-Production builds fingerprint CSS and JS: the `ssqch/assets` plugin (in `ssqch.config.js`) renames `dist/assets/index.css`, `index.js` and `prism.js` to content-hashed names and rewrites every `href` and `src` that points at them. In templates, link the plain paths (`/assets/index.css`); `ssqch serve` leaves them plain. `pco.js` keeps a stable name because `src/site/pages/pco.md` imports it directly, so it isn't in the plugin's list.
+Production builds fingerprint CSS and JS: the `ssqch/assets` plugin (in `ssqch.config.js`) renames `dist/assets/index.css` and `index.js` to content-hashed names and rewrites every `href` and `src` that points at them. In templates, link the plain paths (`/assets/index.css`); `ssqch serve` leaves them plain. `pco.js` keeps a stable name because `src/site/pages/pco.md` imports it directly, so it isn't in the plugin's list.
 
 ## Image Pipeline
 
