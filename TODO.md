@@ -37,7 +37,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
 - [x] The 4 HDR iPhone photos in `src/site/content/images/heavy-duty-roller-case-for-helix-stadium-xl/` are converted to sRGB (`sips -m ".../sRGB Profile.icc" -s formatOptions 90`), since ssqch can't convert their HDR profiles. Do the same for future HDR photos; ssqch warns about them.
 - [x] **Needs ssqch:** built-in asset fingerprinting, in ssqch 0.2.3 (`ssqch/assets`). `ssqch.config.js` lists `/assets/index.css`, `index.js` and `prism.js`; the layouts link plain paths; `scripts/hash-assets.js`, `src/site/_data/assets.js` and the `build:hash` script are gone.
 - [x] **Needs ssqch:** built-in link checker, in ssqch 0.2.5 (`linksPlugin()` in `ssqch.config.js`). The 413 broken gallery links (full-size originals under `/content/images/`) are fixed by 0.2.5 pointing links to local images at a generated copy: 17,423 links checked, 0 broken. Production builds now fail on a broken link.
-- [ ] Compare AVIF quality. Measured 2026-11-09 on 14 of the blog's images at 900 px (photos, sketch notes, avatars), with SSIM against the source (distortion = 1 - SSIM, lower is better):
+- [x] Compare AVIF quality. Measured 2026-11-09 on 14 of the blog's images at 900 px (photos, sketch notes, avatars), with SSIM against the source (distortion = 1 - SSIM, lower is better):
 
   | Encoder | Speed | Quality | Size | Distortion |
   | --- | --- | --- | --- | --- |
@@ -47,7 +47,7 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
   | ravif | 4 | 70 | 488 KB | 0.0064 |
   | libaom (the old build's encoder) | 4 | 50 | 368 KB | 0.0081 |
 
-  The current AVIFs are about the size of libaom's at quality 50 but have about 1.8x the distortion. `avifSpeed: 4, avifQuality: 60` roughly matches libaom's quality for 2% more bytes, at about 2.4x the AVIF encode time. Only cold builds pay that (the image cache keeps the rest), but changing the settings re-encodes every AVIF once, and the first cold Netlify build took 259 s. Decide whether to switch; if so, watch that first Netlify build's time.
+  The current AVIFs are about the size of libaom's at quality 50 but have about 1.8x the distortion. `avifSpeed: 4, avifQuality: 60` roughly matches libaom's quality for 2% more bytes, at about 2.4x the AVIF encode time. Only cold builds pay that (the image cache keeps the rest), but changing the settings re-encodes every AVIF once, and the first cold Netlify build took 259 s. Switched to `avifSpeed: 4, avifQuality: 60` in `src/utils/site/image-options.js`: a full local re-encode and build took 51 s. Watch the first Netlify build's time after it deploys.
 
 ## Site quality (blog only)
 

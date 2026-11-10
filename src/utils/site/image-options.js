@@ -9,5 +9,9 @@ export const imageOptions = {
 		sizes: "auto"
 	},
 	webpQuality: 75,
-	avifQuality: 50
+	// Measured against libaom on the blog's images (TODO.md): speed 4 at quality 60
+	// has about 40% less distortion than the default speed 8 at quality 50, for 2%
+	// more bytes and about 2.4x the encode time (cached builds don't pay it).
+	avifQuality: 60,
+	avifSpeed: 4
 };
