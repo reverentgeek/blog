@@ -1,15 +1,37 @@
 {{--
-  Components have an isolated scope, so the Ko-fi URL must be passed in as a prop
-  rather than read from `site`. Do not rename the prop to `url` — that collides
-  with the built-in `url` filter (from ssqch/rss), which is truthy and wins the `||`.
+  The end-of-post callout, also used at the top and bottom of the galleries.
+  Props (components have an isolated scope, so everything comes in as a prop):
+    variant    "commissions", "devrel" or "kofi". Posts pass calloutFor(postTopics).
+    kofiLink   the Ko-fi URL, for the "kofi" variant.
+    placement  prefix for the GA4 data-cta value (default "post-callout").
+    message    optional replacement for the commissions variant's sentence.
+  Do not name a prop `url`: it collides with the built-in `url` filter (from
+  ssqch/rss), which is truthy and wins the `||`.
 --}}
-@let(kofiUrl = kofiLink)
-@if(kofiUrl)
+@let(kind = variant || 'kofi')
+@let(where = placement || 'post-callout')
+@if(kind === 'commissions')
+  <aside class="callout callout-commission" role="note">
+    <span class="callout-label">Like my drawings?</span>
+    <div class="callout-content">
+      <p>{{ message || "I take commissions! Avatars, stickers, logos, and book illustrations, drawn by a developer who gets the joke." }}</p>
+      <a class="callout-button" href="/commissions/" data-cta="{{ where }}-commissions">Start a commission</a>
+    </div>
+  </aside>
+@elseif(kind === 'devrel')
+  <aside class="callout callout-devrel" role="note">
+    <span class="callout-label">Let's work together</span>
+    <div class="callout-content">
+      <p>I help teams build developer programs that developers trust and leadership can measure. I'm always up for a conversation about DevRel.</p>
+      <a class="callout-button" href="/devrel/" data-cta="{{ where }}-devrel">Let's talk DevRel</a>
+    </div>
+  </aside>
+@elseif(kofiLink)
   <aside class="callout callout-support" role="note">
     <span class="callout-label">Enjoyed this?</span>
     <div class="callout-content">
       <p>If this was useful, you can buy me a coffee. It keeps the doodles and blog posts coming.</p>
-      <a class="kofi-button" href="{{ kofiUrl }}" target="_blank" rel="noopener noreferrer">
+      <a class="kofi-button" data-cta="{{ where }}-kofi" href="{{ kofiLink }}" target="_blank" rel="noopener noreferrer">
         @!component('components/icon', { id: 'kofi' })
         Buy me a coffee
       </a>

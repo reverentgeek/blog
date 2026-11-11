@@ -1,35 +1,54 @@
 ---
 id: 5b7d83816ada047f703ba958
 title: "About Me"
-description: "David Neal is a family man, geek, musician, illustrator, international speaker, software developer, and author."
+description: "David Neal is an illustrator, builder, and DevRel leader, helping folks in tech be more awesome."
 date: 2014-02-13
 slug: about
 ---
 
-<img class="float-left mr-4 w-24 sm:w-1/6" src="/content/images/rg-sticker-circle.png" alt="David Neal (aka ReverentGeek)">
+<div class="about-portraits">
+  <figure>
+    <img src="/content/images/rg-sticker-circle.png" alt="An illustrated avatar of David Neal (aka ReverentGeek)" ssqch:widths="160,320">
+    <figcaption>The drawn me</figcaption>
+  </figure>
+  <figure>
+    <img src="/content/images/headshots/headshot-rg-studio-2025.jpg" alt="A photo of David Neal" ssqch:widths="160,320">
+    <figcaption>The actual me</figcaption>
+  </figure>
+</div>
 
-Hi! I'm David Neal. I am a family man, geek, musician, illustrator, international speaker, software developer, and author living in North Georgia. I've been in Developer Relations roles for more than a decade. My mission is to help folks in technology be more awesome! I am currently a Senior Developer Advocate for [MongoDB](https://www.mongodb.com/). My past DevRel experiences include [Plaid](https://plaid.com), [Slack](https://slack.dev/), [Asana](https://asana.com), and [Okta](https://developer.okta.com), among others. Before my DevRel journey, I spent many years building high-performance, scalable web applications. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓 😉.
+Hi! I'm David Neal: an illustrator, builder, and DevRel leader, helping folks in tech be more awesome. I'm also a family man, geek, and musician living in North Georgia. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓 😉.
 
-Along the way, I've learned that leadership includes creating clarity, building trust, and helping people do their best work. I've led teams, mentored developers, guided technical strategy, and partnered across organizations to make good things happen.
+I'm currently a Senior Developer Advocate at [MongoDB](https://www.mongodb.com/), and I've spent more than a decade in Developer Relations roles at [Plaid](https://plaid.com), [Slack](https://slack.dev/), [Asana](https://asana.com), and [Okta](https://developer.okta.com), among others. Before my DevRel journey, I spent many years building high-performance, scalable web applications. For the last 10 years, I've also been drawing avatars, stickers, logos, sketch notes, and book illustrations (six so far).
 
-* Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
-* Follow my silly shenanigans on:
-  * [Bluesky @reverentgeek.com](https://bsky.app/profile/reverentgeek.com)
-  * [X/Twitter @reverentgeek](https://x.com/reverentgeek)
-  * <a rel="me" href="https://techhub.social/@reverentgeek">Mastodon @reverentgeek@techhub.social</a>
-  * [Threads @reverentgeek](https://www.threads.net/@reverentgeek)
-* Check out my [developer portfolio](/devrel-portfolio/) of tutorials, talks, keynotes, open-source, and podcasts.
-* Cruise my code on [GitHub](https://github.com/reverentgeek).
-* Dig my drawings in my [portfolio](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
-* Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
-* Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
-* Get my [resume](https://drive.google.com/file/d/1sPUrePKXs2HODNGtGP3Y103izXZDJ3et/view?usp=sharing).
-* Upcoming and past [speaking engagements](/speaking).
-* View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
-* List of presentation and workshop [abstracts](/presentations/).
-* [Bio and Headshots](/bio).
+<p class="about-philosophy">I believe people want to do their best work.</p>
 
-Got Node.js? Try this at your command line: `npx reverentgeek`
+My leadership style is practical and people-first. I create clarity, remove friction, build trust, mentor folks through hard problems, and empower people to do work they can be proud of. I've led teams, mentored developers, guided technical strategy, and partnered across organizations to make good things happen.
+
+## Two Ways to Work with Me
+
+<div class="about-paths">
+  <div class="callout callout-commission">
+    <span class="callout-label">Illustration</span>
+    <div class="callout-content">
+      <p>Avatars, stickers, logos, mascots, and book illustrations, drawn by a developer who gets the joke. Avatars start at $30.</p>
+      <a class="callout-button" href="/commissions/" data-cta="start-commission">See commissions</a>
+    </div>
+  </div>
+  <div class="callout callout-devrel">
+    <span class="callout-label">Developer Relations</span>
+    <div class="callout-content">
+      <p>I help teams build developer programs that developers trust and leadership can measure, and I'm always up for a conversation about DevRel.</p>
+      <a class="callout-button" href="/devrel/" data-cta="view-devrel">Let's talk DevRel</a>
+    </div>
+  </div>
+</div>
+
+## Books
+
+I co-authored and illustrated [*Developer Relations Activity Patterns*](/developer-relations-activity-patterns/), illustrated two books for Lars Klint, drew the covers for Kyle Simpson's *You Don't Know JS Yet*, and drew a whole book of [dad jokes](/the-illustrated-book-of-dad-jokes/).
+
+@!component('components/book-strip', { books: books, bare: true })
 
 ## Who Am I? The Longer Answer
 
@@ -39,11 +58,9 @@ I punch bears\* and help folks be more awesome.
 
 I teach, motivate, entertain, and lead people to work smarter, build fantastic solutions, and become indispensable members of their teams and communities.
 
-My leadership style is practical and people-first. I believe people want to do their best work. I like creating clarity, removing friction, mentoring folks through hard problems, and empowering people to do work they can be proud of.
+I 20+ years of developer and IT experience. Most of that experience has been in startups and smaller companies where I've "worn many hats" and done whatever it takes to make my organization and team successful.
 
-I have more than 20 years of developer and IT experience. Most of that experience has been in startups and smaller companies where I've "worn many different hats," from engineer to Chief Geek.
-
-I've been very active in the developer community since 2010, speaking and volunteering my time at numerous meet-ups, conferences, and events.
+I've been active in the developer community since 2010, speaking and volunteering at numerous meet-ups, conferences, and events.
 
 I love helping developers solve problems, and I love helping teams create better experiences for those developers.
 
@@ -71,30 +88,39 @@ I'm drawn to organizations that care about community impact and want developer a
 
 ## What People Say
 
-[Randall Degges](https://www.linkedin.com/in/rdegges/), who led Developer Advocacy at Okta, wrote the following endorsement.
+[Randall Degges](https://www.linkedin.com/in/rdegges/), who led Developer Advocacy at Okta:
 
->David is one of the kindest, most empathetic, and all-around best people I've ever met or worked with.
+> David is one of the kindest, most empathetic, and all-around best people I've ever met or worked with.
 >
 > He's an incredibly talented developer, teammate, and friend -- and an absolute expert when it comes to building and growing developer communities. David is always calm, cool, and relaxed, and always knows exactly what to do to help solve problems.
->
-> I can't tell you how fantastic it has been working with David. We worked together to solve complex problems: both technical and business-related, and David was always an absolute champion at getting things done.
->
-> I don't know what else I can say except that I vouch for David 100% in whatever it is he wants to do. The guy is an absolute beast, and no matter what he does I'm sure he'll be incredible at it. It's not every day you run into someone like David, and I'm so thankful to have gotten to know and work with him!
 
-[Stephen Franklin](https://www.linkedin.com/in/stephen-franklin-9baa353/), then CIO of LeanKit, wrote the following endorsement.
+[Stephen Franklin](https://www.linkedin.com/in/stephen-franklin-9baa353/), then CIO of LeanKit:
 
-> David is a true gem of the technology industry. I am inspired by his commitment to getting out on the speaking trail and spreading his wisdom and knowledge. And I know that he has inspired many, many others in the industry as well.
->
-> David is so talented in so many ways. As a technologist, he cranks the dial to 11. He can do it all: any layer of the stack, any development technology, any platform. And if he currently can't do it, give him a few hours and he'll be fully up to speed. He is a great team member, mentor and developer. It's just amazing what he makes 1s and 0s do.
->
-> Not only that, he is an amazing speaker and communicator. His ability to empathize and connect with the audience is astonishing and why he is always one of the most popular speakers wherever he goes.
->
-> Did I mention that he is an amazing artist and is changing the way people are building their presentations?
->
-> Oh yeah, an incredible musician too. And the list goes on.
->
 > But what I'll cherish most of all is getting to know David personally. He is kind, caring, humble, funny, empathetic and wholeheartedly committed to his faith, family, friends and his craft. He is one of those people that makes you a better person just knowing him.
 >
 > Thank you David for letting me be a small part of your life.
+
+Read their full endorsements on my [DevRel page](/devrel/#what-people-say).
+
+## Find Me Around the Web
+
+* Contact me at [david@reverentgeek.com](mailto:david@reverentgeek.com).
+* Follow my silly shenanigans on:
+  * [Bluesky @reverentgeek.com](https://bsky.app/profile/reverentgeek.com)
+  * [X/Twitter @reverentgeek](https://x.com/reverentgeek)
+  * <a rel="me" href="https://techhub.social/@reverentgeek">Mastodon @reverentgeek@techhub.social</a>
+  * [Threads @reverentgeek](https://www.threads.net/@reverentgeek)
+* Check out my [developer portfolio](/devrel-portfolio/) of tutorials, talks, keynotes, open-source, and podcasts.
+* Cruise my code on [GitHub](https://github.com/reverentgeek).
+* Dig my drawings in my [portfolio](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
+* Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
+* Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
+* Get my <a href="https://drive.google.com/file/d/1sPUrePKXs2HODNGtGP3Y103izXZDJ3et/view?usp=sharing" data-cta="resume">resume</a>.
+* See my past [speaking engagements](/speaking).
+* View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
+* List of presentation and workshop [abstracts](/presentations/).
+* [Bio and Headshots](/bio).
+
+Got Node.js? Try this at your command line: `npx reverentgeek`
 
 \*Metaphorically speaking. I enjoy being courageous, tackling hard problems, being entrepreneurial, and fighting for truth, justice, and the Developer Way.

@@ -21,4 +21,12 @@ And of course, I had a lot of fun illustrating the cover and chapter art. Projec
 
 I am also incredibly proud of the team behind it. It was an honor to work alongside [Ted Neward](https://www.linkedin.com/in/tedneward/), [Scott McAllister](https://www.linkedin.com/in/stmcallister/), and [Chris "Woody" Woodruff](https://www.linkedin.com/in/chriswoodruff/). And honestly, I am still a little blown away that [Scott Hanselman](https://www.linkedin.com/in/shanselman/) and [Mary Thengvall](https://www.linkedin.com/in/marythengvall/) contributed the forewords 🤯
 
+## What Readers Are Saying
+
+The book's first Amazon review is in! Lindsay Brunner gave it five stars, under the title "Basically the encyclopedia of DevRel":
+
+> I pull it out regularly when I'm explaining a proposed strategy to a client. Here's what I'm recommending, here's why, and here's an entire book of experienced practitioners explaining how it works. Very useful when your job involves getting people to understand what they're agreeing to fund.
+>
+> I've recommended that clients buy their own copies. It's basically the encyclopedia of DevRel, and mine gets used.
+
 If you want to learn more, you can find the book at [Apress](https://link.springer.com/book/10.1007/979-8-8688-1895-0) and [Amazon](https://www.amazon.com/Developer-Relations-Activity-Patterns-Management/dp/B0FJWPD3CQ/).

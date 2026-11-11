@@ -1,9 +1,9 @@
 {
 	"title": "ReverentGeek",
 	"url": "https://reverentgeek.com",
-	"description": "Ramblings on bacon, drawing, and technology",
+	"description": "Illustrator, builder, and DevRel leader, helping folks in tech be more awesome",
 	"feed": {
-		"subtitle": "Ramblings on faith, tech, music, and drawing.",
+		"subtitle": "Illustrator, builder, and DevRel leader, helping folks in tech be more awesome",
 		"filename": "feed.xml",
 		"path": "/feed.xml",
 		"id": "https://reverentgeek.com"
@@ -31,16 +31,20 @@
 			"url": "/about/"
 		},
 		{
-			"label": "Speaking",
-			"url": "/speaking/"
+			"label": "Avatars",
+			"url": "/avatars/"
+		},
+		{
+			"label": "Illustrations",
+			"url": "/commissions/"
+		},
+		{
+			"label": "DevRel",
+			"url": "/devrel/"
 		},
 		{
 			"label": "Portfolio",
 			"url": "/portfolio/"
-		},
-		{
-			"label": "Buy My Stuff!",
-			"url": "/shop/"
 		}
 	],
 	"social_links": [

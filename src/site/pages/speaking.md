@@ -1,6 +1,6 @@
 ---
 id: 5b7d83816ada047f703ba959
-title: "Upcoming Speaking Engagements"
+title: "Speaking Engagements"
 description: "Current speaking topics: leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving…"
 date: 2014-02-13
 slug: speaking
@@ -8,7 +8,9 @@ slug: speaking
 
 **Current speaking topics:** leadership, public speaking, JavaScript, Node.js, Electron.js, sketch notes, improving workflow, and Kanban.
 
-_No speaking engagements currently scheduled._
+I've spoken at more than 170 events since 2011, often giving several talks, a keynote, or a half-day or full-day workshop at the same event. That includes conferences, user groups, and private events across the US, Europe, Australia, and South America, including CodeMash, KCDC, THAT Conference, NDC, DevSum, Build Stuff, and All Things Open. The full list is below.
+
+Want me to speak at your event? <a href="mailto:david@reverentgeek.com?subject=Speaking%20inquiry" data-cta="speaking-inquiry">Get in touch</a>, and read more about [my DevRel work](/devrel/).
 
 <!-- | Date | Event | Location |
 | --- | --- | --- | -->

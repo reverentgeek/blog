@@ -25,6 +25,15 @@
 	.link-link svg {
 		@apply block w-6 h-6
 	}
+
+	/* The links page's two goal links stand out from the rest. */
+	.link-link-primary {
+		@apply bg-blue-600 border-blue-600 text-white! font-bold
+	}
+
+	.links-more summary {
+		@apply cursor-pointer list-none text-blue-500
+	}
   }
 
 body {
@@ -330,7 +339,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .content > :is(h1, .post-meta, .post-topics, .callout, .post-nav),
-.content-body > :is(p, ul, ol, blockquote, h2, h3, h4, h5, h6, .callout, table) {
+.content-body > :is(p, ul, ol, blockquote, h1, h2, h3, h4, h5, h6, .callout, table, .about-portraits, .draw-samples, .testimonial) {
 	max-width: var(--reading-column);
 	margin-inline: auto;
 }
@@ -405,6 +414,15 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-12 pb-8 border-b border-gray-200;
 }
 
+.home-intro-figure {
+	@apply m-0 w-24 sm:w-28 shrink-0 flex flex-col items-center;
+}
+
+.home-intro-caption {
+	@apply mt-2 text-xs leading-snug text-gray-600 text-center;
+	a { @apply text-blue-700 underline; }
+}
+
 .home-intro-avatar-wrap {
 	@apply w-20 h-20 sm:w-24 sm:h-24 shrink-0;
 }
@@ -425,6 +443,153 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply mt-4 -mb-3;
 }
 
+.home-intro-links {
+	@apply mt-4 mb-0 text-sm text-gray-600;
+	a { @apply text-blue-700 underline; }
+}
+
+/* About page: the drawn and photographed portraits, the philosophy line, and
+   the two work paths (which reuse the commission and DevRel callout styles). */
+.about-portraits {
+	@apply flex gap-4 mb-6;
+	figure { @apply m-0 w-28 sm:w-36 text-center; }
+	img { @apply w-full aspect-square object-cover rounded-full border-2 border-rgblue; }
+	figcaption { @apply mt-1 text-xs text-gray-600; }
+}
+
+.content-body > .about-philosophy {
+	@apply my-8 py-2 pl-5 border-l-4 border-rgblue text-2xl sm:text-3xl font-bold leading-snug text-gray-900;
+}
+
+.about-paths {
+	@apply grid gap-4 sm:grid-cols-2 mb-8;
+	.callout { @apply mb-0 flex flex-col; }
+	.callout-content { @apply flex flex-col flex-1 items-start; }
+	.callout-button { @apply mt-auto; }
+}
+
+/* /draw/: the no-nav avatar landing page for social bios. */
+.draw-hero {
+	@apply flex justify-center mt-4 mb-2;
+	img { @apply w-28 h-28 rounded-full border-2 border-rgblue; }
+}
+
+.content-body > h1 {
+	@apply text-3xl sm:text-4xl font-bold text-center mb-4;
+}
+
+.content-body > .draw-actions {
+	@apply text-center my-6;
+	.cta-button { @apply mr-0 text-lg; }
+}
+
+.draw-samples {
+	@apply grid grid-cols-3 gap-2 sm:gap-3 my-4;
+	img { @apply w-full aspect-square object-cover rounded-lg; }
+}
+
+.content-body > .draw-more {
+	@apply text-center text-sm text-gray-600;
+}
+
+/* Testimonial component: the client's illustration beside their words. */
+.testimonial {
+	@apply flex gap-4 items-start my-8 p-4 rounded-lg bg-gray-50 border border-gray-200;
+}
+
+.testimonial-image {
+	@apply w-20 h-20 sm:w-24 sm:h-24 shrink-0 rounded-full object-cover bg-white border-2 border-rgblue;
+}
+
+/* ssqch/image wraps the <img> in a <picture>, which is the actual flex item. */
+.testimonial > picture {
+	@apply shrink-0;
+}
+
+.testimonial-body {
+	@apply min-w-0;
+}
+
+/* Two classes so it beats the content area's own blockquote styles. */
+.testimonial .testimonial-quote {
+	@apply m-0 p-0 border-0 bg-transparent not-italic;
+	p { @apply m-0 text-lg leading-relaxed text-gray-800; }
+}
+
+.testimonial-name {
+	@apply mt-2 text-sm text-gray-600;
+}
+
+/* /avatars/: the avatar sales page above the gallery. */
+.content-body > :is(.avatars-lead, .avatar-prices, .avatars-final) {
+	max-width: var(--reading-column);
+	margin-inline: auto;
+}
+
+.content-body > .avatars-lead {
+	@apply text-xl leading-relaxed;
+}
+
+.avatar-prices {
+	@apply w-full my-6;
+	td:last-child, th:last-child { @apply text-right whitespace-nowrap font-semibold; }
+}
+
+.content-body > .avatars-final {
+	@apply text-center my-10 text-lg;
+	.cta-button { @apply ml-3; }
+}
+
+/* "Get these as stickers and t-shirts" line under the art galleries. */
+.content-body > .gallery-merch {
+	@apply text-center my-6 text-lg;
+}
+
+/* /shop/: the button under each merch section. */
+.content-body > .shop-actions {
+	@apply text-center my-6;
+	.cta-button { @apply mr-0; }
+}
+
+/* Books strip (homepage): the books I've illustrated, as cover cards. */
+.book-strip {
+	@apply mb-12 pb-8 border-b border-gray-200;
+}
+
+.book-strip-bare {
+	@apply mb-6 pb-0 border-b-0;
+}
+
+.book-strip-heading {
+	@apply text-xl font-bold mb-4;
+}
+
+.book-strip-list {
+	@apply grid grid-cols-2 sm:grid-cols-3 gap-4;
+}
+
+.book-strip-item {
+	/* `!` beats the `.content-body a` link styles when the strip is inside a page. */
+	@apply flex flex-col rounded-lg border border-gray-200 overflow-hidden no-underline! text-gray-800! transition-all duration-200 hover:bg-gray-50 hover:shadow-md;
+}
+
+.book-strip-item img {
+	@apply w-full aspect-[4/3] object-contain bg-gray-50;
+}
+
+.book-strip-title {
+	@apply px-3 pt-2 text-sm font-semibold leading-snug;
+}
+
+.book-strip-credit {
+	@apply px-3 pb-3 pt-1 text-xs text-gray-600!;
+}
+
+.book-strip-more {
+	@apply mt-4 mb-0 text-sm text-gray-600;
+	a { @apply text-blue-700 underline; }
+}
+
 /* Site footer.
    A full-bleed tinted band so the page reads as finished rather than just
    running out of content, with an rgblue top rule that bookends the header.
@@ -434,14 +599,14 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply mt-16 border-t-4 border-rgblue/60 bg-gray-50 text-gray-700;
 }
 
-/* Brand column gets the extra width — it holds the tagline, which needs a
-   readable measure; the two link columns only ever hold short labels. */
+/* Brand column gets the extra width: it holds the tagline, which needs a
+   readable measure; the three link columns only ever hold short labels. */
 .site-footer-inner {
-	@apply max-w-4xl mx-auto px-8 py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-[1.6fr_1fr_1fr];
+	@apply max-w-4xl mx-auto px-8 py-10 grid gap-8 sm:grid-cols-3 md:grid-cols-[1.5fr_1fr_1fr_1fr];
 }
 
 .footer-brand {
-	@apply sm:col-span-2 md:col-span-1;
+	@apply sm:col-span-3 md:col-span-1;
 }
 
 .footer-brand-link {
@@ -601,6 +766,32 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 .callout-support {
 	@apply bg-orange-50 border-kofi;
 	.callout-label { @apply text-kofi; }
+}
+
+/* Commission and DevRel callouts (end of posts, top and bottom of the galleries) */
+.callout-commission {
+	@apply bg-sky-50 border-rgblue;
+	.callout-label { @apply text-blue-700; }
+}
+
+.callout-devrel {
+	@apply bg-violet-50 border-violet-400;
+	.callout-label { @apply text-violet-700; }
+}
+
+/* Inside page content the paragraph would pick up the page's own bottom margin. */
+.callout-commission .callout-content p,
+.callout-devrel .callout-content p {
+	@apply mb-0;
+}
+
+.callout-button {
+	/* text-white and no-underline need `!` to beat the `.content-body a` rule above. */
+	@apply inline-block mt-3 px-4 py-2 rounded-full font-bold text-white! bg-blue-600 no-underline! transition-all duration-200 hover:bg-blue-700 hover:shadow-lg;
+}
+
+.callout-devrel .callout-button {
+	@apply bg-violet-700 hover:bg-violet-800;
 }
 
 .kofi-button {

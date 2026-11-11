@@ -1,4 +1,18 @@
-// Prism.js is now loaded conditionally only on blog post pages
+// Analytics: a click on any element with `data-cta` sends a GA4 `cta_click` event. The
+// value names the action (e.g. "order-avatar"), and `page_path` says where it was clicked.
+// gtag sends events with sendBeacon, so they survive navigating away. Clicks inside the
+// Shopify buy button can't be seen (it's a cross-origin iframe); Shopify reports orders.
+( function () {
+	document.addEventListener( "click", ( e ) => {
+		const el = e.target.closest( "[data-cta]" );
+		if ( !el || typeof window.gtag !== "function" ) return;
+		window.gtag( "event", "cta_click", {
+			cta: el.dataset.cta,
+			link_url: el.href || "",
+			page_path: window.location.pathname
+		} );
+	} );
+} )();
 
 // Mobile navigation toggle
 ( function () {

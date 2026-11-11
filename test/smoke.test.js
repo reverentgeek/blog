@@ -19,6 +19,11 @@ test( "homepage smoke test", async () => {
 	assert.match( homepage, /href="\/feed\.xml"/i );
 	assert.match( homepage, /<link rel="canonical" href="https:\/\/reverentgeek\.com\/">/i );
 	assert.match( homepage, /data-mobile-menu-button/i );
+
+	// One button per goal, and the books strip, on page 1.
+	assert.match( homepage, /href="?\/commissions\/"?[^>]*data-cta="?start-commission/ );
+	assert.match( homepage, /href="?\/devrel\/"?[^>]*data-cta="?view-devrel/ );
+	assert.match( homepage, /class="?book-strip"?/ );
 } );
 
 test( "post page smoke test", async () => {
@@ -87,5 +92,36 @@ test( "every page has a unique title", async () => {
 		assert.ok( title, `${ file } should have a <title>` );
 		assert.ok( !seen.has( title ), `${ file } and ${ seen.get( title ) } share the title "${ title }"` );
 		seen.set( title, file );
+	}
+} );
+
+test( "commission and DevRel pages have their calls to action", async () => {
+	const commissions = await readDistFile( "commissions/index.html" );
+	assert.match( commissions, /data-cta="?start-commission/ );
+	assert.match( commissions, /data-cta="?commission-inquiry/ );
+
+	const avatars = await readDistFile( "avatars/index.html" );
+	assert.match( avatars, /id="?order"?/ );
+	assert.match( avatars, /collection-component-/, "the Shopify avatar buy button should be on the avatars page" );
+
+	const draw = await readDistFile( "draw/index.html" );
+	assert.match( draw, /href="?\/avatars\/#order"?[^>]*data-cta="?order-avatar/ );
+	assert.doesNotMatch( draw, /data-mobile-menu-button/, "the landing page has no site navigation" );
+
+	const devrel = await readDistFile( "devrel/index.html" );
+	assert.match( devrel, /data-cta="?devrel-talk/ );
+	assert.match( devrel, /data-cta="?resume/ );
+} );
+
+test( "end-of-post callout depends on the post's tags", async () => {
+	const callouts = {
+		"wordcamp-us-2024-illustrations": "commissions",
+		"5-essential-ingredients-for-an-awesome-tech-talk": "devrel",
+		"developer-relations-activity-patterns": "devrel",
+		"edgejs-template-plugin-for-11ty": "kofi"
+	};
+	for ( const [ slug, variant ] of Object.entries( callouts ) ) {
+		const html = await readDistFile( `${ slug }/index.html` );
+		assert.match( html, new RegExp( `data-cta="?post-callout-${ variant }` ), `${ slug } should get the ${ variant } callout` );
 	}
 } );

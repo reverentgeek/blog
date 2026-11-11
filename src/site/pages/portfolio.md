@@ -6,10 +6,14 @@ date: 2019-01-21
 slug: portfolio
 ---
 
-<a href="/shop/" class="cta-button">Order an avatar!</a>
-<a href="mailto:david@reverentgeek.com" class="cta-button">Commission a custom illustration!</a>
+<a href="/avatars/#order" class="cta-button" data-cta="order-avatar">Order an avatar!</a>
+<a href="/commissions/" class="cta-button" data-cta="start-commission">Commission a custom illustration!</a>
 
 <div class="portfolio-grid">
+  <a href="/commissions/#books-ive-illustrated" class="portfolio-item">
+    <img src="/content/images/announcing-devrel-activity-patterns-book/devrel-activity-patterns.jpg" alt="Book illustration: the cover of Developer Relations Activity Patterns">
+    <h3>Book Illustrations</h3>
+  </a>
   <a href="/avatars/" class="portfolio-item">
     <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="Avatars">
     <h3>Avatars</h3>
@@ -45,6 +49,10 @@ slug: portfolio
   <a href="/sketch-notes/" class="portfolio-item">
     <img src="/content/images/sketch-notes/that-tx-2022-keynote-gblock.jpg" alt="Sketch Notes">
     <h3>Sketch Notes</h3>
+  </a>
+  <a href="/shop/" class="portfolio-item">
+    <img src="/content/images/shop/stickermule-stickers.jpg" alt="Stickers and t-shirts">
+    <h3>Stickers &amp; T-Shirts</h3>
   </a>
 </div>
 

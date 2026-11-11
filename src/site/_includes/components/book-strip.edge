@@ -1,0 +1,27 @@
+{{--
+  The books I've illustrated, from src/site/_data/books.json. Components have an
+  isolated scope, so the list comes in as the `books` prop. A book without a
+  `cover` is skipped until its cover image is added. `bare: true` leaves out the
+  heading and the closing line, for pages that already have their own (/commissions/).
+  Every directive ends in `~` so it leaves no blank line behind: in a Markdown page a
+  blank line ends the HTML block, and the indented lines after it become a code block.
+--}}
+<section class="book-strip{{ bare ? ' book-strip-bare' : '' }}" @if(!bare)aria-labelledby="book-strip-heading"@end>
+  @if(!bare)~
+    <h2 class="book-strip-heading" id="book-strip-heading">Books I've illustrated</h2>
+  @end~
+  <div class="book-strip-list">
+    @each(book in books)~
+      @if(book.cover)~
+        <a class="book-strip-item" href="{{ book.url }}">
+          <img src="{{ book.cover }}" alt="{{ book.title }}" loading="lazy" ssqch:widths="240,480" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 50vw">
+          <span class="book-strip-title">{{ book.title }}</span>
+          <span class="book-strip-credit">{{ book.credit }}</span>
+        </a>
+      @end~
+    @end~
+  </div>
+  @if(!bare)~
+    <p class="book-strip-more">Writing a book or a course that needs illustrations? <a href="/commissions/" data-cta="start-commission">Let's talk</a>.</p>
+  @end~
+</section>

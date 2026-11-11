@@ -10,10 +10,10 @@
     </div>
 
     <!-- Desktop Navigation (centered) -->
-    {{-- Five nav items plus four social icons need ~900px, so the horizontal
+    {{-- Six nav items plus four social icons need ~900px, so the horizontal
          bar starts at lg; narrower viewports get the mobile menu below. --}}
     <nav class="hidden lg:flex flex-1 justify-center">
-      <div class="flex space-x-8">
+      <div class="flex space-x-4 xl:space-x-8">
         @each(item in site.navigation)
           <a class="px-3 py-2 font-bold text-base border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
             {{ item.label }}

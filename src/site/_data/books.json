@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Automate Everything, Notice Nothing",
+		"credit": "Illustrated for Lars Klint",
+		"url": "https://larsklint.shop/products/automate-everything-notice-nothing",
+		"cover": "/content/images/books/automate-everything-notice-nothing-cover.png"
+	},
+	{
+		"title": "Microsoft Azure in Action",
+		"credit": "Illustrated for Lars Klint (Manning)",
+		"url": "https://www.manning.com/books/microsoft-azure-in-action",
+		"cover": "/content/images/books/microsoft-azure-in-action.jpg"
+	},
+	{
+		"title": "You Don't Know JS Yet: Get Started",
+		"credit": "Cover illustration for Kyle Simpson",
+		"url": "https://www.amazon.com/You-Dont-Know-JS-Yet/dp/B084DFZ6GW/",
+		"cover": "/content/images/portfolio/ydkjsy-get-started.png"
+	},
+	{
+		"title": "You Don't Know JS Yet: Scope & Closures",
+		"credit": "Cover illustration for Kyle Simpson",
+		"url": "https://www.amazon.com/You-Dont-Know-JS-Yet-ebook/dp/B08634PZ3N/",
+		"cover": "/content/images/portfolio/ydkjsy-scope.png"
+	},
+	{
+		"title": "Developer Relations Activity Patterns",
+		"credit": "Co-author and illustrator (Apress)",
+		"url": "/developer-relations-activity-patterns/",
+		"cover": "/content/images/announcing-devrel-activity-patterns-book/devrel-activity-patterns.jpg"
+	},
+	{
+		"title": "The Illustrated Book of Dad Jokes",
+		"credit": "Author and illustrator",
+		"url": "/the-illustrated-book-of-dad-jokes/",
+		"cover": "/content/images/the-illustrated-book-of-dad-jokes/book-cover.jpg"
+	}
+]

@@ -31,6 +31,6 @@ The shops and restaurants were interesting. I was surprised to see many American
 
 ## Let Me Draw for You!
 
-Would you like one of my custom avatars? Or how about for your team? Check out the [options available on my store](/shop/#commission).
+Would you like one of my custom avatars? Or how about for your team? Check out [how to commission one](/commissions/).
 
 Or does drawing avatars, caricatures, and other custom illustrations sound like a fun way to engage your audience? I would absolutely love more opportunities to do this kind of work! [Let's talk](mailto:david@reverentgeek.com)!

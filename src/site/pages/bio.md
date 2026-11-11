@@ -1,12 +1,12 @@
 ---
 id: a0baf47022e711edb818395c06af3095
 title: "Bio"
-description: "David Neal is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia."
+description: "David Neal is an illustrator, builder, and DevRel leader, helping folks in tech be more awesome."
 date: 2022-08-23
 slug: bio
 ---
 
-David is a family man, musician, illustrator, software developer, and Microsoft MVP living in North Georgia. His mission in life is to help people be more awesome. David runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
+David is an illustrator, builder, and DevRel leader, helping folks in tech be more awesome. He's a Senior Developer Advocate at MongoDB, co-author of *Developer Relations Activity Patterns*, and a family man and musician living in North Georgia. David runs on a high-octane mixture of caffeine and JavaScript, and is made entirely of bacon.
 
 ## Headshots
 

@@ -34,7 +34,7 @@ layout: layouts/default.edge
       </nav>
     @end
 
-    @!component('components/support', { kofiLink: site.kofi })
+    @!component('components/support', { variant: calloutFor(postTopics), kofiLink: site.kofi })
 
     @let(nav = adjacentPosts(collections.posts, page.url))
     @if(nav.older || nav.newer)

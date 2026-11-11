@@ -24,10 +24,27 @@ export function siteFilters( { socialImage } ) {
 
 		jsonLdArticle,
 
+		calloutFor,
+
 		currentYear() {
 			return new Date().getFullYear();
 		}
 	};
+}
+
+// Which end-of-post callout a post gets, from its tags: drawing posts point to
+// /commissions/, DevRel posts to /devrel/, and everything else to Ko-fi.
+// An explicit `devrel` tag wins (the DevRel book posts are also tagged `books`), then
+// illustration, then the broader DevRel topics.
+const COMMISSION_TAGS = [ "illustration", "books" ];
+const DEVREL_TAGS = [ "devrel", "speaking", "conferences", "leadership", "community", "career" ];
+
+export function calloutFor( tags ) {
+	const list = Array.isArray( tags ) ? tags : [];
+	if ( list.includes( "devrel" ) ) return "devrel";
+	if ( list.some( tag => COMMISSION_TAGS.includes( tag ) ) ) return "commissions";
+	if ( list.some( tag => DEVREL_TAGS.includes( tag ) ) ) return "devrel";
+	return "kofi";
 }
 
 // Rounded minutes, based on rendered post HTML at ~200 words per minute.

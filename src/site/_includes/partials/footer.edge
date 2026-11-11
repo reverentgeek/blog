@@ -9,7 +9,7 @@
         <img class="footer-logo" src="{{ site.logo }}" alt="" ssqch:widths="48,96,144" sizes="48px">
         <span>{{ site.title }}</span>
       </a>
-      <p class="footer-tagline">{{ site.description }}</p>
+      <p class="footer-tagline">{{ site.description }}.</p>
       @!component('components/social-links', { links: site.social_links, containerClass: 'footer-social', iconClass: 'text-white w-5 h-5' })
     </div>
 
@@ -18,16 +18,29 @@
       <ul class="footer-list">
         <li><a class="footer-link" href="/topics/">Topics</a></li>
         <li><a class="footer-link" href="/archive/">Archive</a></li>
+        <li><a class="footer-link" href="/shop/">Stickers &amp; T-Shirts</a></li>
         <li><a class="footer-link" href="https://github.com/reverentgeek/blog">Source Code</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-nav" aria-labelledby="footer-work">
+      <h2 class="footer-heading" id="footer-work">Work with Me</h2>
+      <ul class="footer-list">
+        <li><a class="footer-link" href="/avatars/">Avatars</a></li>
+        <li><a class="footer-link" href="/commissions/">Commissions</a></li>
+        <li><a class="footer-link" href="/devrel/">DevRel</a></li>
+        <li><a class="footer-link" href="/speaking/">Speaking</a></li>
+        <li><a class="footer-link" href="/bio/">Bio &amp; Headshots</a></li>
+        <li><a class="footer-link" data-cta="resume" href="https://drive.google.com/file/d/1sPUrePKXs2HODNGtGP3Y103izXZDJ3et/view?usp=sharing">Résumé</a></li>
       </ul>
     </nav>
 
     <nav class="footer-nav" aria-labelledby="footer-connect">
       <h2 class="footer-heading" id="footer-connect">Connect</h2>
       <ul class="footer-list">
-        <li><a class="footer-link" href="mailto:david@reverentgeek.com">Contact</a></li>
+        <li><a class="footer-link" data-cta="contact-email" href="mailto:david@reverentgeek.com">Contact</a></li>
         <li><a class="footer-link" href="/feed.xml">RSS</a></li>
-        <li><a class="footer-link" href="{{ site.kofi }}" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
+        <li><a class="footer-link" data-cta="kofi" href="{{ site.kofi }}" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
       </ul>
     </nav>
   </div>

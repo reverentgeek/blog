@@ -1,0 +1,15 @@
+{{--
+  One testimonial from src/site/_data/testimonials.json, passed in as the `t` prop
+  (components have an isolated scope): @!component('components/testimonial', { t: testimonials.gregSvoboda })
+  `image` is optional (usually the illustration they commissioned), and so is `role`.
+  Directives end in `~` so no blank lines reach a Markdown page (see book-strip.edge).
+--}}
+<figure class="testimonial">
+  @if(t.image)~
+    <img class="testimonial-image" src="{{ t.image }}" alt="{{ t.imageAlt || '' }}" loading="lazy" ssqch:widths="96,192" sizes="96px">
+  @end~
+  <div class="testimonial-body">
+    <blockquote class="testimonial-quote"><p>{{ t.quote }}</p></blockquote>
+    <figcaption class="testimonial-name"><strong>{{ t.name }}</strong>{{ t.role ? ', ' + t.role : '' }}</figcaption>
+  </div>
+</figure>

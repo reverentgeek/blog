@@ -1,13 +1,16 @@
 # ReverentGeek
 
-> Personal website and blog of David Neal (aka ReverentGeek). David is a family man, geek, musician, illustrator, international speaker, software developer, author, and Microsoft MVP. He is currently a Developer Relations Engineer for Plaid. His mission is to help folks in technology be more awesome.
+> Personal website and blog of David Neal (aka ReverentGeek): illustrator, builder, and DevRel leader, helping folks in tech be more awesome. David is a Senior Developer Advocate at MongoDB and co-author of Developer Relations Activity Patterns. He takes illustration commissions and is open to DevRel collaboration.
 
 ## Main Pages
 
 - [About Me](https://reverentgeek.com/about/): Bio, background, and contact information for David Neal
-- [Speaking](https://reverentgeek.com/speaking/): Upcoming and past speaking engagements
+- [Custom Avatars](https://reverentgeek.com/avatars/): Hand-drawn avatars from $30, with prices, ordering, and the gallery
+- [Illustration Commissions](https://reverentgeek.com/commissions/): Custom avatars, stickers, logos, mascots, book illustrations, and live event art
+- [Developer Relations](https://reverentgeek.com/devrel/): David's DevRel experience, the book, testimonials, and how to work together
+- [Speaking](https://reverentgeek.com/speaking/): More than 170 speaking events since 2011
 - [Portfolio](https://reverentgeek.com/portfolio/): Developer and illustration portfolio featuring avatars, logos, sketch notes, tech humor, and more
-- [Shop](https://reverentgeek.com/shop/): Commission custom illustrations, grab the Dad Joke book, stickers, t-shirts, and more
+- [Stickers & T-Shirts](https://reverentgeek.com/shop/): Stickers on StickerMule and t-shirts on Amazon
 - [DevRel Portfolio](https://reverentgeek.com/devrel-portfolio/): Highlights from content, talks, projects, interviews, and podcasts from David's Developer Relations career
 - [Keynotes and Presentations](https://reverentgeek.com/presentations/): Abstracts for keynotes, talks, and workshops
 - [Bio and Headshots](https://reverentgeek.com/bio/): Speaker bio and headshot photos
