@@ -65,6 +65,59 @@ Done alongside "Remove Eleventy" in the sitesquatch TODO. The build output is th
   - Unused JavaScript (about 73 KB), all Google Analytics' `gtag.js`. It doesn't block anything (Total Blocking Time 0 ms); loading it later, a lighter analytics tool, or dropping it is a preference.
   - Image delivery (about 12 KB for one homepage AVIF served a bit larger than shown).
 
+## Website effectiveness
+
+Goals: **#1 illustration commissions** (avatars, stickers, book illustration, logos, social media, event illustration) and **#2 DevRel work** (full- or part-time roles and contracts). Speaking, software projects and content support these goals rather than being goals of their own. No email list for now. The reasoning, current-state audit and section-by-section page outlines are in [`WEBSITE-PLAN.md`](WEBSITE-PLAN.md); item numbers below match its "Work items." Listed in the suggested order.
+
+### First: the books
+
+- [ ] **Lars Klint two-book case-study post** (plan item 1). A repeat-client story covering *Automate Everything, Notice Nothing* (<https://larsklint.shop/products/automate-everything-notice-nothing>) and *Microsoft Azure in Action* (Manning, 2025, <https://www.manning.com/books/microsoft-azure-in-action>). Open with his acknowledgement ("…somehow draws the joke I was trying to make rather than the one I actually made"), then how each project went, the process with sketch-to-final pairs, favorite pieces, links to both books, and a soft CTA to `/commissions/`. Tags `books` and `illustration`.
+  - [ ] Photograph or screenshot the printed acknowledgements page.
+  - [ ] Gather finished illustrations, sketches, covers and photos of the printed books into `src/site/content/images/<post-slug>/`.
+  - [ ] Check the Manning agreement about reproducing the *Azure in Action* illustrations.
+  - [x] Copy Lars' LinkedIn launch post ("158 pages, illustrated throughout by David Neal…"; full text in the plan).
+  - [ ] Save the LinkedIn post's URL and a trimmed screenshot for the case study.
+  - [ ] Ask Lars for permission to quote the acknowledgement and use the covers, and optionally for a direct testimonial (the questions are in the plan).
+- [ ] **Feature *Developer Relations Activity Patterns* as illustration work too.** It's currently framed only as a DevRel book in `announcing-devrel-activity-patterns-book.md` and `developer-relations-activity-patterns.md`. Ask co-authors for a quote about the illustrations.
+- [ ] **Use the book's first review.** Lindsay Brunner's five-star Amazon review, "Basically the encyclopedia of DevRel" (2026-11-05; full text in the plan under "The DevRel book's first review"). Add a short "What readers say" excerpt with an Amazon link to `developer-relations-activity-patterns.md`, and use it on `/devrel/`. Optionally message Lindsay to ask whether she minds being quoted.
+
+### Illustration commissions
+
+- [ ] **Create `/commissions/`** (plan item 2): hero about the buyer's outcome with a **Start a commission** button; featured books; a "what I draw" card per category linked to its gallery; why work with me; testimonials; a three-step process (tell me what you need → I sketch, you react → get your files); details as benefits (turnaround, revisions, formats, usage rights, maybe "starting at" prices); final CTA. Avatars keep the Shopify buy button; everything else is an email inquiry with a prefilled subject and checklist.
+- [ ] **Redirect `/shop/#commission` references** to `/commissions/` (`avatars.html:10`, `shop.md:10`, `shop.md:16`) and slim `shop.md` down to merch plus a pointer (plan item 9).
+- [ ] **Portfolio:** add a **Book Illustration** tile first, and point "Commission a custom illustration!" at `/commissions/` instead of `mailto:` (`portfolio.md`).
+- [ ] **Gallery CTAs:** add a commission CTA at the top *and* bottom of `avatars.html`, `illustrations.html`, `sketch-notes.html`, `tech-humor.html` and `doodles.html`. Add testimonials near the top of `avatars.html`.
+- [ ] **Avatar `alt` text:** replace the generic `alt="avatar illustration"` in `avatars.html` over time.
+- [ ] **No-nav commission landing page for social bios** (plan item 8) using `layouts/no-nav.edge`, at an easy URL like `/draw/`. Update the Instagram, Bluesky and X bios.
+- [ ] **Post-purchase message** (plan item 11): customize the Shopify order confirmation and status page with what happens next, what to send, turnaround and "tag @reverentgeek when you use it."
+
+### Homepage, navigation and consistency
+
+- [ ] **Homepage hero** (plan item 3, `src/site/index.edge`): say what you do *for people*, with two primary buttons, **Hire me to illustrate** → `/commissions/` and **Hire me for DevRel** → `/devrel/`. Caption the avatar as a product sample ("I drew this. I can draw you, too.").
+- [ ] **Homepage "Books" strip** between the hero and the post list on page 1, with all three covers.
+- [ ] **Navigation** (`site.json`): Home · About · Illustration · DevRel · Portfolio · Shop. Remove Speaking from the nav.
+- [ ] **Footer** (`partials/footer.edge`): add Speaking, Bio & headshots and Résumé links.
+- [ ] **One description everywhere:** `site.json` `description` and `feed.subtitle` currently disagree. Pick one line that mentions illustration and DevRel, and use it in the footer tagline, `bio.md`, `about.md` and social bios.
+- [ ] **Links page** (`links.html`): commissions (or `/draw/`) first, then DevRel, blog and books, with the rest under "More."
+
+### DevRel career
+
+- [ ] **Create `/devrel/`** (plan item 4): hero with **Let's talk** and **Résumé**; the problem (DevRel is hard to plan and prove); what I do; authority (10+ years in DevRel at MongoDB, Plaid, Slack, Asana and Okta; co-author of *DevRel Activity Patterns*, with the "Basically the encyclopedia of DevRel" Amazon review excerpt, attributed to the book rather than to you; 170+ talks); the illustrator advantage (e.g., *An Illustrated Guide to OAuth and OpenID Connect*); testimonials; curated proof from `devrel-portfolio.md`; final CTA.
+- [ ] **Decide how openly to signal availability** on `/devrel/` and About (the current employer is named on About).
+- [ ] **Restructure `about.md`** (plan item 6): story first, then the "I believe people want to do their best work" philosophy given visual weight, two paths (commissions and DevRel), the books, a real photo next to the avatar, and the link directory moved to the bottom or `/links/`.
+- [ ] **Speaking page:** keep the URL. Replace "*No speaking engagements currently scheduled.*" with a summary ("170+ talks, including DevSum, CodeMash, KCDC…") and link it from `/devrel/`.
+- [ ] **Ask one or two DevRel colleagues** for endorsements that mention outcomes.
+
+### Posts and measurement
+
+- [ ] **GA4 click events** (plan item 13) for commission CTAs, the Shopify buy button, inquiry `mailto:` links, `/devrel/` "Let's talk" and résumé, and post callout variants. Use a delegated handler in `src/assets/js/index.js` keyed on `data-cta` attributes, then `pnpm run lint`. Ship this before or with the CTA changes, and record a baseline (commissions and inquiries per month) to check again 60–90 days later.
+- [ ] **End-of-post callout by tag** (plan item 7, `layouts/post.edge:37`, `components/support.edge`): `illustration`/`books` → commissions; `devrel`/`speaking`/`conferences`/`leadership`/`community`/`career` → `/devrel/`; everything else → Ko-fi. Pass the tags in as a prop (components have isolated scope). Tag older drawing posts with `illustration` where it's missing.
+
+### Ongoing
+
+- [ ] **Collect testimonials** (plan item 12): Lars, the *DevRel Activity Patterns* co-authors, five to ten past avatar and logo clients, and DevRel colleagues. Ask every new commission client for a sentence at delivery, and get permission for name and image.
+- [ ] **Revisit an email list later.** RSS-to-email automation (e.g., Buttondown reading `feed.xml`) is the low-effort option if it's ever wanted.
+
 ## Output differences from the old Eleventy build
 
 Nothing has to match the old build anymore. The sitesquatch TODO fixes the ones that are wrong (Markdown leaving `"` unescaped, the minifier not shortening attribute values). Kept on purpose:
