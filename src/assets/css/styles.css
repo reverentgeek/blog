@@ -2,7 +2,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: "Roboto", "Segoe UI", "Helvetica Neue", "Arial",ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", "Segoe UI", "Helvetica Neue", "Arial",ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Georgia", "Cambria", ui-serif, serif;
   --font-mono: "JetBrains Mono", "Menlo", "Monaco", "Consolas", monospace;
   --color-rgblue: #6FC2FF;
@@ -327,8 +327,8 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
    Deliberately a rem, not `ch`: `ch` resolves against each element's own font
    size, which gave the 36px h1 an 1189px column and the 14px meta line a 456px
-   one. A rem keeps every element in the same column. Measured at 18px Roboto,
-   36.5rem fits ~75 characters at full fill; wrapped lines land around 62.
+   one. A rem keeps every element in the same column. Measured at 18px Figtree,
+   wrapped lines in 36.5rem land around 68 characters (73 at most).
 
    Tables are in the column too. Nearly all of them here are 2-3 columns of
    short text, and letting those run to the full container made them look

@@ -1,32 +1,18 @@
+/* Figtree, as variable fonts: one file per style covers every weight (300-900).
+   Latin subset from @fontsource-variable/figtree 5.3.0, SIL Open Font License (Figtree-OFL.txt). */
 @font-face {
-	font-family: "Roboto";
-	src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
-	font-weight: 400;
+	font-family: "Figtree";
+	src: url("../fonts/Figtree-Variable.woff2") format("woff2");
+	font-weight: 300 900;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("../fonts/Roboto-RegularItalic.woff2") format("woff2"), url("../fonts/Roboto-RegularItalic.woff") format("woff");
-	font-weight: 400;
+	font-family: "Figtree";
+	src: url("../fonts/Figtree-VariableItalic.woff2") format("woff2");
+	font-weight: 300 900;
 	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
 	font-display: swap;
 }
 
