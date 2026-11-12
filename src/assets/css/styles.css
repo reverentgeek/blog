@@ -6,6 +6,11 @@
   --font-serif: "Georgia", "Cambria", ui-serif, serif;
   --font-mono: "JetBrains Mono", "Menlo", "Monaco", "Consolas", monospace;
   --color-rgblue: #6FC2FF;
+  /* One blue for every link and button (6.7:1 on white), a darker one for hover, and
+     dark ink for headings. The light brand blue (rgblue) is for backgrounds and accents. */
+  --color-action: #1d4ed8;
+  --color-action-hover: #1e40af;
+  --color-ink: #111827;
   --color-xtwitter: #111111;
   --color-facebook: #1877F2;
   --color-linkedin: #0077B5;
@@ -28,13 +33,17 @@
 
 	/* The links page's two goal links stand out from the rest. */
 	.link-link-primary {
-		@apply bg-blue-600 border-blue-600 text-white! font-bold
+		@apply bg-action border-action text-white! font-bold
 	}
 
 	.links-more summary {
-		@apply cursor-pointer list-none text-blue-500
+		@apply cursor-pointer list-none text-action
 	}
   }
+
+@layer base {
+	h1, h2, h3, h4, h5, h6 { color: var(--color-ink); }
+}
 
 body {
 	font-size: 18px;
@@ -187,7 +196,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .topic-chip {
-	@apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-300 bg-gray-50 text-base text-gray-800 no-underline! transition-colors duration-200 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700;
+	@apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-300 bg-gray-50 text-base text-gray-800 no-underline! transition-colors duration-200 hover:border-blue-400 hover:bg-blue-50 hover:text-action;
 }
 
 .topic-chip-count {
@@ -216,7 +225,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .archive-link {
-	@apply text-blue-600 underline;
+	@apply text-action underline;
 }
 
 .archive-date {
@@ -241,14 +250,14 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply block font-semibold mb-1;
 }
 .post-search-input {
-	@apply w-full px-4 py-2 rounded-lg border-2 border-gray-300 bg-white text-base focus:border-blue-700 focus:outline-none;
+	@apply w-full px-4 py-2 rounded-lg border-2 border-gray-300 bg-white text-base focus:border-action focus:outline-none;
 }
 .post-search-status {
 	@apply mt-2 mb-0 text-sm text-gray-600 min-h-5;
 }
 .post-search-results {
 	@apply mt-4 space-y-5;
-	a { @apply font-semibold text-blue-700 underline; }
+	a { @apply font-semibold text-action underline; }
 	p { @apply mt-1 mb-0 text-gray-700 text-base; }
 }
 .post-search-date {
@@ -264,7 +273,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 .post-related-list {
 	@apply space-y-2;
-	a { @apply font-medium text-blue-700 underline; }
+	a { @apply font-medium text-action underline; }
 }
 .post-related-date {
 	@apply block text-sm text-gray-500;
@@ -305,9 +314,9 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	p, pre {
 		@apply mb-8;
 	}
-	/* blue-700, not blue-500: blue-500 is only ~3.8:1 on white, under the 4.5:1 text minimum. */
+	/* The action blue (6.7:1 on white). The old blue-500 was only ~3.8:1, under the 4.5:1 text minimum. */
 	a {
-		@apply text-blue-700 underline;
+		@apply text-action underline;
 	}
 	/* Indent with padding, not margin — the reading-column rule below centres
 	   these with `mx-auto`, and a margin-left utility would override it. */
@@ -381,7 +390,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 		@apply mb-0;
 	}
 	a {
-		@apply text-blue-700 underline;
+		@apply text-action underline;
 	}
 	ul {
 		@apply list-disc ml-6 list-outside;
@@ -470,28 +479,45 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply text-sm text-gray-600;
 }
 
+/* /portfolio/: the same card style as Selected work (.home-work-item): no border, the
+   art in a soft rounded frame, and the title underlines on hover.
+   `!` beats the `.content-body a` link styles. */
 .portfolio-grid {
-	@apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8;
+	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6 mb-8;
 }
 
 .portfolio-grid .portfolio-item {
-	@apply flex flex-col rounded-lg overflow-hidden border border-gray-200 no-underline text-gray-800 transition-all duration-200 hover:bg-gray-100 hover:shadow-md;
+	@apply flex flex-col no-underline! text-gray-800!;
 }
 
+/* Art fills the frame, like Selected work; the icon SVGs are fitted with padding instead. */
 .portfolio-grid .portfolio-item img {
-	@apply w-full h-56 object-contain p-4;
+	@apply w-full aspect-[4/3] object-cover rounded-lg bg-gray-100;
+}
+
+.portfolio-grid .portfolio-item img[src$=".svg"] {
+	@apply object-contain p-8;
+}
+
+/* For a thumbnail whose interesting part is in the corner (sketch notes). */
+.portfolio-grid .portfolio-crop-top-left img {
+	@apply object-left-top;
 }
 
 .portfolio-grid .portfolio-item h3 {
-	@apply text-base font-medium p-3 m-0 bg-gray-50 min-h-14 mt-auto;
+	@apply pt-3 m-0 text-base font-semibold leading-snug;
+}
+
+.portfolio-grid .portfolio-item:is(:hover, :focus-visible) h3 {
+	@apply underline text-action;
 }
 
 .cta-button {
-	@apply inline-block px-6 py-3 mr-3 mb-3 bg-blue-600 text-white! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-700 hover:shadow-lg;
+	@apply inline-block px-6 py-3 mr-3 mb-3 bg-action text-white! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-action-hover hover:shadow-lg;
 }
 
 .cta-button-secondary {
-	@apply inline-block px-6 py-3 mr-3 mb-3 border-2 border-blue-500 text-blue-700! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-50 hover:shadow-md;
+	@apply inline-block px-6 py-3 mr-3 mb-3 border-2 border-action text-action! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-50 hover:shadow-md;
 }
 
 /* Homepage collage (partials/header.edge). */
@@ -527,7 +553,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .home-intro-caption {
 	@apply mb-0 text-sm text-gray-600;
-	a { @apply text-blue-700 underline; }
+	a { @apply text-action underline; }
 }
 
 /* Shared by the action buttons on /devrel/. */
@@ -547,7 +573,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .home-section-links {
 	@apply mb-0 text-sm text-gray-600;
-	a { @apply text-blue-700 underline; }
+	a { @apply text-action underline; }
 }
 
 /* Homepage "Selected work": three cards, one per kind of work. */
@@ -559,10 +585,14 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply grid gap-4 sm:grid-cols-3;
 }
 
-/* `!` beats the `.content-body a` link styles when the cards are inside a page (/commissions/). */
-/* On phones each card is a compact row (thumbnail beside the text); from sm up, a column. */
+/* On phones each card is a compact row (thumbnail beside the text); from sm up, a column.
+   No card border: the art sits in a soft frame and the title underlines on hover.
+   `!` beats the `.content-body a` link styles when the cards are inside a page (/commissions/). */
 .home-work-item {
-	@apply grid grid-cols-[6rem_1fr] grid-rows-[auto_1fr] rounded-lg border border-gray-200 overflow-hidden no-underline! text-gray-800! transition-all duration-200 hover:bg-gray-50 hover:shadow-md sm:flex sm:flex-col;
+	@apply grid grid-cols-[6rem_1fr] grid-rows-[auto_1fr] no-underline! text-gray-800! sm:flex sm:flex-col;
+}
+.home-work-item:hover .home-work-title {
+	@apply underline text-action;
 }
 
 /* ssqch/image wraps the <img> in a <picture>, which is the actual grid item. */
@@ -572,15 +602,15 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .home-work-item img {
-	@apply w-full h-full aspect-square object-cover object-top bg-gray-50 sm:h-auto sm:aspect-[4/3];
+	@apply w-full h-full aspect-square object-cover object-top rounded-lg bg-gray-100 sm:h-auto sm:aspect-[4/3];
 }
 
 .home-work-title {
-	@apply px-3 pt-3 font-semibold leading-snug;
+	@apply pl-3 pt-1 font-semibold leading-snug sm:pl-0 sm:pt-3;
 }
 
 .home-work-text {
-	@apply px-3 pb-3 pt-1 text-sm text-gray-600;
+	@apply pl-3 pt-1 text-sm text-gray-600 sm:pl-0;
 }
 
 .commission-samples {
@@ -645,7 +675,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 /* Testimonial component: the client's illustration beside their words. */
 .testimonial {
-	@apply flex gap-4 items-start my-8 p-4 rounded-lg bg-gray-50 border border-gray-200;
+	@apply flex gap-4 items-start my-8 py-1 pl-5 border-l-4 border-rgblue;
 }
 
 .testimonial-image {
@@ -721,24 +751,27 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .book-strip-item {
 	/* `!` beats the `.content-body a` link styles when the strip is inside a page. */
-	@apply flex flex-col rounded-lg border border-gray-200 overflow-hidden no-underline! text-gray-800! transition-all duration-200 hover:bg-gray-50 hover:shadow-md;
+	@apply flex flex-col no-underline! text-gray-800!;
+}
+.book-strip-item:hover .book-strip-title {
+	@apply underline text-action;
 }
 
 .book-strip-item img {
-	@apply w-full aspect-[4/3] object-contain bg-gray-50;
+	@apply w-full aspect-[4/3] object-contain rounded-lg bg-gray-100;
 }
 
 .book-strip-title {
-	@apply px-3 pt-2 text-sm font-semibold leading-snug;
+	@apply pt-2 text-sm font-semibold leading-snug;
 }
 
 .book-strip-credit {
-	@apply px-3 pb-3 pt-1 text-xs text-gray-600!;
+	@apply pt-1 text-xs text-gray-600!;
 }
 
 .book-strip-more {
 	@apply mt-4 mb-0 text-sm text-gray-600;
-	a { @apply text-blue-700 underline; }
+	a { @apply text-action underline; }
 }
 
 /* Site footer.
@@ -789,7 +822,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
    plus the colour shift. `inline-block` with vertical padding gives each row a
    tap target taller than the 18px text. */
 .footer-link {
-	@apply inline-block py-1 text-gray-700 no-underline transition-colors duration-200 hover:text-blue-700 hover:underline underline-offset-4;
+	@apply inline-block py-1 text-gray-700 no-underline transition-colors duration-200 hover:text-action hover:underline underline-offset-4;
 }
 
 .footer-bottom {
@@ -856,22 +889,24 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 .gallery-more {
 	@apply my-8;
 	summary {
-		@apply inline-block cursor-pointer px-6 py-3 rounded-lg border-2 border-blue-500 text-blue-700 font-semibold list-none hover:bg-blue-50;
+		@apply inline-block cursor-pointer px-6 py-3 rounded-lg border-2 border-action text-action font-semibold list-none hover:bg-blue-50;
 	}
 	summary::-webkit-details-marker { display: none; }
 	&[open] summary { @apply mb-6; }
 }
 
+/* Gallery tiles: the art sits on the page (no shadow or frame) with rounded corners.
+   Hover and keyboard focus draw a ring in the action blue around the image. */
 .gallery-grid a {
-	@apply cursor-pointer block;
+	@apply cursor-pointer block rounded-xl focus-visible:outline-none;
 }
 
 .gallery-grid a img {
-	@apply w-full h-auto block rounded-lg shadow-md border-2 border-transparent transition-all duration-200;
+	@apply w-full h-auto block rounded-xl outline-2 outline-offset-2 outline-transparent transition-[outline-color] duration-200;
 }
 
-.gallery-grid a:hover img {
-	@apply shadow-xl border-blue-400;
+.gallery-grid a:is(:hover, :focus-visible) img {
+	@apply outline-action;
 }
 
 /* Single column gallery variant */
@@ -879,12 +914,14 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	column-count: 1;
 }
 
+/* Full-width pieces (sketch notes) are mostly drawn on white, so without a frame they run
+   into each other. These keep a hairline frame and more space; hover and focus turn it blue. */
 .gallery-single a {
-	@apply cursor-pointer relative block overflow-hidden rounded-lg shadow-md border-2 border-transparent transition-all duration-200 mb-4;
+	@apply cursor-pointer relative block overflow-hidden rounded-xl mb-10 outline-1 outline-gray-200 transition-[outline-color] duration-200 focus-visible:outline-none;
 }
 
-.gallery-single a:hover {
-	@apply shadow-xl border-blue-400;
+.gallery-single a:is(:hover, :focus-visible) {
+	@apply outline-2 outline-offset-2 outline-action;
 }
 
 .gallery-single a img {
@@ -906,7 +943,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .callout-note {
 	@apply bg-blue-50 border-blue-400;
-	.callout-label { @apply text-blue-700; }
+	.callout-label { @apply text-action; }
 }
 
 .callout-tip {
@@ -931,8 +968,8 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 /* Commission and DevRel callouts (end of posts, top and bottom of the galleries) */
 .callout-commission {
-	@apply bg-sky-50 border-rgblue;
-	.callout-label { @apply text-blue-700; }
+	@apply bg-rgblue/15 border-rgblue;
+	.callout-label { @apply text-action; }
 }
 
 .callout-devrel {
@@ -948,7 +985,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .callout-button {
 	/* text-white and no-underline need `!` to beat the `.content-body a` rule above. */
-	@apply inline-block mt-3 px-4 py-2 rounded-full font-bold text-white! bg-blue-600 no-underline! transition-all duration-200 hover:bg-blue-700 hover:shadow-lg;
+	@apply inline-block mt-3 px-4 py-2 rounded-lg font-bold text-white! bg-action no-underline! transition-all duration-200 hover:bg-action-hover hover:shadow-lg;
 }
 
 .callout-devrel .callout-button {
@@ -968,7 +1005,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 /* /resume/: an online résumé that also prints cleanly to PDF. */
 .resume {
 	@apply max-w-3xl mx-auto my-8 text-base leading-relaxed text-gray-800;
-	a { @apply text-blue-700 underline decoration-blue-300 underline-offset-2 hover:decoration-blue-700; }
+	a { @apply text-action underline decoration-blue-300 underline-offset-2 hover:decoration-action; }
 	h2 {
 		@apply text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-rgblue pb-1 mt-10 mb-4;
 	}

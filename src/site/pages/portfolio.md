@@ -21,14 +21,14 @@ Avatars, books, logos, stickers, sketch notes, and the occasional bad joke.
     <h3>Book Illustrations</h3>
   </a>
   <a href="/avatars/" class="portfolio-item">
-    <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="Avatars">
+    <img src="/content/images/avatars/177-linda.jpg" alt="Avatars">
     <h3>Avatars</h3>
   </a>
   <a href="/illustrations/" class="portfolio-item">
     <img src="/content/images/portfolio/010-live-life-all-caps.jpg" alt="Logos, Stickers and Projects">
     <h3>Logos, Stickers and Projects</h3>
   </a>
-  <a href="/sketch-notes/" class="portfolio-item">
+  <a href="/sketch-notes/" class="portfolio-item portfolio-crop-top-left">
     <img src="/content/images/sketch-notes/that-tx-2022-keynote-gblock.jpg" alt="Sketch Notes">
     <h3>Sketch Notes</h3>
   </a>
@@ -37,7 +37,7 @@ Avatars, books, logos, stickers, sketch notes, and the occasional bad joke.
     <h3>Tech Humor</h3>
   </a>
   <a href="/doodles/" class="portfolio-item">
-    <img src="/content/images/2019/01/IMG_5113.jpg" alt="Doodles">
+    <img src="/content/images/doodles/026-be-kind.jpg" alt="Doodles">
     <h3>Doodles</h3>
   </a>
   <a href="/31-days-of-inspiration-january-2019/" class="portfolio-item">
