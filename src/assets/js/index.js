@@ -156,7 +156,8 @@
 		const galleries = document.querySelectorAll( ".gallery-grid, .gallery-single" );
 
 		galleries.forEach( ( gallery ) => {
-			const links = gallery.querySelectorAll( "a" );
+			// Links inside a caption (a client's website, say) aren't gallery images.
+			const links = Array.from( gallery.querySelectorAll( "a" ) ).filter( link => !link.closest( "figcaption" ) );
 			// Get the actual image src from <img> tags (which have optimized paths)
 			// or fall back to href if no img found
 			const images = Array.from( links ).map( ( link ) => {

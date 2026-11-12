@@ -885,6 +885,23 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	}
 }
 
+/* /illustrations/: featured pieces with a short caption under each image. */
+.gallery-caption {
+	@apply m-0;
+	figcaption {
+		@apply mt-3 text-sm leading-relaxed text-gray-700;
+		strong { @apply block text-base text-ink; }
+		/* Inline, not the block display gallery image links get. */
+		a { @apply inline text-action underline; }
+	}
+}
+
+/* Same square box for every featured image (fitted, not cropped) so the captions line up. */
+.gallery-grid-captioned {
+	@apply gap-y-8;
+	a img { @apply aspect-square object-contain; }
+}
+
 /* /avatars/: the rest of the gallery behind a "See more" toggle. */
 .gallery-more {
 	@apply my-8;
