@@ -58,7 +58,7 @@ I punch bears\* and help folks be more awesome.
 
 I teach, motivate, entertain, and lead people to work smarter, build fantastic solutions, and become indispensable members of their teams and communities.
 
-I 20+ years of developer and IT experience. Most of that experience has been in startups and smaller companies where I've "worn many hats" and done whatever it takes to make my organization and team successful.
+I have 20+ years of developer and IT experience. Most of that experience has been in startups and smaller companies where I've "worn many hats" and done whatever it takes to make my organization and team successful.
 
 I've been active in the developer community since 2010, speaking and volunteering at numerous meet-ups, conferences, and events.
 

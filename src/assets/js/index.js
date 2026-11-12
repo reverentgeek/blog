@@ -36,6 +36,13 @@
 		menu.querySelectorAll( "a" ).forEach( ( link ) => {
 			link.addEventListener( "click", closeMenu );
 		} );
+
+		// Escape closes the open menu and puts focus back on the button.
+		document.addEventListener( "keydown", ( e ) => {
+			if ( e.key !== "Escape" || button.getAttribute( "aria-expanded" ) !== "true" ) return;
+			closeMenu();
+			button.focus();
+		} );
 	} );
 } )();
 

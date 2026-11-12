@@ -125,3 +125,18 @@ test( "end-of-post callout depends on the post's tags", async () => {
 		assert.match( html, new RegExp( `data-cta="?post-callout-${ variant }` ), `${ slug } should get the ${ variant } callout` );
 	}
 } );
+
+// Post dates are calendar dates. Formatting them in local time showed the day before on
+// builds west of UTC, so run this with TZ=America/New_York as well as UTC.
+test( "post dates match the front matter in any timezone", async () => {
+	const post = await readDistFile( "leveling-guitar-patches-with-tauri/index.html" );
+	assert.match( post, /June 17, 2026/ );
+	assert.doesNotMatch( post, /June 16, 2026/ );
+} );
+
+test( "every page has a skip link and a labeled menu button", async () => {
+	const homepage = await readDistFile( "index.html" );
+	assert.match( homepage, /<a class="?skip-link"? href="?#main"?/ );
+	assert.match( homepage, /<main id="?main"?/ );
+	assert.match( homepage, /aria-label="?Menu"?/ );
+} );

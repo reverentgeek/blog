@@ -77,7 +77,8 @@ export const collections = {
 		const byYear = new Map();
 
 		for ( const post of [ ...pages.byTag( "posts" ) ].sort( byNewestFirst ) ) {
-			const year = new Date( post.date ).getFullYear();
+			// UTC, like postDate(): a January 1 post would otherwise land in the previous year.
+			const year = new Date( post.date ).getUTCFullYear();
 			if ( !byYear.has( year ) ) {
 				byYear.set( year, [] );
 			}

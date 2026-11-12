@@ -3,8 +3,8 @@
     <!-- Logo -->
     <div class="flex-shrink-0 border-2 border-white rounded-full">
       <div class="w-10 lg:w-12 flex items-center justify-center">
-        <a href="{{ site.url }}" class="">
-          <img class="w-10 lg:w-12 h-10 lg:h-12" src="{{ site.logo }}" alt="{{ site.title }}">
+        <a href="{{ site.url }}">
+          <img class="w-10 lg:w-12 h-10 lg:h-12" src="{{ site.logo }}" alt="{{ site.title }} home">
         </a>
       </div>
     </div>
@@ -15,7 +15,7 @@
     <nav class="hidden lg:flex flex-1 justify-center">
       <div class="flex space-x-4 xl:space-x-8">
         @each(item in site.navigation)
-          <a class="px-3 py-2 font-bold text-base border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
+          <a class="px-3 py-2 font-bold text-base border-2 rounded-full border-rgblue/0 text-nowrap hover:border-white hover:bg-white/15 transition-all duration-300 hover:scale-110 hover:shadow-lg aria-[current=page]:border-white aria-[current=page]:bg-white/25" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
             {{ item.label }}
           </a>
         @end
@@ -28,12 +28,13 @@
     <div class="lg:hidden">
       <button
         type="button"
-        class="cursor-pointer"
+        class="flex items-center gap-2 min-h-11 min-w-11 px-3 rounded-full font-bold text-gray-900 cursor-pointer hover:bg-white/30"
         data-mobile-menu-button
         aria-expanded="false"
         aria-controls="mobile-menu"
-        aria-label="Toggle navigation menu">
-        @!component('components/icon', { id: 'burger', cls: 'text-white', width: '20', height: '20' })
+        aria-label="Menu">
+        @!component('components/icon', { id: 'burger', cls: 'text-gray-900', width: '20', height: '20' })
+        <span>Menu</span>
       </button>
     </div>
   </div>
@@ -43,7 +44,7 @@
     <div class="flex flex-col space-y-1 py-2">
       <!-- Navigation Links -->
       @each(item in site.navigation)
-        <a class="px-2 py-1 transition-colors font-bold text-base rounded-full bg-white/30 text-nowrap hover:border-l-white" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
+        <a class="px-2 py-1 transition-colors font-bold text-base rounded-full bg-white/30 text-nowrap hover:border-l-white aria-[current=page]:bg-white aria-[current=page]:underline" {{{ page.url === item.url ? 'aria-current="page"' : '' }}} href="{{ item.url }}">
           {{ item.label }}
         </a>
       @end

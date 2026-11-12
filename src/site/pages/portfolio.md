@@ -56,15 +56,17 @@ slug: portfolio
   </a>
 </div>
 
-Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/licenses/by-nd/4.0/deed.en) to my work.
+Want to use some of my illustrations? Go for it! I simply ask you [give attribution](https://creativecommons.org/licenses/by/4.0/) to my work.
 
-> _Example 1:_ Illustration by [@ReverentGeek](https://x.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en)
+> _Example 1:_ Illustration by [@ReverentGeek](https://x.com/reverentgeek) licensed under [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 >
-> _Example 2:_ Illustration by **x.com/ReverentGeek** licensed under **CC 4.0**
+> _Example 2:_ Illustration by **x.com/ReverentGeek** licensed under **CC BY 4.0**
 
 If you use one of my illustrations, let me know. I'd love to hear about it!
 
+This license covers the illustrations I share publicly. Commissioned artwork is covered by the terms we agree on for that project.
+
 ***
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nd/4.0/deed.en).
-[![Creative Commons License](/content/images/creativecommons/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/deed.en)
+This work is licensed under a [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+[![Creative Commons License](/content/images/creativecommons/by-88x31.png)](https://creativecommons.org/licenses/by/4.0/)

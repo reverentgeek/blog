@@ -41,6 +41,27 @@ body {
 	line-height: 1.7;
 }
 
+/* Keyboard users can jump past the header. Hidden until it gets focus. */
+.skip-link {
+	@apply absolute left-4 top-0 z-50 -translate-y-full px-4 py-2 rounded-b-md bg-gray-900 text-white font-bold no-underline;
+}
+.skip-link:focus {
+	@apply translate-y-0;
+}
+
+/* Turn off hover zooms and slide/fade transitions for visitors who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+	*, ::before, ::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+	}
+	*:hover {
+		scale: none !important;
+	}
+}
+
 /* Code fences, highlighted while the site builds (`markdown: { highlight: true }` in
    ssqch.config.js): a dark block in Prism's Okaidia colors, which the site used before. */
 pre.highlight {
@@ -214,6 +235,12 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply sm:text-right;
 }
 
+/* Long URLs in prose and comments would otherwise push the page sideways on narrow screens. */
+.content-body,
+.legacy-comment-body {
+	overflow-wrap: break-word;
+}
+
 .content-body {
 	h2 {
 		@apply text-3xl font-bold mt-6 mb-2;
@@ -227,8 +254,9 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	p, pre {
 		@apply mb-8;
 	}
+	/* blue-700, not blue-500: blue-500 is only ~3.8:1 on white, under the 4.5:1 text minimum. */
 	a {
-		@apply text-blue-500 underline;
+		@apply text-blue-700 underline;
 	}
 	/* Indent with padding, not margin — the reading-column rule below centres
 	   these with `mx-auto`, and a margin-left utility would override it. */
@@ -301,7 +329,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 		@apply mb-0;
 	}
 	a {
-		@apply text-blue-500 underline;
+		@apply text-blue-700 underline;
 	}
 	ul {
 		@apply list-disc ml-6 list-outside;
@@ -817,14 +845,19 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	}
 }
 
+/* Below sm the avatar sits above the name, so it doesn't squeeze the text on narrow phones. */
 .resume-header {
-	@apply flex items-center justify-between gap-6 pb-6 border-b border-gray-200;
+	@apply flex flex-col-reverse items-start gap-4 pb-6 border-b border-gray-200 sm:flex-row sm:items-center sm:justify-between sm:gap-6;
+}
+
+.resume-header-text {
+	@apply min-w-0;
 }
 
 /* ssqch/image wraps the <img> in a <picture>, which is the actual flex item. */
 .resume-header > picture,
 .resume-avatar {
-	@apply block w-24 h-24 sm:w-32 sm:h-32 shrink-0;
+	@apply block w-20 h-20 sm:w-32 sm:h-32 shrink-0;
 }
 
 .resume-name {
@@ -892,6 +925,11 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 		line-height: 1.45;
 		a { @apply text-black no-underline; }
 		h2 { @apply mt-5 mb-2; break-after: avoid; }
+	}
+
+	/* Keep the name and avatar side by side on paper whatever the page width. */
+	.resume-header {
+		@apply flex-row items-center justify-between gap-6;
 	}
 
 	.resume-header > picture,

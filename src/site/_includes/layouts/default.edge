@@ -36,10 +36,11 @@
 </head>
 
 <body class="antialiased">
+  <a class="skip-link" href="#main">Skip to content</a>
   @include('partials/icons')
   @include('partials/header')
 
-  <main class="px-8 max-w-4xl bg-white mx-auto py-2">
+  <main id="main" tabindex="-1" class="px-8 max-w-4xl bg-white mx-auto py-2 focus:outline-none">
     {{{ content }}}
   </main>
 

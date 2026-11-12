@@ -7,8 +7,10 @@ export function siteFilters( { socialImage } ) {
 			return new Date( dateObj ).toISOString().split( "T" )[0];
 		},
 
+		// Post dates are calendar dates (`date: 2026-06-17`), parsed as UTC midnight. Format
+		// them in UTC too, or a build west of UTC shows the day before.
 		postDate( dateObj ) {
-			return new Date( dateObj ).toLocaleDateString( "en-US", { year: "numeric", month: "long", day: "numeric" } );
+			return new Date( dateObj ).toLocaleDateString( "en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" } );
 		},
 
 		socialImage,
