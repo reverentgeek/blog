@@ -25,7 +25,7 @@ slug: avatars
 	<li><strong>Get your avatar,</strong> usually within 48 hours: a high-resolution 3000 &times; 3000 pixel PNG, plus an SVG that scales to any size if you add the vector option. It's yours to use however you like, and attribution is always appreciated!</li>
 </ol>
 
-<p>Not happy with the results? I'm happy to make adjustments. Within reason 😉</p>
+<p>Not happy with the results? Every avatar includes one round of changes.</p>
 
 <h2 id="order">Prices and Ordering</h2>
 
@@ -41,6 +41,13 @@ slug: avatars
 </table>
 
 <div id='collection-component-1716827508246'></div>
+<p class="avatar-order-fallback" data-order-fallback hidden>The order form didn't load. It's sometimes blocked by
+	ad or privacy blockers. You can <a href="mailto:david@reverentgeek.com?subject=Avatar%20order"
+		data-cta="avatar-order-email">email me to order</a> instead.</p>
+<noscript>
+	<p class="avatar-order-fallback">The order form needs JavaScript. You can <a
+			href="mailto:david@reverentgeek.com?subject=Avatar%20order">email me to order</a> instead.</p>
+</noscript>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -60,7 +67,16 @@ slug: avatars
     script.src = scriptURL;
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
     script.onload = ShopifyBuyInit;
+    script.onerror = showFallback;
   }
+  // If the store script is blocked or slow, offer email ordering instead of an empty space.
+  function showFallback() {
+    var node = document.getElementById('collection-component-1716827508246');
+    if (node && !node.children.length) {
+      document.querySelector('[data-order-fallback]').hidden = false;
+    }
+  }
+  setTimeout(showFallback, 8000);
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
       domain: 'reverentgeek.myshopify.com',

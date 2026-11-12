@@ -182,3 +182,79 @@
 		} );
 	} );
 } )();
+
+// Post search on /topics/: loads /search.json the first time someone types, then shows
+// posts whose title, description, or topics contain every word typed.
+( function () {
+	document.addEventListener( "DOMContentLoaded", () => {
+		const box = document.querySelector( "[data-post-search]" );
+		if ( !box ) return;
+
+		const input = box.querySelector( "input" );
+		const status = box.querySelector( "[role=status]" );
+		const results = box.querySelector( "[data-post-search-results]" );
+		const MAX_RESULTS = 20;
+		let index = null;
+		let loading = null;
+
+		function loadIndex() {
+			loading ??= fetch( "/search.json" )
+				.then( res => res.json() )
+				.then( ( entries ) => {
+					index = entries.map( entry => ( {
+						...entry,
+						haystack: [ entry.t, entry.d, ...entry.k ].join( " " ).toLowerCase()
+					} ) );
+				} );
+			return loading;
+		}
+
+		function formatDate( isoDate ) {
+			return new Date( `${ isoDate }T00:00:00Z` ).toLocaleDateString( "en-US", {
+				year: "numeric", month: "long", day: "numeric", timeZone: "UTC"
+			} );
+		}
+
+		function render() {
+			const words = input.value.toLowerCase().split( /\s+/ ).filter( Boolean );
+			results.replaceChildren();
+			if ( !words.length ) {
+				status.textContent = "";
+				return;
+			}
+			const matches = index.filter( entry => words.every( word => entry.haystack.includes( word ) ) );
+			status.textContent = matches.length
+				? `${ matches.length } ${ matches.length === 1 ? "post" : "posts" } found${ matches.length > MAX_RESULTS ? `, showing the newest ${ MAX_RESULTS }` : "" }.`
+				: "No posts found. Try a different word, or browse the topics below.";
+			for ( const entry of matches.slice( 0, MAX_RESULTS ) ) {
+				const item = document.createElement( "li" );
+				const link = document.createElement( "a" );
+				link.href = entry.u;
+				link.textContent = entry.t;
+				const date = document.createElement( "span" );
+				date.className = "post-search-date";
+				date.textContent = formatDate( entry.y );
+				const description = document.createElement( "p" );
+				description.textContent = entry.d;
+				item.append( link, date, description );
+				results.append( item );
+			}
+		}
+
+		input.addEventListener( "input", () => {
+			if ( index ) {
+				render();
+				return;
+			}
+			status.textContent = "Loading…";
+			loadIndex()
+				.then( render )
+				.catch( () => {
+					loading = null;
+					status.textContent = "Search isn't available right now. Try the topics or the archive.";
+				} );
+		} );
+
+		box.hidden = false;
+	} );
+} )();

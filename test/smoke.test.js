@@ -140,3 +140,23 @@ test( "every page has a skip link and a labeled menu button", async () => {
 	assert.match( homepage, /<main id="?main"?/ );
 	assert.match( homepage, /aria-label="?Menu"?/ );
 } );
+
+test( "search index lists every post", async () => {
+	const index = JSON.parse( await readDistFile( "search.json" ) );
+	assert.ok( index.length > 100, "search.json should list every post" );
+	const teleprompter = index.find( entry => /teleprompter/i.test( entry.t ) );
+	assert.ok( teleprompter, "a teleprompter post should be in the index" );
+	assert.ok( teleprompter.t && teleprompter.u && Array.isArray( teleprompter.k ) );
+
+	const topics = await readDistFile( "topics/index.html" );
+	assert.match( topics, /data-post-search/ );
+} );
+
+test( "posts link to related posts, and the 404 page links to topics and the archive", async () => {
+	const post = await readDistFile( "leveling-guitar-patches-with-tauri/index.html" );
+	assert.match( post, /class="?post-related"?/ );
+
+	const notFound = await readDistFile( "404.html" );
+	assert.match( notFound, /href="?\/topics\/"?/ );
+	assert.match( notFound, /href="?\/archive\/"?/ );
+} );

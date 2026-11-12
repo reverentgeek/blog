@@ -36,6 +36,21 @@ layout: layouts/default.edge
 
     @!component('components/support', { variant: calloutFor(postTopics), kofiLink: site.kofi })
 
+    @let(related = relatedPosts(collections.posts, page.url, tags))
+    @if(related.length)
+      <nav class="post-related" aria-labelledby="post-related-heading">
+        <h2 class="post-related-heading" id="post-related-heading">Related posts</h2>
+        <ul class="post-related-list">
+          @each(post in related)
+            <li>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+              <span class="post-related-date">{{ postDate(post.data.date) }}</span>
+            </li>
+          @end
+        </ul>
+      </nav>
+    @end
+
     @let(nav = adjacentPosts(collections.posts, page.url))
     @if(nav.older || nav.newer)
       <nav class="post-nav" aria-label="More posts">

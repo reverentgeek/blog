@@ -47,6 +47,25 @@ export function adjacentPosts( collection, url ) {
 	};
 }
 
+// Up to `limit` other posts that share the most topics with this one, newest first on
+// ties. Posts with no topic in common are left out, so a post can get fewer (or none).
+export function relatedPosts( collection, url, topics, limit = 3 ) {
+	const wanted = new Set( topicsOnly( topics ) );
+	if ( !wanted.size || !Array.isArray( collection ) ) {
+		return [];
+	}
+	return collection
+		.filter( post => post.url !== url )
+		.map( post => ( {
+			post,
+			shared: topicsOnly( post.data.tags ).filter( tag => wanted.has( tag ) ).length
+		} ) )
+		.filter( ( { shared } ) => shared > 0 )
+		.sort( ( a, b ) => b.shared - a.shared || byNewestFirst( a.post, b.post ) )
+		.slice( 0, limit )
+		.map( ( { post } ) => post );
+}
+
 export const collections = {
 	// One entry per topic, newest posts first, most-used topics first.
 	topics( pages ) {

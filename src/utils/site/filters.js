@@ -1,4 +1,4 @@
-import { adjacentPosts, topicLabel, topicsOnly } from "./collections.js";
+import { adjacentPosts, relatedPosts, topicLabel, topicsOnly } from "./collections.js";
 
 // Functions templates can call: {{ postDate(page.date) }}.
 export function siteFilters( { socialImage } ) {
@@ -30,6 +30,23 @@ export function siteFilters( { socialImage } ) {
 		topicLabel,
 
 		adjacentPosts,
+
+		relatedPosts,
+
+		// The /search.json index: one compact entry per post, newest first, for the
+		// search box on /topics/. Titles, descriptions, and topic names only.
+		searchIndex( posts ) {
+			const entries = [ ...( posts || [] ) ]
+				.sort( ( a, b ) => new Date( b.date ) - new Date( a.date ) )
+				.map( post => ( {
+					t: post.data.title,
+					u: post.url,
+					d: post.data.description || "",
+					k: topicsOnly( post.data.tags ).map( topicLabel ),
+					y: new Date( post.date ).toISOString().slice( 0, 10 )
+				} ) );
+			return JSON.stringify( entries );
+		},
 
 		readingTime,
 

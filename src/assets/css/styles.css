@@ -228,6 +228,48 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply grid gap-4 mt-12 pt-8 border-t border-gray-200 sm:grid-cols-2;
 }
 
+/* Shown on /avatars/ only when the Shopify order form can't load. */
+.content-body .avatar-order-fallback {
+	@apply p-4 rounded-lg bg-amber-50 border border-amber-200 text-base;
+}
+
+/* Post search on /topics/ (index.js). */
+.post-search {
+	@apply mb-10;
+}
+.post-search-label {
+	@apply block font-semibold mb-1;
+}
+.post-search-input {
+	@apply w-full px-4 py-2 rounded-lg border-2 border-gray-300 bg-white text-base focus:border-blue-700 focus:outline-none;
+}
+.post-search-status {
+	@apply mt-2 mb-0 text-sm text-gray-600 min-h-5;
+}
+.post-search-results {
+	@apply mt-4 space-y-5;
+	a { @apply font-semibold text-blue-700 underline; }
+	p { @apply mt-1 mb-0 text-gray-700 text-base; }
+}
+.post-search-date {
+	@apply block text-sm text-gray-500;
+}
+
+/* "Related posts" at the end of a post, picked by shared topics (relatedPosts()). */
+.post-related {
+	@apply mt-12 pt-6 border-t border-gray-200;
+}
+.post-related-heading {
+	@apply text-sm font-bold uppercase tracking-wider text-gray-500 mb-3;
+}
+.post-related-list {
+	@apply space-y-2;
+	a { @apply font-medium text-blue-700 underline; }
+}
+.post-related-date {
+	@apply block text-sm text-gray-500;
+}
+
 .post-nav-link {
 	@apply block p-4 rounded-lg border border-gray-200 no-underline! text-gray-800 transition-all duration-200 hover:bg-gray-50 hover:shadow-md;
 }
@@ -376,7 +418,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	--reading-column: 36.5rem;
 }
 
-.content > :is(h1, .post-meta, .post-topics, .callout, .post-nav),
+.content > :is(h1, .post-meta, .post-topics, .callout, .post-related, .post-nav),
 .content-body > :is(p, ul, ol, blockquote, h1, h2, h3, h4, h5, h6, .callout, table, .about-portraits, .draw-samples, .testimonial) {
 	max-width: var(--reading-column);
 	margin-inline: auto;
@@ -705,7 +747,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 /* Brand column gets the extra width: it holds the tagline, which needs a
    readable measure; the three link columns only ever hold short labels. */
 .site-footer-inner {
-	@apply max-w-4xl mx-auto px-8 py-10 grid gap-8 sm:grid-cols-3 md:grid-cols-[1.5fr_1fr_1fr_1fr];
+	@apply max-w-4xl mx-auto px-5 sm:px-8 py-10 grid gap-8 sm:grid-cols-3 md:grid-cols-[1.5fr_1fr_1fr_1fr];
 }
 
 .footer-brand {
@@ -749,7 +791,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .footer-bottom-inner {
-	@apply max-w-4xl mx-auto px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-1 text-sm text-gray-500;
+	@apply max-w-4xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-1 text-sm text-gray-500;
 }
 
 /* Lightbox styles */

@@ -10,6 +10,15 @@ layout: layouts/default.edge
   or the <a class="underline text-blue-700" href="/archive/">full archive</a> by year.
 </p>
 
+{{-- Hidden until index.js wires it up, so there's no dead search box without JavaScript. --}}
+<div class="post-search" data-post-search hidden>
+  <label class="post-search-label" for="post-search-input">Search posts</label>
+  <input class="post-search-input" id="post-search-input" type="search" autocomplete="off"
+    placeholder="Try “teleprompter”, “Electron”, or “speaking”" aria-describedby="post-search-status">
+  <p class="post-search-status" id="post-search-status" role="status" aria-live="polite"></p>
+  <ul class="post-search-results" data-post-search-results></ul>
+</div>
+
 <div class="topic-list mb-12">
   @each(topic in collections.topics)
     @!component('components/topic-chip', { slug: topic.slug, count: topic.count })
