@@ -115,7 +115,7 @@ Read their full endorsements on my [DevRel page](/devrel/#what-people-say).
 * Dig my drawings in my [portfolio](/portfolio/) and on [Instagram](https://instagram.com/reverentgeek).
 * Watch my videos on [YouTube](https://www.youtube.com/ReverentGeek).
 * Get down to business on [LinkedIn](https://www.linkedin.com/in/davidneal).
-* Get my <a href="https://drive.google.com/file/d/1sPUrePKXs2HODNGtGP3Y103izXZDJ3et/view?usp=sharing" data-cta="resume">resume</a>.
+* Get my <a href="/resume/" data-cta="resume">resume</a>.
 * See my past [speaking engagements](/speaking).
 * View my slides on [SpeakerDeck](https://speakerdeck.com/reverentgeek).
 * List of presentation and workshop [abstracts](/presentations/).

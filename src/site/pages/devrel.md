@@ -15,7 +15,7 @@ I'm David Neal, a developer advocate, author, and illustrator. I've spent more t
 
 <p class="home-intro-actions">
   <a class="cta-button" href="mailto:david@reverentgeek.com?subject=Let's%20talk%20DevRel" data-cta="devrel-talk">Let's talk</a>
-  <a class="cta-button-secondary" href="https://drive.google.com/file/d/1sPUrePKXs2HODNGtGP3Y103izXZDJ3et/view?usp=sharing" data-cta="resume">Résumé</a>
+  <a class="cta-button-secondary" href="/resume/" data-cta="resume">Résumé</a>
 </p>
 
 ## "So, What Does DevRel Actually Do for Us?"
@@ -112,5 +112,5 @@ Building a developer program, rethinking one, or looking for a speaker, a worksh
 
 <p class="home-intro-actions">
   <a class="cta-button" href="mailto:david@reverentgeek.com?subject=Let's%20talk%20DevRel" data-cta="devrel-talk">Let's talk</a>
-  <a class="cta-button-secondary" href="https://drive.google.com/file/d/1sPUrePKXs2HODNGtGP3Y103izXZDJ3et/view?usp=sharing" data-cta="resume">Résumé</a>
+  <a class="cta-button-secondary" href="/resume/" data-cta="resume">Résumé</a>
 </p>

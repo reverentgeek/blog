@@ -803,3 +803,108 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply block w-5 h-5;
 }
 
+
+/* /resume/: an online résumé that also prints cleanly to PDF. */
+.resume {
+	@apply max-w-3xl mx-auto my-8 text-base leading-relaxed text-gray-800;
+	a { @apply text-blue-700 underline decoration-blue-300 underline-offset-2 hover:decoration-blue-700; }
+	h2 {
+		@apply text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-rgblue pb-1 mt-10 mb-4;
+	}
+	p { @apply mb-3; }
+	ul:not(.resume-tags, .resume-contact) {
+		@apply list-disc pl-6 mb-3 space-y-1 marker:text-gray-400;
+	}
+}
+
+.resume-header {
+	@apply flex items-center justify-between gap-6 pb-6 border-b border-gray-200;
+}
+
+/* ssqch/image wraps the <img> in a <picture>, which is the actual flex item. */
+.resume-header > picture,
+.resume-avatar {
+	@apply block w-24 h-24 sm:w-32 sm:h-32 shrink-0;
+}
+
+.resume-name {
+	@apply text-4xl sm:text-5xl font-bold text-gray-900 leading-tight;
+}
+
+.resume-tagline {
+	@apply text-lg font-semibold text-gray-700 mb-3!;
+}
+
+.resume-contact {
+	@apply flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-600;
+}
+
+.resume-print-action {
+	@apply mt-4 mb-0!;
+	.cta-button-secondary { @apply mr-0 mb-0 px-4 py-2 text-sm cursor-pointer; }
+}
+
+.resume-tags {
+	@apply flex flex-wrap gap-2;
+	li { @apply px-3 py-1 text-sm rounded-full bg-blue-50 text-blue-900 border border-blue-100; }
+}
+
+.resume-job {
+	@apply mb-6;
+}
+
+.resume-job-heading {
+	@apply flex flex-wrap items-baseline justify-between gap-x-4;
+	h3 { @apply text-lg font-bold text-gray-900; }
+	h3 a { @apply text-gray-900 no-underline hover:underline; }
+}
+
+.resume .resume-job-dates {
+	@apply text-sm text-gray-500 mb-0 tabular-nums;
+}
+
+.resume-job-note {
+	@apply text-sm font-normal text-gray-500;
+}
+
+.resume .resume-job-role {
+	@apply italic font-semibold text-gray-700 mb-2;
+}
+
+.resume-job-location {
+	@apply not-italic font-normal text-sm text-gray-500 before:content-['·'] before:mx-2;
+}
+
+@media print {
+	@page { margin: 0.6in; }
+
+	body > header,
+	body > .site-footer,
+	.resume-print-action {
+		display: none !important;
+	}
+
+	main { @apply p-0! max-w-none!; }
+
+	.resume {
+		@apply my-0 max-w-none text-black;
+		font-size: 10pt;
+		line-height: 1.45;
+		a { @apply text-black no-underline; }
+		h2 { @apply mt-5 mb-2; break-after: avoid; }
+	}
+
+	.resume-header > picture,
+	.resume-avatar {
+		@apply w-24 h-24;
+	}
+
+	/* Chips waste ink and space on paper, so print them as a comma list. */
+	.resume-tags {
+		@apply block;
+		li { @apply inline p-0 border-0 bg-transparent text-black rounded-none; font-size: inherit; }
+		li:not(:last-child)::after { content: ", "; }
+	}
+
+	.resume-job { @apply mb-3; break-inside: avoid; }
+}
