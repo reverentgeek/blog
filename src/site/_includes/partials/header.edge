@@ -2,7 +2,9 @@
   @include('partials/navigation')
 </header>
 @if(page.url === '/' && heroImage)
-  <div class="mb-4 w-full border-t-6 border-rgblue/15">
+  {{-- Full width on phones; from sm up, the collage matches the content column below it,
+       which keeps it about 300px tall on desktop instead of 480px. --}}
+  <div class="home-hero">
     <picture>
       @if(heroImage.srcset.avif)
         <source type="image/avif" srcset="{{ heroImage.srcset.avif }}" sizes="{{ heroImage.sizes }}">

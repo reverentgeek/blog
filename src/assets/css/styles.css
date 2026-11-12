@@ -494,6 +494,12 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply inline-block px-6 py-3 mr-3 mb-3 border-2 border-blue-500 text-blue-700! no-underline! font-semibold rounded-lg transition-all duration-200 hover:bg-blue-50 hover:shadow-md;
 }
 
+/* Homepage collage (partials/header.edge). */
+.home-hero {
+	@apply mb-4 w-full sm:max-w-4xl sm:mx-auto sm:px-8 sm:pt-2;
+	picture { @apply block; }
+}
+
 /* Homepage introduction: name and avatar side by side at every width, then the two work paths. */
 .home-intro {
 	@apply mb-10;

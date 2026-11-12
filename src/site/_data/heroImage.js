@@ -3,7 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const HERO_SIZES = "(min-width: 1024px) 700px, 100vw";
+// Matches .home-hero: full width on phones, at most 832px (the content column) from 896px up.
+const HERO_SIZES = "(min-width: 896px) 832px, 100vw";
 const HERO_FORMATS = [ "avif", "webp", "png" ];
 const HERO_WIDTHS = [ 300, 600, 900, 1200, 1500 ];
 const HERO_ALT = "Site banner image with a collage of illustrations and doodles. The center image is the ReverentGeek logo with a speech bubble that reads, you don't need permission to be awesome.";
