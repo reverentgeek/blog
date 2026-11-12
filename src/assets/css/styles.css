@@ -846,6 +846,16 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	}
 }
 
+/* /avatars/: the rest of the gallery behind a "See more" toggle. */
+.gallery-more {
+	@apply my-8;
+	summary {
+		@apply inline-block cursor-pointer px-6 py-3 rounded-lg border-2 border-blue-500 text-blue-700 font-semibold list-none hover:bg-blue-50;
+	}
+	summary::-webkit-details-marker { display: none; }
+	&[open] summary { @apply mb-6; }
+}
+
 .gallery-grid a {
 	@apply cursor-pointer block;
 }
