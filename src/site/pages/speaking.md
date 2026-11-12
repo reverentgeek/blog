@@ -13,6 +13,8 @@ I've spoken at more than 170 events since 2011, often giving several talks, a ke
   <a class="cta-button-secondary" href="/bio/">Bio &amp; headshots</a>
 </p>
 
+@!component('components/testimonial', { t: testimonials.bernardoMartinez })
+
 <nav class="on-this-page" aria-label="On this page">
   <span class="on-this-page-label">On this page:</span>
   <a href="#featured-talks">Featured talks</a>

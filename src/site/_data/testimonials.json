@@ -12,5 +12,12 @@
 		"role": "Artist and Design Researcher",
 		"image": "/content/images/avatars/212-2035.jpg",
 		"imageAlt": "The color avatar David drew for Pieter den Heten, surrounded by icons of his travels and interests"
+	},
+	"bernardoMartinez": {
+		"quote": "Uniquely creative, community driven and insightful. Don’t take my word, listen to one of his sessions.",
+		"name": "Bernardo Martinez",
+		"role": "Web Developer",
+		"image": "/content/images/avatars/213-2015.jpg",
+		"imageAlt": "The color avatar David drew for Bernardo Martinez"
 	}
 }
