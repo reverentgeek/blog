@@ -8,6 +8,11 @@ slug: devrel-portfolio
 
 The following links are highlights from content, talks, projects, interviews, and podcasts I've been a part of. In addition to the links below, read more [about me](/about/)!
 
+## Videos
+
+* [What's New in MongoDB 9.0?](https://www.youtube.com/watch?v=b4vbVJDOo28) (MongoDB for Developers)
+* [Get Your Free MongoDB Atlas Cluster and Connect with Compass in 12 Minutes!](https://www.youtube.com/watch?v=8uAIQi_8LIg) (MongoDB for Developers)
+
 ## Blog Posts
 
 * [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc)
@@ -32,6 +37,7 @@ The following links are highlights from content, talks, projects, interviews, an
 
 ## Code Samples
 
+* [Inkleaf](https://github.com/reverentgeek/inkleaf): Open-source desktop Markdown notes app built with Tauri, React, and MongoDB Atlas, featuring hybrid search, Atlas Vector Search, and offline-first sync.
 * [Plaidypus](https://github.com/plaid/core-exchange-node-example): Complete end-to-end reference app for Plaid data partners running at [app.plaidypus.dev](https://app.plaidypus.dev/).
 * [Electron Teleprompter](https://github.com/reverentgeek/electron-teleprompter)
 * [Node Bacon Generator](https://github.com/reverentgeek/node-bacon-generator)

@@ -96,8 +96,11 @@ Here's something most developer advocates can't offer: I draw. A good drawing ca
 
 ## Selected Work
 
+<iframe style="width: 100%; height: auto; aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/b4vbVJDOo28" title="What's New in MongoDB 9.0?" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+* **Video:** [What's New in MongoDB 9.0?](https://www.youtube.com/watch?v=b4vbVJDOo28) and [Get Your Free MongoDB Atlas Cluster and Connect with Compass in 12 Minutes!](https://www.youtube.com/watch?v=8uAIQi_8LIg) on the MongoDB for Developers YouTube channel
 * **Writing:** [Absurdly Fast Web Builds with Vite](https://www.builder.io/blog/vite), [Analyze Your X (Twitter) Data with Node.js and DuckDB](https://motherduck.com/blog/analyze-x-data-nodejs-duckdb/), and [Build a Command-Line Application With Deno 2.0](/build-a-command-line-application-with-deno-2/)
-* **Code:** [Plaidypus](https://github.com/plaid/core-exchange-node-example), a complete end-to-end reference app for Plaid data partners
+* **Code:** [Inkleaf](https://github.com/reverentgeek/inkleaf), an open-source desktop notes app built on MongoDB Atlas with hybrid and vector search, and [Plaidypus](https://github.com/plaid/core-exchange-node-example), a complete end-to-end reference app for Plaid data partners
 * **Talks:** the [JavaScript & Friends 2020 keynote](https://www.youtube.com/watch?v=5PCTwji9bVA) and [Leadership for the Reluctant Leader](https://youtu.be/0EWiSJj0q_0)
 * **Podcasts:** [.NET Rocks! Building Cross-Platform Desktop Apps using Electron](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
 
