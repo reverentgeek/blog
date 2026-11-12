@@ -23,28 +23,33 @@
 	"timezone": "America/New_York",
 	"navigation": [
 		{
-			"label": "Home",
-			"url": "/"
-		},
-		{
-			"label": "About",
-			"url": "/about/"
-		},
-		{
 			"label": "Avatars",
 			"url": "/avatars/"
 		},
 		{
-			"label": "Illustrations",
-			"url": "/commissions/"
+			"label": "Illustration",
+			"url": "/commissions/",
+			"section": ["/illustrations/", "/sketch-notes/", "/doodles/", "/tech-humor/", "/shop/"]
 		},
 		{
 			"label": "DevRel",
-			"url": "/devrel/"
+			"url": "/devrel/",
+			"section": ["/devrel-portfolio/", "/resume/"]
 		},
 		{
-			"label": "Portfolio",
-			"url": "/portfolio/"
+			"label": "Writing",
+			"url": "/topics/",
+			"section": ["/topics/", "/archive/"],
+			"posts": true
+		},
+		{
+			"label": "Speaking",
+			"url": "/speaking/",
+			"section": ["/presentations/", "/bio/"]
+		},
+		{
+			"label": "About",
+			"url": "/about/"
 		}
 	],
 	"social_links": [

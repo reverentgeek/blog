@@ -6,8 +6,14 @@ date: 2019-01-21
 slug: portfolio
 ---
 
-<a href="/avatars/#order" class="cta-button" data-cta="order-avatar">Order an avatar!</a>
-<a href="/commissions/" class="cta-button" data-cta="start-commission">Commission a custom illustration!</a>
+<p class="portfolio-jump">Jump to: <a href="#illustration">Illustration</a> &middot; <a href="#developer-relations--code">Developer Relations &amp; Code</a></p>
+
+## Illustration
+
+Avatars, books, logos, stickers, sketch notes, and the occasional bad joke.
+
+<a href="/avatars/#order" class="cta-button" data-cta="order-avatar">Order an avatar</a>
+<a href="/commissions/" class="cta-button-secondary" data-cta="start-commission">Commission a custom illustration</a>
 
 <div class="portfolio-grid">
   <a href="/commissions/#books-ive-illustrated" class="portfolio-item">
@@ -22,6 +28,33 @@ slug: portfolio
     <img src="/content/images/portfolio/010-live-life-all-caps.jpg" alt="Logos, Stickers and Projects">
     <h3>Logos, Stickers and Projects</h3>
   </a>
+  <a href="/sketch-notes/" class="portfolio-item">
+    <img src="/content/images/sketch-notes/that-tx-2022-keynote-gblock.jpg" alt="Sketch Notes">
+    <h3>Sketch Notes</h3>
+  </a>
+  <a href="/tech-humor/" class="portfolio-item">
+    <img src="/content/images/2019/01/employees-must-wash.PNG" alt="Tech Humor">
+    <h3>Tech Humor</h3>
+  </a>
+  <a href="/doodles/" class="portfolio-item">
+    <img src="/content/images/2019/01/IMG_5113.jpg" alt="Doodles">
+    <h3>Doodles</h3>
+  </a>
+  <a href="/31-days-of-inspiration-january-2019/" class="portfolio-item">
+    <img src="/content/images/2019/01/31DOI-19-a-a-milne-3.png" alt="31 Days of Inspiration">
+    <h3>31 Days of Inspiration</h3>
+  </a>
+  <a href="/shop/" class="portfolio-item">
+    <img src="/content/images/shop/stickermule-stickers.jpg" alt="Stickers and t-shirts">
+    <h3>Stickers &amp; T-Shirts</h3>
+  </a>
+</div>
+
+## Developer Relations & Code
+
+Content, talks, workshops, and open-source code from more than a decade in Developer Relations. For the short version, see my [résumé](/resume/) or [DevRel overview](/devrel/).
+
+<div class="portfolio-grid">
   <a href="/devrel-portfolio" class="portfolio-item">
     <img src="/content/images/portfolio-briefcase.svg" alt="DevRel Portfolio">
     <h3>DevRel Portfolio</h3>
@@ -33,26 +66,6 @@ slug: portfolio
   <a href="https://github.com/reverentgeek" class="portfolio-item">
     <img src="/content/images/portfolio-github.svg" alt="GitHub">
     <h3>GitHub</h3>
-  </a>
-  <a href="/31-days-of-inspiration-january-2019/" class="portfolio-item">
-    <img src="/content/images/2019/01/31DOI-19-a-a-milne-3.png" alt="31 Days of Inspiration">
-    <h3>31 Days of Inspiration</h3>
-  </a>
-  <a href="/tech-humor/" class="portfolio-item">
-    <img src="/content/images/2019/01/employees-must-wash.PNG" alt="Tech Humor">
-    <h3>Tech Humor</h3>
-  </a>
-  <a href="/doodles/" class="portfolio-item">
-    <img src="/content/images/2019/01/IMG_5113.jpg" alt="Doodles">
-    <h3>Doodles</h3>
-  </a>
-  <a href="/sketch-notes/" class="portfolio-item">
-    <img src="/content/images/sketch-notes/that-tx-2022-keynote-gblock.jpg" alt="Sketch Notes">
-    <h3>Sketch Notes</h3>
-  </a>
-  <a href="/shop/" class="portfolio-item">
-    <img src="/content/images/shop/stickermule-stickers.jpg" alt="Stickers and t-shirts">
-    <h3>Stickers &amp; T-Shirts</h3>
   </a>
 </div>
 

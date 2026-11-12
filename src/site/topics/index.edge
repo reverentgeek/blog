@@ -4,7 +4,11 @@ description: Browse every post on ReverentGeek by topic — from Node.js and dat
 layout: layouts/default.edge
 ---
 <h1 class="text-4xl font-bold mt-4 mb-2">Browse by Topic</h1>
-<p class="text-gray-600 mb-8">All {{ collections.posts.length }} posts, sorted into the things I keep coming back to.</p>
+<p class="text-gray-600 mb-8">
+  All {{ collections.posts.length }} posts, sorted into the things I keep coming back to.
+  Read the <a class="underline text-blue-700" href="/#latest-writing">latest posts</a>
+  or the <a class="underline text-blue-700" href="/archive/">full archive</a> by year.
+</p>
 
 <div class="topic-list mb-12">
   @each(topic in collections.topics)

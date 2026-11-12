@@ -19,7 +19,9 @@ slug: about
 
 Hi! I'm David Neal: an illustrator, builder, and DevRel leader, helping folks in tech be more awesome. I'm also a family man, geek, and musician living in North Georgia. I run on a high-octane mixture of caffeine and JavaScript, and I'm entirely made of bacon 🥓 😉.
 
-I'm currently a Senior Developer Advocate at [MongoDB](https://www.mongodb.com/), and I've spent more than a decade in Developer Relations roles at [Plaid](https://plaid.com), [Slack](https://slack.dev/), [Asana](https://asana.com), and [Okta](https://developer.okta.com), among others. Before my DevRel journey, I spent many years building high-performance, scalable web applications. For the last 10 years, I've also been drawing avatars, stickers, logos, sketch notes, and book illustrations (six so far).
+I'm currently a Senior Developer Advocate at [MongoDB](https://www.mongodb.com/), and I've spent more than a decade in Developer Relations, in roles at [Plaid](https://plaid.com) and [Okta](https://developer.okta.com) and in consulting work for [Slack](https://slack.dev/), [Asana](https://asana.com), and others. Before my DevRel journey, I spent many years building high-performance, scalable web applications. For the last 10 years, I've also been drawing avatars, stickers, logos, sketch notes, and book illustrations (six so far).
+
+<p class="about-links"><a href="/resume/" data-cta="resume">Résumé</a> &middot; <a href="/devrel/">DevRel work</a> &middot; <a href="/portfolio/">Portfolio</a> &middot; <a href="/speaking/">Speaking</a> &middot; <a href="https://www.linkedin.com/in/davidneal">LinkedIn</a> &middot; <a href="https://github.com/reverentgeek">GitHub</a></p>
 
 <p class="about-philosophy">I believe people want to do their best work.</p>
 

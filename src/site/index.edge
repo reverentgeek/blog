@@ -10,45 +10,78 @@ computed:
   description: '{{ pagination.pageNumber ? site.description + ". Page " + (pagination.pageNumber + 1) + " of " + pagination.pages.length + "." : "" }}'
 ---
 
-    {{-- Page 1 only — pages 2+ are just more of the post list. --}}
+    {{-- Page 1 only: pages 2+ are just more of the post list. --}}
     @if(pagination.pageNumber === 0)
       <section class="home-intro">
-        {{-- The image transform wraps this in <picture>, so the sizing lives on
-             a wrapper the flex layout can measure. --}}
-        {{-- The avatar doubles as a product sample, so its caption is a commission pitch. --}}
-        <figure class="home-intro-figure">
+        <div class="home-intro-top">
+          {{-- The image transform wraps this in <picture>, so the sizing lives on
+               a wrapper the flex layout can measure. No `width` attribute: it would
+               override the widths list and emit a single 1x file, which is what made
+               this avatar blurry on retina. 2x/3x capped at the 256px source. --}}
           <div class="home-intro-avatar-wrap">
-            {{-- The wrap is 80px, growing to 96px at sm. No `width` attribute: it would
-                 override the widths list and emit a single 1x file, which is what made
-                 this avatar blurry on retina. 2x/3x capped at the 256px source. --}}
-            <img class="home-intro-avatar" src="{{ site.logo }}" alt="An illustrated avatar of David Neal" loading="eager" decoding="async" ssqch:widths="96,192,256" sizes="(min-width: 640px) 96px, 80px">
+            <img class="home-intro-avatar" src="{{ site.logo }}" alt="An illustrated avatar of David Neal" loading="eager" decoding="async" ssqch:widths="64,96,192,256" sizes="(min-width: 640px) 96px, 64px">
           </div>
-          <figcaption class="home-intro-caption">I drew this. <a href="/avatars/" data-cta="view-avatars">I can draw you, too.</a></figcaption>
-        </figure>
-        <div>
-          <h1 class="home-intro-heading">Hi, I'm David Neal.</h1>
-          <p class="home-intro-text">
-            I'm an illustrator, builder, and DevRel leader, helping folks in tech be more awesome.
-            I draw avatars, stickers, logos, and books for developers, authors, and tech companies,
-            and I help teams build developer programs that developers trust.
-          </p>
-          <div class="home-intro-actions">
-            <a class="cta-button" href="/commissions/" data-cta="start-commission">Hire me to illustrate</a>
-            <a class="cta-button" href="/devrel/" data-cta="view-devrel">Work with me on DevRel</a>
+          <div class="min-w-0">
+            <h1 class="home-intro-heading">Hi, I'm David Neal.</h1>
+            <p class="home-intro-text">Illustrator, builder, and DevRel leader, helping folks in tech be more awesome.</p>
+            {{-- The avatar doubles as a product sample, so this line is a commission pitch. --}}
+            <p class="home-intro-caption">I drew this avatar. <a href="/avatars/" data-cta="view-avatars">I can draw you, too.</a></p>
           </div>
-          <p class="home-intro-links">
-            Or <a href="/topics/">browse posts by topic</a>, <a href="/feed.xml">subscribe via RSS</a>, or read <a href="/about/">more about me</a>.
-          </p>
+        </div>
+
+        <div class="about-paths">
+          <div class="callout callout-commission">
+            <span class="callout-label">Illustration</span>
+            <div class="callout-content">
+              <p>Avatars, stickers, logos, mascots, and book illustrations, drawn by a developer who gets the joke.</p>
+              <a class="callout-button" href="/commissions/" data-cta="start-commission">Hire me to illustrate</a>
+            </div>
+          </div>
+          <div class="callout callout-devrel">
+            <span class="callout-label">Developer Relations</span>
+            <div class="callout-content">
+              <p>Developer programs, content, code, and workshops that developers trust and leadership can measure.</p>
+              <a class="callout-button" href="/devrel/" data-cta="view-devrel">Work with me on DevRel</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      @!component('components/book-strip', { books: books })
+      <section class="home-work" aria-labelledby="home-work-heading">
+        <h2 class="home-section-heading" id="home-work-heading">Selected work</h2>
+        <div class="home-work-list">
+          <a class="home-work-item" href="/avatars/" data-cta="home-work-avatars">
+            <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="A grid of illustrated avatars" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+            <span class="home-work-title">Avatars</span>
+            <span class="home-work-text">Thousands drawn for developers, teams, and conferences.</span>
+          </a>
+          <a class="home-work-item" href="https://github.com/reverentgeek/inkleaf" data-cta="home-work-inkleaf">
+            <img src="/content/images/featured/inkleaf-screenshot.png" alt="Inkleaf, a desktop notes app, showing a note and search results" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+            <span class="home-work-title">Inkleaf</span>
+            <span class="home-work-text">An open-source notes app with MongoDB hybrid and vector search.</span>
+          </a>
+          <a class="home-work-item" href="/developer-relations-activity-patterns/" data-cta="home-work-book">
+            <img src="/content/images/announcing-devrel-activity-patterns-book/devrel-activity-patterns.jpg" alt="The cover of Developer Relations Activity Patterns" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+            <span class="home-work-title">Developer Relations Activity Patterns</span>
+            <span class="home-work-text">The DevRel book I co-wrote and illustrated.</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="home-section-header" id="latest-writing">
+        <h2 class="home-section-heading">Latest writing</h2>
+        <p class="home-section-links"><a href="/topics/">Topics</a> &middot; <a href="/archive/">Archive</a> &middot; <a href="/feed.xml">RSS</a></p>
+      </div>
     @end
 
     <section class="post-list">
         @each((post, index) in posts)
-			@!component('components/card', { post: post, eager: index === 0 && pagination.pageNumber === 0 })
+			@!component('components/card', { post: post, eager: index === 0 && pagination.pageNumber !== 0 })
         @end
     </section>
 
     @include('partials/pagination')
+
+    @if(pagination.pageNumber === 0)
+      @!component('components/book-strip', { books: books })
+    @end

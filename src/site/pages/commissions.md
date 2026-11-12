@@ -16,9 +16,33 @@ I draw avatars, stickers, logos, and illustrations for developers, authors, conf
   <a class="cta-button-secondary" href="/portfolio/">See my work</a>
 </p>
 
-> "158 pages, illustrated throughout by David Neal, who somehow draws the joke I was trying to make rather than the one I actually made."
->
-> **Lars Klint**, Principal Developer Advocate at Atlassian, and author of *Automate Everything, Notice Nothing*
+<div class="home-work-list commission-samples">
+  <a class="home-work-item" href="/avatars/">
+    <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="A grid of illustrated avatars" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <span class="home-work-title">Avatars</span>
+    <span class="home-work-text">For GitHub, Slack, social media, and whole teams.</span>
+  </a>
+  <a class="home-work-item" href="https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc">
+    <img src="/content/images/portfolio/003-cli-app-oauth-flow.jpg" alt="A hand-drawn diagram of a command-line app signing in with OAuth" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <span class="home-work-title">Technical illustrations</span>
+    <span class="home-work-text">Diagrams that make tricky concepts click.</span>
+  </a>
+  <a class="home-work-item" href="/illustrations/">
+    <img src="/content/images/portfolio/002-undergroundjs-stickers.jpg" alt="UndergroundJS meetup sticker designs" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <span class="home-work-title">Logos and stickers</span>
+    <span class="home-work-text">For meetups, conferences, products, and swag.</span>
+  </a>
+</div>
+
+<nav class="on-this-page" aria-label="On this page">
+  <span class="on-this-page-label">On this page:</span>
+  <a href="#books-ive-illustrated">Books</a>
+  <a href="#what-i-draw">What I draw</a>
+  <a href="#what-people-say">What people say</a>
+  <a href="#how-it-works">How it works</a>
+  <a href="#the-details">Details</a>
+  <a href="#questions-folks-ask">FAQ</a>
+</nav>
 
 ## Books I've Illustrated
 
@@ -97,8 +121,9 @@ It helps to include:
 
 * **Pricing:** Avatars start at $30 for black-and-white and $60 for color (see [all the avatar prices](/avatars/#order)). Custom work is quoted based on scope.
 * **Turnaround:** Avatars are usually ready within 48 hours. For custom work, the timeline is part of your quote.
-* **Revisions:** Not happy with the results? I'm happy to make adjustments. Within reason 😉
-* **Files:** A high-resolution 3000 × 3000 pixel PNG, ready for GitHub, Slack, slides, and print. Add the vector option ($15) and you'll also get an SVG that scales to any size, from a sticker to a banner.
+* **Revisions:** Avatars include one round of changes. For custom work, the number of revision rounds is part of your quote.
+* **Avatar files:** A high-resolution 3000 × 3000 pixel PNG, ready for GitHub, Slack, slides, and print. Add the vector option ($15) and you'll also get an SVG that scales to any size, from a sticker to a banner.
+* **Custom work files:** We'll agree on the formats and sizes you need as part of your quote.
 * **Usage:** The art is yours to use however you wish. Attribution is always appreciated!
 
 ## Questions Folks Ask

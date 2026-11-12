@@ -2,7 +2,7 @@
 id: 87966000dd7411f199b17fed06934053
 title: "Developer Relations"
 description: "I help teams build developer programs that developers trust and leadership can measure. Co-author of Developer Relations Activity Patterns."
-meta_description: "David Neal is a developer advocate with more than a decade in Developer Relations at MongoDB, Plaid, Slack, Asana, and Okta, co-author of Developer Relations Activity Patterns, and a speaker at more than 170 events."
+meta_description: "David Neal is a developer advocate with more than a decade in Developer Relations at MongoDB, Plaid, and Okta, and consulting for Slack and Asana, co-author of Developer Relations Activity Patterns, and a speaker at more than 170 events."
 date: 2026-11-10
 slug: devrel
 ---
@@ -17,6 +17,35 @@ I'm David Neal, a developer advocate, author, and illustrator. I've spent more t
   <a class="cta-button" href="mailto:david@reverentgeek.com?subject=Let's%20talk%20DevRel" data-cta="devrel-talk">Let's talk</a>
   <a class="cta-button-secondary" href="/resume/" data-cta="resume">Résumé</a>
 </p>
+
+## Featured Work
+
+<div class="home-work-list">
+  <a class="home-work-item" href="https://github.com/reverentgeek/inkleaf" data-cta="devrel-work-inkleaf">
+    <img src="/content/images/featured/inkleaf-screenshot.png" alt="Inkleaf, a desktop notes app, showing a note and search results" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <span class="home-work-title">Inkleaf</span>
+    <span class="home-work-text">I built this open-source desktop notes app to show MongoDB Atlas hybrid and vector search with offline-first sync, using Tauri, React, and TypeScript.</span>
+  </a>
+  <a class="home-work-item" href="https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc" data-cta="devrel-work-oauth">
+    <img src="/content/images/portfolio/003-cli-app-oauth-flow.jpg" alt="A hand-drawn diagram of a command-line app signing in with OAuth" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <span class="home-work-title">An Illustrated Guide to OAuth and OpenID Connect</span>
+    <span class="home-work-text">I wrote and illustrated this guide for Okta, explaining one of the most confusing topics in web development one drawing at a time.</span>
+  </a>
+  <a class="home-work-item" href="/developer-relations-activity-patterns/" data-cta="devrel-work-book">
+    <img src="/content/images/announcing-devrel-activity-patterns-book/devrel-activity-patterns.jpg" alt="The cover of Developer Relations Activity Patterns" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <span class="home-work-title">Developer Relations Activity Patterns</span>
+    <span class="home-work-text">I co-wrote this book of 39 DevRel patterns, each with how to measure it, and illustrated the cover and every chapter.</span>
+  </a>
+</div>
+
+<nav class="on-this-page" aria-label="On this page">
+  <span class="on-this-page-label">On this page:</span>
+  <a href="#what-i-bring-to-a-team">What I bring</a>
+  <a href="#the-experience-behind-it">Experience</a>
+  <a href="#the-illustrator-advantage">The illustrator advantage</a>
+  <a href="#what-people-say">What people say</a>
+  <a href="#more-work">More work</a>
+</nav>
 
 ## "So, What Does DevRel Actually Do for Us?"
 
@@ -43,7 +72,7 @@ On the leadership side, I've:
 
 ## The Experience Behind It
 
-* **More than a decade in Developer Relations** at MongoDB, [Plaid](https://plaid.com), [Slack](https://slack.dev/), [Asana](https://asana.com), and [Okta](https://developer.okta.com), among others.
+* **More than a decade in Developer Relations,** in roles at MongoDB, [Plaid](https://plaid.com), and [Okta](https://developer.okta.com), and in consulting work for [Slack](https://slack.dev/), [Asana](https://asana.com), and others.
 * **More than 20 years of developer and IT experience,** mostly at startups and smaller companies where I wore many hats, from engineer to Chief Geek.
 * **Co-author of *Developer Relations Activity Patterns*** (Apress), a practical guide to the strategy, execution, and measurement of DevRel, written with Ted Neward, Scott McAllister, and Chris Woodruff, with forewords by Scott Hanselman and Mary Thengvall. I also illustrated the cover and every chapter.
 * **Speaker at more than 170 events since 2011,** often with several talks, a keynote, or a half-day or full-day workshop at the same event. That includes conferences like CodeMash, KCDC, THAT Conference, NDC Oslo, NDC Sydney, DevSum, Build Stuff, DevTernity, and All Things Open, across the US, Europe, Australia, and South America. See [my speaking history](/speaking/).
@@ -57,7 +86,7 @@ On the leadership side, I've:
 
 Here's something most developer advocates can't offer: I draw. A good drawing can explain a tricky concept faster than a page of text, and developers remember it (and share it) long after they've forgotten the slide it was on.
 
-* **Visual explanations:** [An Illustrated Guide to OAuth and OpenID Connect](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc) walks through one of the most confusing topics in web development, one drawing at a time.
+* **Visual explanations:** Like the [OAuth and OpenID Connect guide](https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc) above, I use drawings to walk developers through confusing technical topics.
 * **Books:** I illustrated two books for Lars Klint, *Microsoft Azure in Action* and *Automate Everything, Notice Nothing*, the covers and a matching sticker set for Kyle Simpson's *You Don't Know JS Yet* (second edition), and the cover and chapter art for *Developer Relations Activity Patterns*.
 * **Sketch notes:** I draw [sketch notes](/sketch-notes/) of conference talks and keynotes, and [Sketchnote Army featured me](https://sketchnotearmy.com/blog/2022/11/8/david-neal) as "the Geek Visualizer."
 * **Events and swag:** event planning, sticker and t-shirt designs, and hosting for Pluralsight Link/ 2022 and 2023, plus [logo and swag designs for the Okta CLI](/content/images/portfolio/004-okta-cli-variations.jpg).
@@ -70,37 +99,25 @@ Here's something most developer advocates can't offer: I draw. A good drawing ca
 
 [Randall Degges](https://www.linkedin.com/in/rdegges/), who led Developer Advocacy at Okta:
 
-> David is one of the kindest, most empathetic, and all-around best people I've ever met or worked with.
->
 > He's an incredibly talented developer, teammate, and friend -- and an absolute expert when it comes to building and growing developer communities. David is always calm, cool, and relaxed, and always knows exactly what to do to help solve problems.
 >
 > I can't tell you how fantastic it has been working with David. We worked together to solve complex problems: both technical and business-related, and David was always an absolute champion at getting things done.
->
-> I don't know what else I can say except that I vouch for David 100% in whatever it is he wants to do. The guy is an absolute beast, and no matter what he does I'm sure he'll be incredible at it. It's not every day you run into someone like David, and I'm so thankful to have gotten to know and work with him!
 
 [Stephen Franklin](https://www.linkedin.com/in/stephen-franklin-9baa353/), then CIO of LeanKit:
 
-> David is a true gem of the technology industry. I am inspired by his commitment to getting out on the speaking trail and spreading his wisdom and knowledge. And I know that he has inspired many, many others in the industry as well.
->
 > David is so talented in so many ways. As a technologist, he cranks the dial to 11. He can do it all: any layer of the stack, any development technology, any platform. And if he currently can't do it, give him a few hours and he'll be fully up to speed. He is a great team member, mentor and developer. It's just amazing what he makes 1s and 0s do.
 >
 > Not only that, he is an amazing speaker and communicator. His ability to empathize and connect with the audience is astonishing and why he is always one of the most popular speakers wherever he goes.
 >
 > Did I mention that he is an amazing artist and is changing the way people are building their presentations?
->
-> Oh yeah, an incredible musician too. And the list goes on.
->
-> But what I'll cherish most of all is getting to know David personally. He is kind, caring, humble, funny, empathetic and wholeheartedly committed to his faith, family, friends and his craft. He is one of those people that makes you a better person just knowing him.
->
-> Thank you David for letting me be a small part of your life.
 
-## Selected Work
+## More Work
 
 <iframe style="width: 100%; height: auto; aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/b4vbVJDOo28" title="What's New in MongoDB 9.0?" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 * **Video:** [What's New in MongoDB 9.0?](https://www.youtube.com/watch?v=b4vbVJDOo28) and [Get Your Free MongoDB Atlas Cluster and Connect with Compass in 12 Minutes!](https://www.youtube.com/watch?v=8uAIQi_8LIg) on the MongoDB for Developers YouTube channel
 * **Writing:** [Absurdly Fast Web Builds with Vite](https://www.builder.io/blog/vite), [Analyze Your X (Twitter) Data with Node.js and DuckDB](https://motherduck.com/blog/analyze-x-data-nodejs-duckdb/), and [Build a Command-Line Application With Deno 2.0](/build-a-command-line-application-with-deno-2/)
-* **Code:** [Inkleaf](https://github.com/reverentgeek/inkleaf), an open-source desktop notes app built on MongoDB Atlas with hybrid and vector search, and [Plaidypus](https://github.com/plaid/core-exchange-node-example), a complete end-to-end reference app for Plaid data partners
+* **Code:** [Plaidypus](https://github.com/plaid/core-exchange-node-example), a complete end-to-end reference app for Plaid data partners
 * **Talks:** the [JavaScript & Friends 2020 keynote](https://www.youtube.com/watch?v=5PCTwji9bVA) and [Leadership for the Reluctant Leader](https://youtu.be/0EWiSJj0q_0)
 * **Podcasts:** [.NET Rocks! Building Cross-Platform Desktop Apps using Electron](https://www.dotnetrocks.com/default.aspx?ShowNum=1336)
 

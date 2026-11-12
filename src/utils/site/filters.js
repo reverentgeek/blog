@@ -15,6 +15,15 @@ export function siteFilters( { socialImage } ) {
 
 		socialImage,
 
+		// The aria-current attribute for a nav item: "page" on the item's own URL, "true" on
+		// a page in its section (`section` URL prefixes, or any post when `posts` is set).
+		navCurrent( item, url, tags ) {
+			if ( url === item.url ) return "aria-current=\"page\"";
+			const inSection = ( item.section || [] ).some( prefix => url?.startsWith( prefix ) );
+			const isPost = item.posts && Array.isArray( tags ) && tags.includes( "posts" );
+			return inSection || isPost ? "aria-current=\"true\"" : "";
+		},
+
 		// Drops the organizational tags (posts, page) so only real topics render.
 		topicsOnly,
 
