@@ -915,7 +915,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 		@apply text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-rgblue pb-1 mt-10 mb-4;
 	}
 	p { @apply mb-3; }
-	ul:not(.resume-tags, .resume-contact) {
+	ul:not(.resume-contact) {
 		@apply list-disc pl-6 mb-3 space-y-1 marker:text-gray-400;
 	}
 }
@@ -949,26 +949,26 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .resume-print-action {
 	@apply mt-4 mb-0!;
-	.cta-button-secondary { @apply mr-0 mb-0 px-4 py-2 text-sm cursor-pointer; }
+	@apply flex flex-wrap gap-3;
+	.cta-button, .cta-button-secondary { @apply m-0 px-4 py-2 text-sm cursor-pointer; }
 }
 
-.resume-tags {
-	@apply flex flex-wrap gap-2;
-	li { @apply px-3 py-1 text-sm rounded-full bg-blue-50 text-blue-900 border border-blue-100; }
-}
+
 
 .resume-job {
 	@apply mb-6;
 }
 
+/* Company and dates on the first row, role and location below. In print, all three
+   share one row (see the print styles). */
 .resume-job-heading {
-	@apply flex flex-wrap items-baseline justify-between gap-x-4;
-	h3 { @apply text-lg font-bold text-gray-900; }
+	@apply grid grid-cols-[minmax(0,1fr)_auto] gap-x-4 items-baseline;
+	h3 { @apply text-lg font-bold text-gray-900 col-start-1 row-start-1; }
 	h3 a { @apply text-gray-900 no-underline hover:underline; }
 }
 
 .resume .resume-job-dates {
-	@apply text-sm text-gray-500 mb-0 tabular-nums;
+	@apply text-sm text-gray-500 mb-0 tabular-nums col-start-2 row-start-1;
 }
 
 .resume-job-note {
@@ -976,7 +976,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .resume .resume-job-role {
-	@apply italic font-semibold text-gray-700 mb-2;
+	@apply italic font-semibold text-gray-700 mb-2 col-span-2 row-start-2;
 }
 
 .resume-job-location {
@@ -984,7 +984,24 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 @media print {
-	@page { margin: 0.6in; }
+	@page { margin: 0.5in; }
+
+	/* The résumé prints on its own named page type, so only it gets a name and page
+	   number in the bottom margin (in case the pages get separated). The page type goes
+	   on <html>, not .resume: in Chrome, anything after .resume on a different page type
+	   forces a blank last page, and browser extensions add elements to the end of <body>
+	   or even straight to <html>. Anything outside <main> is hidden for the same reason. */
+	html:has(.resume) { page: resume; }
+	html:has(.resume) > :not(head, body),
+	body:has(.resume) > :not(main) { display: none !important; }
+	@page resume {
+		@bottom-right {
+			content: "David Neal · page " counter(page) " of " counter(pages);
+			font-family: "Figtree", sans-serif;
+			font-size: 8pt;
+			color: #6b7280;
+		}
+	}
 
 	body > header,
 	body > .site-footer,
@@ -997,27 +1014,42 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	.resume {
 		@apply my-0 max-w-none text-black;
 		font-size: 10pt;
-		line-height: 1.45;
+		line-height: 1.35;
 		a { @apply text-black no-underline; }
-		h2 { @apply mt-5 mb-2; break-after: avoid; }
+		h2 { @apply mt-4 mb-1.5; break-after: avoid; }
+		p { @apply mb-1.5; }
+		ul:not(.resume-contact) { @apply mb-1.5 space-y-0.5; }
 	}
+
+	.resume .resume-job-role { @apply mb-1; }
+	.resume-name { @apply text-3xl; }
+	.resume-tagline { @apply mb-1!; }
 
 	/* Keep the name and avatar side by side on paper whatever the page width. */
 	.resume-header {
-		@apply flex-row items-center justify-between gap-6;
+		@apply flex-row items-center justify-between gap-6 pb-3;
 	}
 
 	.resume-header > picture,
 	.resume-avatar {
-		@apply w-24 h-24;
+		@apply w-20 h-20;
 	}
 
-	/* Chips waste ink and space on paper, so print them as a comma list. */
-	.resume-tags {
-		@apply block;
-		li { @apply inline p-0 border-0 bg-transparent text-black rounded-none; font-size: inherit; }
-		li:not(:last-child)::after { content: ", "; }
+	/* The two-page application version: extra detail stays on screen only. */
+	.resume-detail {
+		display: none !important;
 	}
 
-	.resume-job { @apply mb-3; break-inside: avoid; }
+	/* Company, role, and dates share one row on paper. Each job stays on one page:
+	   WebKit (Safari) ignores break-after: avoid, so letting jobs split could strand a
+	   heading at the bottom of a page. */
+	.resume-job { @apply mb-2.5; break-inside: avoid; page-break-inside: avoid; }
+	.resume-job-heading {
+		@apply grid-cols-[auto_minmax(0,1fr)_auto] gap-x-3;
+		break-after: avoid;
+		h3 { @apply text-base; }
+	}
+	.resume .resume-job-role { @apply col-span-1 col-start-2 row-start-1 mb-0; }
+	.resume .resume-job-dates { @apply col-start-3; }
+	.resume li { break-inside: avoid; }
 }

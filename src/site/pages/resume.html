@@ -8,21 +8,25 @@ slug: resume
 layout: layouts/default.edge
 ---
 
+{{-- One source, two lengths. On screen, everything shows. When printed (or saved as PDF),
+     anything marked `resume-detail` is hidden so the application version fits on two pages. --}}
 <article class="resume">
 	<header class="resume-header">
 		<div class="resume-header-text">
 			<h1 class="resume-name">David Neal</h1>
-			<p class="resume-tagline">Developer Advocate, Author, Illustrator</p>
+			<p class="resume-tagline">Senior Developer Advocate · Author · Illustrator</p>
 			<ul class="resume-contact">
 				<li>Dalton, GA</li>
 				<li><a href="mailto:david@reverentgeek.com" data-cta="contact-email">david@reverentgeek.com</a></li>
 				<li><a href="https://reverentgeek.com">reverentgeek.com</a></li>
 				<li><a href="https://www.linkedin.com/in/davidneal">linkedin.com/in/davidneal</a></li>
 				<li><a href="https://github.com/reverentgeek">github.com/reverentgeek</a></li>
-				<li><a href="https://x.com/reverentgeek">@reverentgeek</a></li>
 			</ul>
-			<p class="resume-print-action"><button type="button" class="cta-button-secondary"
-					onclick="window.print()">Print or save as PDF</button></p>
+			{{-- The PDF is this page printed to Letter (the print styles trim it to two pages).
+			     Regenerate it after editing the résumé, and update the date in the link. --}}
+			<p class="resume-print-action"><a class="cta-button" href="/static/david-neal-resume.pdf"
+					data-cta="resume-pdf" download>Download PDF (November 2026)</a><button type="button"
+					class="cta-button-secondary" onclick="window.print()">Print</button></p>
 		</div>
 		<img class="resume-avatar" src="/content/images/rg-sticker-circle.png" alt="An illustrated avatar of David Neal"
 			width="256" height="256" ssqch:widths="128,256" sizes="128px">
@@ -30,51 +34,22 @@ layout: layouts/default.edge
 
 	<section class="resume-section">
 		<h2>Summary</h2>
-		<p>Senior Developer Advocate at MongoDB with more than a decade in Developer Relations at companies including
-			Plaid, Pluralsight, ActiveCampaign, and Okta. Builds content, workshops, and demos that help developers
-			succeed, and has built and led DevRel teams from the ground up. Co-author and illustrator of <a
-				href="/developer-relations-activity-patterns/"><cite>Developer Relations Activity Patterns</cite></a>
-			(Apress, 2026), speaker at 170+ events, and an illustrator who uses drawings to make complex technical
-			topics click.</p>
+		<p>Senior developer advocate and DevRel leader with more than a decade of experience building developer
+			programs, technical content, and reference applications. Currently at MongoDB; previously at Plaid,
+			Pluralsight, ActiveCampaign, and Okta. Co-author and illustrator of <a
+				href="/developer-relations-activity-patterns/"><cite>Developer Relations Activity Patterns</cite></a>,
+			combining hands-on engineering with visual explanations that make complex systems easier to
+			understand.</p>
 	</section>
 
 	<section class="resume-section">
-		<h2>Expertise</h2>
-		<ul class="resume-tags">
-			<li>Developer Relations</li>
-			<li>Developer Experience</li>
-			<li>Technical Writing</li>
-			<li>Workshops</li>
-			<li>Public Speaking</li>
-			<li>Video Production</li>
-			<li>Community Building</li>
-			<li>Illustration and Design</li>
-			<li>APIs and SDKs</li>
-			<li>Cloud Architecture</li>
-		</ul>
-	</section>
-
-	<section class="resume-section">
-		<h2>Current Skills</h2>
-		<ul class="resume-tags">
-			<li>JavaScript</li>
-			<li>TypeScript</li>
-			<li>Node.js</li>
-			<li>MongoDB</li>
-			<li>MongoDB Atlas</li>
-			<li>AI</li>
-			<li>Claude Code</li>
-			<li>React.js</li>
-			<li>Vue.js</li>
-			<li>Vite</li>
-			<li>Express</li>
-			<li>Fastify</li>
-			<li>Electron</li>
-			<li>Tauri</li>
-			<li>SQL</li>
-			<li>.NET</li>
-			<li>ASP.NET</li>
-			<li>C#</li>
+		<h2>Highlights</h2>
+		<ul>
+			<li><strong>Author:</strong> co-wrote and illustrated <cite>Developer Relations Activity Patterns</cite>
+				(Apress, 2026), 39 DevRel patterns, each with how to measure whether it's working</li>
+			<li><strong>Speaker:</strong> keynotes, talks, and workshops at 170+ events in 15+ countries since 2011</li>
+			<li><strong>Visual explainer:</strong> <a href="https://www.youtube.com/watch?v=t18YB3xDfXI">An Illustrated
+					Guide to OAuth and OpenID Connect</a> video, 829K YouTube views (Nov. 2026)</li>
 		</ul>
 	</section>
 
@@ -84,55 +59,51 @@ layout: layouts/default.edge
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://www.mongodb.com/">MongoDB</a></h3>
+				<p class="resume-job-role">Senior Developer Advocate <span class="resume-job-location">Remote</span></p>
 				<p class="resume-job-dates">May 2026 – Present</p>
 			</div>
-			<p class="resume-job-role">Senior Developer Advocate <span class="resume-job-location">Remote</span></p>
-			<p>Lead technically complex, cross-functional programs (technical content, workshops, advanced demos, and
-				campaigns) that help builders, from professional developers to vibe coders, succeed with MongoDB Atlas.
-				Focused on self-serve growth customers.</p>
+			<p class="resume-detail">Lead technical content, workshops, demos, and campaigns that help developers, including those building
+				with AI tools, succeed with MongoDB Atlas.</p>
 			<ul>
+				<li>Built <a href="https://github.com/reverentgeek/inkleaf">Inkleaf</a>, an open-source desktop notes
+					app demonstrating MongoDB Atlas search, Voyage AI, and offline-first sync, using Tauri (Rust), React,
+					and TypeScript</li>
 				<li>Write and record video tutorials for the <a
-						href="https://www.youtube.com/@MongoDBDevelopers">MongoDB for Developers</a> YouTube channel,
-					including <a href="https://www.youtube.com/watch?v=b4vbVJDOo28">What’s New in MongoDB 9.0?</a> and
-					<a href="https://www.youtube.com/watch?v=8uAIQi_8LIg">Get Your Free MongoDB Atlas Cluster and
-						Connect with Compass in 12 Minutes!</a></li>
-				<li>Built <a href="https://github.com/reverentgeek/inkleaf">Inkleaf</a>, an open-source desktop Markdown
-					notes app using Tauri, React, TypeScript, and MongoDB Atlas, demonstrating hybrid search
-					($rankFusion), Atlas Vector Search with Voyage AI embeddings, and offline-first sync</li>
-				<li>Deliver hands-on workshops, both in person at AI Builder Day events and virtually</li>
+						href="https://www.youtube.com/@MongoDBDevelopers">MongoDB YouTube channel</a>, such as <a
+						href="https://www.youtube.com/watch?v=b4vbVJDOo28"><cite>What’s New in MongoDB 9.0?</cite></a></li>
+				<li>Deliver hands-on workshops in person at AI Builder Day events and online</li>
 				<li>Write the “From the Field” column for MongoDB’s monthly developer newsletter</li>
-				<li>Moderate the official MongoDB subreddit</li>
-				<li>Partner with teams across MongoDB to tailor programs and campaigns to builders</li>
-				<li>Mentor junior developer advocates</li>
+				<li class="resume-detail">Partner with teams across MongoDB to tailor programs and campaigns to
+					builders, moderate the official MongoDB subreddit, and mentor junior developer advocates</li>
 			</ul>
 		</div>
 
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://plaid.com/">Plaid</a></h3>
+				<p class="resume-job-role">Developer Relations Engineer <span class="resume-job-location">Remote</span></p>
 				<p class="resume-job-dates">July 2025 – May 2026</p>
 			</div>
-			<p class="resume-job-role">Developer Relations Engineer <span class="resume-job-location">Remote</span></p>
-			<p>Developer experience for financial institutions integrating with Plaid’s network.</p>
+			<p class="resume-detail">Developer experience for financial institutions integrating with Plaid’s network.</p>
 			<ul>
-				<li>Supported Core Exchange, Plaid’s implementation of the Financial Data Exchange (FDX) OpenAPI
-					specification</li>
-				<li>Built <a href="https://app.plaidypus.dev/">app.plaidypus.dev</a>, an open-source, end-to-end sample
-					application, API, and OAuth/OIDC implementation in Node.js and TypeScript</li>
-				<li>Added Algolia search and other features to the React and Markdown documentation platform</li>
+				<li>Built <a href="https://app.plaidypus.dev/">Plaidypus</a>, an open-source reference application
+					demonstrating end-to-end API integration and OAuth/OIDC flows in Node.js and TypeScript for Plaid
+					data partners</li>
+				<li>Supported data partners implementing Core Exchange, Plaid’s Financial Data Exchange (FDX) API</li>
+				<li>Integrated Algolia search into the React and Markdown documentation platform for
+					financial-institution developers</li>
 			</ul>
 		</div>
 
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://reverentgeek.com/">ReverentGeek.com</a></h3>
+				<p class="resume-job-role">Independent Developer Relations Consultant <span class="resume-job-location">Remote</span></p>
 				<p class="resume-job-dates">March 2024 – July 2025</p>
 			</div>
-			<p class="resume-job-role">Developer Relations Consultant <span class="resume-job-location">Remote</span>
-			</p>
-			<p>Software development and content strategy consulting, content creation, illustrations, and events for
-				companies including Slack, SavvyFi, WordPress.com, Asana, and Builder.io.</p>
-			<ul>
+			<p>Software development, content strategy, content creation, illustration, and events for companies
+				including Slack, SavvyFi, WordPress.com, Asana, and Builder.io.</p>
+			<ul class="resume-detail">
 				<li>Built CLI automation apps with Node.js and Deno</li>
 				<li>Supported APIs and SDKs in JavaScript, TypeScript, C#, and Python</li>
 				<li>Created written and video content, and wrote documentation</li>
@@ -143,72 +114,67 @@ layout: layouts/default.edge
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://motherduck.com/">MotherDuck</a></h3>
+				<p class="resume-job-role">Developer Advocate (Developer Advoduck) <span class="resume-job-location">Seattle, WA (remote)</span></p>
 				<p class="resume-job-dates">September 2023 – February 2024</p>
 			</div>
-			<p class="resume-job-role">Developer Advoduck <span class="resume-job-location">Seattle, WA (remote)</span>
-			</p>
-			<p>Improved developer marketing and developer experience with content creation, documentation,
-				illustrations, and presentations for the DuckDB and MotherDuck data science and analytics community.</p>
+			<p>Improved developer marketing and developer experience with content, documentation, illustrations, and
+				presentations for the DuckDB and MotherDuck data science and analytics community.</p>
 		</div>
 
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://www.pluralsight.com/">Pluralsight</a></h3>
+				<p class="resume-job-role">Principal Developer Advocate <span class="resume-job-location">Draper, UT (remote)</span></p>
 				<p class="resume-job-dates">March 2022 – July 2023</p>
 			</div>
-			<p class="resume-job-role">Principal Developer Advocate <span class="resume-job-location">Draper, UT
-					(remote)</span></p>
 			<ul>
-				<li>Increased B2C brand awareness through content creation, presentations, events, and live streaming
-					for the developer and tech community</li>
-				<li>Created the All-Hands On Tech Live! show, streaming web development projects with Node.js, Vue,
+				<li>Created and hosted All-Hands On Tech Live!, streaming web development projects with Node.js, Vue,
 					Electron, and Tailwind CSS on Twitch, YouTube, LinkedIn, and Facebook</li>
-				<li>Launched “Teach Me Tech,” a new series of short tech videos</li>
-				<li>Designed presentation slides, stickers, t-shirts, and video and blog assets</li>
-				<li>Helped create and deliver two “unconference” tech events for some of the most influential content
-					creators in tech</li>
+				<li class="resume-detail">Launched “Teach Me Tech,” a series of short tech videos</li>
+				<li>Helped run Pluralsight Link/ 2022 and 2023, unconference events for tech content creators, including
+					a hands-on electronics workshop<span class="resume-detail"> and event stickers, t-shirts, and
+						pins</span></li>
+				<li class="resume-detail">Built brand awareness with the developer community through content,
+					presentations, events, and live streaming, and designed slides, stickers, t-shirts, and video and
+					blog assets</li>
 			</ul>
 		</div>
 
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://www.activecampaign.com/">ActiveCampaign</a></h3>
+				<p class="resume-job-role">Developer Relations Manager <span class="resume-job-location">Chicago, IL (remote)</span></p>
 				<p class="resume-job-dates">November 2020 – March 2022</p>
 			</div>
-			<p class="resume-job-role">Developer Relations Manager <span class="resume-job-location">Chicago, IL
-					(remote)</span></p>
 			<ul>
-				<li>Set the strategy for, built, and led a new DevRel team for the app marketplace and integration
-					ecosystem</li>
-				<li>Improved API documentation, tutorials, and developer SDKs, and built apps and integrations</li>
-				<li>Created a new support system for developers</li>
-				<li>Reestablished developer communities in forums and on social media</li>
+				<li>Established and led the DevRel team for ActiveCampaign’s app marketplace and integration ecosystem,
+					setting program strategy</li>
+				<li>Improved API documentation, tutorials, and SDKs, and built apps and integrations</li>
+				<li>Created a developer support system and rebuilt developer communities in forums and social media</li>
 			</ul>
 		</div>
 
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://developer.okta.com/">Okta</a></h3>
+				<p class="resume-job-role">Senior Developer Advocate <span class="resume-job-location">San Francisco, CA (remote)</span></p>
 				<p class="resume-job-dates">September 2018 – October 2020</p>
 			</div>
-			<p class="resume-job-role">Senior Developer Advocate <span class="resume-job-location">San Francisco, CA
-					(remote)</span></p>
 			<ul>
-				<li>Led developer marketing to the JavaScript and Node.js developer community</li>
-				<li>Created a Kanban system for managing, publishing, and promoting content</li>
-				<li>Wrote conversion and awareness posts, produced videos, and conducted tech reviews</li>
-				<li>Gave talks and keynotes, and created illustrations and graphics for social media, blog posts, and
-					videos</li>
+				<li>Led developer marketing to the JavaScript and Node.js community with posts, videos, and talks</li>
+				<li>Wrote and illustrated <a
+						href="https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc">An
+						Illustrated Guide to OAuth and OpenID Connect</a> and its companion video</li>
+				<li class="resume-detail">Created a Kanban system for managing, publishing, and promoting content</li>
 			</ul>
 		</div>
 
 		<div class="resume-job">
 			<div class="resume-job-heading">
 				<h3><a href="https://joyent.com/">Joyent</a></h3>
+				<p class="resume-job-role">Product Engineer <span class="resume-job-location">San Francisco, CA (remote)</span></p>
 				<p class="resume-job-dates">March 2018 – August 2018</p>
 			</div>
-			<p class="resume-job-role">Product Engineer <span class="resume-job-location">San Francisco, CA
-					(remote)</span></p>
 			<p>Developed new APIs for Samsung’s cloud platform using Node.js, hapi, GraphQL, Vue.js, Go, and Docker.</p>
 		</div>
 
@@ -216,107 +182,60 @@ layout: layouts/default.edge
 			<div class="resume-job-heading">
 				<h3><a href="https://www.planview.com/products-solutions/products/agileplace/">LeanKit</a> <span
 						class="resume-job-note">(now Planview AgilePlace)</span></h3>
+				<p class="resume-job-role">Developer Advocate, Senior Software Developer <span class="resume-job-location">Franklin, TN (remote)</span></p>
 				<p class="resume-job-dates">February 2013 – March 2018</p>
 			</div>
-			<p class="resume-job-role">Developer Advocate, Senior Software Developer <span
-					class="resume-job-location">Franklin, TN (remote)</span></p>
 			<ul>
-				<li>Created the developer advocacy role to support platform APIs and integrations, and championed the
-					product internally and externally</li>
-				<li>Built custom integrations in .NET, Node.js, and Electron, plus open source utilities and API clients
-					(SDKs) in .NET and Node.js</li>
-				<li>Developed and launched a new reporting and analytics API with Node.js, hapi, JWT, SQL, and Docker
-				</li>
-				<li>Helped the open source community write client libraries, integrations, and applications</li>
-				<li>Wrote documentation, tutorials, and articles, and spoke at conferences and meetups on Node.js,
-					Electron, and Kanban</li>
-				<li>Supported pre- and post-sales customers with APIs and integrations</li>
-				<li>Led company training on public speaking, and taught DevOps automation engineers Node.js, Electron,
-					and JavaScript</li>
+				<li>Created the developer advocacy role to support platform APIs and integrations</li>
+				<li>Developed and launched a new reporting and analytics API with Node.js, hapi, JWT, SQL, and Docker</li>
+				<li>Built custom integrations in .NET, Node.js, and Electron, plus open-source .NET and Node.js SDKs</li>
+				<li class="resume-detail">Helped the open-source community write client libraries, integrations, and
+					applications, and supported pre- and post-sales customers with APIs and integrations</li>
+				<li class="resume-detail">Wrote documentation, tutorials, and articles; led company training on public
+					speaking; and taught DevOps automation engineers Node.js, Electron, and JavaScript</li>
 			</ul>
 		</div>
 	</section>
 
 	<section class="resume-section">
-		<h2>Community Leadership and Event Management</h2>
-
-		<div class="resume-job">
-			<div class="resume-job-heading">
-				<h3>Developer Community Events &amp; Meetups</h3>
-				<p class="resume-job-dates">2011 – Present</p>
-			</div>
-			<ul>
-				<li>Keynotes, presentations, and workshops at 170+ regional and international events across 15+
-					countries</li>
-				<li>Built relationships with developer communities in Node.js, JavaScript, .NET, and DevRel ecosystems
-				</li>
-				<li>For a more detailed view, see my <a href="/devrel-portfolio/">DevRel portfolio</a></li>
-			</ul>
-		</div>
-
-		<div class="resume-job">
-			<div class="resume-job-heading">
-				<h3>Pluralsight Link/ Events</h3>
-				<p class="resume-job-dates">2022, 2023</p>
-			</div>
-			<ul>
-				<li>Helped organize and facilitate two “unconference” style events in San Francisco and New Orleans</li>
-				<li>Facilitated group discussions, and developed and led a hands-on electronics workshop</li>
-				<li>Contributed illustrations for stickers, t-shirts, pins, and event graphics</li>
-			</ul>
-		</div>
-
-		<div class="resume-job">
-			<div class="resume-job-heading">
-				<h3>Nashville .NET User Group</h3>
-				<p class="resume-job-dates">2011 – 2013</p>
-			</div>
-			<p class="resume-job-role">President (2012 – 2013), Secretary (2011) <span
-					class="resume-job-location">Nashville, TN</span></p>
-			<ul>
-				<li>Led twice-monthly meetup series (speaker sessions and hands-on labs) for 200+ members across middle
-					Tennessee</li>
-				<li>Increased sponsorship funding by 40% and member engagement by coordinating with local companies and
-					national tech partners</li>
-				<li>Organized and executed multiple developer events, managing speakers, venues, logistics, and
-					community outreach</li>
-				<li>Mentored members in career advancement and skill development, resulting in measurable community
-					growth</li>
-			</ul>
-		</div>
+		<h2>Skills</h2>
+		<ul class="resume-skills">
+			<li><strong>Developer Relations:</strong> developer experience, technical writing, video, workshops,
+				speaking, community, illustration</li>
+			<li><strong>Languages and frameworks:</strong> JavaScript, TypeScript, Node.js, React, Vue, Vite, Express,
+				Fastify, Electron, Tauri, C#, .NET</li>
+			<li><strong>Data and platforms:</strong> MongoDB Atlas, vector and hybrid search, embeddings, SQL, APIs and
+				SDKs, OAuth/OIDC, AI coding tools such as Claude Code</li>
+		</ul>
 	</section>
 
 	<section class="resume-section">
-		<h2>Speaking Highlights</h2>
+		<h2>Speaking and Community</h2>
 		<ul>
 			<li><strong>Keynotes:</strong> NDC Oslo, DDD Perth, jsMobileConf, DevNexus, ConFoo Montreal, DevReach,
-				JavaScript and Friends, Code PaLOUsa, THAT Conference, CodeStock, JazzCon, Scenic City Summit, Music
-				City Code</li>
-			<li><strong>International:</strong> DevRelCon Tokyo, Craft Conference Hungary, DevReach Bulgaria, NDC
-				London, NDC Sydney, NDC Porto, DevSum Sweden, Techorama Belgium, and JSConf Uruguay</li>
-			<li>For more details, see <a href="/speaking/">reverentgeek.com/speaking</a></li>
+				JavaScript and Friends, Code PaLOUsa, THAT Conference, CodeStock<span class="resume-detail">, JazzCon,
+					Scenic City Summit, Music City Code; international events in Japan, Hungary, Bulgaria, the UK,
+					Australia, Portugal, Sweden, Belgium, and Uruguay</span></li>
+			<li class="resume-detail"><strong>International:</strong> DevRelCon Tokyo, Craft Conference Hungary, DevReach Bulgaria, NDC
+				London, NDC Sydney, NDC Porto, DevSum Sweden, Techorama Belgium, JSConf Uruguay</li>
+			<li><strong>Nashville .NET User Group:</strong> President (2012 – 2013) and Secretary (2011). Led a
+				twice-monthly meetup series for 200+ members and increased sponsorship funding by 40%</li>
+			<li class="resume-detail">Organized developer events, managing speakers, venues, logistics, and outreach,
+				and mentored members in career and skill development</li>
+			<li class="resume-detail">Full history at <a href="/speaking/">reverentgeek.com/speaking</a> and more work
+				in my <a href="/devrel-portfolio/">DevRel portfolio</a></li>
 		</ul>
 	</section>
 
 	<section class="resume-section">
-		<h2>Publications &amp; Videos</h2>
+		<h2>Publications, Education, and Awards</h2>
 		<ul>
 			<li><a href="https://www.amazon.com/Developer-Relations-Activity-Patterns-Management/dp/B0FJWPD3CQ"><cite>Developer
-						Relations Activity Patterns: A Unified Approach to DevRel, DX and Community
-						Management</cite></a>, Apress, 2026, Co-Author &amp; Illustrator</li>
-			<li><a href="https://www.youtube.com/watch?v=t18YB3xDfXI">An Illustrated Guide to OAuth and OpenID
-					Connect</a> (YouTube), more than 700K views</li>
-			<li><a href="https://www.amazon.com/Illustrated-Book-Dad-Jokes/dp/B0B19GST26"><cite>The Illustrated Book of
-						Dad Jokes</cite></a>, self-published, Author &amp; Illustrator</li>
-			<li>See my <a href="/devrel-portfolio/">DevRel portfolio</a> for more</li>
-		</ul>
-	</section>
-
-	<section class="resume-section">
-		<h2>Education and Awards</h2>
-		<ul>
-			<li>Dalton State College, Dalton, GA: Associate of Science, Computer Science</li>
-			<li>Microsoft MVP, Development Technologies, 2014 – 2025</li>
+						Relations Activity Patterns<span class="resume-detail">: A Unified Approach to DevRel, DX and
+							Community Management</span></cite></a>, Apress, 2026, co-author and illustrator</li>
+			<li class="resume-detail"><a href="https://www.amazon.com/Illustrated-Book-Dad-Jokes/dp/B0B19GST26"><cite>The
+						Illustrated Book of Dad Jokes</cite></a>, self-published, author and illustrator</li>
+			<li>Microsoft MVP, Development Technologies, 2014 – 2025; A.S., Computer Science, Dalton State College</li>
 		</ul>
 	</section>
 </article>
