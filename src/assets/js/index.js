@@ -259,3 +259,16 @@
 		box.hidden = false;
 	} );
 } )();
+
+// Code blocks that scroll sideways need keyboard focus, or keyboard users can't scroll them.
+// Only the ones that actually overflow get a tab stop, so short snippets don't add noise.
+( function () {
+	document.addEventListener( "DOMContentLoaded", () => {
+		document.querySelectorAll( ".content-body pre, .legacy-comment-body pre" ).forEach( ( pre ) => {
+			if ( pre.scrollWidth <= pre.clientWidth ) return;
+			pre.tabIndex = 0;
+			pre.setAttribute( "role", "region" );
+			pre.setAttribute( "aria-label", "Code example" );
+		} );
+	} );
+} )();

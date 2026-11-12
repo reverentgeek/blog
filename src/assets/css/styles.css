@@ -20,6 +20,8 @@
   --color-bluesky: #00A8E8;
   --color-rss: #FF6600;
   --color-kofi: #FF5E5B;
+  /* Ko-fi coral is too light for text or a white-text button (3:1); this passes 4.5:1 both ways. */
+  --color-kofi-dark: #cc3330;
 }
 
 @layer components {
@@ -83,6 +85,7 @@ body {
 /* Code fences, highlighted while the site builds (`markdown: { highlight: true }` in
    ssqch.config.js): a dark block in Prism's Okaidia colors, which the site used before. */
 pre.highlight {
+	/* Okaidia's pink (#f92672) is 3.9:1 on this background; #fb5c93 is the nearest that passes 4.5:1. */
 	--hl-comment: #8292a2;
 	--hl-keyword: #66d9ef;
 	--hl-operator: #f8f8f2;
@@ -92,17 +95,17 @@ pre.highlight {
 	--hl-number: #ae81ff;
 	--hl-constant: #ae81ff;
 	--hl-builtin: #a6e22e;
-	--hl-property: #f92672;
+	--hl-property: #fb5c93;
 	--hl-attribute: #a6e22e;
 	--hl-function: #e6db74;
 	--hl-type: #e6db74;
 	--hl-parameter: #fd971f;
-	--hl-tag: #f92672;
+	--hl-tag: #fb5c93;
 	--hl-heading: #66d9ef;
 	--hl-link: #e6db74;
 	--hl-inserted: #a6e22e;
 	--hl-inserted-bg: transparent;
-	--hl-deleted: #f92672;
+	--hl-deleted: #fb5c93;
 	--hl-deleted-bg: transparent;
 	--hl-line-bg: rgba(255, 255, 255, 0.08);
 	margin: 0.5em 0;
@@ -293,6 +296,17 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .post-nav-next {
 	@apply sm:text-right;
+}
+
+/* Embeds pasted with a fixed width (YouTube's width="560" height="315") would push the page
+   sideways on phones. YouTube embeds scale to the column at 16:9; others just can't overflow. */
+.content-body iframe {
+	max-width: 100%;
+}
+.content-body iframe[src*="youtube"] {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
 }
 
 /* Long URLs in prose and comments would otherwise push the page sideways on narrow screens. */
@@ -980,7 +994,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 /* Ko-fi support card */
 .callout-support {
 	@apply bg-orange-50 border-kofi;
-	.callout-label { @apply text-kofi; }
+	.callout-label { @apply text-kofi-dark; }
 }
 
 /* Commission and DevRel callouts (end of posts, top and bottom of the galleries) */
@@ -1011,7 +1025,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .kofi-button {
 	/* text-white and no-underline need `!` to beat the `.content-body a` rule above. */
-	@apply inline-flex items-center gap-2 mt-3 px-4 py-2 rounded-full font-bold text-white! bg-kofi no-underline! transition-all duration-300 hover:scale-105 hover:shadow-lg;
+	@apply inline-flex items-center gap-2 mt-3 px-4 py-2 rounded-lg font-bold text-white! bg-kofi-dark no-underline! transition-all duration-300 hover:scale-105 hover:shadow-lg;
 }
 
 .kofi-button svg {
