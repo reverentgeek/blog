@@ -4,6 +4,8 @@ title: "About Me"
 description: "David Neal is an illustrator, builder, and DevRel leader, helping folks in tech be more awesome."
 date: 2014-02-13
 slug: about
+markers:
+  two-ways-to-work-with-me: road-fork
 ---
 
 <div class="about-portraits">

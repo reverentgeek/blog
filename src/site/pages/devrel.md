@@ -5,6 +5,10 @@ description: "I help teams build developer programs that developers trust and le
 meta_description: "David Neal is a developer advocate with more than a decade in Developer Relations at MongoDB, Plaid, and Okta, and consulting for Slack and Asana, co-author of Developer Relations Activity Patterns, and a speaker at more than 170 events."
 date: 2026-11-10
 slug: devrel
+markers:
+  what-i-bring-to-a-team: toolbox
+  the-illustrator-advantage: lightbulb
+  lets-talk: envelope
 ---
 
 <img class="float-right ml-4 mb-4 w-32 sm:w-48 rounded-lg" src="/content/images/headshots/headshot-rg-studio-2025.jpg" alt="David Neal">

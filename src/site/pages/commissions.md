@@ -5,6 +5,10 @@ description: "Hand-drawn avatars, stickers, logos, and book illustrations from a
 meta_description: "Commission custom illustrations from David Neal: avatars, stickers, logos, mascots, book and course illustrations, and live event art for developers, authors, and tech companies."
 date: 2026-11-10
 slug: commissions
+markers:
+  books-ive-illustrated: books
+  how-it-works: pencil
+  lets-make-something-awesome: paper-airplane
 ---
 
 **Illustrations with personality, drawn by a developer who gets the joke.**
@@ -101,7 +105,7 @@ From the book's acknowledgements:
 
 Avatars have [their own page](/avatars/), with the gallery, prices, and ordering. They start at $30 for black-and-white and $60 for color, and they're usually ready within 48 hours.
 
-<a class="cta-button" href="/avatars/#order" data-cta="order-avatar">Order an avatar</a>
+<p class="cta-with-note"><a class="cta-button" href="/avatars/#order" data-cta="order-avatar">Order an avatar</a> <span class="hand-note hand-note-48"><span class="ink ink-arrow-curve" aria-hidden="true"></span><span class="ink ink-note-48-hours" aria-hidden="true"></span><span class="sr-only">Yours in 48 hours. Usually.</span></span></p>
 
 ### Custom Work
 

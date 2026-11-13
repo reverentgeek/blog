@@ -916,6 +916,218 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	a img { @apply aspect-square object-contain; }
 }
 
+/* Hand-drawn art: section markers, arrows, and margin-note lettering.
+   The SVGs (src/site/static/hand-drawn/) are used as masks over currentColor, so the ink
+   follows the text color and a forced-colors theme. Every piece is aria-hidden, and each
+   note carries its words in an sr-only span. Section markers come from a page's `markers`
+   front matter (the sectionMarkers filter); notes are written into the page by hand. */
+.ink {
+	display: inline-block;
+	flex-shrink: 0;
+	background-color: currentColor;
+	-webkit-mask: var(--ink) center / contain no-repeat;
+	mask: var(--ink) center / contain no-repeat;
+}
+
+@media (forced-colors: active) {
+	.ink {
+		forced-color-adjust: none;
+		background-color: CanvasText;
+	}
+}
+
+.ink-badge { --ink: url(/static/hand-drawn/icons-badge.svg); }
+.ink-books { --ink: url(/static/hand-drawn/icons-books.svg); }
+.ink-clipboard { --ink: url(/static/hand-drawn/icons-clipboard.svg); }
+.ink-envelope { --ink: url(/static/hand-drawn/icons-envelope.svg); }
+.ink-lightbulb { --ink: url(/static/hand-drawn/icons-lightbulb.svg); }
+.ink-microphone { --ink: url(/static/hand-drawn/icons-microphone.svg); }
+.ink-paper-airplane { --ink: url(/static/hand-drawn/icons-paper-airplane.svg); }
+.ink-pencil { --ink: url(/static/hand-drawn/icons-pencil.svg); }
+.ink-road-fork { --ink: url(/static/hand-drawn/icons-road-fork.svg); }
+.ink-tag { --ink: url(/static/hand-drawn/icons-tag.svg); }
+.ink-toolbox { --ink: url(/static/hand-drawn/icons-toolbox.svg); }
+
+/* Arrows are drawn pointing up and to the right. */
+.ink-arrow-bolt { --ink: url(/static/hand-drawn/arrows-bolt.svg); aspect-ratio: 906 / 334; }
+.ink-arrow-curve { --ink: url(/static/hand-drawn/arrows-curve.svg); aspect-ratio: 656 / 555; }
+
+/* Lettering. Each box keeps the drawing's proportions, so only a height is set. */
+.ink-note-170 { --ink: url(/static/hand-drawn/margin-notes-170.svg); aspect-ratio: 303 / 33; }
+.ink-note-48-hours { --ink: url(/static/hand-drawn/margin-notes-48-hours.svg); aspect-ratio: 262 / 65; }
+.ink-note-blinks { --ink: url(/static/hand-drawn/margin-notes-blinks.svg); aspect-ratio: 235 / 43; }
+.ink-note-dog { --ink: url(/static/hand-drawn/margin-notes-dog.svg); aspect-ratio: 346 / 100; }
+.ink-note-i-drew-this { --ink: url(/static/hand-drawn/margin-notes-i-drew-this.svg); aspect-ratio: 247 / 34; }
+.ink-note-pick-color { --ink: url(/static/hand-drawn/margin-notes-pick-color.svg); aspect-ratio: 507 / 58; }
+
+/* Section marker: a doodle before the heading text, in the same box at every size. */
+.content-body h2.has-marker {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	> .ink {
+		width: 2.25rem;
+		height: 2.25rem;
+		rotate: -4deg;
+		@apply text-ink;
+		@media (min-width: 640px) {
+			width: 2.75rem;
+			height: 2.75rem;
+		}
+	}
+}
+
+/* Margin notes: lettering plus an arrow, tilted a little as if added afterwards.
+   Each arrow is flipped, turned, and placed so its tip lands on what the note is about,
+   at every width. When a note wraps under its target on a phone, it gets a curved arrow
+   that points back up instead. */
+.hand-note {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.375rem;
+	@apply text-ink;
+}
+
+/* Homepage: "I drew this!" with a curve rising up and left to the avatar. */
+.home-intro-caption {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.25rem 0.75rem;
+}
+
+.hand-note-drew {
+	align-items: flex-end;
+	gap: 0.25rem;
+	rotate: -2deg;
+	/* A quarter turn left: it leaves the middle of the "I" heading left, then curves up
+	   into the avatar. The box keeps its unrotated size, hence the offsets. */
+	> .ink-arrow-curve {
+		height: 2.25rem;
+		rotate: -115deg;
+		margin-left: -1.5rem;
+		translate: -3px -3.2px;
+	}
+	> .ink-note-i-drew-this {
+		height: 1.5rem;
+		/* The text column beside the avatar is about 200px at 320px wide. */
+		@media (max-width: 400px) { height: 1.2rem; }
+	}
+}
+
+/* /avatars/: "Most folks pick color!" in the color row of the price table, a zigzag
+   arrow pointing left at the row's label. */
+.hand-note-color {
+	@apply ml-2 align-middle;
+	rotate: -2deg;
+	> .ink-arrow-bolt { height: 16px; rotate: 28deg; scale: -1 -1; translate: 0 -2px; }
+	> .ink-note-pick-color { height: 1.3rem; }
+	/* Phones: on its own line under the label, with a curve pointing back up at it. */
+	@media (max-width: 639px) {
+		display: flex;
+		align-items: flex-end;
+		margin: 0.125rem 0 0;
+		> .ink-arrow-bolt {
+			--ink: url(/static/hand-drawn/arrows-curve.svg);
+			aspect-ratio: 656 / 555;
+			height: 1.75rem;
+			rotate: -97deg;
+			scale: 1 1;
+			translate: 17px -7px;
+		}
+		> .ink-note-pick-color { translate: 13px 0; }
+	}
+	/* Narrow enough to fit the 320px table without scrolling it. */
+	@media (max-width: 400px) {
+		> .ink-arrow-bolt { height: 1.5rem; }
+		> .ink-note-pick-color { height: 1.1rem; }
+	}
+}
+
+/* /avatars/: under the featured gallery, pointing up at the last tile (the dog). It spans
+   the full gallery width (not the reading column), and the right padding is half a column
+   plus a little, so the arrow's tip ends just left of the middle of that tile. */
+.content-body > .hand-note-dog {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	max-width: none;
+	@apply mt-2 mb-8;
+	padding-right: calc((100% - 1rem) / 4 + 0.5rem);
+	> .ink-note-dog { height: 3.25rem; margin-top: 1.5rem; rotate: -2deg; }
+	> .ink-arrow-curve { height: 56px; margin-top: -0.5rem; rotate: 93deg; scale: -1 1; translate: 0 -18px; }
+	/* Small enough to fit beside the padding on a 320px phone. */
+	@media (max-width: 400px) {
+		> .ink-note-dog { height: 2.25rem; margin-top: 1.25rem; }
+		> .ink-arrow-curve { height: 3rem; }
+	}
+	@media (min-width: 768px) {
+		padding-right: calc((100% - 2rem) / 6 + 0.5rem);
+	}
+}
+
+/* /illustrations/: "It blinks!" for the Link/ 2023 badge. Under the title by default.
+   On wide screens it moves into the page margin beside the badge (always in the grid's
+   right column), with a curve pointing back at the art. */
+.hand-note-blinks {
+	display: flex;
+	margin: 0.25rem 0 0.5rem;
+	> .ink-note-blinks { width: min(8.5rem, 100%); height: auto; rotate: 1deg; translate: 8px 0; }
+	> .ink-arrow-curve { display: none; }
+	@media (min-width: 1240px) {
+		position: absolute;
+		left: calc(100% + 0.5rem);
+		top: 52cqw;
+		margin: 0;
+		flex-direction: column;
+		align-items: flex-start;
+		> .ink-arrow-curve { display: block; order: -1; height: 52px; scale: -1 1; margin-left: -1.25rem; translate: 18px 6px; }
+		> .ink-note-blinks { width: 8.5rem; margin-left: 1.5rem; rotate: -3deg; translate: none; }
+	}
+}
+
+@media (min-width: 1240px) {
+	.gallery-caption:has(.hand-note-blinks) {
+		position: relative;
+		/* For the cqw above: the image box is square, so 52cqw is just past its middle. */
+		container-type: inline-size;
+	}
+}
+
+/* /speaking/: under the "Past Speaking Engagements" heading. */
+.content-body > .hand-note-170 {
+	display: flex;
+	justify-content: flex-end;
+	@apply -mt-1 mb-4;
+	> .ink-note-170 { height: 1.625rem; rotate: -2deg; }
+}
+
+/* /commissions/: "Yours in 48 hours. Usually." beside the Order an avatar button, with a
+   curve back to it. On phones it goes under the button. */
+.content-body > .cta-with-note {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	column-gap: 0.25rem;
+	.cta-button { @apply mr-2; }
+	.hand-note-48 { @apply mb-3; align-items: flex-end; }
+	.ink-arrow-curve { height: 40px; rotate: 45deg; scale: -1 -1; translate: 0 -6px; }
+	.ink-note-48-hours { height: 46px; rotate: -2deg; translate: 4px 2px; }
+	/* Phones: always on its own line under the button (so the arrow fits the layout),
+	   with a turn arrow arcing back up to it. */
+	@media (max-width: 639px) {
+		.hand-note-48 { flex-basis: 100%; }
+		.ink-arrow-curve {
+			--ink: url(/static/hand-drawn/arrows-turn.svg);
+			aspect-ratio: 623 / 390;
+			rotate: 206deg;
+			scale: -1 1;
+			translate: 20px 1px;
+		}
+		.ink-note-48-hours { translate: -5px 2px; }
+	}
+}
+
 /* /avatars/: the rest of the gallery behind a "See more" toggle. */
 .gallery-more {
 	@apply my-8;
@@ -1111,6 +1323,9 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 @media print {
 	@page { margin: 0.5in; }
+
+	/* Masks print as blank boxes when backgrounds are off, the browser default. */
+	.ink { display: none; }
 
 	/* The résumé prints on its own named page type, so only it gets a name and page
 	   number in the bottom margin (in case the pages get separated). The page type goes

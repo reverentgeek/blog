@@ -4,6 +4,9 @@ title: "Speaking Engagements"
 description: "Current speaking topics: leadership, JavaScript, OAuth/OpenID Connect, public speaking, Node.js, Electron.js, sketch notes, improving…"
 date: 2014-02-13
 slug: speaking
+markers:
+  featured-talks: microphone
+  for-organizers: clipboard
 ---
 
 I've spoken at more than 170 events since 2011, often giving several talks, a keynote, or a half-day or full-day workshop at the same event. That includes conferences, user groups, and private events across the US, Europe, Australia, and South America, including CodeMash, KCDC, THAT Conference, NDC, DevSum, Build Stuff, and All Things Open.
@@ -47,6 +50,8 @@ Simple, hand-drawn illustrations are a fun way to explain ideas and win over an 
 Want me to speak at your event? <a href="mailto:david@reverentgeek.com?subject=Speaking%20inquiry" data-cta="speaking-inquiry">Get in touch</a>, and read more about [my DevRel work](/devrel/).
 
 ## Past Speaking Engagements
+
+<p class="hand-note hand-note-170"><span class="ink ink-note-170" aria-hidden="true"></span><span class="sr-only">170+ and counting.</span></p>
 
 <p class="speaking-years">Jump to: <a href="#2026">2026</a> &middot; <a href="#2025">2025</a> &middot; <a href="#2024">2024</a> &middot; <a href="#2023">2023</a> &middot; <a href="#2022">2022</a> &middot; <a href="#2021">2021</a> &middot; <a href="#2020">2020</a> &middot; <a href="#2019">2019</a> &middot; <a href="#2018">2018</a> &middot; <a href="#2017">2017</a> &middot; <a href="#2016">2016</a> &middot; <a href="#2015">2015</a> &middot; <a href="#2014">2014</a> &middot; <a href="#2013">2013</a> &middot; <a href="#2012">2012</a> &middot; <a href="#2011">2011</a></p>
 

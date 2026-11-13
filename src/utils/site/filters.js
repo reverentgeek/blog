@@ -1,5 +1,7 @@
 import { adjacentPosts, relatedPosts, topicLabel, topicsOnly } from "./collections.js";
 
+const SECTION_MARKERS = new Set( [ "badge", "books", "clipboard", "envelope", "lightbulb", "microphone", "paper-airplane", "pencil", "road-fork", "tag", "toolbox" ] );
+
 // Functions templates can call: {{ postDate(page.date) }}.
 export function siteFilters( { socialImage } ) {
 	return {
@@ -22,6 +24,21 @@ export function siteFilters( { socialImage } ) {
 			const inSection = ( item.section || [] ).some( prefix => url?.startsWith( prefix ) );
 			const isPost = item.posts && Array.isArray( tags ) && tags.includes( "posts" );
 			return inSection || isPost ? "aria-current=\"true\"" : "";
+		},
+
+		// Hand-drawn section markers. A page's front matter maps h2 ids to markers
+		// (`markers: { how-it-works: pencil }`), and the marker goes before the heading text.
+		// The art is in src/site/static/hand-drawn/, and each name has an `.ink-*` class in
+		// styles.css. An unknown name fails the build instead of rendering an empty box.
+		sectionMarkers( html, markers ) {
+			if ( !markers ) return html;
+			for ( const [ id, name ] of Object.entries( markers ) ) {
+				if ( !SECTION_MARKERS.has( name ) ) throw new Error( `Unknown section marker "${ name }" for #${ id }` );
+				if ( !html.includes( `<h2 id="${ id }">` ) ) throw new Error( `Section marker "${ name }": no <h2 id="${ id }"> on this page` );
+			}
+			return html.replace( /<h2 id="([^"]+)">/g, ( tag, id ) => markers[id]
+				? `<h2 id="${ id }" class="has-marker"><span class="ink ink-${ markers[id] }" aria-hidden="true"></span>`
+				: tag );
 		},
 
 		// Drops the organizational tags (posts, page) so only real topics render.
