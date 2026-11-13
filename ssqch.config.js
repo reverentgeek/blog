@@ -18,6 +18,10 @@ export default defineConfig( ( { env } ) => ( {
 		output: "dist"
 	},
 	templateFormats: [ "edge", "md", "txt", "html" ],
+	// Markdown and .html pages are rendered with Edge too, as the layouts are (ssqch 0.5's
+	// default for both is Jinja).
+	markdownEngine: "edge",
+	htmlEngine: "edge",
 
 	// Code fences are highlighted while the site builds (no Prism in the browser). The colors
 	// are in src/assets/css/styles.css, so ssqch's own /highlight.css isn't written.
@@ -41,7 +45,15 @@ export default defineConfig( ( { env } ) => ( {
 		}
 	},
 
-	watch: [ "./src/assets/", "./src/dev/" ],
+	// `ssqch serve` starts the CSS and JS watchers with the server and stops them with it. They
+	// write into dist/assets/, and the server picks the files up from there: a stylesheet swaps
+	// in place, and a script reloads the page.
+	serve: { run: [ "pnpm run serve:css", "pnpm run serve:js" ] },
+
+	// Passthrough sources outside the input folder, so a change to them is copied while
+	// serving. Not the rest of src/assets/: the CSS and JS watchers handle those, and a
+	// rebuild for each save would rewrite every page.
+	watch: [ "./src/assets/js/pco.js", "./src/assets/fonts/", "./src/dev/" ],
 	passthrough: [
 		{ "./src/assets/js/pco.js": "assets/pco.js" },
 		{ "./src/assets/fonts": "fonts" },

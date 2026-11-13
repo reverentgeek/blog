@@ -8,7 +8,7 @@
 		"serve:css": "postcss src/assets/css/styles.css --output dist/assets/index.css --watch",
 		"serve:js": "esbuild src/assets/js/index.js --bundle --outdir=dist/assets --watch",
 		"serve:site": "scripts/ssqch.sh serve",
-		"serve": "npm-run-all2 clean --parallel serve:*",
+		"serve": "run-s clean serve:site",
 		"build:css": "postcss src/assets/css/styles.css --output dist/assets/index.css --no-map",
 		"build:js": "esbuild src/assets/js/index.js --bundle --outdir=dist/assets --minify",
 		"build:site": "scripts/ssqch.sh build --env production",
