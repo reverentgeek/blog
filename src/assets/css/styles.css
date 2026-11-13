@@ -632,6 +632,12 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply w-full h-full aspect-square object-cover object-top rounded-lg bg-gray-100 sm:h-auto sm:aspect-[4/3];
 }
 
+/* A sample that must not be cropped (the three avatars): fitted inside the frame on white,
+   so the square phone thumbnail shows all of it. */
+.home-work-item img.home-work-contain {
+	@apply object-contain bg-white;
+}
+
 .home-work-title {
 	@apply pl-3 pt-1 font-semibold leading-snug sm:pl-0 sm:pt-3;
 }

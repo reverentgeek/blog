@@ -22,7 +22,7 @@ I draw avatars, stickers, logos, and illustrations for developers, authors, conf
 
 <div class="home-work-list commission-samples">
   <a class="home-work-item" href="/avatars/">
-    <img src="/content/images/avatars/000-avatar-gallery-featured.jpg" alt="A grid of illustrated avatars" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
+    <img class="home-work-contain" src="/content/images/featured/avatars-sample.jpg" alt="Three illustrated avatars: a woman with pink hair and glasses in color, a smiling man in black and white, and a woman with long purple braids in color" loading="lazy" ssqch:widths="192,320,640" sizes="(min-width: 896px) 270px, (min-width: 640px) 33vw, 96px">
     <span class="home-work-title">Avatars</span>
     <span class="home-work-text">For GitHub, Slack, social media, and whole teams.</span>
   </a>
