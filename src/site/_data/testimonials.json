@@ -19,5 +19,12 @@
 		"role": "Web Developer",
 		"image": "/content/images/avatars/213-2015.jpg",
 		"imageAlt": "The color avatar David drew for Bernardo Martinez"
+	},
+	"anthonyDellavecchia": {
+		"quote": "David drew my avatar years ago, and I still use it today (even if I look a little different these days!). He was incredibly gracious throughout the process and has been doing this for folks in DevRel for a long time. His art is genuinely hand-drawn (no AI) and it really shows. Truly talented, thank you so much!",
+		"name": "Anthony Dellavecchia",
+		"role": "DevRel at Twilio",
+		"image": "/content/images/avatars/109-anthonyjdella.jpg",
+		"imageAlt": "The black-and-white avatar David drew for Anthony Dellavecchia"
 	}
 }

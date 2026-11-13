@@ -31,6 +31,8 @@ I'm David Neal (aka ReverentGeek), an illustrator and developer who has drawn th
 
 @!component('components/testimonial', { t: testimonials.gregSvoboda })
 
+@!component('components/testimonial', { t: testimonials.anthonyDellavecchia })
+
 > "…illustrated throughout by David Neal, who somehow draws the joke I was trying to make rather than the one I actually made."
 >
 > **Lars Klint**, author of *Automate Everything, Notice Nothing*
