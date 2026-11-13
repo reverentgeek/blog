@@ -41,12 +41,15 @@ export default defineConfig( ( { env } ) => ( {
 		}
 	},
 
-	watch: [ "./src/assets/" ],
+	watch: [ "./src/assets/", "./src/dev/" ],
 	passthrough: [
 		{ "./src/assets/js/pco.js": "assets/pco.js" },
 		{ "./src/assets/fonts": "fonts" },
 		{ "./src/site/static": "static" },
-		"./src/site/favicon.ico"
+		"./src/site/favicon.ico",
+		// The arrow tuner (src/dev/arrow-tuner.js) and the spare arrows it can try. Local
+		// builds only, so none of it ships.
+		...( env === "production" ? [] : [ { "./src/dev": "dev" } ] )
 	],
 
 	filters: siteFilters( { socialImage: createSocialImageFilter() } ),

@@ -20,7 +20,7 @@ export default defineConfig( [
 			"n/no-unpublished-import": "off"
 		}
 	}, {
-		files: [ "src/assets/**/*.js" ],
+		files: [ "src/assets/**/*.js", "src/dev/**/*.js" ],
 		extends: [ rg.configs.browser ]
 	} ] );
 
