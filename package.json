@@ -1,6 +1,6 @@
 {
 	"name": "blog",
-	"version": "1.3.2",
+	"version": "2.0.0",
 	"description": "The ReverentGeek Blog, built with SiteSquatch",
 	"scripts": {
 		"clean": "node scripts/clean.js",
