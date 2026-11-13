@@ -6,7 +6,7 @@ Built with [SiteSquatch](https://github.com/reverentgeek/sitesquatch) (`ssqch`),
 
 ## Building
 
-Install `ssqch` (`cargo install --path crates/ssqch --features avif` from a sitesquatch checkout), or build it in `../ssqch`, or set `SSQCH_BIN` to its path. Then:
+`pnpm install` brings `ssqch` (a dev dependency, pinned in `package.json`). To build with another binary, such as a sitesquatch checkout's, set `SSQCH_BIN` to its path.
 
 ```sh
 pnpm install

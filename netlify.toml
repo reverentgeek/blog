@@ -1,16 +1,14 @@
-# Netlify builds the site: install the pinned SiteSquatch release (a static
-# Linux binary; the installer checks its SHA-256 checksum), run the same
-# `pnpm run build` as locally, then the smoke tests, so a failing test stops
-# the deploy.
+# Netlify builds the site: its `pnpm install` brings SiteSquatch with the other
+# packages (the `ssqch` dev dependency, pinned in package.json and the lockfile,
+# with its static Linux binary from `@ssqch/linux-x64`), then it runs the same
+# `pnpm run build` as locally, then the smoke tests, so a failing test stops the
+# deploy.
 [build]
-  command = "curl --proto '=https' --tlsv1.2 -fsSL https://github.com/reverentgeek/sitesquatch/releases/download/v$SSQCH_VERSION/ssqch-installer.sh | SSQCH_UNMANAGED_INSTALL=.cache/bin sh && SSQCH_BIN=.cache/bin/ssqch pnpm run build && node --test test/smoke.test.js"
+  command = "pnpm run build && node --test test/smoke.test.js"
   publish = "dist/"
 
 [build.environment]
   NODE_VERSION = "24"
-  # The SiteSquatch release to install. Bump it on purpose, after a local
-  # `pnpm test` passes.
-  SSQCH_VERSION = "0.5.1"
 
 # Image derivatives (dist/img) and ssqch's image-hash cache (.cache/ssqch)
 # carry over between builds, so a build with no new images encodes nothing.

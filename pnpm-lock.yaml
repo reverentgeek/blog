@@ -237,6 +237,9 @@ importers:
       slug:
         specifier: ^12.0.1
         version: 12.0.1
+      ssqch:
+        specifier: 0.5.2
+        version: 0.5.2
       uuid:
         specifier: ^14.0.3
         version: 14.0.3
@@ -973,6 +976,26 @@ packages:
   '@sentry/server-utils@11.12.0':
     resolution: {integrity: sha512-gAP5FLhXSiMs9vsU7guc54QNY1OzUJmhqyXMjhiP4SYlhQltoKtipcyo8pFWVsmylIzIkA8e2eGR6e0YA6YF3A==}
     engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
+
+  '@ssqch/darwin-arm64@0.5.2':
+    resolution: {integrity: sha512-SW82X/IdcPvB4W93k81YYYUVB8Z1GkANM5/mvtQxKYoX3144JKB2XxYgvuEtvw9lLZk96igLM1XJLtOwqHZGiA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@ssqch/darwin-x64@0.5.2':
+    resolution: {integrity: sha512-lr3Of/39haa5qrOKN8f6va4Fs41hzTa0pbNEOjgnDTMeF+HgOl8xYZfLIHS9T+wefM7qpgBo5Yo45KP1pdib+Q==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@ssqch/linux-x64@0.5.2':
+    resolution: {integrity: sha512-heeefP/p6xf+13c/3F8fBpVeEFv+J/L0NT9+xojwycDdekn0B9SYVzJ/8SET4VwWZvoT8QTA4eTxIlFljo4JJA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@ssqch/win32-x64@0.5.2':
+    resolution: {integrity: sha512-X994Ay4m7c9fL6XkCgHxfkLUPOCHuOhgvRemI2+0KSOVl4TSIGsMNrekf4C8wJVpDwWfbfsibWV5UYkpyHZMww==}
+    cpu: [x64]
+    os: [win32]
 
   '@stylistic/eslint-plugin@5.10.0':
     resolution: {integrity: sha512-nPK52ZHvot8Ju/0A4ucSX1dcPV2/1clx0kLcH5wDmrE4naKso7TUC/voUyU1O9OTKTrR6MYip6LP0ogEMQ9jPQ==}
@@ -2180,6 +2203,11 @@ packages:
     resolution: {integrity: sha512-DI7/OuAUD+GMpR6dmu8lliO2Wg5zfeh+/xsdyJZCzd8o5JgFUjCeLsBDuZjIQJdwXS3J0L/uZYrELKYqx+PXog==}
     engines: {node: '>=8.0'}
 
+  ssqch@0.5.2:
+    resolution: {integrity: sha512-HUuQTdPy1+OjgkFFpJvn6woVnkX4Pp+C9wOtYPrCW6AzirrGpJZ+Rqim+B0ZlMnZy17i1VzkN1LAMNvZHvKTsA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
@@ -3008,6 +3036,18 @@ snapshots:
       '@opentelemetry/api': 1.10.0
       '@sentry/conventions': 0.32.0
       '@sentry/core': 11.12.0
+
+  '@ssqch/darwin-arm64@0.5.2':
+    optional: true
+
+  '@ssqch/darwin-x64@0.5.2':
+    optional: true
+
+  '@ssqch/linux-x64@0.5.2':
+    optional: true
+
+  '@ssqch/win32-x64@0.5.2':
+    optional: true
 
   '@stylistic/eslint-plugin@5.10.0(eslint@10.14.0(jiti@2.7.0))':
     dependencies:
@@ -4332,6 +4372,13 @@ snapshots:
       '@types/node': 26.6.6
       image-ssim: 0.2.0
       jpeg-js: 0.4.4
+
+  ssqch@0.5.2:
+    optionalDependencies:
+      '@ssqch/darwin-arm64': 0.5.2
+      '@ssqch/darwin-x64': 0.5.2
+      '@ssqch/linux-x64': 0.5.2
+      '@ssqch/win32-x64': 0.5.2
 
   string-width@7.2.0:
     dependencies:
