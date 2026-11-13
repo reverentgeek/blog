@@ -11,6 +11,5 @@ node_modules/
 .netlify/
 dist/
 .env
-.parcel-cache/
 reports/
 .sightmap/
