@@ -442,7 +442,7 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 }
 
 .content > :is(h1, .post-meta, .post-topics, .callout, .post-related, .post-nav),
-.content-body > :is(p, ul, ol, blockquote, h1, h2, h3, h4, h5, h6, .callout, table, .about-portraits, .draw-samples, .testimonial) {
+.content-body > :is(p, ul, ol, blockquote, h1, h2, h3, h4, h5, h6, .callout, table, .about-portraits, .draw-samples, .testimonial, .review-form) {
 	max-width: var(--reading-column);
 	margin-inline: auto;
 }
@@ -722,6 +722,20 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 
 .testimonial-body {
 	@apply min-w-0;
+}
+
+/* /leave-a-review/: the Netlify form. */
+.review-label {
+	@apply block font-semibold mb-1;
+}
+.review-optional {
+	@apply font-normal text-gray-600;
+}
+.review-input {
+	@apply w-full px-4 py-2 rounded-lg border-2 border-gray-300 bg-white text-base focus:border-action focus:outline-none;
+}
+.review-note {
+	@apply text-sm text-gray-600;
 }
 
 /* Two classes so it beats the content area's own blockquote styles. */

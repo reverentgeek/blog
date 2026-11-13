@@ -95,6 +95,8 @@ From the book's acknowledgements:
 
 @!component('components/testimonial', { t: testimonials.pieterDenHeten })
 
+Have I drawn something for you? I'd love it if you'd [leave a review](/leave-a-review/).
+
 ## How It Works
 
 1. **Tell me what you need.** For an avatar, [order on the avatars page](/avatars/#order). For anything else, [send me the details](#custom-work) and I'll reply with a quote.
