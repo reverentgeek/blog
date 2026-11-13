@@ -580,6 +580,19 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	@apply text-xl font-bold mb-4;
 }
 
+/* A section marker sized to the smaller homepage heading. */
+.home-section-heading.has-marker {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	> .ink {
+		width: 1.75rem;
+		height: 1.75rem;
+		rotate: -4deg;
+		@apply text-ink;
+	}
+}
+
 .home-section-header {
 	@apply flex flex-wrap items-baseline justify-between gap-x-4 mb-6;
 	.home-section-heading { @apply mb-0; }
