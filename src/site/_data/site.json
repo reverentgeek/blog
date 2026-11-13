@@ -34,7 +34,7 @@
 		{
 			"label": "DevRel",
 			"url": "/devrel/",
-			"section": ["/devrel-portfolio/", "/resume/"]
+			"section": ["/devrel-portfolio/", "/resume/", "/speaking/", "/presentations/", "/bio/"]
 		},
 		{
 			"label": "Writing",
@@ -43,9 +43,9 @@
 			"posts": true
 		},
 		{
-			"label": "Speaking",
-			"url": "/speaking/",
-			"section": ["/presentations/", "/bio/"]
+			"label": "Dad Jokes!",
+			"url": "/dad-jokes/",
+			"section": ["/the-illustrated-book-of-dad-jokes/"]
 		},
 		{
 			"label": "About",

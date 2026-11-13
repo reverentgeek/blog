@@ -88,6 +88,7 @@ Decided 2026-11-10: slugs `/commissions/` and `/devrel/`; avatars show a "starti
   - [ ] Save the LinkedIn post's URL and a trimmed screenshot for the case study.
   - [ ] Message Lars for permission (a courtesy) and the testimonial questions in the plan.
 - [ ] **Feature *Developer Relations Activity Patterns* as illustration work too.** It's currently framed only as a DevRel book in `announcing-devrel-activity-patterns-book.md` and `developer-relations-activity-patterns.md`. Ask co-authors for a quote about the illustrations.
+- [x] **Add samples from *The Illustrated Book of Dad Jokes*.** Done 2026-11-13: a top-level `/dad-jokes/` page ("Dad Jokes!") with 12 favorite jokes (`src/site/content/images/dad-jokes/`, 1600 px JPGs from the 3072 px exports), a short version of the book's story, and Amazon buttons (`data-cta="buy-dad-jokes"`). "Dad Jokes!" replaced Speaking in the nav, and `/speaking/`, `/presentations/` and `/bio/` now highlight DevRel. The book strip, footer (Explore), About, `/commissions/`, `llms.txt` and the book post link to it.
 - [x] **Use the book's first review.** Lindsay Brunner's five-star Amazon review, "Basically the encyclopedia of DevRel" (2026-11-05; full text in the plan). Add a short "What readers say" excerpt with an Amazon link to `developer-relations-activity-patterns.md`, and use it on `/devrel/`. Message Lindsay as a courtesy. Done 2026-11-10: a "What Readers Are Saying" section in `developer-relations-activity-patterns.md`, and the excerpt on `/devrel/`.
 
 ### 3. Illustration commissions

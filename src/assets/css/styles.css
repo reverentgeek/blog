@@ -807,6 +807,21 @@ pre.highlight .line.highlighted { background: var(--hl-line-bg); }
 	a { @apply text-action underline; }
 }
 
+/* A book cover beside its pitch and buttons (/dad-jokes/). */
+.book-feature {
+	@apply flex items-start gap-4 sm:gap-6 my-8;
+}
+
+.book-feature-cover {
+	@apply shrink-0 w-32 sm:w-48;
+	img { @apply w-full h-auto rounded-lg shadow-md; }
+}
+
+.book-feature-text {
+	@apply flex-1 min-w-0;
+	p:first-child { @apply mt-0; }
+}
+
 /* Site footer.
    A full-bleed tinted band so the page reads as finished rather than just
    running out of content, with an rgblue top rule that bookends the header.

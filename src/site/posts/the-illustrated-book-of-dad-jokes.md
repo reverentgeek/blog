@@ -19,6 +19,8 @@ I want to say a big "thank you" to all of you who submitted ideas! I wish I had 
 
 ![Book Sample](/content/images/the-illustrated-book-of-dad-jokes/book-sample.jpg)
 
+> **Note:** Want to see more of the jokes? A few of my favorites are on the [Dad Jokes!](/dad-jokes/) page.
+
 ## 2021: The Year of the Daily Joke
 
 On January 1, 2021, I started an experiment. My first goal was to draw a "dad joke" daily for one month. At the end of January, I kept going. More and more folks began to respond, letting me know how much they enjoyed the jokes and how they were sharing them with family, friends, students, and others. I really wasn't sure I could keep it going every day. But, a month turned into two months, then three months, and after a while, I began to wonder, "Could I really keep this up for an entire year?"

@@ -58,7 +58,7 @@ A book is one of the best tests of an illustrator. I know how to explain ideas, 
 * **[*Microsoft Azure in Action*](https://www.manning.com/books/microsoft-azure-in-action) by Lars Klint (Manning, 2025):** My first project with Lars, for one of the best-known tech publishers. I drew the book's opening "Learn all these things!" map, defense in depth as a castle guarded by a moat full of ninja crocodiles, and parody book covers and sale posters for Banning Books, the book's fictional bookstore. He liked it enough to come back for the next one.
 * ***You Don't Know JS Yet*** **by Kyle Simpson:** I illustrated the covers of [*Get Started*](https://www.amazon.com/You-Dont-Know-JS-Yet/dp/B084DFZ6GW/) and [*Scope & Closures*](https://www.amazon.com/You-Dont-Know-JS-Yet-ebook/dp/B08634PZ3N/), the second edition of one of the best-known JavaScript book series, plus a set of stickers to match.
 * **[*Developer Relations Activity Patterns*](/developer-relations-activity-patterns/) (Apress):** I co-authored this one, and I illustrated the cover and every chapter (all 39!), each capturing the patterns in that section.
-* **[*The Illustrated Book of Dad Jokes*](/the-illustrated-book-of-dad-jokes/):** My own book, born from drawing a new dad joke every single day of 2021. I compiled my favorite 250 for you and your eye-rolling family to enjoy. You're welcome.
+* **[*The Illustrated Book of Dad Jokes*](/dad-jokes/):** My own book, born from drawing a new dad joke every single day of 2021. I compiled my favorite 250 for you and your eye-rolling family to enjoy. You're welcome.
 
 Writing a book, a course, or documentation that needs illustrations? <a href="#custom-work" data-cta="commission-inquiry">Let's talk about it</a>.
 

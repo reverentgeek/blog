@@ -50,7 +50,7 @@ My leadership style is practical and people-first. I create clarity, remove fric
 
 ## Books
 
-I co-authored and illustrated [*Developer Relations Activity Patterns*](/developer-relations-activity-patterns/), illustrated two books for Lars Klint, drew the covers for Kyle Simpson's *You Don't Know JS Yet*, and drew a whole book of [dad jokes](/the-illustrated-book-of-dad-jokes/).
+I co-authored and illustrated [*Developer Relations Activity Patterns*](/developer-relations-activity-patterns/), illustrated two books for Lars Klint, drew the covers for Kyle Simpson's *You Don't Know JS Yet*, and drew a whole book of [dad jokes](/dad-jokes/).
 
 @!component('components/book-strip', { books: books, bare: true })
 

@@ -108,6 +108,10 @@ test( "commission and DevRel pages have their calls to action", async () => {
 	assert.match( draw, /href="?\/avatars\/#order"?[^>]*data-cta="?order-avatar/ );
 	assert.doesNotMatch( draw, /data-mobile-menu-button/, "the landing page has no site navigation" );
 
+	const dadJokes = await readDistFile( "dad-jokes/index.html" );
+	assert.match( dadJokes, /data-cta="?buy-dad-jokes/ );
+	assert.match( dadJokes, /aria-current="?page"?[^>]*href="?\/dad-jokes\/"?/, "Dad Jokes! is in the nav and marked current" );
+
 	const devrel = await readDistFile( "devrel/index.html" );
 	assert.match( devrel, /data-cta="?devrel-talk/ );
 	assert.match( devrel, /data-cta="?resume/ );
