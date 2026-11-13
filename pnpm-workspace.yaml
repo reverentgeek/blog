@@ -19,6 +19,11 @@ minimumReleaseAgeExclude:
   - '@pnpm/exe.win32-x64@12.10.0 || 12.10.1 || 12.11.2 || 12.15.0 || 12.16.0 || 12.16.1 || 12.18.0 || 12.19.0'
   - pnpm@12.10.0 || 12.10.1 || 12.11.2 || 12.15.0 || 12.16.0 || 12.16.1 || 12.18.0 || 12.19.0
   - '@pnpm/exe.netbsd-x64@12.19.0'
+  - '@ssqch/darwin-arm64@0.5.1 || 0.5.2'
+  - '@ssqch/darwin-x64@0.5.1 || 0.5.2'
+  - '@ssqch/linux-x64@0.5.1 || 0.5.2'
+  - '@ssqch/win32-x64@0.5.1 || 0.5.2'
+  - ssqch@0.5.1 || 0.5.2
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
 overrides:
