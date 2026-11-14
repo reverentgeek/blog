@@ -4,7 +4,7 @@
 # `pnpm run build` as locally, then the smoke tests, so a failing test stops the
 # deploy.
 [build]
-  command = "pnpm run build && node --test test/smoke.test.js"
+  command = "pnpm run build && node --test 'test/*.test.js'"
   publish = "dist/"
 
 [build.environment]

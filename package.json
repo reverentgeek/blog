@@ -20,7 +20,7 @@
 		"page": "node src/utils/content.js page",
 		"post": "node src/utils/content.js post",
 		"test": "pnpm run test:smoke",
-		"test:smoke": "pnpm run build && node --test test/smoke.test.js",
+		"test:smoke": "pnpm run build && node --test 'test/*.test.js'",
 		"test:lighthouse": "lighthouse --view https://reverentgeek.com --output html --output-path ./reports/report.html",
 		"test:lighthouse:local": "pnpm run build && node scripts/lighthouse-local.js"
 	},

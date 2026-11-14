@@ -9,6 +9,7 @@ import { sitemapPlugin } from "ssqch/sitemap";
 import { collections } from "./src/utils/site/collections.js";
 import { siteFilters } from "./src/utils/site/filters.js";
 import { imageOptions } from "./src/utils/site/image-options.js";
+import { createPublishedImageFilters } from "./src/utils/site/published-image.js";
 import { createSocialImageFilter } from "./src/utils/site/social-image.js";
 import site from "./src/site/_data/site.json";
 
@@ -64,7 +65,7 @@ export default defineConfig( ( { env } ) => ( {
 		...( env === "production" ? [] : [ { "./src/dev": "dev" } ] )
 	],
 
-	filters: siteFilters( { socialImage: createSocialImageFilter() } ),
+	filters: siteFilters( { socialImage: createSocialImageFilter(), ...createPublishedImageFilters() } ),
 	collections,
 
 	plugins: [

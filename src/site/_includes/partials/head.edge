@@ -63,6 +63,6 @@
   {{-- JSON-LD structured data for blog posts --}}
   @if(date && tags && tags.includes('posts'))
   <script type="application/ld+json">
-  {{{ jsonLdArticle({ title, description: seoDescription, image: seoImage, datePublished: htmlDateString(date), author: site.author, publisher: { name: site.title, logoUrl: site.url + site.logo }, pageUrl: site.url + page.url }) }}}
+  {{{ jsonLdArticle({ title, description: seoDescription, image: seoImage, datePublished: htmlDateString(date), author: site.author, publisher: { name: site.title, logoUrl: site.url + await publishedImage(site.logo, 'auto') }, pageUrl: site.url + page.url }) }}}
   </script>
   @end

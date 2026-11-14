@@ -24,7 +24,7 @@ metadata:
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ dateToRfc3339(post.date) }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ htmlToAbsoluteUrls(post.templateContent, absolutePostUrl) }}</content>
+    <content type="html">{{ htmlToAbsoluteUrls(await feedImages(post.templateContent), absolutePostUrl) }}</content>
   </entry>
   @end
 </feed>

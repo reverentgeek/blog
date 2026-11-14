@@ -164,3 +164,40 @@ test( "posts link to related posts, and the 404 page links to topics and the arc
 	assert.match( notFound, /href="?\/topics\/"?/ );
 	assert.match( notFound, /href="?\/archive\/"?/ );
 } );
+
+// A local URL from the built site, as a path in dist/ (or null for another site's URL).
+function distPathFor( url ) {
+	const pathname = url.startsWith( "https://reverentgeek.com/" ) ? url.slice( "https://reverentgeek.com".length ) : url;
+	return pathname.startsWith( "/" ) ? path.join( distDir, decodeURI( pathname ) ) : null;
+}
+
+async function exists( file ) {
+	return readFile( file ).then( () => true, () => false );
+}
+
+// The image plugin doesn't see the feed's escaped HTML, and the originals aren't published.
+test( "feed images point at published files", async () => {
+	const feed = await readDistFile( "feed.xml" );
+	const sources = [ ...feed.matchAll( /&lt;img[^&]*?src=&quot;([^&]+)&quot;/g ) ].map( match => match[1] );
+
+	assert.ok( sources.length > 0, "the feed should have images" );
+	for ( const src of sources ) {
+		const file = distPathFor( src );
+		if ( file ) assert.ok( await exists( file ), `feed image ${ src } is not in dist` );
+	}
+} );
+
+test( "every post's publisher logo is published", async () => {
+	const logos = new Set();
+
+	for ( const file of await listBuiltPages() ) {
+		const html = await readDistFile( file );
+		const jsonLd = html.match( /<script type="application\/ld\+json">\s*([\s\S]*?)\s*<\/script>/ )?.[1];
+		if ( jsonLd ) logos.add( JSON.parse( jsonLd ).publisher?.logo?.url );
+	}
+
+	assert.ok( logos.size > 0, "posts should have JSON-LD" );
+	for ( const logo of logos ) {
+		assert.ok( logo && await exists( distPathFor( logo ) ), `publisher logo ${ logo } is not in dist` );
+	}
+} );

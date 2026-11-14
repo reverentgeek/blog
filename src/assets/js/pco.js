@@ -2,8 +2,19 @@
 function parseSection( line ) {
 	const text = line.replace( "{", "" ).replace( "}", "" );
 	const parts = text.split( ":" );
-	return parts.length > 1 ? { type: parts[0].toLowerCase().trim(), text: parts.slice( 1 ).join( ":" ).trim() } : { type: parts[0].trim(), text: parts[0].trim() };
+	return parts.length > 1 ? { type: parts[0].toLowerCase().trim(), text: parts.slice( 1 ).join( ":" ).trim() } : { type: parts[0].toLowerCase().trim(), text: "" };
 }
+
+// Section environments, by their long and short directive names, and the heading a
+// section gets when its directive has no label ({start_of_verse} vs. {start_of_verse: Verse 2}).
+const SECTION_STARTS = {
+	start_of_verse: "Verse",
+	sov: "Verse",
+	start_of_chorus: "Chorus",
+	soc: "Chorus",
+	start_of_bridge: "Bridge",
+	sob: "Bridge"
+};
 
 function isTitle( sectionType ) {
 	return sectionType === "title";
@@ -29,8 +40,12 @@ function isTempo( sectionType ) {
 	return sectionType === "tempo";
 }
 
+function isSectionStart( sectionType ) {
+	return Object.hasOwn( SECTION_STARTS, sectionType );
+}
+
 function isIgnoredSection( sectionType ) {
-	return sectionType === "end_of_chorus" || sectionType === "end_of_verse" || sectionType === "end_of_bridge";
+	return [ "end_of_chorus", "eoc", "end_of_verse", "eov", "end_of_bridge", "eob" ].includes( sectionType );
 }
 
 function isComment( sectionType ) {
@@ -41,7 +56,7 @@ function isFooter( sectionType ) {
 	return sectionType === "footer";
 }
 
-function parse( chordProText ) {
+export function parse( chordProText ) {
 	const lines = chordProText.split( "\n" );
 	const parsed = {
 		title: "",
@@ -53,7 +68,18 @@ function parse( chordProText ) {
 		sections: [],
 		footer: []
 	};
-	let sectionIndex = -1;
+	// A {comment: ...} right after a {start_of_*} names that section, instead of opening an
+	// empty one before it.
+	let openedByEnvironment = false;
+	const openSection = ( name, fromEnvironment ) => {
+		const current = parsed.sections.at( -1 );
+		if ( current && openedByEnvironment && current.lines.length === 0 ) {
+			current.name = name || current.name;
+		} else {
+			parsed.sections.push( { name, lines: [] } );
+		}
+		openedByEnvironment = fromEnvironment;
+	};
 	for ( let i = 0; i < lines.length; i++ ) {
 		if ( lines[i].trim().startsWith( "{" ) ) {
 			const section = parseSection( lines[i] );
@@ -81,12 +107,11 @@ function parse( chordProText ) {
 					break;
 				case isIgnoredSection( section.type ):
 					break;
+				case isSectionStart( section.type ):
+					openSection( section.text || SECTION_STARTS[section.type], true );
+					break;
 				case isComment( section.type ):
-					sectionIndex++;
-					parsed.sections.push( {
-						name: section.text,
-						lines: []
-					} );
+					openSection( section.text, false );
 					break;
 				default:
 					parsed[section.type] = section.text;
@@ -102,24 +127,30 @@ function parse( chordProText ) {
 				}
 				return parsed;
 			}
-			parsed.sections[sectionIndex].lines.push( lines[i] );
+			// Lyrics before any section heading go in a section without a name.
+			if ( parsed.sections.length === 0 ) {
+				openSection( "", false );
+			}
+			openedByEnvironment = false;
+			parsed.sections.at( -1 ).lines.push( lines[i] );
 		}
 	}
 	return parsed;
 }
 
-const renderChartForPlanningCenter = ( song ) => {
+export const renderChartForPlanningCenter = ( song ) => {
 	const chart = [];
 	const MAX_LINES_PER_PAGE = 50;
 	const HEADER_LINES = 3;
 	let pageLineCount = 0;
 
 	song.sections.forEach( ( section ) => {
-		// console.log( section );
-		const nextPageLineCount = pageLineCount + ( section.lines.length * 2 ) + HEADER_LINES;
-		if ( nextPageLineCount > MAX_LINES_PER_PAGE ) {
+		const sectionLineCount = ( section.lines.length * 2 ) + HEADER_LINES;
+		const nextPageLineCount = pageLineCount + sectionLineCount;
+		// A section that doesn't fit starts the next page, and counts toward that page.
+		if ( pageLineCount > 0 && nextPageLineCount > MAX_LINES_PER_PAGE ) {
 			chart.push( "PAGE_BREAK" );
-			pageLineCount = 0;
+			pageLineCount = sectionLineCount;
 		} else {
 			pageLineCount = nextPageLineCount;
 		}

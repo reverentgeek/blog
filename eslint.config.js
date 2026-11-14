@@ -15,7 +15,8 @@ export default defineConfig( [
 		}
 	}, {
 		extends: [ rg.configs["node-esm"] ],
-		files: [ "src/utils/**/*.js" ],
+		// Build-time code: ssqch is a dev dependency, and none of this ships.
+		files: [ "ssqch.config.js", "src/site/_data/**/*.js", "src/utils/**/*.js" ],
 		rules: {
 			"n/no-unpublished-import": "off"
 		}

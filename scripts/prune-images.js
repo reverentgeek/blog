@@ -6,7 +6,8 @@ const imgPath = join( distPath, "img" );
 
 // Collect all filenames referenced in HTML and XML output
 const referenced = new Set();
-const refPattern = /\/img\/([^"'\s<>)]+)/g;
+// `&` ends a name too: the feed's HTML is escaped (`src=&quot;/img/a-600.png&quot;`).
+const refPattern = /\/img\/([^"'\s<>)&]+)/g;
 
 function scanDir( dir ) {
 	for ( const entry of readdirSync( dir, { withFileTypes: true } ) ) {
