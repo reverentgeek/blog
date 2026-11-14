@@ -15,6 +15,21 @@ Open work for the blog. The move from Eleventy to SiteSquatch (`ssqch`) is finis
   - Unused JavaScript (about 73 KB), all Google Analytics' `gtag.js`. It doesn't block anything (Total Blocking Time 0 ms); loading it later, a lighter analytics tool, or dropping it is a preference.
   - Image delivery (about 12 KB for one homepage AVIF served a bit larger than shown).
 
+## Waiting on ssqch
+
+Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher logo pointed at unpublished originals; fixed in `ddd0ab1f`). Each one goes once ssqch ships the feature; the ssqch side is in its `TODO.md`, "Image URLs outside `<img>`".
+
+- [ ] **Needs ssqch:** the link checker reading feeds, `<meta>` URLs and JSON-LD. Then drop the smoke tests for feed images and the publisher logo.
+- [ ] **Needs ssqch:** feed-ready HTML from `ssqch/rss`. Then `feed.edge` uses it, and `feedImages` goes.
+- [ ] **Needs ssqch:** an `imageUrl()` template function. Then `publishedImage`, `social-image.js` and most of `_data/heroImage.js` go, each with its own cache.
+- [ ] **Needs ssqch:** `image()` with `formats: ["auto"]` keyed `auto`. Then `publishedImage` stops reading `Object.values(derivatives)[0]`.
+- [ ] **Needs ssqch:** preload hints from the image plugin. Then `partials/header.edge` uses a plain `<img>` (as `CLAUDE.md` asks), and the hand-written preload in `layouts/default.edge` goes.
+- [ ] **Needs ssqch:** the image cache outside `dist/`. Then `dist/img` is no longer special: `clean:all` can delete `dist/` freely, and `netlify.toml` caches only `.cache/ssqch`.
+- [ ] **Needs ssqch:** fingerprinted imports in inline module scripts. Then `pco.js` joins `assetsPlugin({ files })`, and its own `Cache-Control` rule in `netlify.toml` goes.
+- [ ] **Needs ssqch:** serving a production build as it is. Then `scripts/lighthouse-local.js` uses it instead of its own static server.
+- [ ] **Needs ssqch:** an `exports` map and types for `ssqch/*` in the npm package. Then `eslint.config.js` loses `allowModules: ["ssqch"]`.
+- [ ] Later, **Needs ssqch:** an `ssqch/seo` plugin. Then `partials/head.edge`'s Open Graph and Twitter tags and `jsonLdArticle` could go.
+
 ## Website effectiveness
 
 Goals: **#1 illustration commissions** (avatars, stickers, book illustration, logos, social media, event illustration) and **#2 DevRel work** (collaboration, and being attractive to the right opportunity, while staying happily at MongoDB). Speaking, software projects and content support these goals rather than being goals of their own. No email list for now. The reasoning, current-state audit, positioning against generative AI, marketing routine and section-by-section page outlines are in `WEBSITE-PLAN.md`, a local file kept out of the repo (gitignored since 2026-11-13); item numbers below match its "Work items." The 2026-11-12 site review and its phased plan are local too (`WEBSITE-REVIEW-2026-11-12.md`, `WEBSITE-TODO.md`). Listed in the suggested order.

@@ -30,11 +30,11 @@ The `<head>` SEO and social metadata lives in `src/site/_includes/partials/head.
 
 ## Assets
 
-Production builds fingerprint CSS and JS: the `ssqch/assets` plugin (in `ssqch.config.js`) renames `dist/assets/index.css` and `index.js` to content-hashed names and rewrites every `href` and `src` that points at them. In templates, link the plain paths (`/assets/index.css`); `ssqch serve` leaves them plain. `pco.js` keeps a stable name because `src/site/pages/pco.md` imports it directly, so it isn't in the plugin's list.
+Production builds fingerprint CSS and JS: the `ssqch/assets` plugin (in `ssqch.config.js`) renames `dist/assets/index.css` and `index.js` to content-hashed names and rewrites every `href` and `src` that points at them. In templates, link the plain paths (`/assets/index.css`); `ssqch serve` leaves them plain. `pco.js` keeps a stable name because `src/site/pages/pco.md` imports it directly, so it isn't in the plugin's list. (It's also a passthrough copy, and ssqch 0.5.2 fingerprints before passthrough files are copied, so listing it fails a clean build.)
 
 ## Image Pipeline
 
-All `<img>` tags in templates are automatically processed by the `ssqch/image` plugin (options: `src/utils/site/image-options.js`). Per-image overrides: `ssqch:widths="300,600"` and `ssqch:ignore`. Don't hand-write `<picture>` markup. After build, `scripts/prune-images.js` deletes any derivatives not referenced in HTML/XML output.
+All `<img>` tags in templates are automatically processed by the `ssqch/image` plugin (options: `src/utils/site/image-options.js`). Per-image overrides: `ssqch:widths="300,600"` and `ssqch:ignore`. Don't hand-write `<picture>` markup. Production builds delete derivatives that no page, feed or `image()` call used (`prune` on the plugin), and `leaveNoTrace` deletes pages and copies an earlier build wrote that this one didn't; `dist/img` is kept between builds as the image cache.
 
 For avatar galleries, put originals in `src/site/content/images/{folder}/orig`, then run `node src/utils/avatars.js list|convert|html [folder]` to generate derived images and markup.
 

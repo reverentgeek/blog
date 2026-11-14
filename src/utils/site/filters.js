@@ -70,8 +70,6 @@ export function siteFilters( { socialImage, publishedImage, feedImages } ) {
 			return JSON.stringify( entries );
 		},
 
-		readingTime,
-
 		jsonLdArticle,
 
 		calloutFor,
@@ -95,15 +93,6 @@ export function calloutFor( tags ) {
 	if ( list.some( tag => COMMISSION_TAGS.includes( tag ) ) ) return "commissions";
 	if ( list.some( tag => DEVREL_TAGS.includes( tag ) ) ) return "devrel";
 	return "kofi";
-}
-
-// Rounded minutes, based on rendered post HTML at ~200 words per minute.
-function readingTime( html ) {
-	const words = String( html || "" )
-		.replace( /<[^>]+>/g, " " )
-		.split( /\s+/ )
-		.filter( Boolean ).length;
-	return Math.max( 1, Math.round( words / 200 ) );
 }
 
 function jsonLdArticle( { title, description, image, datePublished, author, publisher, pageUrl } ) {

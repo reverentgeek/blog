@@ -19,6 +19,9 @@ export default defineConfig( ( { env } ) => ( {
 		output: "dist"
 	},
 	templateFormats: [ "edge", "md", "txt", "html" ],
+	// Delete pages and copies an earlier build wrote that this one didn't (a removed post,
+	// the dev-only /dev/ folder in a production build). Other tools' files and dist/img stay.
+	leaveNoTrace: true,
 	// Markdown and .html pages are rendered with Edge too, as the layouts are (ssqch 0.5's
 	// default for both is Jinja).
 	markdownEngine: "edge",
@@ -72,12 +75,14 @@ export default defineConfig( ( { env } ) => ( {
 		// Feed filters: getNewestCollectionItemDate, dateToRfc3339, absoluteUrl, htmlToAbsoluteUrls.
 		rssPlugin(),
 		// Responsive <picture> markup for every <img>. Derivatives are cached in dist/img/
-		// (via netlify-plugin-cache), and scripts/prune-images.js removes stale ones.
-		imagePlugin( imageOptions ),
+		// (via netlify-plugin-cache). Production builds delete the ones no page, feed or
+		// image() call used.
+		imagePlugin( { ...imageOptions, prune: env === "production" } ),
 		env === "production" && minifyPlugin(),
 		// Production builds rename the CSS and JS (written by PostCSS and esbuild) to
-		// content-hashed names and rewrite the links to them. pco.js keeps its name,
-		// because src/site/pages/pco.md imports it by path.
+		// content-hashed names and rewrite the links to them. pco.js keeps its name: it's a
+		// passthrough copy, written after this plugin fingerprints (ssqch 0.5.2), and
+		// src/site/pages/pco.md imports it by path.
 		assetsPlugin( { files: [ "/assets/index.css", "/assets/index.js" ] } ),
 		// Every internal link and #anchor has to resolve; broken ones fail production
 		// builds (so a deploy never ships them) and are warnings in `pnpm run serve`.
