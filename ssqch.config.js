@@ -9,8 +9,6 @@ import { sitemapPlugin } from "ssqch/sitemap";
 import { collections } from "./src/utils/site/collections.js";
 import { siteFilters } from "./src/utils/site/filters.js";
 import { imageOptions } from "./src/utils/site/image-options.js";
-import { createPublishedImageFilters } from "./src/utils/site/published-image.js";
-import { createSocialImageFilter } from "./src/utils/site/social-image.js";
 import site from "./src/site/_data/site.json";
 
 export default defineConfig( ( { env } ) => ( {
@@ -68,22 +66,23 @@ export default defineConfig( ( { env } ) => ( {
 		...( env === "production" ? [] : [ { "./src/dev": "dev" } ] )
 	],
 
-	filters: siteFilters( { socialImage: createSocialImageFilter(), ...createPublishedImageFilters() } ),
+	// Image URLs outside <img> (og:image, the JSON-LD logo, the feed) come from ssqch's
+	// imageUrl() and feedHtml(), so they point at published copies.
+	filters: siteFilters(),
 	collections,
 
 	plugins: [
-		// Feed filters: getNewestCollectionItemDate, dateToRfc3339, absoluteUrl, htmlToAbsoluteUrls.
+		// Feed filters: getNewestCollectionItemDate, dateToRfc3339, absoluteUrl, feedHtml.
 		rssPlugin(),
-		// Responsive <picture> markup for every <img>. Derivatives are cached in dist/img/
-		// (via netlify-plugin-cache). Production builds delete the ones no page, feed or
-		// image() call used.
+		// Responsive <picture> markup for every <img>. Derivatives are encoded into
+		// .cache/ssqch/img (kept between deploys by netlify-plugin-cache) and linked into
+		// dist/img. Production builds delete the ones no page, feed or image() call used.
 		imagePlugin( { ...imageOptions, prune: env === "production" } ),
 		env === "production" && minifyPlugin(),
-		// Production builds rename the CSS and JS (written by PostCSS and esbuild) to
-		// content-hashed names and rewrite the links to them. pco.js keeps its name: it's a
-		// passthrough copy, written after this plugin fingerprints (ssqch 0.5.2), and
-		// src/site/pages/pco.md imports it by path.
-		assetsPlugin( { files: [ "/assets/index.css", "/assets/index.js" ] } ),
+		// Production builds rename the CSS and JS (written by PostCSS and esbuild, and pco.js,
+		// a passthrough copy) to content-hashed names and rewrite the links to them, including
+		// the import in src/site/pages/pco.md's inline module script.
+		assetsPlugin( { files: [ "/assets/index.css", "/assets/index.js", "/assets/pco.js" ] } ),
 		// Every internal link and #anchor has to resolve; broken ones fail production
 		// builds (so a deploy never ships them) and are warnings in `pnpm run serve`.
 		// sitemap.xml: every HTML page, with its date as <lastmod>.

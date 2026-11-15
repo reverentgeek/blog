@@ -1,75 +1,42 @@
-import { createServer } from "node:http";
-import { mkdirSync } from "node:fs";
-import { readFile } from "node:fs/promises";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { spawn } from "node:child_process";
-import { extname, join, resolve, sep } from "node:path";
-import { gzipSync } from "node:zlib";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { setTimeout as sleep } from "node:timers/promises";
 
-const distPath = resolve( "./dist" );
 const reportPath = "./reports/local-report.html";
 
-const contentTypes = {
-	".html": "text/html; charset=utf-8",
-	".css": "text/css; charset=utf-8",
-	".js": "text/javascript; charset=utf-8",
-	".json": "application/json; charset=utf-8",
-	".xml": "application/xml; charset=utf-8",
-	".txt": "text/plain; charset=utf-8",
-	".svg": "image/svg+xml",
-	".avif": "image/avif",
-	".webp": "image/webp",
-	".png": "image/png",
-	".jpg": "image/jpeg",
-	".jpeg": "image/jpeg",
-	".gif": "image/gif",
-	".ico": "image/x-icon",
-	".woff2": "font/woff2",
-	".woff": "font/woff"
-};
+// `ssqch serve --built` serves dist/ as the production build left it, the way Netlify does:
+// no rebuild, no live-reload script, and gzip for text. It writes the ready file (JSON with
+// the URL) once it's listening.
+const readyDir = mkdtempSync( join( tmpdir(), "rg-lighthouse-" ) );
+const readyFile = join( readyDir, "ready.json" );
+const server = spawn( "scripts/ssqch.sh", [ "serve", "--built", "--port", "0", "--quiet", "--ready-file", readyFile ], { stdio: [ "ignore", "ignore", "inherit" ] } );
 
-const server = createServer( async ( req, res ) => {
-	try {
-		let { pathname } = new URL( req.url, "http://localhost" );
-		pathname = decodeURIComponent( pathname );
-		if ( pathname.endsWith( "/" ) ) {
-			pathname += "index.html";
-		}
+function stop( code ) {
+	server.kill();
+	rmSync( readyDir, { recursive: true, force: true } );
+	process.exitCode = code;
+}
 
-		const filePath = resolve( join( distPath, pathname ) );
-		if ( !filePath.startsWith( distPath + sep ) ) {
-			res.writeHead( 403 );
-			res.end( "Forbidden" );
-			return;
-		}
-
-		let data = await readFile( filePath );
-		const contentType = contentTypes[extname( filePath ).toLowerCase()] ?? "application/octet-stream";
-		const headers = { "content-type": contentType };
-
-		// Compress text responses so local results better match production (Netlify serves brotli)
-		const isCompressible = /^(text\/|application\/(json|xml))/.test( contentType ) || contentType === "image/svg+xml";
-		if ( isCompressible && req.headers["accept-encoding"]?.includes( "gzip" ) ) {
-			data = gzipSync( data );
-			headers["content-encoding"] = "gzip";
-		}
-
-		res.writeHead( 200, headers );
-		res.end( data );
-	} catch {
-		res.writeHead( 404 );
-		res.end( "Not found" );
+let ready;
+for ( let i = 0; i < 200 && !ready && server.exitCode === null; i++ ) {
+	if ( existsSync( readyFile ) ) {
+		ready = JSON.parse( readFileSync( readyFile, "utf8" ) );
+	} else {
+		await sleep( 50 );
 	}
-} );
+}
 
-server.listen( 0, "127.0.0.1", () => {
-	const { port } = server.address();
-	const url = `http://localhost:${ port }/`;
-	console.log( `Serving ./dist at ${ url }` );
-
+if ( !ready ) {
+	console.error( "ssqch serve --built didn't start (is dist/ built? pnpm run build)" );
+	stop( 1 );
+} else {
+	console.log( `Serving ./dist at ${ ready.url }` );
 	mkdirSync( "./reports", { recursive: true } );
 
 	const args = [
-		url,
+		ready.url,
 		"--output", "html",
 		"--output-path", reportPath,
 		"--chrome-flags=--headless=new",
@@ -86,15 +53,13 @@ server.listen( 0, "127.0.0.1", () => {
 
 	lighthouse.on( "error", ( error ) => {
 		console.error( "Failed to start Lighthouse:", error );
-		process.exitCode = 1;
-		server.close();
+		stop( 1 );
 	} );
 
 	lighthouse.on( "close", ( code ) => {
 		if ( code === 0 ) {
 			console.log( `Report saved to ${ reportPath }` );
 		}
-		process.exitCode = code ?? 0;
-		server.close();
+		stop( code ?? 0 );
 	} );
-} );
+}

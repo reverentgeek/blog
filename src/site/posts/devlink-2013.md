@@ -15,7 +15,7 @@ tags:
 Thanks again to all who came to my sessions, and for the feedback. Here are links to get to code and slides.
 
 **Intro to RavenDB**  
-([slides](http://reverentgeek.com/wp-content/uploads/2013/09/Intro%20to%20RavenDB.pdf))
+(slides no longer online)
 
 **Web Services at Ludicrous Speed with ServiceStack**  
-([code](https://github.com/reverentgeek/LudicrousDemo) | [slides](http://reverentgeek.com/wp-content/uploads/2013/09/Web%20Services%20at%20Ludicrous%20Speed%20with%20ServiceStack.pdf))
+([code](https://github.com/reverentgeek/LudicrousDemo); slides no longer online)

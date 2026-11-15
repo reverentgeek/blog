@@ -1,12 +1,13 @@
 {{-- Shared <head> metadata: title, SEO, canonical, feed, Open Graph, Twitter, and JSON-LD --}}
 @let(seoDescription = meta_description || description || site.description)
-@let(seoImageData = heroImage ? heroImage.social : { url: site.cover_image, width: 1200, height: 630 })
+{{-- Social cards use a 1200px PNG copy of the page's image (ssqch's imageUrl), which every
+     network can show. --}}
+@let(seoImageData = imageUrl(site.cover_image, { width: 1200, format: 'png' }))
 @let(seoArticleAuthor = site.author ? site.author.url : site.url)
 @let(seoAuthorLink = site.author ? site.author.url : '')
 
-{{-- Process feature_image through ssqch/image for correct social URL --}}
 @if(feature_image)
-  @assign(seoImageData = await socialImage(feature_image))
+  @assign(seoImageData = imageUrl(feature_image, { width: 1200, format: 'png' }))
   @assign(seoArticleAuthor = site.url)
 @end
 
@@ -63,6 +64,6 @@
   {{-- JSON-LD structured data for blog posts --}}
   @if(date && tags && tags.includes('posts'))
   <script type="application/ld+json">
-  {{{ jsonLdArticle({ title, description: seoDescription, image: seoImage, datePublished: htmlDateString(date), author: site.author, publisher: { name: site.title, logoUrl: site.url + await publishedImage(site.logo, 'auto') }, pageUrl: site.url + page.url }) }}}
+  {{{ jsonLdArticle({ title, description: seoDescription, image: seoImage, datePublished: htmlDateString(date), author: site.author, publisher: { name: site.title, logoUrl: site.url + imageUrl(site.logo).url }, pageUrl: site.url + page.url }) }}}
   </script>
   @end

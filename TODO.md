@@ -17,17 +17,18 @@ Open work for the blog. The move from Eleventy to SiteSquatch (`ssqch`) is finis
 
 ## Waiting on ssqch
 
-Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher logo pointed at unpublished originals; fixed in `ddd0ab1f`). Each one goes once ssqch ships the feature; the ssqch side is in its `TODO.md`, "Image URLs outside `<img>`".
+Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher logo pointed at unpublished originals; fixed in `ddd0ab1f`). The ssqch side is in its `TODO.md`, "Image URLs outside `<img>`". This branch (`ssqch-next`) has made the switch; it needs the next ssqch release, since 0.5.2 has none of these.
 
-- [ ] **Needs ssqch:** the link checker reading feeds, `<meta>` URLs and JSON-LD. Then drop the smoke tests for feed images and the publisher logo.
-- [ ] **Needs ssqch:** feed-ready HTML from `ssqch/rss`. Then `feed.edge` uses it, and `feedImages` goes.
-- [ ] **Needs ssqch:** an `imageUrl()` template function. Then `publishedImage`, `social-image.js` and most of `_data/heroImage.js` go, each with its own cache.
-- [ ] **Needs ssqch:** `image()` with `formats: ["auto"]` keyed `auto`. Then `publishedImage` stops reading `Object.values(derivatives)[0]`.
-- [ ] **Needs ssqch:** preload hints from the image plugin. Then `partials/header.edge` uses a plain `<img>` (as `CLAUDE.md` asks), and the hand-written preload in `layouts/default.edge` goes.
-- [ ] **Needs ssqch:** the image cache outside `dist/`. Then `dist/img` is no longer special: `clean:all` can delete `dist/` freely, and `netlify.toml` caches only `.cache/ssqch`.
-- [ ] **Needs ssqch:** fingerprinted imports in inline module scripts. Then `pco.js` joins `assetsPlugin({ files })`, and its own `Cache-Control` rule in `netlify.toml` goes.
-- [ ] **Needs ssqch:** serving a production build as it is. Then `scripts/lighthouse-local.js` uses it instead of its own static server.
-- [ ] **Needs ssqch:** an `exports` map and types for `ssqch/*` in the npm package. Then `eslint.config.js` loses `allowModules: ["ssqch"]`.
+- [ ] Before merging: `pnpm add -D ssqch@<version>` with the release that has them, then `pnpm test` and `pnpm run lint` (lint fails on 0.5.2: `n/no-missing-import` needs the package's new `exports` map). After the first deploy, drop `dist/img` from `netlify.toml`'s cache paths.
+- [x] The link checker reads feeds, `<meta>` URLs and JSON-LD, so the two smoke tests for feed images and the publisher logo are gone. It also found two dead `wp-content` PDF links in `devlink-2013.md`, now plain text.
+- [x] `feed.edge` uses `feedHtml()`, and `feedImages` is gone.
+- [x] `imageUrl()` replaced `publishedImage`, `social-image.js` and `_data/heroImage.js`.
+- [x] `image()` with `formats: ["auto"]` is keyed `auto` too (nothing here needs it any more).
+- [x] `partials/header.edge` is a plain `<img ssqch:preload>`, and the hand-written preload in `layouts/default.edge` is gone.
+- [x] The image cache is `.cache/ssqch/img`, outside `dist/`, so `clean:all` can delete `dist/` freely.
+- [x] `pco.js` is in `assetsPlugin({ files })` (the import in `pages/pco.md` is rewritten), and its `Cache-Control` rule in `netlify.toml` is gone.
+- [x] `scripts/lighthouse-local.js` runs `ssqch serve --built` instead of its own static server.
+- [x] `eslint.config.js` no longer needs `allowModules: ["ssqch"]`.
 - [ ] Later, **Needs ssqch:** an `ssqch/seo` plugin. Then `partials/head.edge`'s Open Graph and Twitter tags and `jsonLdArticle` could go.
 
 ## Website effectiveness

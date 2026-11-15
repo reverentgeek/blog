@@ -10,24 +10,19 @@
 [build.environment]
   NODE_VERSION = "24"
 
-# Image derivatives (dist/img) and ssqch's image-hash cache (.cache/ssqch)
-# carry over between builds, so a build with no new images encodes nothing.
+# ssqch's image cache (.cache/ssqch: the encoded images and their hashes) carries
+# over between builds, so a build with no new images encodes nothing. dist/img is
+# there for the first deploy with the cache outside dist/: that build takes its
+# files into .cache/ssqch/img. Drop it after that deploy.
 [[plugins]]
   package = "netlify-plugin-cache"
   [plugins.inputs]
-    paths = ["dist/img", ".cache/ssqch"]
+    paths = [".cache/ssqch", "dist/img"]
 
-# Fingerprinted assets (index.<hash>.css, index.<hash>.js) are safe to
+# Fingerprinted assets (index.<hash>.css, index.<hash>.js, pco.<hash>.js) are safe to
 # cache forever: changing the contents changes the filename, so browsers fetch the new
 # URL immediately instead of sitting on a stale copy.
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-
-# pco.js is a passthrough copy with a stable filename, so it must stay revalidatable.
-# This more specific rule overrides the wildcard above.
-[[headers]]
-  for = "/assets/pco.js"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"

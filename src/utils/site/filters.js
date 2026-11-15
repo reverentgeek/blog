@@ -3,7 +3,7 @@ import { adjacentPosts, relatedPosts, topicLabel, topicsOnly } from "./collectio
 const SECTION_MARKERS = new Set( [ "badge", "books", "clipboard", "envelope", "lightbulb", "microphone", "paper-airplane", "pencil", "road-fork", "tag", "toolbox" ] );
 
 // Functions templates can call: {{ postDate(page.date) }}.
-export function siteFilters( { socialImage, publishedImage, feedImages } ) {
+export function siteFilters() {
 	return {
 		htmlDateString( dateObj ) {
 			return new Date( dateObj ).toISOString().split( "T" )[0];
@@ -14,13 +14,6 @@ export function siteFilters( { socialImage, publishedImage, feedImages } ) {
 		postDate( dateObj ) {
 			return new Date( dateObj ).toLocaleDateString( "en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" } );
 		},
-
-		socialImage,
-
-		// Generated copies of local images, for URLs the image plugin can't rewrite
-		// (src/utils/site/published-image.js).
-		publishedImage,
-		feedImages,
 
 		// The aria-current attribute for a nav item: "page" on the item's own URL, "true" on
 		// a page in its section (`section` URL prefixes, or any post when `posts` is set).
