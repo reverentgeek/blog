@@ -30,8 +30,20 @@ const SLUG_REMAP = {
 const DROP_IDS = new Set( [ "4494248896" ] );
 
 const ALLOWED_TAGS = new Set( [
-	"p", "br", "a", "strong", "b", "em", "i", "u",
-	"code", "pre", "blockquote", "ul", "ol", "li"
+	"p",
+	"br",
+	"a",
+	"strong",
+	"b",
+	"em",
+	"i",
+	"u",
+	"code",
+	"pre",
+	"blockquote",
+	"ul",
+	"ol",
+	"li"
 ] );
 
 const escapeHtml = s =>
@@ -46,7 +58,10 @@ const decodeEntities = s =>
 
 const dateDisplay = iso =>
 	new Date( iso ).toLocaleDateString( "en-US", {
-		year: "numeric", month: "long", day: "numeric", timeZone: TIMEZONE
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+		timeZone: TIMEZONE
 	} );
 
 // Strict allowlist sanitizer for the small, fixed set of historical comments.

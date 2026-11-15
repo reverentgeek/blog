@@ -37,8 +37,10 @@ if ( !ready ) {
 
 	const args = [
 		ready.url,
-		"--output", "html",
-		"--output-path", reportPath,
+		"--output",
+		"html",
+		"--output-path",
+		reportPath,
 		"--chrome-flags=--headless=new",
 		...process.argv.slice( 2 )
 	];

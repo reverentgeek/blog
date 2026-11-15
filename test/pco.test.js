@@ -25,9 +25,16 @@ test( "lyrics before any heading go in an unnamed section", () => {
 
 test( "start_of_* directives open sections", () => {
 	const parsed = parse( [
-		"{start_of_verse}", "[C]Hello world", "{end_of_verse}",
-		"{soc: Chorus 1}", "[G]Sing it", "{eoc}",
-		"{start_of_bridge}", "{comment: Bridge 2}", "[F]Over here", "{end_of_bridge}"
+		"{start_of_verse}",
+		"[C]Hello world",
+		"{end_of_verse}",
+		"{soc: Chorus 1}",
+		"[G]Sing it",
+		"{eoc}",
+		"{start_of_bridge}",
+		"{comment: Bridge 2}",
+		"[F]Over here",
+		"{end_of_bridge}"
 	].join( "\n" ) );
 
 	assert.deepEqual( parsed.sections.map( section => [ section.name, section.lines ] ), [
