@@ -83,8 +83,10 @@ body {
 }
 
 /* Code fences, highlighted while the site builds (`markdown: { highlight: true }` in
-   ssqch.config.js): a dark block in Prism's Okaidia colors, which the site used before. */
-pre.highlight {
+   ssqch.config.js): a dark block in Prism's Okaidia colors, which the site used before.
+   Fences without a grammar (`text`, or a language ssqch doesn't know) get the same block, uncolored. */
+pre.highlight,
+.content-body pre {
 	/* Okaidia's pink (#f92672) is 3.9:1 on this background; #fb5c93 is the nearest that passes 4.5:1. */
 	--hl-comment: #8292a2;
 	--hl-keyword: #66d9ef;
@@ -119,7 +121,8 @@ pre.highlight {
 	tab-size: 4;
 	@apply font-mono;
 }
-pre.highlight code {
+pre.highlight code,
+.content-body pre code {
 	background: none;
 	color: inherit;
 	font: inherit;

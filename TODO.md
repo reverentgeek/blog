@@ -30,6 +30,7 @@ Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher lo
 - [x] `pco.js` is in `assetsPlugin({ files })` (the import in `pages/pco.md` is rewritten), and its `Cache-Control` rule in `netlify.toml` is gone.
 - [x] `scripts/lighthouse-local.js` runs `ssqch serve --built` instead of its own static server.
 - [x] `eslint.config.js` no longer needs `allowModules: ["ssqch"]`.
+- [x] **Needs ssqch:** ChordPro highlighting (ssqch 0.6.1, 2026-11-15). Built into ssqch for `chordpro` and `cho` fences; the post's first fence is `cho`, and the chords-over-text example stays `text`. `ssqch` is bumped to 0.6.1 and `pnpm test` passes. Fences without a grammar get the dark code block (`.content-body pre` in `styles.css`).
 - [ ] Later, **Needs ssqch:** an `ssqch/seo` plugin. Then `partials/head.edge`'s Open Graph and Twitter tags and `jsonLdArticle` could go.
 
 ## Website effectiveness
@@ -102,3 +103,7 @@ Decided 2026-11-10: slugs `/commissions/` and `/devrel/`; avatars show a "starti
 - [ ] **Collect testimonials** (plan item 12): Lars, the *DevRel Activity Patterns* co-authors, five to ten past avatar and logo clients, and DevRel colleagues. Ask every new commission client for a sentence at delivery, and get permission for name and image. Four are in as of 2026-11-13: Greg Svoboda (the first, 2026-11-11), Pieter den Heten, Bernardo Martinez and Anthony Dellavecchia. Clients can send one through `/leave-a-review/` (a Netlify form, linked from `/commissions/` and `/avatars/`). Testimonials live in `src/site/_data/testimonials.json` and render with `components/testimonial.edge`. Add each new one to the JSON file and place it with the component.
 - [ ] **Marketing routine** (plan, "Marketing beyond the website"): weekly process posts, announced openings, a story per commission, referrals at delivery, a few direct messages a month to DevRel leads, authors and organizers, and a commissions line in talks.
 - [ ] **Revisit an email list later.** RSS-to-email automation (e.g., Buttondown reading `feed.xml`) is the low-effort option if it's ever wanted.
+
+## Posts to write
+
+- [ ] **Chord Charter web app** (added 2026-11-15): introduce the web version of Chord Charter at https://charter.reverentgeek.com/. Paste or open a ChordPro chart (chords-over-text converts on open), edit the metadata, preview it live, then print or download the HTML. It lives in the `charter` repo's `web/` folder, and the "Web app" GitHub Action deploys it to GitHub Pages on every push to `main`.
