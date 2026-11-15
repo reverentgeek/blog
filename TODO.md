@@ -20,7 +20,7 @@ Open work for the blog. The move from Eleventy to SiteSquatch (`ssqch`) is finis
 Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher logo pointed at unpublished originals; fixed in `ddd0ab1f`). The ssqch side is in its `TODO.md`, "Image URLs outside `<img>`". The switch landed with ssqch 0.6.0 (0.5.2 has none of these).
 
 - [x] On ssqch 0.6.0, the release that has them: `pnpm test` and `pnpm run lint` pass (lint fails on 0.5.2: `n/no-missing-import` needs the package's new `exports` map).
-- [ ] After the first deploy on 0.6.0, drop `dist/img` from `netlify.toml`'s cache paths (it's there so that deploy takes the images already in it into `.cache/ssqch/img`).
+- [x] After the first deploy on 0.6.0, dropped `dist/img` from `netlify.toml`'s cache paths (it's there so that deploy takes the images already in it into `.cache/ssqch/img`).
 - [x] The link checker reads feeds, `<meta>` URLs and JSON-LD, so the two smoke tests for feed images and the publisher logo are gone. It also found two dead `wp-content` PDF links in `devlink-2013.md`, now plain text.
 - [x] `feed.edge` uses `feedHtml()`, and `feedImages` is gone.
 - [x] `imageUrl()` replaced `publishedImage`, `social-image.js` and `_data/heroImage.js`.
