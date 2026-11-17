@@ -214,8 +214,8 @@ importers:
         specifier: ^10.15.0
         version: 10.15.0(jiti@2.7.0)
       eslint-config-reverentgeek:
-        specifier: ^7.2.0
-        version: 7.2.0(eslint@10.15.0(jiti@2.7.0))
+        specifier: ^7.2.2
+        version: 7.2.2(eslint@10.15.0(jiti@2.7.0))
       jimp:
         specifier: ^1.6.1
         version: 1.6.1
@@ -997,8 +997,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@stylistic/eslint-plugin@6.0.0':
-    resolution: {integrity: sha512-phICSey4OqR8nkSwmoeXsl9EBzv30Zqbge4jrK3CU02GhjTgZ+y5qhTTg92EDK5j7JhX2xzp4VvH+YYUknQ8/Q==}
+  '@stylistic/eslint-plugin@6.0.1':
+    resolution: {integrity: sha512-7nyi2RmGIuzBYGq5C8cFaoQsh+COfo6oHMWCygzg2iaqJJ4RDThaKCMYRkkOUAQWv80R7sbBbpuKZfulH7bFcw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: ^9.0.0 || ^10.0.0
@@ -1377,8 +1377,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-reverentgeek@7.2.0:
-    resolution: {integrity: sha512-Rw7Pxup/Xz6kTv7sBiIExp+edJUlcD9R/uIRcnhdt7Bwdm/S0YpLvl0Ez/MFfp9ZRhF8nJfWQqSHfv4Fmr4c7g==}
+  eslint-config-reverentgeek@7.2.2:
+    resolution: {integrity: sha512-8f+/gtv4mUvBTEUcSj+pQSmpN/bSbQFGe6c1CUwMO0/CnX91y0New9rrapavGylz4LjhJ5NrEM4+OMLVCAtHnw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       eslint: '>=10.0.0'
@@ -2268,11 +2268,11 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  tldts-core@7.5.2:
-    resolution: {integrity: sha512-8W1topazDwhMKbm2I83IPa57Ow5VUxFgLbXv42+vSILnv8FY5OHvdEY/tS6WoWeMbxkHZQhra5cmeFHriKptSQ==}
+  tldts-core@7.5.4:
+    resolution: {integrity: sha512-9+4zWtKEDZ3V3FoZ1B97rv+5z5oqp7yeXGVze3CxgQ+CJro9do9DCPD00wxstYZDXDMXsurkBerFfiB6GYtPbA==}
 
-  tldts-icann@7.5.2:
-    resolution: {integrity: sha512-TdX27/Tz+J8PukrPx7mQ7ox77KZuby4ybmJUB5atQURkQpN3A0StAjWAR+l16QNu1qj8B7Q26aDpLtoykz4kLg==}
+  tldts-icann@7.5.4:
+    resolution: {integrity: sha512-zbUdr6OsYNmfUwQbreYcmp1oMNWe7unNB6XOOuTil1FGpW31LAN3IS+buwB73uPxQlBDmDLFNyOmpYIBAKBf8A==}
 
   token-types@6.2.0:
     resolution: {integrity: sha512-s9euYHM//T3loJtbNUYdbAzsMlvKBeRS+XCLFy+UGosMQH19Hwjap5k19i4PPAEJJBsVIpMpVTxl4fIqCuNfUg==}
@@ -2289,8 +2289,8 @@ packages:
     resolution: {integrity: sha512-NoSdpq/WEiAg5sjmBkmV/hfxv6HJH4NqPNrqjtSO5CwRmpsDfaf4begxW34KdJykH/l1yHtwBWQkCRdoXO8mPA==}
     engines: {node: '>=20'}
 
-  typed-query-selector@2.12.3:
-    resolution: {integrity: sha512-/dtuMZyutHLlrxWhhC1uib00ELUr2dZ8C9B8YzZYsJmeE3V56OxRblrSM2UaF142pcMtak7ehZ6+poWGeehNIg==}
+  typed-query-selector@2.12.4:
+    resolution: {integrity: sha512-lF6/OY655DSWZeuNovde8TZhju6QyC0Xtav57b07oZQ1EQvfSowA3+WfLEhvFJOc9sVfAtW5hie1lGIppOqbpQ==}
 
   uc.micro@3.0.0:
     resolution: {integrity: sha512-U3PppEkleoTnIfi8BozMx3yju3qc/L6SwqWo2Sw+54PX+PX0q9I+r1Um5HCmqD7n9VDX5/v3vQH/AjA6deDdtw==}
@@ -3051,7 +3051,7 @@ snapshots:
   '@ssqch/win32-x64@0.6.2':
     optional: true
 
-  '@stylistic/eslint-plugin@6.0.0(eslint@10.15.0(jiti@2.7.0))':
+  '@stylistic/eslint-plugin@6.0.1(eslint@10.15.0(jiti@2.7.0))':
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@10.15.0(jiti@2.7.0))
       '@typescript-eslint/types': 8.72.2
@@ -3387,10 +3387,10 @@ snapshots:
       eslint: 10.15.0(jiti@2.7.0)
       semver: 7.8.6
 
-  eslint-config-reverentgeek@7.2.0(eslint@10.15.0(jiti@2.7.0)):
+  eslint-config-reverentgeek@7.2.2(eslint@10.15.0(jiti@2.7.0)):
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.15.0(jiti@2.7.0))
-      '@stylistic/eslint-plugin': 6.0.0(eslint@10.15.0(jiti@2.7.0))
+      '@stylistic/eslint-plugin': 6.0.1(eslint@10.15.0(jiti@2.7.0))
       eslint: 10.15.0(jiti@2.7.0)
       eslint-plugin-n: 18.5.0(eslint@10.15.0(jiti@2.7.0))
       globals: 17.14.0
@@ -3741,7 +3741,7 @@ snapshots:
       robots-parser: 3.0.1
       speedline-core: 1.4.3
       third-party-web: 0.30.0
-      tldts-icann: 7.5.2
+      tldts-icann: 7.5.4
       yargs: 18.2.0
       yargs-parser: 22.0.0
     transitivePeerDependencies:
@@ -4257,7 +4257,7 @@ snapshots:
       '@puppeteer/browsers': 3.2.7
       chromium-bidi: 157.0.8090-0(devtools-protocol@0.0.1717327)
       devtools-protocol: 0.0.1717327
-      typed-query-selector: 2.12.3
+      typed-query-selector: 2.12.4
       webdriver-bidi-protocol: 1.0.2
       ws: 8.23.0
     transitivePeerDependencies:
@@ -4430,11 +4430,11 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
-  tldts-core@7.5.2: {}
+  tldts-core@7.5.4: {}
 
-  tldts-icann@7.5.2:
+  tldts-icann@7.5.4:
     dependencies:
-      tldts-core: 7.5.2
+      tldts-core: 7.5.4
 
   token-types@6.2.0:
     dependencies:
@@ -4452,7 +4452,7 @@ snapshots:
     dependencies:
       tagged-tag: 1.0.0
 
-  typed-query-selector@2.12.3: {}
+  typed-query-selector@2.12.4: {}
 
   uc.micro@3.0.0: {}
 
