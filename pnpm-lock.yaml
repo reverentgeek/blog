@@ -238,8 +238,8 @@ importers:
         specifier: ^12.0.1
         version: 12.0.1
       ssqch:
-        specifier: 0.6.2
-        version: 0.6.2
+        specifier: 0.6.4
+        version: 0.6.4
       uuid:
         specifier: ^14.0.3
         version: 14.0.3
@@ -977,23 +977,23 @@ packages:
     resolution: {integrity: sha512-gAP5FLhXSiMs9vsU7guc54QNY1OzUJmhqyXMjhiP4SYlhQltoKtipcyo8pFWVsmylIzIkA8e2eGR6e0YA6YF3A==}
     engines: {node: '>=20.19.0 <22.0.0 || >=22.12.0 <23.0.0 || >=23.2.0'}
 
-  '@ssqch/darwin-arm64@0.6.2':
-    resolution: {integrity: sha512-6F0UMLPHURCRXW8bERjw5yqiiXYL1XFXxyNFf+qvW7ZwoyfmydbisW68+vWSPtSBQCoYQma71qkD0BUN8B/P7Q==}
+  '@ssqch/darwin-arm64@0.6.4':
+    resolution: {integrity: sha512-swd8pbddTOs23wCXLMuyF7DTWiOAnuEE3RgnO2BwSTvwSbP8nvWs+LF5Js0KiwzzVg6TDQyjXQiZlHldd7NRwA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@ssqch/darwin-x64@0.6.2':
-    resolution: {integrity: sha512-cqZuoQIkod7aVguAia+ah4sZEgf00YxoxSh9a6e+OyOO8u8fo4g7h2zL0gM+oZuC8S+CxhtUQzyYqAc5Gb++5g==}
+  '@ssqch/darwin-x64@0.6.4':
+    resolution: {integrity: sha512-EvRZ1CKIKL7fjoDDeGbrc06XnidrBQIN2uOBpuELufePina6k0UdJvN2ElMNJSXNdnyn1OV4Ejv+t3dNbD3l8Q==}
     cpu: [x64]
     os: [darwin]
 
-  '@ssqch/linux-x64@0.6.2':
-    resolution: {integrity: sha512-6VSvGYnOllgdwQBGfKTluj8WMHhAO2nvmAYv6W+PFyC+GUqrNHdf8uk1y6MDXD2uAWzYc+yqrsds1C9rvEVzEw==}
+  '@ssqch/linux-x64@0.6.4':
+    resolution: {integrity: sha512-HMi4lp7WGZHEO99h3BEZzci3L8J7d3QBqpvWEmpBtornHiYc9bJHDaOKVPxzSGiwTyPnu5kqRy6MbpqwigIDFA==}
     cpu: [x64]
     os: [linux]
 
-  '@ssqch/win32-x64@0.6.2':
-    resolution: {integrity: sha512-j54NOavNvhTmPcPbQMBMXqyk+gqKxMupRdbgKZxpUNIb/djJ+yktj5Zo8n/h4pVMdII++O4ioK29HaPbolAXGA==}
+  '@ssqch/win32-x64@0.6.4':
+    resolution: {integrity: sha512-jWSeU2J3E9B38+rFeWHHR4RlmA6EpX+UsC4uQ4GDqtJjVp/XR9lJvnN1vrxj3g1LPbLywLHCNnhPTUzU8nahkA==}
     cpu: [x64]
     os: [win32]
 
@@ -2205,8 +2205,8 @@ packages:
     resolution: {integrity: sha512-DI7/OuAUD+GMpR6dmu8lliO2Wg5zfeh+/xsdyJZCzd8o5JgFUjCeLsBDuZjIQJdwXS3J0L/uZYrELKYqx+PXog==}
     engines: {node: '>=8.0'}
 
-  ssqch@0.6.2:
-    resolution: {integrity: sha512-B1qWsFHK7CfhSxPeZv1KpsDGwBHVYzozvplTVhmlEZrGkE70rSzF1oLXyPiVZX1ihwTjSpw4Nowcg0uU3qvPgg==}
+  ssqch@0.6.4:
+    resolution: {integrity: sha512-RlnVsTZa2ZTGsXH+H33jT2peQVipjk8qaYhgaY8IJ41ZiLQ6TImBr9qavenlaGl90W8MkRX9xXoqzmZXdigP2Q==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3039,16 +3039,16 @@ snapshots:
       '@sentry/conventions': 0.32.0
       '@sentry/core': 11.12.0
 
-  '@ssqch/darwin-arm64@0.6.2':
+  '@ssqch/darwin-arm64@0.6.4':
     optional: true
 
-  '@ssqch/darwin-x64@0.6.2':
+  '@ssqch/darwin-x64@0.6.4':
     optional: true
 
-  '@ssqch/linux-x64@0.6.2':
+  '@ssqch/linux-x64@0.6.4':
     optional: true
 
-  '@ssqch/win32-x64@0.6.2':
+  '@ssqch/win32-x64@0.6.4':
     optional: true
 
   '@stylistic/eslint-plugin@6.0.1(eslint@10.15.0(jiti@2.7.0))':
@@ -4373,12 +4373,12 @@ snapshots:
       image-ssim: 0.2.0
       jpeg-js: 0.4.4
 
-  ssqch@0.6.2:
+  ssqch@0.6.4:
     optionalDependencies:
-      '@ssqch/darwin-arm64': 0.6.2
-      '@ssqch/darwin-x64': 0.6.2
-      '@ssqch/linux-x64': 0.6.2
-      '@ssqch/win32-x64': 0.6.2
+      '@ssqch/darwin-arm64': 0.6.4
+      '@ssqch/darwin-x64': 0.6.4
+      '@ssqch/linux-x64': 0.6.4
+      '@ssqch/win32-x64': 0.6.4
 
   string-width@7.2.0:
     dependencies:
