@@ -31,6 +31,7 @@ Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher lo
 - [x] `scripts/lighthouse-local.js` runs `ssqch serve --built` instead of its own static server.
 - [x] `eslint.config.js` no longer needs `allowModules: ["ssqch"]`.
 - [x] **Needs ssqch:** ChordPro highlighting (ssqch 0.6.1, 2026-11-15). Built into ssqch for `chordpro` and `cho` fences; the post's first fence is `cho`, and the chords-over-text example stays `text`. `ssqch` is bumped to 0.6.1 and `pnpm test` passes. Fences without a grammar get the dark code block (`.content-body pre` in `styles.css`).
+- [ ] With the move to `ssqch@0.8.0` (not before: 0.7 refuses `avifEffort`, 0.8 refuses `avifSpeed`): in `src/utils/site/image-options.js`, `avifQuality: 60` becomes `avifQuality: 48` and `avifSpeed: 4` becomes `avifEffort: 3`, which are sharp's numbers for the same encode. `webpQuality: 75` stays. The image names don't change, so the cache carries over (checked on a copy: all 4,985 image files byte for byte). Update the comment above them.
 - [ ] Later, **Needs ssqch:** an `ssqch/seo` plugin. Then `partials/head.edge`'s Open Graph and Twitter tags and `jsonLdArticle` could go.
 
 ## Website effectiveness
