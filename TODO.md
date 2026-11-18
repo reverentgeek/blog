@@ -43,7 +43,7 @@ Decided 2026-11-10: slugs `/commissions/` and `/devrel/`; avatars show a "starti
 ### 1. Measurement first
 
 - [x] **GA4 click events** (plan item 13): a delegated `cta_click` handler in `src/assets/js/index.js` for any `data-cta` element. Tagged so far: `order-avatar`, `commission-inquiry`, `contact-email`, `kofi`, `post-callout-kofi`. New CTAs get a `data-cta` as they're added.
-- [ ] Register `cta` as an event-scoped custom dimension in GA4 (Admin → Custom definitions).
+- [x] Register `cta` as an event-scoped custom dimension in GA4 (Admin → Custom definitions).
 - [ ] Write down the baseline: commissions and inquiries per month for the past year. Check again 60–90 days after the switch (step 5).
 
 ### 2. The books
@@ -107,4 +107,5 @@ Decided 2026-11-10: slugs `/commissions/` and `/devrel/`; avatars show a "starti
 
 ## Posts to write
 
-- [ ] **Chord Charter web app** (added 2026-11-15): introduce the web version of Chord Charter at https://charter.reverentgeek.com/. Paste or open a ChordPro chart (chords-over-text converts on open), edit the metadata, preview it live, then print or download the HTML. It lives in the `charter` repo's `web/` folder, and the "Web app" GitHub Action deploys it to GitHub Pages on every push to `main`.
+- [ ] **Lessons learned from SiteSquatch** (added 2026-11-18) "What I learned build a Rust static site generator. The experiment that led from a blazing fast Rust generator to rewriting the entire project in Node.js.
+- [x] **Chord Charter web app** (added 2026-11-15): introduce the web version of Chord Charter at <https://charter.reverentgeek.com/>. Paste or open a ChordPro chart (chords-over-text converts on open), edit the metadata, preview it live, then print or download the HTML. It lives in the `charter` repo's `web/` folder, and the "Web app" GitHub Action deploys it to GitHub Pages on every push to `main`.
