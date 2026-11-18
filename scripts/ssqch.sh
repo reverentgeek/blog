@@ -8,7 +8,9 @@
 #   1. $SSQCH_BIN
 #   2. node_modules/.bin/ssqch (the `ssqch` dev dependency, the version package.json pins)
 #   3. `ssqch` on PATH
-#   4. ../ssqch/target/release/ssqch (a local checkout built with cargo)
+#
+# To build with a local checkout of ssqch, set SSQCH_BIN to its
+# packages/ssqch/bin/ssqch.ts (Node runs it from its source).
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -19,8 +21,6 @@ elif [ -x node_modules/.bin/ssqch ]; then
 	bin=node_modules/.bin/ssqch
 elif command -v ssqch >/dev/null 2>&1; then
 	bin=ssqch
-elif [ -x ../ssqch/target/release/ssqch ]; then
-	bin=../ssqch/target/release/ssqch
 else
 	echo "ssqch not found. Run pnpm install (ssqch is a dev dependency), or set SSQCH_BIN to the binary's path." >&2
 	exit 1

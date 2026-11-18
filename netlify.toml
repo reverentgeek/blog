@@ -1,6 +1,6 @@
 # Netlify builds the site: its `pnpm install` brings SiteSquatch with the other
 # packages (the `ssqch` dev dependency, pinned in package.json and the lockfile,
-# with its static Linux binary from `@ssqch/linux-x64`), then it runs the same
+# which runs on Node: NODE_VERSION below), then it runs the same
 # `pnpm run build` as locally, then the smoke tests, so a failing test stops the
 # deploy.
 [build]
@@ -10,8 +10,9 @@
 [build.environment]
   NODE_VERSION = "24"
 
-# ssqch's image cache (.cache/ssqch: the encoded images and their hashes) carries
-# over between builds, so a build with no new images encodes nothing.
+# ssqch's cache (.cache/ssqch: the encoded images and their hashes, and the
+# highlighted code fences) carries over between builds, so a build with no new
+# images encodes nothing and one with no new code highlights nothing.
 [[plugins]]
   package = "netlify-plugin-cache"
   [plugins.inputs]

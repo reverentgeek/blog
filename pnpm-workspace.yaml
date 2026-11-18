@@ -19,11 +19,7 @@ minimumReleaseAgeExclude:
   - '@pnpm/exe.win32-x64@12.21.0'
   - pnpm@12.21.0
   - '@pnpm/exe.netbsd-x64@12.21.0'
-  - '@ssqch/darwin-arm64@0.7.0'
-  - '@ssqch/darwin-x64@0.7.0'
-  - '@ssqch/linux-x64@0.7.0'
-  - '@ssqch/win32-x64@0.7.0'
-  - ssqch@0.7.0
+  - ssqch@0.8.0
 overrides:
   'file-type@>=13.0.0 <21.3.1': '>=21.3.1'
   'brace-expansion@<1.1.13': '>=1.1.13'
