@@ -10,7 +10,7 @@ export const imageOptions = {
 	},
 	webpQuality: 75,
 	// sharp's numbers since ssqch 0.8: 0.7's AVIF quality 60 at speed 4, which,
-	// measured against libaom on the blog's images (TODO.md), has about 40% less
+	// measured against libaom on the blog's images (see TODO.md in git history), has about 40% less
 	// distortion than the default speed 8 at quality 50, for 2% more bytes and about
 	// 2.4x the encode time (cached builds don't pay it). The image names, and so the
 	// cache, are the same as 0.7's.
