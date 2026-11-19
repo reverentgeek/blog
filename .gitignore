@@ -13,3 +13,4 @@ dist/
 .env
 reports/
 .sightmap/
+.wrangler/

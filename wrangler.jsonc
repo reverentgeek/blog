@@ -1,0 +1,19 @@
+// Cloudflare Workers config for a test deploy of the built site (static assets only,
+// no Worker code). Build first, then deploy what's in dist/:
+//
+//   pnpm run build
+//   npx wrangler deploy
+//
+// dist/_headers and dist/_redirects (from src/site/headers.edge and redirects.edge)
+// apply here the same way they do on Netlify.
+{
+	"name": "reverentgeek",
+	"compatibility_date": "2026-11-01",
+	"assets": {
+		"directory": "./dist",
+		// /about/ serves about/index.html, and /about redirects to /about/
+		"html_handling": "auto-trailing-slash",
+		// A URL that matches no file gets dist/404.html with a 404 status
+		"not_found_handling": "404-page"
+	}
+}

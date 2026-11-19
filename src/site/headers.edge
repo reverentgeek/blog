@@ -25,4 +25,9 @@ permalink: '_headers'
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-# /assets/* caching is configured in netlify.toml
+# Fingerprinted assets (index.<hash>.css, index.<hash>.js, pco.<hash>.js) are safe to
+# cache forever: changing the contents changes the filename, so browsers fetch the new
+# URL immediately instead of sitting on a stale copy. This lives here rather than in
+# netlify.toml so Cloudflare applies it too.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

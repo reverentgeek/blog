@@ -2,9 +2,11 @@
 permalink: '_redirects'
 ---
 
-# Netlify redirects file, edit with your domain
-# https://www.netlify.com/docs/redirects/
+# Redirects file, read by Netlify and Cloudflare. The status is explicit because the
+# default differs: Netlify uses 301 (permanent) and Cloudflare uses 302 (temporary).
+# https://docs.netlify.com/routing/redirects/
+# https://developers.cloudflare.com/workers/static-assets/redirects/
 
-/watch-me-draw-live-streaming/          /illustration-streaming/
-/samsara/                               /a-developers-guide-to-samsara-telematics/
-/bunny/                                 /hopcounter-retro-page-counter-with-bunny-edge-scripting/
+/watch-me-draw-live-streaming/          /illustration-streaming/  301
+/samsara/                               /a-developers-guide-to-samsara-telematics/  301
+/bunny/                                 /hopcounter-retro-page-counter-with-bunny-edge-scripting/  301

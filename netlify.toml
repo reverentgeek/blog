@@ -18,10 +18,5 @@
   [plugins.inputs]
     paths = [".cache/ssqch"]
 
-# Fingerprinted assets (index.<hash>.css, index.<hash>.js, pco.<hash>.js) are safe to
-# cache forever: changing the contents changes the filename, so browsers fetch the new
-# URL immediately instead of sitting on a stale copy.
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+# Response headers, including /assets/* caching, are in src/site/headers.edge
+# (built to dist/_headers), which both Netlify and Cloudflare read.
