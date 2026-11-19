@@ -32,6 +32,7 @@ Workarounds from the 2026-11-14 review (feed images and the JSON-LD publisher lo
 - [x] `eslint.config.js` no longer needs `allowModules: ["ssqch"]`.
 - [x] **Needs ssqch:** ChordPro highlighting (ssqch 0.6.1, 2026-11-15). Built into ssqch for `chordpro` and `cho` fences; the post's first fence is `cho`, and the chords-over-text example stays `text`. `ssqch` is bumped to 0.6.1 and `pnpm test` passes. Fences without a grammar get the dark code block (`.content-body pre` in `styles.css`).
 - [x] **Needs ssqch:** ssqch 0.8.0, on Node (2026-11-18). `ssqch` is pinned at 0.8.0 (and in `pnpm-workspace.yaml`'s `minimumReleaseAgeExclude`; the `@ssqch/<platform>` packages are gone), and `src/utils/site/image-options.js` has `avifQuality: 48, avifEffort: 3`, sharp's numbers for 0.7's quality 60 at speed 4. `pnpm test` and `pnpm run lint` pass; all 4,985 image files are reused from the cache, and the output matches 0.7's frozen build. `scripts/ssqch.sh` no longer looks for a Rust build, and `CLAUDE.md` and `netlify.toml` say it runs on Node.
+- [x] ssqch 0.9.0 (2026-11-18). `ssqch` is pinned at 0.9.0 (and in `minimumReleaseAgeExclude`). None of its breaking changes touch this site (no Liquid, no undated collection pages, no `computed.page`, no `slot` container, and no heading ids changed): `ssqch diff` against the 0.8.0 build shows only the version in the footer. `pnpm test` and `pnpm run lint` pass.
 - [ ] Later, **Needs ssqch:** an `ssqch/seo` plugin. Then `partials/head.edge`'s Open Graph and Twitter tags and `jsonLdArticle` could go.
 
 ## Website effectiveness
