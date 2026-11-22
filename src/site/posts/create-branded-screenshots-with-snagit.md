@@ -5,6 +5,7 @@ feature_image: /content/images/2019/07/snagit-engaging-screenshots.jpg
 description: "Throughout my career, writing documentation and tutorials has been a critical skill. In my experience, good visuals can vastly improve the…"
 meta_description: "How to create more engaging screenshots with Snagit so your tutorials, documentation, and presentations communicate more clearly."
 date: 2019-07-12
+featured: true
 slug: create-branded-screenshots-with-snagit
 tags:
   - tools

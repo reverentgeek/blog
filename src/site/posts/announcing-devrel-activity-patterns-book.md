@@ -5,6 +5,7 @@ feature_image: /content/images/announcing-devrel-activity-patterns-book/devrel-a
 description: I'm proud to announce "Developer Relations Activity Patterns," a super-practical guide to understanding, applying, and measuring DevRel for your organization! A book that doesn't just tell you what DevRel is, it shows you how to actually do it.
 meta_description: "An introduction to Developer Relations Activity Patterns, a practical book with 39 DevRel patterns focused on strategy, execution, and measurement."
 date: 2025-11-18
+featured: true
 slug: announcing-devrel-activity-patterns-book
 tags:
   - books

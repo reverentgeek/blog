@@ -5,6 +5,7 @@ feature_image: /content/images/ai-cheat-sheet-for-job-hunting/ai-cheat-sheet-for
 description: Are you still applying for jobs like it's 2012? Level up your job hunt with these AI prompt tips!
 meta_description: "Practical AI prompts and job hunting tips to help you improve resumes, applications, networking, and interview preparation."
 date: 2025-05-14
+featured: true
 slug: ai-cheat-sheet-for-job-hunting
 tags:
   - ai

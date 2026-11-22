@@ -5,6 +5,7 @@ feature_image: /content/images/2019/03/the-tech-talk-handbook.jpg
 description: "I believe one of the big reasons people are afraid of public speaking (or writing) is impostor syndrome. You may think..."
 meta_description: "Five practical ingredients that can help you craft a more compelling, memorable, and effective technical talk."
 date: 2018-01-01
+featured: true
 slug: 5-essential-ingredients-for-an-awesome-tech-talk
 tags:
   - speaking

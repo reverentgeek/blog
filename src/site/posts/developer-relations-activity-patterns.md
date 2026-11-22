@@ -5,6 +5,7 @@ feature_image: /content/images/developer-relations-activity-patterns/devrel-acti
 description: It's finally here! I'm grateful to have been part of this amazing team of authors and proud to see this book out in the world.
 meta_description: Developer Relations Activity Patterns is now available. Reflections on publishing the book, collaborating with the author team, and creating the cover and chapter illustrations.
 date: 2026-03-13
+featured: true
 slug: developer-relations-activity-patterns
 tags:
   - books

@@ -46,7 +46,9 @@ export default defineConfig( ( { env } ) => ( {
 				description: "string",
 				meta_description: "string?",
 				feature_image: "file?",
-				tags: "string[]"
+				tags: "string[]",
+				// Listed under "Blog Posts" in llms.txt; the rest are "Optional" (below).
+				featured: "boolean?"
 			},
 			unknown: "warn"
 		}
@@ -95,14 +97,16 @@ export default defineConfig( ( { env } ) => ( {
 		// robots.txt: every crawler welcome, and the sitemap's line.
 		robotsPlugin(),
 		// llms.txt for agents, with a Markdown copy of every page and post (and
-		// llms-full.txt): the pages first, then the posts, newest first.
+		// llms-full.txt): the pages first, then the featured posts and the rest, newest first.
 		llmsPlugin( {
 			url: site.url,
 			title: "ReverentGeek",
 			description: "Personal website and blog of David Neal (aka ReverentGeek): illustrator, builder, and DevRel leader, helping folks in tech be more awesome. David is a Senior Developer Advocate at MongoDB and co-author of Developer Relations Activity Patterns. He takes illustration commissions and is open to DevRel collaboration.",
 			// The home page's later pages (/1/ to /10/) are the posts again.
 			exclude: [ "/[0-9]/", "/[0-9][0-9]/", "/search/**", "/leave-a-review-thanks/", "/stream-starting-soon/" ],
-			section: page => ( isPost( page ) ? "Blog Posts" : "Main Pages" ),
+			// Featured posts (`featured: true`, which a new post starts with) are "Blog
+			// Posts"; the others are "Optional", the links an agent can skip.
+			section: page => ( isPost( page ) ? ( page.data.featured ? "Blog Posts" : "Optional" ) : "Main Pages" ),
 			sort: ( a, b ) => ( isPost( a ) - isPost( b ) ) || ( isPost( a ) ? b.date - a.date : 0 )
 		} ),
 		linksPlugin()

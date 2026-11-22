@@ -5,6 +5,7 @@ feature_image: /content/images/meet-surrealdb-nodejs/meet-surrealdb-nodejs.jpg
 description: Do you have a need for relational and non-relational data in the same app? You should check out SurrealDB! Here's how to build a basic CRUD API using Node.js and Fastify.
 meta_description: "An introduction to SurrealDB for Node.js developers, including how to build a basic CRUD API with Fastify."
 date: 2025-04-02
+featured: true
 slug: meet-surrealdb-nodejs
 tags:
   - databases

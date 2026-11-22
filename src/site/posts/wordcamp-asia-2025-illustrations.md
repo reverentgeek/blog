@@ -5,6 +5,7 @@ feature_image: /content/images/wordcamp-asia-2025-illustrations/wordcamp-asia-20
 description: I traveled to Manila, Philippines for WordCamp Asia 2025 to draw avatars for Wordpress.com!
 meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp Asia 2025."
 date: 2025-03-05
+featured: true
 slug: wordcamp-asia-2025-illustrations
 tags:
   - illustration

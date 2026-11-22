@@ -5,6 +5,7 @@ feature_image: /content/images/2019/10/IMG_2152.JPG
 description: "My most embarrassing mistakes as a programmer, in no particular order:"
 meta_description: "A candid list of my most embarrassing programming mistakes and the lessons I learned from making them."
 date: 2019-10-30
+featured: true
 slug: my-most-embarrassing-mistakes-as-a-programmer
 tags:
   - personal

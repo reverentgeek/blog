@@ -5,6 +5,7 @@ feature_image: /content/images/open-source-desktop-teleprompter-electron/desktop
 description: I wasn't happy with the teleprompter apps I found, so I built my own! Maybe you'd like to use it, too!
 meta_description: "Why I built an open-source desktop teleprompter with Electron, what it does, and how you can use it."
 date: 2024-02-24
+featured: true
 slug: open-source-desktop-teleprompter-electron
 tags:
   - projects

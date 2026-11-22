@@ -5,6 +5,7 @@ feature_image: /content/images/2016/11/public-speaking-without-barfing-on-your-s
 description: "Nodevember 2016 was an amazing conference that included some of my favorite talks of the year. And, as is usually the case, a lot of the…"
 meta_description: "Practical encouragement for getting started with public speaking without letting fear keep you off the stage."
 date: 2016-11-29
+featured: true
 slug: public-speaking-without-barfing-on-your-shoes
 tags:
   - speaking

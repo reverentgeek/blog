@@ -5,6 +5,7 @@ feature_image: /content/images/2019/03/try-public-speaking.jpg
 description: "When I talk to people about public speaking, I tell them of the opportunities it opens up to travel to fun places, and meet awesome people.…"
 meta_description: "Why public speaking is worth trying, even if it feels intimidating, and how it can open doors you never expected."
 date: 2017-08-10
+featured: true
 slug: please-give-public-speaking-a-try
 tags:
   - speaking

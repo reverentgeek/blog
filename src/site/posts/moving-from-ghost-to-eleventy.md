@@ -5,6 +5,7 @@ feature_image: /content/images/moving-from-ghost-to-eleventy/moving-from-ghost-t
 description: "My blog has been on Ghost for many years. It has been a solid platform, and I highly recommend it. However, I've been itching to try something new for a while..."
 meta_description: "My blog has been on Ghost for many years. It has been a solid platform, and I highly recommend it. However, I've been itching to try something new for a while."
 date: 2020-04-29
+featured: true
 slug: moving-from-ghost-to-eleventy
 tags:
   - web-development

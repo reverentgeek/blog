@@ -5,6 +5,7 @@ feature_image: /content/images/2020/02/charter-example.jpg
 description: "I love to play music, especially in a band. There's something amazing about the synergy of multiple people harmonizing voices and…"
 meta_description: "Learn how to generate PDFs with Node.js and Puppeteer, including rendering web pages and local HTML files into downloadable PDF documents."
 date: 2020-02-06
+featured: true
 slug: create-pdfs-with-node-js-and-puppeteer
 tags:
   - nodejs

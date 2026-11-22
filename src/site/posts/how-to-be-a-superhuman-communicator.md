@@ -5,6 +5,7 @@ feature_image: /content/images/2019/04/how-to-be-a-superhuman-communicator.jpg
 description: "People learn in a variety of ways, such as watching videos, listening to podcasts, reading books and articles, and exploring hands-on. For…"
 meta_description: "Practical advice for becoming a more effective communicator by understanding how different people learn and process information."
 date: 2019-04-12
+featured: true
 slug: how-to-be-a-superhuman-communicator
 tags:
   - speaking

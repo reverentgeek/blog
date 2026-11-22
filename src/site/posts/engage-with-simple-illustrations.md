@@ -5,6 +5,7 @@ feature_image: /content/images/engage-with-simple-illustrations/disgruntled-audi
 description: "I started speaking at tech conferences many years ago, and slowly improved with experience. However, I felt my audiences weren't getting…"
 meta_description: "How simple illustrations can help you engage audiences and make technical talks easier to follow and remember."
 date: 2016-07-07
+featured: true
 slug: engage-with-simple-illustrations
 tags:
   - illustration

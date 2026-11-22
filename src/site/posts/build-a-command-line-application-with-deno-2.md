@@ -5,6 +5,7 @@ feature_image: /content/images/build-a-cli-app-with-deno/build-a-cli-app-with-de
 description: Learn to build a command-line application using Deno version 2.0!
 meta_description: "Learn how to build a command-line application with Deno 2.0, from setup and arguments to running the finished CLI."
 date: 2024-11-09
+featured: true
 slug: build-a-command-line-application-with-deno-2
 tags:
   - javascript

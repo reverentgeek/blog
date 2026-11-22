@@ -5,6 +5,7 @@ feature_image: /content/images/ai-really-is-taking-my-job/ai-really-is-taking-my
 description: Generative AI is incredible and empowering and will only get better. I love generative AI. I hate generative AI.
 meta_description: "A candid reflection on the tension between loving generative AI and wrestling with what it means for creative work and identity."
 date: 2025-05-20
+featured: true
 slug: ai-really-is-taking-my-job
 tags:
   - ai

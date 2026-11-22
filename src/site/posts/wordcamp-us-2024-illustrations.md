@@ -5,6 +5,7 @@ feature_image: /content/images/wordcamp-us-2024-illustrations/wordcamp-us-2024-i
 description: I recently traveled to Portland, OR for WordCamp US 2024 to draw avatars for Wordpress.com!
 meta_description: "A look at the custom illustrations, avatars, and event art I created for WordCamp US 2024."
 date: 2024-10-02
+featured: true
 slug: wordcamp-us-2024-illustrations
 tags:
   - illustration

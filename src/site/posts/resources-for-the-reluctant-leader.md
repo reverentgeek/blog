@@ -5,6 +5,7 @@ feature_image: /content/images/2017/07/scenic-city-summit-2017.jpg
 description: "Here are some resources from my \"Guide to Leadership for the Reluctant Leader\" keynote presented at Scenic City Summit 2017."
 meta_description: "Here are some resources from my \\\"Guide to Leadership for the Reluctant Leader\\\" keynote presented at Scenic City Summit 2017."
 date: 2017-07-29
+featured: true
 slug: resources-for-the-reluctant-leader
 tags:
   - leadership

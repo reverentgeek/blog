@@ -56,7 +56,9 @@ export const createContent = async ( { kind, contentDir, imagesDir, title } ) =>
 		if ( !exists ) {
 			// Posts get an empty tags list to fill in; topics drive /topics/ and
 			// the chips on a post. Pages are not topic-indexed, so they skip it.
-			const tagsLine = kind === "post" ? "tags:\n" : "";
+			// A new post is featured (listed under "Blog Posts" in llms.txt, not
+			// "Optional"); take the line out when it's no longer one to point at.
+			const tagsLine = kind === "post" ? "featured: true\ntags:\n" : "";
 			const frontMatter = `---
 id: ${ getId() }
 title: "${ title }"
