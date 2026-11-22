@@ -30,6 +30,12 @@
   <link rel="canonical" href="{{ site.url + page.url }}" />
   <link rel="alternate" type="application/atom+xml" title="Atom Feed for {{ site.title }}"
     href="{{ site.url }}/feed.xml" />
+  {{-- For agents: the page as Markdown, and the site's map (llmsPlugin() in ssqch.config.js). --}}
+  @let(markdownCopyUrl = markdownCopy(page.url))
+  @if(markdownCopyUrl)
+  <link rel="alternate" type="text/markdown" href="{{ markdownCopyUrl }}" />
+  @end
+  <link rel="describedby" href="/llms.txt" />
   @if(site.icon)
   <link rel="icon" type="image/x-icon" href="{{ site.icon }}" />
   @end

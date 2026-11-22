@@ -2,7 +2,9 @@ import { defineConfig } from "ssqch";
 import { assetsPlugin } from "ssqch/assets";
 import { imagePlugin } from "ssqch/image";
 import { linksPlugin } from "ssqch/links";
+import { llmsPlugin } from "ssqch/llms";
 import { minifyPlugin } from "ssqch/minify";
+import { robotsPlugin } from "ssqch/robots";
 import { rssPlugin } from "ssqch/rss";
 import { sitemapPlugin } from "ssqch/sitemap";
 
@@ -10,6 +12,9 @@ import { collections } from "./src/utils/site/collections.js";
 import { siteFilters } from "./src/utils/site/filters.js";
 import { imageOptions } from "./src/utils/site/image-options.js";
 import site from "./src/site/_data/site.json";
+
+// A page from src/site/posts/ (a post), rather than src/site/pages/.
+const isPost = page => /[\\/]posts[\\/]/.test( page.inputPath );
 
 export default defineConfig( ( { env } ) => ( {
 	dirs: {
@@ -87,6 +92,19 @@ export default defineConfig( ( { env } ) => ( {
 		// builds (so a deploy never ships them) and are warnings in `pnpm run serve`.
 		// sitemap.xml: every HTML page, with its date as <lastmod>.
 		sitemapPlugin( { url: site.url } ),
+		// robots.txt: every crawler welcome, and the sitemap's line.
+		robotsPlugin(),
+		// llms.txt for agents, with a Markdown copy of every page and post (and
+		// llms-full.txt): the pages first, then the posts, newest first.
+		llmsPlugin( {
+			url: site.url,
+			title: "ReverentGeek",
+			description: "Personal website and blog of David Neal (aka ReverentGeek): illustrator, builder, and DevRel leader, helping folks in tech be more awesome. David is a Senior Developer Advocate at MongoDB and co-author of Developer Relations Activity Patterns. He takes illustration commissions and is open to DevRel collaboration.",
+			// The home page's later pages (/1/ to /10/) are the posts again.
+			exclude: [ "/[0-9]/", "/[0-9][0-9]/", "/search/**", "/leave-a-review-thanks/", "/stream-starting-soon/" ],
+			section: page => ( isPost( page ) ? "Blog Posts" : "Main Pages" ),
+			sort: ( a, b ) => ( isPost( a ) - isPost( b ) ) || ( isPost( a ) ? b.date - a.date : 0 )
+		} ),
 		linksPlugin()
 	]
 } ) );
