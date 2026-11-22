@@ -248,8 +248,8 @@ importers:
         specifier: ^12.0.1
         version: 12.0.1
       ssqch:
-        specifier: 0.13.0
-        version: 0.13.0(@types/node@26.6.6)
+        specifier: 0.13.2
+        version: 0.13.2(@types/node@26.6.6)
       uuid:
         specifier: ^14.0.3
         version: 14.0.3
@@ -2191,8 +2191,8 @@ packages:
     resolution: {integrity: sha512-DI7/OuAUD+GMpR6dmu8lliO2Wg5zfeh+/xsdyJZCzd8o5JgFUjCeLsBDuZjIQJdwXS3J0L/uZYrELKYqx+PXog==}
     engines: {node: '>=8.0'}
 
-  ssqch@0.13.0:
-    resolution: {integrity: sha512-yMYQnWsWbwHskRiOla1YAIW+qsY/8nKNKmXObHI0nSKDx9vTT24x5uVoLcqJUAa+yf1ml3VZicqi23HHuxU2IA==}
+  ssqch@0.13.2:
+    resolution: {integrity: sha512-BYaRWmmH3xvvu9cfnms28WbwLmUbZ08dodHVTFUzMcmg3rjQLewreGbQRcAAKTA6IirZMvO0LpuX70oj+uS2eg==}
     engines: {node: '>=22.18'}
     hasBin: true
 
@@ -4344,7 +4344,7 @@ snapshots:
       image-ssim: 0.2.0
       jpeg-js: 0.4.4
 
-  ssqch@0.13.0(@types/node@26.6.6):
+  ssqch@0.13.2(@types/node@26.6.6):
     dependencies:
       sharp: 0.35.5(@types/node@26.6.6)
     transitivePeerDependencies:
