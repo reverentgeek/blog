@@ -1,6 +1,7 @@
 ---
 id: 87966000dd7411f199b17fed06934053
 title: "Developer Relations"
+featured: true
 description: "I help teams build developer programs that developers trust and leadership can measure. Co-author of Developer Relations Activity Patterns."
 meta_description: "David Neal is a developer advocate with more than a decade in Developer Relations at MongoDB, Plaid, and Okta, and consulting for Slack and Asana, co-author of Developer Relations Activity Patterns, and a speaker at more than 170 events."
 date: 2026-11-10

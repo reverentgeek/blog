@@ -1,6 +1,7 @@
 ---
 id: 91a74ee0dd7111f1a83801d418ead46b
 title: "Illustration Commissions"
+featured: true
 description: "Hand-drawn avatars, stickers, logos, and book illustrations from a developer who gets the joke. Avatars start at $30."
 meta_description: "Commission custom illustrations from David Neal: avatars, stickers, logos, mascots, book and course illustrations, and live event art for developers, authors, and tech companies."
 date: 2026-11-10

@@ -103,10 +103,11 @@ export default defineConfig( ( { env } ) => ( {
 			title: "ReverentGeek",
 			description: "Personal website and blog of David Neal (aka ReverentGeek): illustrator, builder, and DevRel leader, helping folks in tech be more awesome. David is a Senior Developer Advocate at MongoDB and co-author of Developer Relations Activity Patterns. He takes illustration commissions and is open to DevRel collaboration.",
 			// The home page's later pages (/1/ to /10/) are the posts again.
-			exclude: [ "/[0-9]/", "/[0-9][0-9]/", "/search/**", "/leave-a-review-thanks/", "/stream-starting-soon/" ],
-			// Featured posts (`featured: true`, which a new post starts with) are "Blog
-			// Posts"; the others are "Optional", the links an agent can skip.
-			section: page => ( isPost( page ) ? ( page.data.featured ? "Blog Posts" : "Optional" ) : "Main Pages" ),
+			exclude: [ "/[0-9]/", "/[0-9][0-9]/", "/search/**", "/leave-a-review/thanks/", "/stream-starting-soon/" ],
+			// Featured posts and pages (`featured: true`, which a new post starts with) are
+			// "Blog Posts" and "Main Pages"; the rest (older posts, topic pages, the smaller
+			// pages) are "Optional", the links an agent can skip when its context is short.
+			section: page => ( page.data.featured ? ( isPost( page ) ? "Blog Posts" : "Main Pages" ) : "Optional" ),
 			sort: ( a, b ) => ( isPost( a ) - isPost( b ) ) || ( isPost( a ) ? b.date - a.date : 0 )
 		} ),
 		linksPlugin()

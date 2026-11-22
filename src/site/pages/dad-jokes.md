@@ -1,6 +1,7 @@
 ---
 id: 0a7beb50df7f11f19fbe71ba539e16dc
 title: "Dad Jokes!"
+featured: true
 feature_image:
 description: "Hand-drawn dad jokes from The Illustrated Book of Dad Jokes: 250 groan-worthy jokes, one illustrated punchline at a time."
 meta_description: "Sample pages from The Illustrated Book of Dad Jokes by David Neal (ReverentGeek), 250 illustrated dad jokes drawn daily throughout 2021. Available in paperback and Kindle on Amazon."

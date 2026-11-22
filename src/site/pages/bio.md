@@ -1,6 +1,7 @@
 ---
 id: a0baf47022e711edb818395c06af3095
 title: "Bio"
+featured: true
 description: "David Neal is an illustrator, builder, and DevRel leader, helping folks in tech be more awesome."
 date: 2022-08-23
 slug: bio

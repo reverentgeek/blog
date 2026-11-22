@@ -1,6 +1,7 @@
 ---
 id: 5c461a2dbc58620a44555950
 title: "Developer and Illustration Portfolio"
+featured: true
 description: "David Neal's developer and illustration portfolio featuring avatars, logos, sketch notes, tech humor, and more."
 date: 2019-01-21
 slug: portfolio

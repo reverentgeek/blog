@@ -1,6 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba958
 title: "About Me"
+featured: true
 description: "David Neal is an illustrator, builder, and DevRel leader, helping folks in tech be more awesome."
 date: 2014-02-13
 slug: about

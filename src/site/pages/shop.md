@@ -1,6 +1,7 @@
 ---
 id: 5b7d83816ada047f703ba98f
 title: "Stickers & T-Shirts"
+featured: true
 description: "Get ReverentGeek stickers from StickerMule and t-shirts on Amazon, featuring David Neal's drawings."
 date: 2018-05-19
 slug: shop

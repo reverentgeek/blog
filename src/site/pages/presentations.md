@@ -1,6 +1,7 @@
 ---
 id: 5c49c74ebc58620a445559d9
 title: "Keynotes and Presentations"
+featured: true
 description: "Regardless of the technology you know, regardless of the job title you have, you have amazing potential to impact your workplace,…"
 date: 2019-01-24
 slug: presentations
