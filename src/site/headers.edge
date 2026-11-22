@@ -8,6 +8,13 @@ permalink: '_headers'
 /.well-known/webfinger
   content-type: application/jrd+json; charset=UTF-8
 
+# Each page's Markdown copy (llmsPlugin()), for agents: a second version of the page,
+# which a search engine shouldn't list beside it. The edge function in
+# netlify/edge-functions/markdown.js sets its own headers.
+/*.md
+  X-Robots-Tag: noindex
+  Content-Type: text/markdown; charset=utf-8
+
 # Security headers, for Netlify
 # https://docs.netlify.com/routing/headers/
 
