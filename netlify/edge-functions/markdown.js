@@ -21,6 +21,11 @@ function copyOf( pathname ) {
 	return /\.[a-z0-9]+$/i.test( pathname ) ? undefined : `${ pathname }/index.md`;
 }
 
+/** The page's own address, for the copy's `Link` header: `/guide/intro` is the folder's page, `/guide/intro/`. */
+function pageOf( pathname ) {
+	return pathname.endsWith( "/" ) || /\.[a-z0-9]+$/i.test( pathname ) ? pathname : `${ pathname }/`;
+}
+
 export default async ( request ) => {
 	if ( !prefersMarkdown( request.headers.get( "accept" ) ?? "" ) ) return;
 	const url = new URL( request.url );
@@ -28,7 +33,7 @@ export default async ( request ) => {
 	if ( !copy ) return;
 	const found = await fetch( new URL( copy, url ) );
 	if ( !found.ok ) return;
-	return new Response( found.body, { headers: { "Content-Type": "text/markdown; charset=utf-8", Vary: "Accept", Link: `<${ url.origin }${ url.pathname }>; rel="canonical"` } } );
+	return new Response( found.body, { headers: { "Content-Type": "text/markdown; charset=utf-8", Vary: "Accept", Link: `<${ url.origin }${ pageOf( url.pathname ) }>; rel="canonical"` } } );
 };
 
 export const config = { path: "/*", excludedPath: [ "/*.md" ], header: { accept: "text/markdown" } };
