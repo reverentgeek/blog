@@ -34,6 +34,12 @@ layout: layouts/default.edge
       </nav>
     @end
 
+  </article>
+
+  {{-- Around the post, not part of it: the support callout, related posts and comments
+       come after the <article>, so an agent (and llms.txt's copy) reads the post as the
+       page. The class keeps them in the reading column (`.content > ...` in styles.css). --}}
+  <div class="content">
     @!component('components/support', { variant: calloutFor(postTopics), kofiLink: site.kofi })
 
     @let(related = relatedPosts(collections.posts, page.url, tags))
@@ -110,5 +116,5 @@ layout: layouts/default.edge
     <noscript>Please enable JavaScript to view the comments.</noscript>
     @include('partials/legacy-comments')
 
-  </article>
+  </div>
 
