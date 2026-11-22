@@ -74,6 +74,11 @@ computed:
       </div>
     @end
 
+    {{-- Pages 2+ say what they are: "Posts, Page 2" (an agent takes a page's <h1> as its subject). --}}
+    @if(pagination.pageNumber !== 0)
+      <h1 class="home-section-heading">{{ title }}</h1>
+    @end
+
     <section class="post-list">
         @each((post, index) in posts)
 			@!component('components/card', { post: post, eager: index === 0 && pagination.pageNumber !== 0 })
