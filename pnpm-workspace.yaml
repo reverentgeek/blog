@@ -20,6 +20,7 @@ minimumReleaseAgeExclude:
   - pnpm@12.21.0
   - '@pnpm/exe.netbsd-x64@12.21.0'
   - ssqch@0.13.5
+  - ssqch@0.13.6
 overrides:
   'file-type@>=13.0.0 <21.3.1': '>=21.3.1'
   'brace-expansion@<1.1.13': '>=1.1.13'
