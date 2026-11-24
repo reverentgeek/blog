@@ -24,7 +24,8 @@
 @end~
   </title>
   <meta name="description" content="{{ seoDescription }}">
-  <meta name="robots" content="index,follow">
+  {{-- `noindex: true` in front matter keeps a page out of search (pair it with `sitemap: false`). --}}
+  <meta name="robots" content="{{ noindex ? 'noindex,follow' : 'index,follow' }}">
   <meta name="generator" content="{{ ssqch.generator }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="{{ site.url + page.url }}" />

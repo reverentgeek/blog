@@ -7,6 +7,7 @@ date: 2026-11-13
 slug: leave-a-review-thanks
 permalink: /leave-a-review/thanks/
 excludeFromCollections: true
+noindex: true
 sitemap: false
 ---
 
