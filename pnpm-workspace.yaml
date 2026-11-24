@@ -19,12 +19,8 @@ minimumReleaseAgeExclude:
   - '@pnpm/exe.win32-x64@12.21.0'
   - pnpm@12.21.0
   - '@pnpm/exe.netbsd-x64@12.21.0'
-  - ssqch@0.13.5 || 0.13.6 || 0.14.0 || 0.14.1 || 0.14.2 || 0.15.0
+  - ssqch@0.15.0
 overrides:
   'file-type@>=13.0.0 <21.3.1': '>=21.3.1'
-  'brace-expansion@<1.1.13': '>=1.1.13'
-  'brace-expansion@>=2.0.0 <2.0.3': '>=2.0.3'
-  # GHSA-g3hv-75wg-m249 (eslint and markdownlint-cli still ask for minimatch 10)
-  'minimatch@>=7.0.0 <11.0.1': '^11.0.1'
   # GHSA-238p-pmpm-9mq7 (markdownlint's math extension still asks for katex 0.16)
   'katex@>=0.11.0 <0.18.2': '^0.18.2'
