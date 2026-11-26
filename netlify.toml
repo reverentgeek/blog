@@ -1,10 +1,10 @@
 # Netlify builds the site: its `pnpm install` brings SiteSquatch with the other
 # packages (the `ssqch` dev dependency, pinned in package.json and the lockfile,
 # which runs on Node: NODE_VERSION below), then it runs the same
-# `pnpm run build` as locally, then the smoke tests, so a failing test stops the
-# deploy.
+# `pnpm test` as locally: the build (ssqch, which compiles the CSS and JS first),
+# `ssqch patrol` and the smoke tests, so a failure in any of them stops the deploy.
 [build]
-  command = "pnpm run build && node --test 'test/*.test.js'"
+  command = "pnpm test"
   publish = "dist/"
 
 [build.environment]

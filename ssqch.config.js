@@ -16,7 +16,13 @@ import site from "./src/site/_data/site.json";
 // A page from src/site/posts/ (a post), rather than src/site/pages/.
 const isPost = page => /[\\/]posts[\\/]/.test( page.inputPath );
 
-export default defineConfig( ( { env } ) => ( {
+// The CSS and JS a build compiles into the output's assets/ folder.
+const buildAssets = env => [
+	{ run: "postcss src/assets/css/styles.css --output \"$SSQCH_OUTPUT/assets/index.css\" --no-map" },
+	{ run: `esbuild src/assets/js/index.js --bundle --outdir="$SSQCH_OUTPUT/assets"${ env === "production" ? " --minify" : "" }` }
+];
+
+export default defineConfig( ( { env, serving } ) => ( {
 	dirs: {
 		input: "src/site",
 		output: "dist"
@@ -53,6 +59,17 @@ export default defineConfig( ( { env } ) => ( {
 			unknown: "warn"
 		}
 	},
+
+	// A build compiles the CSS (PostCSS and Tailwind, which minifies for production) and the
+	// JS (esbuild) into dist/assets/ before rendering, so the assets plugin and the link
+	// checker see them. Not while serving: `serve.run` has the watchers, and a hook here would
+	// make every rebuild render every page instead of the ones an edit reaches.
+	beforeBuild: serving ? [] : buildAssets( env ),
+
+	// A page, stylesheet or script over its size fails a production build (`ssqch footprint`
+	// lists the heaviest). Images and documents have none: the 1200px PNG social cards and the
+	// cheat sheet PDF are bigger than any sensible limit.
+	budgets: { pages: "150 KB", css: "120 KB", javascript: "50 KB", fail: true },
 
 	// `ssqch serve` starts the CSS and JS watchers with the server and stops them with it. They
 	// write into dist/assets/, and the server picks the files up from there: a stylesheet swaps
