@@ -53,7 +53,7 @@
 		"commander": "^15.1.0",
 		"eslint": "^10.15.0",
 		"eslint-config-reverentgeek": "^7.2.3",
-		"jimp": "^2.1.0",
+		"jimp": "^2.2.0",
 		"lighthouse": "^13.6.0",
 		"markdownlint-cli": "~0.50.1",
 		"netlify-plugin-cache": "^1.0.3",
