@@ -19,7 +19,7 @@ minimumReleaseAgeExclude:
   - '@pnpm/exe.win32-x64@12.21.0'
   - pnpm@12.21.0
   - '@pnpm/exe.netbsd-x64@12.21.0'
-  - ssqch@0.15.0 || 0.15.1 || 0.16.0 || 0.16.1
+  - ssqch@0.15.0 || 0.15.1 || 0.16.0 || 0.16.1 || 0.16.2
 overrides:
   'file-type@>=13.0.0 <21.3.1': '>=21.3.1'
   # GHSA-238p-pmpm-9mq7 (markdownlint's math extension still asks for katex 0.16)

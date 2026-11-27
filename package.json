@@ -60,7 +60,7 @@
 		"probe-image-size": "^7.5.0",
 		"sharp": "^0.35.5",
 		"slug": "^12.0.1",
-		"ssqch": "0.16.1",
+		"ssqch": "0.16.2",
 		"uuid": "^14.0.3"
 	},
 	"packageManager": "pnpm@12.24.0+sha512.5f90f50a48aa40f01dc43bd3acb528922fd899d3b909015fdb23af73bb31c578f29ceb29be9a4d6f0146adb34206aac332796043cc5024b815ef76288cbac767"
